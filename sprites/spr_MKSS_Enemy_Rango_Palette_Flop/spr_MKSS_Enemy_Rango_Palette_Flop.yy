@@ -17,14 +17,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"3d3cfbf8-7229-40a1-bd93-34fb19a6fa45","name":"3d3cfbf8-7229-40a1-bd93-34fb19a6fa45","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"daeba211-55b9-4dfd-acda-94fb96f747da","name":"daeba211-55b9-4dfd-acda-94fb96f747da","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":13,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"10c2fc7b-220c-4879-af10-3c01c48999b2","blendMode":0,"displayName":"default","isLocked":false,"name":"10c2fc7b-220c-4879-af10-3c01c48999b2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"aa32e236-da4a-4777-9443-6284f3bc0e85","blendMode":0,"displayName":"default","isLocked":false,"name":"aa32e236-da4a-4777-9443-6284f3bc0e85","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_MKSS_Enemy_Rango_Palette_Flop",
   "nineSlice":null,
@@ -76,8 +76,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3d3cfbf8-7229-40a1-bd93-34fb19a6fa45","path":"sprites/spr_MKSS_Enemy_Rango_Palette_Flop/spr_MKSS_Enemy_Rango_Palette_Flop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"932642f4-4490-4a99-ad16-b80e365244a5","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"daeba211-55b9-4dfd-acda-94fb96f747da","path":"sprites/spr_MKSS_Enemy_Rango_Palette_Flop/spr_MKSS_Enemy_Rango_Palette_Flop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"509351c5-a2e5-4be4-b36a-70cc459d0ed7","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

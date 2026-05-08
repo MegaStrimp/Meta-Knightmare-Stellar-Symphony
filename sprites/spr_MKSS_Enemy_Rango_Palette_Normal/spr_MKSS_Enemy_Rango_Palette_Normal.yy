@@ -17,14 +17,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"3d3cfbf8-7229-40a1-bd93-34fb19a6fa45","name":"3d3cfbf8-7229-40a1-bd93-34fb19a6fa45","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"268920b0-66a0-4069-94e2-17e1788a554d","name":"268920b0-66a0-4069-94e2-17e1788a554d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":13,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"10c2fc7b-220c-4879-af10-3c01c48999b2","blendMode":0,"displayName":"default","isLocked":false,"name":"10c2fc7b-220c-4879-af10-3c01c48999b2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"66e61c17-c649-4f95-a193-763daa23452a","blendMode":0,"displayName":"default","isLocked":false,"name":"66e61c17-c649-4f95-a193-763daa23452a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_MKSS_Enemy_Rango_Palette_Normal",
   "nineSlice":null,
@@ -76,8 +76,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3d3cfbf8-7229-40a1-bd93-34fb19a6fa45","path":"sprites/spr_MKSS_Enemy_Rango_Palette_Normal/spr_MKSS_Enemy_Rango_Palette_Normal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"932642f4-4490-4a99-ad16-b80e365244a5","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"268920b0-66a0-4069-94e2-17e1788a554d","path":"sprites/spr_MKSS_Enemy_Rango_Palette_Normal/spr_MKSS_Enemy_Rango_Palette_Normal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"fb735d7b-98e0-4da6-8225-0d9f7a135fca","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
