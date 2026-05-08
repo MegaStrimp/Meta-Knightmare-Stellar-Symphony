@@ -22,8 +22,6 @@ if (currentPortrait != undefined)
 #endregion
 
 #region Text
-scribble_font_set_default("fnt_Advance");
-
 if (text != undefined)
 {
 	scribble(text).wrap(180).draw(xx + 60,yy + 4,typist);

@@ -1,0 +1,46 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"ts_MKSS_Water",
+  "autoTileSets":[],
+  "ConfigValues":{
+    "DesktopDebug":{
+      "textureGroupId":"{ \"name\":\"MetaKnightmareStellarSymphony\", \"path\":\"texturegroups/MetaKnightmareStellarSymphony\" }",
+    },
+  },
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"ts_MKSS_Water",
+  "out_columns":4,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Water Top",
+    "path":"folders/Meta Knightmare Stellar Symphony/Tiles/Water Top.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"tiles_MKSS_Water",
+    "path":"sprites/tiles_MKSS_Water/tiles_MKSS_Water.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"MetaKnightmareStellarSymphony",
+    "path":"texturegroups/MetaKnightmareStellarSymphony",
+  },
+  "tileAnimationFrames":[
+    {"$GMTileAnimation":"","%Name":"Top_1","frames":[3,6,9,12,],"name":"Top_1","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
+    {"$GMTileAnimation":"","%Name":"Top_2","frames":[4,7,10,13,],"name":"Top_2","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
+  ],
+  "tileAnimationSpeed":6.0,
+  "tileHeight":16,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":16,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":15,
+}

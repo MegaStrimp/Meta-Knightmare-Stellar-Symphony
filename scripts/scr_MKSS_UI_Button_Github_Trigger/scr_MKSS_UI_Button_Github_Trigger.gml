@@ -4,6 +4,5 @@ function scr_MKSS_UI_Button_Github_Trigger()
 {
 	scr_PlaySfx(snd_MKSS_ButtonYes);
 	
-	//STRIMPTODO Add Github Repo
-	//url_open("https://twitter.com/mega_strimp");
+	url_open("https://github.com/MegaStrimp/Meta-Knightmare-Stellar-Symphony");
 }

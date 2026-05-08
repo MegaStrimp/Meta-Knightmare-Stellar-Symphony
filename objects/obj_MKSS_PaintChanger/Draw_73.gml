@@ -29,8 +29,6 @@ if (isActive)
 	#endregion
 	
 	#region Spray Paint Title
-	scribble_font_set_default("fnt_Advance");
-	
 	scribble(currentName).align(fa_center).draw(x,y - 48 - (2 * (sprayCanBounceTimer != -1)));
 	#endregion
 	

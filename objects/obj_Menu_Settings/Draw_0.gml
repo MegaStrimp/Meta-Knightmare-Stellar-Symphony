@@ -28,8 +28,6 @@ for (i = 0; i < ds_list_size(currentList); i++)
 }
 
 #region Button Hints
-scribble_font_set_default("fnt_Advance");
-
 var exitIcon = "";
 var targetIcon = global.UI_IconBindings[? string(input_binding_get("B"))];
 if (targetIcon != undefined) exitIcon = "[" + sprite_get_name(targetIcon) + "]";
@@ -53,8 +51,6 @@ text.draw(room_width - 1 - text.get_width(),room_height - 16 + (2 * ((buttonInpu
 if (targetKey != "")
 {
 	draw_rectangle_color(0,0,room_width,room_height,c_black,c_black,c_black,c_black,false);
-	
-	scribble_font_set_default("fnt_Advance");
 	
 	scribble("PRESS THE KEY YOU WANT TO REBIND INTO").align(fa_center,fa_middle).wrap(room_width).draw(room_width / 2,room_height / 2);
 }

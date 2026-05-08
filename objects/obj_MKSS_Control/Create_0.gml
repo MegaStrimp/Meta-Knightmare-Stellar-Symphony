@@ -77,6 +77,8 @@ global.fontSpriteEnemyHealthbar = font_add_sprite_ext(fnt_MKSS_UI_EnemyHealthbar
 global.fontSpriteHitNumbersBlue = font_add_sprite_ext(fnt_MKSS_UI_HitNumbers_Blue,"0123456789+-",true,0);
 global.fontSpriteHitNumbersRed = font_add_sprite_ext(fnt_MKSS_UI_HitNumbers_Red,"0123456789+-",true,0);
 global.fontSpriteHitNumbersGreen = font_add_sprite_ext(fnt_MKSS_UI_HitNumbers_Green,"0123456789+-",true,0);
+
+scribble_font_set_default("fnt_Advance");
 #endregion
 
 #region Set Window Caption

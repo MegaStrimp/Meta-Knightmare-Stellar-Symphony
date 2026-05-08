@@ -12,8 +12,8 @@ enemyWallYCollision = scr_MKSS_Enemy_WallYCollision;
 
 #region Gameplay Variables
 enemyID = global.MKSS_EnemyIDs[? "rango"];
-hp = 12;
-points = 100;
+hp = 6;
+points = 200;
 metaPointsOnDeath = 3;
 metaPointsOnOverkill = 5;
 
