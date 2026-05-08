@@ -1,0 +1,1 @@
+The sequence starts with a disclaimer text, which transitions into the title text with a small animation. Pressing the Start button after the animation ends brings the player to the Save Select Screen. The Title Screen’s background changes depending on the last selected stage.

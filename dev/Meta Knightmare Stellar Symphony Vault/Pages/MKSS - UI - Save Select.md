@@ -1,0 +1,1 @@
+The Save Select Screen allows the player to choose one of three save slots before starting the game, or delete a slot by pressing Y three times. Along with that, the player can choose to enter the official Discord server, browse the Strimp’s Kitchen Twitter/X page, open the GitHub repository, and quickly exit the game.

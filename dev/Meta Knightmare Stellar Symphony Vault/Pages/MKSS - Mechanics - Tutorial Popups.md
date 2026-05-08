@@ -1,0 +1,1 @@
+Throughout the game, mainly in the first stage, there will be some popup windows teaching the player how to execute certain moves and mechanics.

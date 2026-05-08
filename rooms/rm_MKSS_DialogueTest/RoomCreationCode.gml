@@ -1,0 +1,1 @@
+scr_MKSS_Dialogue_Create(global.MKSS_DialogueIDs[? "oilWheelie_Halberd_1"]);

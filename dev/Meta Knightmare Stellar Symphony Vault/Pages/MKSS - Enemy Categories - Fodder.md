@@ -1,0 +1,1 @@
+Fodder Enemies are small, weaker foes that get in the player's way. They usually don't have active attacks or AIs that follow the player.

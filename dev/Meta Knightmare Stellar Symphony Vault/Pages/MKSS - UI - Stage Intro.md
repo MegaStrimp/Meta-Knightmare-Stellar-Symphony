@@ -1,0 +1,3 @@
+After choosing a level from the Hub World, instead of going right to the stage, the player is directed to a Stage Intro screen. The screen starts an invisible timer and transitions to the target stage when the timer is over.
+
+On the screen, the player can see a scrolling banner of the next stage, an illustrated title for said stage, and several decorations each colored accordingly based on the stage. When the timer reaches the halfway point, some additional information about the stage can be seen, including the current high score, the earned medal, and whether the stage collectibles have been gathered or not. A special transition occurs as the player enters the target stage.

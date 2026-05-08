@@ -1,0 +1,29 @@
+///@description MKSS - UI - Button - Init - Set
+
+function scr_MKSS_UI_Button_Init_Set()
+{
+	#region Setup
+	global.MKSS_ButtonList = [];
+	global.MKSS_ButtonIDs = ds_map_create();
+	#endregion
+	
+	#region Buttons
+	#region Title Screen
+	var targetMappedID_Save1 = scr_MKSS_UI_Button_Init_Add("save1",spr_MKSS_Menu_TitleScreen_Button_Save1,scr_MKSS_UI_Button_Save1_Create,scr_MKSS_UI_Button_Save1_Trigger,scr_MKSS_UI_Button_Save1_Base,scr_MKSS_UI_Button_Save1_Draw);
+	var targetMappedID_Save2 = scr_MKSS_UI_Button_Init_Add("save2",spr_MKSS_Menu_TitleScreen_Button_Save2,scr_MKSS_UI_Button_Save2_Create,scr_MKSS_UI_Button_Save2_Trigger,scr_MKSS_UI_Button_Save2_Base,scr_MKSS_UI_Button_Save2_Draw);
+	var targetMappedID_Save3 = scr_MKSS_UI_Button_Init_Add("save3",spr_MKSS_Menu_TitleScreen_Button_Save3,scr_MKSS_UI_Button_Save3_Create,scr_MKSS_UI_Button_Save3_Trigger,scr_MKSS_UI_Button_Save3_Base,scr_MKSS_UI_Button_Save3_Draw);
+	var targetMappedID_Discord = scr_MKSS_UI_Button_Init_Add("discord",spr_MKSS_Menu_TitleScreen_Button_Discord,scr_MKSS_UI_Button_Discord_Create,scr_MKSS_UI_Button_Discord_Trigger,scr_MKSS_UI_Button_Discord_Base);
+	var targetMappedID_Twitter = scr_MKSS_UI_Button_Init_Add("twitter",spr_MKSS_Menu_TitleScreen_Button_Twitter,scr_MKSS_UI_Button_Twitter_Create,scr_MKSS_UI_Button_Twitter_Trigger,scr_MKSS_UI_Button_Twitter_Base);
+	var targetMappedID_Github = scr_MKSS_UI_Button_Init_Add("github",spr_MKSS_Menu_TitleScreen_Button_Github,scr_MKSS_UI_Button_Github_Create,scr_MKSS_UI_Button_Github_Trigger,scr_MKSS_UI_Button_Github_Base);
+	var targetMappedID_Exit = scr_MKSS_UI_Button_Init_Add("exit",spr_MKSS_Menu_TitleScreen_Button_Exit,scr_MKSS_UI_Button_Exit_Create,scr_MKSS_UI_Button_Exit_Trigger,scr_MKSS_UI_Button_Exit_Base);
+	
+	scr_MKSS_UI_Button_Init_Add_Neighbors(targetMappedID_Save1,,,targetMappedID_Discord,targetMappedID_Save2);
+	scr_MKSS_UI_Button_Init_Add_Neighbors(targetMappedID_Save2,,,targetMappedID_Save1,targetMappedID_Save3);
+	scr_MKSS_UI_Button_Init_Add_Neighbors(targetMappedID_Save3,,,targetMappedID_Save2,targetMappedID_Discord);
+	scr_MKSS_UI_Button_Init_Add_Neighbors(targetMappedID_Discord,targetMappedID_Exit,targetMappedID_Twitter,targetMappedID_Save3,targetMappedID_Save1);
+	scr_MKSS_UI_Button_Init_Add_Neighbors(targetMappedID_Twitter,targetMappedID_Discord,targetMappedID_Github,targetMappedID_Save3,targetMappedID_Save1);
+	scr_MKSS_UI_Button_Init_Add_Neighbors(targetMappedID_Github,targetMappedID_Twitter,targetMappedID_Exit,targetMappedID_Save3,targetMappedID_Save1);
+	scr_MKSS_UI_Button_Init_Add_Neighbors(targetMappedID_Exit,targetMappedID_Github,targetMappedID_Discord,targetMappedID_Save3,targetMappedID_Save1);
+	#endregion
+	#endregion
+}

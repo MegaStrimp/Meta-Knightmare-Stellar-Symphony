@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_MKSS_ParticleSet_MetaPointCollect",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_MKSS_ParticleSet_MetaPointCollect",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Meta Knightmare Stellar Symphony/Particles/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

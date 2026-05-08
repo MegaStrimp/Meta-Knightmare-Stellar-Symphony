@@ -1,0 +1,23 @@
+{
+  "$GMPath":"",
+  "%Name":"pth_MKSS_Menu_TitleSwordStars",
+  "closed":false,
+  "kind":1,
+  "name":"pth_MKSS_Menu_TitleSwordStars",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Meta Knightmare Stellar Symphony/Menus/Title Screen/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":0.0,"y":176.0,},
+    {"speed":100.0,"x":56.0,"y":144.0,},
+    {"speed":100.0,"x":-16.0,"y":96.0,},
+    {"speed":100.0,"x":72.0,"y":48.0,},
+    {"speed":100.0,"x":16.0,"y":0.0,},
+    {"speed":100.0,"x":16.0,"y":-24.0,},
+    {"speed":100.0,"x":-88.0,"y":-72.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

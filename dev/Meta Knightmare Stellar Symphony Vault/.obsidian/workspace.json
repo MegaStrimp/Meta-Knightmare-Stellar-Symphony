@@ -1,0 +1,238 @@
+{
+  "main": {
+    "id": "88a43fd321758889",
+    "type": "split",
+    "children": [
+      {
+        "id": "c58c5e7601d6b8bc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dd16a5959f216f3f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Pages/MKSS - Story.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "MKSS - Story"
+            }
+          },
+          {
+            "id": "f9cff356acfd929c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Pages/MKSS - Mechanics - Stellar Combo.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "MKSS - Mechanics - Stellar Combo"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d14781e59381ffec",
+    "type": "split",
+    "children": [
+      {
+        "id": "8c51564790ecf3a8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "62d8fd656433a79b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "28fd9a8e73224790",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "ae1724873ed01f11",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 358.5
+  },
+  "right": {
+    "id": "dc4dcd87cbe69539",
+    "type": "split",
+    "children": [
+      {
+        "id": "d8f1fe0c5d7e43a6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "153f6289083baf09",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Pages/Meta Knightmare Stellar Symphony.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Meta Knightmare Stellar Symphony"
+            }
+          },
+          {
+            "id": "4c0bcb20855b3d10",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Pages/Meta Knightmare Stellar Symphony.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Meta Knightmare Stellar Symphony"
+            }
+          },
+          {
+            "id": "1d800af0c452cf03",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "2615b41df915f2fe",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Pages/Meta Knightmare Stellar Symphony.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Meta Knightmare Stellar Symphony"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "dd16a5959f216f3f",
+  "lastOpenFiles": [
+    "2025-11-29.md",
+    "Pages/MKSS - Story.md",
+    "Pages/MKSS - Swords - Buzzcut.md",
+    "Pages/MKSS - Swords - Stella.md",
+    "Pages/MKSS - Stages - Living Loom.md",
+    "Pages/MKSS - Stages - Starry Shores.md",
+    "Pages/MKSS - Swords - Galaxia.md",
+    "Pages/MKSS - Swords - Trifecta.md",
+    "Pages/MKSS - Swords - Whiplash.md",
+    "Pages/MKSS - UI - Credits Screen.md",
+    "Pages/MKSS - UI - HUD.md",
+    "Pages/MKSS - UI - Stage Intro.md",
+    "Pages/MKSS - UI - Save Select.md",
+    "Pages/MKSS - UI - Options Menu.md",
+    "Pages/MKSS - UI - Pause Screen.md",
+    "Pages/MKSS - UI - Title Screen.md",
+    "Pages/MKSS - UI - Upgrades Screen.md",
+    "Pages/MKSS - Cutscenes - Galacta Knight Intro.md",
+    "Pages/MKSS - Cutscenes - Ending.md",
+    "Pages/MKSS - Cutscenes - Divine Intervention Intro.md",
+    "Pages/MKSS - Cutscenes - Cosmo Genesis Angel Intro.md",
+    "Pages/MKSS - Credits.md",
+    "Pages/MKSS - Characters - Nimbus Warden.md",
+    "Pages/MKSS - Characters - Meta Knight.md",
+    "Pages/MKSS - Characters - Andromeda.md",
+    "Pages/Meta Knightmare Stellar Symphony.md",
+    "Images/image1.png",
+    "Pages",
+    "Images",
+    "Tales from StarDream - Spring Breeze/Images/TfSD SB - Image - Enemies - Blipper.png",
+    "Tales from StarDream - Spring Breeze/Images/TfSD SB - Image - Enemies - Blipper.png",
+    "Tales from StarDream - Spring Breeze/Images/TfSD SB - Image - Enemies - Blopper.png",
+    "Tales from StarDream - Spring Breeze/Images/TfSD SB - Image - Enemies - Puffy.png",
+    "Tales from StarDream - Spring Breeze/Images/TfSD SB - Image - Enemies - Coconut.png",
+    "Tales from StarDream - Spring Breeze/Images/TfSD SB - Image - Enemies - Wizzer.png",
+    "Tales from StarDream - Spring Breeze/Images/TfSD SB - Image - Enemies - Squishy.png",
+    "Tales from StarDream - Spring Breeze/Images/TfSD SB - Image - Enemies - Coner.png",
+    "Tales from StarDream - Spring Breeze/Images/TfSD SB - Image - Enemies - Kabu.png",
+    "Tales from StarDream - Spring Breeze/Images/TfSD SB - Image - UI - Sound Test.png.0.pdnSave",
+    "Tales from StarDream - Spring Breeze/Images/TfSD SB - Image - UI - Config Mode.png.0.pdnSave",
+    "Tales from StarDream - Spring Breeze/Images/TfSD SB - Image - UI - Scene Select.png.0.pdnSave",
+    "Tales from StarDream - Spring Breeze/Images/TfSD SB - Image - UI - Main Menu.png.0.pdnSave",
+    "Untitled.canvas",
+    "StarDream Framework/Pages",
+    "StarDream Framework/Images",
+    "StarDream Framework",
+    "Meta Knightmare Stellar Symphony/Pages",
+    "Untitled 1.canvas"
+  ]
+}

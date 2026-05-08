@@ -1,0 +1,1 @@
+During the gameplay, the player can press Start to pause the game. In the Pause Screen, the player can choose four different options; the Upgrades button which opens the Upgrades Screen, the Options button, which opens the Options Screen, the Exit Button which leads to the Hub World, and lastly the Return Button which unpauses the game.
