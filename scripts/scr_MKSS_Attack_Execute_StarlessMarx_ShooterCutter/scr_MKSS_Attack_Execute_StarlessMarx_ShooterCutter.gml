@@ -16,6 +16,7 @@ function scr_MKSS_Attack_Execute_StarlessMarx_ShooterCutter(targetAngle = 0,isPa
 		owner = other;
 		isEnemy = true;
 		canBeParried = isParriable;
+		parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryStarlessMarxCutter"];
 		dmg = 1;
 		knockbackForce = 1;
 		hsp = lengthdir_x(4,targetAngle - 25);

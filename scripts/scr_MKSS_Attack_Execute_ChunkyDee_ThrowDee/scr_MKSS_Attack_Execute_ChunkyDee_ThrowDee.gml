@@ -1,4 +1,4 @@
-///@description MKSS - Attack - Execute - Galaxia - Slash 1
+///@description MKSS - Attack - Execute - Chunky Dee - Throw Dee
 
 function scr_MKSS_Attack_Execute_ChunkyDee_ThrowDee()
 {
@@ -10,6 +10,8 @@ function scr_MKSS_Attack_Execute_ChunkyDee_ThrowDee()
 	
 	dirX = 1;
 	if (nearestPlayer.x < x) dirX = -1;
+	
+	
 	
 	ds_list_clear(thrownEnemyList);
 	ds_list_clear(thrownEnemyStateList);

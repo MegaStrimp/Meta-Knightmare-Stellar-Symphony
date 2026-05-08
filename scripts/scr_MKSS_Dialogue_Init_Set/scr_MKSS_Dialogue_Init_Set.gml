@@ -101,7 +101,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_PaintRoller_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_PaintRoller_Portrait_Talk,
-			text: "What, who are these 'others?'  Oh, they know who they are.",
+			text: "What, who are these 'others?' Oh, they know who they are.",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound
 		}
@@ -118,21 +118,77 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_Strimp_Portrait,
 			portrait_Talk: spr_MKSS_NPC_Strimp_Portrait,
-			text: "You found me",
+			text: "You found me.",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_Strimp
 		},
 		{
 			portrait_Idle: spr_MKSS_NPC_Strimp_Portrait,
 			portrait_Talk: spr_MKSS_NPC_Strimp_Portrait,
-			text: "My name is Mega Strimp",
+			text: "Interesting how the smallest of things can grow[delay,500] larger than the Earth",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_Strimp
 		},
 		{
 			portrait_Idle: spr_MKSS_NPC_Strimp_Portrait,
 			portrait_Talk: spr_MKSS_NPC_Strimp_Portrait,
-			text: "herbistan",
+			text: "if you give them enough of a push",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Strimp
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Strimp_Portrait,
+			portrait_Talk: spr_MKSS_NPC_Strimp_Portrait,
+			text: "and[delay,500] passion.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Strimp
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Strimp_Portrait,
+			portrait_Talk: spr_MKSS_NPC_Strimp_Portrait,
+			text: "Do you know this place?",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Strimp
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Strimp_Portrait,
+			portrait_Talk: spr_MKSS_NPC_Strimp_Portrait,
+			text: "Do you[delay,500] remember[delay,500] this place?",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Strimp
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Strimp_Portrait,
+			portrait_Talk: spr_MKSS_NPC_Strimp_Portrait,
+			text: "I certainly do-",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Strimp
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Strimp_Portrait,
+			portrait_Talk: spr_MKSS_NPC_Strimp_Portrait,
+			text: "a fragment from my halcyon days.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Strimp
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Strimp_Portrait,
+			portrait_Talk: spr_MKSS_NPC_Strimp_Portrait,
+			text: "It also started off small;[delay,500] now we are all here.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Strimp
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Strimp_Portrait,
+			portrait_Talk: spr_MKSS_NPC_Strimp_Portrait,
+			text: "I am happy that we are here at this very moment.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Strimp
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Strimp_Portrait,
+			portrait_Talk: spr_MKSS_NPC_Strimp_Portrait,
+			text: "But does the butterfly remember it all?",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_Strimp
 		}
@@ -147,7 +203,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_Strimp_Portrait,
 			portrait_Talk: spr_MKSS_NPC_Strimp_Portrait,
-			text: "You may leave now",
+			text: "You may leave now.[delay,500] There are plenty of adventures to have.",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_Strimp
 		}

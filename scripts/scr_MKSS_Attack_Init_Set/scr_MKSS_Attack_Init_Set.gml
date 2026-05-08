@@ -10,8 +10,10 @@ function scr_MKSS_Attack_Init_Set()
 	#region Attacks
 	#region Meta Knight
 	scr_MKSS_Attack_Init_Add("metaKnight_Slide",scr_MKSS_Attack_Execute_MetaKnight_Slide);
+	scr_MKSS_Attack_Init_Add("metaKnight_ParryChunkyWaddleDee",scr_MKSS_Attack_Execute_MetaKnight_ParryChunkyWaddleDee);
 	scr_MKSS_Attack_Init_Add("metaKnight_ParryChunkyGordo",scr_MKSS_Attack_Execute_MetaKnight_ParryChunkyGordo);
 	scr_MKSS_Attack_Init_Add("metaKnight_ParryTrappyPearl",scr_MKSS_Attack_Execute_MetaKnight_ParryTrappyPearl);
+	scr_MKSS_Attack_Init_Add("metaKnight_ParryStarlessMarxCutter",scr_MKSS_Attack_Execute_MetaKnight_ParryStarlessMarxCutter);
 	#endregion
 	
 	#region Galaxia

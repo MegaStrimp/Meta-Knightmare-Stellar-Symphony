@@ -1,6 +1,6 @@
-///@description MKSS - Attack - Execute - Meta Knight - Parry Trappy Pearl
+///@description MKSS - Attack - Execute - Meta Knight - Parry Starless Marx Cutter
 
-function scr_MKSS_Attack_Execute_MetaKnight_ParryTrappyPearl(playerIndex,currentParriedObject)
+function scr_MKSS_Attack_Execute_MetaKnight_ParryStarlessMarxCutter(playerIndex,currentParriedObject)
 {
 	with (playerIndex)
 	{
@@ -30,12 +30,31 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryTrappyPearl(playerIndex,current
 			owner = playerIndex;
 			isEnemy = false;
 			dmg = -1;
-			sprite_index = spr_MKSS_Attack_Trappy_Pearl;
-			attackAIStep = scr_MKSS_Attack_MetaKnight_ParryTrappyPearl_Step;
+			dirX = currentParriedObject.dirX;
+			sprite_index = spr_MKSS_Attack_StarlessMarx_ShooterCutter;
+			attackAIStep = scr_MKSS_Attack_MetaKnight_ParryStarlessMarxCutter_Step;
 		}
 		
 		with (currentParriedObject)
 		{
+			var count = 0;
+			with (obj_Attack)
+			{
+				if (owner == other.owner)
+				{
+					count += 1;
+					if (count > 1) break;
+				}
+			}
+				
+			if (count <= 1)
+			{
+				with (owner)
+				{
+					shooterCutter_CancelTimer = shooterCutter_CancelTimerMax;
+				}
+			}
+			
 			instance_destroy();
 		}
 	}

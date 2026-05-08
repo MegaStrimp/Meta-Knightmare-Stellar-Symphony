@@ -70,7 +70,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShooterCutter_Step()
 			{
 				if (shooterCutter_Count == 1)
 				{
-					scr_MKSS_Enemy_StarlessMarx_Teleport(192,96,scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShooterCutter_Step);
+					scr_MKSS_Enemy_StarlessMarx_Teleport(192,84,scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShooterCutter_Step);
 				}
 				else
 				{

@@ -4,7 +4,6 @@ function scr_MKSS_Enemy_WaddleDee_AI_Walk_Setup()
 {
 	#region Physics Variables
 	decel = .05;
-	decelThrown = .02;
 	
 	movespeed = .25;
 	
@@ -25,6 +24,7 @@ function scr_MKSS_Enemy_WaddleDee_AI_Walk_Setup()
 	#region Gameplay Variables
 	isHeld = false;
 	isThrown = false;
+	canHitChunky = false;
 	thrownTimer = -1;
 	thrownTimerMax = 90;
 	#endregion

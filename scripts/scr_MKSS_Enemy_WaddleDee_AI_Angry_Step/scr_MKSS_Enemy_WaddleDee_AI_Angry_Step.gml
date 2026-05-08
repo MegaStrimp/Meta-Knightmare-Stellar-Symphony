@@ -42,8 +42,62 @@ function scr_MKSS_Enemy_WaddleDee_AI_Angry_Step()
 					image_index = 0;
 					
 					knockbackResistance = knockbackResistanceOld;
+					canHitChunky = false;
+					isParriable = false;
 					
 					thrownTimer = thrownTimerMax;
+				}
+			}
+			#endregion
+			
+			#region Attack Back
+			if ((canHitChunky) and (instance_exists(target)))
+			{
+				var deeX = x;
+				var deeOwner = owner;
+				
+				if ((point_distance(x,y,target.x,target.y) <= 8) or (place_meeting(x,y,target)))
+				{
+					dirX = sign(x - target.x);
+					if (dirX == 0) dirX = 1;
+					canHitChunky = false;
+					
+					with (target)
+					{
+						//scr_MKSS_ParticleSet_Explosion1(x,y); STRIMPTODO smaller explosion
+						
+						with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+						{
+							owner = deeOwner;
+							isEnemy = false;
+							dmg = 3;
+							canBreakBlocks = true;
+							canBeFinisher = true;
+							isMelee = false;
+							freezeFrameForce = 2;
+							enemyHurtTimerMult = 1.25;
+							dirX = sign(other.x - deeX);
+							knockbackAngle = 90 - (dirX * 45);
+							knockbackForce = 3;
+							destroyTimer = 30;
+							mask_index = spr_64x64Mask_MiddleOrigin;
+							visible = false;
+							attackEnemyHitParticleIndex = scr_MKSS_ParticleSet_Impact;
+						}
+						
+						scr_MKSS_Score_Add(50);
+						scr_MKSS_SpawnMetaPoint(2,x,y,depth - 1,other.owner,90);
+						
+						scr_PlaySfx(snd_MKSS_EnemyHit);
+						
+						shakeX = 2;
+						other.shakeX = 2;
+						
+						scr_Camera_SetScreenshake(4);
+						
+						scr_MKSS_Enemy_GetHit(id,deeOwner,5,90 - (45 * sign(x - other.x)),1,other.speedMultFinal);
+						scr_MKSS_Enemy_GetHit(other,deeOwner,5,90 - (45 * sign(other.x - x)),1,other.speedMultFinal);
+					}
 				}
 			}
 			#endregion
@@ -120,7 +174,6 @@ function scr_MKSS_Enemy_WaddleDee_AI_Angry_Step()
 			if ((hasFriction) and (grounded))
 			{
 				var decelFinal = decel * speedMultFinal;
-				if (isThrown) decelFinal = decelThrown * speedMultFinal;
 				
 				hsp = scr_Entity_Friction(hsp,decelFinal);
 			}
@@ -168,6 +221,7 @@ function scr_MKSS_Enemy_WaddleDee_AI_Angry_Step()
 					
 					hsp = attack_Jump_Movespeed * dirX;
 					vsp = -attack_Jump_Jumpspeed;
+					grounded = false;
 					
 					attackTimer = -1;
 					break;

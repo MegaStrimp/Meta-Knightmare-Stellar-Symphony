@@ -19,6 +19,7 @@ function scr_MKSS_Enemy_Rango_AI_Flop_Setup()
 	
 	#region AI Scripts
 	enemyAIStep = scr_MKSS_Enemy_Rango_AI_Flop_Step;
+	enemyAnimationEnd = scr_MKSS_Enemy_Rango_AI_Flop_AnimationEnd;
 	#endregion
 	
 	#region Palette Variables

@@ -78,8 +78,11 @@ function scr_MKSS_Enemy_ChunkyDee_AI_Normal_ThrowEnemy_Step()
 					{
 						angle = 90 - (30 * dirX);
 						force = 3;
-						canBeParried = true;
 						parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryChunkyGordo"];
+					}
+					else
+					{
+						parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryChunkyWaddleDee"];
 					}
 					
 					hsp = lengthdir_x(force,angle);
@@ -88,6 +91,7 @@ function scr_MKSS_Enemy_ChunkyDee_AI_Normal_ThrowEnemy_Step()
 					isHeld = false;
 					isThrown = true;
 					canBeHit = true;
+					canBeParried = true;
 					knockbackResistanceOld = knockbackResistance;
 					knockbackResistance /= 1.2;
 				}

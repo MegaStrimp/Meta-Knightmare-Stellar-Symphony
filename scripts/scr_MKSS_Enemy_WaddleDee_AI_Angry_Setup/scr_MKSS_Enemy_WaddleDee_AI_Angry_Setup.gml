@@ -4,7 +4,6 @@ function scr_MKSS_Enemy_WaddleDee_AI_Angry_Setup()
 {
 	#region Physics Variables
 	decel = .05;
-	decelThrown = .1;
 	
 	movespeed = .25;
 	
@@ -36,6 +35,7 @@ function scr_MKSS_Enemy_WaddleDee_AI_Angry_Setup()
 	
 	isHeld = false;
 	isThrown = false;
+	canHitChunky = false;
 	thrownTimer = -1;
 	thrownTimerMax = 90;
 	#endregion

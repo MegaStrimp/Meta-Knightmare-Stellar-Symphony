@@ -1,6 +1,6 @@
-///@description MKSS - Attack - Execute - Meta Knight - Parry Chunky Gordo
+///@description MKSS - Attack - Execute - Meta Knight - Parry Chunky Waddle Dee
 
-function scr_MKSS_Attack_Execute_MetaKnight_ParryChunkyGordo(playerIndex,currentParriedObject)
+function scr_MKSS_Attack_Execute_MetaKnight_ParryChunkyWaddleDee(playerIndex,currentParriedObject)
 {
 	with (playerIndex)
 	{
@@ -25,16 +25,19 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryChunkyGordo(playerIndex,current
 	with (currentParriedObject)
 	{
 		canBeParried = false;
+		canHitChunky = true;
+		
 		owner = playerIndex;
 		shakeX = 1;
 		shakeY = 1;
 		
-		sprite_index = spriteSet.sprParry;
+		dirX *= -1;
+		hsp = 3 * dirX;
+		vsp = -1;
+		grounded = false;
 		
-		dirX = 1;
-		if (playerIndex.x < x) dirX = -1;
-		
-		scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_Gordo_AI_Bounce_Parry_Step);
+		hurtFrame = scr_WeightedRandomize(sprHurt);
+		sprite_index = sprHurt[hurtFrame][0];
 	}
 	#endregion
 }

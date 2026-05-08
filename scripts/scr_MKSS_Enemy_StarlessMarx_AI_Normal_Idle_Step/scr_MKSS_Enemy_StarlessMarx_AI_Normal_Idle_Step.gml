@@ -32,7 +32,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Idle_Step()
 			attackTimer = max(attackTimer - speedMultFinal,0);
 			if (attackTimer == 0)
 			{
-				scr_MKSS_Enemy_StarlessMarx_Teleport(64,96,scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShooterCutter_Step,,3);
+				scr_MKSS_Enemy_StarlessMarx_Teleport(64,84,scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShooterCutter_Step,,3);
 				
 				attackTimer = -1;
 			}
