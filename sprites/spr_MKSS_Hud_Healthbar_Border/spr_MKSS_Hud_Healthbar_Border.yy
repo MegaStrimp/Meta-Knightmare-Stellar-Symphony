@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_MKSS_Hud_Healthbar_Border",
   "bboxMode":0,
-  "bbox_bottom":18,
+  "bbox_bottom":17,
   "bbox_left":0,
   "bbox_right":73,
   "bbox_top":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":19,
+  "height":18,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"3968aecb-8cd2-4a4b-897e-11170e259eba","blendMode":0,"displayName":"default","isLocked":false,"name":"3968aecb-8cd2-4a4b-897e-11170e259eba","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},

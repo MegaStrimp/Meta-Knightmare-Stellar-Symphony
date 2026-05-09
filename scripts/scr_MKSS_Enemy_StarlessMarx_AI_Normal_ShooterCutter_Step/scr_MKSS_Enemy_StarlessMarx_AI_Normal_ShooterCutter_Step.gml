@@ -1,4 +1,4 @@
-///@description MKSS - Enemy - Starless Marx - AI - Normal - Shooter Cutter - Step
+ ///@description MKSS - Enemy - Starless Marx - AI - Normal - Shooter Cutter - Step
 
 function scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShooterCutter_Step()
 {

@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_MKSS_Hud_Special_Front",
   "bboxMode":0,
-  "bbox_bottom":21,
+  "bbox_bottom":20,
   "bbox_left":0,
   "bbox_right":79,
   "bbox_top":0,
@@ -17,11 +17,11 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"1ea02b15-ee6d-4ebe-9013-720ea53a06e3","name":"1ea02b15-ee6d-4ebe-9013-720ea53a06e3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c25ebd61-e70a-40d5-8f32-17a147bad1e6","name":"c25ebd61-e70a-40d5-8f32-17a147bad1e6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":22,
+  "height":21,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"3968aecb-8cd2-4a4b-897e-11170e259eba","blendMode":0,"displayName":"default","isLocked":false,"name":"3968aecb-8cd2-4a4b-897e-11170e259eba","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -93,8 +93,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1ea02b15-ee6d-4ebe-9013-720ea53a06e3","path":"sprites/spr_MKSS_Hud_Special_Front/spr_MKSS_Hud_Special_Front.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"8dd6deea-de17-4eb5-885f-a04c49380bc9","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c25ebd61-e70a-40d5-8f32-17a147bad1e6","path":"sprites/spr_MKSS_Hud_Special_Front/spr_MKSS_Hud_Special_Front.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"fd760b1e-1841-416a-babb-0e7f9368ab91","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -26,12 +26,12 @@ function scr_MKSS_Hud_DrawGUI()
 	#endregion
 	
 	#region Healthbar
-	var barLength = floor((global.playerHp[0] / global.playerMaxHp[0]) * 55);
+	var barLength = floor((global.playerHp[0] / global.playerMaxHp[0]) * 59);
 	
-	draw_sprite(spr_MKSS_Hud_Healthbar_Back,0,79,global.gameHeight - 13);
-	draw_sprite_stretched(spr_MKSS_Hud_Healthbar_Front,0,79,global.gameHeight - 13,barLength,7);
-	draw_sprite(spr_MKSS_Hud_Healthbar_Corner,0,79 - 4 + barLength,global.gameHeight - 13);
-	draw_sprite(spr_MKSS_Hud_Healthbar_Border,0,72,global.gameHeight - 21);
+	draw_sprite(spr_MKSS_Hud_Healthbar_Back,0,78,global.gameHeight - 12);
+	draw_sprite_part(spr_MKSS_Hud_Healthbar_Front,0,0,0,max(0,barLength - 6),7,78,global.gameHeight - 12);
+	draw_sprite(spr_MKSS_Hud_Healthbar_Corner,0,78 - 6 + barLength,global.gameHeight - 12);
+	draw_sprite(spr_MKSS_Hud_Healthbar_Border,0,72,global.gameHeight - 20);
 	#endregion
 	
 	#region Special
@@ -39,8 +39,8 @@ function scr_MKSS_Hud_DrawGUI()
 	{
 		var barLength = floor((global.MKSS_SpecialCurrent / global.MKSS_SpecialTarget) * 80);
 		
-		draw_sprite(spr_MKSS_Hud_Special_Border,0,69,global.gameHeight - 29);
-		draw_sprite_part(spr_MKSS_Hud_Special_Front,0,0,0,barLength,22,69,global.gameHeight - 29);
+		draw_sprite(spr_MKSS_Hud_Special_Border,0,69,global.gameHeight - 27);
+		draw_sprite_part(spr_MKSS_Hud_Special_Front,0,0,0,barLength,22,69,global.gameHeight - 27);
 	}
 	#endregion
 	

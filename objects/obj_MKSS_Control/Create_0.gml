@@ -28,6 +28,9 @@ for (var i = 0; i < global.maxPlayers; i++)
 	global.MKSS_PlayerSkin[i] = 0;
 	global.MKSS_PlayerWeaponList[i] = ds_list_create();
 	global.MKSS_PlayerWeaponList_Index[i] = 0;
+	
+	healPauseTargetHeal[i] = 0;
+	healPauseTimer[i] = -1;
 }
 
 global.pauseScript = scr_MKSS_PauseScript;

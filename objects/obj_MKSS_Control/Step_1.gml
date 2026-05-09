@@ -1,5 +1,9 @@
 ///@description Begin Step
 
+#region Variables
+speedMultFinal = global.speedMultGlobal * global.deltaTime;
+#endregion
+
 #region Flags
 global.flag_MKSS_MetaPointCollect = false;
 global.flag_MKSS_AbilitySwitch = false;

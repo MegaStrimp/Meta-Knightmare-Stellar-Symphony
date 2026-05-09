@@ -7,7 +7,7 @@ if (isActive)
 	{
 		if (input_check_pressed("left",playerNum))
 		{
-			scr_PlaySfx(snd_DL1_Select);
+			scr_PlaySfx(snd_MKSS_Select);
 			
 			selection = (selection - 1 + paletteListCount) % paletteListCount;
 			
@@ -43,7 +43,7 @@ if (isActive)
 		
 		if (input_check_pressed("right",playerNum))
 		{
-			scr_PlaySfx(snd_DL1_Select);
+			scr_PlaySfx(snd_MKSS_Select);
 			
 			selection = (selection + 1 + paletteListCount) % paletteListCount;
 			

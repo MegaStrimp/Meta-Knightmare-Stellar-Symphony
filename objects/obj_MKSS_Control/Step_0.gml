@@ -1,5 +1,36 @@
 ///@description Main
 
+for (var i = 0; i < global.maxPlayers; i++)
+{
+	#region Heal Pause Timer
+	var healthAccel = 4;
+	
+	if (healPauseTimer[i] != -1)
+	{
+		healPauseTimer[i] = max(healPauseTimer[i] - speedMultFinal,0);
+		if (healPauseTimer[i] == 0)
+		{
+			if ((healPauseTargetHeal[i] > 0) and (global.playerHp[i] < global.playerMaxHp[i]) and (healPauseTargetHeal[i] >= healthAccel))
+			{
+				scr_PlaySfx(snd_MKSS_BossHealth);
+				
+				global.playerHp[i] = min(global.playerMaxHp[i],global.playerHp[i] + healthAccel);
+				healPauseTargetHeal[i] -= healthAccel;
+				
+				healPauseTimer[i] = 2;
+			}
+			else
+			{
+				global.playerHp[i] = min(global.playerMaxHp[i],global.playerHp[i] + healPauseTargetHeal[i]);
+				healPauseTargetHeal[i] = 0;
+				
+				healPauseTimer[i] = -1;
+			}
+		}
+	}
+	#endregion
+}
+
 #region Debug
 if (global.debug)
 {
@@ -29,7 +60,7 @@ if (global.debug)
 	#region Hurt Player
 	if (keyboard_check_pressed(ord("K")))
 	{
-		with (obj_Player) scr_Player_GetHit(id,1);
+		with (obj_Player) scr_Player_GetHit(id,50);
 	}
 	#endregion
 	
