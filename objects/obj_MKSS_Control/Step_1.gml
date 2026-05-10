@@ -14,6 +14,7 @@ if ((global.MKSS_MarkedEnemyID != -1) and (!instance_exists(global.MKSS_MarkedEn
 {
 	global.MKSS_MarkedEnemyID = -1;
 	global.MKSS_MarkedEnemyTitle = -1;
+	global.MKSS_MarkedEnemyHealthbarScript = -1;
 }
 
 if (!global.pauseFinal)
@@ -25,6 +26,7 @@ if (!global.pauseFinal)
 		{
 			global.MKSS_MarkedEnemyID = -1;
 			global.MKSS_MarkedEnemyTitle = -1;
+			global.MKSS_MarkedEnemyHealthbarScript = -1;
 			
 			global.MKSS_MarkedEnemyTimer = -1;
 		}
@@ -37,5 +39,6 @@ if ((global.MKSS_MarkedBossID != -1) and (!instance_exists(global.MKSS_MarkedBos
 {
 	global.MKSS_MarkedBossID = -1;
 	global.MKSS_MarkedBossTitle = -1;
+	global.MKSS_MarkedBossHealthbarScript = -1;
 }
 #endregion

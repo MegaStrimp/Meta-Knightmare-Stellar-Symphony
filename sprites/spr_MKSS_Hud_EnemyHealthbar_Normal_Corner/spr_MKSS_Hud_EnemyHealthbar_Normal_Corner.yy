@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_MKSS_Hud_EnemyHealthbar_MiddleCorner",
+  "%Name":"spr_MKSS_Hud_EnemyHealthbar_Normal_Corner",
   "bboxMode":0,
   "bbox_bottom":5,
   "bbox_left":0,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"6ca6be18-7f8a-454f-9725-bfab5e06a5f8","name":"6ca6be18-7f8a-454f-9725-bfab5e06a5f8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"382913d9-9aff-4c37-8034-a36cfb52b600","name":"382913d9-9aff-4c37-8034-a36cfb52b600","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -21,7 +21,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"b02c3e57-e526-48e2-83c6-a2078fd2ece1","blendMode":0,"displayName":"default","isLocked":false,"name":"b02c3e57-e526-48e2-83c6-a2078fd2ece1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_MKSS_Hud_EnemyHealthbar_MiddleCorner",
+  "name":"spr_MKSS_Hud_EnemyHealthbar_Normal_Corner",
   "nineSlice":{
     "$GMNineSliceData":"",
     "bottom":0,
@@ -44,15 +44,15 @@
   },
   "origin":0,
   "parent":{
-    "name":"Enemy Healthbar",
-    "path":"folders/Meta Knightmare Stellar Symphony/Hud/Sprites/Enemy Healthbar.yy",
+    "name":"Normal",
+    "path":"folders/Meta Knightmare Stellar Symphony/Hud/Sprites/Enemy Healthbar/Normal.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_MKSS_Hud_EnemyHealthbar_MiddleCorner",
+    "%Name":"spr_MKSS_Hud_EnemyHealthbar_Normal_Corner",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -76,7 +76,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_MKSS_Hud_EnemyHealthbar_MiddleCorner",
+    "name":"spr_MKSS_Hud_EnemyHealthbar_Normal_Corner",
     "playback":1,
     "playbackSpeed":0.0,
     "playbackSpeedType":0,
@@ -88,8 +88,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6ca6be18-7f8a-454f-9725-bfab5e06a5f8","path":"sprites/spr_MKSS_Hud_EnemyHealthbar_MiddleCorner/spr_MKSS_Hud_EnemyHealthbar_MiddleCorner.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ca473fc6-38db-4538-b164-95dc70ad6b95","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"382913d9-9aff-4c37-8034-a36cfb52b600","path":"sprites/spr_MKSS_Hud_EnemyHealthbar_Normal_Corner/spr_MKSS_Hud_EnemyHealthbar_Normal_Corner.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"99ecdd1e-e3e7-4c20-a8eb-d6b14bc91b90","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

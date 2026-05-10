@@ -423,6 +423,8 @@ function scr_MKSS_Enemy_Init_Set()
 		sprOrbIdle: spr_MKSS_Enemy_StarlessNightmare_Base_Orb_Idle,
 		sprOrbHurt: spr_MKSS_Enemy_StarlessNightmare_Base_Orb_Hurt
 	});
+	
+	scr_MKSS_Enemy_Init_Add_EnemyHealthbar(targetMappedID,scr_MKSS_Hud_EnemyHealthbar_Starless);
 	#endregion
 	
 	#region Starless Marx
@@ -447,6 +449,8 @@ function scr_MKSS_Enemy_Init_Set()
 		
 		maskIndex: spr_32x32Mask_MiddleOrigin
 	});
+	
+	scr_MKSS_Enemy_Init_Add_EnemyHealthbar(targetMappedID,scr_MKSS_Hud_EnemyHealthbar_Starless);
 	#endregion
 	
 	#region Starless Minimarx

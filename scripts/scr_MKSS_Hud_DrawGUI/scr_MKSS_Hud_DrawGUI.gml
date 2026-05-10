@@ -62,45 +62,16 @@ function scr_MKSS_Hud_DrawGUI()
 	{
 		markedEnemyIDFinal = global.MKSS_MarkedEnemyID;
 		var enemyTitle = global.MKSS_MarkedEnemyTitle;
+		var enemyHealthbarScript = global.MKSS_MarkedEnemyHealthbarScript;
 	}
 	else if ((global.MKSS_MarkedBossID != -1) and (instance_exists(global.MKSS_MarkedBossID)))
 	{
 		markedEnemyIDFinal = global.MKSS_MarkedBossID;
 		var enemyTitle = global.MKSS_MarkedBossTitle;
+		var enemyHealthbarScript = global.MKSS_MarkedBossHealthbarScript;
 	}
 	
-	if (markedEnemyIDFinal != noone)
-	{
-		#region Shake
-		var shakeFinal = 0;
-		
-		if (!global.pauseFinal)
-		{
-			var canShake = (markedEnemyIDFinal.hpHealthbarShakeTimer != -1)
-			
-			shakeFinal = floor(choose(-canShake,canShake));
-		}
-		#endregion
-		
-		var enemyHp = markedEnemyIDFinal.hpHealthbar;
-		var enemyHpMiddle = markedEnemyIDFinal.hpHealthbarMiddle;
-		var enemyMaxHp = markedEnemyIDFinal.maxHp;
-		
-		var barLength = floor((enemyHp / enemyMaxHp) * 66);
-		var barLengthMiddle = floor((enemyHpMiddle / enemyMaxHp) * 66);
-		
-		draw_sprite(spr_MKSS_Hud_EnemyHealthbar_Back,0,global.gameWidth - 76 + shakeFinal,global.gameHeight - 11);
-		draw_sprite_stretched(spr_MKSS_Hud_EnemyHealthbar_Middle,0,global.gameWidth - 76 + shakeFinal,global.gameHeight - 11,barLengthMiddle,6);
-		draw_sprite(spr_MKSS_Hud_EnemyHealthbar_MiddleCorner,0,global.gameWidth - 76 - 5 + barLengthMiddle + shakeFinal,global.gameHeight - 11);
-		draw_sprite_stretched(spr_MKSS_Hud_EnemyHealthbar_Front,0,global.gameWidth - 76 + shakeFinal,global.gameHeight - 11,barLength,6);
-		draw_sprite(spr_MKSS_Hud_EnemyHealthbar_Corner,0,global.gameWidth - 76 - 5 + barLength + shakeFinal,global.gameHeight - 11);
-		draw_sprite(spr_MKSS_Hud_EnemyHealthbar_Border,0,global.gameWidth - 92 + shakeFinal,global.gameHeight - 20);
-		draw_sprite(spr_MKSS_Hud_EnemyHealthbar_Icon,0,global.gameWidth - 92 + 3 + shakeFinal,global.gameHeight - 20 + 3);
-		
-		draw_set_font(global.fontSpriteEnemyHealthbar);
-		if (enemyTitle != -1) draw_text(167 + shakeFinal,global.gameHeight - 23,string(enemyTitle));
-		draw_set_font(global.fontSpriteMain);
-	}
+	if (markedEnemyIDFinal != noone) script_execute_ext(enemyHealthbarScript,[markedEnemyIDFinal,enemyTitle]);
 	#endregion
 	
 	#region Stage Score

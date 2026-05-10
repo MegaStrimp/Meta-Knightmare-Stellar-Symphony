@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_MKSS_Hud_EnemyHealthbar_Front",
+  "%Name":"spr_MKSS_Hud_EnemyHealthbar_Normal_Front",
   "bboxMode":0,
   "bbox_bottom":5,
   "bbox_left":0,
@@ -21,7 +21,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"b02c3e57-e526-48e2-83c6-a2078fd2ece1","blendMode":0,"displayName":"default","isLocked":false,"name":"b02c3e57-e526-48e2-83c6-a2078fd2ece1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_MKSS_Hud_EnemyHealthbar_Front",
+  "name":"spr_MKSS_Hud_EnemyHealthbar_Normal_Front",
   "nineSlice":{
     "$GMNineSliceData":"",
     "bottom":0,
@@ -44,15 +44,15 @@
   },
   "origin":0,
   "parent":{
-    "name":"Enemy Healthbar",
-    "path":"folders/Meta Knightmare Stellar Symphony/Hud/Sprites/Enemy Healthbar.yy",
+    "name":"Normal",
+    "path":"folders/Meta Knightmare Stellar Symphony/Hud/Sprites/Enemy Healthbar/Normal.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_MKSS_Hud_EnemyHealthbar_Front",
+    "%Name":"spr_MKSS_Hud_EnemyHealthbar_Normal_Front",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -76,7 +76,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_MKSS_Hud_EnemyHealthbar_Front",
+    "name":"spr_MKSS_Hud_EnemyHealthbar_Normal_Front",
     "playback":1,
     "playbackSpeed":0.0,
     "playbackSpeedType":0,
@@ -88,7 +88,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"15c6d7b3-908b-4b25-af18-f764cabd130a","path":"sprites/spr_MKSS_Hud_EnemyHealthbar_Front/spr_MKSS_Hud_EnemyHealthbar_Front.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"15c6d7b3-908b-4b25-af18-f764cabd130a","path":"sprites/spr_MKSS_Hud_EnemyHealthbar_Normal_Front/spr_MKSS_Hud_EnemyHealthbar_Normal_Front.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"0b765976-1216-412b-b56a-c1c6768fa7fd","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

@@ -87,8 +87,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Enemy Healthbar",
-    "path":"folders/Meta Knightmare Stellar Symphony/Hud/Sprites/Enemy Healthbar.yy",
+    "name":"Fonts",
+    "path":"folders/Meta Knightmare Stellar Symphony/Hud/Sprites/Enemy Healthbar/Fonts.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

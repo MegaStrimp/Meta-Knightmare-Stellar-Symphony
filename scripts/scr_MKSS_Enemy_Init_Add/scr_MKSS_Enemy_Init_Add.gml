@@ -9,7 +9,8 @@ function scr_MKSS_Enemy_Init_Add(targetID,targetName = "")
 	{
         ID: targetID,
 		name: targetName,
-		isUnlocked: false
+		
+		enemyHealthbarScript: scr_MKSS_Hud_EnemyHealthbar_Normal
     };
 	
 	return targetMappedID;
