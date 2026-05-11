@@ -20,7 +20,7 @@ function scr_MKSS_Enemy_ChunkyDee_AI_Normal_Setup(targetIsBoss = true,targetPlay
 	
 	hasWalked = false;
 	
-	//ds_list_add(attackList,global.MKSS_AttackIDs[? "chunkyDee_Dash"]);
+	ds_list_add(attackList,global.MKSS_AttackIDs[? "chunkyDee_Dash"]);
 	ds_list_add(attackList,global.MKSS_AttackIDs[? "chunkyDee_ThrowDee"]);
 	ds_list_add(attackList,global.MKSS_AttackIDs[? "chunkyDee_Jump"]);
 	ds_list_add(attackList,global.MKSS_AttackIDs[? "chunkyDee_ThrowGordo"]);
@@ -29,6 +29,8 @@ function scr_MKSS_Enemy_ChunkyDee_AI_Normal_Setup(targetIsBoss = true,targetPlay
 	
 	attackTimer = -1;
 	attackTimerMax = 20;
+	
+	heldEnemy = -1;
 	
 	isBoss = targetIsBoss;
 	playBossTheme = targetPlayBossTheme;

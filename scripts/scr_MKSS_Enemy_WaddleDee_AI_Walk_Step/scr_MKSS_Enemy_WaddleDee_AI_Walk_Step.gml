@@ -129,7 +129,18 @@ function scr_MKSS_Enemy_WaddleDee_AI_Walk_Step()
 			}
 		}
 		
-		if (!isHeld)
+		if (isHeld)
+		{
+			var isHeldCancel = false;
+			if (!instance_exists(owner)) isHeldCancel = true;
+			
+			if (isHeldCancel)
+			{
+				isHeld = false;
+				canBeHit = true;
+			}
+		}
+		else
 		{
 			#region Friction
 			if ((hasFriction) and (grounded))

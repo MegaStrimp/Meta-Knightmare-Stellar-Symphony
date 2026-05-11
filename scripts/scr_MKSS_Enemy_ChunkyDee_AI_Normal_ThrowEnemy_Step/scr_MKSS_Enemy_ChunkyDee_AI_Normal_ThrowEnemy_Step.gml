@@ -41,6 +41,7 @@ function scr_MKSS_Enemy_ChunkyDee_AI_Normal_ThrowEnemy_Step()
 				heldEnemy = instance_create_depth(x,y - 24,depth - 1,ds_list_find_value(thrownEnemyList,0));
 				with (heldEnemy)
 				{
+					owner = id;
 					target = other;
 					dirX = other.dirX;
 					script_execute(ds_list_find_value(other.thrownEnemyStateList,0));
@@ -94,6 +95,8 @@ function scr_MKSS_Enemy_ChunkyDee_AI_Normal_ThrowEnemy_Step()
 					canBeParried = true;
 					knockbackResistanceOld = knockbackResistance;
 					knockbackResistance /= 1.2;
+					
+					heldEnemy = -1;
 				}
 				
 				ds_list_delete(thrownEnemyList,0);

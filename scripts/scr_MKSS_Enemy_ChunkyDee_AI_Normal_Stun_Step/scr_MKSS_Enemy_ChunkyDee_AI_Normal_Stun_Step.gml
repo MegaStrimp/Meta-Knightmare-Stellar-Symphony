@@ -5,6 +5,15 @@ function scr_MKSS_Enemy_ChunkyDee_AI_Normal_Stun_Step()
 	#region Setup
 	if (enemyState_Setup)
 	{
+		if (heldEnemy != -1)
+		{
+			with (heldEnemy)
+			{
+				isHeld = false;
+				canBeHit = true;
+			}
+		}
+		
 		stunCancelTimer = 300;
 		
 		enemyState_Setup = false;
