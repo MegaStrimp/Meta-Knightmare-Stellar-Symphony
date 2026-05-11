@@ -43,7 +43,7 @@ function scr_MKSS_Enemy_WaddleDee_AI_Angry_Step()
 					
 					knockbackResistance = knockbackResistanceOld;
 					canHitChunky = false;
-					isParriable = false;
+					canBeParried = false;
 					
 					thrownTimer = thrownTimerMax;
 				}
@@ -79,7 +79,7 @@ function scr_MKSS_Enemy_WaddleDee_AI_Angry_Step()
 							dirX = sign(other.x - deeX);
 							knockbackAngle = 90 - (dirX * 45);
 							knockbackForce = 3;
-							destroyTimer = 30;
+							destroyTimer = 1;
 							mask_index = spr_64x64Mask_MiddleOrigin;
 							visible = false;
 							attackEnemyHitParticleIndex = scr_MKSS_ParticleSet_Impact;

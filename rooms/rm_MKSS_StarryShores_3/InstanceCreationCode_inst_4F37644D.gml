@@ -1,0 +1,1 @@
+activationScript = scr_MKSS_Switch_Node_Destroy;

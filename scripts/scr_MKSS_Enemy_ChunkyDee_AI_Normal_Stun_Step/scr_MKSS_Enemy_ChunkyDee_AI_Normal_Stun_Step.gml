@@ -50,6 +50,8 @@ function scr_MKSS_Enemy_ChunkyDee_AI_Normal_Stun_Step()
 		
 		#region Animation
 		sprite_index = sprHurt[hurtFrame][0];
+		
+		if (stunCancelTimer <= 60) shakeX = 2;
 		#endregion
 	}
 }
