@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_MKSS_Explosion1",
+  "%Name":"snd_MKSS_TwinkleSwitch",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.759093,
+  "duration":1.0893197,
   "exportDir":"",
-  "name":"snd_MKSS_Explosion1",
+  "name":"snd_MKSS_TwinkleSwitch",
   "parent":{
     "name":"Sound Effects",
     "path":"folders/Meta Knightmare Stellar Symphony/Audio/Sound Effects.yy",
@@ -21,7 +21,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_MKSS_Explosion1.ogg",
+  "soundFile":"snd_MKSS_TwinkleSwitch.wav",
   "tags":[
     "Sound Effect",
   ],

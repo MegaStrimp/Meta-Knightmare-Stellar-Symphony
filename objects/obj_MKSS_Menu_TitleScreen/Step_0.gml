@@ -49,7 +49,7 @@ if (!global.pauseFinal)
 	if (state >= 4)
 	{
 		swordAngle = min(swordAngle + 5,90);
-		swordX = lerp(swordX,2,.3);
+		swordX = lerp(swordX,11,.3);
 		swordY = lerp(swordY,160,.2);
 	}
 	else
@@ -87,9 +87,9 @@ if (!global.pauseFinal)
 	if (state >= 4)
 	{
 		#region Save Buttons
-		saveButtonX = lerp(saveButtonX,263,.1);
+		saveButtonX = lerp(saveButtonX,263,.2);
 		
-		miscButtonY = lerp(miscButtonY,128,.1);
+		miscButtonY = lerp(miscButtonY,128,.2);
 		#endregion
 		
 		#region Title Sword Stars Timer
@@ -98,7 +98,7 @@ if (!global.pauseFinal)
 			titleSwordStarsTimer = max(titleSwordStarsTimer - speedMultFinal,0);
 			if (titleSwordStarsTimer == 0)
 			{
-				var starPar = instance_create_depth(0,176,depth,obj_MKSS_Menu_TitleScreen_TitleSwordStars);
+				var starPar = instance_create_depth(9,176,depth,obj_MKSS_Menu_TitleScreen_TitleSwordStars);
 				starPar.anchorDepth = depth;
 				starPar.image_index = irandom_range(0,6);
 				starPar.image_speed = 0;

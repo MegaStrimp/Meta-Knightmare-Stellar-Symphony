@@ -8,7 +8,7 @@ if (!localPause)
 		destroyTimer = max(destroyTimer - speedMultFinal,0);
 		if (destroyTimer == 0)
 		{
-			scr_PlaySfx(snd_MKSS_Explosion1);
+			scr_PlaySfx(snd_MKSS_TwinkleSwitch);
 			
 			scr_MKSS_ParticleSet_Explosion3(x,y);
 			

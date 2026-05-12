@@ -14,7 +14,8 @@ function scr_MKSS_Weapon_Init_Add(targetID,targetName = "",targetSetupScript = u
 		hudIcon: targetHudIcon,
 		hudIconSmall: targetHudIconSmall,
 		
-		isUnlocked: false
+		isUnlocked: false,
+		isDefault: false
     };
 	
 	return targetMappedID;

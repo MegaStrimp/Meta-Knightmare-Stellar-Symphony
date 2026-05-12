@@ -10,7 +10,7 @@ function scr_MKSS_Player_MetaKnight_Setup()
 		global.playerHp[playerNum] = global.playerMaxHp[playerNum];
 		if ((currentAbility == -1) and (ds_list_size(global.MKSS_PlayerWeaponList[playerNum]) != 0))
 		{
-			global.playerAbility[playerNum] = global.MKSS_PlayerWeaponList[0];
+			global.playerAbility[playerNum] = ds_list_find_value(global.MKSS_PlayerWeaponList[playerNum],0);
 			scr_Player_ChangeAbility(id,global.playerAbility[playerNum]);
 			script_execute(global.MKSS_WeaponList[global.playerAbility[playerNum]].setupScript);
 		}

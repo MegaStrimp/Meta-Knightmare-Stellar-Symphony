@@ -7,5 +7,7 @@ function scr_MKSS_UI_Button_Save3_Create()
 	#region Variables
 	//saveProgress = scr_MKSS_DataGetPercentage("Save3.ini");
 	saveProgress = 0;
+	
+	buttonText = "Save 3";
 	#endregion
 }

@@ -8,7 +8,7 @@ function scr_MKSS_Player_MetaKnight_State_Galaxia_DownThrust_Step()
 		downThrustState = 0;
 		galaxia_DownThrust_StateTimer = galaxia_DownThrust_StateTimerMax;
 		galaxia_DownThrust_StateTimerMax = 20;
-		galaxia_DownThrust_EndTimer = -1;
+		galaxia_DownThrust_EndTimer = 600;
 		galaxia_DownThrust_EndTimerMax = 20;
 		
 		attackMakeLightInvincible = true;

@@ -13,6 +13,7 @@ function scr_MKSS_Stage_Init_Set()
 	var stageID = "iceCreamIsland";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,[0,0,0,0],false);
+	global.MKSS_StageList[targetMappedID].isDefault = true;
 	#endregion
 	
 	#region Starry Shores

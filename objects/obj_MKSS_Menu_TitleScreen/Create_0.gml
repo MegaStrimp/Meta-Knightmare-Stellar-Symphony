@@ -29,10 +29,11 @@ starAlpha = 0;
 saveButtonX = 500;
 deleteSaveState = 0;
 
-
 miscButtonY = 170;
 
 titleSwordStarsTimer = 15;
+
+currentButtonText = "";
 
 switch (global.lastSelectedSave)
 {

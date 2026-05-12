@@ -7,5 +7,7 @@ function scr_MKSS_UI_Button_Component_Save_Base(targetNum)
 	saveSelectLerp = lerp(saveSelectLerp,!isSelected,.1);
 	
 	x = obj_MKSS_Menu_TitleScreen.saveButtonX + (saveSelectLerp * 23);
+	
+	if (isSelected) obj_MKSS_Menu_TitleScreen.currentButtonText = buttonText;
 	#endregion
 }

@@ -14,6 +14,7 @@ function scr_MKSS_Weapon_Init_Set()
 	
 	#region Galaxia
 	var targetMappedID = scr_MKSS_Weapon_Init_Add("galaxia","Galaxia",scr_MKSS_Weapon_Galaxia_Setup,scr_MKSS_Weapon_Galaxia_Base,spr_MKSS_Sword_Galaxia_HudIcon,spr_MKSS_Sword_Galaxia_HudIcon_Small);
+	global.MKSS_WeaponList[targetMappedID].isDefault = true;
 	
 	scr_MKSS_Weapon_Init_Add_SpriteSet(targetMappedID,
 	{

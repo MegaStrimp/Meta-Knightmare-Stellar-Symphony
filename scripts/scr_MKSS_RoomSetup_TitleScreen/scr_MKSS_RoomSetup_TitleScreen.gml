@@ -7,7 +7,7 @@ function scr_MKSS_RoomSetup_TitleScreen()
 	#endregion
 	
 	#region Background
-	scr_Camera_SetBackground(scr_MKSS_SetBackground_StarryShores);
+	scr_Camera_SetBackground(scr_MKSS_SetBackground_TitleScreen);
 	#endregion
 	
 	#region Screen Setup

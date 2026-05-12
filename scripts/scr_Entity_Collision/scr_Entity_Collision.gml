@@ -16,7 +16,7 @@ function scr_Entity_Collision(hasWallCollision = true,XCollisionScript = -1,YCol
 		if ((!place_meeting(x + hspFinal,y,obj_Wall)) and (place_meeting(x,y + dirY,obj_Wall)) and (!place_meeting(x,y + dirY,obj_Platform)))
 		{
 			yplus = 0;
-			while (!place_meeting(x + hspFinal,y + yplus,obj_Wall) && yplus <= abs(hspFinal))
+			while ((!place_meeting(x + hspFinal,y + yplus,obj_Wall)) and (yplus <= abs(hspFinal)))
 			{
 				yplus += 1;
 			}

@@ -53,3 +53,7 @@ if ((blackAlpha == 0) and (state < 4))
 	scribble("[fnt_Advance_Small]" + string(text) + string(global.versionNumber) + "[/font]").align(fa_right,fa_bottom).draw(238,158);
 }
 #endregion
+
+#region Button Text
+scribble("[fnt_Advance]" + currentButtonText + "[/font]").align(fa_center,fa_bottom).wrap(74).draw(38,158);
+#endregion

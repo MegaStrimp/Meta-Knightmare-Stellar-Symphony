@@ -8,8 +8,9 @@ function scr_MKSS_Stage_Init_Add(targetID,targetMedalScores = [0,0,0,0],targetHa
 	global.MKSS_StageList[global.MKSS_StageIDs[? targetID]] = 
 	{
         ID: targetID,
-        unlocked: false,
-        beaten: false,
+        isUnlocked: false,
+        isBeaten: false,
+		isDefault: false,
         earnedHighScore: 0,
         medalScores: targetMedalScores,
         hasScore: targetHasScore,

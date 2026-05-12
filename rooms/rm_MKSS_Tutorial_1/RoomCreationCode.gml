@@ -9,7 +9,7 @@ script_execute(scr_MKSS_RoomSetup_IceCreamIsland);
 #endregion
 
 #region Intro Cutscene
-if (!global.MKSS_StageList[global.MKSS_StageIDs[? "iceCreamIsland"]].beaten)
+if (!global.MKSS_StageList[global.MKSS_StageIDs[? "iceCreamIsland"]].isBeaten)
 {
 	instance_create_layer(0,0,"Instances",obj_MKSS_Cutscene_TutorialIntro);
 	instance_create_layer(0,0,"Instances",obj_MKSS_CameraOffsetController);

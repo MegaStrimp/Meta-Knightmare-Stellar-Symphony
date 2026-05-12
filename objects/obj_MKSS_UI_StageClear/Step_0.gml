@@ -50,6 +50,8 @@ if (nextRoomTimer != -1)
 	{
 		scr_PlaySfx(snd_MKSS_NextScene);
 		
+		scr_MKSS_SaveData(global.selectedSave);
+		
 		with (scr_GoToRoom(targetRoom,false)) alphaSpd = (alphaSpd / 2);
 		
 		nextRoomTimer = -1;

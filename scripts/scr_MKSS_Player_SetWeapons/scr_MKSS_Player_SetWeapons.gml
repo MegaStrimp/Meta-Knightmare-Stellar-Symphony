@@ -14,12 +14,15 @@ function scr_MKSS_Player_SetWeapons()
 		{
 			ds_list_add(global.MKSS_PlayerWeaponList[playerNum],i);
 			
-			if (currentAbility == -1)
+			with (obj_Player)
 			{
-				global.playerAbility[playerNum] = i;
-				scr_Player_ChangeAbility(id,global.playerAbility[playerNum]);
-				weaponSpriteSet = global.MKSS_WeaponList[i].spriteSet;
-				script_execute(global.MKSS_WeaponList[i].setupScript);
+				if (currentAbility == -1)
+				{
+					global.playerAbility[playerNum] = i;
+					scr_Player_ChangeAbility(id,global.playerAbility[playerNum]);
+					weaponSpriteSet = global.MKSS_WeaponList[i].spriteSet;
+					script_execute(global.MKSS_WeaponList[i].setupScript);
+				}
 			}
 		}
 	}
