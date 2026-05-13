@@ -161,6 +161,7 @@ global.inStage = false;
 global.hasStageEntityTracker = true;
 global.stageEntityTracker = -1;
 global.notifQueue = ds_list_create();
+global.drawCollisionMasks = false;
 
 global.hasHud = true;
 

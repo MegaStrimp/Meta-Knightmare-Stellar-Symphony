@@ -16,7 +16,7 @@ function scr_MKSS_UI_Button_Component_Save_Trigger(targetSave)
 	var targetAlphaSpd = .05;
 	if (!global.MKSS_StageList[global.MKSS_StageIDs[? "iceCreamIsland"]].isBeaten)
 	{
-		targetRoom = rm_MKSS_Tutorial_1;
+		targetRoom = rm_MKSS_IceCreamIsland_1;
 		var targetAlphaSpd = .01;
 	}
 	

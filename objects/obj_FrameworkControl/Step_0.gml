@@ -28,6 +28,10 @@ if (global.debug)
 	if (keyboard_check(ord("L"))) global.speedMultGlobal = 1;
 	if (keyboard_check(ord("K"))) global.speedMultGlobal -= .002;
 	#endregion
+	
+	#region Misc
+	if (keyboard_check_pressed(ord("I"))) global.drawCollisionMasks = !global.drawCollisionMasks;
+	#endregion
 }
 #endregion
 

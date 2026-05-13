@@ -181,6 +181,4 @@ function scr_MKSS_Enemy_WaddleDee_AI_Walk_Step()
 		}
 		#endregion
 	}
-	
-	show_debug_message(isThrown)
 }

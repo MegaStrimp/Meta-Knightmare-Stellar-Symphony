@@ -24,7 +24,7 @@ function scr_MKSS_Player_Init_Set()
 		sprFallHop: spr_MKSS_Player_MetaKnight_Normal_Base_Fall,
 		sprDuck: spr_MKSS_Player_MetaKnight_Normal_Base_Duck,
 		sprUpDuck: spr_MKSS_Player_MetaKnight_Normal_Base_UpDuck,
-		sprSquish: spr_MKSS_Player_MetaKnight_Normal_Base_Idle,
+		sprSquish: spr_MKSS_Player_MetaKnight_Normal_Base_Squish,
 		sprSlide: spr_MKSS_Player_MetaKnight_Normal_Base_Slide,
 		sprFloat: spr_MKSS_Player_MetaKnight_Normal_Base_Float,
 		sprFlap: spr_MKSS_Player_MetaKnight_Normal_Base_Flap,

@@ -19,7 +19,7 @@ else if (global.freezeFrame)
 }
 #endregion
 
-#region Draw
+#region Draw Self
 if (playerDraw != -1)
 {
 	script_execute(playerDraw);
@@ -32,5 +32,12 @@ else
 		draw_sprite_ext(sprite_index,image_index,x + shakeXFinal + drawXOffset,y + shakeYFinal + drawYOffset,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
 		if ((global.shaders) and (palSprite != -1)) pal_swap_reset();
 	}
+}
+#endregion
+
+#region Collision Mask
+if (global.drawCollisionMasks)
+{
+	draw_sprite_ext(mask_index,image_index,x,y,image_xscale,image_yscale,image_angle,c_red,.5);
 }
 #endregion

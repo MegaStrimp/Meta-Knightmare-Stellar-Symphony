@@ -93,7 +93,9 @@ function scr_MKSS_Player_MetaKnight_Setup()
 	#endregion
 	
 	#region Sprites
-	mask_index = spr_16x16Mask_MiddleOrigin;
+	maskNormal = spr_16x16Mask_MiddleOrigin;
+	maskRun = spr_20x16Mask_MiddleOriginOffset;
+	mask_index = maskNormal;
 	#endregion
 	
 	#region Palette Variables

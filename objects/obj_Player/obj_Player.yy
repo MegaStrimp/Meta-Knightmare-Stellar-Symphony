@@ -15,8 +15,8 @@
   "name":"obj_Player",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/StarDream Framework/Player/Objects.yy",
+    "name":"Parent",
+    "path":"folders/StarDream Framework/Player/Parent.yy",
   },
   "parentObjectId":null,
   "persistent":false,

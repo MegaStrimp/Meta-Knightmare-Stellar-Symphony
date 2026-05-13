@@ -24,6 +24,17 @@ function scr_MKSS_Player_BeginStep_Main()
 	}
 	#endregion
 	
+	#region Collision Mask
+	if ((isRunning) and (!place_meeting(x + (dirX * (abs(hsp) + 4)),y,obj_Wall)))
+	{
+		mask_index = maskRun;
+	}
+	else
+	{
+		mask_index = maskNormal;
+	}
+	#endregion
+	
 	#region Shadow
 	shadowAlphaTarget = 0;
 	
@@ -39,7 +50,11 @@ function scr_MKSS_Player_BeginStep_Main()
 	#region Check If There's a Wall Below
 	var collidingWall = noone;
 	
-	if (position_meeting(bbox_left + 1,bbox_bottom + dirY,obj_Wall))
+	if (position_meeting(x,bbox_bottom + dirY,obj_Wall))
+	{
+		collidingWall = instance_place(bbox_left + 1,bbox_bottom + dirY,obj_Wall);
+	}
+	else if (position_meeting(bbox_left + 1,bbox_bottom + dirY,obj_Wall))
 	{
 		collidingWall = instance_place(bbox_left + 1,bbox_bottom + dirY,obj_Wall);
 	}
