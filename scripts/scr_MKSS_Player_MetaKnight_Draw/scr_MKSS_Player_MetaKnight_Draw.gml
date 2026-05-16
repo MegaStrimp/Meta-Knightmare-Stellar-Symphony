@@ -128,7 +128,7 @@ function scr_MKSS_Player_MetaKnight_Draw()
 		
 		var finalText = scr_String_ReplaceButtonSigns(tutorialText,upIcon,downIcon,leftIcon,rightIcon,AIcon,BIcon,XIcon,YIcon,LIcon,RIcon,LTIcon,RTIcon,startIcon,selectIcon);
 		
-		scribble("[alpha," + string(tutorialTextAlpha) + "]" + finalText + "[/alpha]").align(fa_center).draw(x,y - 32);
+		scribble("[alpha," + string(tutorialTextAlpha) + "]" + finalText + "[/alpha]").align(fa_center,fa_bottom).draw(x,y - 24);
 	}
 	#endregion
 }

@@ -47,6 +47,7 @@ function scr_MKSS_Player_MetaKnight_Setup()
 	attackCancelTargetState = scr_MKSS_Player_MetaKnight_State_Normal_Step;
 	
 	isFlying = false;
+	isDucking = false;
 	
 	metaPointFlashTimer = -1;
 	metaPointFlashTimerMax = 4;
@@ -94,6 +95,7 @@ function scr_MKSS_Player_MetaKnight_Setup()
 	
 	#region Sprites
 	maskNormal = spr_16x16Mask_MiddleOrigin;
+	maskDuck = spr_16x8Mask_TopOrigin;
 	maskRun = spr_20x16Mask_MiddleOriginOffset;
 	mask_index = maskNormal;
 	#endregion

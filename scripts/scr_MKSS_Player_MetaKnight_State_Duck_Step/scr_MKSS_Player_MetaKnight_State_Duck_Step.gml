@@ -2,6 +2,15 @@
 
 function scr_MKSS_Player_MetaKnight_State_Duck_Step()
 {
+	#region Setup
+	if (playerState_Setup)
+	{
+		isDucking = true;
+		
+		playerState_Setup = false;
+	}
+	#endregion
+	
 	if (!localPause)
 	{
 		#region Movement

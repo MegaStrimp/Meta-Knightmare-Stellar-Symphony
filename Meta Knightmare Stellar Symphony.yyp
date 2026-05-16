@@ -2039,6 +2039,7 @@
     {"id":{"name":"scr_MKSS_Switch_Activation_GetFinishedWeapons","path":"scripts/scr_MKSS_Switch_Activation_GetFinishedWeapons/scr_MKSS_Switch_Activation_GetFinishedWeapons.yy",},},
     {"id":{"name":"scr_MKSS_Switch_Node_Destroy","path":"scripts/scr_MKSS_Switch_Node_Destroy/scr_MKSS_Switch_Node_Destroy.yy",},},
     {"id":{"name":"scr_MKSS_TriggerBox_Activation_SSStrimpCheck","path":"scripts/scr_MKSS_TriggerBox_Activation_SSStrimpCheck/scr_MKSS_TriggerBox_Activation_SSStrimpCheck.yy",},},
+    {"id":{"name":"scr_MKSS_TriggerBox_Activation_TutorialText_Duck","path":"scripts/scr_MKSS_TriggerBox_Activation_TutorialText_Duck/scr_MKSS_TriggerBox_Activation_TutorialText_Duck.yy",},},
     {"id":{"name":"scr_MKSS_TriggerBox_Activation_TutorialText_Jump","path":"scripts/scr_MKSS_TriggerBox_Activation_TutorialText_Jump/scr_MKSS_TriggerBox_Activation_TutorialText_Jump.yy",},},
     {"id":{"name":"scr_MKSS_TriggerBox_Activation_TutorialText_Run","path":"scripts/scr_MKSS_TriggerBox_Activation_TutorialText_Run/scr_MKSS_TriggerBox_Activation_TutorialText_Run.yy",},},
     {"id":{"name":"scr_MKSS_UI_ArenaNext_Create","path":"scripts/scr_MKSS_UI_ArenaNext_Create/scr_MKSS_UI_ArenaNext_Create.yy",},},
