@@ -1,6 +1,6 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"ts_MKSS_Water",
+  "%Name":"ts_MKSS_IceCreamAfternoon",
   "autoTileSets":[],
   "ConfigValues":{
     "DesktopDebug":{
@@ -12,35 +12,32 @@
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"ts_MKSS_Water",
-  "out_columns":4,
+  "name":"ts_MKSS_IceCreamAfternoon",
+  "out_columns":19,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
-    "name":"Water",
-    "path":"folders/Meta Knightmare Stellar Symphony/Tiles/Water.yy",
+    "name":"Ice Cream Afternoon",
+    "path":"folders/Meta Knightmare Stellar Symphony/Tiles/Ice Cream Afternoon.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"tiles_MKSS_Water",
-    "path":"sprites/tiles_MKSS_Water/tiles_MKSS_Water.yy",
+    "name":"tiles_MKSS_IceCreamAfternoon",
+    "path":"sprites/tiles_MKSS_IceCreamAfternoon/tiles_MKSS_IceCreamAfternoon.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
     "name":"MetaKnightmareStellarSymphony",
     "path":"texturegroups/MetaKnightmareStellarSymphony",
   },
-  "tileAnimationFrames":[
-    {"$GMTileAnimation":"","%Name":"Top_1","frames":[3,6,9,12,],"name":"Top_1","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
-    {"$GMTileAnimation":"","%Name":"Top_2","frames":[4,7,10,13,],"name":"Top_2","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
-  ],
-  "tileAnimationSpeed":6.0,
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
   "tileHeight":16,
   "tilehsep":0,
   "tilevsep":0,
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":15,
+  "tile_count":370,
 }

@@ -1,6 +1,6 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"ts_MKSS_Water",
+  "%Name":"ts_MKSS_WaterStarry",
   "autoTileSets":[],
   "ConfigValues":{
     "DesktopDebug":{
@@ -12,19 +12,19 @@
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"ts_MKSS_Water",
+  "name":"ts_MKSS_WaterStarry",
   "out_columns":4,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
-    "name":"Water",
-    "path":"folders/Meta Knightmare Stellar Symphony/Tiles/Water.yy",
+    "name":"Water Starry",
+    "path":"folders/Meta Knightmare Stellar Symphony/Tiles/Water Starry.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"tiles_MKSS_Water",
-    "path":"sprites/tiles_MKSS_Water/tiles_MKSS_Water.yy",
+    "name":"tiles_MKSS_WaterStarry",
+    "path":"sprites/tiles_MKSS_WaterStarry/tiles_MKSS_WaterStarry.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

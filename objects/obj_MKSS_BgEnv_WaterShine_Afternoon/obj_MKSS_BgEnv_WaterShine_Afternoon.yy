@@ -1,20 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_MKSS_BgEnv_WaterShine",
+  "%Name":"obj_MKSS_BgEnv_WaterShine_Afternoon",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_MKSS_BgEnv_WaterShine",
+  "name":"obj_MKSS_BgEnv_WaterShine_Afternoon",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Meta Knightmare Stellar Symphony/Background Environments/Water Shine/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_MKSS_BgEnv_WaterShine",
+    "path":"objects/obj_MKSS_BgEnv_WaterShine/obj_MKSS_BgEnv_WaterShine.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

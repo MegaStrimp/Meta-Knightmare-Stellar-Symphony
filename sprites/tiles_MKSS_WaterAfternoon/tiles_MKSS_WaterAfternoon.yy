@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"tiles_MKSS_Water",
+  "%Name":"tiles_MKSS_WaterAfternoon",
   "bboxMode":0,
   "bbox_bottom":79,
   "bbox_left":0,
@@ -26,19 +26,19 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"c8408647-f688-42ba-aa87-28404eda2d2f","blendMode":0,"displayName":"default","isLocked":false,"name":"c8408647-f688-42ba-aa87-28404eda2d2f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"tiles_MKSS_Water",
+  "name":"tiles_MKSS_WaterAfternoon",
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Water",
-    "path":"folders/Meta Knightmare Stellar Symphony/Tiles/Water.yy",
+    "name":"Water Afternoon",
+    "path":"folders/Meta Knightmare Stellar Symphony/Tiles/Water Afternoon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"tiles_MKSS_Water",
+    "%Name":"tiles_MKSS_WaterAfternoon",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -62,7 +62,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"tiles_MKSS_Water",
+    "name":"tiles_MKSS_WaterAfternoon",
     "playback":1,
     "playbackSpeed":0.0,
     "playbackSpeedType":0,
@@ -76,7 +76,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5ccc8d1c-2bb4-4d77-b433-e2fa8adf1848","path":"sprites/tiles_MKSS_Water/tiles_MKSS_Water.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5ccc8d1c-2bb4-4d77-b433-e2fa8adf1848","path":"sprites/tiles_MKSS_WaterAfternoon/tiles_MKSS_WaterAfternoon.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"ef61ea28-7bfe-4fa9-a1f2-39d445e21f5c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

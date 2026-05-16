@@ -1,1 +1,1 @@
-targetRoom = rm_MKSS_StarryShores_2;
+targetRoom = rm_MKSS_IceCreamIsland_2;

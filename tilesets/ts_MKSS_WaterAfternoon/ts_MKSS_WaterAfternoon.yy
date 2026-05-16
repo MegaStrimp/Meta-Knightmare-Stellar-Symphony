@@ -1,6 +1,6 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"ts_MKSS_Water",
+  "%Name":"ts_MKSS_WaterAfternoon",
   "autoTileSets":[],
   "ConfigValues":{
     "DesktopDebug":{
@@ -12,19 +12,19 @@
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"ts_MKSS_Water",
+  "name":"ts_MKSS_WaterAfternoon",
   "out_columns":4,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
-    "name":"Water",
-    "path":"folders/Meta Knightmare Stellar Symphony/Tiles/Water.yy",
+    "name":"Water Afternoon",
+    "path":"folders/Meta Knightmare Stellar Symphony/Tiles/Water Afternoon.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"tiles_MKSS_Water",
-    "path":"sprites/tiles_MKSS_Water/tiles_MKSS_Water.yy",
+    "name":"tiles_MKSS_WaterAfternoon",
+    "path":"sprites/tiles_MKSS_WaterAfternoon/tiles_MKSS_WaterAfternoon.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

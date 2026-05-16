@@ -1,6 +1,6 @@
-///@description MKSS - Room Setup - Ice Cream Island - First Time
+///@description MKSS - Room Setup - Ice Cream Island
 
-function scr_MKSS_RoomSetup_IceCreamIsland()
+function scr_MKSS_RoomSetup_IceCreamIsland(isAfternoon = false)
 {
 	#region Music
 	scr_MKSS_Music_Play(global.MKSS_MusicIDs[? "iceCreamIsland"]);
@@ -11,7 +11,14 @@ function scr_MKSS_RoomSetup_IceCreamIsland()
 	#endregion
 	
 	#region Background
-	scr_Camera_SetBackground(scr_MKSS_SetBackground_IceCreamIsland);
+	if (isAfternoon)
+	{
+		scr_Camera_SetBackground(scr_MKSS_SetBackground_IceCreamAfternoon);
+	}
+	else
+	{
+		scr_Camera_SetBackground(scr_MKSS_SetBackground_IceCreamIsland);
+	}
 	#endregion
 	
 	#region Screen Setup

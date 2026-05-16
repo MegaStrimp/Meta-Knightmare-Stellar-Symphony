@@ -10,5 +10,8 @@ sprite_index = choose(spr_MKSS_BgEnv_WaterShine_1,spr_MKSS_BgEnv_WaterShine_2);
 wavePeriod = random_range(2.5,4);
 waveMin = -1;
 waveMax = 1;
+
+palSprite = -1;
+palIndex = 0;
 #endregion
 #endregion
