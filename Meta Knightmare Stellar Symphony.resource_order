@@ -2306,6 +2306,7 @@
     {"name":"spr_UI_Button_Mouse_Macro2","order":5,"path":"sprites/spr_UI_Button_Mouse_Macro2/spr_UI_Button_Mouse_Macro2.yy",},
     {"name":"spr_UI_Button_Mouse_Middle","order":2,"path":"sprites/spr_UI_Button_Mouse_Middle/spr_UI_Button_Mouse_Middle.yy",},
     {"name":"spr_UI_Button_Mouse_Right","order":3,"path":"sprites/spr_UI_Button_Mouse_Right/spr_UI_Button_Mouse_Right.yy",},
+    {"name":"Sprite738","order":13,"path":"sprites/Sprite738/Sprite738.yy",},
     {"name":"tiles_MKSS_RoyalReeveOld","order":2,"path":"sprites/tiles_MKSS_RoyalReeveOld/tiles_MKSS_RoyalReeveOld.yy",},
     {"name":"ts_MKSS_AdAstra","order":1,"path":"tilesets/ts_MKSS_AdAstra/ts_MKSS_AdAstra.yy",},
     {"name":"ts_MKSS_AdAstraEX","order":2,"path":"tilesets/ts_MKSS_AdAstraEX/ts_MKSS_AdAstraEX.yy",},

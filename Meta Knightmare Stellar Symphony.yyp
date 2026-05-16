@@ -3056,6 +3056,7 @@
     {"id":{"name":"spr_UI_Button_Mouse_Middle","path":"sprites/spr_UI_Button_Mouse_Middle/spr_UI_Button_Mouse_Middle.yy",},},
     {"id":{"name":"spr_UI_Button_Mouse_Right","path":"sprites/spr_UI_Button_Mouse_Right/spr_UI_Button_Mouse_Right.yy",},},
     {"id":{"name":"spr_UI_Button_Mouse","path":"sprites/spr_UI_Button_Mouse/spr_UI_Button_Mouse.yy",},},
+    {"id":{"name":"Sprite738","path":"sprites/Sprite738/Sprite738.yy",},},
     {"id":{"name":"tiles_MKSS_AdAstra","path":"sprites/tiles_MKSS_AdAstra/tiles_MKSS_AdAstra.yy",},},
     {"id":{"name":"tiles_MKSS_AdAstraEX","path":"sprites/tiles_MKSS_AdAstraEX/tiles_MKSS_AdAstraEX.yy",},},
     {"id":{"name":"tiles_MKSS_BattleshipHalberd","path":"sprites/tiles_MKSS_BattleshipHalberd/tiles_MKSS_BattleshipHalberd.yy",},},
