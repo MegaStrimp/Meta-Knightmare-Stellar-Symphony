@@ -3144,7 +3144,6 @@
                     {"roomId":{"name":"rm_MKSS_StarryShores_StrimpRoom","path":"rooms/rm_MKSS_StarryShores_StrimpRoom/rm_MKSS_StarryShores_StrimpRoom.yy",},},
                     {"roomId":{"name":"rm_MKSS_StarryShores_2","path":"rooms/rm_MKSS_StarryShores_2/rm_MKSS_StarryShores_2.yy",},},
                     {"roomId":{"name":"rm_MKSS_StarryShores_3","path":"rooms/rm_MKSS_StarryShores_3/rm_MKSS_StarryShores_3.yy",},},
-                    {"roomId":{"name":"rm_MKSS_StarryShores_4","path":"rooms/rm_MKSS_StarryShores_4/rm_MKSS_StarryShores_4.yy",},},
                   ],"groupName":"Starry Shores",},
                 {"children":[
                     {"roomId":{"name":"rm_MKSS_RoyalReeve_1","path":"rooms/rm_MKSS_RoyalReeve_1/rm_MKSS_RoyalReeve_1.yy",},},
@@ -3188,6 +3187,7 @@
     {"roomId":{"name":"rm_MKSS_Arena_Lobby","path":"rooms/rm_MKSS_Arena_Lobby/rm_MKSS_Arena_Lobby.yy",},},
     {"roomId":{"name":"rm_MKSS_Arena_Minibosses_1","path":"rooms/rm_MKSS_Arena_Minibosses_1/rm_MKSS_Arena_Minibosses_1.yy",},},
     {"roomId":{"name":"rm_MKSS_Debug_Rango","path":"rooms/rm_MKSS_Debug_Rango/rm_MKSS_Debug_Rango.yy",},},
+    {"roomId":{"name":"rm_MKSS_StarryShores_4","path":"rooms/rm_MKSS_StarryShores_4/rm_MKSS_StarryShores_4.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

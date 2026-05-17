@@ -895,7 +895,7 @@
     {"name":"rm_MKSS_RoyalReeve_3","order":2,"path":"rooms/rm_MKSS_RoyalReeve_3/rm_MKSS_RoyalReeve_3.yy",},
     {"name":"rm_MKSS_StarryShores_2","order":2,"path":"rooms/rm_MKSS_StarryShores_2/rm_MKSS_StarryShores_2.yy",},
     {"name":"rm_MKSS_StarryShores_3","order":3,"path":"rooms/rm_MKSS_StarryShores_3/rm_MKSS_StarryShores_3.yy",},
-    {"name":"rm_MKSS_StarryShores_4","order":4,"path":"rooms/rm_MKSS_StarryShores_4/rm_MKSS_StarryShores_4.yy",},
+    {"name":"rm_MKSS_StarryShores_4","order":5,"path":"rooms/rm_MKSS_StarryShores_4/rm_MKSS_StarryShores_4.yy",},
     {"name":"rm_MKSS_StarryShores_StrimpRoom","order":1,"path":"rooms/rm_MKSS_StarryShores_StrimpRoom/rm_MKSS_StarryShores_StrimpRoom.yy",},
     {"name":"rm_MKSS_UpgradesTest","order":2,"path":"rooms/rm_MKSS_UpgradesTest/rm_MKSS_UpgradesTest.yy",},
     {"name":"rm_Startup","order":1,"path":"rooms/rm_Startup/rm_Startup.yy",},
