@@ -1195,6 +1195,7 @@
     {"id":{"name":"rm_MKSS_StarryShores_1","path":"rooms/rm_MKSS_StarryShores_1/rm_MKSS_StarryShores_1.yy",},},
     {"id":{"name":"rm_MKSS_StarryShores_2","path":"rooms/rm_MKSS_StarryShores_2/rm_MKSS_StarryShores_2.yy",},},
     {"id":{"name":"rm_MKSS_StarryShores_3","path":"rooms/rm_MKSS_StarryShores_3/rm_MKSS_StarryShores_3.yy",},},
+    {"id":{"name":"rm_MKSS_StarryShores_4","path":"rooms/rm_MKSS_StarryShores_4/rm_MKSS_StarryShores_4.yy",},},
     {"id":{"name":"rm_MKSS_StarryShores_StrimpRoom","path":"rooms/rm_MKSS_StarryShores_StrimpRoom/rm_MKSS_StarryShores_StrimpRoom.yy",},},
     {"id":{"name":"rm_MKSS_StarryShoresEX_1","path":"rooms/rm_MKSS_StarryShoresEX_1/rm_MKSS_StarryShoresEX_1.yy",},},
     {"id":{"name":"rm_MKSS_Startup","path":"rooms/rm_MKSS_Startup/rm_MKSS_Startup.yy",},},
@@ -3273,6 +3274,7 @@
     {"roomId":{"name":"rm_MKSS_Debug_Rango","path":"rooms/rm_MKSS_Debug_Rango/rm_MKSS_Debug_Rango.yy",},},
     {"roomId":{"name":"rm_MKSS_IceCreamIsland_2","path":"rooms/rm_MKSS_IceCreamIsland_2/rm_MKSS_IceCreamIsland_2.yy",},},
     {"roomId":{"name":"rm_MKSS_IceCreamIsland_3","path":"rooms/rm_MKSS_IceCreamIsland_3/rm_MKSS_IceCreamIsland_3.yy",},},
+    {"roomId":{"name":"rm_MKSS_StarryShores_4","path":"rooms/rm_MKSS_StarryShores_4/rm_MKSS_StarryShores_4.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
