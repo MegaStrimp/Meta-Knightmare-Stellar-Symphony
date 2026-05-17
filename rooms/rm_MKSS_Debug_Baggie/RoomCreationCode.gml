@@ -1,4 +1,4 @@
-///@description Room Creation Code#endregion
+///@description Room Creation Code
 
 #region Begin Stage
 scr_MKSS_Stage_Begin();

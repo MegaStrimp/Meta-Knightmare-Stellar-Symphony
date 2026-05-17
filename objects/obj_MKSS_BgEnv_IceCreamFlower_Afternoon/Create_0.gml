@@ -6,7 +6,7 @@ event_inherited();
 
 #region Initialize Variables
 #region Gameplay Variables
-palSprite = obj_MKSS_BgEnv_IceCreamFlower_Afternoon;
+palSprite = spr_MKSS_BgEnv_IceCreamFlower_Pal_Afternoon;
 palIndex = irandom_range(1,sprite_get_width(palSprite) - 1);
 #endregion
 #endregion

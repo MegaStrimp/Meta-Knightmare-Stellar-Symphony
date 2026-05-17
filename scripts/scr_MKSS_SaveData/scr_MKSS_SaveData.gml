@@ -25,6 +25,18 @@ function scr_MKSS_SaveData(file)
 	}
 	#endregion
 	
+	#region Upgrade Status
+	for (var i = 0; i < ds_map_size(global.MKSS_UpgradeIDs); i++)
+	{
+		var upgradeID = global.MKSS_UpgradeList[i].ID;
+		
+		if (global.MKSS_UpgradeList[i].isUnlocked != false)
+		{
+			ini_write_real("upgradeStatus",string(upgradeID) + "_IsUnlocked",global.MKSS_UpgradeList[i].isUnlocked);
+		}
+	}
+	#endregion
+	
 	#region Stage Status
 	for (var i = 0; i < ds_map_size(global.MKSS_StageIDs); i++)
 	{

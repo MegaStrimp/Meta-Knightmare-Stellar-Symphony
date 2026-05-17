@@ -5,8 +5,8 @@ function scr_MKSS_Weapon_Galaxia_Base()
 	#region Variables
 	var attackTriggered = false;
 	
-	var maxComboLength = 2; //STRIMPTODO Upgrades
-	var hasFinisher = true; //STRIMPTODO Upgrades
+	var maxComboLength = (scr_MKSS_Player_CheckUpgrade(playerNum,"Galaxia_Kick") + scr_MKSS_Player_CheckUpgrade(playerNum,"Galaxia_Barrage"));
+	var hasFinisher = scr_MKSS_Player_CheckUpgrade(playerNum,"Galaxia_Finisher");
 	
 	if (!hasFinisher) parryAttackFlag = false;
 	#endregion

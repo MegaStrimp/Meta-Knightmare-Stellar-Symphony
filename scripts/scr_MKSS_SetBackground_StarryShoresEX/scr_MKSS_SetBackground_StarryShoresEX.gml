@@ -43,6 +43,11 @@ function scr_MKSS_SetBackground_StarryShoresEX()
 		backgroundLayer[arrayIndex] = layer_create(backgroundAnchor - (arrayIndex + 1));
 		backgroundIndex[arrayIndex] = layer_background_create(backgroundLayer[arrayIndex],bg_MKSS_StarryShoresEX_MoonReflection);
 		layer_background_alpha(backgroundIndex[arrayIndex],.5);
+		arrayIndex += 1;
+		backgroundLayer[arrayIndex] = layer_create(backgroundAnchor - (arrayIndex + 1));
+		backgroundIndex[arrayIndex] = layer_background_create(backgroundLayer[arrayIndex],bg_MKSS_Pit);
+		layer_background_htiled(backgroundIndex[arrayIndex],true);
+		layer_y(backgroundLayer[arrayIndex],room_height - 32);
 		
 		backgroundSetup = false;
 	}
@@ -148,4 +153,6 @@ function scr_MKSS_SetBackground_StarryShoresEX()
 	{
 		layer_y(backgroundLayer[arrayIndex],(room_height - bgHeight))
 	}
+	arrayIndex += 1;
+	layer_x(backgroundLayer[arrayIndex],(layer_get_x(backgroundLayer[arrayIndex]) - .2) % 16);
 }

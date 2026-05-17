@@ -43,6 +43,11 @@ function scr_MKSS_SetBackground_StarryShores()
 		backgroundLayer[arrayIndex] = layer_create(backgroundAnchor - (arrayIndex + 1));
 		backgroundIndex[arrayIndex] = layer_background_create(backgroundLayer[arrayIndex],bg_MKSS_StarryShores_MoonReflection);
 		layer_background_alpha(backgroundIndex[arrayIndex],.5);
+		arrayIndex += 1;
+		backgroundLayer[arrayIndex] = layer_create(backgroundAnchor - (arrayIndex + 1));
+		backgroundIndex[arrayIndex] = layer_background_create(backgroundLayer[arrayIndex],bg_MKSS_Pit);
+		layer_background_htiled(backgroundIndex[arrayIndex],true);
+		layer_y(backgroundLayer[arrayIndex],room_height - 32);
 		
 		backgroundSetup = false;
 	}
@@ -63,7 +68,7 @@ function scr_MKSS_SetBackground_StarryShores()
 	}
 	else
 	{
-		layer_y(backgroundLayer[arrayIndex],(room_height - bgHeight))
+		layer_y(backgroundLayer[arrayIndex],(room_height - bgHeight));
 	}
 	arrayIndex += 1;
 	if (!global.pause) backgroundX[arrayIndex] = (backgroundX[arrayIndex] - .2) % bgWidth;
@@ -74,7 +79,7 @@ function scr_MKSS_SetBackground_StarryShores()
 	}
 	else
 	{
-		layer_y(backgroundLayer[arrayIndex],(room_height - bgHeight))
+		layer_y(backgroundLayer[arrayIndex],(room_height - bgHeight));
 	}
 	arrayIndex += 1;
 	if (!global.pause) backgroundX[arrayIndex] = (backgroundX[arrayIndex] - .4) % bgWidth;
@@ -85,7 +90,7 @@ function scr_MKSS_SetBackground_StarryShores()
 	}
 	else
 	{
-		layer_y(backgroundLayer[arrayIndex],(room_height - bgHeight))
+		layer_y(backgroundLayer[arrayIndex],(room_height - bgHeight));
 	}
 	arrayIndex += 1;
 	if (bgWidth <= room_width) layer_x(backgroundLayer[arrayIndex],lerp(0,room_width - bgWidth,_xpos));
@@ -95,7 +100,7 @@ function scr_MKSS_SetBackground_StarryShores()
 	}
 	else
 	{
-		layer_y(backgroundLayer[arrayIndex],(room_height - bgHeight))
+		layer_y(backgroundLayer[arrayIndex],(room_height - bgHeight));
 	}
 	arrayIndex += 1;
 	if (!global.pause) backgroundX[arrayIndex] = (backgroundX[arrayIndex] - .6) % bgWidth;
@@ -106,7 +111,7 @@ function scr_MKSS_SetBackground_StarryShores()
 	}
 	else
 	{
-		layer_y(backgroundLayer[arrayIndex],(room_height - bgHeight))
+		layer_y(backgroundLayer[arrayIndex],(room_height - bgHeight));
 	}
 	arrayIndex += 1;
 	layer_x(backgroundLayer[arrayIndex],camX - (camX * .1));
@@ -116,7 +121,7 @@ function scr_MKSS_SetBackground_StarryShores()
 	}
 	else
 	{
-		layer_y(backgroundLayer[arrayIndex],(room_height - bgHeight))
+		layer_y(backgroundLayer[arrayIndex],(room_height - bgHeight));
 	}
 	arrayIndex += 1;
 	layer_x(backgroundLayer[arrayIndex],camX - (camX * .2));
@@ -126,7 +131,7 @@ function scr_MKSS_SetBackground_StarryShores()
 	}
 	else
 	{
-		layer_y(backgroundLayer[arrayIndex],(room_height - bgHeight))
+		layer_y(backgroundLayer[arrayIndex],(room_height - bgHeight));
 	}
 	arrayIndex += 1;
 	layer_x(backgroundLayer[arrayIndex],camX - (camX * .3));
@@ -136,7 +141,7 @@ function scr_MKSS_SetBackground_StarryShores()
 	}
 	else
 	{
-		layer_y(backgroundLayer[arrayIndex],(room_height - bgHeight))
+		layer_y(backgroundLayer[arrayIndex],(room_height - bgHeight));
 	}
 	arrayIndex += 1;
 	if (bgWidth <= room_width) layer_x(backgroundLayer[arrayIndex],lerp(0,room_width - bgWidth,_xpos));
@@ -146,6 +151,8 @@ function scr_MKSS_SetBackground_StarryShores()
 	}
 	else
 	{
-		layer_y(backgroundLayer[arrayIndex],(room_height - bgHeight))
+		layer_y(backgroundLayer[arrayIndex],(room_height - bgHeight));
 	}
+	arrayIndex += 1;
+	layer_x(backgroundLayer[arrayIndex],(layer_get_x(backgroundLayer[arrayIndex]) - .2) % 16);
 }

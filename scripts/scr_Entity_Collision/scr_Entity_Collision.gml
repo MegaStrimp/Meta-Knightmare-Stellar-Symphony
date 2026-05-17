@@ -28,9 +28,9 @@ function scr_Entity_Collision(hasWallCollision = true,XCollisionScript = -1,YCol
 	#region Platform Collision
 	if (hasWallCollision)
 	{
-		if (position_meeting(x,bbox_bottom + max(1,vspFinal),obj_Platform))
+		if (place_meeting(x,y + vspFinal,obj_Platform))
 		{
-			var collidingWall = instance_place(x,bbox_bottom + max(1,vspFinal),obj_Platform);
+			var collidingWall = instance_place(x,y + vspFinal,obj_Platform);
 			
 			var canGetDown = false;
 			if ((object_index == obj_Player) or (object_get_parent(object_index) == obj_Player)) //STRIMPTODO Refactor
@@ -40,7 +40,7 @@ function scr_Entity_Collision(hasWallCollision = true,XCollisionScript = -1,YCol
 			
 			if ((!canGetDown) and (sign(vspFinal) == 1) and (bbox_bottom <= collidingWall.y + max(1, vspFinal)))
 			{
-				while (!place_meeting(x,y + max(1,vspFinal),obj_Platform))
+				while (!place_meeting(x,y + sign(vspFinal),obj_Platform))
 				{
 					y += sign(vspFinal);
 				}

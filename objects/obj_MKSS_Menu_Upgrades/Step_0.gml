@@ -12,6 +12,8 @@ if (input_check_pressed("B",playerNum))
 		MKSS_GamePause_CircleZoomTarget = 1;
 	}
 	
+	scr_MKSS_Player_GetUnlockedUpgrades(0);
+	
 	instance_destroy();
 }
 #endregion
