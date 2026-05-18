@@ -19,10 +19,21 @@ hintOffsetTimer = hintOffsetTimerMax;
 
 currentCategory = global.MKSS_UpgradeTypeIDs[? "base"];
 constellationList = ds_list_create();
+constellationTypeList = ds_list_create();
 #endregion
 #endregion
 
-// MAKE THIS A SCRIPT
+//MAKE THIS A SCRIPT
+
+for (var i = 0; i < ds_map_size(global.MKSS_UpgradeTypeIDs); i++)
+{
+	if (global.MKSS_UpgradeTypeList[i].isUnlocked)
+	{
+		ds_list_add(constellationTypeList,i);
+	}
+}
+
+//MAKE THIS A SCRIPT TOO
 constellationOffsets = 0;
 
 for (var i = 0; i < ds_map_size(global.MKSS_UpgradeIDs); i++)

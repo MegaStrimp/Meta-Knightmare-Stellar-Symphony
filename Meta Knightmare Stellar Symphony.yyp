@@ -2095,6 +2095,7 @@
     {"id":{"name":"scr_MKSS_Upgrade_Init_Set","path":"scripts/scr_MKSS_Upgrade_Init_Set/scr_MKSS_Upgrade_Init_Set.yy",},},
     {"id":{"name":"scr_MKSS_UpgradeType_Init_Add","path":"scripts/scr_MKSS_UpgradeType_Init_Add/scr_MKSS_UpgradeType_Init_Add.yy",},},
     {"id":{"name":"scr_MKSS_UpgradeType_Init_Set","path":"scripts/scr_MKSS_UpgradeType_Init_Set/scr_MKSS_UpgradeType_Init_Set.yy",},},
+    {"id":{"name":"scr_MKSS_UpgradeType_Unlock","path":"scripts/scr_MKSS_UpgradeType_Unlock/scr_MKSS_UpgradeType_Unlock.yy",},},
     {"id":{"name":"scr_MKSS_Wall_StarBlock_Death","path":"scripts/scr_MKSS_Wall_StarBlock_Death/scr_MKSS_Wall_StarBlock_Death.yy",},},
     {"id":{"name":"scr_MKSS_Weapon_Buzzcut_Base","path":"scripts/scr_MKSS_Weapon_Buzzcut_Base/scr_MKSS_Weapon_Buzzcut_Base.yy",},},
     {"id":{"name":"scr_MKSS_Weapon_Buzzcut_Setup","path":"scripts/scr_MKSS_Weapon_Buzzcut_Setup/scr_MKSS_Weapon_Buzzcut_Setup.yy",},},

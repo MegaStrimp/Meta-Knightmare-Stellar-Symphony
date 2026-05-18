@@ -9,7 +9,10 @@ function scr_MKSS_UpgradeType_Init_Add(targetID,targetTitle = "",targetConstella
 	{
         ID: targetID,
 		title: targetTitle,
-		constellationSetupScript: targetConstellationSetupScript
+		constellationSetupScript: targetConstellationSetupScript,
+		
+		isUnlocked: false,
+		isDefault: false
     };
 	
 	return targetMappedID;

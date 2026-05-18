@@ -28,6 +28,18 @@ function scr_MKSS_LoadData(file,importFile = false)
 	}
 	#endregion
 	
+	#region Upgrade Type Status
+	for (var i = 0; i < ds_map_size(global.MKSS_UpgradeTypeIDs); i++)
+	{
+		var weaponID = global.MKSS_UpgradeTypeList[i].ID;
+		
+		var upgradeTypeIsUnlocked = ini_read_real("upgradeTypeStatus",string(weaponID) + "_IsUnlocked",false);
+		if (global.MKSS_UpgradeTypeList[i].isDefault) upgradeTypeIsUnlocked = true;
+		
+		global.MKSS_UpgradeTypeList[i].isUnlocked = upgradeTypeIsUnlocked;
+	}
+	#endregion
+	
 	#region Upgrade Status
 	for (var i = 0; i < ds_map_size(global.MKSS_UpgradeIDs); i++)
 	{

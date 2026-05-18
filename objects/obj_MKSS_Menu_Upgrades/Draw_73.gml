@@ -18,13 +18,13 @@ for (var i = 0; i < ds_list_size(constellationList); i++)
 		draw_line_color(xx + currentIndex.x + constellationOffsets[i].x,yy + currentIndex.y + constellationOffsets[i].y,xx + neighborIndex.x + constellationOffsets[neighborListIndex].x,yy + neighborIndex.y + constellationOffsets[neighborListIndex].y,#4F4E7B,#4F4E7B);
 	}
 	
-	if (currentIndex.neighborRight != undefined)
-	{
-		var neighborIndex = global.MKSS_UpgradeList[currentIndex.neighborRight];
-		var neighborListIndex = ds_list_find_index(constellationList,currentIndex.neighborRight);
+	//if (currentIndex.neighborRight != undefined)
+	//{
+	//	var neighborIndex = global.MKSS_UpgradeList[currentIndex.neighborRight];
+	//	var neighborListIndex = ds_list_find_index(constellationList,currentIndex.neighborRight);
 		
-		draw_line_color(xx + currentIndex.x + constellationOffsets[i].x,yy + currentIndex.y + constellationOffsets[i].y,xx + neighborIndex.x + constellationOffsets[neighborListIndex].x,yy + neighborIndex.y + constellationOffsets[neighborListIndex].y,#4F4E7B,#4F4E7B);
-	}
+	//	draw_line_color(xx + currentIndex.x + constellationOffsets[i].x,yy + currentIndex.y + constellationOffsets[i].y,xx + neighborIndex.x + constellationOffsets[neighborListIndex].x,yy + neighborIndex.y + constellationOffsets[neighborListIndex].y,#4F4E7B,#4F4E7B);
+	//}
 	
 	if (currentIndex.neighborUp != undefined)
 	{
@@ -34,13 +34,13 @@ for (var i = 0; i < ds_list_size(constellationList); i++)
 		draw_line_color(xx + currentIndex.x + constellationOffsets[i].x,yy + currentIndex.y + constellationOffsets[i].y,xx + neighborIndex.x + constellationOffsets[neighborListIndex].x,yy + neighborIndex.y + constellationOffsets[neighborListIndex].y,#4F4E7B,#4F4E7B);
 	}
 	
-	if (currentIndex.neighborDown != undefined)
-	{
-		var neighborIndex = global.MKSS_UpgradeList[currentIndex.neighborDown];
-		var neighborListIndex = ds_list_find_index(constellationList,currentIndex.neighborDown);
+	//if (currentIndex.neighborDown != undefined)
+	//{
+	//	var neighborIndex = global.MKSS_UpgradeList[currentIndex.neighborDown];
+	//	var neighborListIndex = ds_list_find_index(constellationList,currentIndex.neighborDown);
 		
-		draw_line_color(xx + currentIndex.x + constellationOffsets[i].x,yy + currentIndex.y + constellationOffsets[i].y,xx + neighborIndex.x + constellationOffsets[neighborListIndex].x,yy + neighborIndex.y + constellationOffsets[neighborListIndex].y,#4F4E7B,#4F4E7B);
-	}
+	//	draw_line_color(xx + currentIndex.x + constellationOffsets[i].x,yy + currentIndex.y + constellationOffsets[i].y,xx + neighborIndex.x + constellationOffsets[neighborListIndex].x,yy + neighborIndex.y + constellationOffsets[neighborListIndex].y,#4F4E7B,#4F4E7B);
+	//}
 }
 #endregion
 
