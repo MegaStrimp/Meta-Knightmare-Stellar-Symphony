@@ -21,7 +21,11 @@ if (input_check_pressed("B",playerNum))
 #region Movement
 for (var i = 0; i < ds_list_size(constellationList); i++)
 {
-	constellationOffsets[i].x = sine_wave(current_time / constellationOffsets[i].wave,1,2,0);
-	constellationOffsets[i].y = sine_wave(current_time / (constellationOffsets[i].wave + 500),.7,3,0);
+	constellationOffsets[i].x = sine_wave(current_time / constellationOffsets[i].wave,1,1.5,0);
+	constellationOffsets[i].y = sine_wave(current_time / (constellationOffsets[i].wave + 500),.7,2.5,0);
 }
+#endregion
+
+#region Button Input Timers
+scr_Component_ButtonInputTimer_Step();
 #endregion

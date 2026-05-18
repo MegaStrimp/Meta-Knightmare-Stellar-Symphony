@@ -18,7 +18,7 @@ function scr_MKSS_SaveData(file)
 	{
 		var weaponID = global.MKSS_WeaponList[i].ID;
 		
-		if (global.MKSS_WeaponList[i].isUnlocked != false)
+		if (global.MKSS_WeaponList[i].isUnlocked)
 		{
 			ini_write_real("weaponStatus",string(weaponID) + "_IsUnlocked",global.MKSS_WeaponList[i].isUnlocked);
 		}
@@ -30,9 +30,12 @@ function scr_MKSS_SaveData(file)
 	{
 		var upgradeID = global.MKSS_UpgradeList[i].ID;
 		
-		if (global.MKSS_UpgradeList[i].isUnlocked != false)
+		if (!global.MKSS_UpgradeList[i].isLesserNode)
 		{
-			ini_write_real("upgradeStatus",string(upgradeID) + "_IsUnlocked",global.MKSS_UpgradeList[i].isUnlocked);
+			if (global.MKSS_UpgradeList[i].isUnlocked)
+			{
+				ini_write_real("upgradeStatus",string(upgradeID) + "_IsUnlocked",global.MKSS_UpgradeList[i].isUnlocked);
+			}
 		}
 	}
 	#endregion
@@ -42,7 +45,7 @@ function scr_MKSS_SaveData(file)
 	{
 		var stageID = global.MKSS_StageList[i].ID;
 		
-		if (global.MKSS_StageList[i].isUnlocked != false)
+		if (global.MKSS_StageList[i].isUnlocked)
 		{
 			ini_write_real("stageStatus",string(stageID) + "_IsUnlocked",global.MKSS_StageList[i].isUnlocked);
 			ini_write_real("stageStatus",string(stageID) + "_IsBeaten",global.MKSS_StageList[i].isBeaten);

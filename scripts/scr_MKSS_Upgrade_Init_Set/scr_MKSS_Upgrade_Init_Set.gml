@@ -11,58 +11,85 @@ function scr_MKSS_Upgrade_Init_Set()
 	#region Base
 	var categoryID = global.MKSS_UpgradeTypeIDs[? "base"];
 	
-	#region Test STRIMPTODO
-	var targetMappedID_Test1 = scr_MKSS_Upgrade_Init_Add("test1",categoryID,62,83);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Test1);
+	#region Upgrade Nodes
+	var targetMappedID_Base_Parry = scr_MKSS_Upgrade_Init_Add("Base_Parry",categoryID,61,66);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_Parry,"Parry");
 	
-	var targetMappedID_Test2 = scr_MKSS_Upgrade_Init_Add("test2",categoryID,109,73);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Test2);
+	var targetMappedID_Base_Counter = scr_MKSS_Upgrade_Init_Add("Base_Counter",categoryID,83,81);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_Counter,"Counter");
 	
-	var targetMappedID_Test3 = scr_MKSS_Upgrade_Init_Add("test3",categoryID,120,25);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Test3);
+	var targetMappedID_Base_Dodge = scr_MKSS_Upgrade_Init_Add("Base_Dodge",categoryID,178,66);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_Dodge,"Dodge");
 	
-	var targetMappedID_Test4 = scr_MKSS_Upgrade_Init_Add("test4",categoryID,130,73);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Test4);
+	var targetMappedID_Base_ShadowDodge = scr_MKSS_Upgrade_Init_Add("Base_ShadowDodge",categoryID,156,81);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_ShadowDodge,"Shadow Dodge");
 	
-	var targetMappedID_Test5 = scr_MKSS_Upgrade_Init_Add("test5",categoryID,177,83);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Test5);
+	var targetMappedID_Base_SharpSlide = scr_MKSS_Upgrade_Init_Add("Base_SharpSlide",categoryID,120,122);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_SharpSlide,"Sharp Slide");
 	
-	var targetMappedID_Test6 = scr_MKSS_Upgrade_Init_Add("test6",categoryID,130,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Test6);
-	
-	var targetMappedID_Test7 = scr_MKSS_Upgrade_Init_Add("test7",categoryID,120,141);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Test7);
-	
-	var targetMappedID_Test8 = scr_MKSS_Upgrade_Init_Add("test8",categoryID,109,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Test8);
-	
-	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Test1,,targetMappedID_Test2,targetMappedID_Test2,targetMappedID_Test8);
-	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Test2,targetMappedID_Test1,targetMappedID_Test3,targetMappedID_Test3,targetMappedID_Test1);
-	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Test3);
-	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Test4);
-	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Test5);
-	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Test6);
-	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Test7);
-	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Test8);
+	var targetMappedID_Base_SonicWings = scr_MKSS_Upgrade_Init_Add("Base_SonicWings",categoryID,119,16);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_SonicWings,"Sonic Wings");
 	#endregion
 	
-	var targetMappedID_Base_Parry = scr_MKSS_Upgrade_Init_Add("Base_Parry",categoryID,109,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_Parry);
+	#region Lesser Nodes
+	var targetMappedID_Base_Lesser1 = scr_MKSS_Upgrade_Init_Add("Base_Lesser1",categoryID,65,91,true);
+	var targetMappedID_Base_Lesser2 = scr_MKSS_Upgrade_Init_Add("Base_Lesser2",categoryID,78,109,true);
+	var targetMappedID_Base_Lesser3 = scr_MKSS_Upgrade_Init_Add("Base_Lesser3",categoryID,161,109,true);
+	var targetMappedID_Base_Lesser4 = scr_MKSS_Upgrade_Init_Add("Base_Lesser4",categoryID,174,91,true);
+	var targetMappedID_Base_Lesser5 = scr_MKSS_Upgrade_Init_Add("Base_Lesser5",categoryID,175,45,true);
+	var targetMappedID_Base_Lesser6 = scr_MKSS_Upgrade_Init_Add("Base_Lesser6",categoryID,175,36,true);
+	var targetMappedID_Base_Lesser7 = scr_MKSS_Upgrade_Init_Add("Base_Lesser7",categoryID,166,35,true);
+	var targetMappedID_Base_Lesser8 = scr_MKSS_Upgrade_Init_Add("Base_Lesser8",categoryID,156,52,true);
+	var targetMappedID_Base_Lesser9 = scr_MKSS_Upgrade_Init_Add("Base_Lesser9",categoryID,154,26,true);
+	var targetMappedID_Base_Lesser10 = scr_MKSS_Upgrade_Init_Add("Base_Lesser10",categoryID,151,15,true);
+	var targetMappedID_Base_Lesser11 = scr_MKSS_Upgrade_Init_Add("Base_Lesser11",categoryID,140,20,true);
+	var targetMappedID_Base_Lesser12 = scr_MKSS_Upgrade_Init_Add("Base_Lesser12",categoryID,140,43,true);
+	var targetMappedID_Base_Lesser13 = scr_MKSS_Upgrade_Init_Add("Base_Lesser13",categoryID,99,20,true);
+	var targetMappedID_Base_Lesser14 = scr_MKSS_Upgrade_Init_Add("Base_Lesser14",categoryID,88,15,true);
+	var targetMappedID_Base_Lesser15 = scr_MKSS_Upgrade_Init_Add("Base_Lesser15",categoryID,85,26,true);
+	var targetMappedID_Base_Lesser16 = scr_MKSS_Upgrade_Init_Add("Base_Lesser16",categoryID,99,43,true);
+	var targetMappedID_Base_Lesser17 = scr_MKSS_Upgrade_Init_Add("Base_Lesser17",categoryID,73,35,true);
+	var targetMappedID_Base_Lesser18 = scr_MKSS_Upgrade_Init_Add("Base_Lesser18",categoryID,64,36,true);
+	var targetMappedID_Base_Lesser19 = scr_MKSS_Upgrade_Init_Add("Base_Lesser19",categoryID,64,45,true);
+	var targetMappedID_Base_Lesser20 = scr_MKSS_Upgrade_Init_Add("Base_Lesser20",categoryID,83,52,true);
+	var targetMappedID_Base_Lesser21 = scr_MKSS_Upgrade_Init_Add("Base_Lesser21",categoryID,120,92,true);
+	var targetMappedID_Base_Lesser22 = scr_MKSS_Upgrade_Init_Add("Base_Lesser22",categoryID,168,61,true);
+	var targetMappedID_Base_Lesser23 = scr_MKSS_Upgrade_Init_Add("Base_Lesser23",categoryID,120,76,true);
+	var targetMappedID_Base_Lesser24 = scr_MKSS_Upgrade_Init_Add("Base_Lesser24",categoryID,71,61,true);
+	#endregion
 	
-	var targetMappedID_Base_Counter = scr_MKSS_Upgrade_Init_Add("Base_Counter",categoryID,109,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_Counter);
-	
-	var targetMappedID_Base_Dodge = scr_MKSS_Upgrade_Init_Add("Base_Dodge",categoryID,109,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_Dodge);
-	
-	var targetMappedID_Base_ShadowDodge = scr_MKSS_Upgrade_Init_Add("Base_ShadowDodge",categoryID,109,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_ShadowDodge);
-	
-	var targetMappedID_Base_SharpSlide = scr_MKSS_Upgrade_Init_Add("Base_SharpSlide",categoryID,109,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_SharpSlide);
-	
-	var targetMappedID_Base_SonicWings = scr_MKSS_Upgrade_Init_Add("Base_SonicWings",categoryID,109,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_SonicWings);
+	#region Neighbor Setup
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Parry,,targetMappedID_Base_Counter,targetMappedID_Base_Lesser19,targetMappedID_Base_Lesser1);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser1,,,targetMappedID_Base_Parry,targetMappedID_Base_Lesser2);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser2,,targetMappedID_Base_SharpSlide,targetMappedID_Base_Lesser1);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_SharpSlide,targetMappedID_Base_Lesser2,targetMappedID_Base_Lesser3);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser3,targetMappedID_Base_SharpSlide,,targetMappedID_Base_Lesser4);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser4,,,targetMappedID_Base_Dodge,targetMappedID_Base_Lesser3);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Dodge,targetMappedID_Base_ShadowDodge,,targetMappedID_Base_Lesser5,targetMappedID_Base_Lesser4);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser5,targetMappedID_Base_Lesser8,,targetMappedID_Base_Lesser6,targetMappedID_Base_Dodge);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser6,targetMappedID_Base_Lesser7,,,targetMappedID_Base_Lesser5);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser7,targetMappedID_Base_Lesser9,targetMappedID_Base_Lesser6,,targetMappedID_Base_Lesser8);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser8,,targetMappedID_Base_Lesser5,targetMappedID_Base_Lesser7);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser9,targetMappedID_Base_Lesser10,targetMappedID_Base_Lesser7,,targetMappedID_Base_Lesser12);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser10,targetMappedID_Base_Lesser11,targetMappedID_Base_Lesser9);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser11,targetMappedID_Base_SonicWings,targetMappedID_Base_Lesser10,,targetMappedID_Base_Lesser12);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser12,,targetMappedID_Base_Lesser9,targetMappedID_Base_Lesser11);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_SonicWings,targetMappedID_Base_Lesser13,targetMappedID_Base_Lesser11);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser13,targetMappedID_Base_Lesser14,targetMappedID_Base_SonicWings,,targetMappedID_Base_Lesser16);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser14,targetMappedID_Base_Lesser15,targetMappedID_Base_Lesser13);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser15,targetMappedID_Base_Lesser17,targetMappedID_Base_Lesser14,,targetMappedID_Base_Lesser16);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser16,targetMappedID_Base_Lesser15,targetMappedID_Base_Lesser13);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser17,targetMappedID_Base_Lesser18,targetMappedID_Base_Lesser15,,targetMappedID_Base_Lesser20);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser18,,targetMappedID_Base_Lesser17,,targetMappedID_Base_Lesser19);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser19,,targetMappedID_Base_Lesser20,targetMappedID_Base_Lesser18,targetMappedID_Base_Parry);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser20,targetMappedID_Base_Lesser19,,targetMappedID_Base_Lesser17);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Counter,targetMappedID_Base_Parry,targetMappedID_Base_Lesser21,targetMappedID_Base_Lesser24);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser21,targetMappedID_Base_Counter,targetMappedID_Base_ShadowDodge);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_ShadowDodge,targetMappedID_Base_Lesser21,targetMappedID_Base_Dodge,targetMappedID_Base_Lesser22);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser22,targetMappedID_Base_Lesser23,,,targetMappedID_Base_ShadowDodge);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser23,targetMappedID_Base_Lesser24,targetMappedID_Base_Lesser22);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser24,,targetMappedID_Base_Lesser23,,targetMappedID_Base_Counter);
+	#endregion
 	#endregion
 	
 	#region Galaxia

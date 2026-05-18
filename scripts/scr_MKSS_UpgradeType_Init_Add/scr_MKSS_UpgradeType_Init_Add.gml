@@ -1,6 +1,6 @@
 ///@description MKSS - Upgrade Type - Init - Add
 
-function scr_MKSS_UpgradeType_Init_Add(targetID,targetName = "",targetConstellationSetupScript = undefined)
+function scr_MKSS_UpgradeType_Init_Add(targetID,targetTitle = "",targetConstellationSetupScript = undefined)
 {
 	var targetMappedID = ds_map_size(global.MKSS_UpgradeTypeIDs);
 	ds_map_add(global.MKSS_UpgradeTypeIDs,targetID,targetMappedID);
@@ -8,7 +8,7 @@ function scr_MKSS_UpgradeType_Init_Add(targetID,targetName = "",targetConstellat
 	global.MKSS_UpgradeTypeList[global.MKSS_UpgradeTypeIDs[? targetID]] = 
 	{
         ID: targetID,
-		name: targetName,
+		title: targetTitle,
 		constellationSetupScript: targetConstellationSetupScript
     };
 	

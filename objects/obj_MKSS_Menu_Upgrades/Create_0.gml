@@ -1,10 +1,25 @@
 ///@description Create
 
 #region Initialize Variables
+#region Component Setup
+scr_Component_ButtonInputTimer_Setup(5);
+#endregion
+
+#region Other Variables
 playerNum = 0;
+
+speedMultFinal = global.speedMultGlobal * global.deltaTime;
+
+selection = 0;
+
+hintOffset = 32;
+hintOffset = 0;
+hintOffsetTimerMax = 15;
+hintOffsetTimer = hintOffsetTimerMax;
 
 currentCategory = global.MKSS_UpgradeTypeIDs[? "base"];
 constellationList = ds_list_create();
+#endregion
 #endregion
 
 // MAKE THIS A SCRIPT

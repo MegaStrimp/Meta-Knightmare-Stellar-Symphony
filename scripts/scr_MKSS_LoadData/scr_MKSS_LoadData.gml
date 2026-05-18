@@ -31,12 +31,14 @@ function scr_MKSS_LoadData(file,importFile = false)
 	#region Upgrade Status
 	for (var i = 0; i < ds_map_size(global.MKSS_UpgradeIDs); i++)
 	{
-		var upgradeID = global.MKSS_UpgradeList[i].ID;
-		
-		var upgradeIsUnlocked = ini_read_real("upgradeStatus",string(upgradeID) + "_IsUnlocked",false);
-		if (global.MKSS_UpgradeList[i].isDefault) upgradeIsUnlocked = true;
-		
-		global.MKSS_UpgradeList[i].isUnlocked = upgradeIsUnlocked;
+		if (!global.MKSS_UpgradeList[i].isLesserNode)
+		{
+			var upgradeID = global.MKSS_UpgradeList[i].ID;
+			
+			var upgradeIsUnlocked = ini_read_real("upgradeStatus",string(upgradeID) + "_IsUnlocked",false);
+			
+			global.MKSS_UpgradeList[i].isUnlocked = upgradeIsUnlocked;
+		}
 	}
 	#endregion
 	

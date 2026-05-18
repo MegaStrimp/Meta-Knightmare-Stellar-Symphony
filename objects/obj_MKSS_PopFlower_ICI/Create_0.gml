@@ -3,7 +3,7 @@
 #region Initialize Variables
 #region Sprites
 spriteSets =
-[[spr_MKSS_PopFlower_ICI_1_Closed,spr_MKSS_PopFlower_ICI_1_Bloom,spr_MKSS_PopFlower_ICI_1_Open]];
+[[spr_MKSS_PopFlower_ICI_1_Closed,spr_MKSS_PopFlower_ICI_1_Bloom,spr_MKSS_PopFlower_ICI_1_Open,[spr_MKSS_PopFlower_ICI_1_Palette1,spr_MKSS_PopFlower_ICI_1_Palette2]]];
 
 var setIndex = choose(0,0);
 
@@ -11,7 +11,7 @@ sprClosed = spriteSets[setIndex][0];
 sprBloom = spriteSets[setIndex][1];
 sprOpen = spriteSets[setIndex][2];
 
-palSprite = -1;
+palSprite = spriteSets[setIndex][3][irandom(array_length(spriteSets[setIndex][3]) - 1)];
 #endregion
 
 #region Object Attributes
