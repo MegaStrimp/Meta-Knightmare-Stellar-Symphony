@@ -70,7 +70,7 @@ function scr_MKSS_Upgrade_Init_Set()
 	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser6,targetMappedID_Base_Lesser7,,,targetMappedID_Base_Lesser5);
 	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser7,targetMappedID_Base_Lesser9,targetMappedID_Base_Lesser6,,targetMappedID_Base_Lesser8);
 	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser8,,targetMappedID_Base_Lesser5,targetMappedID_Base_Lesser7);
-	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser9,targetMappedID_Base_Lesser10,targetMappedID_Base_Lesser7,,targetMappedID_Base_Lesser12);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser9,targetMappedID_Base_Lesser12,targetMappedID_Base_Lesser7,targetMappedID_Base_Lesser10);
 	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser10,targetMappedID_Base_Lesser11,targetMappedID_Base_Lesser9);
 	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser11,targetMappedID_Base_SonicWings,targetMappedID_Base_Lesser10,,targetMappedID_Base_Lesser12);
 	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser12,,targetMappedID_Base_Lesser9,targetMappedID_Base_Lesser11);
@@ -78,7 +78,7 @@ function scr_MKSS_Upgrade_Init_Set()
 	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser13,targetMappedID_Base_Lesser14,targetMappedID_Base_SonicWings,,targetMappedID_Base_Lesser16);
 	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser14,targetMappedID_Base_Lesser15,targetMappedID_Base_Lesser13);
 	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser15,targetMappedID_Base_Lesser17,targetMappedID_Base_Lesser14,,targetMappedID_Base_Lesser16);
-	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser16,targetMappedID_Base_Lesser15,targetMappedID_Base_Lesser13);
+	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser16,targetMappedID_Base_Lesser15,,targetMappedID_Base_Lesser13);
 	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser17,targetMappedID_Base_Lesser18,targetMappedID_Base_Lesser15,,targetMappedID_Base_Lesser20);
 	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser18,,targetMappedID_Base_Lesser17,,targetMappedID_Base_Lesser19);
 	scr_MKSS_Upgrade_Init_Add_Neighbors(targetMappedID_Base_Lesser19,,targetMappedID_Base_Lesser20,targetMappedID_Base_Lesser18,targetMappedID_Base_Parry);
@@ -96,65 +96,65 @@ function scr_MKSS_Upgrade_Init_Set()
 	var categoryID = global.MKSS_UpgradeTypeIDs[? "galaxia"];
 	
 	var targetMappedID_Galaxia_Kick = scr_MKSS_Upgrade_Init_Add("Galaxia_Kick",categoryID,109,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Kick);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Kick,"Kick");
 	
 	var targetMappedID_Galaxia_Barrage = scr_MKSS_Upgrade_Init_Add("Galaxia_Barrage",categoryID,109,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Barrage);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Barrage,"Barrage");
 	
 	var targetMappedID_Galaxia_Finisher = scr_MKSS_Upgrade_Init_Add("Galaxia_Finisher",categoryID,109,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Finisher);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Finisher,"Finisher");
 	
 	var targetMappedID_Galaxia_ExtraFinisher = scr_MKSS_Upgrade_Init_Add("Galaxia_ExtraFinisher",categoryID,109,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_ExtraFinisher);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_ExtraFinisher,"Extra Finisher");
 	
 	var targetMappedID_Galaxia_MachTornado = scr_MKSS_Upgrade_Init_Add("Galaxia_MachTornado",categoryID,109,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_MachTornado);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_MachTornado,"Mach Tornado");
 	
 	var targetMappedID_Galaxia_MachPrime = scr_MKSS_Upgrade_Init_Add("Galaxia_MachPrime",categoryID,109,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_MachPrime);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_MachPrime,"Mach Prime");
 	
 	var targetMappedID_Galaxia_Stab = scr_MKSS_Upgrade_Init_Add("Galaxia_Stab",categoryID,109,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Stab);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Stab,"Stab");
 	
 	var targetMappedID_Galaxia_CircleSlash = scr_MKSS_Upgrade_Init_Add("Galaxia_CircleSlash",categoryID,109,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_CircleSlash);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_CircleSlash,"Circle Slash");
 	
 	var targetMappedID_Galaxia_GroundPound = scr_MKSS_Upgrade_Init_Add("Galaxia_GroundPound",categoryID,109,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_GroundPound);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_GroundPound,"Ground Pound");
 	
 	var targetMappedID_Galaxia_BlastPound = scr_MKSS_Upgrade_Init_Add("Galaxia_BlastPound",categoryID,109,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_BlastPound);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_BlastPound,"Blast Pound");
 	
 	var targetMappedID_Galaxia_UpJuggle = scr_MKSS_Upgrade_Init_Add("Galaxia_UpJuggle",categoryID,109,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_UpJuggle);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_UpJuggle,"Up Juggle");
 	#endregion
 	
 	#region Buzzcut
 	var categoryID = global.MKSS_UpgradeTypeIDs[? "buzzcut"];
 	
-	var targetMappedID_Buzzcut_Temp = scr_MKSS_Upgrade_Init_Add("Buzzcut_Temp",categoryID,109,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Buzzcut_Temp);
+	var targetMappedID_Buzzcut_Finisher = scr_MKSS_Upgrade_Init_Add("Buzzcut_Finisher",categoryID,109,93);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Buzzcut_Finisher);
 	#endregion
 	
 	#region Whiplash
 	var categoryID = global.MKSS_UpgradeTypeIDs[? "whiplash"];
 	
-	var targetMappedID_Whiplash_Temp = scr_MKSS_Upgrade_Init_Add("Whiplash_Temp",categoryID,109,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Whiplash_Temp);
+	var targetMappedID_Whiplash_Finisher = scr_MKSS_Upgrade_Init_Add("Whiplash_Finisher",categoryID,109,93);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Whiplash_Finisher);
 	#endregion
 	
 	#region Trifecta
 	var categoryID = global.MKSS_UpgradeTypeIDs[? "trifecta"];
 	
-	var targetMappedID_Trifecta_Temp = scr_MKSS_Upgrade_Init_Add("Trifecta_Temp",categoryID,109,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Trifecta_Temp);
+	var targetMappedID_Trifecta_Finisher = scr_MKSS_Upgrade_Init_Add("Trifecta_Finisher",categoryID,109,93);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Trifecta_Finisher);
 	#endregion
 	
 	#region Stella
 	var categoryID = global.MKSS_UpgradeTypeIDs[? "stella"];
 	
-	var targetMappedID_Stella_Temp = scr_MKSS_Upgrade_Init_Add("Stella_Temp",categoryID,109,93);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Stella_Temp);
+	var targetMappedID_Stella_Finisher = scr_MKSS_Upgrade_Init_Add("Stella_Finisher",categoryID,109,93);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Stella_Finisher);
 	#endregion
 	#endregion
 }

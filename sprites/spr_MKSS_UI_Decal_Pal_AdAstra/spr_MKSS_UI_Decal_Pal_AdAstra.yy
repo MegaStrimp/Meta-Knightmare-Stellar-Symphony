@@ -31,7 +31,7 @@
   "origin":0,
   "parent":{
     "name":"Palettes",
-    "path":"folders/Meta Knightmare Stellar Symphony/UI/Decals/Palettes.yy",
+    "path":"folders/Meta Knightmare Stellar Symphony/UI/Shared/Decals/Palettes.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

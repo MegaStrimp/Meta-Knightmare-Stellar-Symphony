@@ -35,7 +35,7 @@ for (var i = 0; i < global.maxPlayers; i++)
 if (global.debug)
 {
 	#region Stage Clear Test
-	if (!global.pause)
+	if (!global.pauseFinal)
 	{
 		if (keyboard_check_pressed(vk_space))
 		{
@@ -54,6 +54,8 @@ if (global.debug)
 	#region Debug Lobby
 	if (keyboard_check_pressed(ord("L")))
 	{
+		scr_MKSS_LoadData(global.selectedSave);
+		
 		scr_MKSS_Stage_End();
 		
 		room_goto(rm_MKSS_Debug_Lobby);

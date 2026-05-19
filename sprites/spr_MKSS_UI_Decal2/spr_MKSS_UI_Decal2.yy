@@ -26,7 +26,7 @@
   "origin":2,
   "parent":{
     "name":"Decals",
-    "path":"folders/Meta Knightmare Stellar Symphony/UI/Decals.yy",
+    "path":"folders/Meta Knightmare Stellar Symphony/UI/Shared/Decals.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
