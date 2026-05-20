@@ -7,5 +7,10 @@ function scr_MKSS_Switch_Activation_GetFinishedWeapons()
 		global.MKSS_WeaponList[i].isUnlocked = true;
 	}
 	
+	for (var i = 0; i < 3; i++)
+	{
+		global.MKSS_UpgradeTypeList[i].isUnlocked = true;
+	}
+	
 	with (obj_Player) if (playerNum == 0) scr_MKSS_Player_SetWeapons();
 }

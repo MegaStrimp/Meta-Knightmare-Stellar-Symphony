@@ -58,19 +58,19 @@ for (var i = 0; i < ds_list_size(constellationList); i++)
 	
 	draw_sprite(targetSprite,0,nodeX,nodeY);
 	
-	if (i == selection) draw_sprite_ext(spr_MKSS_UI_Shared_Selection,selectionIndex,nodeX,nodeY,selectionScale,selectionScale,0,c_white,1);
+	if (ds_list_find_value(constellationList,i) == selection) draw_sprite_ext(spr_MKSS_UI_Shared_Selection,selectionIndex,nodeX,nodeY,selectionScale,selectionScale,0,c_white,1);
 	
 	if ((scr_MouseIsInbetween(nodeX - 6,nodeY - 6,nodeX + 6,nodeY + 6)) and (mouse_check_button(mb_left))) selection = ds_list_find_value(constellationList,i);
 }
 #endregion
 
 #region Page Title
-var finalPageTitle = global.MKSS_UpgradeTypeList[global.MKSS_UpgradeList[selection].categoryID].title;
+var finalPageTitle = global.MKSS_UpgradeTypeList[currentIndex.categoryID].title;
 if (finalPageTitle != undefined) scribble(finalPageTitle).align(fa_center).draw(xx + (global.gameWidth / 2),yy + 4);
 #endregion
 
 #region Upgrade Title
-var finalTitle = global.MKSS_UpgradeList[selection].title;
+var finalTitle = currentIndex.title;
 if (finalTitle != undefined) scribble(finalTitle).align(fa_center).draw(xx + (global.gameWidth / 2),yy + global.gameHeight - 30 + constellationOffsets[0].y);
 #endregion
 
