@@ -140,8 +140,8 @@
   "size":11.0,
   "styleName":"Regular",
   "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
+    "name":"StarDreamFramework",
+    "path":"texturegroups/StarDreamFramework",
   },
   "TTFName":"",
   "usesSDF":false,

@@ -58,11 +58,11 @@ function scr_MKSS_Player_BeginStep_Main()
 	{
 		collidingWall = instance_place(x,bbox_bottom + dirY,obj_Wall);
 	}
-	else if (position_meeting(bbox_left,bbox_bottom + dirY,obj_Wall))
+	else if (position_meeting(bbox_left + 1,bbox_bottom + dirY,obj_Wall))
 	{
 		collidingWall = instance_place(bbox_left,bbox_bottom + dirY,obj_Wall);
 	}
-	else if (position_meeting(bbox_right,bbox_bottom + dirY,obj_Wall))
+	else if (position_meeting(bbox_right - 1,bbox_bottom + dirY,obj_Wall))
 	{
 		collidingWall = instance_place(bbox_right,bbox_bottom + dirY,obj_Wall);
 	}
@@ -119,11 +119,11 @@ function scr_MKSS_Player_BeginStep_Main()
 		{
 			collidingWall = instance_place(x,bbox_bottom + dirY,obj_Platform);
 		}
-		else if (position_meeting(bbox_left,bbox_bottom + dirY,obj_Platform))
+		else if (position_meeting(bbox_left + 1,bbox_bottom + dirY,obj_Platform))
 		{
 			collidingWall = instance_place(bbox_left,bbox_bottom + dirY,obj_Platform);
 		}
-		else if (position_meeting(bbox_right,bbox_bottom + dirY,obj_Platform))
+		else if (position_meeting(bbox_right - 1,bbox_bottom + dirY,obj_Platform))
 		{
 			collidingWall = instance_place(bbox_right,bbox_bottom + dirY,obj_Platform);
 		}

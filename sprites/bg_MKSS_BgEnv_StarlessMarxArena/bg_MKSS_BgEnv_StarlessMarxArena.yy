@@ -86,8 +86,8 @@
   "swatchColours":null,
   "swfPrecision":0.5,
   "textureGroupId":{
-    "name":"UltimateArena",
-    "path":"texturegroups/UltimateArena",
+    "name":"MetaKnightmareStellarSymphony",
+    "path":"texturegroups/MetaKnightmareStellarSymphony",
   },
   "type":0,
   "VTile":false,

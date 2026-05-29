@@ -104,8 +104,8 @@
   "swatchColours":null,
   "swfPrecision":0.5,
   "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
+    "name":"MetaKnightmareStellarSymphony",
+    "path":"texturegroups/MetaKnightmareStellarSymphony",
   },
   "type":0,
   "VTile":false,

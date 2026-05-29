@@ -53,8 +53,8 @@ for (var i = 0; i < ds_list_size(constellationList); i++)
 	
 	var nodeX = xx + iIndex.x + constellationOffsets[i].x;
 	var nodeY = yy + iIndex.y + constellationOffsets[i].y;
-	var targetSprite = obj_MKSS_Menu_Upgrades_Node;
-	if (iIndex.isLesserNode) targetSprite = obj_MKSS_Menu_Upgrades_LesserNode;
+	var targetSprite = spr_MKSS_Menu_Upgrades_Node;
+	if (iIndex.isLesserNode) targetSprite = spr_MKSS_Menu_Upgrades_LesserNode;
 	
 	draw_sprite(targetSprite,0,nodeX,nodeY);
 	

@@ -66,10 +66,19 @@ if (!localPause)
 	
 	if (flag_SwitchActive)
 	{
-		var sfx = scr_PlaySfx(snd_MKSS_Switch);
+		if (isTwinkle)
+		{
+			var sfx = scr_PlaySfx(snd_MKSS_TwinkleSwitch);
+		}
+		else
+		{
+			var sfx = scr_PlaySfx(snd_MKSS_Switch);
+		}
 		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		if (activationScript != -1) script_execute(activationScript);
+		
+		if (isTwinkle) instance_destroy();
 	}
 	#endregion
 }

@@ -16,7 +16,15 @@ function scr_MKSS_UI_Button_Component_Save_Trigger(targetSave)
 		
 		var targetRoom = rm_MKSS_BattleshipHalberd;
 		var targetAlphaSpd = .05;
-		if (!global.MKSS_StageList[global.MKSS_StageIDs[? "iceCreamIsland"]].isBeaten)
+		if (global.debug)
+		{
+			targetRoom = rm_MKSS_Debug_Lobby;
+		}
+		else if (global.demo)
+		{
+			targetRoom = rm_MKSS_Debug_Lobby_Beta;
+		}
+		else if (!global.MKSS_StageList[global.MKSS_StageIDs[? "iceCreamIsland"]].isBeaten)
 		{
 			targetRoom = rm_MKSS_IceCreamIsland_1;
 			var targetAlphaSpd = .01;

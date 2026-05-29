@@ -456,8 +456,8 @@
   "swatchColours":null,
   "swfPrecision":0.5,
   "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
+    "name":"StarDreamFramework",
+    "path":"texturegroups/StarDreamFramework",
   },
   "type":0,
   "VTile":false,

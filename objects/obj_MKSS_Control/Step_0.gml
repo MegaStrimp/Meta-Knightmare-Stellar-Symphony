@@ -76,4 +76,17 @@ if (global.debug)
 	}
 	#endregion
 }
+else if (global.demo)
+{
+	#region Beta Lobby
+	if (keyboard_check_pressed(ord("L")))
+	{
+		scr_MKSS_LoadData(global.selectedSave);
+		
+		scr_MKSS_Stage_End();
+		
+		room_goto(rm_MKSS_Debug_Lobby_Beta);
+	}
+	#endregion
+}
 #endregion

@@ -21,6 +21,14 @@ activationScript = -1;
 
 repeatTimer = -1;
 repeatTimerMax = 30;
+
+isTwinkle = false;
+
+hasAura = false;
+auraTimerMax = 5;
+auraTimer = -1;
+
+text = "";
 #endregion
 #endregion
 
