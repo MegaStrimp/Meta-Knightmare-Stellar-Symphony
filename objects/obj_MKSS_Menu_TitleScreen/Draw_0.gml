@@ -48,7 +48,7 @@ if (state == 3)
 if ((blackAlpha == 0) and (state < 4))
 {
 	var text = "VERSION ";
-	if (global.demo) text = "DEMO VERSION ";
+	//if (global.demo) text = "DEMO VERSION ";
 	
 	scribble("[fnt_Advance_Small]" + string(text) + string(global.versionNumber) + "[/font]").align(fa_right,fa_bottom).draw(238,158);
 }

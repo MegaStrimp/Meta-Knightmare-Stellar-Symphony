@@ -18,6 +18,10 @@ function scr_MKSS_Pause_DrawEnd()
 	}
 	#endregion
 	
+	#region Title
+	draw_sprite(spr_MKSS_Menu_PauseScreen_Title,0,xx + MKSS_GamePause_TitleX,yy + 2);
+	#endregion
+	
 	#region Decals
 	if ((global.shaders) and (MKSS_GamePause_DecalPalette != -1)) pal_swap_set(MKSS_GamePause_DecalPalette,1,false);
 	draw_sprite(spr_MKSS_UI_Decal1,0,xx + lengthdir_x(MKSS_GamePause_DecalLength,45),yy + 160 + lengthdir_y(MKSS_GamePause_DecalLength,45));
