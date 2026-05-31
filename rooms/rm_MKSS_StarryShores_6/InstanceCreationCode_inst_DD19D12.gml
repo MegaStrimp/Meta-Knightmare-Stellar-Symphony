@@ -1,2 +1,2 @@
-dirX = -1;
-scr_MKSS_Enemy_WaddleDee_AI_Idle_Setup();
+dirX = 1;
+scr_MKSS_Enemy_WaddleDee_AI_Walk_Setup();
