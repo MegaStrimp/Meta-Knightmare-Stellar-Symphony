@@ -6,6 +6,10 @@
       "option_operagx_game_name":"Coconut Engine",
       "option_operagx_mod_game_name":"Coconut Engine",
     },
+    "OperaDemo":{
+      "option_operagx_game_name":"Coconut Engine",
+      "option_operagx_mod_game_name":"Meta Knightmare Stellar Symphony",
+    },
   },
   "name":"operagx",
   "option_operagx_display_cursor":true,

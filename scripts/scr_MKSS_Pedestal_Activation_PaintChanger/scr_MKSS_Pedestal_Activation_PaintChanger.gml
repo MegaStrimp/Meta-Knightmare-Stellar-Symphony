@@ -4,6 +4,8 @@ function scr_MKSS_Pedestal_Activation_PaintChanger()
 {
 	scr_PlaySfx(snd_MKSS_ButtonChange);
 	
+	global.hasHud = false;
+	
 	isActive = true;
 	with (obj_MKSS_PaintChanger)
 	{

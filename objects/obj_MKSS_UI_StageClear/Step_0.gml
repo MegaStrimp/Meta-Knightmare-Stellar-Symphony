@@ -10,6 +10,8 @@ if (canSelect)
 	{
 		scr_PlaySfx(snd_MKSS_ButtonNo);
 		
+		global.canGamePause = true;
+		
 		with (obj_Player) stageClear_StateTimer = 0;
 		
 		targetRoom = rm_MKSS_BattleshipHalberd;

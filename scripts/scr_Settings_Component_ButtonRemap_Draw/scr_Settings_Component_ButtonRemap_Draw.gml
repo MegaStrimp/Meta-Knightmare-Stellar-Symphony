@@ -9,5 +9,5 @@ function scr_Settings_Component_ButtonRemap_Draw(targetIndex)
 	text.draw(startX + 12,startY + (separation * i));
 	
 	var targetIcon = global.UI_IconBindings[? string(buttonRemap_KeysText[targetIndex])];
-	draw_sprite(targetIcon,0,startX + 12 + text.get_width() + 6,startY + (separation * i) - 1);
+	if (targetIcon != undefined) draw_sprite(targetIcon,0,startX + 12 + text.get_width() + 6,startY + (separation * i) - 1);
 }

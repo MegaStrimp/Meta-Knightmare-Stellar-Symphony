@@ -19,22 +19,22 @@ function scr_MKSS_UI_GemIntro_Create(targetTitle,targetSubitle,targetDescription
 			
 			case 0:
 			medalSprite = spr_MKSS_UI_Medal_Bronze;
-			stageScoreFont = "[fnt_Advance_Gray]"; //STRIMPTODO
+			stageScoreFont = "[fnt_Advance]"; //STRIMPTODO
 			break;
 			
 			case 1:
 			medalSprite = spr_MKSS_UI_Medal_Silver;
-			stageScoreFont = "[fnt_Advance_Gray]";
+			stageScoreFont = "[fnt_Advance]";
 			break;
 			
 			case 2:
 			medalSprite = spr_MKSS_UI_Medal_Gold;
-			stageScoreFont = "[fnt_Advance_Gray]";
+			stageScoreFont = "[fnt_Advance]";
 			break;
 			
 			case 3:
 			medalSprite = spr_MKSS_UI_Medal_Platinum;
-			stageScoreFont = "[fnt_Advance_Gray]";
+			stageScoreFont = "[fnt_Advance]";
 			break;
 		}
 	}

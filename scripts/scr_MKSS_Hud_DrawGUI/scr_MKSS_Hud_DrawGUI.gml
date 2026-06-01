@@ -8,6 +8,9 @@ function scr_MKSS_Hud_DrawGUI()
 		draw_sprite_ext(spr_MKSS_Hud_Weapon_Bg_Small,hud_WeaponBgIndex,2,global.gameHeight - 17,1,1,image_angle,image_blend,.25);
 		
 		draw_sprite_ext(hud_LeftIcon,0,9,global.gameHeight - 10,1,1,image_angle,image_blend,.8);
+		
+		var targetIcon = global.UI_IconBindings[? string(input_binding_get("L"))];
+		if (targetIcon != undefined) draw_sprite(targetIcon,0,4,global.gameHeight - 30 + (2 * (buttonInputTimerComponent_LTimer != -1)));
 	}
 	
 	if (hud_RightIcon != undefined)
@@ -15,6 +18,9 @@ function scr_MKSS_Hud_DrawGUI()
 		draw_sprite_ext(spr_MKSS_Hud_Weapon_Bg_Small,hud_WeaponBgIndex,52,global.gameHeight - 17,1,1,image_angle,image_blend,.25);
 		
 		draw_sprite_ext(hud_RightIcon,0,59,global.gameHeight - 10,1,1,image_angle,image_blend,.8);
+		
+		var targetIcon = global.UI_IconBindings[? string(input_binding_get("R"))];
+		if (targetIcon != undefined) draw_sprite(targetIcon,0,54,global.gameHeight - 30 + (2 * (buttonInputTimerComponent_RTimer != -1)));
 	}
 	
 	if (hud_MiddleIcon != undefined)

@@ -2,6 +2,10 @@
 
 function scr_MKSS_Hud_Setup()
 {
+	#region Component Setup
+	scr_Component_ButtonInputTimer_Setup(5);
+	#endregion
+	
 	#region Set Hud Scripts
 	hudStep = scr_MKSS_Hud_Step;
 	hudEndStep = scr_MKSS_Hud_EndStep;

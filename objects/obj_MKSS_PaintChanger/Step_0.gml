@@ -82,6 +82,8 @@ if (isActive)
 	{
 		scr_PlaySfx(snd_MKSS_ButtonNo);
 		
+		global.hasHud = true;
+		
 		with (ownerPedestal) isActive = false;
 		with (obj_Player)
 		{
@@ -98,6 +100,16 @@ if (isActive)
 
 if (!localPause)
 {
+	#region Player Camera Y Offset
+	with (obj_Player)
+	{
+		if (playerNum == 0)
+		{
+			cameraYOffset = lerp(cameraYOffset,other.isActive * -36,.05);
+		}
+	}
+	#endregion
+	
 	#region Paint Roller
 	paintRollerIndex = (paintRollerIndex + paintRollerSpeed) % paintRollerNumber;
 	paintRollerOffset = lerp(paintRollerOffset,paintRollerOffsetTarget,.1);

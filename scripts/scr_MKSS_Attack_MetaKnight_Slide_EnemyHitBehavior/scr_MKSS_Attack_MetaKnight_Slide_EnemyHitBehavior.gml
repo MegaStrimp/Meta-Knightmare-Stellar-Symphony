@@ -5,7 +5,7 @@ function scr_MKSS_Attack_MetaKnight_Slide_EnemyHitBehavior()
 	#region Cancel Attack
 	with (owner)
 	{
-		attackCooldownTarget = 10;
+		attackCooldownTarget = 15;
 		
 		hsp = -dirX * .4 * speedMultFinal;
 		slideAccelTimer = -1;
