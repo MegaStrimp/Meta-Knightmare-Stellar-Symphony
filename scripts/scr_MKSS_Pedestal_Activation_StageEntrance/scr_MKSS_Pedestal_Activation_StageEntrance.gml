@@ -7,9 +7,8 @@ function scr_MKSS_Pedestal_Activation_StageEntrance()
 	global.hasHud = false;
 	
 	isActive = true;
-	with (obj_MKSS_StageEntrance)
+	with (instance_nearest(x,y,obj_MKSS_StageEntrance))
 	{
-		ownerPedestal = other;
 		isActive = true;
 	}
 	with (targetPlayer) isPaused = true;

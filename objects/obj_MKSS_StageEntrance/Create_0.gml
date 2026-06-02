@@ -12,6 +12,7 @@ targetRoom = -1;
 isActive = false;
 selection = 0;
 ownerPedestal = -1;
+canTeleport = false;
 
 circleRadius = 4;
 

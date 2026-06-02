@@ -13,7 +13,7 @@ if (isActive)
 	}
 	
 	var titleText = scribble(color + string(global.MKSS_StageList[selection].name) + "[/color]");
-	titleText.align(fa_center).draw(camera_get_view_x(mainView) + (global.gameWidth / 2),camera_get_view_y(mainView) + 4);
+	titleText.align(fa_center).wrap(global.gameWidth / 2).draw(camera_get_view_x(mainView) + (global.gameWidth / 2),camera_get_view_y(mainView) + 4);
 	
 	var targetIcon = global.UI_IconBindings[? string(input_binding_get("L"))];
 	if (targetIcon != undefined) draw_sprite(targetIcon,0,camera_get_view_x(mainView) + (global.gameWidth / 2) - (titleText.get_width() / 2) - 18,camera_get_view_y(mainView) + 2 + (2 * (buttonInputTimerComponent_LTimer != -1)));

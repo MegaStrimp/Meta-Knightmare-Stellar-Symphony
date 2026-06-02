@@ -11,6 +11,7 @@ playerNum = 0;
 isActive = false;
 selection = 0;
 ownerPedestal = -1;
+canTeleport = false;
 
 paintRollerSprite = spr_MKSS_PaintChanger_PaintRoller_Idle;
 paintRollerCanSprite = spr_MKSS_PaintChanger_PaintRoller_Idle_Can;

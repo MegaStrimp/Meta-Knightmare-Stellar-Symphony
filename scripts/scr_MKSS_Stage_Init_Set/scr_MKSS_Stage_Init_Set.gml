@@ -32,8 +32,10 @@ function scr_MKSS_Stage_Init_Set()
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Royal Reeve",[100,200,300,400],,spr_MKSS_UI_Decal_Pal_RoyalReeve);
 	
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeve_BlueGem");
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeve_RedGem");
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_RoyalReeve);
+	
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeve_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeve_BlueGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
 	#endregion
 	
 	#region Living Loom
@@ -41,8 +43,10 @@ function scr_MKSS_Stage_Init_Set()
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Living Loom",[100,200,300,400],,spr_MKSS_UI_Decal_Pal_LivingLoom);
 	
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"livingLoom_BlueGem");
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"livingLoom_RedGem");
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
+	
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"livingLoom_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"livingLoom_BlueGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
 	#endregion
 	
 	#region Fission Factory
@@ -50,8 +54,10 @@ function scr_MKSS_Stage_Init_Set()
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Fission Factory",[100,200,300,400],,spr_MKSS_UI_Decal_Pal_FissionFactory);
 	
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"fissionFactory_BlueGem");
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"fissionFactory_RedGem");
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
+	
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"fissionFactory_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"fissionFactory_BlueGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
 	#endregion
 	
 	#region Ad Astra
@@ -59,68 +65,90 @@ function scr_MKSS_Stage_Init_Set()
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Ad Astra",[100,200,300,400],,spr_MKSS_UI_Decal_Pal_AdAstra);
 	
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstra_BlueGem");
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstra_RedGem");
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
+	
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstra_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstra_BlueGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
 	#endregion
 	
 	#region Gem Arena 1
 	var stageID = "gemArena1";
 	
-	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Gem Arena 1",[100,200,300,400]);
+	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Starry Shores Enemy Ordeal",[100,200,300,400]);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_GemArena1);
 	#endregion
 	
 	#region Gem Arena 2
 	var stageID = "gemArena2";
 	
-	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Gem Arena 2",[100,200,300,400]);
+	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Royal Reeve Enemy Ordeal",[100,200,300,400]);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_GemArena2);
 	#endregion
 	
 	#region Gem Arena 3
 	var stageID = "gemArena3";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Gem Arena 3",[100,200,300,400]);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	#endregion
 	
 	#region Gem Arena 4
 	var stageID = "gemArena4";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Gem Arena 4",[100,200,300,400]);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	#endregion
 	
 	#region Gem Arena 5
 	var stageID = "gemArena5";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Gem Arena 5",[100,200,300,400]);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	#endregion
 	
 	#region Gem Boss 1
 	var stageID = "gemBoss1";
 	
-	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Gem Boss 1",[100,200,300,400]);
+	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"VS. Starless Nightmare",[100,200,300,400]);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_GemBoss1);
 	#endregion
 	
 	#region Gem Boss 2
 	var stageID = "gemBoss2";
 	
-	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Gem Boss 2",[100,200,300,400]);
+	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"VS. Starless Marx",[100,200,300,400]);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_GemBoss2);
 	#endregion
 	
 	#region Gem Boss 3
 	var stageID = "gemBoss3";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Gem Boss 3",[100,200,300,400]);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	#endregion
 	
 	#region Gem Boss 4
 	var stageID = "gemBoss4";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Gem Boss 4",[100,200,300,400]);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	#endregion
 	
 	#region Gem Boss 5
 	var stageID = "gemBoss5";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Gem Boss 5",[100,200,300,400]);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	#endregion
 	
 	#region Starry Shores EX
@@ -128,8 +156,10 @@ function scr_MKSS_Stage_Init_Set()
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Starry Shores EX",[100,200,300,400],,spr_MKSS_UI_Decal_Pal_StarryShoresEX);
 	
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"starryShoresEX_BlueGem");
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"starryShoresEX_RedGem");
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
+	
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"starryShoresEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"starryShoresEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
 	#endregion
 	
 	#region Royal Reeve EX
@@ -137,8 +167,10 @@ function scr_MKSS_Stage_Init_Set()
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Royal Reeve EX",[100,200,300,400],,spr_MKSS_UI_Decal_Pal_RoyalReeveEX);
 	
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeveEX_BlueGem");
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeveEX_RedGem");
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
+	
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeveEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeveEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
 	#endregion
 	
 	#region Living Loom EX
@@ -146,8 +178,10 @@ function scr_MKSS_Stage_Init_Set()
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Living Loom EX",[100,200,300,400],,spr_MKSS_UI_Decal_Pal_LivingLoomEX);
 	
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"livingLoomEX_BlueGem");
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"livingLoomEX_RedGem");
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
+	
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"livingLoomEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"livingLoomEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
 	#endregion
 	
 	#region Fission Factory EX
@@ -155,8 +189,10 @@ function scr_MKSS_Stage_Init_Set()
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Fission Factory EX",[100,200,300,400],,spr_MKSS_UI_Decal_Pal_FissionFactoryEX);
 	
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"fissionFactoryEX_BlueGem");
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"fissionFactoryEX_RedGem");
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
+	
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"fissionFactoryEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"fissionFactoryEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
 	#endregion
 	
 	#region Ad Astra EX
@@ -164,68 +200,90 @@ function scr_MKSS_Stage_Init_Set()
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Ad Astra EX",[100,200,300,400],,spr_MKSS_UI_Decal_Pal_AdAstraEX);
 	
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstraEX_BlueGem");
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstraEX_RedGem");
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
+	
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstraEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstraEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
 	#endregion
 	
 	#region Gem Arena 1 EX
 	var stageID = "gemArena1EX";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Gem Arena 1 EX",[100,200,300,400]);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	#endregion
 	
 	#region Gem Arena 2 EX
 	var stageID = "gemArena2EX";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Gem Arena 2 EX",[100,200,300,400]);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	#endregion
 	
 	#region Gem Arena 3 EX
 	var stageID = "gemArena3EX";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Gem Arena 3 EX",[100,200,300,400]);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	#endregion
 	
 	#region Gem Arena 4 EX
 	var stageID = "gemArena4EX";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Gem Arena 4 EX",[100,200,300,400]);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	#endregion
 	
 	#region Gem Arena 5 EX
 	var stageID = "gemArena5EX";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Gem Arena 5 EX",[100,200,300,400]);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	#endregion
 	
 	#region Gem Boss 1 EX
 	var stageID = "gemBoss1EX";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Gem Boss 1 EX",[100,200,300,400]);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	#endregion
 	
 	#region Gem Boss 2 EX
 	var stageID = "gemBoss2EX";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Gem Boss 2 EX",[100,200,300,400]);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	#endregion
 	
 	#region Gem Boss 3 EX
 	var stageID = "gemBoss3EX";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Gem Boss 3 EX",[100,200,300,400]);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	#endregion
 	
 	#region Gem Boss 4 EX
 	var stageID = "gemBoss4EX";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Gem Boss 4 EX",[100,200,300,400]);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	#endregion
 	
 	#region Gem Boss 5 EX
 	var stageID = "gemBoss5EX";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Gem Boss 5 EX",[100,200,300,400]);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	#endregion
 	#endregion
 }
