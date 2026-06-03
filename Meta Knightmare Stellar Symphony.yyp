@@ -1013,7 +1013,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.0.0.16",
+    "IDEVersion":"2024.14.4.222",
   },
   "name":"Meta Knightmare Stellar Symphony",
   "resources":[
@@ -2910,7 +2910,9 @@
     {"id":{"name":"spr_MKSS_SprayPaint_Superstar","path":"sprites/spr_MKSS_SprayPaint_Superstar/spr_MKSS_SprayPaint_Superstar.yy",},},
     {"id":{"name":"spr_MKSS_SprayPaint_Wizard","path":"sprites/spr_MKSS_SprayPaint_Wizard/spr_MKSS_SprayPaint_Wizard.yy",},},
     {"id":{"name":"spr_MKSS_Stage_Collectible_Icon_BlueGem","path":"sprites/spr_MKSS_Stage_Collectible_Icon_BlueGem/spr_MKSS_Stage_Collectible_Icon_BlueGem.yy",},},
+    {"id":{"name":"spr_MKSS_Stage_Collectible_Icon_BlueGemEX","path":"sprites/spr_MKSS_Stage_Collectible_Icon_BlueGemEX/spr_MKSS_Stage_Collectible_Icon_BlueGemEX.yy",},},
     {"id":{"name":"spr_MKSS_Stage_Collectible_Icon_RedGem","path":"sprites/spr_MKSS_Stage_Collectible_Icon_RedGem/spr_MKSS_Stage_Collectible_Icon_RedGem.yy",},},
+    {"id":{"name":"spr_MKSS_Stage_Collectible_Icon_RedGemEX","path":"sprites/spr_MKSS_Stage_Collectible_Icon_RedGemEX/spr_MKSS_Stage_Collectible_Icon_RedGemEX.yy",},},
     {"id":{"name":"spr_MKSS_Stage_Icon_GemArena1","path":"sprites/spr_MKSS_Stage_Icon_GemArena1/spr_MKSS_Stage_Icon_GemArena1.yy",},},
     {"id":{"name":"spr_MKSS_Stage_Icon_GemArena2","path":"sprites/spr_MKSS_Stage_Icon_GemArena2/spr_MKSS_Stage_Icon_GemArena2.yy",},},
     {"id":{"name":"spr_MKSS_Stage_Icon_GemBoss1","path":"sprites/spr_MKSS_Stage_Icon_GemBoss1/spr_MKSS_Stage_Icon_GemBoss1.yy",},},
