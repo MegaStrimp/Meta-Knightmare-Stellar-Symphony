@@ -13,5 +13,18 @@ function scr_MKSS_Pedestal_Activation_PaintChanger()
 		
 		isActive = true;
 	}
-	with (targetPlayer) isPaused = true;
+	with (targetPlayer)
+	{
+		isRunning = false;
+		runBuffer = -1;
+		runTurnBuffer = -1;
+		runParticleTimer = -1;
+		fallDuckTimer = -1;
+		walkSquishTimer = -1;
+		fallHopTimer = -1;
+		canFallHop = false;
+		fallHopJumped = false;
+		
+		isPaused = true;
+	}
 }

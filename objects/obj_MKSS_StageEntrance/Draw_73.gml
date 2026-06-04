@@ -22,6 +22,23 @@ if (isActive)
 	if (targetIcon != undefined) draw_sprite(targetIcon,0,camera_get_view_x(mainView) + (global.gameWidth / 2) + (titleText.get_width() / 2) + 7,camera_get_view_y(mainView) + 2 + (2 * (buttonInputTimerComponent_RTimer != -1)));
 	#endregion
 	
+	#region Collectibles
+	var collectibleList = global.MKSS_StageList[selection].collectibles;
+	
+	for (var i = 0; i < array_length(collectibleList); i++)
+	{
+		if (collectibleList[i].icon != undefined)
+		{
+			var waveX = sine_wave(current_time / 4200,1,1,0);
+			var waveY = sine_wave(current_time / (4500 + (4500 * i)),.8,1.1,0);
+			
+			if (!collectibleList[i].isObtained) gpu_set_fog(true,c_black,0,0);
+			draw_sprite(collectibleList[i].icon,0,x + 14 + (18 * i) + waveX,y - 2 - (2 * i) + waveY);
+			if (!collectibleList[i].isObtained) gpu_set_fog(false,c_white,0,0);
+		}
+	}
+	#endregion
+	
 	#region Button Hints
 	var startIcon = "";
 	var targetIcon = global.UI_IconBindings[? string(input_binding_get("A"))];

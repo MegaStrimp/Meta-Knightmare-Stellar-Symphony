@@ -119,7 +119,7 @@ if (isActive)
 			}
 			with (targetPedestal)
 			{
-				targetPlayer = other;
+				targetPlayer = other.ownerPedestal.targetPlayer;
 				if (activationScript != -1) script_execute(activationScript);
 			}
 		
@@ -147,7 +147,7 @@ if (isActive)
 			}
 			with (targetPedestal)
 			{
-				targetPlayer = other;
+				targetPlayer = other.ownerPedestal.targetPlayer;
 				if (activationScript != -1) script_execute(activationScript);
 			}
 		

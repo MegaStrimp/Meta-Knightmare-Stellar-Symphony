@@ -9,7 +9,23 @@ function scr_MKSS_Pedestal_Activation_StageEntrance()
 	isActive = true;
 	with (instance_nearest(x,y,obj_MKSS_StageEntrance))
 	{
+		particleTimer = 0;
 		isActive = true;
 	}
-	with (targetPlayer) isPaused = true;
+	with (targetPlayer)
+	{
+		isRunning = false;
+		runBuffer = -1;
+		runTurnBuffer = -1;
+		runParticleTimer = -1;
+		fallDuckTimer = -1;
+		walkSquishTimer = -1;
+		fallHopTimer = -1;
+		canFallHop = false;
+		fallHopJumped = false;
+		
+		hasAttackAnimation = true;
+		scr_ChangeSprite(spriteSet.sprFront,true);
+		isPaused = true;
+	}
 }

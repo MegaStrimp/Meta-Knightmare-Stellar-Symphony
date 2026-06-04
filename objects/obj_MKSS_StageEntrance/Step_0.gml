@@ -19,12 +19,15 @@ if (isActive)
 		with (ownerPedestal) isActive = false;
 		with (obj_Player)
 		{
+			hasAttackAnimation = false;
+			
 			if (playerNum == other.playerNum)
 			{
 				isPaused = false;
 			}
 		}
 		
+		particleTimer = -1;
 		isActive = false;
 	}
 	#endregion
@@ -38,12 +41,14 @@ if (isActive)
 			var pedestalList = obj_MKSS_Pedestal_Controller.pedestalList;
 			var pedestalListSize = ds_list_size(pedestalList);
 			var targetPedestal = ds_list_find_value(pedestalList,(ds_list_find_index(pedestalList,ownerPedestal) + 1 + pedestalListSize) % pedestalListSize);
-		
+			
 			global.hasHud = true;
-		
+			
 			with (ownerPedestal) isActive = false;
 			with (obj_Player)
 			{
+				hasAttackAnimation = false;
+				
 				if (playerNum == other.playerNum)
 				{
 					x = targetPedestal.x;
@@ -52,10 +57,11 @@ if (isActive)
 			}
 			with (targetPedestal)
 			{
-				targetPlayer = other;
+				targetPlayer = other.ownerPedestal.targetPlayer;
 				if (activationScript != -1) script_execute(activationScript);
 			}
-		
+			
+			particleTimer = -1;
 			isActive = false;
 		}
 	
@@ -66,24 +72,27 @@ if (isActive)
 			var pedestalList = obj_MKSS_Pedestal_Controller.pedestalList;
 			var pedestalListSize = ds_list_size(pedestalList);
 			var targetPedestal = ds_list_find_value(pedestalList,(ds_list_find_index(pedestalList,ownerPedestal) - 1 + pedestalListSize) % pedestalListSize);
-		
+			
 			global.hasHud = true;
-		
+			
 			with (ownerPedestal) isActive = false;
 			with (obj_Player)
 			{
 				if (playerNum == other.playerNum)
 				{
+					hasAttackAnimation = false;
+					
 					x = targetPedestal.x;
 					y = targetPedestal.y - 16;
 				}
 			}
 			with (targetPedestal)
 			{
-				targetPlayer = other;
+				targetPlayer = other.ownerPedestal.targetPlayer;
 				if (activationScript != -1) script_execute(activationScript);
 			}
-		
+			
+			particleTimer = -1;
 			isActive = false;
 		}
 	}
@@ -101,8 +110,23 @@ if (!localPause)
 	}
 	#endregion
 	
-	#region Circle Radius
-	circleRadius = lerp(circleRadius,4 + (70 * isActive),.05);
+	#region Circle Animation
+	circleIndex = (circleIndex + circleSpeed) % circleNumber;
+	circleRadius = lerp(circleRadius,.2 + (.8 * isActive),.05);
+	circleAngleWave = sine_wave(current_time / 4000,5,5,0);
+	#endregion
+	
+	#region Particle Timer
+	if (particleTimer != -1)
+	{
+		particleTimer = max(particleTimer - speedMultFinal,0);
+		if (particleTimer == 0)
+		{
+			scr_MKSS_ParticleSet_StageIntroStars(x + irandom_range(-12,12),y - 36 + irandom_range(-8,8),irandom_range(60,120));
+		
+			particleTimer = particleTimerMax;
+		}
+	}
 	#endregion
 }
 
