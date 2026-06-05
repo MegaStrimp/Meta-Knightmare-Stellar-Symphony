@@ -1,11 +1,11 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter",
+  "%Name":"spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_DoorEnter",
   "bboxMode":0,
-  "bbox_bottom":29,
-  "bbox_left":0,
-  "bbox_right":21,
-  "bbox_top":10,
+  "bbox_bottom":13,
+  "bbox_left":9,
+  "bbox_right":27,
+  "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
   "ConfigValues":{
@@ -29,19 +29,19 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"c4e5f496-468a-40fb-9c46-77a62f96d53a","blendMode":0,"displayName":"default","isLocked":false,"name":"c4e5f496-468a-40fb-9c46-77a62f96d53a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter",
+  "name":"spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_DoorEnter",
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Base",
-    "path":"folders/Meta Knightmare Stellar Symphony/Player/Characters/Meta Knight/Sprites/Base.yy",
+    "name":"Player",
+    "path":"folders/Meta Knightmare Stellar Symphony/Weapons/Weapons/Galaxia/Sprites/Player.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter",
+    "%Name":"spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_DoorEnter",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -65,7 +65,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter",
+    "name":"spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_DoorEnter",
     "playback":1,
     "playbackSpeed":15.0,
     "playbackSpeedType":0,
@@ -77,16 +77,16 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"00d0c453-bea0-4dd2-a7b8-c30dbb4364e5","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"00d0c453-bea0-4dd2-a7b8-c30dbb4364e5","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_DoorEnter/spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_DoorEnter.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"a8c12f7b-301f-4eaa-92b3-6753ce3807aa","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b318e6ac-c5ba-4140-ae88-a07899f5cb9b","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b318e6ac-c5ba-4140-ae88-a07899f5cb9b","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_DoorEnter/spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_DoorEnter.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"6495592d-82b4-4258-9d4b-9c8353443da3","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fb89b5d7-f616-44f7-8e5e-c4b809fa786c","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fb89b5d7-f616-44f7-8e5e-c4b809fa786c","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_DoorEnter/spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_DoorEnter.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"2c5d76e6-a8b0-49ad-b062-40cf6981198a","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9d0deb7c-2948-40a4-a154-45fb3b58952f","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9d0deb7c-2948-40a4-a154-45fb3b58952f","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_DoorEnter/spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_DoorEnter.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"2c8527ba-e670-4d90-baff-cd77e17f48b8","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

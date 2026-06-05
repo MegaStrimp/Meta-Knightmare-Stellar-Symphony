@@ -19,7 +19,7 @@ function scr_MKSS_Player_GetHit_Object(targetPlayer,targetObject)
 		hurtTimer = hurtTimer_Hurt;
 		lastHitProjectile = targetObject;
 		
-		hurtElement = irandom(MKSS_HurtElements.length - 1);
+		//hurtElement = irandom(MKSS_HurtElements.length - 1);
 		
 		if (hurtElement == MKSS_HurtElements.shocked) scr_MKSS_ParticleSet_Spark(x,y,30);
 		
