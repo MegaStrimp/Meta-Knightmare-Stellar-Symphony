@@ -35,7 +35,7 @@ function scr_MKSS_Pause_Step()
 			else if ((input_check_pressed("B",playerNum)) or ((scr_MouseIsInbetween(xx + 163,yy + 63,xx + 217,yy + 116)) and (mouse_check_button_pressed(mb_left))))
 			{
 				var notifKey = "backToTitle";
-				if (!global.inStage) notifKey = "backToHalberd";
+				if (global.inStage) notifKey = "backToHalberd";
 				
 				var notifID = global.MKSS_NotifIDs[? notifKey];
 				scr_MKSS_ObtainNotif(notifID,true);

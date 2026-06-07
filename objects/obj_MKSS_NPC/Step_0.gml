@@ -21,7 +21,7 @@ if (!localPause)
 		#region Player Is Near
 		with (obj_Player)
 		{
-			if (distance_to_object(other) <= 12) other.playerIsNear = true;
+			if (distance_to_object(other) <= 6) other.playerIsNear = true;
 			
 			if ((other.playerIsNear) and (input_check("up",playerNum)))
 			{

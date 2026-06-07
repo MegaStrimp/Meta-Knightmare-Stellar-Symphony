@@ -38,7 +38,7 @@ function scr_MKSS_Weapon_Galaxia_Base()
 					script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript);
 				}
 			}
-			else if (input_check("down",playerNum))
+			else if ((input_check("down",playerNum)) and (!isDucking))
 			{
 				if ((!isAttacking) and (attackCooldown == -1))
 				{

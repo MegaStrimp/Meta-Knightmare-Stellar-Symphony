@@ -1,5 +1,10 @@
 ///@description Main
 
+#region Variables
+var xx = camera_get_view_x(mainView);
+var yy = camera_get_view_y(mainView);
+#endregion
+
 #region Scale
 image_xscale = min(image_xscale + (xScale * scaleSpd),xScale);
 image_yscale = min(image_yscale + (yScale * scaleSpd),yScale);
@@ -49,7 +54,7 @@ textAlpha = min(textAlpha + (textAlphaTarget * scaleSpd),textAlphaTarget);
 if (inputDelayTimer == -1)
 {
 	#region Back
-	if ((!isClosed) and ((input_check_pressed("B",playerNum)) or ((!mousePressed) and (scr_MouseIsInbetween(35,129,74,141)) and (mouse_check_button_pressed(mb_left)))))
+	if ((!isClosed) and (textTypist.get_state() == 1) and ((input_check_pressed("B",playerNum)) or ((!mousePressed) and (scr_MouseIsInbetween(xx + 35,yy + 129,xx + 81,yy + 141)) and (mouse_check_button_pressed(mb_left)))))
 	{
 		mousePressed = true;
 		
@@ -62,30 +67,28 @@ if (inputDelayTimer == -1)
 	{
 		mousePressed = true;
 		
-		if (nextScript != undefined)
+		if (textTypist.get_state() == 1)
 		{
-			script_execute(nextScript);
-		}
-		else
-		{
-			if (textTypist.get_state() == 1)
+			if (nextScript != undefined)
 			{
-				if (page == pageMax)
-				{
-					//scr_PlaySfx(snd_MKSS_Splash2);
-					
-					isClosed = true;
-					destroyTimer = destroyTimerMax;
-				}
-				else
-				{
-					page += 1;
-				}
+				script_execute(nextScript);
+			}
+			
+			if (page == pageMax)
+			{
+				scr_PlaySfx(snd_MKSS_ButtonYes);
+				
+				isClosed = true;
+				destroyTimer = destroyTimerMax;
 			}
 			else
 			{
-				textTypist.skip();
+				page += 1;
 			}
+		}
+		else
+		{
+			textTypist.skip();
 		}
 	}
 	#endregion

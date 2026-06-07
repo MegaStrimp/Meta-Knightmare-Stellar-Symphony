@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_MKSS_Attack_Galaxia_UpThrust_Mask",
   "bboxMode":0,
-  "bbox_bottom":47,
+  "bbox_bottom":63,
   "bbox_left":0,
   "bbox_right":19,
   "bbox_top":0,
@@ -29,7 +29,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":48,
+  "height":64,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"5ab8cad7-09d0-4ca9-84a7-4f694116125c","blendMode":0,"displayName":"default","isLocked":false,"name":"5ab8cad7-09d0-4ca9-84a7-4f694116125c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
