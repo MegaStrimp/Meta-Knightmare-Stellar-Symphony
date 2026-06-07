@@ -54,4 +54,12 @@ function scr_MKSS_Enemy_Gordo_AI_Bounce_Step()
 		sprite_index = spriteSet.sprMove;
 		#endregion
 	}
+	else
+	{
+		if (!instance_exists(owner))
+		{
+			isHeld = false;
+			canBeHit = true;
+		}
+	}
 }

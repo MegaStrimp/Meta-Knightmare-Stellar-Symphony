@@ -114,7 +114,7 @@ if (!global.pauseFinal)
 		#region Selection
 		if (state == 3)
 		{
-			if (input_check_pressed("start",playerNum))
+			if ((input_check_pressed("start",playerNum)) or (input_check_pressed("A",playerNum)) or (mouse_check_button_pressed(mb_left)))
 			{
 				scr_PlaySfx(snd_MKSS_ButtonYes);
 				

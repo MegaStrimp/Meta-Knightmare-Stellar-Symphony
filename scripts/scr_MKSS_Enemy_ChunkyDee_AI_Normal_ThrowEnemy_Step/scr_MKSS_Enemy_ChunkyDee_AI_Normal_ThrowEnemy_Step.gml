@@ -41,12 +41,13 @@ function scr_MKSS_Enemy_ChunkyDee_AI_Normal_ThrowEnemy_Step()
 				heldEnemy = instance_create_depth(x,y - 24,depth - 1,ds_list_find_value(thrownEnemyList,0));
 				with (heldEnemy)
 				{
-					owner = id;
+					owner = other;
 					target = other;
 					dirX = other.dirX;
 					script_execute(ds_list_find_value(other.thrownEnemyStateList,0));
 					isHeld = true;
 					canBeHit = false;
+					points = 0;
 					
 					if (ds_list_find_value(other.thrownEnemyList,0) == obj_MKSS_Enemy_Gordo) scr_MKSS_UI_ParryIndicator_Create(x,y,depth - 1,90,,id)
 				}

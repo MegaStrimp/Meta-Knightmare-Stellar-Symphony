@@ -8,7 +8,7 @@ function scr_MKSS_Pause_Step()
 	var xx = camera_get_view_x(mainView);
 	var yy = camera_get_view_y(mainView);
 	
-	var canSelect = ((MKSS_GamePause_EndTimer == -1) and (!instance_exists(obj_Transition)) and (!MKSS_GamePause_Locked));
+	var canSelect = ((MKSS_GamePause_EndTimer == -1) and (!instance_exists(obj_Transition)) and (!instance_exists(obj_MKSS_UI_NotifBox)) and (!MKSS_GamePause_Locked));
 	#endregion
 	
 	if (canSelect)
@@ -34,25 +34,11 @@ function scr_MKSS_Pause_Step()
 			}
 			else if ((input_check_pressed("B",playerNum)) or ((scr_MouseIsInbetween(xx + 163,yy + 63,xx + 217,yy + 116)) and (mouse_check_button_pressed(mb_left))))
 			{
-				scr_PlaySfx(snd_MKSS_ButtonNo);
+				var notifKey = "backToTitle";
+				if (!global.inStage) notifKey = "backToHalberd";
 				
-				var targetRoom = rm_MKSS_BattleshipHalberd;
-				if (!global.inStage) targetRoom = rm_MKSS_Menu_TitleScreen;
-				scr_GoToRoom(targetRoom,false);
-				
-				scr_MKSS_Stage_End();
-				
-				MKSS_GamePause_TitleXTarget = -70;
-				
-				MKSS_GamePause_DecalLengthTarget = -50;
-				MKSS_GamePause_Upgrades_ButtonYTarget = -40;
-				MKSS_GamePause_SettingsButtonYTarget = -40;
-				MKSS_GamePause_ExitButtonYTarget = -40;
-				MKSS_GamePause_ReturnButtonYTarget = -40;
-				
-				MKSS_GamePause_DecalStarTimer = -1;
-				
-				MKSS_GamePause_EndTimer = 30;
+				var notifID = global.MKSS_NotifIDs[? notifKey];
+				scr_MKSS_ObtainNotif(notifID,true);
 			}
 			else if ((input_check_pressed("X",playerNum)) or ((scr_MouseIsInbetween(xx + 17,yy + 61,xx + 94,yy + 130)) and (mouse_check_button_pressed(mb_left))))
 			{

@@ -15,6 +15,7 @@ scr_MKSS_Enemy_Init_Set();
 scr_MKSS_Attack_Init_Set();
 scr_MKSS_Dialogue_Init_Set();
 scr_MKSS_UI_Button_Init_Set();
+scr_MKSS_UI_Notif_Init_Set();
 scr_MKSS_Music_Init_Set();
 scr_MKSS_Stage_Init_Set();
 
@@ -38,6 +39,8 @@ global.pauseScript = scr_MKSS_PauseScript;
 
 scr_MKSS_MarkedEnemySetup();
 scr_MKSS_MarkedBossSetup();
+
+global.MKSS_PopupQueue = ds_list_create();
 
 global.MKSS_StageHasScore = true;
 global.MKSS_StageIntroPlaying = false;

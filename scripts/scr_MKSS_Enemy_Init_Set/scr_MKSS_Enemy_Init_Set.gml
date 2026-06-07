@@ -340,11 +340,19 @@ function scr_MKSS_Enemy_Init_Set()
 	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
 	{
 		sprFloat: spr_MKSS_Enemy_Keke_Base_Float,
+		sprTurnL: spr_MKSS_Enemy_Keke_Base_TurnL,
+		sprTurnR: spr_MKSS_Enemy_Keke_Base_TurnR,
+		sprAttackReady: spr_MKSS_Enemy_Keke_Base_AttackReady,
+		sprAttack: spr_MKSS_Enemy_Keke_Base_Attack,
+		sprAttackEnd: spr_MKSS_Enemy_Keke_Base_AttackEnd,
+		sprBroom: spr_MKSS_Enemy_Keke_Base_Broom,
+		
+		sprHurt1: spr_MKSS_Enemy_Keke_Base_Hurt1,
 		
 	    sprHurtList:
 		[
 	        [
-				spr_MKSS_Enemy_Keke_Base_Float,
+				spr_MKSS_Enemy_Keke_Base_Hurt1,
 				1
 			]
 	    ],

@@ -13,6 +13,7 @@ enemyWallYCollision = scr_MKSS_Enemy_WallYCollision;
 #region Gameplay Variables
 enemyID = global.MKSS_EnemyIDs[? "chunkyDee"];
 hp = 150;
+hp = 1;
 points = 2500;
 metaPointsOnDeath = 25;
 metaPointsOnOverkill = 30;

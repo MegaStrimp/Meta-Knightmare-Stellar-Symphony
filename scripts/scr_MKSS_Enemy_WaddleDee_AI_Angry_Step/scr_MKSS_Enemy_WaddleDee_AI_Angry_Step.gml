@@ -170,10 +170,7 @@ function scr_MKSS_Enemy_WaddleDee_AI_Angry_Step()
 		
 		if (isHeld)
 		{
-			var isHeldCancel = false;
-			if (!instance_exists(owner)) isHeldCancel = true;
-			
-			if (isHeldCancel)
+			if (!instance_exists(owner))
 			{
 				isHeld = false;
 				canBeHit = true;
