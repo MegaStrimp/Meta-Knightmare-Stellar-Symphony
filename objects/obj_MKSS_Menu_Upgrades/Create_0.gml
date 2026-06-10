@@ -17,6 +17,7 @@ hintOffset = 32;
 hintOffset = 0;
 hintOffsetTimerMax = 15;
 hintOffsetTimer = hintOffsetTimerMax;
+bottomOffset = 0;
 
 selectionIndex = 0;
 selectionSpd = sprite_get_speed(spr_MKSS_UI_Shared_Selection) / 60;

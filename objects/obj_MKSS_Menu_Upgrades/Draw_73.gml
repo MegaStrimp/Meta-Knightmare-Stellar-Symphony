@@ -58,7 +58,19 @@ for (var i = 0; i < ds_list_size(constellationList); i++)
 	
 	draw_sprite(targetSprite,0,nodeX,nodeY);
 	
-	if (ds_list_find_value(constellationList,i) == selection) draw_sprite_ext(spr_MKSS_UI_Shared_Selection,selectionIndex,nodeX,nodeY,selectionScale,selectionScale,0,c_white,1);
+	if (ds_list_find_value(constellationList,i) == selection)
+	{
+		#region Selection
+		draw_sprite_ext(spr_MKSS_UI_Shared_Selection,selectionIndex,nodeX,nodeY,selectionScale,selectionScale,0,c_white,1);
+		#endregion
+		
+		#region Arrows
+		if (currentIndex.neighborUp != undefined) draw_sprite(spr_MKSS_Menu_Upgrades_Arrow_Up,0,nodeX,nodeY - 12 - constellationOffsets[0].y);
+		if (currentIndex.neighborDown != undefined) draw_sprite(spr_MKSS_Menu_Upgrades_Arrow_Down,0,nodeX,nodeY + 12 + constellationOffsets[0].y);
+		if (currentIndex.neighborLeft != undefined) draw_sprite(spr_MKSS_Menu_Upgrades_Arrow_Left,0,nodeX - 12 - constellationOffsets[0].y,nodeY);
+		if (currentIndex.neighborRight != undefined) draw_sprite(spr_MKSS_Menu_Upgrades_Arrow_Right,0,nodeX + 12 + constellationOffsets[0].y,nodeY);
+		#endregion
+	}
 	
 	if ((scr_MouseIsInbetween(nodeX - 6,nodeY - 6,nodeX + 6,nodeY + 6)) and (mouse_check_button(mb_left))) selection = ds_list_find_value(constellationList,i);
 }
@@ -71,7 +83,7 @@ if (finalPageTitle != undefined) scribble(finalPageTitle).align(fa_center).draw(
 
 #region Upgrade Title
 var finalTitle = currentIndex.title;
-if (finalTitle != undefined) scribble(finalTitle).align(fa_center).draw(xx + (global.gameWidth / 2),yy + global.gameHeight - 30 + constellationOffsets[0].y);
+if (finalTitle != undefined) scribble(finalTitle).align(fa_center).draw(xx + (global.gameWidth / 2),yy + global.gameHeight - 30 + bottomOffset + constellationOffsets[0].y);
 #endregion
 
 #region Button Hints
@@ -79,7 +91,7 @@ var backIcon = "";
 var targetIcon = global.UI_IconBindings[? string(input_binding_get("B"))];
 if (targetIcon != undefined) backIcon = "[" + sprite_get_name(targetIcon) + "]";
 
-scribble(backIcon + " Back").draw(xx + 4,yy + global.gameHeight - 16 + hintOffset + (2 * (buttonInputTimerComponent_BTimer != -1)));
+scribble(backIcon + " Back").draw(xx + 4,yy + global.gameHeight - 16 + hintOffset + bottomOffset + (2 * (buttonInputTimerComponent_BTimer != -1)));
 
 if (!currentIndex.isLesserNode)
 {
@@ -87,14 +99,22 @@ if (!currentIndex.isLesserNode)
 	var targetIcon = global.UI_IconBindings[? string(input_binding_get("X"))];
 	if (targetIcon != undefined) infoIcon = "[" + sprite_get_name(targetIcon) + "]";
 	
-	scribble(infoIcon + " Info").align(fa_center).draw(xx + (global.gameWidth / 2),yy + global.gameHeight - 16 + hintOffset + (2 * (buttonInputTimerComponent_XTimer != -1)));
+	scribble(infoIcon + " Info").align(fa_center).draw(xx + (global.gameWidth / 2),yy + global.gameHeight - 16 + hintOffset + bottomOffset + (2 * (buttonInputTimerComponent_XTimer != -1)));
 	
 	var buyIcon = "";
 	var targetIcon = global.UI_IconBindings[? string(input_binding_get("A"))];
 	if (targetIcon != undefined) buyIcon = "[" + sprite_get_name(targetIcon) + "]";
 	
 	var text = scribble(buyIcon + " Buy");
-	text.draw(xx + global.gameWidth - 4 - text.get_width(),yy + global.gameHeight - 16 + hintOffset + (2 * (buttonInputTimerComponent_YTimer != -1)));
+	text.draw(xx + global.gameWidth - 4 - text.get_width(),yy + global.gameHeight - 16 + hintOffset + bottomOffset + (2 * (buttonInputTimerComponent_YTimer != -1)));
+	
+	var textCol = #FFFFFF;
+	if (1) textCol = #B2FFFF; //STRIMPTODO
+	
+	draw_sprite_ext(spr_MKSS_Hud_MetaPoints_Icon,0,xx + 2,yy + 38,1,1,0,textCol,1);
+	
+	var displayedPoints = string_replace_all(string_format(currentIndex.price,4,0)," ","0");
+	scribble("[fnt_Advance_Small][d" + string(textCol) + "]x[fnt_Advance]" + string(displayedPoints) + "[/font][/color]").draw(xx + 14,yy + 44);
 }
 
 var prevIcon = "";

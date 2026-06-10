@@ -53,7 +53,7 @@ function scr_MKSS_Hud_DrawGUI()
 	#region Meta Points
 	var textCol = #FFFFFF;
 	if (metaPointCollectTimer != -1) textCol = #B2FFFF;
-	var hasScoreOffset = ((global.inStage) and (global.MKSS_StageHasScore))
+	var hasScoreOffset = ((global.inStage) and (global.MKSS_StageHasScore));
 	
 	draw_sprite_ext(spr_MKSS_Hud_MetaPoints_Icon,0,2,38 - (36 * !hasScoreOffset) - (metaPointCollectTimer != -1),1,1,0,textCol,1);
 	

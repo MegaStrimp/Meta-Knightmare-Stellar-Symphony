@@ -1,6 +1,9 @@
 ///@description Main
 
 #region Variables
+var canSelect = true;
+if ((instance_exists(obj_MKSS_UI_NotifBox))) canSelect = false;
+
 var xx = camera_get_view_x(mainView);
 var yy = camera_get_view_y(mainView);
 
@@ -8,87 +11,94 @@ var currentIndex = global.MKSS_UpgradeList[selection];
 #endregion
 
 #region Selection
-
-#region Go Back
-if ((input_check_pressed("B",playerNum)) or ((scr_MouseIsInbetween(xx + 4,yy + 144,xx + 50,yy + 156)) and (mouse_check_button_pressed(mb_left))))
+if (canSelect)
 {
-	with (obj_FrameworkControl)
+	#region Go Back
+	if ((input_check_pressed("B",playerNum)) or ((scr_MouseIsInbetween(xx + 4,yy + 144,xx + 50,yy + 156)) and (mouse_check_button_pressed(mb_left))))
 	{
-		MKSS_GamePause_Locked = false;
+		with (obj_FrameworkControl)
+		{
+			MKSS_GamePause_Locked = false;
 		
-		MKSS_GamePause_PauseButtonAlphaTarget = 1;
+			MKSS_GamePause_PauseButtonAlphaTarget = 1;
 		
-		MKSS_GamePause_CircleZoomTarget = 1;
-	}
+			MKSS_GamePause_CircleZoomTarget = 1;
+		}
 	
-	scr_MKSS_Player_GetUnlockedUpgrades(0);
+		scr_MKSS_Player_GetUnlockedUpgrades(0);
 	
-	instance_destroy();
-}
-#endregion
-
-if (!currentIndex.isLesserNode)
-{
-	#region Info
-	if ((input_check_pressed("X",playerNum)) or ((scr_MouseIsInbetween(xx + 97,yy + 144,xx + 143,yy + 156)) and (mouse_check_button_pressed(mb_left))))
-	{
+		instance_destroy();
 	}
 	#endregion
-	
-	#region Buy
-	if ((input_check_pressed("A",playerNum)) or ((scr_MouseIsInbetween(xx + 196,yy + 144,xx + 235,yy + 156)) and (mouse_check_button_pressed(mb_left))))
+
+	if (!currentIndex.isLesserNode)
 	{
+		#region Info
+		if ((input_check_pressed("X",playerNum)) or ((scr_MouseIsInbetween(xx + 97,yy + 144,xx + 143,yy + 156)) and (mouse_check_button_pressed(mb_left))))
+		{
+			var notif = scr_MKSS_UI_Notif_Create_Custom(["kicks the enemy\n\n[BIcon][BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_Kick]);
+			with (notif)
+			{
+				nextText = "Back";
+			}
+		}
+		#endregion
+	
+		#region Buy
+		if ((input_check_pressed("A",playerNum)) or ((scr_MouseIsInbetween(xx + 196,yy + 144,xx + 235,yy + 156)) and (mouse_check_button_pressed(mb_left))))
+		{
+		}
+		#endregion
+	}
+
+	#region Go To Prev Page
+	if ((input_check_pressed("L",playerNum)) or ((scr_MouseIsInbetween(xx + 4,yy + 2,xx + 50,yy + 14)) and (mouse_check_button_pressed(mb_left))))
+	{
+		constellationTypeList_CurrentIndex = (constellationTypeList_CurrentIndex - 1 + ds_list_size(constellationTypeList)) % ds_list_size(constellationTypeList);
+		currentCategory = ds_list_find_value(constellationTypeList,constellationTypeList_CurrentIndex);
+	
+		scr_MKSS_Menu_Upgrades_SetUpgrades(currentCategory);
+	}
+	#endregion
+
+	#region Go To Next Page
+	if ((input_check_pressed("R",playerNum)) or ((scr_MouseIsInbetween(xx + 189,yy + 2,xx + 235,yy + 14)) and (mouse_check_button_pressed(mb_left))))
+	{
+		constellationTypeList_CurrentIndex = (constellationTypeList_CurrentIndex + 1 + ds_list_size(constellationTypeList)) % ds_list_size(constellationTypeList);
+		currentCategory = ds_list_find_value(constellationTypeList,constellationTypeList_CurrentIndex);
+	
+		scr_MKSS_Menu_Upgrades_SetUpgrades(currentCategory);
+	}
+	#endregion
+
+	#region Move To Up Neighbor
+	if (input_check_pressed("up",playerNum))
+	{
+		if (currentIndex.neighborUp != undefined) selection = currentIndex.neighborUp;
+	}
+	#endregion
+
+	#region Move To Down Neighbor
+	if (input_check_pressed("down",playerNum))
+	{
+		if (currentIndex.neighborDown != undefined) selection = currentIndex.neighborDown;
+	}
+	#endregion
+
+	#region Move To Left Neighbor
+	if (input_check_pressed("left",playerNum))
+	{
+		if (currentIndex.neighborLeft != undefined) selection = currentIndex.neighborLeft;
+	}
+	#endregion
+
+	#region Move To Right Neighbor
+	if (input_check_pressed("right",playerNum))
+	{
+		if (currentIndex.neighborRight != undefined) selection = currentIndex.neighborRight;
 	}
 	#endregion
 }
-
-#region Go To Prev Page
-if ((input_check_pressed("L",playerNum)) or ((scr_MouseIsInbetween(xx + 4,yy + 2,xx + 50,yy + 14)) and (mouse_check_button_pressed(mb_left))))
-{
-	constellationTypeList_CurrentIndex = (constellationTypeList_CurrentIndex - 1 + ds_list_size(constellationTypeList)) % ds_list_size(constellationTypeList);
-	currentCategory = ds_list_find_value(constellationTypeList,constellationTypeList_CurrentIndex);
-	
-	scr_MKSS_Menu_Upgrades_SetUpgrades(currentCategory);
-}
-#endregion
-
-#region Go To Next Page
-if ((input_check_pressed("R",playerNum)) or ((scr_MouseIsInbetween(xx + 189,yy + 2,xx + 235,yy + 14)) and (mouse_check_button_pressed(mb_left))))
-{
-	constellationTypeList_CurrentIndex = (constellationTypeList_CurrentIndex + 1 + ds_list_size(constellationTypeList)) % ds_list_size(constellationTypeList);
-	currentCategory = ds_list_find_value(constellationTypeList,constellationTypeList_CurrentIndex);
-	
-	scr_MKSS_Menu_Upgrades_SetUpgrades(currentCategory);
-}
-#endregion
-
-#region Move To Up Neighbor
-if (input_check_pressed("up",playerNum))
-{
-	if (currentIndex.neighborUp != undefined) selection = currentIndex.neighborUp;
-}
-#endregion
-
-#region Move To Down Neighbor
-if (input_check_pressed("down",playerNum))
-{
-	if (currentIndex.neighborDown != undefined) selection = currentIndex.neighborDown;
-}
-#endregion
-
-#region Move To Left Neighbor
-if (input_check_pressed("left",playerNum))
-{
-	if (currentIndex.neighborLeft != undefined) selection = currentIndex.neighborLeft;
-}
-#endregion
-
-#region Move To Right Neighbor
-if (input_check_pressed("right",playerNum))
-{
-	if (currentIndex.neighborRight != undefined) selection = currentIndex.neighborRight;
-}
-#endregion
 #endregion
 
 #region Selection Animation
@@ -102,6 +112,8 @@ for (var i = 0; i < ds_list_size(constellationList); i++)
 	constellationOffsets[i].x = sine_wave(current_time / constellationOffsets[i].wave,1,1.5,0);
 	constellationOffsets[i].y = sine_wave(current_time / (constellationOffsets[i].wave + 500),.7,2.5,0);
 }
+
+bottomOffset = lerp(bottomOffset,(instance_exists(obj_MKSS_UI_NotifBox) * 16),.1);
 #endregion
 
 #region Button Input Timers

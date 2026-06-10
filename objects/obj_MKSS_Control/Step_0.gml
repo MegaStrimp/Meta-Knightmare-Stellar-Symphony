@@ -75,6 +75,10 @@ if (global.debug)
 		scr_MKSS_Hud_Medal_Get(2);
 	}
 	#endregion
+	
+	#region Toggle Hud
+	if (keyboard_check_pressed(vk_f1)) global.hasHud = !global.hasHud;
+	#endregion
 }
 else if (global.demo)
 {
