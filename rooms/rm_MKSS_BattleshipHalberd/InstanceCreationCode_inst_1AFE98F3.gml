@@ -1,0 +1,1 @@
+targetDialogueMappedID = global.MKSS_DialogueIDs[? "oilWheelie_Halberd_1"];

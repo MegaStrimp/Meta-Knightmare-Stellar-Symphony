@@ -16,6 +16,8 @@ function scr_MKSS_Upgrade_Init_Add(targetID,targetCategoryID,targetX,targetY,tar
 		isLesserNode: targetIsLesserNode,
 		
 		title: undefined,
+		description: [undefined],
+		icon: [undefined],
 		price: 0,
 		
 		neighborLeft: undefined,

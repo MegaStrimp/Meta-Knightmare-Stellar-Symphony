@@ -1,6 +1,6 @@
 ///@description MKSS - Enemy - Rango - AI - Flop - Setup
 
-function scr_MKSS_Enemy_Rango_AI_Flop_Setup()
+function scr_MKSS_Enemy_Rango_AI_Flop_Setup(changePalette = true)
 {
 	#region Component Setup
 	scr_Component_BasicHorizontal_Setup(.75);
@@ -23,7 +23,7 @@ function scr_MKSS_Enemy_Rango_AI_Flop_Setup()
 	#endregion
 	
 	#region Palette Variables
-	palSprite = spr_MKSS_Enemy_Rango_Palette_Flop;
+	if (changePalette) palSprite = spr_MKSS_Enemy_Rango_Palette_Flop;
 	#endregion
 	
 	#region Gameplay Variables

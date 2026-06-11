@@ -2,10 +2,12 @@
 
 function scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Setup()
 {
+	#region Components
+	scr_Component_BasicHorizontal_Setup(.25);
+	#endregion
+	
 	#region Physics Variables
 	decel = .05;
-	
-	movespeed = 1;
 	
 	grav = .15;
 	
@@ -13,7 +15,7 @@ function scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Setup()
 	#endregion
 	
 	#region AI Scripts
-	enemyAIStep = scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Step;
+	enemyAIStep = scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Swim_Step;
 	enemyAnimationEnd = scr_MKSS_Enemy_Rango_AI_JumpAndAttack_AnimationEnd;
 	#endregion
 	

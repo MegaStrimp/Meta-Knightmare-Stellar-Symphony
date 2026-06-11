@@ -36,7 +36,7 @@ if (canSelect)
 		#region Info
 		if ((input_check_pressed("X",playerNum)) or ((scr_MouseIsInbetween(xx + 97,yy + 144,xx + 143,yy + 156)) and (mouse_check_button_pressed(mb_left))))
 		{
-			var notif = scr_MKSS_UI_Notif_Create_Custom(["kicks the enemy\n\n[BIcon][BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_Kick]);
+			var notif = scr_MKSS_UI_Notif_Create_Custom(currentIndex.description,currentIndex.icon,"fnt_Advance_Small");
 			with (notif)
 			{
 				nextText = "Back";
@@ -114,6 +114,10 @@ for (var i = 0; i < ds_list_size(constellationList); i++)
 }
 
 bottomOffset = lerp(bottomOffset,(instance_exists(obj_MKSS_UI_NotifBox) * 16),.1);
+#endregion
+
+#region Line Color
+colorOffset = sine_between(current_time / 1000,1,0,1);
 #endregion
 
 #region Button Input Timers

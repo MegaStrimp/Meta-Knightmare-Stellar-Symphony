@@ -5,6 +5,7 @@ var xx = camera_get_view_x(mainView);
 var yy = camera_get_view_y(mainView);
 
 var currentIndex = global.MKSS_UpgradeList[selection];
+var lineColor = make_colour_rgb(40 + (27 * colorOffset),132 + (76 * colorOffset),229 + (26 * colorOffset));
 #endregion
 
 #region Lines
@@ -16,8 +17,7 @@ for (var i = 0; i < ds_list_size(constellationList); i++)
 	{
 		var neighborIndex = global.MKSS_UpgradeList[iIndex.neighborLeft];
 		var neighborListIndex = ds_list_find_index(constellationList,iIndex.neighborLeft);
-		
-		draw_line_color(xx + iIndex.x + constellationOffsets[i].x,yy + iIndex.y + constellationOffsets[i].y,xx + neighborIndex.x + constellationOffsets[neighborListIndex].x,yy + neighborIndex.y + constellationOffsets[neighborListIndex].y,#4F4E7B,#4F4E7B);
+		draw_line_color(xx + iIndex.x + constellationOffsets[i].x,yy + iIndex.y + constellationOffsets[i].y,xx + neighborIndex.x + constellationOffsets[neighborListIndex].x,yy + neighborIndex.y + constellationOffsets[neighborListIndex].y,lineColor,lineColor);
 	}
 	
 	//if (iIndex.neighborRight != undefined)
@@ -33,7 +33,7 @@ for (var i = 0; i < ds_list_size(constellationList); i++)
 		var neighborIndex = global.MKSS_UpgradeList[iIndex.neighborUp];
 		var neighborListIndex = ds_list_find_index(constellationList,iIndex.neighborUp);
 		
-		draw_line_color(xx + iIndex.x + constellationOffsets[i].x,yy + iIndex.y + constellationOffsets[i].y,xx + neighborIndex.x + constellationOffsets[neighborListIndex].x,yy + neighborIndex.y + constellationOffsets[neighborListIndex].y,#4F4E7B,#4F4E7B);
+		draw_line_color(xx + iIndex.x + constellationOffsets[i].x,yy + iIndex.y + constellationOffsets[i].y,xx + neighborIndex.x + constellationOffsets[neighborListIndex].x,yy + neighborIndex.y + constellationOffsets[neighborListIndex].y,lineColor,lineColor);
 	}
 	
 	//if (iIndex.neighborDown != undefined)
@@ -109,12 +109,12 @@ if (!currentIndex.isLesserNode)
 	text.draw(xx + global.gameWidth - 4 - text.get_width(),yy + global.gameHeight - 16 + hintOffset + bottomOffset + (2 * (buttonInputTimerComponent_YTimer != -1)));
 	
 	var textCol = #FFFFFF;
-	if (1) textCol = #B2FFFF; //STRIMPTODO
+	if (currentIndex.price <= global.MKSS_PlayerMetaPoints[playerNum]) textCol = #B2FFFF;
 	
-	draw_sprite_ext(spr_MKSS_Hud_MetaPoints_Icon,0,xx + 2,yy + 38,1,1,0,textCol,1);
+	draw_sprite_ext(spr_MKSS_Hud_MetaPoints_Icon,0,xx + 190,yy + 128,1,1,0,textCol,1);
 	
 	var displayedPoints = string_replace_all(string_format(currentIndex.price,4,0)," ","0");
-	scribble("[fnt_Advance_Small][d" + string(textCol) + "]x[fnt_Advance]" + string(displayedPoints) + "[/font][/color]").draw(xx + 14,yy + 44);
+	scribble("[fnt_Advance_Small][d" + string(textCol) + "]x[fnt_Advance]" + string(displayedPoints) + "[/font][/color]").draw(xx + 202,yy + 134);
 }
 
 var prevIcon = "";

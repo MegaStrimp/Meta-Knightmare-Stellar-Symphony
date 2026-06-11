@@ -32,5 +32,5 @@
     "path":"sprites/spr_16x16Mask/spr_16x16Mask.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

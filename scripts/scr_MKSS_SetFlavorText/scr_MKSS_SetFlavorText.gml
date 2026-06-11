@@ -29,7 +29,15 @@ function scr_MKSS_SetFlavorText()
 	"Disturbing The Peace!",
 	"Look Into My Eyes!",
 	"Do Not Make Me!",
-	"Stay Away From Me!"
+	"Stay Away From Me!",
+	"Come back when you can put up a fight!",
+	"Come back when you GET BANNED IN TOURNAMENTS!",
+	"Shotgun of Spirits, Concerto of Stars!",
+	"Upper Calibur of Character Action!",
+	"Disturbing MY Peace and Quiet!",
+	"The Time Has Come, and So Has the Masked Knight!",
+	"HIYAYAYAH!",
+	"MK! META KNIGHT IS HERE!"
 	];
 	
 	var flavorText = flavorTextArray[irandom_range(0,array_length(flavorTextArray) - 1)];

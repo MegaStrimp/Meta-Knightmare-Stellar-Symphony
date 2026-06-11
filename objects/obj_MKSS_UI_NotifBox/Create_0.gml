@@ -19,6 +19,7 @@ nextText = "Next";
 nextScript = undefined;
 backText = undefined;
 backScript = undefined;
+font = "fnt_Advance";
 
 overlayAlpha = .75;
 

@@ -46,6 +46,10 @@ function scr_MKSS_Attack_Init_Set()
 	scr_MKSS_Attack_Init_Add("trappy_Pearl",scr_MKSS_Attack_Execute_Trappy_Pearl);
 	#endregion
 	
+	#region Rango
+	scr_MKSS_Attack_Init_Add("rango_Jump",scr_MKSS_Attack_Execute_Rango_Jump);
+	#endregion
+	
 	#region Chunky Dee
 	scr_MKSS_Attack_Init_Add("chunkyDee_Walk",scr_MKSS_Attack_Execute_ChunkyDee_Walk);
 	scr_MKSS_Attack_Init_Add("chunkyDee_Jump",scr_MKSS_Attack_Execute_ChunkyDee_Jump);

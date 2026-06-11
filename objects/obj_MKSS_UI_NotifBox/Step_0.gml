@@ -67,7 +67,7 @@ if (inputDelayTimer == -1)
 	{
 		mousePressed = true;
 		
-		if (textTypist.get_state() == 1)
+		if ((textTypist.get_state() == 1) or (text[page] == undefined))
 		{
 			if (nextScript != undefined)
 			{

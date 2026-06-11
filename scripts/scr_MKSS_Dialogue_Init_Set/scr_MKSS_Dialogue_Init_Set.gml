@@ -32,7 +32,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
 			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
-			text: "Only in Halberd!",
+			text: "...[delay,500]Boss.",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound
 		}

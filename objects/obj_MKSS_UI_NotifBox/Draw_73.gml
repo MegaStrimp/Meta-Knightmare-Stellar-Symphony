@@ -50,16 +50,14 @@ if (image[page] != undefined)
 #region Text
 if (text[page] != undefined)
 {
-	scribble_font_set_default("fnt_Advance");
-	
 	var finalText = scr_String_ReplaceButtonSigns(text[page],upIcon,downIcon,leftIcon,rightIcon,AIcon,BIcon,XIcon,YIcon,LIcon,RIcon,LTIcon,RTIcon,startIcon,selectIcon);
 	
-	scribble("[alpha," + string(1) + "]" + finalText + "[/alpha]").wrap((sprite_get_width(spr_MKSS_UI_NotifBox_Back) * image_xscale) - 16).draw(textX,textY,textTypist);
+	scribble("[" + string(font) + "][alpha," + string(1) + "]" + finalText + "[/alpha][/font]").wrap((sprite_get_width(spr_MKSS_UI_NotifBox_Back) * image_xscale) - 16).draw(textX,textY,textTypist);
 }
 #endregion
 
 #region Button Hints
-if (textTypist.get_state() == 1)
+if ((textTypist.get_state() == 1) or (text[page] == undefined))
 {
 	var AIconFinal = "";
 	if (AIcon != undefined)  AIconFinal = AIcon;

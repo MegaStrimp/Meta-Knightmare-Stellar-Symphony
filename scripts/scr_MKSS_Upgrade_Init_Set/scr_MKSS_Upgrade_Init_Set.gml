@@ -97,7 +97,7 @@ function scr_MKSS_Upgrade_Init_Set()
 	
 	#region Upgrade Nodes
 	var targetMappedID_Galaxia_Kick = scr_MKSS_Upgrade_Init_Add("Galaxia_Kick",categoryID,98,91);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Kick,"Kick");
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Kick,"Kick",["kicks the enemy\n\n[BIcon][BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_Kick]);
 	
 	var targetMappedID_Galaxia_Barrage = scr_MKSS_Upgrade_Init_Add("Galaxia_Barrage",categoryID,103,78);
 	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Barrage,"Barrage");

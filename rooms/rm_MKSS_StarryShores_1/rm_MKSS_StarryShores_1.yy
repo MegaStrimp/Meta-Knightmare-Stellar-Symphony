@@ -67,6 +67,7 @@
     {"name":"inst_27D7C4B8","path":"rooms/rm_MKSS_StarryShores_1/rm_MKSS_StarryShores_1.yy",},
     {"name":"inst_7AAD5583","path":"rooms/rm_MKSS_StarryShores_1/rm_MKSS_StarryShores_1.yy",},
     {"name":"inst_19B569BF","path":"rooms/rm_MKSS_StarryShores_1/rm_MKSS_StarryShores_1.yy",},
+    {"name":"inst_2728E818","path":"rooms/rm_MKSS_StarryShores_1/rm_MKSS_StarryShores_1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -172,6 +173,7 @@
         {"$GMRInstance":"v4","%Name":"inst_3D1987D4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3D1987D4","objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":10.0,"x":-16.0,"y":0.0,},
         {"$GMRInstance":"v4","%Name":"inst_33EABBDB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_33EABBDB","objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":86.0,"scaleY":1.0,"x":-16.0,"y":-16.0,},
         {"$GMRInstance":"v4","%Name":"inst_6E0EC8CB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6E0EC8CB","objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":10.0,"x":1360.0,"y":-16.0,},
+        {"$GMRInstance":"v4","%Name":"inst_2728E818","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2728E818","objectId":{"name":"obj_Water","path":"objects/obj_Water/obj_Water.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":8.0,"scaleY":3.0,"x":816.0,"y":144.0,},
       ],"layers":[],"name":"Collision","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4289901234,"depth":1200,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
