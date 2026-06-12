@@ -19,6 +19,17 @@ function scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Jump_Step()
 		{
 			if (hp > 0)
 			{
+				if (particleTimer != -1) and (place_meeting(x,y-18,obj_Water))
+				{
+					particleTimer = max(particleTimer-speedMultFinal,0);
+					if (particleTimer == 0)
+					{
+						repeat(irandom_range(1,3)) scr_MKSS_ParticleSet_Bubble(x+irandom_range(-6,6),y+irandom_range(-3,3),-dirX);
+							
+						particleTimer = particleTimerMax;
+					}
+				}
+					
 				dirX = 1;
 				if (sign(hsp) == -1) dirX = -1;
 			}

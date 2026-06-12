@@ -31,4 +31,9 @@ function scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Setup()
 	revertTimer = -1;
 	revertTimerMax = 120;
 	#endregion
+	
+	#region Particle Variables
+	particleTimerMax = 2;
+	particleTimer = particleTimerMax;
+	#endregion
 }
