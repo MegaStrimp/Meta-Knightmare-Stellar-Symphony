@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Parry",
   "bboxMode":0,
-  "bbox_bottom":21,
-  "bbox_left":0,
-  "bbox_right":27,
+  "bbox_bottom":22,
+  "bbox_left":9,
+  "bbox_right":28,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -17,11 +17,11 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"ec0af504-da03-44a5-909d-a3c041304138","name":"ec0af504-da03-44a5-909d-a3c041304138","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0a8f6aa7-cd5f-4151-a262-5da1d8022870","name":"0a8f6aa7-cd5f-4151-a262-5da1d8022870","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":28,
+  "height":23,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"1d33b766-2d8b-405a-90b5-b8ad6d7ea828","blendMode":0,"displayName":"default","isLocked":false,"name":"1d33b766-2d8b-405a-90b5-b8ad6d7ea828","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -74,8 +74,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ec0af504-da03-44a5-909d-a3c041304138","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Parry/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Parry.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b4d05d25-1419-4edb-afd7-2cbe08c61bf6","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0a8f6aa7-cd5f-4151-a262-5da1d8022870","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Parry/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Parry.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"584265b6-bb75-4a58-bbd8-46cf9d6c126b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -91,5 +91,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":28,
+  "width":29,
 }

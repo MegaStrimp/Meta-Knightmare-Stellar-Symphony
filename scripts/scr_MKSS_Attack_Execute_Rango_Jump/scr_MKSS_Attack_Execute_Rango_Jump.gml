@@ -5,6 +5,8 @@ function scr_MKSS_Attack_Execute_Rango_Jump()
 	attackString = global.MKSS_AttackList[attackIndex].ID;
 	scr_Debug_WriteLog(string(object_get_name(object_index)) + " Used [" + attackString + "]");
 	
+	scr_PlaySfx(snd_MKSS_RangoAttack);
+	
 	#region Owner Variables
 	var nearestPlayer = instance_nearest(x,y,obj_Player);
 	var angle = point_direction(x,y,nearestPlayer.x,nearestPlayer.y);
