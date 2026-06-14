@@ -2,10 +2,10 @@
   "$GMSprite":"v2",
   "%Name":"spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_DoorEnter",
   "bboxMode":0,
-  "bbox_bottom":29,
-  "bbox_left":0,
-  "bbox_right":21,
-  "bbox_top":10,
+  "bbox_bottom":22,
+  "bbox_left":9,
+  "bbox_right":33,
+  "bbox_top":4,
   "collisionKind":1,
   "collisionTolerance":0,
   "ConfigValues":{
@@ -103,5 +103,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":28,
+  "width":38,
 }

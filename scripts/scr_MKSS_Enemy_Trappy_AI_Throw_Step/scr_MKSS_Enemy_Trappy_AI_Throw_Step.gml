@@ -18,6 +18,11 @@ function scr_MKSS_Enemy_Trappy_AI_Throw_Step()
 					hopTimer = max(hopTimer - speedMultFinal,0);
 					if (hopTimer == 0)
 					{
+						var nearestPlayer = instance_nearest(x,y,obj_Player);
+						
+						dirX = 1;
+						if (nearestPlayer.x < x) dirX = -1;
+						
 						jumpBuffer = true;
 						
 						isHopping = true;

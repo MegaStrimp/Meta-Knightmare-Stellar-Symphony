@@ -2,11 +2,14 @@
 
 function scr_MKSS_UI_ParryIndicator_Create(targetX,targetY,targetDepth,targetDestroyTimer,targetRadiusMax = 24,targetFollowedObject = -1)
 {
-	with (instance_create_depth(targetX,targetY,targetDepth,obj_MKSS_UI_ParryIndicator))
+	var parryIndicator = instance_create_depth(targetX,targetY,targetDepth,obj_MKSS_UI_ParryIndicator);
+	with (parryIndicator)
 	{
 		destroyTimer = targetDestroyTimer;
 		destroyTimerMax = targetDestroyTimer;
 		followedObject = targetFollowedObject;
 		radiusMax = targetRadiusMax;
 	}
+	
+	return parryIndicator;
 }

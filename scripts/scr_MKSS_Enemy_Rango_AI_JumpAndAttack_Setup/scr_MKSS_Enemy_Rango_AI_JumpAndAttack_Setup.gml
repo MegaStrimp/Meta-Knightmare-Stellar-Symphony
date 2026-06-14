@@ -24,9 +24,12 @@ function scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Setup()
 	#endregion
 	
 	#region Gameplay Variables
+	parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryRangoSpin"];
+	
 	attackState = 0;
 	attackTimerMax = 30;
 	attackTimer = -1;
+	parryIndicator = -1;
 	
 	revertTimer = -1;
 	revertTimerMax = 120;

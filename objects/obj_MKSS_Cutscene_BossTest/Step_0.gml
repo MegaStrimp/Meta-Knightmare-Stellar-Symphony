@@ -16,7 +16,7 @@ if (!localPause)
 				global.canGamePause = false;
 				
 				audio_stop_sound(global.musicPlaying);
-				global.musicPlaying = audio_play_sound(mus_MKSS_Boss,0,true);
+				scr_MKSS_Music_Play(global.MKSS_MusicIDs[? "boss"]);
 				instance_create_depth(0,0,0,obj_MKSS_UI_Warning);
 				
 				phaseTimer = 290;
@@ -30,10 +30,8 @@ if (!localPause)
 				var bossTitle = instance_create_depth(0,0,0,obj_MKSS_UI_BossTitle);
 				with (bossTitle)
 				{
-					text = "Chasse-Emee";
-					subtext = "Cruise Crustacean";
-					text = "[#74B8FF]Starless Marx[/color]";
-					subtext = "[#235297]Celestine of the Twisted Jester[/color]";
+					text = "[#EBC39B]Chasse-Emee[/color]";
+					subtext = "[#A93233]Cruise Crustacean[/color]";
 					destroyTimer = 120;
 				}
 				

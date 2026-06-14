@@ -40,6 +40,7 @@ function scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Swim_Step()
 			
 			attackTimer = -1;
 			attackState = 0;
+			if (parryIndicator != -1) with (parryIndicator) instance_destroy();
 			
 			#region Revert Back
 			if ((knockbackTimer == -1) and (knockbackCheckTimer == -1) and (grounded)) knockbackTimer = knockbackTimerMax;
@@ -73,6 +74,8 @@ function scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Swim_Step()
 					case 1:
 					sprite_index = spriteSet.sprAttackReady;
 					image_index = 0;
+					
+					parryIndicator = scr_MKSS_UI_ParryIndicator_Create(x,y,depth - 1,attackTimerMax,,id);
 					
 					attackTimer = attackTimerMax;
 					break;
