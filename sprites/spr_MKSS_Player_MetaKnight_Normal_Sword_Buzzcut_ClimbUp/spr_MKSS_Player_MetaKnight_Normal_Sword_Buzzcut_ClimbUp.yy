@@ -3,9 +3,9 @@
   "%Name":"spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_ClimbUp",
   "bboxMode":0,
   "bbox_bottom":37,
-  "bbox_left":1,
-  "bbox_right":27,
-  "bbox_top":11,
+  "bbox_left":0,
+  "bbox_right":32,
+  "bbox_top":1,
   "collisionKind":1,
   "collisionTolerance":0,
   "ConfigValues":{

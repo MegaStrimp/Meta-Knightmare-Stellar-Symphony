@@ -2,10 +2,10 @@
   "$GMSprite":"v2",
   "%Name":"spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Float",
   "bboxMode":0,
-  "bbox_bottom":47,
-  "bbox_left":0,
-  "bbox_right":54,
-  "bbox_top":0,
+  "bbox_bottom":22,
+  "bbox_left":23,
+  "bbox_right":46,
+  "bbox_top":10,
   "collisionKind":1,
   "collisionTolerance":0,
   "ConfigValues":{
@@ -17,8 +17,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"e1949e54-937a-4188-b0a6-99f88d4bc2c4","name":"e1949e54-937a-4188-b0a6-99f88d4bc2c4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"806b0289-c712-42b2-9652-0c12c997172a","name":"806b0289-c712-42b2-9652-0c12c997172a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"75931165-837c-4a13-a26c-c2be07b783d8","name":"75931165-837c-4a13-a26c-c2be07b783d8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0555411f-768c-4c4c-8af8-fceb645f5309","name":"0555411f-768c-4c4c-8af8-fceb645f5309","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -75,11 +75,11 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e1949e54-937a-4188-b0a6-99f88d4bc2c4","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Float/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Float.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b873cd4d-e09b-46ab-9b7c-0d86229a3041","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"75931165-837c-4a13-a26c-c2be07b783d8","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Float/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Float.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f044125d-406d-411c-b943-b4bd0d807a7b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"806b0289-c712-42b2-9652-0c12c997172a","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Float/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Float.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"8d1c6684-8a43-4113-bfe2-82d488667654","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0555411f-768c-4c4c-8af8-fceb645f5309","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Float/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Float.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e6247d5e-4d36-427f-a183-fbec7524f5b3","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

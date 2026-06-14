@@ -2,10 +2,10 @@
   "$GMSprite":"v2",
   "%Name":"spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_JumpReady",
   "bboxMode":0,
-  "bbox_bottom":27,
-  "bbox_left":0,
-  "bbox_right":26,
-  "bbox_top":7,
+  "bbox_bottom":19,
+  "bbox_left":25,
+  "bbox_right":42,
+  "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
   "ConfigValues":{
@@ -17,11 +17,11 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"470d5a7a-5873-4175-b559-0f85f8d54537","name":"470d5a7a-5873-4175-b559-0f85f8d54537","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"39a48df7-34a7-42e4-ba22-b2620079307b","name":"39a48df7-34a7-42e4-ba22-b2620079307b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":28,
+  "height":27,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"939c6358-f142-4aa8-b7c4-7f4b1b8b319a","blendMode":0,"displayName":"default","isLocked":false,"name":"939c6358-f142-4aa8-b7c4-7f4b1b8b319a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -74,14 +74,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"470d5a7a-5873-4175-b559-0f85f8d54537","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_JumpReady/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_JumpReady.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"75cfdfdc-563a-4673-bc35-c6887891c57c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"39a48df7-34a7-42e4-ba22-b2620079307b","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_JumpReady/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_JumpReady.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ee6f68dd-f8e0-4f55-ac3a-f0ab032f2d02","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
     "xorigin":15,
-    "yorigin":20,
+    "yorigin":19,
   },
   "swatchColours":null,
   "swfPrecision":2.525,
@@ -91,5 +91,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":32,
+  "width":43,
 }

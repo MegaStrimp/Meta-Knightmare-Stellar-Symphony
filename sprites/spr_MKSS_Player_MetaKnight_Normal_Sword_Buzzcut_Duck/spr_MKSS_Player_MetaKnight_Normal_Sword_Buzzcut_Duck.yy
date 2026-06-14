@@ -2,10 +2,10 @@
   "$GMSprite":"v2",
   "%Name":"spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Duck",
   "bboxMode":0,
-  "bbox_bottom":27,
-  "bbox_left":0,
-  "bbox_right":26,
-  "bbox_top":12,
+  "bbox_bottom":24,
+  "bbox_left":21,
+  "bbox_right":36,
+  "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
   "ConfigValues":{
@@ -17,11 +17,12 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"f9c955bb-0a71-4a04-a925-75f563e43b27","name":"f9c955bb-0a71-4a04-a925-75f563e43b27","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"677268a3-b6ba-436b-932a-132473e915b5","name":"677268a3-b6ba-436b-932a-132473e915b5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8562b995-fbe7-42fa-9b5e-4c02300649af","name":"8562b995-fbe7-42fa-9b5e-4c02300649af","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":28,
+  "height":29,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"c02d37b5-0d4d-49b3-b407-e0a0574c9c20","blendMode":0,"displayName":"default","isLocked":false,"name":"c02d37b5-0d4d-49b3-b407-e0a0574c9c20","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -54,7 +55,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":2.0,
     "lockOrigin":true,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -64,7 +65,7 @@
     },
     "name":"spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Duck",
     "playback":1,
-    "playbackSpeed":0.0,
+    "playbackSpeed":9.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -74,14 +75,17 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f9c955bb-0a71-4a04-a925-75f563e43b27","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Duck/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Duck.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"de512425-0515-4fd8-a4a3-e982ed89c811","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"677268a3-b6ba-436b-932a-132473e915b5","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Duck/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Duck.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"6f2b44cc-a6e6-4e22-a0a2-66e615a8de1d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8562b995-fbe7-42fa-9b5e-4c02300649af","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Duck/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Duck.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"142b1746-2c5d-4bc7-aed7-0b4395a38c33","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
     "xorigin":14,
-    "yorigin":20,
+    "yorigin":21,
   },
   "swatchColours":null,
   "swfPrecision":2.525,
@@ -91,5 +95,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":38,
+  "width":37,
 }

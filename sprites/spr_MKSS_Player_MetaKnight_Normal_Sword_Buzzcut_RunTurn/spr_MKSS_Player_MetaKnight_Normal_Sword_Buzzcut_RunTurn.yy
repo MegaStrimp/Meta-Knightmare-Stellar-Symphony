@@ -2,10 +2,10 @@
   "$GMSprite":"v2",
   "%Name":"spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_RunTurn",
   "bboxMode":0,
-  "bbox_bottom":35,
-  "bbox_left":5,
-  "bbox_right":33,
-  "bbox_top":15,
+  "bbox_bottom":19,
+  "bbox_left":0,
+  "bbox_right":18,
+  "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
   "ConfigValues":{
@@ -17,11 +17,11 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"50449b60-743e-4b62-819e-b95ae24706a0","name":"50449b60-743e-4b62-819e-b95ae24706a0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"926cd9da-4c94-4914-854c-68aba911e4dc","name":"926cd9da-4c94-4914-854c-68aba911e4dc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":36,
+  "height":28,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"f168318d-3690-4ccd-91f1-945c70cb542b","blendMode":0,"displayName":"default","isLocked":false,"name":"f168318d-3690-4ccd-91f1-945c70cb542b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -74,14 +74,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"50449b60-743e-4b62-819e-b95ae24706a0","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_RunTurn/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_RunTurn.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"95750580-1d61-4e6e-a338-2a88fc9fd19e","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"926cd9da-4c94-4914-854c-68aba911e4dc","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_RunTurn/spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_RunTurn.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f41213b8-7ab9-4e12-a774-a6d195bd8593","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":19,
-    "yorigin":27,
+    "xorigin":28,
+    "yorigin":19,
   },
   "swatchColours":null,
   "swfPrecision":2.525,
@@ -91,5 +91,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":34,
+  "width":43,
 }

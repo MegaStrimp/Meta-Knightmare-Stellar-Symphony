@@ -18,6 +18,7 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"8dc08ffb-1b8b-49bb-b9e7-bd637ae06f10","name":"8dc08ffb-1b8b-49bb-b9e7-bd637ae06f10","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0866577b-e8ce-43d9-992f-13a40ed88e0d","name":"0866577b-e8ce-43d9-992f-13a40ed88e0d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -54,7 +55,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":2.0,
     "lockOrigin":true,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -64,7 +65,7 @@
     },
     "name":"spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_Jump",
     "playback":1,
-    "playbackSpeed":0.0,
+    "playbackSpeed":9.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -76,6 +77,9 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8dc08ffb-1b8b-49bb-b9e7-bd637ae06f10","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_Jump/spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_Jump.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"710d1ed9-1eba-46eb-9ea7-c60637086676","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0866577b-e8ce-43d9-992f-13a40ed88e0d","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_Jump/spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_Jump.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e68c5a4c-d6e1-4f7b-9a8e-93638ed6468f","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

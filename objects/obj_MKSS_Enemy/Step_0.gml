@@ -38,4 +38,12 @@ if (!localPause)
 		parriableParticleTimer = -1;
 	}
 	#endregion
+	
+	#region Water
+	var inWaterPrev = inWater;
+	
+	inWater = place_meeting(x,y,obj_Water);
+	
+	if (inWaterPrev != inWater) scr_PlaySfx(snd_MKSS_WaterOut);
+	#endregion
 }

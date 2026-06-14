@@ -31,5 +31,7 @@ drawSurface = -1;
 drawSurface_PixelH = shader_get_uniform(shd_ColoredOutline,"pixelH");
 drawSurface_PixelW = shader_get_uniform(shd_ColoredOutline,"pixelW");
 drawSurface_OutlineColor = shader_get_uniform(shd_ColoredOutline,"outlineColor");
+
+inWater = false;
 #endregion
 #endregion
