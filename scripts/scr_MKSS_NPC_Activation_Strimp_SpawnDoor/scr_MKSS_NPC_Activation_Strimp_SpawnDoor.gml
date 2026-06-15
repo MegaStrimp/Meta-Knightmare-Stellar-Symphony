@@ -1,4 +1,4 @@
-///@description MKSS - NPC - Activation - Strimp - SpawnDoor
+///@description MKSS - NPC - Activation - Strimp - Spawn Door
 
 function scr_MKSS_NPC_Activation_Strimp_SpawnDoor()
 {

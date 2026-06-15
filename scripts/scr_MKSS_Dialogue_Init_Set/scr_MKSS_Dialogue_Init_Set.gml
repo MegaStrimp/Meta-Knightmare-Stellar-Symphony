@@ -20,25 +20,104 @@ function scr_MKSS_Dialogue_Init_Set()
 			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
 			text: "This motor oil is [shake]TIGHT![/shake]",
 			textSpeed: defaultTextSpeed,
-			textSound: defaultTextSound
+			textSound: snd_MKSS_Dialogue_OilWheelie
 		},
 		{
 			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
 			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
-			text: "If it weren't for your tasty benefits, I wouldn't stand another second powering your airship.",
+			text: "If it weren't for your [#591F37]tasty benefits[/color], I wouldn't stand another second powering your airship.",
 			textSpeed: defaultTextSpeed,
-			textSound: defaultTextSound
+			textSound: snd_MKSS_Dialogue_OilWheelie
 		},
 		{
 			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
 			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
 			text: "...[delay,500]Boss.",
 			textSpeed: defaultTextSpeed,
-			textSound: defaultTextSound
+			textSound: snd_MKSS_Dialogue_OilWheelie
 		}
 	]
 	
 	scr_MKSS_Dialogue_Init_Add("oilWheelie_Halberd_1",dialogue);
+	#endregion
+	
+	#region Halberd 2
+	var dialogue = 
+	[
+		{
+			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
+			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
+			text: "You want me to say it again, boss?",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_OilWheelie
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
+			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
+			text: "Well, if you insist- [wave]ahem...[/wave]",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_OilWheelie
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
+			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
+			text: "This motor oil is [shake]TIGHT![/shake]",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_OilWheelie
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
+			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
+			text: "[shake]TIGHT TIGHT TIGHT![/shake]",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_OilWheelie
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
+			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
+			text: "Everyone loves that catchphrase,[delay,200] and I love your [#591F37]oil[/color]!",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_OilWheelie
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
+			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
+			text: "A little [#591F37]grease[/color] to keep the wheels spinning!",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_OilWheelie
+		}
+	]
+	
+	scr_MKSS_Dialogue_Init_Add("oilWheelie_Halberd_2",dialogue);
+	#endregion
+	
+	#region Halberd 3
+	var dialogue = 
+	[
+		{
+			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
+			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
+			text: "This motor oil is [shake]tight![/shake]...",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_OilWheelie
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
+			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
+			text: "Hey[delay,200] don't give me that look,[delay,200] it's my iconic catchphrase![delay,500] Everyone loves it!",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_OilWheelie
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
+			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
+			text: "In fact, some people have even tried to STEAL IT and SAY IT ELSEWHERE![delay,500] They can't DO that![delay,500] It's MY catchphrase,[delay,500] MINE!",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_OilWheelie
+		}
+	]
+	
+	scr_MKSS_Dialogue_Init_Add("oilWheelie_Halberd_3",dialogue);
 	#endregion
 	#endregion
 	
@@ -228,6 +307,21 @@ function scr_MKSS_Dialogue_Init_Set()
 	
 	scr_MKSS_Dialogue_Init_Add("nimbia_PreBoss_1",dialogue);
 	#endregion
+	#endregion
+	
+	#region Shadow King Sonic Borb
+	var dialogue = 
+	[
+		{
+			portrait_Idle: undefined,
+			portrait_Talk: undefined,
+			text: "Hello?  Hello hello?!  Can anyone hear me?!  Great, just great.  This is the thanks I get for writing all this dialogue?  I don't even get my own freaking dev room?!  Maaaaan, this sucks.  Oh well, at least I can call the others out!  First off, I'd just like to say",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound
+		}
+	]
+	
+	scr_MKSS_Dialogue_Init_Add("shadowKingSonicBorb",dialogue);
 	#endregion
 	#endregion
 }
