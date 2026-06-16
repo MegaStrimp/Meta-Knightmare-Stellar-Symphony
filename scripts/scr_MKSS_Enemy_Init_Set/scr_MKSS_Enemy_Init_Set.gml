@@ -389,7 +389,6 @@ function scr_MKSS_Enemy_Init_Set()
 	
 	#region Chunky Dee
 	var targetMappedID = scr_MKSS_Enemy_Init_Add("chunkyDee","Chunky Dee");
-	#endregion
 	
 	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
 	{
@@ -423,6 +422,35 @@ function scr_MKSS_Enemy_Init_Set()
 	});
 	#endregion
 	
+	#region Gigant Edge
+	var targetMappedID = scr_MKSS_Enemy_Init_Add("gigantEdge","Gigant Edge");
+	
+	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
+	{
+		sprIdle: spr_MKSS_Enemy_GigantEdge_Base_Idle,
+		sprWalk: spr_MKSS_Enemy_GigantEdge_Base_Walk,
+		sprSwordSwingPrepare: spr_MKSS_Enemy_GigantEdge_Base_SwordSwingPrepare,
+		sprSwordSwing: spr_MKSS_Enemy_GigantEdge_Base_SwordSwing,
+		
+		sprHurt1: spr_MKSS_Enemy_GigantEdge_Base_Idle,
+		sprHurt2: spr_MKSS_Enemy_GigantEdge_Base_Idle,
+		
+	    sprHurtList:
+		[
+	        [
+				spr_MKSS_Enemy_GigantEdge_Base_Idle,
+				1
+			],
+	        [
+				spr_MKSS_Enemy_GigantEdge_Base_Idle,
+				1
+			]
+	    ],
+		
+		maskIndex: spr_16x16Mask_MiddleOrigin
+	});
+	#endregion
+	
 	#region Starless Nightmare
 	var targetMappedID = scr_MKSS_Enemy_Init_Add("starlessNightmare","Starless Nightmare");
 	
@@ -437,7 +465,6 @@ function scr_MKSS_Enemy_Init_Set()
 	
 	#region Starless Marx
 	var targetMappedID = scr_MKSS_Enemy_Init_Add("starlessMarx","Starless Marx");
-	#endregion
 	
 	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
 	{
@@ -463,7 +490,6 @@ function scr_MKSS_Enemy_Init_Set()
 	
 	#region Starless Minimarx
 	var targetMappedID = scr_MKSS_Enemy_Init_Add("starlessMinimarx","S. Minimarx");
-	#endregion
 	
 	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
 	{
@@ -480,6 +506,7 @@ function scr_MKSS_Enemy_Init_Set()
 	    ],
 		
 		maskIndex: spr_16x16Mask_MiddleOrigin
-	});
+	});	
+	#endregion
 	#endregion
 }

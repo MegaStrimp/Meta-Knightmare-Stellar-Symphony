@@ -59,6 +59,11 @@ function scr_MKSS_Attack_Init_Set()
 	scr_MKSS_Attack_Init_Add("chunkyDee_ThrowGordo",scr_MKSS_Attack_Execute_ChunkyDee_ThrowGordo);
 	#endregion
 	
+	#region Gigant Edge
+	scr_MKSS_Attack_Init_Add("gigantEdge_Walk",scr_MKSS_Attack_Execute_GigantEdge_Walk);
+	scr_MKSS_Attack_Init_Add("gigantEdge_SwordSwing",scr_MKSS_Attack_Execute_GigantEdge_SwordSwing);
+	#endregion
+	
 	#region Starless Marx
 	scr_MKSS_Attack_Init_Add("starlessMarx_FlyingApparition",scr_MKSS_Attack_Execute_StarlessMarx_FlyingApparition);
 	scr_MKSS_Attack_Init_Add("starlessMarx_ShooterCutter_Ready",scr_MKSS_Attack_Execute_StarlessMarx_ShooterCutter);

@@ -1,4 +1,4 @@
-///@description MKSS - Attack - Execute - Galaxia - Slash 1
+///@description MKSS - Attack - Execute - Chunky Dee - Throw Gordo
 
 function scr_MKSS_Attack_Execute_ChunkyDee_ThrowGordo()
 {
