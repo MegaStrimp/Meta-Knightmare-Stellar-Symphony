@@ -1,20 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_MKSS_Cutscene_BossTest",
+  "%Name":"obj_MKSS_Enemy_ChasseEmee",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":73,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_MKSS_Cutscene_BossTest",
+  "name":"obj_MKSS_Enemy_ChasseEmee",
   "overriddenProperties":[],
   "parent":{
-    "name":"Cutscenes",
-    "path":"folders/Meta Knightmare Stellar Symphony/Cutscenes.yy",
+    "name":"Objects",
+    "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Stage Bosses/Chasse-Emee/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_MKSS_Enemy",
+    "path":"objects/obj_MKSS_Enemy/obj_MKSS_Enemy.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_MKSS_Enemy_ChasseEmee_Base_Intro",
+    "path":"sprites/spr_MKSS_Enemy_ChasseEmee_Base_Intro/spr_MKSS_Enemy_ChasseEmee_Base_Intro.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -10,7 +10,7 @@
   "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":63.600475,
+  "duration":0.0,
   "exportDir":"",
   "name":"mus_MKSS_ArenaBattle",
   "parent":{

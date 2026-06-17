@@ -26,14 +26,13 @@ if (stateTimer != -1)
 		{
 			case 1:
 			middleTextLengthTarget = 0;
+			topTextYTarget = -20;
+			bottomTextYTarget = 169;
 			
 			stateTimer = 50;
 			break;
 			
 			case 2:
-			global.hasHud = true;
-			global.canGamePause = true;
-			
 			instance_destroy();
 			
 			stateTimer = -1;

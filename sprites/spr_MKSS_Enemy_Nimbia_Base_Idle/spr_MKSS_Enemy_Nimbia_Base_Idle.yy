@@ -33,8 +33,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Nimbia",
-    "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Stage Bosses/Nimbia.yy",
+    "name":"Base",
+    "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Stage Bosses/Nimbia/Sprites/Base.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

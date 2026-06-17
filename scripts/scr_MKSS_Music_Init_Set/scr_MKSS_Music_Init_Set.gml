@@ -24,6 +24,7 @@ function scr_MKSS_Music_Init_Set()
 	scr_MKSS_Music_Init_Add("fissionFactoryEX","Pandora - Last Battle","Persona 1 PSP",mus_MKSS_FissionFactoryEX,.037,[32.98]);
 	scr_MKSS_Music_Init_Add("adAstraEX","Disconnected","Persona 3 Reload",mus_MKSS_AdAstraEX,6.236,[195.188]);
 	scr_MKSS_Music_Init_Add("miniboss","Master of Tartarus","Persona 3 Reload",mus_MKSS_Miniboss,43.968,[47.632]);
+	scr_MKSS_Music_Init_Add("prelude","tartarus_0d01","Persona 3 Reload",mus_MKSS_Prelude,10.665);
 	scr_MKSS_Music_Init_Add("boss","Mass Destruction","Persona 3",mus_MKSS_Boss);
 	scr_MKSS_Music_Init_Add("andromedaBattle_1","Self Redemption","Persona 3 The Movie",mus_MKSS_AndromedaBattle_1);		//STRIMPTODO Set Points
 	scr_MKSS_Music_Init_Add("andromedaBattle_2","Ying Yang","Persona 4 The Golden Animation",mus_MKSS_AndromedaBattle_2);	//STRIMPTODO Set Points

@@ -18,6 +18,7 @@ points = 2500;
 metaPointsOnDeath = 25;
 metaPointsOnOverkill = 30;
 isBoss = true;
+pauseOutsideView = false;
 canHaveKnockback = false;
 
 //hitParticleIndex = scr_MKSS_ParticleSet_StarBlockBreak; STRIMPTODO

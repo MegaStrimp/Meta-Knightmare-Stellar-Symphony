@@ -36,7 +36,8 @@ function scr_MKSS_Player_MetaKnight_State_Galaxia_DownThrust_Step()
 		#region Grounded
 		if ((downThrustState == 1) and (grounded))
 		{
-			scr_PlaySfx(snd_MKSS_BlockBreak);
+			var sfx = scr_PlaySfx(snd_MKSS_BlockBreak);
+			audio_sound_pitch(sfx,random_range(.85,1.15));
 			
 			scr_Camera_SetScreenshake(0,2);
 			

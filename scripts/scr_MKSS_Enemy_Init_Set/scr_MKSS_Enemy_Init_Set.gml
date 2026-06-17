@@ -459,13 +459,41 @@ function scr_MKSS_Enemy_Init_Set()
 	});
 	#endregion
 	
+	#region Chasse-Emee
+	var targetMappedID = scr_MKSS_Enemy_Init_Add("chasseEmee","Chasse-Emee");
+	
+	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
+	{
+		sprIntro: spr_MKSS_Enemy_ChasseEmee_Base_Intro,
+		
+		maskIndex: spr_16x16Mask_MiddleOrigin
+	});
+	
+	scr_MKSS_Enemy_Init_Add_EnemyHealthbar(targetMappedID,scr_MKSS_Hud_EnemyHealthbar_Starless);
+	#endregion
+	
+	#region Nimbia
+	var targetMappedID = scr_MKSS_Enemy_Init_Add("nimbia","Nimbia");
+	
+	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
+	{
+		sprIdle: spr_MKSS_Enemy_Nimbia_Base_Idle,
+		
+		maskIndex: spr_16x16Mask_MiddleOrigin
+	});
+	
+	scr_MKSS_Enemy_Init_Add_EnemyHealthbar(targetMappedID,scr_MKSS_Hud_EnemyHealthbar_Starless);
+	#endregion
+	
 	#region Starless Nightmare
 	var targetMappedID = scr_MKSS_Enemy_Init_Add("starlessNightmare","Starless Nightmare");
 	
 	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
 	{
 		sprOrbIdle: spr_MKSS_Enemy_StarlessNightmare_Base_Orb_Idle,
-		sprOrbHurt: spr_MKSS_Enemy_StarlessNightmare_Base_Orb_Hurt
+		sprOrbHurt: spr_MKSS_Enemy_StarlessNightmare_Base_Orb_Hurt,
+		
+		maskIndex: spr_16x16Mask_MiddleOrigin
 	});
 	
 	scr_MKSS_Enemy_Init_Add_EnemyHealthbar(targetMappedID,scr_MKSS_Hud_EnemyHealthbar_Starless);
