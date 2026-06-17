@@ -15,13 +15,13 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_Setup(targetIsBoss = true,targetPla
 	
 	#region Gameplay Variables
 	attackList = ds_list_create();
-	thrownEnemyList = ds_list_create();
-	thrownEnemyStateList = ds_list_create();
 	
 	hasWalked = false;
 	
 	ds_list_add(attackList,global.MKSS_AttackIDs[? "gigantEdge_SwordSwing"]);
-	ds_list_add(attackList,global.MKSS_AttackIDs[? "gigantEdge_SwordSwing"]);
+	ds_list_add(attackList,global.MKSS_AttackIDs[? "gigantEdge_SwordDash"]);
+	ds_list_add(attackList,global.MKSS_AttackIDs[? "gigantEdge_SwordSlam"]);
+	ds_list_add(attackList,global.MKSS_AttackIDs[? "gigantEdge_ChargeSwing"]);
 	
 	attackListIndex = 0;
 	
