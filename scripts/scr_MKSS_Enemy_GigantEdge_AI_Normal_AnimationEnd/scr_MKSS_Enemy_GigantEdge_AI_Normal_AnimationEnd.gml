@@ -8,6 +8,8 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_AnimationEnd()
 		case spriteSet.sprSwordSwing:
 		case spriteSet.sprSwordDash:
 		case spriteSet.sprSwordSlam:
+		case spriteSet.sprSwordThrowPrepare:
+		case spriteSet.sprSwordThrow:
 		image_index = image_number - 1;
 		break;
 	}

@@ -18,6 +18,7 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_Setup(targetIsBoss = true,targetPla
 	
 	hasWalked = false;
 	
+	ds_list_add(attackList,global.MKSS_AttackIDs[? "gigantEdge_SwordThrow"]);
 	ds_list_add(attackList,global.MKSS_AttackIDs[? "gigantEdge_SwordSwing"]);
 	ds_list_add(attackList,global.MKSS_AttackIDs[? "gigantEdge_SwordDash"]);
 	ds_list_add(attackList,global.MKSS_AttackIDs[? "gigantEdge_SwordSlam"]);

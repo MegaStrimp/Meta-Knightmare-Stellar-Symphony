@@ -1,6 +1,6 @@
-///@description MKSS - Attack - Execute - Gigant Edge - Sword Throw
+///@description MKSS - Attack - Execute - Gigant Edge - Charge Swing
 
-function scr_MKSS_Attack_Execute_GigantEdge_SwordThrow()
+function scr_MKSS_Attack_Execute_GigantEdge_ChargeSwing()
 {
 	attackString = global.MKSS_AttackList[attackIndex].ID;
 	scr_Debug_WriteLog(string(object_get_name(object_index)) + " Used [" + attackString + "]");
@@ -11,6 +11,6 @@ function scr_MKSS_Attack_Execute_GigantEdge_SwordThrow()
 	dirX = 1;
 	if (nearestPlayer.x < x) dirX = -1;
 	
-	scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordThrow_Step);
+	scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_GigantEdge_AI_Normal_ChargeSlam_Step);
 	#endregion
 }

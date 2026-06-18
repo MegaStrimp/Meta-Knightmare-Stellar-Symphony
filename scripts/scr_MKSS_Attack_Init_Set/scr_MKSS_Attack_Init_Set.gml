@@ -65,6 +65,7 @@ function scr_MKSS_Attack_Init_Set()
 	scr_MKSS_Attack_Init_Add("gigantEdge_SwordDash",scr_MKSS_Attack_Execute_GigantEdge_SwordDash);
 	scr_MKSS_Attack_Init_Add("gigantEdge_SwordSlam",scr_MKSS_Attack_Execute_GigantEdge_SwordSlam);
 	scr_MKSS_Attack_Init_Add("gigantEdge_ChargeSwing",scr_MKSS_Attack_Execute_GigantEdge_ChargeSwing);
+	scr_MKSS_Attack_Init_Add("gigantEdge_SwordThrow",scr_MKSS_Attack_Execute_GigantEdge_SwordThrow);
 	#endregion
 	
 	#region Starless Marx

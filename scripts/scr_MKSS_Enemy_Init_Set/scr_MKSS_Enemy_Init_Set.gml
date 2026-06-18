@@ -440,6 +440,9 @@ function scr_MKSS_Enemy_Init_Set()
 		
 		sprChargeSwingPrepare: spr_MKSS_Enemy_GigantEdge_Base_ChargeSwingPrepare,
 		
+		sprSwordThrowPrepare: spr_MKSS_Enemy_GigantEdge_Base_SwordThrowPrepare,
+		sprSwordThrow: spr_MKSS_Enemy_GigantEdge_Base_SwordThrow,
+		
 		sprHurt1: spr_MKSS_Enemy_GigantEdge_Base_Idle,
 		sprHurt2: spr_MKSS_Enemy_GigantEdge_Base_Idle,
 		
