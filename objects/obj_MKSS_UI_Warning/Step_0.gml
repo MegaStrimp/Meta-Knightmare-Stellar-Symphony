@@ -1,6 +1,6 @@
 ///@description Main
 
-#region Text Movement
+#region Text Animation
 topTextX = (topTextX + topTextSpd) % topTextWidth;
 topTextY = lerp(topTextY,topTextYTarget,.1);
 
@@ -8,6 +8,8 @@ bottomTextX = (bottomTextX + bottomTextSpd) % bottomTextWidth;
 bottomTextY = lerp(bottomTextY,bottomTextYTarget,.1);
 
 middleTextLength = lerp(middleTextLength,middleTextLengthTarget,.1);
+
+imageIndex = (imageIndex + imageSpeed) % imageNumber;
 #endregion
 
 #region Decals

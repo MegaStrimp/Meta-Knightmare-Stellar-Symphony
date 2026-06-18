@@ -47,6 +47,8 @@ if (!localPause)
 			dialogueIndex += 1;
 			
 			portrait_Idle = localDialogue.dialogue[dialogueIndex].portrait_Idle;
+			portrait_Talk = localDialogue.dialogue[dialogueIndex].portrait_Talk;
+			currentPortrait = portrait_Idle;
 			text = localDialogue.dialogue[dialogueIndex].text;
 			textSpeed = localDialogue.dialogue[dialogueIndex].textSpeed;
 			textSound = localDialogue.dialogue[dialogueIndex].textSound;
@@ -59,11 +61,11 @@ if (!localPause)
 	#region Portrait
 	if (currentPortrait != undefined)
 	{
-		if (currentPortrait != portrait_Talk) portraitImageIndex = (portraitImageIndex + (sprite_get_speed(currentPortrait) / 60) + sprite_get_number(currentPortrait)) % sprite_get_number(currentPortrait);
+		if ((currentPortrait != portrait_Talk) or (portrait_Idle == portrait_Talk)) portraitImageIndex = (portraitImageIndex + (sprite_get_speed(currentPortrait) / 60) + sprite_get_number(currentPortrait)) % sprite_get_number(currentPortrait);
 		
 		if (dialogueIsFlowing)
 		{
-			if (portraitTalkTimer == -1) portraitTalkTimer = portraitTalkTimerMax;
+			if ((portraitTalkTimer == -1) and (portrait_Idle != portrait_Talk)) portraitTalkTimer = portraitTalkTimerMax;
 			
 			#region Portrait Talk Timer
 			if (portraitTalkTimer != -1)

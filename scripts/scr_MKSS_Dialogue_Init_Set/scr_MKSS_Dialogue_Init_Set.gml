@@ -297,15 +297,136 @@ function scr_MKSS_Dialogue_Init_Set()
 	var dialogue = 
 	[
 		{
-			portrait_Idle: spr_MKSS_NPC_Nimbia_Portrait_Idle,
-			portrait_Talk: spr_MKSS_NPC_Nimbia_Portrait_Talk,
-			text: "...Or will you leave that sword behind, like a coward?",
+			portrait_Idle: spr_MKSS_NPC_Nimbia_Portrait_Ominous1,
+			portrait_Talk: spr_MKSS_NPC_Nimbia_Portrait_Ominous1,
+			text: "Intruder.",
 			textSpeed: defaultTextSpeed,
-			textSound: defaultTextSound
+			textSound: snd_MKSS_Dialogue_Nimbia
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_MetaKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_MetaKnight_Portrait_Talk,
+			text: "Are you the one corrupting Castle Dedede?",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_MetaKnight
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_MetaKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_MetaKnight_Portrait_Talk,
+			text: "Show yourself!",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_MetaKnight
 		}
 	]
 	
 	scr_MKSS_Dialogue_Init_Add("nimbia_PreBoss_1",dialogue);
+	#endregion
+	
+	#region Pre-Boss 2
+	var dialogue = 
+	[
+		{
+			portrait_Idle: spr_MKSS_NPC_Nimbia_Portrait_Ominous1,
+			portrait_Talk: spr_MKSS_NPC_Nimbia_Portrait_Ominous1,
+			text: "I am but a mere guardian.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Nimbia
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Nimbia_Portrait_Ominous1,
+			portrait_Talk: spr_MKSS_NPC_Nimbia_Portrait_Ominous1,
+			text: "Stellar Delusions only bring forth what already exists in your mind.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Nimbia
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Nimbia_Portrait_Ominous1,
+			portrait_Talk: spr_MKSS_NPC_Nimbia_Portrait_Ominous1,
+			text: "Yet,[delay,200] you have managed to overcome the effects... and even used the cards to your advantage.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Nimbia
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Nimbia_Portrait_Ominous1,
+			portrait_Talk: spr_MKSS_NPC_Nimbia_Portrait_Ominous1,
+			text: "With that fancy new sword you've made just now.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Nimbia
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Nimbia_Portrait_Ominous1,
+			portrait_Talk: spr_MKSS_NPC_Nimbia_Portrait_Ominous1,
+			text: "You have caught his attention.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Nimbia
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_MetaKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_MetaKnight_Portrait_Talk,
+			text: "'Stellar Delusions'...",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_MetaKnight
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_MetaKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_MetaKnight_Portrait_Talk,
+			text: "Am I manifesting all of this?",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_MetaKnight
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_MetaKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_MetaKnight_Portrait_Talk,
+			text: "Everything still resembles reality...",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_MetaKnight
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_MetaKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_MetaKnight_Portrait_Talk,
+			text: "I must act wisely and stay calm[delay,200] before I create something dangerous.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_MetaKnight
+		}
+	]
+	
+	scr_MKSS_Dialogue_Init_Add("nimbia_PreBoss_2",dialogue);
+	#endregion
+	
+	#region Pre-Boss 3
+	var dialogue = 
+	[
+		{
+			portrait_Idle: spr_MKSS_NPC_Nimbia_Portrait_Ominous2,
+			portrait_Talk: spr_MKSS_NPC_Nimbia_Portrait_Ominous2,
+			text: "You have disappointed our expectations.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Nimbia
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Nimbia_Portrait_Ominous2,
+			portrait_Talk: spr_MKSS_NPC_Nimbia_Portrait_Ominous2,
+			text: "So[delay,200] tell me,",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Nimbia
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Nimbia_Portrait_Ominous2,
+			portrait_Talk: spr_MKSS_NPC_Nimbia_Portrait_Ominous2,
+			text: "Will you face me like the true warrior you are meant to be...",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Nimbia
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Nimbia_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_Nimbia_Portrait_Talk,
+			text: "...Or will you leave that sword behind, like a coward?",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Nimbia
+		}
+	]
+	
+	scr_MKSS_Dialogue_Init_Add("nimbia_PreBoss_3",dialogue);
 	#endregion
 	#endregion
 	

@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_MKSS_NPC_Nimbia_Portrait_Talk",
   "bboxMode":0,
-  "bbox_bottom":48,
+  "bbox_bottom":47,
   "bbox_left":0,
-  "bbox_right":61,
+  "bbox_right":60,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -17,14 +17,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"5868d8e4-8121-4b9b-8357-2f9624b3c018","name":"5868d8e4-8121-4b9b-8357-2f9624b3c018","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d6bbd44c-57b7-432e-9d7c-cb8b2e8ce3c1","name":"d6bbd44c-57b7-432e-9d7c-cb8b2e8ce3c1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":49,
+  "height":48,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"ace9b8b6-a690-43f7-893c-ebdb104ffbf5","blendMode":0,"displayName":"default","isLocked":false,"name":"ace9b8b6-a690-43f7-893c-ebdb104ffbf5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"d80ce8ac-1124-4783-bfcf-10ab389f4d99","blendMode":0,"displayName":"default","isLocked":false,"name":"d80ce8ac-1124-4783-bfcf-10ab389f4d99","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_MKSS_NPC_Nimbia_Portrait_Talk",
   "nineSlice":null,
@@ -76,8 +76,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5868d8e4-8121-4b9b-8357-2f9624b3c018","path":"sprites/spr_MKSS_NPC_Nimbia_Portrait_Talk/spr_MKSS_NPC_Nimbia_Portrait_Talk.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a148f4af-7725-4d2c-8bec-a0b8a3ae95bc","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d6bbd44c-57b7-432e-9d7c-cb8b2e8ce3c1","path":"sprites/spr_MKSS_NPC_Nimbia_Portrait_Talk/spr_MKSS_NPC_Nimbia_Portrait_Talk.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"2bae4ef8-902e-47f0-b493-eab36dbdd010","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -93,5 +93,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":62,
+  "width":64,
 }

@@ -2,6 +2,13 @@
 
 if (!localPause)
 {
+	#region Pause
+	if (input_check_pressed("start",playerNum))
+	{
+		global.MKSS_CutsceneIsPaused = true;
+	}
+	#endregion
+	
 	#region Phase Timer
 	if (phaseTimer != -1)
 	{
@@ -40,6 +47,8 @@ if (!localPause)
 					sprite_index = spriteSet.sprIntro;
 				}
 				
+				bossSpawned = true;
+				
 				with (obj_MKSS_ChasseShip) instance_destroy();
 				
 				phaseTimer = 200;
@@ -62,6 +71,15 @@ if (!localPause)
 				global.canGamePause = true;
 				global.MKSS_CutsceneStopMovement = false;
 				
+				if (!bossSpawned)
+				{
+					bossSpawned = true;
+				}
+				
+				with (obj_MKSS_ChasseShip) instance_destroy();
+				
+				with (obj_Particle) instance_destroy();
+				
 				instance_destroy();
 				
 				phaseTimer = -1;
@@ -70,6 +88,25 @@ if (!localPause)
 			
 			phase += 1;
 		}
+	}
+	#endregion
+}
+else
+{
+	#region Resume
+	if (input_check_pressed("start",playerNum))
+	{
+		global.MKSS_CutsceneIsPaused = false;
+	}
+	#endregion
+	
+	#region Skip
+	if (input_check_pressed("select",playerNum))
+	{
+		global.MKSS_CutsceneIsPaused = false;
+		
+		phase = 4;
+		phaseTimer = 0;
 	}
 	#endregion
 }

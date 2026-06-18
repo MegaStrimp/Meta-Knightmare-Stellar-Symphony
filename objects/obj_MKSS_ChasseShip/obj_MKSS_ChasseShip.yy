@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
-    "path":"folders/Meta Knightmare Stellar Symphony/Stage Elements/Chasse Ship/Objects.yy",
+    "path":"folders/Meta Knightmare Stellar Symphony/Background Environments/Chasse Ship/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Chasse Ship",
-    "path":"folders/Meta Knightmare Stellar Symphony/Stage Elements/Chasse Ship.yy",
+    "name":"Sprites",
+    "path":"folders/Meta Knightmare Stellar Symphony/Background Environments/Chasse Ship/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

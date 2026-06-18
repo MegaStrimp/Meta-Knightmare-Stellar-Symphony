@@ -15,7 +15,7 @@ draw_set_alpha(1);
 if (currentPortrait != undefined)
 {
 	var finalImageIndex = 0;
-	if (currentPortrait != portrait_Talk) finalImageIndex = portraitImageIndex;
+	if ((currentPortrait != portrait_Talk) or (portrait_Idle == portrait_Talk)) finalImageIndex = portraitImageIndex;
 	
 	draw_sprite(currentPortrait,finalImageIndex,xx,yy);
 }

@@ -19,6 +19,10 @@ middleTextLengthTarget = 1;
 decalWidth = 0;
 decalWidthTarget = 240;
 
+imageIndex = 0;
+imageSpeed = sprite_get_speed(spr_MKSS_UI_Warning_Text_Top) / 60;
+imageNumber = sprite_get_number(spr_MKSS_UI_Warning_Text_Top);
+
 state = 0;
 stateTimer = 240;
 #endregion

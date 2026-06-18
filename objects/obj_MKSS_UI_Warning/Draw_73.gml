@@ -18,14 +18,14 @@ draw_set_alpha(1);
 #region Text
 for (var i = 0; i < 3; i++)
 {
-	draw_sprite(spr_MKSS_UI_Warning_Text_Top,0,xx + topTextX + (topTextWidth * i),yy + topTextY);
-	draw_sprite(spr_MKSS_UI_Warning_Text_Bottom,0,xx + bottomTextX + (bottomTextWidth * i),yy + bottomTextY);
+	draw_sprite(spr_MKSS_UI_Warning_Text_Top,imageIndex,xx + topTextX + (topTextWidth * i),yy + topTextY);
+	draw_sprite(spr_MKSS_UI_Warning_Text_Bottom,imageIndex,xx + bottomTextX + (bottomTextWidth * i),yy + bottomTextY);
 }
 
-draw_sprite_part(spr_MKSS_UI_Warning_Text_Middle,0,0,0,222 * middleTextLength,34,xx + 9,yy + 62);
+draw_sprite_part(spr_MKSS_UI_Warning_Text_Middle,imageIndex,0,0,222 * middleTextLength,34,xx + 9,yy + 62);
 #endregion
 
 #region Decals
-draw_sprite_ext(spr_MKSS_UI_Warning_Decal_Top,0,xx + 120,yy + 53,decalWidth / 240,1,0,c_white,1);
-draw_sprite_ext(spr_MKSS_UI_Warning_Decal_Bottom,0,xx + 120,yy + 101,decalWidth / 240,1,0,c_white,1);
+draw_sprite_ext(spr_MKSS_UI_Warning_Decal_Top,imageIndex,xx + 120,yy + 53,decalWidth / 240,1,0,c_white,1);
+draw_sprite_ext(spr_MKSS_UI_Warning_Decal_Bottom,imageIndex,xx + 120,yy + 101,decalWidth / 240,1,0,c_white,1);
 #endregion
