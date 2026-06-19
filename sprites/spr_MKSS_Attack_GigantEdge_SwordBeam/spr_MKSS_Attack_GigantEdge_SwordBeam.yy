@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"Sprites",
-    "path":"folders/Meta Knightmare Stellar Symphony/Attacks/Attacks/Gigant Edge/Charge Swing/Sprites.yy",
+    "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Minibosses/Gigant Edge/Attacks/Sword Beam/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -18,45 +18,37 @@ function scr_MKSS_Attack_GigantEdge_SwordThrow_Step()
 		#region Movement
 		if (decelTimer == -1)
 		{
-			with (owner) other.movementAngle = point_direction(other.x,other.y,x,y);
-			
-			hsp += lengthdir_x(.3,movementAngle);
-			vsp += lengthdir_y(.3,movementAngle);
-			
-			if (distance_to_point(owner.x,owner.y) <= 1)
+			if (instance_exists(owner))
 			{
-				var count = 0;
-				with (obj_Attack)
+				if (!turnFinish)
 				{
-					if (owner == other.owner)
+					angle += turnSpeed*speedMultFinal*turnDir;
+					angle = scr_AngleLoop(angle);
+				
+					if ((angle >= point_direction(x,y,owner.x,owner.y)-turnSpeed) and (angle <= point_direction(x,y,owner.x,owner.y)+turnSpeed))
 					{
-						count += 1;
-						if (count > 1) break;
+						turnFinish = true;
 					}
 				}
-				
-				if (count <= 1)
+				else
 				{
-					with (owner)
-					{
-						throwTimer = 0;
-					}
+					angle = point_direction(x,y,owner.x,owner.y);
+					if (instance_place(x,y,owner)) instance_destroy();
 				}
-				
-				instance_destroy();
+			}
+			else
+			{
+				destroyOutsideRoom = true;
 			}
 		}
-		//else
-		//{
-		//	movementAngle += 20;
-			
-		//	hsp += lengthdir_x(.2,movementAngle) * dirX;
-		//	vsp += lengthdir_y(.2,movementAngle) * dirX;
-		//}
 		#endregion
 		
 		#region Position
-		scr_Component_SetPosition(hsp,vsp);
+		x += hsp;
+		y += vsp;
+		
+		hsp = lengthdir_x(spd,angle) * speedMultFinal;
+		vsp = lengthdir_y(spd,angle) * speedMultFinal;
 		#endregion
 	}
 }

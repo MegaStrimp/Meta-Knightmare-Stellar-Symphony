@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_MKSS_Attack_GigantEdge_SwordBeam_Step",
   "parent":{
-    "name":"AI",
-    "path":"folders/Meta Knightmare Stellar Symphony/Attacks/Attacks/Gigant Edge/Charge Swing/Scripts/AI.yy",
+    "name":"Scripts",
+    "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Minibosses/Gigant Edge/Attacks/Sword Beam/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

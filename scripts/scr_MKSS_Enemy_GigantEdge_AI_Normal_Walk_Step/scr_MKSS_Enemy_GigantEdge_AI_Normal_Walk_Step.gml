@@ -5,11 +5,37 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_Walk_Step()
 	#region Setup
 	if (enemyState_Setup)
 	{
-		#region Component Setup
-		scr_Component_BasicHorizontal_Setup(.25);
+		#region Attack Init
+		attackString = "Gigant Edge - Walk";
+		scr_Debug_WriteLog(string(object_get_name(object_index)) + " Used [" + attackString + "]");
+	
+		dirX = scr_MKSS_Enemy_DirTarget();
+		
+		attackState = 0;
 		#endregion
 		
-		revertTimer = 120;
+		#region Attack Timers
+		var i = 0;
+		
+		#region Walk Timer
+		attackStateTimerMax[i] = 120;
+		attackStateTimer[i] = attackStateTimerMax[i];
+		i++;
+		#endregion
+		#endregion
+		
+		#region Sword Swing Variables
+		walk_movespeed = .25;
+		#endregion
+		
+		#region WalK Start		
+		sprite_index = spriteSet.sprWalk;
+		image_index = 0;
+		#endregion
+	
+		#region Component Setup
+		scr_Component_BasicHorizontal_Setup(walk_movespeed);
+		#endregion
 		
 		enemyState_Setup = false;
 	}
@@ -17,16 +43,28 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_Walk_Step()
 	
 	if (!localPause)
 	{
-		#region Movement
-		scr_Component_BasicHorizontal_Step(true);
-		#endregion
-		
 		#region Friction
 		if (grounded)
 		{
 			var decelFinal = decel * speedMultFinal;
 			
 			hsp = scr_Entity_Friction(hsp,decelFinal);
+		}
+		#endregion
+		
+		#region Attack States
+		switch (attackState)
+		{
+			#region Walking
+			case 0:
+			scr_Component_BasicHorizontal_Step(true);
+			
+			if (attackStateTimer[attackState] == -1)
+			{
+				scr_Enemy_ChangeState_Step(id,enemyAIStepIdle);
+			}
+			break;
+			#endregion
 		}
 		#endregion
 		
@@ -38,32 +76,8 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_Walk_Step()
 		scr_Entity_Collision(,enemyWallXCollision,enemyWallYCollision);
 		#endregion
 		
-		#region Animation
-		if ((hurtTimer == -1) and (hp > 0))
-		{
-			sprite_index = spriteSet.sprWalk;
-		}
-		#endregion
-		
-		#region Revert Timer
-		if (revertTimer != -1)
-		{
-			revertTimer = max(revertTimer - speedMultFinal,0);
-			if (revertTimer == 0)
-			{
-				var nearestPlayer = instance_nearest(x,y,obj_Player);
-				
-				dirX = 1;
-				if (nearestPlayer.x < x) dirX = -1;
-				
-				sprite_index = spriteSet.sprIdle;
-				image_index = 0;
-				
-				scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_GigantEdge_AI_Normal_Idle_Step);
-				
-				revertTimer = -1;
-			}
-		}
+		#region Attack State Timer
+		scr_MKSS_Enemy_AttackStateTimer();
 		#endregion
 	}
 }
