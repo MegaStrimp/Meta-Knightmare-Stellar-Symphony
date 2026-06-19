@@ -91,6 +91,8 @@ function scr_MKSS_Player_MetaKnight_Setup()
 	playerStep = scr_MKSS_Player_MetaKnight_Step;
 	playerDraw = scr_MKSS_Player_MetaKnight_Draw;
 	playerAnimationEnd = scr_MKSS_Player_MetaKnight_AnimationEnd;
+	
+	playerDeathState = scr_MKSS_Player_MetaKnight_Death_Step;
 	#endregion
 	
 	#region Sprites
@@ -109,6 +111,7 @@ function scr_MKSS_Player_MetaKnight_Setup()
 	#region Player Respawn
 	if (global.playerRespawn[playerNum])
 	{
+		global.MKSS_GameOverPause = false;
 		global.playerHp[playerNum] = global.playerMaxHp[playerNum];
 		
 		global.playerRespawn[playerNum] = false;
