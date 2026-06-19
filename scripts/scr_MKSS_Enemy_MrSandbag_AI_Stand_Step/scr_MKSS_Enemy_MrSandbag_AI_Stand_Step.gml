@@ -12,6 +12,12 @@ function scr_MKSS_Enemy_MrSandbag_AI_Stand_Step()
 		
 		if (hasKnockback)
 		{
+			if (receivedAttackOwner != -1)
+			{
+				dirX = 1;
+				if (sign(x - receivedAttackOwner.x) == -1) dirX = -1;
+			}
+			
 			#region Knockback Active
 			#region Revert Back
 			if ((knockbackTimer == -1) and (knockbackCheckTimer == -1) and (grounded)) knockbackTimer = knockbackTimerMax;

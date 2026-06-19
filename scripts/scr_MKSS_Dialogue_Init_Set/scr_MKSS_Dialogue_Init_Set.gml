@@ -159,6 +159,58 @@ function scr_MKSS_Dialogue_Init_Set()
 	#endregion
 	#endregion
 	
+	#region Javelin Knight
+	#region Halberd 1
+	var dialogue = 
+	[
+		{
+			portrait_Idle: spr_MKSS_NPC_JavelinKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_JavelinKnight_Portrait_Talk,
+			text: "Hey master, good to see you back.",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_JavelinKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_JavelinKnight_Portrait_Talk,
+			text: "We ran out of target dummies so the Captain told me to always keep some junk ready for practice.",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_JavelinKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_JavelinKnight_Portrait_Talk,
+			text: "Why not balloons, of course! Colorful and perfect to get a satisfying hit.",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_JavelinKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_JavelinKnight_Portrait_Talk,
+			text: "Not as durable but leave the thinking and blowing to me.",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_JavelinKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_JavelinKnight_Portrait_Talk,
+			text: "Mr. Sandbag? Yeah he's still there in the storage. You can play with him if you wish to.",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_JavelinKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_JavelinKnight_Portrait_Talk,
+			text: "Right through that door past the balloons.",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound
+		}
+	]
+	
+	scr_MKSS_Dialogue_Init_Add("javelinKnight_Halberd_1",dialogue);
+	#endregion
+	#endregion
+	
 	#region Captain Vul
 	#region Halberd 1
 	var dialogue = 

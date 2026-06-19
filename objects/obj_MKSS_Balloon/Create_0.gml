@@ -26,13 +26,12 @@ vsp = jumpspeed * -dirY * speedMultFinal;
 #region Palette List
 paletteList = ds_list_create();
 
-//STRIMPTODO Add Stage Clear Requiremenets
 ds_list_add(paletteList,spr_MKSS_Balloon_Palette_Normal);
-ds_list_add(paletteList,spr_MKSS_Balloon_Palette_StarryShores);
-ds_list_add(paletteList,spr_MKSS_Balloon_Palette_RoyalReeve);
-ds_list_add(paletteList,spr_MKSS_Balloon_Palette_LivingLoom);
-ds_list_add(paletteList,spr_MKSS_Balloon_Palette_FissionFactory);
-ds_list_add(paletteList,spr_MKSS_Balloon_Palette_AdAstra);
+if (global.MKSS_StageList[global.MKSS_StageIDs[? "starryShores"]].isBeaten) ds_list_add(paletteList,spr_MKSS_Balloon_Palette_StarryShores);
+if (global.MKSS_StageList[global.MKSS_StageIDs[? "royalReeve"]].isBeaten) ds_list_add(paletteList,spr_MKSS_Balloon_Palette_RoyalReeve);
+if (global.MKSS_StageList[global.MKSS_StageIDs[? "livingLoom"]].isBeaten) ds_list_add(paletteList,spr_MKSS_Balloon_Palette_LivingLoom);
+if (global.MKSS_StageList[global.MKSS_StageIDs[? "fissionFactory"]].isBeaten) ds_list_add(paletteList,spr_MKSS_Balloon_Palette_FissionFactory);
+if (global.MKSS_StageList[global.MKSS_StageIDs[? "adAstra"]].isBeaten) ds_list_add(paletteList,spr_MKSS_Balloon_Palette_AdAstra);
 
 ds_list_shuffle(paletteList);
 palSprite = ds_list_find_value(paletteList,0);
