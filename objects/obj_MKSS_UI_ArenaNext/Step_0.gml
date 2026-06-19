@@ -1,4 +1,4 @@
-/// @description Main
+///@description Main
 
 if (!localPause)
 {

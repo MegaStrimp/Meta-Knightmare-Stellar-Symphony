@@ -68,7 +68,7 @@
     },
     "name":"spr_MKSS_UI_Warning_Decal_Bottom",
     "playback":1,
-    "playbackSpeed":12.0,
+    "playbackSpeed":9.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",

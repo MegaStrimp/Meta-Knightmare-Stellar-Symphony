@@ -131,10 +131,10 @@ if (targetIcon != undefined) nextIcon = "[" + sprite_get_name(targetIcon) + "]";
 var text = scribble(nextIcon + " Next");
 text.draw(xx + global.gameWidth - 4 - text.get_width(),yy + 2 - hintOffset + (2 * (buttonInputTimerComponent_RTimer != -1)));
 #endregion
-	
+
 #region Meta Points
 draw_sprite_ext(spr_MKSS_Hud_MetaPoints_Icon,0,xx + 2,yy + 18,1,1,0,#FFFFFF,1);
 
 var displayedPoints = string_replace_all(string_format(global.MKSS_PlayerMetaPoints[playerNum],4,0)," ","0");
-scribble("[fnt_Advance_Small][d#FFFFFF]x[fnt_Advance]" + string(displayedPoints) + "[/font][/color]").draw(xx + 14,yy + 24);
+scribble("[fnt_Advance_Small][#FFFFFF]x[fnt_Advance]" + string(displayedPoints) + "[/font][/color]").draw(xx + 14,yy + 24);
 #endregion

@@ -6,8 +6,19 @@ function scr_MKSS_Player_Death(targetPlayer)
 	{
 		scr_Debug_WriteLog("Player " + string(playerNum) + " Died");
 		
+		audio_stop_all();
+		//scr_PlaySfx(snd_DL1_Miss);
+		
+		global.MKSS_GameOverPause = true;
+		
 		global.playerRespawn[playerNum] = true;
 		
-		room_restart();
+		hsp = 0;
+		vsp = 0;
+		hurtState = hurtStates.none;
+		
+		scr_Camera_SetActive(false);
+		
+		scr_Player_ChangePlayerState_Step(id,playerDeathState);
 	}
 }

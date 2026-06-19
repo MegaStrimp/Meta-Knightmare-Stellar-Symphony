@@ -66,6 +66,8 @@ global.MKSS_MusicPlayingTimestamp = 0;
 global.MKSS_CutsceneIsPaused = false;
 global.MKSS_CutsceneStopMovement = false;
 
+global.MKSS_GameOverPause = false;
+
 global.flag_MKSS_MetaPointCollect = false;
 global.flag_MKSS_AbilitySwitch = false;
 #endregion
