@@ -84,6 +84,8 @@ if (isActive)
 		
 		global.hasHud = true;
 		
+		scr_MKSS_SaveData(global.selectedSave);
+		
 		with (ownerPedestal) isActive = false;
 		with (obj_Player)
 		{
@@ -105,9 +107,9 @@ if (isActive)
 			var pedestalList = obj_MKSS_Pedestal_Controller.pedestalList;
 			var pedestalListSize = ds_list_size(pedestalList);
 			var targetPedestal = ds_list_find_value(pedestalList,(ds_list_find_index(pedestalList,ownerPedestal) + 1 + pedestalListSize) % pedestalListSize);
-		
+			
 			global.hasHud = true;
-		
+			
 			with (ownerPedestal) isActive = false;
 			with (obj_Player)
 			{
@@ -116,6 +118,11 @@ if (isActive)
 					x = targetPedestal.x;
 					y = targetPedestal.y - 16;
 				}
+			}
+			with (obj_MKSS_Familiar)
+			{
+				x = followedObject.x - (24 * followedObject.dirX);
+				y = followedObject.y - 24;
 			}
 			with (targetPedestal)
 			{
@@ -145,6 +152,11 @@ if (isActive)
 					y = targetPedestal.y - 16;
 				}
 			}
+			with (obj_MKSS_Familiar)
+			{
+				x = followedObject.x - (24 * followedObject.dirX);
+				y = followedObject.y - 24;
+			}
 			with (targetPedestal)
 			{
 				targetPlayer = other.ownerPedestal.targetPlayer;
@@ -159,16 +171,6 @@ if (isActive)
 
 if (!localPause)
 {
-	#region Player Camera Y Offset
-	with (obj_Player)
-	{
-		if (playerNum == 0)
-		{
-			cameraYOffset = lerp(cameraYOffset,other.isActive * -36,.05);
-		}
-	}
-	#endregion
-	
 	#region Paint Roller
 	paintRollerIndex = (paintRollerIndex + paintRollerSpeed) % paintRollerNumber;
 	paintRollerOffset = lerp(paintRollerOffset,paintRollerOffsetTarget,.1);

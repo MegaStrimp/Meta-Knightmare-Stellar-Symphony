@@ -61,13 +61,13 @@ function scr_MKSS_Enemy_GetHit(targetEnemy,targetOwner,targetDmg,targetKnockback
 					scr_MKSS_SpawnMetaPoint(targetEnemy.metaPointsOnDeath,targetEnemy.x,targetEnemy.y,targetEnemy.depth - 1,targetOwner,knockbackAngleFinal);
 					targetEnemy.metaPointsOnDeath = 0;
 				}
-					
+				
 				var metaPointsFinal = min(irandom_range(0,1),targetEnemy.metaPointsOnOverkill) + (irandom_range(0,targetBonusLootingAmount) * (targetEnemy.metaPointsOnOverkill != 0));
 				targetEnemy.metaPointsOnOverkill = max(0,targetEnemy.metaPointsOnOverkill - metaPointsFinal);
 				if (metaPointsFinal != 0) scr_MKSS_SpawnMetaPoint(metaPointsFinal,targetEnemy.x,targetEnemy.y,targetEnemy.depth - 1,targetOwner,knockbackAngleFinal);
-					
+				
 				scr_Camera_SetScreenshake(0,1);
-					
+				
 				targetEnemy.deathTimerMax = max(5,targetEnemy.deathTimerMax + (targetEnemy.hp / 6) - 1);
 				targetEnemy.deathTimer = targetEnemy.deathTimerMax;
 			}

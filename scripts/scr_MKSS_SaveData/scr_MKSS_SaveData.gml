@@ -13,6 +13,14 @@ function scr_MKSS_SaveData(file)
 	
 	ini_open(fileFinal);
 	
+	#region Player Status
+	for (var i = 0; i < global.maxPlayers; i++)
+	{
+		ini_write_real("playerStatus","sprayPaint_" + string(i),global.playerSprayPaint[i]);
+		ini_write_real("playerStatus","familiar_" + string(i),global.MKSS_PlayerFamiliar[i]);
+	}
+	#endregion
+	
 	#region Weapon Status
 	for (var i = 0; i < ds_map_size(global.MKSS_WeaponIDs); i++)
 	{
@@ -48,6 +56,30 @@ function scr_MKSS_SaveData(file)
 			{
 				ini_write_real("upgradeStatus",string(upgradeID) + "_IsUnlocked",global.MKSS_UpgradeList[i].isUnlocked);
 			}
+		}
+	}
+	#endregion
+	
+	#region Spray Paint Status
+	for (var i = 0; i < ds_map_size(global.MKSS_SprayPaintIDs); i++)
+	{
+		var sprayPaintID = global.MKSS_SprayPaintList[i].ID;
+		
+		if (global.MKSS_SprayPaintList[i].isUnlocked)
+		{
+			ini_write_real("sprayPaintStatus",string(sprayPaintID) + "_IsUnlocked",global.MKSS_SprayPaintList[i].isUnlocked);
+		}
+	}
+	#endregion
+	
+	#region Familiar Status
+	for (var i = 0; i < ds_map_size(global.MKSS_FamiliarIDs); i++)
+	{
+		var familiarID = global.MKSS_FamiliarList[i].ID;
+		
+		if (global.MKSS_FamiliarList[i].isUnlocked)
+		{
+			ini_write_real("familiarStatus",string(familiarID) + "_IsUnlocked",global.MKSS_FamiliarList[i].isUnlocked);
 		}
 	}
 	#endregion

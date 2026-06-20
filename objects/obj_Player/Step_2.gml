@@ -13,7 +13,7 @@ if (playerEndStep != -1) script_execute(playerEndStep);
 if (clampToView)
 {
 	x = clamp(x,camera_get_view_x(mainView),camera_get_view_x(mainView) + camera_get_view_width(mainView));
-	y = clamp(y,camera_get_view_y(mainView),camera_get_view_y(mainView) + camera_get_view_height(mainView));
+	y = clamp(y,camera_get_view_y(mainView),camera_get_view_y(mainView) + camera_get_view_height(mainView) + clampBottomOffset);
 }
 #endregion
 

@@ -30,14 +30,13 @@ function scr_MKSS_Player_MetaKnight_Setup()
 	movespeed = movespeedNormal;
 	
 	gravNormal = .15;
-	gravFloat = .05;
 	grav = gravNormal;
 	
 	gravLimitNormal = 2.8;
-	gravLimitFloat = .75;
 	gravLimit = gravLimitNormal;
 	
 	jumpspeedNormal = 3.2;
+	jumpspeedDeath = 4;
 	jumpspeed = jumpspeedNormal;
 	
 	climbSpeed = 1;

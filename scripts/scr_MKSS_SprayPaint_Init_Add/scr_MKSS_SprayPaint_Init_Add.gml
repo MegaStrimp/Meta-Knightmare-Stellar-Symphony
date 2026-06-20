@@ -10,7 +10,9 @@ function scr_MKSS_SprayPaint_Init_Add(targetID,targetName = "",targetSprite = un
         ID: targetID,
 		name: targetName,
 		sprite: targetSprite,
-		isUnlocked: false
+		
+		isUnlocked: false,
+		isDefault: false
     };
 	
 	return targetMappedID;

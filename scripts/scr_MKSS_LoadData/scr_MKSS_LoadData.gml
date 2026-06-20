@@ -16,6 +16,14 @@ function scr_MKSS_LoadData(file,importFile = false)
 	
 	ini_open(fileFinal);
 	
+	#region Player Status
+	for (var i = 0; i < global.maxPlayers; i++)
+	{
+		global.playerSprayPaint[i] = ini_read_real("playerStatus","sprayPaint_" + string(i),global.MKSS_SprayPaintIDs[? "meta"]);
+		global.MKSS_PlayerFamiliar[i] = ini_read_real("playerStatus","familiar_" + string(i),global.MKSS_FamiliarIDs[? "none"]);
+	}
+	#endregion
+	
 	#region Weapon Status
 	for (var i = 0; i < ds_map_size(global.MKSS_WeaponIDs); i++)
 	{
@@ -51,6 +59,30 @@ function scr_MKSS_LoadData(file,importFile = false)
 			
 			global.MKSS_UpgradeList[i].isUnlocked = upgradeIsUnlocked;
 		}
+	}
+	#endregion
+	
+	#region Spray Paint Status
+	for (var i = 0; i < ds_map_size(global.MKSS_SprayPaintIDs); i++)
+	{
+		var sprayPaintID = global.MKSS_SprayPaintList[i].ID;
+		
+		var sprayPaintIsUnlocked = ini_read_real("sprayPaintStatus",string(sprayPaintID) + "_IsUnlocked",false);
+		if (global.MKSS_SprayPaintList[i].isDefault) sprayPaintIsUnlocked = true;
+		
+		global.MKSS_SprayPaintList[i].isUnlocked = sprayPaintIsUnlocked;
+	}
+	#endregion
+	
+	#region Familiar Status
+	for (var i = 0; i < ds_map_size(global.MKSS_FamiliarIDs); i++)
+	{
+		var familiarID = global.MKSS_FamiliarList[i].ID;
+		
+		var familiarIsUnlocked = ini_read_real("familiarStatus",string(familiarID) + "_IsUnlocked",false);
+		if (global.MKSS_FamiliarList[i].isDefault) familiarIsUnlocked = true;
+		
+		global.MKSS_FamiliarList[i].isUnlocked = familiarIsUnlocked;
 	}
 	#endregion
 	

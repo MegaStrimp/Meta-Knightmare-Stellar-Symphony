@@ -15,7 +15,7 @@ function scr_MKSS_Player_MetaKnight_Death_Step()
 		deathState = 0;
 		deathStateTimer = 80;
 		spriteTurnTimer = -1;
-		spriteTurnTimerMax = 10;
+		spriteTurnTimerMax = 5;
 		
 		playerState_Setup = false;
 	}
@@ -36,12 +36,12 @@ function scr_MKSS_Player_MetaKnight_Death_Step()
 			switch (deathState)
 			{
 				case 1:
-				//scr_ChangeSprite(spriteSet.sprDeath);
-				//scr_DL1_ParticleSet_Miss(x,y);
+				scr_ChangeSprite(spriteSet.sprDeath);
+				scr_MKSS_ParticleSet_Death(x,y);
 				
-				vsp = -jumpspeedNormal * speedMultFinal;
+				vsp = -jumpspeedDeath * speedMultFinal;
 				
-				//scr_PlayMusic(global.DL1_MusicList[global.DL1_MusicIDs[? "miss"]].audio);
+				scr_PlayMusic(global.MKSS_MusicList[global.MKSS_MusicIDs[? "death"]].audio,false);
 				
 				spriteTurnTimer = spriteTurnTimerMax;
 				deathStateTimer = 180;
@@ -69,8 +69,10 @@ function scr_MKSS_Player_MetaKnight_Death_Step()
 		if (spriteTurnTimer == 0)
 		{
 			image_index += 1;
-			//var par = scr_DL1_ParticleSet_FallDuck(x,y,1,irandom_range(0,359));
-			//par[0].canBePaused = false;
+			
+			var par = scr_MKSS_ParticleSet_FallDuck(x,y,1,irandom_range(0,359));
+			par[0].particleAfterDeath[0] = scr_MKSS_ParticleSet_SmallSparkle_NoPause;
+			par[0].canBePaused = false;
 			
 			spriteTurnTimer = spriteTurnTimerMax;
 		}

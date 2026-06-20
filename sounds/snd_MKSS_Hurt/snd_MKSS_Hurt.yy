@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.5289116,
+  "duration":0.8235374,
   "exportDir":"",
   "name":"snd_MKSS_Hurt",
   "parent":{
@@ -21,7 +21,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_MKSS_Hurt.wav",
+  "soundFile":"snd_MKSS_Hurt.ogg",
   "tags":[
     "Sound Effect",
   ],

@@ -1,5 +1,10 @@
 ///@description Begin Step
 
+#region Variables
+localPause = global.pauseFinal;
+speedMultFinal = global.speedMultGlobal * global.deltaTime;
+#endregion
+
 #region Create Pedestal List
 if (!ds_exists(pedestalList,ds_type_list))
 {

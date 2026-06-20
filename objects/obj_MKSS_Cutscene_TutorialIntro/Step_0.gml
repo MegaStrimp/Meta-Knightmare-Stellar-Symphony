@@ -99,7 +99,7 @@ if (!localPause)
 				
 				with (obj_Player)
 				{
-					clampToView = false;
+					clampToView = true;
 					
 					scr_MKSS_Player_SetTutorialText("[leftIcon][rightIcon] Walk",300);
 				}

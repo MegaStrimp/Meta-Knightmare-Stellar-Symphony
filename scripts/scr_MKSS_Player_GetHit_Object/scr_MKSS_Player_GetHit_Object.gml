@@ -19,11 +19,32 @@ function scr_MKSS_Player_GetHit_Object(targetPlayer,targetObject)
 		
 		//hurtElement = irandom(MKSS_HurtElements.length - 1);
 		
+		switch (hurtElement)
+		{
+			default:
+			scr_ChangeSprite(spriteSet.sprHurtNormal,true);
+			break;
+			
+			case MKSS_HurtElements.shocked:
+			scr_ChangeSprite(spriteSet.sprHurtShocked,true);
+			break;
+			
+			case MKSS_HurtElements.burned:
+			scr_ChangeSprite(spriteSet.sprHurtBurned,true);
+			break;
+			
+			case MKSS_HurtElements.frozen:
+			scr_ChangeSprite(spriteSet.sprHurtFrozen,true);
+			break;
+		}
+		
 		if (hurtElement == MKSS_HurtElements.shocked) scr_MKSS_ParticleSet_Spark(x,y,30);
 		
 		global.playerHp[playerNum] -= targetObject.dmg;
 		if (global.playerHp[playerNum] <= 0)
 		{
+			global.playerHp[playerNum] = 0;
+			
 			if (playerDeath != -1) script_execute(playerDeath,targetPlayer);
 		}
 		else

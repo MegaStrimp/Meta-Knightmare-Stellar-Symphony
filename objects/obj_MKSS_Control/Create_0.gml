@@ -26,6 +26,7 @@ for (var i = 0; i < global.maxPlayers; i++)
 	global.playerCharacter[i] = global.MKSS_PlayerIDs[? "metaKnight"];
 	global.playerAbility[i] = -1;
 	global.playerSprayPaint[i] = global.MKSS_SprayPaintIDs[? "meta"];
+	global.MKSS_PlayerFamiliar[i] = global.MKSS_FamiliarIDs[? "none"];
 	global.MKSS_PlayerSkin[i] = 0;
 	global.MKSS_PlayerWeaponList[i] = ds_list_create();
 	global.MKSS_PlayerWeaponList_Index[i] = 0;

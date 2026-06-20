@@ -9,6 +9,7 @@ function scr_MKSS_SprayPaint_Init_Set()
 	
 	#region Spray Paints
 	scr_MKSS_SprayPaint_Init_Add("meta","Meta",spr_MKSS_SprayPaint_Meta);
+	global.MKSS_SprayPaintList[global.MKSS_SprayPaintIDs[? "meta"]].isDefault = true;
 	scr_MKSS_SprayPaint_Init_Add("starry","Starry",spr_MKSS_SprayPaint_Starry);
 	scr_MKSS_SprayPaint_Init_Add("royal","Royal",spr_MKSS_SprayPaint_Royal);
 	scr_MKSS_SprayPaint_Init_Add("living","Living",spr_MKSS_SprayPaint_Living);

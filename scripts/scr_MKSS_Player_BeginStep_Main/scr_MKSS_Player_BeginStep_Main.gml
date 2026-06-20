@@ -24,6 +24,15 @@ function scr_MKSS_Player_BeginStep_Main()
 	}
 	#endregion
 	
+	#region Death Pit
+	if ((hasDeathPit) and (global.playerHp[playerNum] > 0) and (y >= room_height + clampBottomOffset)) 
+	{
+		global.playerHp[playerNum] = 0;
+		
+		if (playerDeath != -1) script_execute(playerDeath,id);
+	}
+	#endregion
+	
 	#region Collision Mask
 	if (isDucking)
 	{

@@ -2,7 +2,6 @@
 
 #region Initialize Variables
 playerNum = 0;
-global.MKSS_PlayerMetaPoints[playerNum] = irandom_range(50,99999); //STRIMPTODO
 
 surface = surface_create(global.gameWidth,global.gameHeight);
 alpha = 0;
@@ -12,7 +11,7 @@ decalLengthTarget = 0;
 decalLength = -50;
 
 currentMetaPoints = global.MKSS_PlayerMetaPoints[playerNum];
-decreasedMetaPoints = min(100,floor(currentMetaPoints / 10));
+decreasedMetaPoints = min(100,ceil(currentMetaPoints / 10));
 decreasedMetaPointsOffset = 8;
 metaPointsTarget = currentMetaPoints - decreasedMetaPoints;
 

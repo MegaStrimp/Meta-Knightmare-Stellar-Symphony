@@ -38,6 +38,7 @@ function scr_MKSS_Player_Init_Set()
 		sprHurtBurned: spr_MKSS_Player_MetaKnight_Normal_Base_Hurt_Burned,
 		sprHurtFrozen: spr_MKSS_Player_MetaKnight_Normal_Base_Hurt_Frozen,
 		sprStun: spr_MKSS_Player_MetaKnight_Normal_Base_Stun,
+		sprDeath: spr_MKSS_Player_MetaKnight_Normal_Base_Death,
 		
 		sprSlide: spr_MKSS_Player_MetaKnight_Normal_Base_Slide,
 		sprParry: spr_MKSS_Player_MetaKnight_Normal_Base_Parry,

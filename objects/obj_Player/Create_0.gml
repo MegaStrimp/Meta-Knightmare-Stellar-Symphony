@@ -35,6 +35,9 @@ dirY = 1;
 
 clampToView = true;
 clampToRoom = true;
+clampBottomOffset = floor(global.gameTileSize * 1.5);
+
+hasDeathPit = true;
 
 dmg = 1;
 knockbackAngle = 90;

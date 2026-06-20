@@ -55,6 +55,11 @@ if (isActive)
 					y = targetPedestal.y - 16;
 				}
 			}
+			with (obj_MKSS_Familiar)
+			{
+				x = followedObject.x - (24 * followedObject.dirX);
+				y = followedObject.y - 24;
+			}
 			with (targetPedestal)
 			{
 				targetPlayer = other.ownerPedestal.targetPlayer;
@@ -86,6 +91,11 @@ if (isActive)
 					y = targetPedestal.y - 16;
 				}
 			}
+			with (obj_MKSS_Familiar)
+			{
+				x = followedObject.x - (24 * followedObject.dirX);
+				y = followedObject.y - 24;
+			}
 			with (targetPedestal)
 			{
 				targetPlayer = other.ownerPedestal.targetPlayer;
@@ -100,16 +110,6 @@ if (isActive)
 
 if (!localPause)
 {
-	#region Player Camera Y Offset
-	with (obj_Player)
-	{
-		if (playerNum == 0)
-		{
-			cameraYOffset = lerp(cameraYOffset,-36 * other.isActive,.05);
-		}
-	}
-	#endregion
-	
 	#region Circle Animation
 	circleIndex = (circleIndex + circleSpeed) % circleNumber;
 	circleRadius = lerp(circleRadius,.2 + (.8 * isActive),.05);

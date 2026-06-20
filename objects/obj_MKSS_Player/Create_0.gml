@@ -22,6 +22,8 @@ if (characterSetup)
 		script_execute(global.MKSS_WeaponList[currentAbility].setupScript);
 	}
 	
+	scr_MKSS_Player_EquipFamiliar(global.MKSS_PlayerFamiliar[playerNum]);
+	
 	characterSetup = false;
 }
 #endregion

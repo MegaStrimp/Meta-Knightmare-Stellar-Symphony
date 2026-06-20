@@ -7,8 +7,7 @@ function scr_MKSS_Player_Death(targetPlayer)
 		scr_Debug_WriteLog("Player " + string(playerNum) + " Died");
 		
 		audio_stop_all();
-		//scr_PlaySfx(snd_DL1_Miss);
-		scr_PlaySfx(snd_MKSS_Hurt); //STRIMPTODO Find death sound
+		scr_PlaySfx(snd_MKSS_Hurt);
 		
 		global.canGamePause = false;
 		

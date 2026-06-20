@@ -3,6 +3,7 @@
 #region Music
 audio_stop_sound(global.musicPlaying);
 #endregion
+scr_MKSS_Dialogue_Create(global.MKSS_DialogueIDs[? "andromeda_PreBoss_1"]);
 /*
 #region Spawner Test
 with (instance_create_layer(40,40,"Enemies",obj_EnemySpawner))

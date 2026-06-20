@@ -33,5 +33,6 @@ function scr_MKSS_Music_Init_Set()
 	scr_MKSS_Music_Init_Add("crystalSpace","Deep Breath Deep Breath","Persona 3 Reload",mus_MKSS_CrystalSpace,,[17.285,34.184]);
 	scr_MKSS_Music_Init_Add("arenaLobby","Let Butterflies Spread Until the Dawn","Persona 1 PSP",mus_MKSS_ArenaLobby,.613,[23.835]);
 	scr_MKSS_Music_Init_Add("arenaBattle","A Lone Prayer","Persona 1 PSP",mus_MKSS_ArenaBattle,15.6,[36.050]);
+	scr_MKSS_Music_Init_Add("death","Miss","Kirby and the Amazing Mirror",mus_MKSS_Death);
 	#endregion
 }

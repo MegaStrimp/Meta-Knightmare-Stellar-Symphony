@@ -36,6 +36,8 @@ if (!localPause)
 				
 				audio_stop_sound(global.musicPlaying);
 				
+				with (obj_Player) scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_StarlessMarxIntro_Step);
+				
 				phaseTimer = 210;
 				break;
 				
@@ -65,6 +67,13 @@ if (!localPause)
 				scr_MKSS_Music_Play(global.MKSS_MusicIDs[? "starlessMarx"]);
 				
 				musicPlayed = true;
+				
+				with (obj_Player)
+				{
+					scr_ChangeSprite(spriteSet.sprFront);
+					
+					lookingForward = true;
+				}
 				
 				phaseTimer = 120;
 				break;
@@ -137,7 +146,12 @@ if (!localPause)
 				}
 				#endregion
 				
-				with (obj_Player) y = 152;
+				with (obj_Player)
+				{
+					scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Normal_Step);
+					
+					y = 152;
+				}
 				
 				with (obj_MKSS_Enemy_StarlessMarx)
 				{

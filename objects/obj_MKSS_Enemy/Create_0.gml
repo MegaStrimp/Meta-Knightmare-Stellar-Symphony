@@ -26,6 +26,10 @@ shadowAlphaTarget = position_meeting(x,y,obj_MKSS_ShadowArea);
 shadowAlpha = shadowAlphaTarget;
 shadowAlphaFinal = shadowAlphaTarget;
 
+metaPointsOnHit = 0;
+metaPointsOnDeath = 0;
+metaPointsOnOverkill = 0;
+
 outlineColor = [-1,-1,-1];
 drawSurface = -1;
 drawSurface_PixelH = shader_get_uniform(shd_ColoredOutline,"pixelH");

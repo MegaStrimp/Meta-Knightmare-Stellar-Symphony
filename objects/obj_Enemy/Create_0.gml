@@ -33,9 +33,7 @@ points = 1;
 isBoss = false;
 canBeOverkilled = true;
 
-metaPointsOnHit = 0;
-metaPointsOnDeath = 0;
-metaPointsOnOverkill = 0;
+hasDeathPit = true;
 
 grounded = false;
 wallAbove = false;

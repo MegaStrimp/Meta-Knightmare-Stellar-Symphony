@@ -17,6 +17,7 @@ function scr_MKSS_Dialogue_Create(targetDialogueID = 0,targetDialogueIndex = 0,t
 		text = localDialogue.dialogue[dialogueIndex].text;
 		textSpeed = localDialogue.dialogue[dialogueIndex].textSpeed;
 		textSound = localDialogue.dialogue[dialogueIndex].textSound;
+		drawScript = localDialogue.dialogue[dialogueIndex].drawScript;
 		dialogueLength = array_length(localDialogue.dialogue)
 		textSpeed = .25;
 		typist.in(textSpeed,textSmoothness);

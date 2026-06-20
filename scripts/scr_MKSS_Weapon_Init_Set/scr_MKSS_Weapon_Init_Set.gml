@@ -45,6 +45,7 @@ function scr_MKSS_Weapon_Init_Set()
 		sprHurtBurned: undefined,
 		sprHurtFrozen: undefined,
 		sprStun: spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_Stun,
+		sprDeath: undefined,
 		
 		sprSlide: spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_Slide,
 		sprParry: spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_Parry,
@@ -96,6 +97,7 @@ function scr_MKSS_Weapon_Init_Set()
 		sprHurtBurned: undefined,
 		sprHurtFrozen: undefined,
 		sprStun: undefined,
+		sprDeath: undefined,
 		
 		sprSlide: spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Slide,
 		sprParry: spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Parry,
@@ -145,6 +147,7 @@ function scr_MKSS_Weapon_Init_Set()
 		sprHurtBurned: undefined,
 		sprHurtFrozen: undefined,
 		sprStun: undefined,
+		sprDeath: undefined,
 		
 		sprSlide: undefined,
 		sprParry: undefined,
@@ -194,6 +197,7 @@ function scr_MKSS_Weapon_Init_Set()
 		sprHurtBurned: undefined,
 		sprHurtFrozen: undefined,
 		sprStun: undefined,
+		sprDeath: undefined,
 		
 		sprSlide: undefined,
 		sprParry: undefined,
@@ -243,6 +247,7 @@ function scr_MKSS_Weapon_Init_Set()
 		sprHurtBurned: undefined,
 		sprHurtFrozen: undefined,
 		sprStun: undefined,
+		sprDeath: undefined,
 		
 		sprSlide: undefined,
 		sprParry: undefined,
