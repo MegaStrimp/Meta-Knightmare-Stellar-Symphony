@@ -5,10 +5,14 @@ function scr_MKSS_UI_Dialogue_Draw_Andromeda()
 	#region Variables
 	var xx = camera_get_view_x(mainView);
 	var yy = camera_get_view_y(mainView);
+	
+	var backgroundWidth = sprite_get_width(spr_MKSS_Dialogue_Andromeda_Background);
 	#endregion
 	
 	#region Background
-	draw_sprite(spr_MKSS_Dialogue_Andromeda_Background,0,xx,yy);
+	var xOffset = (floor(global.currentTimePausable / 5) + backgroundWidth) % backgroundWidth;
+	draw_sprite(spr_MKSS_Dialogue_Andromeda_Background,0,xx - xOffset,yy);
+	draw_sprite(spr_MKSS_Dialogue_Andromeda_Background,0,xx - xOffset + backgroundWidth,yy);
 	#endregion
 	
 	#region Portrait
