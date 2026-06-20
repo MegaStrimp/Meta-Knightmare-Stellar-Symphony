@@ -4,6 +4,14 @@
 alpha = lerp(alpha,1,.2);
 #endregion
 
+#region Circle
+circleRadius = lerp(circleRadius,260,.1);
+#endregion
+
+#region Decals
+decalLength = lerp(decalLength,decalLengthTarget,.1);
+#endregion
+
 #region Meta Points
 if (pointTimer == -1)
 {
@@ -18,6 +26,9 @@ if (pointTimer != -1)
 	pointTimer = max(pointTimer - speedMultFinal,0);
 	if (pointTimer == 0)
 	{
+		scr_PlaySfx(snd_MKSS_Pop);
+		scr_PlaySfx(snd_MKSS_MetaPointCollect2);
+		
 		pointFlagTimer = 4;
 		
 		pointTimer = -1;

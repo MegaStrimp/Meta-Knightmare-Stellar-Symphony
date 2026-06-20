@@ -68,6 +68,11 @@ global.MKSS_CutsceneStopMovement = false;
 
 global.MKSS_GameOverPause = false;
 
+global.MKSS_DeathX = 0;
+global.MKSS_DeathY = 0;
+
+global.MKSS_CurrentDecalPalette = -1;
+
 global.flag_MKSS_MetaPointCollect = false;
 global.flag_MKSS_AbilitySwitch = false;
 #endregion

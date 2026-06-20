@@ -9,8 +9,6 @@ function scr_MKSS_Pause_Setup()
 	MKSS_GamePause_TitleXTarget = -70;
 	MKSS_GamePause_TitleX = MKSS_GamePause_TitleXTarget;
 	
-	MKSS_GamePause_DecalPalette = -1;
-	
 	MKSS_GamePause_DecalLengthTarget = -50;
 	MKSS_GamePause_DecalLength = MKSS_GamePause_DecalLengthTarget;
 	

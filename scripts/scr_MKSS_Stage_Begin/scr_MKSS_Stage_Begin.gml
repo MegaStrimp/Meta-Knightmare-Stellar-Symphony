@@ -18,7 +18,7 @@ function scr_MKSS_Stage_Begin(targetStageID = -1)
 		global.MKSS_MedalScoreTargetGold = global.MKSS_StageList[mappedID].medalScores[2];
 		global.MKSS_MedalScoreTargetPlatinum = global.MKSS_StageList[mappedID].medalScores[3];
 		
-		with (obj_FrameworkControl) MKSS_GamePause_DecalPalette = global.MKSS_StageList[mappedID].decalPalette;
+		global.MKSS_CurrentDecalPalette = global.MKSS_StageList[mappedID].decalPalette;
 	}
 	#endregion
 }

@@ -8,8 +8,6 @@ function scr_MKSS_Player_GetHit_Object(targetPlayer,targetObject)
 		
 		scr_PlaySfx(snd_MKSS_Hurt);
 		
-		scr_MKSS_ParticleSet_PlayerHit(x,y);
-		
 		var hurtDir = 1;
 		if (targetObject.x > targetPlayer.x) hurtDir = -1;
 		
@@ -27,6 +25,10 @@ function scr_MKSS_Player_GetHit_Object(targetPlayer,targetObject)
 		if (global.playerHp[playerNum] <= 0)
 		{
 			if (playerDeath != -1) script_execute(playerDeath,targetPlayer);
+		}
+		else
+		{
+			scr_MKSS_ParticleSet_PlayerHit(x,y);
 		}
 	}
 }

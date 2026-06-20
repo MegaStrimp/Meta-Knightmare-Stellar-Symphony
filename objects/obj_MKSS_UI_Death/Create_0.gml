@@ -2,9 +2,14 @@
 
 #region Initialize Variables
 playerNum = 0;
-global.MKSS_PlayerMetaPoints[playerNum] = irandom_range(50,99999);
+global.MKSS_PlayerMetaPoints[playerNum] = irandom_range(50,99999); //STRIMPTODO
 
+surface = surface_create(global.gameWidth,global.gameHeight);
 alpha = 0;
+circleRadius = 0;
+
+decalLengthTarget = 0;
+decalLength = -50;
 
 currentMetaPoints = global.MKSS_PlayerMetaPoints[playerNum];
 decreasedMetaPoints = min(100,floor(currentMetaPoints / 10));
@@ -17,6 +22,6 @@ if (decreasedMetaPoints != 0) pointTimer = pointTimerMax;
 
 pointFlagTimer = -1;
 
-exitTimerMax = 300;
+exitTimerMax = 210;
 exitTimer = exitTimerMax;
 #endregion

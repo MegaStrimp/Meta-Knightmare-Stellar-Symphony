@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_MKSS_Squeak",
+  "%Name":"snd_MKSS_Pop",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.37770975,
+  "duration":0.2639229,
   "exportDir":"",
-  "name":"snd_MKSS_Squeak",
+  "name":"snd_MKSS_Pop",
   "parent":{
     "name":"Sound Effects",
     "path":"folders/Meta Knightmare Stellar Symphony/Audio/Sound Effects.yy",
@@ -21,7 +21,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_MKSS_Squeak.mp3",
+  "soundFile":"snd_MKSS_Pop.ogg",
   "tags":[
     "Sound Effect",
   ],

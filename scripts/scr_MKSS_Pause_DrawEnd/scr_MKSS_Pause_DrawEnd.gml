@@ -23,10 +23,10 @@ function scr_MKSS_Pause_DrawEnd()
 	#endregion
 	
 	#region Decals
-	if ((global.shaders) and (MKSS_GamePause_DecalPalette != -1)) pal_swap_set(MKSS_GamePause_DecalPalette,1,false);
+	if ((global.shaders) and (global.MKSS_CurrentDecalPalette != -1)) pal_swap_set(global.MKSS_CurrentDecalPalette,1,false);
 	draw_sprite(spr_MKSS_UI_Decal1,0,xx + lengthdir_x(MKSS_GamePause_DecalLength,45),yy + 160 + lengthdir_y(MKSS_GamePause_DecalLength,45));
 	draw_sprite(spr_MKSS_UI_Decal2,0,xx + 240 + lengthdir_x(-MKSS_GamePause_DecalLength,45),yy + lengthdir_y(-MKSS_GamePause_DecalLength,45));
-	if ((global.shaders) and (MKSS_GamePause_DecalPalette != -1)) pal_swap_reset();
+	if ((global.shaders) and (global.MKSS_CurrentDecalPalette != -1)) pal_swap_reset();
 	#endregion
 	
 	#region Upgrades Circles

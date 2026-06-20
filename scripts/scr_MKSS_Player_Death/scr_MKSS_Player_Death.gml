@@ -8,10 +8,16 @@ function scr_MKSS_Player_Death(targetPlayer)
 		
 		audio_stop_all();
 		//scr_PlaySfx(snd_DL1_Miss);
+		scr_PlaySfx(snd_MKSS_Hurt); //STRIMPTODO Find death sound
+		
+		global.canGamePause = false;
 		
 		global.MKSS_GameOverPause = true;
 		
 		global.playerRespawn[playerNum] = true;
+		
+		global.MKSS_DeathX = x;
+		global.MKSS_DeathY = y;
 		
 		hsp = 0;
 		vsp = 0;
