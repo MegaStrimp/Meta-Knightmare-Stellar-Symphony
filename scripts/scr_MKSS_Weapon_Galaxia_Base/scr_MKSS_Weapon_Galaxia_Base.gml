@@ -7,6 +7,7 @@ function scr_MKSS_Weapon_Galaxia_Base()
 	
 	var maxComboLength = (scr_MKSS_Player_CheckUpgrade(playerNum,"Galaxia_Kick") + scr_MKSS_Player_CheckUpgrade(playerNum,"Galaxia_Barrage"));
 	var hasFinisher = scr_MKSS_Player_CheckUpgrade(playerNum,"Galaxia_Finisher");
+	var hasExtraFinisher = scr_MKSS_Player_CheckUpgrade(playerNum,"Galaxia_ExtraFinisher");
 	
 	if (!hasFinisher) parryAttackFlag = false;
 	#endregion
@@ -156,7 +157,7 @@ function scr_MKSS_Weapon_Galaxia_Base()
 			attackTriggered = true;
 			attackIndex = global.MKSS_AttackIDs[? "galaxia_Finisher"];
 			
-			script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript);
+			script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript,hasExtraFinisher);
 			
 			canParryAttackTimer = -1;
 			parryAttackFlag = false;

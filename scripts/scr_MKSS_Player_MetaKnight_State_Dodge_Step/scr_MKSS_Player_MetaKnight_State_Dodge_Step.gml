@@ -5,9 +5,11 @@ function scr_MKSS_Player_MetaKnight_State_Dodge_Step()
 	#region Setup
 	if (playerState_Setup)
 	{
+		var hasShadowDodge = scr_MKSS_Player_CheckUpgrade(playerNum,"Base_ShadowDodge");
+		
 		slideAccelTimer = floor(attackCancelTimer / 2);
 		dodgeEndTimer = 20;
-		attackMakeLightInvincible = true; //IF HAS UPGRADE
+		attackMakeLightInvincible = hasShadowDodge;
 		
 		playerState_Setup = false;
 	}

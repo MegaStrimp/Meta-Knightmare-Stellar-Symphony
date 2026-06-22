@@ -72,7 +72,12 @@ for (var i = 0; i < ds_list_size(constellationList); i++)
 		#endregion
 	}
 	
-	if ((canSelect) and (scr_MouseIsInbetween(nodeX - 6,nodeY - 6,nodeX + 6,nodeY + 6)) and (mouse_check_button(mb_left))) selection = ds_list_find_value(constellationList,i);
+	if ((canSelect) and (scr_MouseIsInbetween(nodeX - 6,nodeY - 6,nodeX + 6,nodeY + 6)) and (mouse_check_button(mb_left)))
+	{
+		scr_PlaySfx(snd_MKSS_BossHealth);
+		
+		selection = ds_list_find_value(constellationList,i);
+	}
 }
 #endregion
 

@@ -1,6 +1,6 @@
 ///@description MKSS - Attack - Execute - Galaxia - Finisher
 
-function scr_MKSS_Attack_Execute_Galaxia_Finisher()
+function scr_MKSS_Attack_Execute_Galaxia_Finisher(hasExtraFinisher = false)
 {
 	attackString = global.MKSS_AttackList[attackIndex].ID;
 	scr_Debug_WriteLog(string(object_get_name(object_index)) + " Used [" + attackString + "]");
@@ -37,7 +37,7 @@ function scr_MKSS_Attack_Execute_Galaxia_Finisher()
 	{
 		owner = other;
 		isEnemy = false;
-		dmg = 2;
+		dmg = 2 * (1 + hasExtraFinisher);
 		followOwner = true;
 		followOwnerImageIndex = true;
 		destroyIfOwnerNotAttack = true;

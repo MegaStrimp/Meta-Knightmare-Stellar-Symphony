@@ -24,8 +24,7 @@ function scr_MKSS_Attack_Draw()
 		
 			if (((!surface_exists(drawSurface)) or ((surface_get_width(drawSurface) != surfaceWidth) or (surface_get_height(drawSurface) != surfaceHeight))))
 			{
-			    if (surface_exists(drawSurface)) surface_free(drawSurface);
-			    drawSurface = surface_create(surfaceWidth,surfaceHeight);
+			    if (!surface_exists(drawSurface)) drawSurface = surface_create(surfaceWidth,surfaceHeight);
 			}
 		
 			surface_set_target(drawSurface);

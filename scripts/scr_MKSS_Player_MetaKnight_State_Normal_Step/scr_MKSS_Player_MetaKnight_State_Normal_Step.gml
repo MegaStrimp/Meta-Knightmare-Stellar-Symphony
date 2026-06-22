@@ -51,15 +51,20 @@ function scr_MKSS_Player_MetaKnight_State_Normal_Step()
 		#endregion
 		
 		#region Parry
-		var canParry = true;
-		if (global.MKSS_CutsceneStopMovement) canParry = false;
+		var hasParry = scr_MKSS_Player_CheckUpgrade(playerNum,"Base_Parry");
 		
-		if ((canParry) and (parryCooldownTimer == -1) and ((input_check_pressed("LT",playerNum)) or (input_check_pressed("RT",playerNum))) and (!isAttacking))
+		if (hasParry)
 		{
-			scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Parry_Step);
+			var canParry = true;
+			if (global.MKSS_CutsceneStopMovement) canParry = false;
 			
-			parryCooldownTimer = parryCooldownTimerMax;
-			movespeed = 0;
+			if ((canParry) and (parryCooldownTimer == -1) and ((input_check_pressed("LT",playerNum)) or (input_check_pressed("RT",playerNum))) and (!isAttacking))
+			{
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Parry_Step);
+				
+				parryCooldownTimer = parryCooldownTimerMax;
+				movespeed = 0;
+			}
 		}
 		#endregion
 		

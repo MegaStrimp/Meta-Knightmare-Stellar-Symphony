@@ -4,6 +4,8 @@ function scr_MKSS_Player_Component_Movement()
 {
 	#region Variables
 	var bothMovementKeysHeld = ((input_check("right",playerNum)) and (input_check("left",playerNum)));
+	
+	var hasSonicWings = scr_MKSS_Player_CheckUpgrade(playerNum,"Base_SonicWings");
 	#endregion
 	
 	#region Walk
@@ -27,7 +29,7 @@ function scr_MKSS_Player_Component_Movement()
 		
 		if (canAccel)
 		{
-			var accelFinal = accel * ((isRunning * (movespeedRun / movespeedNormal)) + 1) * speedMultFinal;
+			var accelFinal = accel * ((isRunning * (movespeedRun / movespeedNormal)) + 1 + (((isFlying) and (hasSonicWings)) * .5)) * speedMultFinal;
 			
 			if (input_check("right",playerNum))
 			{
@@ -103,7 +105,7 @@ function scr_MKSS_Player_Component_Movement()
 	
 	if (hasSpeedLimit)
 	{
-		var maxMovespeed = movespeed * speedMultFinal;
+		var maxMovespeed = movespeed * (1 + (((isFlying) and (hasSonicWings)) * .5)) * speedMultFinal;
 		hsp = clamp(hsp,-maxMovespeed,maxMovespeed);
 	}
 	#endregion

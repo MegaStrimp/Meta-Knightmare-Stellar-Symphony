@@ -122,26 +122,31 @@ function scr_MKSS_Player_MetaKnight_State_Parry_Step()
 		#endregion
 		
 		#region Dodge
-		var dodgeDir = (input_check_pressed("RT",playerNum)) - (input_check_pressed("LT",playerNum));
+		var hasDodge = scr_MKSS_Player_CheckUpgrade(playerNum,"Base_Dodge");
 		
-		if (dodgeDir != 0)
+		if (hasDodge)
 		{
-			attackMakeFlash = false;
-			flashTimer = -1;
-			hsp = movespeedSlide * dodgeDir * speedMultFinal;
-			if (!grounded)
+			var dodgeDir = (input_check_pressed("RT",playerNum)) - (input_check_pressed("LT",playerNum));
+			
+			if (dodgeDir != 0)
 			{
-				hasJumpLimit = false;
-				vsp = -((jumpspeed / 2) * speedMultFinal);
+				attackMakeFlash = false;
+				flashTimer = -1;
+				hsp = movespeedSlide * dodgeDir * speedMultFinal;
+				if (!grounded)
+				{
+					hasJumpLimit = false;
+					vsp = -((jumpspeed / 2) * speedMultFinal);
+				}
+				
+				with (parryGhostParticle[0]) instance_destroy();
+				
+				scr_PlaySfx(snd_MKSS_RunBegin);
+				
+				scr_MKSS_ParticleSet_Run(x + (16 * -dirX),y + 16,dirX);
+				
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Dodge_Step);
 			}
-			
-			with (parryGhostParticle[0]) instance_destroy();
-			
-			scr_PlaySfx(snd_MKSS_RunBegin);
-			
-			scr_MKSS_ParticleSet_Run(x + (16 * -dirX),y + 16,dirX);
-			
-			scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Dodge_Step);
 		}
 		#endregion
 				

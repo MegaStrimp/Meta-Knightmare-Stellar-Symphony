@@ -2097,6 +2097,7 @@
     {"id":{"name":"scr_MKSS_ParticleSet_BlockBreak1","path":"scripts/scr_MKSS_ParticleSet_BlockBreak1/scr_MKSS_ParticleSet_BlockBreak1.yy",},},
     {"id":{"name":"scr_MKSS_ParticleSet_Bubble","path":"scripts/scr_MKSS_ParticleSet_Bubble/scr_MKSS_ParticleSet_Bubble.yy",},},
     {"id":{"name":"scr_MKSS_ParticleSet_Circle1","path":"scripts/scr_MKSS_ParticleSet_Circle1/scr_MKSS_ParticleSet_Circle1.yy",},},
+    {"id":{"name":"scr_MKSS_ParticleSet_Death_1","path":"scripts/scr_MKSS_ParticleSet_Death_1/scr_MKSS_ParticleSet_Death_1.yy",},},
     {"id":{"name":"scr_MKSS_ParticleSet_Death","path":"scripts/scr_MKSS_ParticleSet_Death/scr_MKSS_ParticleSet_Death.yy",},},
     {"id":{"name":"scr_MKSS_ParticleSet_DoorStar1","path":"scripts/scr_MKSS_ParticleSet_DoorStar1/scr_MKSS_ParticleSet_DoorStar1.yy",},},
     {"id":{"name":"scr_MKSS_ParticleSet_DoorStar2","path":"scripts/scr_MKSS_ParticleSet_DoorStar2/scr_MKSS_ParticleSet_DoorStar2.yy",},},

@@ -16,6 +16,8 @@ if (canSelect)
 	#region Go Back
 	if ((input_check_pressed("B",playerNum)) or ((scr_MouseIsInbetween(xx + 4,yy + 144,xx + 50,yy + 156)) and (mouse_check_button_pressed(mb_left))))
 	{
+		scr_PlaySfx(snd_MKSS_ButtonNo);
+		
 		with (obj_FrameworkControl)
 		{
 			MKSS_GamePause_Locked = false;
@@ -36,6 +38,8 @@ if (canSelect)
 		#region Info
 		if ((input_check_pressed("X",playerNum)) or ((scr_MouseIsInbetween(xx + 97,yy + 144,xx + 143,yy + 156)) and (mouse_check_button_pressed(mb_left))))
 		{
+			scr_PlaySfx(snd_MKSS_ButtonChange);
+			
 			var notif = scr_MKSS_UI_Notif_Create_Custom(currentIndex.description,currentIndex.icon,"fnt_Advance_Small");
 			with (notif)
 			{
@@ -54,6 +58,8 @@ if (canSelect)
 	#region Go To Prev Page
 	if ((input_check_pressed("L",playerNum)) or ((scr_MouseIsInbetween(xx + 4,yy + 2,xx + 50,yy + 14)) and (mouse_check_button_pressed(mb_left))))
 	{
+		scr_PlaySfx(snd_MKSS_ButtonChange);
+		
 		constellationTypeList_CurrentIndex = (constellationTypeList_CurrentIndex - 1 + ds_list_size(constellationTypeList)) % ds_list_size(constellationTypeList);
 		currentCategory = ds_list_find_value(constellationTypeList,constellationTypeList_CurrentIndex);
 	
@@ -64,6 +70,8 @@ if (canSelect)
 	#region Go To Next Page
 	if ((input_check_pressed("R",playerNum)) or ((scr_MouseIsInbetween(xx + 189,yy + 2,xx + 235,yy + 14)) and (mouse_check_button_pressed(mb_left))))
 	{
+		scr_PlaySfx(snd_MKSS_ButtonChange);
+		
 		constellationTypeList_CurrentIndex = (constellationTypeList_CurrentIndex + 1 + ds_list_size(constellationTypeList)) % ds_list_size(constellationTypeList);
 		currentCategory = ds_list_find_value(constellationTypeList,constellationTypeList_CurrentIndex);
 	
@@ -74,6 +82,8 @@ if (canSelect)
 	#region Move To Up Neighbor
 	if (input_check_pressed("up",playerNum))
 	{
+		scr_PlaySfx(snd_MKSS_BossHealth);
+		
 		if (currentIndex.neighborUp != undefined) selection = currentIndex.neighborUp;
 	}
 	#endregion
@@ -81,6 +91,8 @@ if (canSelect)
 	#region Move To Down Neighbor
 	if (input_check_pressed("down",playerNum))
 	{
+		scr_PlaySfx(snd_MKSS_BossHealth);
+		
 		if (currentIndex.neighborDown != undefined) selection = currentIndex.neighborDown;
 	}
 	#endregion
@@ -88,6 +100,8 @@ if (canSelect)
 	#region Move To Left Neighbor
 	if (input_check_pressed("left",playerNum))
 	{
+		scr_PlaySfx(snd_MKSS_BossHealth);
+		
 		if (currentIndex.neighborLeft != undefined) selection = currentIndex.neighborLeft;
 	}
 	#endregion
@@ -95,6 +109,8 @@ if (canSelect)
 	#region Move To Right Neighbor
 	if (input_check_pressed("right",playerNum))
 	{
+		scr_PlaySfx(snd_MKSS_BossHealth);
+		
 		if (currentIndex.neighborRight != undefined) selection = currentIndex.neighborRight;
 	}
 	#endregion
