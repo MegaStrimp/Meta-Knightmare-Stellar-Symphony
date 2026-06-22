@@ -30,12 +30,17 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_Setup(targetIsBoss = true,targetPla
 	gigantEdge_Attack_SwordSlam = scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordSlam_Step;
 	gigantEdge_Attack_ChargeSwing = scr_MKSS_Enemy_GigantEdge_AI_Normal_ChargeSwing_Step;
 	gigantEdge_Attack_SwordThrow = scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordThrow_Step;
+	gigantEdge_Attack_ShieldRaise = scr_MKSS_Enemy_GigantEdge_AI_Normal_ShieldRaise_Step;
 	
 	ds_list_add(attackList,gigantEdge_Attack_SwordSwing);
 	ds_list_add(attackList,gigantEdge_Attack_SwordDash);
 	ds_list_add(attackList,gigantEdge_Attack_SwordSlam);
-	ds_list_add(attackList,gigantEdge_Attack_ChargeSwing);
 	ds_list_add(attackList,gigantEdge_Attack_SwordThrow);
+	ds_list_add(attackList,gigantEdge_Attack_SwordSwing);
+	ds_list_add(attackList,gigantEdge_Attack_ChargeSwing);
+	ds_list_add(attackList,gigantEdge_Attack_SwordDash);
+	ds_list_add(attackList,gigantEdge_Attack_ShieldRaise);
+	ds_list_add(attackList,gigantEdge_Attack_SwordSlam);
 	
 	attackListIndex = 0;
 	
@@ -50,6 +55,9 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_Setup(targetIsBoss = true,targetPla
 	attackState = 0;
 	attackStateTimer[16] = -1;
 	attackStateTimerMax[16] = -1;
+	
+	rangoParryCount = 0;
+	rangoParryCountMax = 2;
 	#endregion
 	
 	#region AI Scripts

@@ -29,7 +29,7 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_Stun_Step()
 			canHaveKnockback = false;
 			hasKnockback = false;
 			defense = prevDefense;
-			knockbackResistance = prevKnockbackResistance;
+			//knockbackResistance = prevKnockbackResistance;
 			flashTimer = -1;
 			palIndex = 1;
 			

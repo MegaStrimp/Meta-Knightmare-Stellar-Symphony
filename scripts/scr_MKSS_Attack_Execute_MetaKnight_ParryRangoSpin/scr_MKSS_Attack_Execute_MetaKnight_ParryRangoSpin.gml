@@ -31,7 +31,8 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryRangoSpin(playerIndex,currentPa
 		
 		x = -10000;
 		y = -10000;
-		target = instance_nearest(xprevious,yprevious,obj_Enemy);
+		if (parryEnemyTarget == -1) target = instance_nearest(xprevious,yprevious,obj_Enemy);
+		else target = instance_nearest(xprevious,yprevious,parryEnemyTarget);
 		x = xprevious;
 		y = yprevious;
 		

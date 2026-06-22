@@ -31,6 +31,20 @@ function scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Parry_Step()
 					
 					scr_Camera_SetScreenshake(2);
 					
+					if (object_index == obj_MKSS_Enemy_GigantEdge)
+					{
+						rangoParryCount++;
+						if (rangoParryCount >= rangoParryCountMax)
+						{
+							hsp = -2 * dirX;
+							vsp = -2;
+							
+							defense = prevDefense;
+							
+							scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_GigantEdge_AI_Normal_Stun_Step);
+						}
+					}
+					
 					scr_MKSS_Enemy_GetHit(id,other.owner,15,90 - (45 * sign(x - other.x)),2,other.speedMultFinal);
 				}
 				

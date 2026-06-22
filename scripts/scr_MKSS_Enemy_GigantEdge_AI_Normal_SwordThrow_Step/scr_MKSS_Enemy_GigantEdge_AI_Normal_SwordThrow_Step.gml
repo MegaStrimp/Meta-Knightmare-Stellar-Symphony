@@ -45,6 +45,8 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordThrow_Step()
 		#region Charge Swing Start		
 		sprite_index = spriteSet.sprSwordThrowPrepare;
 		image_index = 0;
+		
+		scr_MKSS_UI_ParryIndicator_Create(x - (48 * dirX),y - 12,depth - 1,90,,id)
 		#endregion
 		
 		enemyState_Setup = false;
@@ -65,7 +67,7 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordThrow_Step()
 			#region Prepare to Throw Sword
 			case 0:
 			if (attackStateTimer[attackState] == -1)
-			{
+			{				
 				sprite_index = spriteSet.sprSwordThrow;
 				image_index = 0;
 				
