@@ -97,10 +97,10 @@ function scr_MKSS_Upgrade_Init_Set()
 	
 	#region Upgrade Nodes
 	var targetMappedID_Galaxia_Kick = scr_MKSS_Upgrade_Init_Add("Galaxia_Kick",categoryID,98,91);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Kick,"Kick",["kicks the enemy\n\n[BIcon][BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_Kick]);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Kick,"Kick",["Continue your basic combo with a kick that knocks the enemy back!\n\n[BIcon] [BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_Kick]);
 	
 	var targetMappedID_Galaxia_Barrage = scr_MKSS_Upgrade_Init_Add("Galaxia_Barrage",categoryID,103,78);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Barrage,"Barrage");
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Barrage,"Barrage",["End your basic combo with a sword barrage!\n\n[BIcon] [BIcon] [BIcon]"]);
 	
 	var targetMappedID_Galaxia_Finisher = scr_MKSS_Upgrade_Init_Add("Galaxia_Finisher",categoryID,91,80);
 	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Finisher,"Finisher");

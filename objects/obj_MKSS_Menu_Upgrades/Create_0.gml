@@ -11,13 +11,14 @@ playerNum = 0;
 speedMultFinal = global.speedMultGlobal * global.deltaTime;
 
 currentCategory = 0;
+canSelect = false;
 selection = 0;
 
 hintOffset = 32;
 hintOffset = 0;
 hintOffsetTimerMax = 15;
 hintOffsetTimer = hintOffsetTimerMax;
-bottomOffset = 0;
+notifBoxOffset = 0;
 colorOffset = 0;
 
 selectionIndex = 0;

@@ -72,7 +72,7 @@ for (var i = 0; i < ds_list_size(constellationList); i++)
 		#endregion
 	}
 	
-	if ((scr_MouseIsInbetween(nodeX - 6,nodeY - 6,nodeX + 6,nodeY + 6)) and (mouse_check_button(mb_left))) selection = ds_list_find_value(constellationList,i);
+	if ((canSelect) and (scr_MouseIsInbetween(nodeX - 6,nodeY - 6,nodeX + 6,nodeY + 6)) and (mouse_check_button(mb_left))) selection = ds_list_find_value(constellationList,i);
 }
 #endregion
 
@@ -83,7 +83,7 @@ if (finalPageTitle != undefined) scribble(finalPageTitle).align(fa_center).draw(
 
 #region Upgrade Title
 var finalTitle = currentIndex.title;
-if (finalTitle != undefined) scribble(finalTitle).align(fa_center).draw(xx + (global.gameWidth / 2),yy + global.gameHeight - 30 + bottomOffset + constellationOffsets[0].y);
+if (finalTitle != undefined) scribble(finalTitle).align(fa_center).draw(xx + (global.gameWidth / 2),yy + global.gameHeight - 30 + notifBoxOffset + constellationOffsets[0].y);
 #endregion
 
 #region Button Hints
@@ -91,7 +91,7 @@ var backIcon = "";
 var targetIcon = global.UI_IconBindings[? string(input_binding_get("B"))];
 if (targetIcon != undefined) backIcon = "[" + sprite_get_name(targetIcon) + "]";
 
-scribble(backIcon + " Back").draw(xx + 4,yy + global.gameHeight - 16 + hintOffset + bottomOffset + (2 * (buttonInputTimerComponent_BTimer != -1)));
+scribble(backIcon + " Back").draw(xx + 4,yy + global.gameHeight - 16 + hintOffset + notifBoxOffset + (2 * (buttonInputTimerComponent_BTimer != -1)));
 
 if (!currentIndex.isLesserNode)
 {
@@ -99,22 +99,27 @@ if (!currentIndex.isLesserNode)
 	var targetIcon = global.UI_IconBindings[? string(input_binding_get("X"))];
 	if (targetIcon != undefined) infoIcon = "[" + sprite_get_name(targetIcon) + "]";
 	
-	scribble(infoIcon + " Info").align(fa_center).draw(xx + (global.gameWidth / 2),yy + global.gameHeight - 16 + hintOffset + bottomOffset + (2 * (buttonInputTimerComponent_XTimer != -1)));
+	scribble(infoIcon + " Info").align(fa_center).draw(xx + (global.gameWidth / 2),yy + global.gameHeight - 16 + hintOffset + notifBoxOffset + (2 * (buttonInputTimerComponent_XTimer != -1)));
 	
 	var buyIcon = "";
 	var targetIcon = global.UI_IconBindings[? string(input_binding_get("A"))];
 	if (targetIcon != undefined) buyIcon = "[" + sprite_get_name(targetIcon) + "]";
 	
 	var text = scribble(buyIcon + " Buy");
-	text.draw(xx + global.gameWidth - 4 - text.get_width(),yy + global.gameHeight - 16 + hintOffset + bottomOffset + (2 * (buttonInputTimerComponent_YTimer != -1)));
+	text.draw(xx + global.gameWidth - 4 - text.get_width(),yy + global.gameHeight - 16 + hintOffset + notifBoxOffset + (2 * (buttonInputTimerComponent_YTimer != -1)));
 	
-	var textCol = #FFFFFF;
-	if (currentIndex.price <= global.MKSS_PlayerMetaPoints[playerNum]) textCol = #B2FFFF;
+	var textCol = "#FFFFFF";
+	var iconCol = #FFFFFF;
+	if (currentIndex.price <= global.MKSS_PlayerMetaPoints[playerNum])
+	{
+		textCol = "#B2FFFF";
+		iconCol = #B2FFFF;
+	}
 	
-	draw_sprite_ext(spr_MKSS_Hud_MetaPoints_Icon,0,xx + 190,yy + 128,1,1,0,textCol,1);
+	draw_sprite_ext(spr_MKSS_Hud_MetaPoints_Icon,0,xx + 190,yy + 128 + notifBoxOffset,1,1,0,iconCol,1);
 	
 	var displayedPoints = string_replace_all(string_format(currentIndex.price,4,0)," ","0");
-	scribble("[fnt_Advance_Small][d" + string(textCol) + "]x[fnt_Advance]" + string(displayedPoints) + "[/font][/color]").draw(xx + 202,yy + 134);
+	scribble("[fnt_Advance_Small][" + string(textCol) + "]x[fnt_Advance]" + string(displayedPoints) + "[/font][/color]").draw(xx + 202,yy + 134 + notifBoxOffset);
 }
 
 var prevIcon = "";
@@ -122,14 +127,14 @@ var targetIcon = global.UI_IconBindings[? string(input_binding_get("L"))];
 if (targetIcon != undefined) prevIcon = "[" + sprite_get_name(targetIcon) + "]";
 
 var text = scribble(prevIcon + " Prev");
-text.draw(xx + 4,yy + 2 - hintOffset + (2 * (buttonInputTimerComponent_LTimer != -1)));
+text.draw(xx + 4,yy + 2 - hintOffset - notifBoxOffset + (2 * (buttonInputTimerComponent_LTimer != -1)));
 
 var nextIcon = "";
 var targetIcon = global.UI_IconBindings[? string(input_binding_get("R"))];
 if (targetIcon != undefined) nextIcon = "[" + sprite_get_name(targetIcon) + "]";
 
 var text = scribble(nextIcon + " Next");
-text.draw(xx + global.gameWidth - 4 - text.get_width(),yy + 2 - hintOffset + (2 * (buttonInputTimerComponent_RTimer != -1)));
+text.draw(xx + global.gameWidth - 4 - text.get_width(),yy + 2 - hintOffset - notifBoxOffset + (2 * (buttonInputTimerComponent_RTimer != -1)));
 #endregion
 
 #region Meta Points

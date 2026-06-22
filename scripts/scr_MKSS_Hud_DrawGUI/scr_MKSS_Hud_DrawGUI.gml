@@ -51,14 +51,19 @@ function scr_MKSS_Hud_DrawGUI()
 	#endregion
 	
 	#region Meta Points
-	var textCol = #FFFFFF;
-	if (metaPointCollectTimer != -1) textCol = #B2FFFF;
+	var textCol = "#FFFFFF";
+	var iconCol = #FFFFFF;
+	if (metaPointCollectTimer != -1)
+	{
+		textCol = "#B2FFFF";
+		iconCol = #B2FFFF;
+	}
 	var hasScoreOffset = ((global.inStage) and (global.MKSS_StageHasScore));
 	
-	draw_sprite_ext(spr_MKSS_Hud_MetaPoints_Icon,0,2,38 - (36 * !hasScoreOffset) - (metaPointCollectTimer != -1),1,1,0,textCol,1);
+	draw_sprite_ext(spr_MKSS_Hud_MetaPoints_Icon,0,2,38 - (36 * !hasScoreOffset) - (metaPointCollectTimer != -1),1,1,0,iconCol,1);
 	
 	var displayedPoints = string_replace_all(string_format(global.MKSS_PlayerMetaPoints[0],4,0)," ","0");
-	scribble("[fnt_Advance_Small][d" + string(textCol) + "]x[fnt_Advance]" + string(displayedPoints) + "[/font][/color]").draw(14,44 - (36 * !hasScoreOffset));
+	scribble("[fnt_Advance_Small][" + string(textCol) + "]x[fnt_Advance]" + string(displayedPoints) + "[/font][/color]").draw(14,44 - (36 * !hasScoreOffset));
 	#endregion
 	
 	#region Enemy Hp

@@ -1,7 +1,7 @@
 ///@description Main
 
 #region Variables
-var canSelect = true;
+canSelect = true;
 if ((instance_exists(obj_MKSS_UI_NotifBox))) canSelect = false;
 
 var xx = camera_get_view_x(mainView);
@@ -113,7 +113,7 @@ for (var i = 0; i < ds_list_size(constellationList); i++)
 	constellationOffsets[i].y = sine_wave(current_time / (constellationOffsets[i].wave + 500),.7,2.5,0);
 }
 
-bottomOffset = lerp(bottomOffset,(instance_exists(obj_MKSS_UI_NotifBox) * 16),.1);
+notifBoxOffset = lerp(notifBoxOffset,(instance_exists(obj_MKSS_UI_NotifBox) * 16),.1);
 #endregion
 
 #region Line Color
