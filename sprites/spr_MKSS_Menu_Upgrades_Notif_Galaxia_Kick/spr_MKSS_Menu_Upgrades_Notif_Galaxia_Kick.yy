@@ -30,8 +30,8 @@
   "nineSlice":null,
   "origin":1,
   "parent":{
-    "name":"Notifs",
-    "path":"folders/Meta Knightmare Stellar Symphony/Menus/Upgrades/Sprites/Notifs.yy",
+    "name":"Galaxia",
+    "path":"folders/Meta Knightmare Stellar Symphony/Menus/Upgrades/Sprites/Notifs/Galaxia.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

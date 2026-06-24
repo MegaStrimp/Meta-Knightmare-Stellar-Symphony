@@ -137,7 +137,7 @@ function scr_MKSS_Weapon_Galaxia_Base()
 				attackTriggered = true;
 				attackIndex = global.MKSS_AttackIDs[? "galaxia_Finisher"];
 				
-				script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript);
+				script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript,hasExtraFinisher);
 				
 				galaxia_BasicCombo_Index = 0;
 				galaxia_BasicCombo_Timer = -1;

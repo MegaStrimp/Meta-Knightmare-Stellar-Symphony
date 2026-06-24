@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_MKSS_ParticleSet_Death_1",
+  "%Name":"scr_MKSS_ParticleSet_Afterimage",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_MKSS_ParticleSet_Death_1",
+  "name":"scr_MKSS_ParticleSet_Afterimage",
   "parent":{
     "name":"Scripts",
     "path":"folders/Meta Knightmare Stellar Symphony/Particles/Scripts.yy",

@@ -3,11 +3,11 @@
 function scr_MKSS_Attack_MetaKnight_Slide_EnemyHitBehavior()
 {
 	#region Variables
-	var hasSharpSlide = scr_MKSS_Player_CheckUpgrade(playerNum,"Base_SharpSlide");
+	var hasSharpSlide = scr_MKSS_Player_CheckUpgrade(owner.playerNum,"Base_SharpSlide");
 	#endregion
 	
 	#region Cancel Attack
-	if (hasSharpSlide)
+	if (!hasSharpSlide)
 	{
 		with (owner)
 		{

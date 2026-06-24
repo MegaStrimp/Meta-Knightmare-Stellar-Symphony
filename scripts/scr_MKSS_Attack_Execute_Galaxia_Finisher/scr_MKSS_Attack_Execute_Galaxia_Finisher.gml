@@ -49,6 +49,13 @@ function scr_MKSS_Attack_Execute_Galaxia_Finisher(hasExtraFinisher = false)
 		knockbackAngle = 45;
 		if (other.dirX == -1) knockbackAngle = 135;
 		knockbackForce = 2;
+		if (hasExtraFinisher)
+		{
+			attackAIStep = scr_MKSS_Attack_Galaxia_Finisher_Step;
+			
+			afterimageTimerMax = 2;
+			afterimageTimer = afterimageTimerMax;
+		}
 		sprite_index = spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_Slash2;
 		mask_index = spr_MKSS_Player_MetaKnight_Normal_AttackMasks_Attack_Normal_Slash2;
 		image_xscale = other.dirX;

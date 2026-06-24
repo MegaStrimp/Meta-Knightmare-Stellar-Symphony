@@ -2,6 +2,10 @@
 
 function scr_MKSS_Player_MetaKnight_State_Normal_Step()
 {
+	#region Variables
+	var hasSonicWings = scr_MKSS_Player_CheckUpgrade(playerNum,"Base_SonicWings");
+	#endregion
+	
 	#region Setup
 	if (playerState_Setup)
 	{
@@ -14,6 +18,9 @@ function scr_MKSS_Player_MetaKnight_State_Normal_Step()
 		fallHopTimer = -1;
 		canFallHop = false;
 		fallHopJumped = false;
+		
+		afterimageTimer = -1;
+		afterimageTimerMax = 2;
 		
 		playerState_Setup = false;
 	}
@@ -47,6 +54,25 @@ function scr_MKSS_Player_MetaKnight_State_Normal_Step()
 			
 			movespeed = clamp(movespeed,-movespeedNormal,movespeedNormal);
 			isRunning = false;
+		}
+		#endregion
+		
+		#region Afterimage Timer
+		var hasAfterimage = isFlying;
+		
+		if (afterimageTimer != -1)
+		{
+			afterimageTimer = max(afterimageTimer - speedMultFinal,0);
+			if (afterimageTimer == 0)
+			{
+				scr_MKSS_ParticleSet_Afterimage();
+				
+				afterimageTimer = -1;
+			}
+		}
+		else
+		{
+			if (hasAfterimage) afterimageTimer = afterimageTimerMax;
 		}
 		#endregion
 		

@@ -2,6 +2,10 @@
 
 function scr_MKSS_Player_Component_Jump()
 {
+	#region Variables
+	var hasSonicWings = scr_MKSS_Player_CheckUpgrade(playerNum,"Base_SonicWings");
+	#endregion
+	
 	#region Jump
 	var canJump = true;
 	if (global.MKSS_CutsceneStopMovement) canJump = false;
@@ -40,7 +44,7 @@ function scr_MKSS_Player_Component_Jump()
 				scr_ChangeSprite(spriteSet.sprFlap);
 			
 				isFlying = true;
-				vsp = -(jumpspeed * ((isRunning * .25) + 1) * speedMultFinal);
+				vsp = -(jumpspeed * ((isRunning * .25) + (hasSonicWings * .25) + 1) * speedMultFinal);
 				hasJumpLimit = true;
 				jumpCoyoteTimeBuffer = 0;
 				jumpInputBuffer = 0;
@@ -55,7 +59,7 @@ function scr_MKSS_Player_Component_Jump()
 	#region Jump Limit
 	if ((vsp < 0) and (!input_check("A",playerNum)))
 	{
-		if ((hasJumpLimit) and (!forceJump)) vsp = max(vsp,-(jumpspeed * ((isRunning * .25) + 1) * speedMultFinal) / 4);
+		if ((hasJumpLimit) and (!forceJump)) vsp = max(vsp,-(jumpspeed * ((isRunning * .25) + (hasSonicWings * .25) + 1) * speedMultFinal) / 4);
 	}
 	#endregion
 	#endregion

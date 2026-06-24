@@ -2,6 +2,10 @@
 
 function scr_MKSS_Player_MetaKnight_State_Slide_Step()
 {
+	#region Variables
+	var hasSharpSlide = scr_MKSS_Player_CheckUpgrade(playerNum,"Base_SharpSlide");
+	#endregion
+	
 	#region Setup
 	if (playerState_Setup)
 	{
@@ -29,6 +33,10 @@ function scr_MKSS_Player_MetaKnight_State_Slide_Step()
 		}
 		#endregion
 		
+		afterimageTimer = -1;
+		afterimageTimerMax = 2;
+		if (hasSharpSlide) afterimageTimer = afterimageTimerMax;
+		
 		slideAccelTimer = floor(attackCancelTimer / 1.5);
 		slideEndTimer = attackCancelTimer;
 		
@@ -44,6 +52,19 @@ function scr_MKSS_Player_MetaKnight_State_Slide_Step()
 		
 		#region Gravity
 		scr_MKSS_Player_Component_DuckGravity();
+		#endregion
+		
+		#region Afterimage Timer
+		if (afterimageTimer != -1)
+		{
+			afterimageTimer = max(afterimageTimer - speedMultFinal,0);
+			if (afterimageTimer == 0)
+			{
+				scr_MKSS_ParticleSet_Afterimage();
+				
+				afterimageTimer = afterimageTimerMax;
+			}
+		}
 		#endregion
 		
 		#region Slide Accel Timer
