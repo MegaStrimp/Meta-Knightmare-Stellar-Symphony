@@ -3456,6 +3456,7 @@
     {"id":{"name":"tiles_MKSS_Water","path":"sprites/tiles_MKSS_Water/tiles_MKSS_Water.yy",},},
     {"id":{"name":"tiles_MKSS_WaterAfternoon","path":"sprites/tiles_MKSS_WaterAfternoon/tiles_MKSS_WaterAfternoon.yy",},},
     {"id":{"name":"tiles_MKSS_WaterStarry","path":"sprites/tiles_MKSS_WaterStarry/tiles_MKSS_WaterStarry.yy",},},
+    {"id":{"name":"TileSet19","path":"tilesets/TileSet19/TileSet19.yy",},},
     {"id":{"name":"ts_MKSS_AdAstra","path":"tilesets/ts_MKSS_AdAstra/ts_MKSS_AdAstra.yy",},},
     {"id":{"name":"ts_MKSS_AdAstraEX","path":"tilesets/ts_MKSS_AdAstraEX/ts_MKSS_AdAstraEX.yy",},},
     {"id":{"name":"ts_MKSS_BattleshipHalberd","path":"tilesets/ts_MKSS_BattleshipHalberd/ts_MKSS_BattleshipHalberd.yy",},},
