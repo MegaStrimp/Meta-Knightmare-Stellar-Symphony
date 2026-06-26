@@ -58,7 +58,7 @@ function scr_MKSS_Player_MetaKnight_State_Normal_Step()
 		#endregion
 		
 		#region Afterimage Timer
-		var hasAfterimage = isFlying;
+		var hasAfterimage = ((isFlying) and (hasSonicWings));
 		
 		if (afterimageTimer != -1)
 		{

@@ -29,7 +29,7 @@ if (canSelect)
 	#endregion
 	
 	#region Mouse Pressed
-	for (var i = 0; i <= ds_list_size(currentList); i++)
+	for (var i = 0; i < ds_list_size(currentList); i++)
 	{
 		if ((!mousePressed) and (scr_MouseIsInbetween(startX + 8,startY + (separation * i),startX + 8 + 120,startY + (separation * i) + 12)) and (mouse_check_button_pressed(mb_left)))
 		{

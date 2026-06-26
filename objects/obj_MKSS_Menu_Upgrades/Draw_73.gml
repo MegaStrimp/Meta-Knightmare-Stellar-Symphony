@@ -108,25 +108,28 @@ if (!currentIndex.isLesserNode)
 	
 	scribble(infoIcon + " Info").align(fa_center).draw(xx + (global.gameWidth / 2),yy + global.gameHeight - 16 + hintOffset + notifBoxOffset + (2 * (buttonInputTimerComponent_XTimer != -1)));
 	
-	var buyIcon = "";
-	var targetIcon = global.UI_IconBindings[? string(input_binding_get("A"))];
-	if (targetIcon != undefined) buyIcon = "[" + sprite_get_name(targetIcon) + "]";
-	
-	var text = scribble(buyIcon + " Buy");
-	text.draw(xx + global.gameWidth - 4 - text.get_width(),yy + global.gameHeight - 16 + hintOffset + notifBoxOffset + (2 * (buttonInputTimerComponent_YTimer != -1)));
-	
-	var textCol = "#FFFFFF";
-	var iconCol = #FFFFFF;
-	if (currentIndex.price <= global.MKSS_PlayerMetaPoints[playerNum])
+	if (!currentIndex.isUnlocked)
 	{
-		textCol = "#B2FFFF";
-		iconCol = #B2FFFF;
+		var buyIcon = "";
+		var targetIcon = global.UI_IconBindings[? string(input_binding_get("A"))];
+		if (targetIcon != undefined) buyIcon = "[" + sprite_get_name(targetIcon) + "]";
+		
+		var text = scribble(buyIcon + " Buy");
+		text.draw(xx + global.gameWidth - 4 - text.get_width(),yy + global.gameHeight - 16 + hintOffset + notifBoxOffset + (2 * (buttonInputTimerComponent_YTimer != -1)));
+		
+		var textCol = "#FFFFFF";
+		var iconCol = #FFFFFF;
+		if (currentIndex.price <= global.MKSS_PlayerMetaPoints[playerNum])
+		{
+			textCol = "#B2FFFF";
+			iconCol = #B2FFFF;
+		}
+		
+		draw_sprite_ext(spr_MKSS_Hud_MetaPoints_Icon,0,xx + 190,yy + 128 + notifBoxOffset,1,1,0,iconCol,1);
+		
+		var displayedPoints = string_replace_all(string_format(currentIndex.price,4,0)," ","0");
+		scribble("[fnt_Advance_Small][" + string(textCol) + "]x[fnt_Advance]" + string(displayedPoints) + "[/font][/color]").draw(xx + 202,yy + 134 + (2 * (metaPointsPurchaseTimer != -1)) + notifBoxOffset);
 	}
-	
-	draw_sprite_ext(spr_MKSS_Hud_MetaPoints_Icon,0,xx + 190,yy + 128 + notifBoxOffset,1,1,0,iconCol,1);
-	
-	var displayedPoints = string_replace_all(string_format(currentIndex.price,4,0)," ","0");
-	scribble("[fnt_Advance_Small][" + string(textCol) + "]x[fnt_Advance]" + string(displayedPoints) + "[/font][/color]").draw(xx + 202,yy + 134 + notifBoxOffset);
 }
 
 var prevIcon = "";
@@ -147,6 +150,6 @@ text.draw(xx + global.gameWidth - 4 - text.get_width(),yy + 2 - hintOffset - not
 #region Meta Points
 draw_sprite_ext(spr_MKSS_Hud_MetaPoints_Icon,0,xx + 2,yy + 18,1,1,0,#FFFFFF,1);
 
-var displayedPoints = string_replace_all(string_format(global.MKSS_PlayerMetaPoints[playerNum],4,0)," ","0");
+var displayedPoints = string_replace_all(string_format(displayedMetaPoints,4,0)," ","0");
 scribble("[fnt_Advance_Small][#FFFFFF]x[fnt_Advance]" + string(displayedPoints) + "[/font][/color]").draw(xx + 14,yy + 24);
 #endregion

@@ -10,6 +10,7 @@ playerNum = 0;
 
 speedMultFinal = global.speedMultGlobal * global.deltaTime;
 
+displayedMetaPoints = 0;
 currentCategory = 0;
 canSelect = false;
 selection = 0;
@@ -24,6 +25,9 @@ colorOffset = 0;
 selectionIndex = 0;
 selectionSpd = sprite_get_speed(spr_MKSS_UI_Shared_Selection) / 60;
 selectionNumber = sprite_get_number(spr_MKSS_UI_Shared_Selection);
+
+metaPointsPurchaseTimer = -1;
+metaPointsPurchaseTimerMax = 4;
 
 constellationTypeList = ds_list_create();
 constellationTypeList_CurrentIndex = 0;

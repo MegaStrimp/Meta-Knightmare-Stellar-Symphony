@@ -22,6 +22,8 @@ function scr_MKSS_Hud_Setup()
 	
 	hud_SpecialEnabled = true;
 	
+	hud_DisplayedMetaPoints = 0;
+	
 	hud_MedalTier = -1;
 	hud_MedalSprite = spr_MKSS_UI_Medal_None;
 	hud_MedalIndex = 0;

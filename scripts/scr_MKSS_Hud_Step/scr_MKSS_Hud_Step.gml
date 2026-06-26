@@ -28,6 +28,10 @@ function scr_MKSS_Hud_Step()
 		hud_WeaponBgIndex = (hud_WeaponBgIndex + (hud_WeaponBgSpeed * speedMultFinal)) % 2;
 		#endregion
 		
+		#region Meta Points
+		hud_DisplayedMetaPoints = lerp(hud_DisplayedMetaPoints,global.MKSS_PlayerMetaPoints[0],.2);
+		#endregion
+		
 		if (global.inStage)
 		{
 			#region Medal Spin Timer

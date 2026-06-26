@@ -49,8 +49,26 @@ if (canSelect)
 		#endregion
 	
 		#region Buy
-		if ((input_check_pressed("A",playerNum)) or ((scr_MouseIsInbetween(xx + 196,yy + 144,xx + 235,yy + 156)) and (mouse_check_button_pressed(mb_left))))
+		if (!currentIndex.isUnlocked)
 		{
+			if ((input_check_pressed("A",playerNum)) or ((scr_MouseIsInbetween(xx + 196,yy + 144,xx + 235,yy + 156)) and (mouse_check_button_pressed(mb_left))))
+			{
+				if (global.MKSS_PlayerMetaPoints[playerNum] >= currentIndex.price)
+				{
+					scr_PlaySfx(snd_MKSS_MetaPointCollect2);
+					scr_PlaySfx(snd_MKSS_Pop);
+					
+					global.MKSS_PlayerMetaPoints[playerNum] -= currentIndex.price;
+					metaPointsPurchaseTimer = metaPointsPurchaseTimerMax;
+					currentIndex.isUnlocked = true;
+					
+					//STRIMPTODO loop through upgrades, set canbeunlocked to true if the purchased upgrade is their condition :)
+				}
+				else
+				{
+					scr_PlaySfx(snd_MKSS_ButtonNo);
+				}
+			}
 		}
 		#endregion
 	}
@@ -122,6 +140,10 @@ selectionIndex = (selectionIndex + selectionSpd) % selectionNumber;
 selectionScale = .5 + sine_wave(current_time / 6000,.2,.05,0);
 #endregion
 
+#region Meta Points
+displayedMetaPoints = lerp(displayedMetaPoints,global.MKSS_PlayerMetaPoints[playerNum],.2);
+#endregion
+
 #region Movement
 for (var i = 0; i < ds_list_size(constellationList); i++)
 {
@@ -134,6 +156,17 @@ notifBoxOffset = lerp(notifBoxOffset,(instance_exists(obj_MKSS_UI_NotifBox) * 16
 
 #region Line Color
 colorOffset = sine_between(current_time / 1000,1,0,1);
+#endregion
+
+#region Meta Points Purchase Timer
+if (metaPointsPurchaseTimer != -1)
+{
+	metaPointsPurchaseTimer = max(metaPointsPurchaseTimer - speedMultFinal,0);
+	if (metaPointsPurchaseTimer == 0)
+	{
+		metaPointsPurchaseTimer = -1;
+	}
+}
 #endregion
 
 #region Button Input Timers

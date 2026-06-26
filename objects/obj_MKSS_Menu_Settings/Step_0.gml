@@ -32,7 +32,7 @@ if (canSelect)
 	#endregion
 	
 	#region Mouse Pressed
-	for (var i = 0; i <= ds_list_size(currentList); i++)
+	for (var i = 0; i < ds_list_size(currentList); i++)
 	{
 		if ((!mousePressed) and (scr_MouseIsInbetween(startX + 8,startY + (separation * i),startX + 8 + 120,startY + (separation * i) + 12)) and (mouse_check_button_pressed(mb_left)))
 		{
@@ -61,42 +61,68 @@ if (canSelect)
 	#region Select Action
 	if ((settingPressed) or (input_check_pressed("A",playerNum)) or (input_check_pressed("start",playerNum)))
 	{
-		if (global.settingsList[selectionIndex].selectAction != undefined) script_execute_ext(global.settingsList[selectionIndex].selectAction,global.settingsList[selectionIndex].selectActionArgs);
+		if (global.settingsList[selectionIndex].selectAction != undefined)
+		{
+			scr_PlaySfx(snd_MKSS_ButtonYes);
+			
+			script_execute_ext(global.settingsList[selectionIndex].selectAction,global.settingsList[selectionIndex].selectActionArgs);
+		}
 	}
 	#endregion
 	
 	#region Back Action
 	if ((targetKey == "") and ((input_check_pressed("B",playerNum)) or (keyboard_check_pressed(vk_escape))) or ((scr_MouseIsInbetween(xx + 4,yy + 144,xx + 43,yy + 156)) and (mouse_check_button_pressed(mb_left))))
 	{
-		if (global.settingsList[selectionIndex].backAction != undefined) script_execute_ext(global.settingsList[selectionIndex].backAction,global.settingsList[selectionIndex].backActionArgs);
+		if (global.settingsList[selectionIndex].backAction != undefined)
+		{
+			scr_PlaySfx(snd_MKSS_ButtonNo);
+			
+			script_execute_ext(global.settingsList[selectionIndex].backAction,global.settingsList[selectionIndex].backActionArgs);
+		}
 	}
 	#endregion
 	
 	#region Up Action
 	if (input_check_pressed("up",playerNum))
 	{
-		if (global.settingsList[selectionIndex].upAction != undefined) script_execute_ext(global.settingsList[selectionIndex].upAction,global.settingsList[selectionIndex].upActionArgs);
+		if (global.settingsList[selectionIndex].upAction != undefined)
+		{
+			script_execute_ext(global.settingsList[selectionIndex].upAction,global.settingsList[selectionIndex].upActionArgs);
+		}
 	}
 	#endregion
 	
 	#region Down Action
 	if (input_check_pressed("down",playerNum))
 	{
-		if (global.settingsList[selectionIndex].downAction != undefined) script_execute_ext(global.settingsList[selectionIndex].downAction,global.settingsList[selectionIndex].downActionArgs);
+		if (global.settingsList[selectionIndex].downAction != undefined)
+		{
+			script_execute_ext(global.settingsList[selectionIndex].downAction,global.settingsList[selectionIndex].downActionArgs);
+		}
 	}
 	#endregion
 	
 	#region Left Action
 	if (input_check_pressed("left",playerNum))
 	{
-		if (global.settingsList[selectionIndex].leftAction != undefined) script_execute_ext(global.settingsList[selectionIndex].leftAction,global.settingsList[selectionIndex].leftActionArgs);
+		if (global.settingsList[selectionIndex].leftAction != undefined)
+		{
+			scr_PlaySfx(snd_MKSS_BossHealth);
+			
+			script_execute_ext(global.settingsList[selectionIndex].leftAction,global.settingsList[selectionIndex].leftActionArgs);
+		}
 	}
 	#endregion
 	
 	#region Right Action
 	if (input_check_pressed("right",playerNum))
 	{
-		if (global.settingsList[selectionIndex].rightAction != undefined) script_execute_ext(global.settingsList[selectionIndex].rightAction,global.settingsList[selectionIndex].rightActionArgs);
+		if (global.settingsList[selectionIndex].rightAction != undefined)
+		{
+			scr_PlaySfx(snd_MKSS_BossHealth);
+			
+			script_execute_ext(global.settingsList[selectionIndex].rightAction,global.settingsList[selectionIndex].rightActionArgs);
+		}
 	}
 	#endregion
 }

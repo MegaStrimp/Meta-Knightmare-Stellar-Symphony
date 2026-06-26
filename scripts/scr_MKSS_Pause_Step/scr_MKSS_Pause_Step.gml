@@ -71,7 +71,12 @@ function scr_MKSS_Pause_Step()
 			}
 			else if ((input_check_pressed("Y",playerNum)) or ((scr_MouseIsInbetween(xx + 87,yy,xx + 158,yy + 65)) and (mouse_check_button_pressed(mb_left))))
 			{
-				instance_create_depth(0,0,depth - 1,obj_MKSS_Menu_Upgrades);
+				with (instance_create_depth(0,0,depth - 1,obj_MKSS_Menu_Upgrades))
+				{
+					playerNum = other.playerNum;
+					
+					displayedMetaPoints = global.MKSS_PlayerMetaPoints[playerNum];
+				}
 				
 				MKSS_GamePause_Locked = true;
 				
