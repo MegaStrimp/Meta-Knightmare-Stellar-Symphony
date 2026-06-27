@@ -14,7 +14,7 @@ function scr_MKSS_Player_MetaKnight_State_Slide_Step()
 		{
 			owner = other;
 			isEnemy = false;
-			dmg = 2;
+			dmg = floor(MKSS_Base_PlayerContactDamage / 2);
 			followOwner = true;
 			destroyIfOwnerNotAttack = true;
 			canBreakBlocks = true;
@@ -47,7 +47,7 @@ function scr_MKSS_Player_MetaKnight_State_Slide_Step()
 	if (!localPause)
 	{
 		#region Movement
-		scr_MKSS_Player_Component_SlideMovement();
+		scr_MKSS_Player_Component_SlideMovement(movespeedSlide * (1 + (hasSharpSlide * .5)),decel * (1 + (hasSharpSlide * .5)));
 		#endregion
 		
 		#region Gravity

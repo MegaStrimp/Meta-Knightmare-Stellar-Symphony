@@ -6,7 +6,7 @@ function scr_MKSS_UI_Button_Component_Save_Draw(targetNum)
 	draw_sprite_ext(sprite_index,0,x,y,1,1,0,c_white,1);
 	#endregion
 	
-	#region Pattern STRIMPTODO NOT WORKING
+	#region Pattern
 	scr_DrawMask_Begin();
 	
 	draw_sprite_ext(spr_MKSS_Menu_TitleScreen_SaveMask,0,x,y + 1,1,1,0,c_white,.5);
@@ -29,20 +29,20 @@ function scr_MKSS_UI_Button_Component_Save_Draw(targetNum)
 	scr_DrawMask_End();
 	#endregion
 	
-	#region Completion STRIMPTODO Refactor the font
-	var saveCompletionNum1 = clamp(saveProgress,0,100);
-	var num1 = -1;
-	if (saveCompletionNum1 == 100) num1 = floor(saveCompletionNum1 / 100);
-	var num2 = -1;
-	if (saveCompletionNum1 >= 10) num2 = floor((saveCompletionNum1 - (max(0,num1) * 100)) / 10);
-	var num3 = -1;
-	num3 = floor(saveCompletionNum1 - (max(0,num1) * 100) - (max(0,num2) * 10));
+	#region Completion
+	var saveProgressFinal = saveProgress;
 	
 	draw_sprite_ext(spr_MKSS_Menu_TitleScreen_SaveText,0,x - 181,14 + (targetNum * 40),1,1,0,c_white,1);
-	draw_sprite_ext(spr_MKSS_Menu_TitleScreen_SaveFont,targetNum + 1,x - 138,14 + (targetNum * 40),1,1,0,c_white,1);
-	if (num1 != -1) draw_sprite_ext(spr_MKSS_Menu_TitleScreen_SaveFont,num1,x - 120,14 + (targetNum * 40),1,1,0,c_white,1);
-	if (num2 != -1) draw_sprite_ext(spr_MKSS_Menu_TitleScreen_SaveFont,num2,x - 108,14 + (targetNum * 40),1,1,0,c_white,1);
-	if (num3 != -1) draw_sprite_ext(spr_MKSS_Menu_TitleScreen_SaveFont,num3,x - 96,14 + (targetNum * 40),1,1,0,c_white,1);
-	draw_sprite_ext(spr_MKSS_Menu_TitleScreen_SaveFont,10,x - 80,14 + (targetNum * 40),1,1,0,c_white,1);
+	draw_sprite_ext(fnt_MKSS_Menu_TitleScreen_Save,targetNum + 1,x - 138,14 + (targetNum * 40),1,1,0,c_white,1);
+	
+	scribble("[fnt_MKSS_Menu_TitleScreen_Save]" + string(saveProgressFinal) + "%[/font]").draw(x - 112,14 + (targetNum * 40));
+	#endregion
+	
+	#region Button Hints
+	if (obj_MKSS_Menu_TitleScreen.saveExists[targetNum])
+	{
+		var targetIcon = global.UI_IconBindings[? string(input_binding_get("Y"))];
+		if (targetIcon != undefined) draw_sprite(targetIcon,0,x - 17,y + 20); //STRIMPTODO  + (2 * (buttonInputTimerComponent_YTimer != -1)) maybe?
+	}
 	#endregion
 }

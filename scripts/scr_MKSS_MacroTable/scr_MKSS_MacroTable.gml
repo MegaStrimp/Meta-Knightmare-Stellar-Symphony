@@ -15,6 +15,7 @@ function scr_MKSS_MacroTable()
 	#macro MKSS_Base_EnemyHP_Attacker 150
 	#macro MKSS_Base_EnemyHP_Advanced 250
 	#macro MKSS_Base_EnemyHP_Miniboss 1500
+	#macro MKSS_Base_EnemyHP_Boss 3000
 	
 	#macro MKSS_Base_EnemyPoints_Fodder 100
 	#macro MKSS_Base_EnemyPoints_Attacker 150

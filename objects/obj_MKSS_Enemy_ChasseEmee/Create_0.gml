@@ -6,7 +6,7 @@ event_inherited();
 
 #region Gameplay Variables
 enemyID = global.MKSS_EnemyIDs[? "chasseEmee"];
-hp = 1000;
+hp = MKSS_Base_EnemyHP_Boss;
 points = 5000;
 isBoss = true;
 

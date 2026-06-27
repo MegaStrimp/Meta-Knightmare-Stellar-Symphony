@@ -6,7 +6,7 @@ event_inherited();
 
 #region Gameplay Variables
 enemyID = global.MKSS_EnemyIDs[? "mrSandbag"];
-hp = 1000;
+hp = 9999;
 points = 1;
 
 canHurtPlayer = false;

@@ -43,7 +43,7 @@ function scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Jump_Step()
 			#region Knockback Active
 			hasFriction = true;
 			
-			scr_MKSS_Enemy_Rango_AI_Flop_Setup(false);
+			scr_MKSS_Enemy_Rango_AI_Flop_Setup(true);
 			scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_Rango_AI_Flop_Step);
 			canBeParried = false;
 			
@@ -62,7 +62,7 @@ function scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Jump_Step()
 		{
 			if (grounded)
 			{
-				scr_MKSS_Enemy_Rango_AI_Flop_Setup(false);
+				scr_MKSS_Enemy_Rango_AI_Flop_Setup(true);
 				scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_Rango_AI_Flop_Step);
 				canBeParried = false;
 			}

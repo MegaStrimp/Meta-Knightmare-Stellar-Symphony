@@ -26,6 +26,8 @@ if (canSelect)
 		
 			MKSS_GamePause_CircleZoomTarget = 1;
 		}
+		
+		scr_MKSS_SaveData(global.selectedSave);
 	
 		scr_MKSS_Player_GetUnlockedUpgrades(0);
 	

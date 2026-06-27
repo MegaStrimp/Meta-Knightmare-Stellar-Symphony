@@ -45,7 +45,7 @@ function scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Parry_Step()
 						}
 					}
 					
-					script_execute(enemyGetHit,id,15,2,90 - (45 * sign(x - other.x)),other.owner,other.speedMultFinal);
+					script_execute(enemyGetHit,id,floor(MKSS_Base_EnemyHP_Fodder * 1.5),2,90 - (45 * sign(x - other.x)),other.owner,other.speedMultFinal);
 				}
 				
 				instance_destroy();

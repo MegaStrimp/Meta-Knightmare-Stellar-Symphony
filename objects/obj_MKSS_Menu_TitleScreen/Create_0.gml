@@ -27,7 +27,6 @@ subtitleImageSpeed = sprite_get_speed(spr_MKSS_Menu_TitleScreen_Logo_Subtitle) /
 starAlpha = 0;
 
 saveButtonX = 500;
-deleteSaveState = 0;
 
 miscButtonY = 170;
 
@@ -35,33 +34,17 @@ titleSwordStarsTimer = 15;
 
 currentButtonText = "";
 
-switch (global.lastSelectedSave)
-{
-	default:
-	selection = mainMenu_Buttons.save1;
-	break;
-	
-	case "Save2.ini":
-	selection = mainMenu_Buttons.save2;
-	break;
-	
-	case "Save3.ini":
-	selection = mainMenu_Buttons.save3;
-	break;
-}
+currentSelectedSave = "Save1.ini";
 
-#region Main Menu Buttons
-enum mainMenu_Buttons
+for (var i = 0; i < 3; i++)
 {
-	save1,
-	save2,
-	save3,
-	discord,
-	twitter,
-	github,
-	leave
+	var fileName = "Save" + string(i + 1) + ".ini";
+	
+	var fileFinal = fileName;
+	if (!global.isMobile) fileFinal = environment_get_variable("LOCALAPPDATA") + chr(92) + global.gameTitle + chr(92) + fileName;
+	
+	saveExists[i] = file_exists(fileFinal);
 }
-#endregion
 #endregion
 
 #region Logo Attributes
