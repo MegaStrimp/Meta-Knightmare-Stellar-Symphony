@@ -40,7 +40,7 @@ function scr_MKSS_Enemy_Gordo_AI_Bounce_Parry_Step()
 					
 					scr_Camera_SetScreenshake(4);
 					
-					scr_MKSS_Enemy_GetHit(id,other.owner,15,90 - (45 * sign(x - other.x)),3,other.speedMultFinal);
+					script_execute(enemyGetHit,id,15,3,90 - (45 * sign(x - other.x)),other.owner,other.speedMultFinal);
 				}
 				
 				instance_destroy();

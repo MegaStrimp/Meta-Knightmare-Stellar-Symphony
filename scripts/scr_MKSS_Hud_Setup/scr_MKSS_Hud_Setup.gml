@@ -30,6 +30,7 @@ function scr_MKSS_Hud_Setup()
 	hud_MedalSpeed = sprite_get_speed(hud_MedalSprite) / 60;
 	hud_MedalSpeedMult = 1;
 	hud_MedalNumber = sprite_get_number(hud_MedalSprite);
+	hud_MedalFont = "[fnt_MKSS_UI_Medal_None]";
 	hud_MedalSparkleIndex = 0;
 	hud_MedalSparkleSpeed = sprite_get_speed(spr_MKSS_Particle_SmallSparkle) / 60;
 	hud_MedalSparkleNumber = sprite_get_number(spr_MKSS_Particle_SmallSparkle);

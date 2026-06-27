@@ -95,8 +95,8 @@ function scr_MKSS_Enemy_WaddleDee_AI_Angry_Step()
 						
 						scr_Camera_SetScreenshake(4);
 						
-						scr_MKSS_Enemy_GetHit(id,deeOwner,5,90 - (45 * sign(x - other.x)),1,other.speedMultFinal);
-						scr_MKSS_Enemy_GetHit(other,deeOwner,5,90 - (45 * sign(other.x - x)),1,other.speedMultFinal);
+						script_execute(enemyGetHit,id,5,1,90 - (45 * sign(x - other.x)),deeOwner,other.speedMultFinal);
+						script_execute(other.enemyGetHit,other,5,1,90 - (45 * sign(other.x - x)),deeOwner,other.speedMultFinal);
 					}
 				}
 			}

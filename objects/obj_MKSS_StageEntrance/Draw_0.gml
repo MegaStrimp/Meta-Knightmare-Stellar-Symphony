@@ -37,27 +37,27 @@ if (isActive)
 	{
 		case -1:
 		var medalSprite = spr_MKSS_UI_Medal_None;
-		var stageScoreFont = "[fnt_Advance_Gray]";
+		var stageScoreFont = "[fnt_MKSS_UI_Medal_None]";
 		break;
 		
 		case 0:
 		var medalSprite = spr_MKSS_UI_Medal_Bronze;
-		var stageScoreFont = "[fnt_Advance]"; //STRIMPTODO
+		var stageScoreFont = "[fnt_MKSS_UI_Medal_Bronze]";
 		break;
 		
 		case 1:
 		var medalSprite = spr_MKSS_UI_Medal_Silver;
-		var stageScoreFont = "[fnt_Advance]";
+		var stageScoreFont = "[fnt_MKSS_UI_Medal_Silver]";
 		break;
 		
 		case 2:
 		var medalSprite = spr_MKSS_UI_Medal_Gold;
-		var stageScoreFont = "[fnt_Advance]";
+		var stageScoreFont = "[fnt_MKSS_UI_Medal_Gold]";
 		break;
 		
 		case 3:
 		var medalSprite = spr_MKSS_UI_Medal_Platinum;
-		var stageScoreFont = "[fnt_Advance]";
+		var stageScoreFont = "[fnt_MKSS_UI_Medal_Platinum]";
 		break;
 	}
 	

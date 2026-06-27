@@ -32,8 +32,8 @@ if (canSelect)
 		instance_destroy();
 	}
 	#endregion
-
-	if (!currentIndex.isLesserNode)
+	
+	if ((!currentIndex.isLesserNode) and (currentIndex.canBeUnlocked))
 	{
 		#region Info
 		if ((input_check_pressed("X",playerNum)) or ((scr_MouseIsInbetween(xx + 97,yy + 144,xx + 143,yy + 156)) and (mouse_check_button_pressed(mb_left))))
@@ -47,9 +47,9 @@ if (canSelect)
 			}
 		}
 		#endregion
-	
+		
 		#region Buy
-		if (!currentIndex.isUnlocked)
+		if ((!currentIndex.isUnlocked) and (currentIndex.canBeUnlocked))
 		{
 			if ((input_check_pressed("A",playerNum)) or ((scr_MouseIsInbetween(xx + 196,yy + 144,xx + 235,yy + 156)) and (mouse_check_button_pressed(mb_left))))
 			{
@@ -62,7 +62,13 @@ if (canSelect)
 					metaPointsPurchaseTimer = metaPointsPurchaseTimerMax;
 					currentIndex.isUnlocked = true;
 					
-					//STRIMPTODO loop through upgrades, set canbeunlocked to true if the purchased upgrade is their condition :)
+					for (var i = 0; i < ds_map_size(global.MKSS_UpgradeIDs); i++)
+					{
+						if (global.MKSS_UpgradeList[i].dependency == selection)
+						{
+							global.MKSS_UpgradeList[i].canBeUnlocked = true;
+						}
+					}
 				}
 				else
 				{

@@ -22,7 +22,9 @@ function scr_MKSS_Enemy_WaddleDee_AI_Angry_Setup()
 	#endregion
 	
 	#region Gameplay Variables
-	points = 150;
+	hp = MKSS_Base_EnemyHP_Attacker;
+	points = MKSS_Base_EnemyPoints_Attacker;
+	metaPointsOnDeath = MKSS_Base_EnemyMetaPoints_Attacker;
 	
 	attackState = 0;
 	attackTimer = 0;

@@ -10,9 +10,6 @@ hp = 1000;
 points = 5000;
 isBoss = true;
 
-//hitParticleIndex = scr_MKSS_ParticleSet_StarBlockBreak; STRIMPTODO
-deathParticleIndex = scr_MKSS_ParticleSet_EnemyDefeatStars;
-
 pauseOutsideView = false;
 canHaveKnockback = false;
 

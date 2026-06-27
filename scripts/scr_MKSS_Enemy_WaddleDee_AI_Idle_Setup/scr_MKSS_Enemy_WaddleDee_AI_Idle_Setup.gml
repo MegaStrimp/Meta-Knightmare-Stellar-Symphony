@@ -16,7 +16,7 @@ function scr_MKSS_Enemy_WaddleDee_AI_Idle_Setup()
 	
 	#region Gameplay Variables
 	hp = 1;
-	points = 50;
+	points = floor(MKSS_Base_EnemyHP_Fodder / 2);
 	#endregion
 	
 	#region AI Scripts

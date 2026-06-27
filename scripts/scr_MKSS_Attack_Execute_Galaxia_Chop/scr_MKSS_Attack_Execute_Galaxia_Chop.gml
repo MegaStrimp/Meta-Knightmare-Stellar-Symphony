@@ -33,7 +33,7 @@ function scr_MKSS_Attack_Execute_Galaxia_Chop()
 	{
 		owner = other;
 		isEnemy = false;
-		dmg = 2;
+		dmg = MKSS_Base_GalaxiaDamage;
 		followOwner = true;
 		followOwnerImageIndex = true;
 		destroyIfOwnerNotAttack = true;

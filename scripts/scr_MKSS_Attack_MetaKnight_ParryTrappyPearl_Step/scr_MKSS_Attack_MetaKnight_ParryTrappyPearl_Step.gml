@@ -51,7 +51,7 @@ function scr_MKSS_Attack_MetaKnight_ParryTrappyPearl_Step()
 					
 					scr_Camera_SetScreenshake(4);
 					
-					scr_MKSS_Enemy_GetHit(id,other.owner,5,90 - (45 * sign(x - other.x)),3,other.speedMultFinal);
+					script_execute(enemyGetHit,id,5,3,90 - (45 * sign(x - other.x)),other.owner,other.speedMultFinal);
 				}
 				
 				with (obj_Attack)

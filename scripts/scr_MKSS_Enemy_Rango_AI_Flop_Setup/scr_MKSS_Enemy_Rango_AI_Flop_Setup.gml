@@ -1,6 +1,6 @@
 ///@description MKSS - Enemy - Rango - AI - Flop - Setup
 
-function scr_MKSS_Enemy_Rango_AI_Flop_Setup(changePalette = true)
+function scr_MKSS_Enemy_Rango_AI_Flop_Setup(fromAttacker = false)
 {
 	#region Component Setup
 	scr_Component_BasicHorizontal_Setup(.75);
@@ -23,11 +23,16 @@ function scr_MKSS_Enemy_Rango_AI_Flop_Setup(changePalette = true)
 	#endregion
 	
 	#region Palette Variables
-	if (changePalette) palSprite = spr_MKSS_Enemy_Rango_Palette_Flop;
+	if (!fromAttacker) palSprite = spr_MKSS_Enemy_Rango_Palette_Flop;
 	#endregion
 	
 	#region Gameplay Variables
-	points = 50;
+	if (!fromAttacker)
+	{
+		hp = MKSS_Base_EnemyHP_Fodder;
+		points = MKSS_Base_EnemyPoints_Fodder;
+		metaPointsOnDeath = MKSS_Base_EnemyMetaPoints_Fodder;
+	}
 	
 	jumpCount = 0;
 	

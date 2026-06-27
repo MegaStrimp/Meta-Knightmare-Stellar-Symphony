@@ -5,7 +5,7 @@ speedMult = 1;
 speedMultFinal = 1;
 localPause = false;
 
-healthPoints = 10;
+healthPoints = floor(MKSS_Base_PlayerHP / 10);
 canMaxHeal = false;
 
 hasAura = false;

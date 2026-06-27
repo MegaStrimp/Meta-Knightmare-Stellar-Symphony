@@ -23,7 +23,6 @@ function scr_MKSS_Enemy_Bouncy_AI_Idle_Setup()
 	#endregion
 	
 	#region Gameplay Variables
-	points = 100;
 	jumpTimerMax = 15;
 	jumpTimer = jumpTimerMax;
 	jumpCount = 0;

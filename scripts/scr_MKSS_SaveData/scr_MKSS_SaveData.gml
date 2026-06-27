@@ -54,6 +54,7 @@ function scr_MKSS_SaveData(file)
 		{
 			if (global.MKSS_UpgradeList[i].isUnlocked)
 			{
+				ini_write_real("upgradeStatus",string(upgradeID) + "_CanBeUnlocked",global.MKSS_UpgradeList[i].canBeUnlocked);
 				ini_write_real("upgradeStatus",string(upgradeID) + "_IsUnlocked",global.MKSS_UpgradeList[i].isUnlocked);
 			}
 		}

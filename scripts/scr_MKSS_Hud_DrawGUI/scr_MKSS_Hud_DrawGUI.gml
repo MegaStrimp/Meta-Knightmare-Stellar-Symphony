@@ -31,15 +31,6 @@ function scr_MKSS_Hud_DrawGUI()
 	}
 	#endregion
 	
-	#region Healthbar
-	var barLength = floor((global.playerHp[0] / global.playerMaxHp[0]) * 59);
-	
-	draw_sprite(spr_MKSS_Hud_Healthbar_Back,0,78,global.gameHeight - 12);
-	draw_sprite_part(spr_MKSS_Hud_Healthbar_Front,0,0,0,max(0,barLength - 6),7,78,global.gameHeight - 12);
-	draw_sprite(spr_MKSS_Hud_Healthbar_Corner,0,78 - 6 + barLength,global.gameHeight - 12);
-	draw_sprite(spr_MKSS_Hud_Healthbar_Border,0,72,global.gameHeight - 20);
-	#endregion
-	
 	#region Special
 	if (hud_SpecialEnabled)
 	{
@@ -48,6 +39,15 @@ function scr_MKSS_Hud_DrawGUI()
 		draw_sprite(spr_MKSS_Hud_Special_Border,0,69,global.gameHeight - 27);
 		draw_sprite_part(spr_MKSS_Hud_Special_Front,0,0,0,barLength,22,69,global.gameHeight - 27);
 	}
+	#endregion
+	
+	#region Healthbar
+	var barLength = floor((global.playerHp[0] / global.playerMaxHp[0]) * 59);
+	
+	draw_sprite(spr_MKSS_Hud_Healthbar_Back,0,78,global.gameHeight - 12);
+	draw_sprite_part(spr_MKSS_Hud_Healthbar_Front,0,0,0,max(0,barLength - 6),7,78,global.gameHeight - 12);
+	draw_sprite(spr_MKSS_Hud_Healthbar_Corner,0,78 - 6 + barLength,global.gameHeight - 12);
+	draw_sprite(spr_MKSS_Hud_Healthbar_Border,0,72,global.gameHeight - 20);
 	#endregion
 	
 	#region Meta Points
@@ -106,7 +106,7 @@ function scr_MKSS_Hud_DrawGUI()
 		}
 		
 		var displayedScore = string_replace_all(string_format(global.levelScoreCurrent,6,0)," ","0");
-		scribble("[fnt_Advance]" + string(displayedScore) + "[/font]").align(fa_center).draw(24,28);
+		scribble(hud_MedalFont + string(displayedScore) + "[/font]").align(fa_center).draw(24,28);
 	}
 	#endregion
 }

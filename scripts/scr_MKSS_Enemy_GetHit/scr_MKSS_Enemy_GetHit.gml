@@ -1,6 +1,6 @@
 ///@description MKSS - Enemy - Get Hit
 
-function scr_MKSS_Enemy_GetHit(targetEnemy,targetOwner,targetDmg,targetKnockbackAngle = 90,targetKnockbackForce = 2,targetSpeedMult = speedMultFinal,targetIsMelee = false,targetBonusLootingAmount = 0,targetEnemyHurtTimerMult = 1,targetCanBeFinisher = false)
+function scr_MKSS_Enemy_GetHit(targetEnemy,targetDmg,targetKnockbackForce = 2,targetKnockbackAngle = 90,targetOwner,targetSpeedMult = speedMultFinal,targetIsMelee = false,targetBonusLootingAmount = 0,targetEnemyHurtTimerMult = 1,targetCanBeFinisher = false)
 {
 	if ((targetEnemy.hp > 0) or (targetEnemy.canBeOverkilled))
 	{
@@ -80,7 +80,7 @@ function scr_MKSS_Enemy_GetHit(targetEnemy,targetOwner,targetDmg,targetKnockback
 			scr_Enemy_ReceiveKnockback(targetEnemy,finalKnockbackForce,knockbackAngleFinal);
 		}
 			
-		var freezeFrameFinal = (targetEnemy.freezeFrameForce * freezeFrameForce * max(1,hitByFinisher * 3)) + ((targetEnemy.hp < 0) * 2);
+		var freezeFrameFinal = (targetEnemy.freezeFrameForce * max(1,hitByFinisher * 3)) + ((targetEnemy.hp < 0) * 2);
 		scr_Enemy_ReceiveFreezeFrame(targetEnemy,freezeFrameFinal);
 			
 		if (targetIsMelee) targetOwner.localFreezeFrameTimer = freezeFrameFinal;

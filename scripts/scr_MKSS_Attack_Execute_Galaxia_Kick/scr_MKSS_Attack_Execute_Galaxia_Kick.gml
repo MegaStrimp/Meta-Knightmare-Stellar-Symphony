@@ -42,7 +42,7 @@ function scr_MKSS_Attack_Execute_Galaxia_Kick()
 	{
 		owner = other;
 		isEnemy = false;
-		dmg = 2;
+		dmg = floor(MKSS_Base_GalaxiaDamage * .75);
 		followOwner = true;
 		destroyIfOwnerNotAttack = true;
 		canBreakBlocks = true;

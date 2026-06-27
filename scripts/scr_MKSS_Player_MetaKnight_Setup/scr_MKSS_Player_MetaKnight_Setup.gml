@@ -3,7 +3,8 @@
 function scr_MKSS_Player_MetaKnight_Setup()
 {
 	#region Character Variables
-	global.playerMaxHp[playerNum] = 100;
+	global.playerMaxHp[playerNum] = MKSS_Base_PlayerHP;
+	dmg = MKSS_Base_PlayerContactDamage;
 	
 	if (global.playerFirstTimeSetup[playerNum])
 	{

@@ -4,24 +4,15 @@
 event_inherited();
 #endregion
 
-#region AI Scripts
-enemyGetHitObject = scr_MKSS_Enemy_GetHit_Object;
-enemyWallXCollision = scr_MKSS_Enemy_WallXCollision;
-enemyWallYCollision = scr_MKSS_Enemy_WallYCollision;
-#endregion
-
 #region Gameplay Variables
 enemyID = global.MKSS_EnemyIDs[? "gigantEdge"];
-hp = 150;
-points = 2500;
-metaPointsOnDeath = 25;
-metaPointsOnOverkill = 30;
+hp = MKSS_Base_EnemyHP_Miniboss;
+points = MKSS_Base_EnemyPoints_Miniboss;
+metaPointsOnDeath = MKSS_Base_EnemyMetaPoints_Miniboss;
+metaPointsOnOverkill = floor(metaPointsOnDeath / 2);
 isBoss = true;
 pauseOutsideView = false;
 canHaveKnockback = false;
-
-//hitParticleIndex = scr_MKSS_ParticleSet_StarBlockBreak; STRIMPTODO
-deathParticleIndex = scr_MKSS_ParticleSet_EnemyDefeatStars;
 
 freezeFrameForce = 2;
 #endregion
@@ -30,9 +21,4 @@ freezeFrameForce = 2;
 spriteSet = global.MKSS_EnemyList[enemyID].spriteSet;
 sprHurt = spriteSet.sprHurtList;
 mask_index = spriteSet.maskIndex;
-#endregion
-
-#region AI Scripts
-enemyBeginStep = scr_MKSS_Enemy_BeginStep_Normal;
-enemyStep = scr_MKSS_Enemy_Step_Normal;
 #endregion

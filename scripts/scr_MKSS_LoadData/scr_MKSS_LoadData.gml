@@ -2,13 +2,9 @@
 
 function scr_MKSS_LoadData(file,importFile = false)
 {
-	if (importFile)
+	var fileFinal = file;
+	if (!importFile)
 	{
-		fileFinal = file;
-	}
-	else
-	{
-		var fileFinal = file;
 		if (!global.isMobile) fileFinal = environment_get_variable("LOCALAPPDATA") + chr(92) + global.gameTitle + chr(92) + file;
 		
 		if (!file_exists(fileFinal)) fileFinal = string(fileFinal) + "_bak";
@@ -56,8 +52,10 @@ function scr_MKSS_LoadData(file,importFile = false)
 			var upgradeID = global.MKSS_UpgradeList[i].ID;
 			
 			var upgradeIsUnlocked = ini_read_real("upgradeStatus",string(upgradeID) + "_IsUnlocked",false);
+			var upgradeCanBeUnlocked = ini_read_real("upgradeStatus",string(upgradeID) + "_CanBeUnlocked",global.MKSS_UpgradeList[i].canBeUnlocked);
 			
 			global.MKSS_UpgradeList[i].isUnlocked = upgradeIsUnlocked;
+			global.MKSS_UpgradeList[i].canBeUnlocked = upgradeCanBeUnlocked;
 		}
 	}
 	#endregion

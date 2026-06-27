@@ -53,7 +53,15 @@ for (var i = 0; i < ds_list_size(constellationList); i++)
 	
 	var nodeX = xx + iIndex.x + constellationOffsets[i].x;
 	var nodeY = yy + iIndex.y + constellationOffsets[i].y;
-	var targetSprite = spr_MKSS_Menu_Upgrades_Node;
+	var targetSprite = spr_MKSS_Menu_Upgrades_Node_Locked;
+	if (iIndex.isUnlocked)
+	{
+		var targetSprite = spr_MKSS_Menu_Upgrades_Node_Bought;
+	}
+	else if (iIndex.canBeUnlocked)
+	{
+		var targetSprite = spr_MKSS_Menu_Upgrades_Node_Unlocked;
+	}
 	if (iIndex.isLesserNode) targetSprite = spr_MKSS_Menu_Upgrades_LesserNode;
 	
 	draw_sprite(targetSprite,0,nodeX,nodeY);
@@ -89,7 +97,8 @@ if (finalPageTitle != undefined) scribble(finalPageTitle).align(fa_center).draw(
 #endregion
 
 #region Upgrade Title
-var finalTitle = currentIndex.title;
+var finalTitle = "???";
+if (currentIndex.canBeUnlocked) finalTitle = currentIndex.title;
 if (finalTitle != undefined) scribble(finalTitle).align(fa_center).draw(xx + (global.gameWidth / 2),yy + global.gameHeight - 30 + notifBoxOffset + constellationOffsets[0].y);
 #endregion
 
@@ -100,7 +109,7 @@ if (targetIcon != undefined) backIcon = "[" + sprite_get_name(targetIcon) + "]";
 
 scribble(backIcon + " Back").draw(xx + 4,yy + global.gameHeight - 16 + hintOffset + notifBoxOffset + (2 * (buttonInputTimerComponent_BTimer != -1)));
 
-if (!currentIndex.isLesserNode)
+if ((!currentIndex.isLesserNode) and (currentIndex.canBeUnlocked))
 {
 	var infoIcon = "";
 	var targetIcon = global.UI_IconBindings[? string(input_binding_get("X"))];
@@ -128,7 +137,7 @@ if (!currentIndex.isLesserNode)
 		draw_sprite_ext(spr_MKSS_Hud_MetaPoints_Icon,0,xx + 190,yy + 128 + notifBoxOffset,1,1,0,iconCol,1);
 		
 		var displayedPoints = string_replace_all(string_format(currentIndex.price,4,0)," ","0");
-		scribble("[fnt_Advance_Small][" + string(textCol) + "]x[fnt_Advance]" + string(displayedPoints) + "[/font][/color]").draw(xx + 202,yy + 134 + (2 * (metaPointsPurchaseTimer != -1)) + notifBoxOffset);
+		scribble("[fnt_Advance_Small][" + string(textCol) + "]x[fnt_Advance]" + string(displayedPoints) + "[/font][/color]").draw(xx + 202,yy + 134 + notifBoxOffset);
 	}
 }
 
@@ -151,5 +160,5 @@ text.draw(xx + global.gameWidth - 4 - text.get_width(),yy + 2 - hintOffset - not
 draw_sprite_ext(spr_MKSS_Hud_MetaPoints_Icon,0,xx + 2,yy + 18,1,1,0,#FFFFFF,1);
 
 var displayedPoints = string_replace_all(string_format(displayedMetaPoints,4,0)," ","0");
-scribble("[fnt_Advance_Small][#FFFFFF]x[fnt_Advance]" + string(displayedPoints) + "[/font][/color]").draw(xx + 14,yy + 24);
+scribble("[fnt_Advance_Small][#FFFFFF]x[fnt_Advance]" + string(displayedPoints) + "[/font][/color]").draw(xx + 14,yy + 24 + (2 * (metaPointsPurchaseTimer != -1)));
 #endregion

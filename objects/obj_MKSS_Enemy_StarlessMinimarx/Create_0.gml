@@ -4,22 +4,13 @@
 event_inherited();
 #endregion
 
-#region AI Scripts
-enemyGetHitObject = scr_MKSS_Enemy_GetHit_Object;
-enemyWallXCollision = scr_MKSS_Enemy_WallXCollision;
-enemyWallYCollision = scr_MKSS_Enemy_WallYCollision;
-#endregion
-
 #region Gameplay Variables
 enemyID = global.MKSS_EnemyIDs[? "starlessMinimarx"];
-hp = 12;
-points = 50;
-metaPointsOnDeath = 3;
-metaPointsOnOverkill = 5;
+hp = MKSS_Base_EnemyHP_Fodder;
+points = MKSS_Base_EnemyPoints_Fodder;
+metaPointsOnDeath = MKSS_Base_EnemyMetaPoints_Fodder;
+metaPointsOnOverkill = floor(metaPointsOnDeath / 2);
 knockbackResistance = 2;
-
-//hitParticleIndex = scr_MKSS_ParticleSet_StarBlockBreak; STRIMPTODO
-deathParticleIndex = scr_MKSS_ParticleSet_EnemyDefeatStars;
 
 freezeFrameForce = 2;
 #endregion
@@ -28,9 +19,4 @@ freezeFrameForce = 2;
 spriteSet = global.MKSS_EnemyList[enemyID].spriteSet;
 sprHurt = spriteSet.sprHurtList;
 mask_index = spriteSet.maskIndex;
-#endregion
-
-#region AI Scripts
-enemyBeginStep = scr_MKSS_Enemy_BeginStep_Normal;
-enemyStep = scr_MKSS_Enemy_Step_Normal;
 #endregion

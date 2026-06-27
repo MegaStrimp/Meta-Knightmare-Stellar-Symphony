@@ -13,22 +13,27 @@ function scr_MKSS_Hud_Medal_Get(targetTier)
 		{
 			case -1:
 			hud_MedalSprite = spr_MKSS_UI_Medal_None;
+			hud_MedalFont = "[fnt_MKSS_UI_Medal_None]";
 			break;
 			
 			case 0:
 			hud_MedalSprite = spr_MKSS_UI_Medal_Bronze;
+			hud_MedalFont = "[fnt_MKSS_UI_Medal_Bronze]";
 			break;
 			
 			case 1:
 			hud_MedalSprite = spr_MKSS_UI_Medal_Silver;
+			hud_MedalFont = "[fnt_MKSS_UI_Medal_Silver]";
 			break;
 			
 			case 2:
 			hud_MedalSprite = spr_MKSS_UI_Medal_Gold;
+			hud_MedalFont = "[fnt_MKSS_UI_Medal_Gold]";
 			break;
 			
 			case 3:
 			hud_MedalSprite = spr_MKSS_UI_Medal_Platinum;
+			hud_MedalFont = "[fnt_MKSS_UI_Medal_Platinum]";
 			break;
 		}
 		

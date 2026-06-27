@@ -33,7 +33,7 @@ function scr_MKSS_Attack_Execute_Galaxia_UpThrust()
 	{
 		owner = other;
 		isEnemy = false;
-		dmg = 3;
+		dmg = MKSS_Base_GalaxiaDamage;
 		followOwner = true;
 		followOwnerImageIndex = true;
 		destroyIfOwnerNotAttack = true;

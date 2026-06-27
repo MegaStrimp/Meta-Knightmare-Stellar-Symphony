@@ -89,9 +89,16 @@ scr_Pause_SetPause(scr_MKSS_Pause_Setup);
 
 #region Font Setup
 global.fontSpriteEnemyHealthbar = font_add_sprite_ext(fnt_MKSS_UI_EnemyHealthbar,"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-",true,-1);
+
 global.fontSpriteHitNumbersBlue = font_add_sprite_ext(fnt_MKSS_UI_HitNumbers_Blue,"0123456789+-",true,0);
 global.fontSpriteHitNumbersRed = font_add_sprite_ext(fnt_MKSS_UI_HitNumbers_Red,"0123456789+-",true,0);
 global.fontSpriteHitNumbersGreen = font_add_sprite_ext(fnt_MKSS_UI_HitNumbers_Green,"0123456789+-",true,0);
+
+global.fontSpriteMedalNone = font_add_sprite_ext(fnt_MKSS_UI_Medal_None,"0123456789",true,0);
+global.fontSpriteMedalBronze = font_add_sprite_ext(fnt_MKSS_UI_Medal_Bronze,"0123456789",true,0);
+global.fontSpriteMedalSilver = font_add_sprite_ext(fnt_MKSS_UI_Medal_Silver,"0123456789",true,0);
+global.fontSpriteMedalGold = font_add_sprite_ext(fnt_MKSS_UI_Medal_Gold,"0123456789",true,0);
+global.fontSpriteMedalPlatinum = font_add_sprite_ext(fnt_MKSS_UI_Medal_Platinum,"0123456789",true,0);
 #endregion
 
 #region Set Window Caption

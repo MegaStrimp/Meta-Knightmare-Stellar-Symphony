@@ -7,6 +7,8 @@ function scr_MKSS_Player_Heal(playerNum,targetHeal)
 	
 	if (finalHeal > 0)
 	{
+		scr_MKSS_UI_HitNumbers_Create(finalHeal,fnt_MKSS_UI_HitNumbers_Green,x,y - 8,depth - 1,id,id);
+		
 		with (obj_MKSS_Control)
 		{
 			healPauseTargetHeal[playerNum] += finalHeal;
