@@ -88,6 +88,8 @@ scr_Pause_SetPause(scr_MKSS_Pause_Setup);
 #endregion
 
 #region Font Setup
+global.fontSpriteTitleScreenSave = font_add_sprite_ext(fnt_MKSS_Menu_TitleScreen_Save,"0123456789%",true,0);
+
 global.fontSpriteEnemyHealthbar = font_add_sprite_ext(fnt_MKSS_UI_EnemyHealthbar,"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-",true,-1);
 
 global.fontSpriteHitNumbersBlue = font_add_sprite_ext(fnt_MKSS_UI_HitNumbers_Blue,"0123456789+-",true,0);

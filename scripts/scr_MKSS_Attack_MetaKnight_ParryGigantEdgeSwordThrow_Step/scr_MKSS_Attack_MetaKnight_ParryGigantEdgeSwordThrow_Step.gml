@@ -25,7 +25,7 @@ function scr_MKSS_Attack_MetaKnight_ParryGigantEdgeSwordThrow_Step()
 					{
 						owner = cutterOwner;
 						isEnemy = false;
-						dmg = 3;
+						dmg = floor(MKSS_Base_EnemyHP_Fodder / 2);
 						canBreakBlocks = true;
 						canBeFinisher = true;
 						isMelee = false;
@@ -49,7 +49,7 @@ function scr_MKSS_Attack_MetaKnight_ParryGigantEdgeSwordThrow_Step()
 					
 					scr_Camera_SetScreenshake(2);
 					
-					script_execute(enemyGetHit,id,5,3,90 - (45 * sign(x - other.x)),other.owner,other.speedMultFinal);
+					script_execute(enemyGetHit,id,floor(MKSS_Base_EnemyHP_Miniboss / 8),3,90 - (45 * sign(x - other.x)),other.owner,other.speedMultFinal);
 				}
 				
 				instance_destroy();

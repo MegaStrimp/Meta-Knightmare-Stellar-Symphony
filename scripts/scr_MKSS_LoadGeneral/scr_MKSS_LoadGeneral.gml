@@ -9,6 +9,7 @@ function scr_MKSS_LoadGeneral(file)
 	
 	#region General
 	global.lastSelectedSave = ini_read_string("general","lastSelectedSave",-1);
+	global.selectedSave = global.lastSelectedSave;
 	#endregion
 	
 	ini_close();

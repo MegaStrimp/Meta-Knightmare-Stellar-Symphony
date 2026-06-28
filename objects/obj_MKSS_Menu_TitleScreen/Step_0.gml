@@ -3,8 +3,11 @@
 #region Variables
 var canSelect = true;
 if (
-(instance_exists(obj_Transition))
+(instance_exists(obj_Transition)) or
+(instance_exists(obj_MKSS_UI_NotifBox))
 ) canSelect = false;
+
+with (obj_UI_Button) maskTriggerScript = !canSelect;
 #endregion
 
 if (!global.pauseFinal)
@@ -98,7 +101,7 @@ if (!global.pauseFinal)
 			titleSwordStarsTimer = max(titleSwordStarsTimer - speedMultFinal,0);
 			if (titleSwordStarsTimer == 0)
 			{
-				var starPar = instance_create_depth(9,176,depth,obj_MKSS_Menu_TitleScreen_TitleSwordStars);
+				var starPar = instance_create_depth(9,176,depth - 1,obj_MKSS_Menu_TitleScreen_TitleSwordStars);
 				starPar.anchorDepth = depth;
 				starPar.image_index = irandom_range(0,6);
 				starPar.image_speed = 0;
@@ -122,25 +125,25 @@ if (!global.pauseFinal)
 				
 				#region Create Buttons
 				var mappedButtonID_Save1 = global.MKSS_ButtonIDs[? "save1"];
-				scr_UI_Button_CreateFromList(mappedButtonID_Save1,saveButtonX,4,depth,global.MKSS_ButtonList[mappedButtonID_Save1]);
+				scr_UI_Button_CreateFromList(mappedButtonID_Save1,saveButtonX,4,depth - 1,global.MKSS_ButtonList[mappedButtonID_Save1]);
 				
 				var mappedButtonID_Save2 = global.MKSS_ButtonIDs[? "save2"];
-				scr_UI_Button_CreateFromList(mappedButtonID_Save2,saveButtonX,44,depth,global.MKSS_ButtonList[mappedButtonID_Save2]);
+				scr_UI_Button_CreateFromList(mappedButtonID_Save2,saveButtonX,44,depth - 1,global.MKSS_ButtonList[mappedButtonID_Save2]);
 				
 				var mappedButtonID_Save3 = global.MKSS_ButtonIDs[? "save3"];
-				scr_UI_Button_CreateFromList(mappedButtonID_Save3,saveButtonX,84,depth,global.MKSS_ButtonList[mappedButtonID_Save3]);
+				scr_UI_Button_CreateFromList(mappedButtonID_Save3,saveButtonX,84,depth - 1,global.MKSS_ButtonList[mappedButtonID_Save3]);
 				
 				var mappedButtonID = global.MKSS_ButtonIDs[? "discord"];
-				scr_UI_Button_CreateFromList(mappedButtonID,77,miscButtonY,depth,global.MKSS_ButtonList[mappedButtonID]);
+				scr_UI_Button_CreateFromList(mappedButtonID,77,miscButtonY,depth - 1,global.MKSS_ButtonList[mappedButtonID]);
 				
 				var mappedButtonID = global.MKSS_ButtonIDs[? "twitter"];
-				scr_UI_Button_CreateFromList(mappedButtonID,119,miscButtonY,depth,global.MKSS_ButtonList[mappedButtonID]);
+				scr_UI_Button_CreateFromList(mappedButtonID,119,miscButtonY,depth - 1,global.MKSS_ButtonList[mappedButtonID]);
 				
 				var mappedButtonID = global.MKSS_ButtonIDs[? "github"];
-				scr_UI_Button_CreateFromList(mappedButtonID,161,miscButtonY,depth,global.MKSS_ButtonList[mappedButtonID]);
+				scr_UI_Button_CreateFromList(mappedButtonID,161,miscButtonY,depth - 1,global.MKSS_ButtonList[mappedButtonID]);
 				
 				var mappedButtonID = global.MKSS_ButtonIDs[? "exit"];
-				scr_UI_Button_CreateFromList(mappedButtonID,203,miscButtonY,depth,global.MKSS_ButtonList[mappedButtonID]);
+				scr_UI_Button_CreateFromList(mappedButtonID,203,miscButtonY,depth - 1,global.MKSS_ButtonList[mappedButtonID]);
 				
 				var targetButtonID = mappedButtonID_Save1;
 				switch (global.lastSelectedSave)

@@ -484,6 +484,12 @@ function scr_MKSS_Enemy_Init_Set()
 	{
 		sprIdle: spr_MKSS_Enemy_Nimbia_Base_Idle,
 		
+		sprSlashPrepare1: spr_MKSS_Enemy_Nimbia_Base_SlashPrepare1,
+		sprSlash1: spr_MKSS_Enemy_Nimbia_Base_Slash1,
+		sprSlash2: spr_MKSS_Enemy_Nimbia_Base_Slash2,
+		sprThrustPrepare1: spr_MKSS_Enemy_Nimbia_Base_ThrustPrepare1,
+		sprThrust1: spr_MKSS_Enemy_Nimbia_Base_Thrust1,
+		
 		maskIndex: spr_16x16Mask_MiddleOrigin
 	});
 	
