@@ -117,7 +117,7 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_SlashCombo_Step()
 					sprite_index = spriteSet.sprThrustPrepare1;
 					image_index = 0;
 					
-					thrustEndX = clamp(x+120,arenaLimitLeft,arenaLimitRight);
+					thrustEndX = clamp(x+120,0,room_width);
 					
 					repeat(point_distance(x,0,thrustEndX,0)/6)
 					{
@@ -174,7 +174,6 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_SlashCombo_Step()
 		
 		#region Collision
 		scr_Entity_Collision(,enemyWallXCollision,enemyWallYCollision);
-		x = clamp(x,arenaLimitLeft,arenaLimitRight);
 		#endregion
 		
 		#region Attack State Timer

@@ -13,17 +13,22 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_Setup(targetIsBoss = true,targetPlayBos
 	grav = .12;
 	
 	gravLimit = 4;
-	
-	arenaLimitLeft = 36;
-	arenaLimitRight = room_width-36;
 	#endregion
 	
 	#region Gameplay Variables
 	attackList = ds_list_create();
 	
 	nimbia_Attack_SlashCombo = scr_MKSS_Enemy_Nimbia_AI_Normal_SlashCombo_Step;
+	nimbia_Attack_LightningSlash = scr_MKSS_Enemy_Nimbia_AI_Normal_LightningSlash_Step;
+	nimbia_Attack_SlashStrike = scr_MKSS_Enemy_Nimbia_AI_Normal_SlashStrike_Step;
+	
+	//ds_list_add(attackList,nimbia_Attack_SlashStrike);
+	//ds_list_add(attackList,nimbia_Attack_SlashStrike);
+	//ds_list_add(attackList,nimbia_Attack_SlashStrike);
 	
 	ds_list_add(attackList,nimbia_Attack_SlashCombo);
+	ds_list_add(attackList,nimbia_Attack_LightningSlash);
+	ds_list_add(attackList,nimbia_Attack_SlashStrike);
 	
 	attackListIndex = 0;
 	
