@@ -13,6 +13,7 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_AnimationEnd()
 		case spriteSet.sprSlash4:
 		case spriteSet.sprThrustPrepare1:
 		case spriteSet.sprThrust1:
+		case spriteSet.sprDownThrust1:
 		case spriteSet.sprLightningStrikePrepare1:
 		case spriteSet.sprLightningStrike1:
 		image_index = image_number - 1;

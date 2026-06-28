@@ -495,6 +495,7 @@ function scr_MKSS_Enemy_Init_Set()
 		
 		sprThrustPrepare1: spr_MKSS_Enemy_Nimbia_Base_ThrustPrepare1,
 		sprThrust1: spr_MKSS_Enemy_Nimbia_Base_Thrust1,
+		sprDownThrust1: spr_MKSS_Enemy_Nimbia_Base_DownThrust1,
 		
 		sprLightningStrikePrepare1: spr_MKSS_Enemy_Nimbia_Base_LightningStrikePrepare1,
 		sprLightningStrike1: spr_MKSS_Enemy_Nimbia_Base_LightningStrike1,
