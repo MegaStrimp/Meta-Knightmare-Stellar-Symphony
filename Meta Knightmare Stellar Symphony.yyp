@@ -3605,19 +3605,8 @@
     {"roomId":{"name":"rm_MKSS_Debug_GigantEdge","path":"rooms/rm_MKSS_Debug_GigantEdge/rm_MKSS_Debug_GigantEdge.yy",},},
     {"roomId":{"name":"rm_MKSS_StarryShores_Boss","path":"rooms/rm_MKSS_StarryShores_Boss/rm_MKSS_StarryShores_Boss.yy",},},
     {"roomId":{"name":"rm_MKSS_BattleshipHalberd_TrainingRoom","path":"rooms/rm_MKSS_BattleshipHalberd_TrainingRoom/rm_MKSS_BattleshipHalberd_TrainingRoom.yy",},},
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     {"roomId":{"name":"rm_MKSS_Debug_Nimbia","path":"rooms/rm_MKSS_Debug_Nimbia/rm_MKSS_Debug_Nimbia.yy",},},
-=======
     {"roomId":{"name":"rm_MKSS_Debug_GhostKnight","path":"rooms/rm_MKSS_Debug_GhostKnight/rm_MKSS_Debug_GhostKnight.yy",},},
->>>>>>> b176bff35ed7dc388685c96230dfc6b7755f5d5b
-=======
-    {"roomId":{"name":"rm_MKSS_Debug_GhostKnight","path":"rooms/rm_MKSS_Debug_GhostKnight/rm_MKSS_Debug_GhostKnight.yy",},},
->>>>>>> b176bff35ed7dc388685c96230dfc6b7755f5d5b
-=======
-    {"roomId":{"name":"rm_MKSS_Debug_GhostKnight","path":"rooms/rm_MKSS_Debug_GhostKnight/rm_MKSS_Debug_GhostKnight.yy",},},
->>>>>>> b176bff35ed7dc388685c96230dfc6b7755f5d5b
   ],
   "templateType":null,
   "TextureGroups":[
