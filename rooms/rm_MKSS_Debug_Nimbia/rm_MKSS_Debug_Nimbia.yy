@@ -9,6 +9,9 @@
     {"name":"inst_2EFDF536_1_3_2_2_1_1_1_1","path":"rooms/rm_MKSS_Debug_Nimbia/rm_MKSS_Debug_Nimbia.yy",},
     {"name":"inst_6DAE57FA1_1","path":"rooms/rm_MKSS_Debug_Nimbia/rm_MKSS_Debug_Nimbia.yy",},
     {"name":"inst_6E9F5BA2","path":"rooms/rm_MKSS_Debug_Nimbia/rm_MKSS_Debug_Nimbia.yy",},
+    {"name":"inst_3468B4E4","path":"rooms/rm_MKSS_Debug_Nimbia/rm_MKSS_Debug_Nimbia.yy",},
+    {"name":"inst_67811CF3","path":"rooms/rm_MKSS_Debug_Nimbia/rm_MKSS_Debug_Nimbia.yy",},
+    {"name":"inst_34990DE5","path":"rooms/rm_MKSS_Debug_Nimbia/rm_MKSS_Debug_Nimbia.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -31,6 +34,9 @@
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_MKSS_RoyalReeve","path":"tilesets/ts_MKSS_RoyalReeve/ts_MKSS_RoyalReeve.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Collision","depth":700,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_6DAE57FA1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6DAE57FA1_1","objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":21.5,"scaleY":3.0,"x":0.0,"y":160.0,},
+        {"$GMRInstance":"v4","%Name":"inst_3468B4E4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3468B4E4","objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":13.0,"x":344.0,"y":0.0,},
+        {"$GMRInstance":"v4","%Name":"inst_67811CF3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_67811CF3","objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":13.0,"x":-16.0,"y":0.0,},
+        {"$GMRInstance":"v4","%Name":"inst_34990DE5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_34990DE5","objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":23.5,"scaleY":1.0,"x":-16.0,"y":-16.0,},
       ],"layers":[],"name":"Collision","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4289901234,"depth":800,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
