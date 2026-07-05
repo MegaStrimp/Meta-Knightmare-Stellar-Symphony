@@ -41,6 +41,7 @@ function scr_MKSS_Attack_Init_Set()
 	#region Ghost Knight
 	scr_MKSS_Attack_Init_Add("ghostKnight_Stab",scr_MKSS_Attack_Execute_GhostKnight_Stab);
 	scr_MKSS_Attack_Init_Add("ghostKnight_Parry",scr_MKSS_Attack_Execute_GhostKnight_Parry);
+	scr_MKSS_Attack_Init_Add("ghostKnight_Counter",scr_MKSS_Attack_Execute_GhostKnight_Stab);
 	#endregion
 	
 	#region Trappy
