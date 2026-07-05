@@ -484,6 +484,9 @@ function scr_MKSS_Enemy_Init_Set()
 	{
 		sprIdle: spr_MKSS_Enemy_Nimbia_Base_Idle,
 		
+		sprDuck: spr_MKSS_Enemy_Nimbia_Base_Duck,
+		sprJump: spr_MKSS_Enemy_Nimbia_Base_Jump,
+		
 		sprSlashPrepare1: spr_MKSS_Enemy_Nimbia_Base_SlashPrepare1,
 		sprSlashPrepare2: spr_MKSS_Enemy_Nimbia_Base_SlashPrepare2,
 		sprSlashPrepare3: spr_MKSS_Enemy_Nimbia_Base_SlashPrepare3,
@@ -494,8 +497,15 @@ function scr_MKSS_Enemy_Init_Set()
 		sprSlash4: spr_MKSS_Enemy_Nimbia_Base_Slash4,
 		
 		sprThrustPrepare1: spr_MKSS_Enemy_Nimbia_Base_ThrustPrepare1,
+		sprThrustPrepare2: spr_MKSS_Enemy_Nimbia_Base_ThrustPrepare2,
+		sprThrustPrepare3: spr_MKSS_Enemy_Nimbia_Base_ThrustPrepare2,
 		sprThrust1: spr_MKSS_Enemy_Nimbia_Base_Thrust1,
 		sprDownThrust1: spr_MKSS_Enemy_Nimbia_Base_DownThrust1,
+		
+		sprSwordThrow1: spr_MKSS_Enemy_Nimbia_Base_SwordThrow1,
+		sprSwordThrow2: spr_MKSS_Enemy_Nimbia_Base_SwordThrow2,
+		sprSwordCatch1: spr_MKSS_Enemy_Nimbia_Base_SwordCatch1,
+		sprSwordCatch2: spr_MKSS_Enemy_Nimbia_Base_SwordCatch2,
 		
 		sprLightningStrikePrepare1: spr_MKSS_Enemy_Nimbia_Base_LightningStrikePrepare1,
 		sprLightningStrike1: spr_MKSS_Enemy_Nimbia_Base_LightningStrike1,
