@@ -510,6 +510,8 @@ function scr_MKSS_Enemy_Init_Set()
 		sprLightningStrikePrepare1: spr_MKSS_Enemy_Nimbia_Base_LightningStrikePrepare1,
 		sprLightningStrike1: spr_MKSS_Enemy_Nimbia_Base_LightningStrike1,
 		
+		sprKrackoForm: spr_MKSS_Enemy_Nimbia_Base_KrackoForm,
+		
 		maskIndex: spr_16x16Mask_MiddleOrigin
 	});
 	
