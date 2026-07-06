@@ -12,13 +12,15 @@ function scr_MKSS_Enemy_GhostKnight_AI_WalkAndAttack_Stab_Step()
 		dirX = scr_MKSS_Enemy_DirTarget();
 		
 		attackState = 0;
+		
+		scr_PlaySfx(snd_MKSS_Action1);
 		#endregion
 		
 		#region Attack Timers
 		var i = 0;
 		
 		#region Stab Timer
-		attackStateTimerMax[i] = 40;
+		attackStateTimerMax[i] = 25;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
@@ -59,6 +61,8 @@ function scr_MKSS_Enemy_GhostKnight_AI_WalkAndAttack_Stab_Step()
 				
 				attackIndex = global.MKSS_AttackIDs[? "ghostKnight_Stab"];
 				
+				scr_PlaySfx(snd_MKSS_GhostKnightStab);
+				
 				#region Attack
 				with (instance_create_depth(x,y,depth,obj_MKSS_Attack))
 				{
@@ -90,6 +94,8 @@ function scr_MKSS_Enemy_GhostKnight_AI_WalkAndAttack_Stab_Step()
 			if (attackStateTimer[attackState] == -1)
 			{
 				scr_Enemy_ChangeState_Step(id,enemyAIStepIdle);
+				
+				dirX = scr_MKSS_Enemy_DirTarget();
 				
 				attackIndex = -1;
 			}

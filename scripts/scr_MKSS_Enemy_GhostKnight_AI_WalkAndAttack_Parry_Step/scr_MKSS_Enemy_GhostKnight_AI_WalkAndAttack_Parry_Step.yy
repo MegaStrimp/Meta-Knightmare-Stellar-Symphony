@@ -6,7 +6,7 @@
   "name":"scr_MKSS_Enemy_GhostKnight_AI_WalkAndAttack_Parry_Step",
   "parent":{
     "name":"Walk and Attack",
-    "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Starry Shores/Ghost Knight/Scripts/Walk and Attack.yy",
+    "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Starry Shores/Ghost Knight/Scripts/AI/Walk and Attack.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

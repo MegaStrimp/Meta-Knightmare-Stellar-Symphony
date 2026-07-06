@@ -92,6 +92,8 @@ function scr_MKSS_Enemy_GhostKnight_AI_WalkAndAttack_Counter_Step()
 			{
 				scr_Enemy_ChangeState_Step(id,enemyAIStepIdle);
 				
+				dirX = scr_MKSS_Enemy_DirTarget();
+				
 				canBeHurt = true;
 				
 				attackIndex = -1;
@@ -99,6 +101,10 @@ function scr_MKSS_Enemy_GhostKnight_AI_WalkAndAttack_Counter_Step()
 			break;
 			#endregion
 		}
+		#endregion
+		
+		#region Flash Timer
+		if (flashTimer == -1) flashTimer = flashTimerTarget;
 		#endregion
 		
 		#region Gravity

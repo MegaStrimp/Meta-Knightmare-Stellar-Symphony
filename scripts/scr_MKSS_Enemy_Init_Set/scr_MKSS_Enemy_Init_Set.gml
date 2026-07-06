@@ -387,6 +387,57 @@ function scr_MKSS_Enemy_Init_Set()
 	});
 	#endregion
 	
+	#region Waddle Doo
+	var targetMappedID = scr_MKSS_Enemy_Init_Add("waddleDoo","Waddle Doo");
+	
+	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
+	{
+		sprIdle: spr_MKSS_Enemy_WaddleDoo_Base_Idle,
+		sprWalk: spr_MKSS_Enemy_WaddleDoo_Base_Walk,
+		sprSlide: spr_MKSS_Enemy_WaddleDoo_Base_Slide,
+		sprSwing: spr_MKSS_Enemy_WaddleDoo_Base_Swing,
+		sprAttackReady: spr_MKSS_Enemy_WaddleDoo_Base_AttackReady,
+		sprAttack: spr_MKSS_Enemy_WaddleDoo_Base_Attack,
+		
+		sprHurt1: spr_MKSS_Enemy_WaddleDoo_Base_Hurt1,
+		sprHurt2: spr_MKSS_Enemy_WaddleDoo_Base_Hurt2,
+		sprHurt3: spr_MKSS_Enemy_WaddleDoo_Base_Hurt3,
+		sprHurt4: spr_MKSS_Enemy_WaddleDoo_Base_Hurt4,
+		sprHurt5: spr_MKSS_Enemy_WaddleDoo_Base_Hurt5,
+		sprHurt6: spr_MKSS_Enemy_WaddleDoo_Base_Hurt6,
+		
+	    sprHurtList:
+		[
+	        [
+				spr_MKSS_Enemy_WaddleDoo_Base_Hurt1,
+				10
+			],
+	        [
+				spr_MKSS_Enemy_WaddleDoo_Base_Hurt2,
+				10
+			],
+	        [
+				spr_MKSS_Enemy_WaddleDoo_Base_Hurt3,
+				10
+			],
+	        [
+				spr_MKSS_Enemy_WaddleDoo_Base_Hurt4,
+				10
+			],
+	        [
+				spr_MKSS_Enemy_WaddleDoo_Base_Hurt5,
+				10
+			],
+	        [
+				spr_MKSS_Enemy_WaddleDoo_Base_Hurt6,
+				1
+			]
+	    ],
+		
+		maskIndex: spr_16x16Mask_MiddleOrigin
+	});
+	#endregion
+	
 	#region Chunky Dee
 	var targetMappedID = scr_MKSS_Enemy_Init_Add("chunkyDee","Chunky Dee");
 	

@@ -11,15 +11,18 @@ if (!localPause)
 	#endregion
 	
 	#region Particle Timer
-	if (particleTimer != -1)
+	if (!place_meeting(x,y,obj_Wall))
 	{
-		particleTimer = max(particleTimer - speedMultFinal,0);
-		if (particleTimer == 0)
+		if (particleTimer != -1)
 		{
-			scr_MKSS_ParticleSet_DoorStar1(x + 8,y,particleDir);
-			particleDir *= -1;
-			
-			particleTimer = particleTimerMax;
+			particleTimer = max(particleTimer - speedMultFinal,0);
+			if (particleTimer == 0)
+			{
+				scr_MKSS_ParticleSet_DoorStar1(x + 8,y,particleDir);
+				particleDir *= -1;
+				
+				particleTimer = particleTimerMax;
+			}
 		}
 	}
 	#endregion

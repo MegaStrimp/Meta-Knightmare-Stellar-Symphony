@@ -21,7 +21,7 @@ function scr_MKSS_Enemy_GhostKnight_AI_WalkAndAttack_Setup()
 	
 	ds_list_add(attackList,ghostKnight_Attack_Stab);
 	ds_list_add(attackList,ghostKnight_Attack_Stab);
-	//ds_list_add(attackList,ghostKnight_Attack_Parry);
+	ds_list_add(attackList,ghostKnight_Attack_Parry);
 	
 	attackListIndex = 0;
 	

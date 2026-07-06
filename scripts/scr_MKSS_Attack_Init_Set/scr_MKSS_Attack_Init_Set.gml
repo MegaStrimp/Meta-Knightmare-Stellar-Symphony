@@ -39,9 +39,9 @@ function scr_MKSS_Attack_Init_Set()
 	#endregion
 	
 	#region Ghost Knight
-	scr_MKSS_Attack_Init_Add("ghostKnight_Stab",scr_MKSS_Attack_Execute_GhostKnight_Stab);
-	scr_MKSS_Attack_Init_Add("ghostKnight_Parry",scr_MKSS_Attack_Execute_GhostKnight_Parry);
-	scr_MKSS_Attack_Init_Add("ghostKnight_Counter",scr_MKSS_Attack_Execute_GhostKnight_Stab);
+	scr_MKSS_Attack_Init_Add("ghostKnight_Stab");
+	scr_MKSS_Attack_Init_Add("ghostKnight_Parry");
+	scr_MKSS_Attack_Init_Add("ghostKnight_Counter");
 	#endregion
 	
 	#region Trappy
@@ -50,6 +50,10 @@ function scr_MKSS_Attack_Init_Set()
 	
 	#region Rango
 	scr_MKSS_Attack_Init_Add("rango_Jump",scr_MKSS_Attack_Execute_Rango_Jump);
+	#endregion
+	
+	#region Waddle Doo
+	scr_MKSS_Attack_Init_Add("WaddleDoo_Attack");
 	#endregion
 	
 	#region Chunky Dee

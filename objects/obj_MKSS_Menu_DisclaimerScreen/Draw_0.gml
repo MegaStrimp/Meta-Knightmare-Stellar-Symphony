@@ -11,6 +11,7 @@ draw_set_color(c_white);
 #region Disclaimer
 if (disclaimerAlpha != 0)
 {
+	scribble("[fnt_Advance_Small][alpha," + string(disclaimerAlpha) + "][c_orange]Proof-of-Concept Demo Version[/color]. Everything is subject to change with free updates.[/alpha][/font]").align(fa_center).wrap(global.gameWidth).draw(global.gameWidth / 2,0);
 	scribble("[fnt_Advance_Small][alpha," + string(disclaimerAlpha) + "]This is a non-profit art project. All rights of Kirby characters, lore, music and other assets belong to [c_orange]Hal Labs and Nintendo[/color][/alpha][/font]").align(fa_center,fa_bottom).wrap(global.gameWidth).draw(global.gameWidth / 2,global.gameHeight);
 }
 #endregion

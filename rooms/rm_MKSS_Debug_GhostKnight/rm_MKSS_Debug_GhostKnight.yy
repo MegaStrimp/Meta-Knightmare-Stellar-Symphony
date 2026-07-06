@@ -19,6 +19,7 @@
     {"name":"inst_6895C49E2","path":"rooms/rm_MKSS_Debug_GhostKnight/rm_MKSS_Debug_GhostKnight.yy",},
     {"name":"inst_4B590B83_2","path":"rooms/rm_MKSS_Debug_GhostKnight/rm_MKSS_Debug_GhostKnight.yy",},
     {"name":"inst_32E85E8F","path":"rooms/rm_MKSS_Debug_GhostKnight/rm_MKSS_Debug_GhostKnight.yy",},
+    {"name":"inst_3BD30DCE","path":"rooms/rm_MKSS_Debug_GhostKnight/rm_MKSS_Debug_GhostKnight.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -27,6 +28,7 @@
       ],"layers":[],"name":"Player","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Enemies","depth":100,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_32E85E8F","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_32E85E8F","objectId":{"name":"obj_MKSS_Enemy_GhostKnight","path":"objects/obj_MKSS_Enemy_GhostKnight/obj_MKSS_Enemy_GhostKnight.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":192.0,"y":88.0,},
+        {"$GMRInstance":"v4","%Name":"inst_3BD30DCE","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3BD30DCE","objectId":{"name":"obj_MKSS_Enemy_WaddleDoo","path":"objects/obj_MKSS_Enemy_WaddleDoo/obj_MKSS_Enemy_WaddleDoo.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":264.0,"y":88.0,},
       ],"layers":[],"name":"Enemies","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Environment","depth":200,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Environment","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"BackgroundEnvironments","depth":300,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

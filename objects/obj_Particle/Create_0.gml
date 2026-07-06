@@ -28,6 +28,8 @@ canBePaused = true;
 scale = 1;
 dirX = 1;
 dirY = 1;
+
+owner = -1;
 #endregion
 
 #region Palette Variables

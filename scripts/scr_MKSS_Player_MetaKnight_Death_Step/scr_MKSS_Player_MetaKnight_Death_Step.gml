@@ -17,6 +17,8 @@ function scr_MKSS_Player_MetaKnight_Death_Step()
 		spriteTurnTimer = -1;
 		spriteTurnTimerMax = 5;
 		
+		with (obj_Particle) if (owner == other) instance_destroy();
+		
 		playerState_Setup = false;
 	}
 	#endregion
