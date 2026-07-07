@@ -30,7 +30,10 @@ function scr_MKSS_Attack_Nimbia_Lightning_Step()
 				{
 					var _len = irandom_range(0,sprite_width);
 					
-					scr_MKSS_ParticleSet_LightningBall(x + lengthdir_x(_len,image_angle),y + lengthdir_y(_len,image_angle),random_range(-.25,.25),random_range(-.5,.25));
+					var _x = x + lengthdir_x(_len,image_angle)
+					var _y = y + lengthdir_y(_len,image_angle);
+					
+					if (_y <= yBottom) scr_MKSS_ParticleSet_LightningBall(_x,_y,random_range(-.25,.25),random_range(-.5,.25));
 				}
 				
 				owner.stop = false;

@@ -52,6 +52,7 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_KrackoForm_Step()
 		hasGravity = false;
 		
 		yTop = y-64;
+		yBottom = y+8;
 		
 		lightningAngle = choose(false,true);
 		lightningAmount = 4;
@@ -111,6 +112,27 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_KrackoForm_Step()
 			{
 				dirX = scr_MKSS_Enemy_DirTarget();
 				
+				var _angle = 315;
+				repeat(2)
+				{
+					if (krackletAmount < krackletLimit)
+					{
+						with (instance_create_depth(x,y,depth + 1,obj_MKSS_Attack))
+						{
+							owner = other;
+							isEnemy = true;
+							dmg = -1;
+							sprite_index = spr_MKSS_Attack_Nimbia_Kracklet;
+							mask_index = spr_16x16Mask_MiddleOrigin;
+							scr_MKSS_Attack_Nimbia_Kracklet_Setup();
+							spd = 3;
+							angle = _angle;
+							movementDmgCooldown = movementDmgCooldownMax;
+						}
+					}
+					_angle = 225;
+				}
+				
 				attackState++;
 			}
 			break;
@@ -133,27 +155,27 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_KrackoForm_Step()
 				y = yTop;
 			}
 			
-			if (krackletTimer != -1) and (krackletAmount < krackletLimit)
-			{
-				krackletTimer = max(krackletTimer - speedMultFinal,0);
-				if (krackletTimer == 0)
-				{
-					with (instance_create_depth(x,y,depth + 1,obj_MKSS_Attack))
-					{
-						owner = other;
-						isEnemy = true;
-						dmg = -1;
-						sprite_index = spr_MKSS_Attack_Nimbia_Kracklet;
-						mask_index = spr_16x16Mask_MiddleOrigin;
-						scr_MKSS_Attack_Nimbia_Kracklet_Setup();
-						spd = 3;
-						angle = point_direction(0,0,-other.dirX,1);
-						movementDmgCooldown = movementDmgCooldownMax;
-					}
+			//if (krackletTimer != -1) and (krackletAmount < krackletLimit)
+			//{
+			//	krackletTimer = max(krackletTimer - speedMultFinal,0);
+			//	if (krackletTimer == 0)
+			//	{
+			//		with (instance_create_depth(x,y,depth + 1,obj_MKSS_Attack))
+			//		{
+			//			owner = other;
+			//			isEnemy = true;
+			//			dmg = -1;
+			//			sprite_index = spr_MKSS_Attack_Nimbia_Kracklet;
+			//			mask_index = spr_16x16Mask_MiddleOrigin;
+			//			scr_MKSS_Attack_Nimbia_Kracklet_Setup();
+			//			spd = 3;
+			//			angle = point_direction(0,0,-other.dirX,1);
+			//			movementDmgCooldown = movementDmgCooldownMax;
+			//		}
 					
-					krackletTimer = krackletTimerMax;
-				}
-			}
+			//		krackletTimer = krackletTimerMax;
+			//	}
+			//}
 			
 			if (attackStateTimer[attackState] == -1)
 			{
@@ -185,10 +207,12 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_KrackoForm_Step()
 							sprite_index = spr_MKSS_Attack_Nimbia_LightningIndicator;
 							mask_index = spr_MKSS_Attack_Nimbia_Lightning;
 							attackAIStep = scr_MKSS_Attack_Nimbia_Lightning_Step;
+							attackDraw = scr_MKSS_Attack_Nimbia_Lightning_Draw;
 							strikeTimer = 40;
 							postStrikeTimer = 20;
 							image_alpha = .665;
 							image_angle = (45*(other.lightningAngle))+(90*i);
+							yBottom = other.yBottom;
 						}
 						
 						i++;

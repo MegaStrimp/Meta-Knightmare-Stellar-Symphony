@@ -1542,6 +1542,7 @@
     {"name":"scr_MKSS_Attack_Nimbia_CloudLightningSmall_Step","order":1,"path":"scripts/scr_MKSS_Attack_Nimbia_CloudLightningSmall_Step/scr_MKSS_Attack_Nimbia_CloudLightningSmall_Step.yy",},
     {"name":"scr_MKSS_Attack_Nimbia_DecoyCloud_Draw","order":1,"path":"scripts/scr_MKSS_Attack_Nimbia_DecoyCloud_Draw/scr_MKSS_Attack_Nimbia_DecoyCloud_Draw.yy",},
     {"name":"scr_MKSS_Attack_Nimbia_Kracklet_Step","order":1,"path":"scripts/scr_MKSS_Attack_Nimbia_Kracklet_Step/scr_MKSS_Attack_Nimbia_Kracklet_Step.yy",},
+    {"name":"scr_MKSS_Attack_Nimbia_Lightning_Draw","order":1,"path":"scripts/scr_MKSS_Attack_Nimbia_Lightning_Draw/scr_MKSS_Attack_Nimbia_Lightning_Draw.yy",},
     {"name":"scr_MKSS_Attack_Nimbia_SwordThrow_Draw","order":3,"path":"scripts/scr_MKSS_Attack_Nimbia_SwordThrow_Draw/scr_MKSS_Attack_Nimbia_SwordThrow_Draw.yy",},
     {"name":"scr_MKSS_Attack_Nimbia_SwordThrowAir_Step","order":2,"path":"scripts/scr_MKSS_Attack_Nimbia_SwordThrowAir_Step/scr_MKSS_Attack_Nimbia_SwordThrowAir_Step.yy",},
     {"name":"scr_MKSS_Attack_Peezer_Claw_EndStep","order":1,"path":"scripts/scr_MKSS_Attack_Peezer_Claw_EndStep/scr_MKSS_Attack_Peezer_Claw_EndStep.yy",},

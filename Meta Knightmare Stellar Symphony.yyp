@@ -2009,6 +2009,7 @@
     {"id":{"name":"scr_MKSS_Attack_Nimbia_Kracklet_Setup","path":"scripts/scr_MKSS_Attack_Nimbia_Kracklet_Setup/scr_MKSS_Attack_Nimbia_Kracklet_Setup.yy",},},
     {"id":{"name":"scr_MKSS_Attack_Nimbia_Kracklet_Step","path":"scripts/scr_MKSS_Attack_Nimbia_Kracklet_Step/scr_MKSS_Attack_Nimbia_Kracklet_Step.yy",},},
     {"id":{"name":"scr_MKSS_Attack_Nimbia_KrackletNeedle_Step","path":"scripts/scr_MKSS_Attack_Nimbia_KrackletNeedle_Step/scr_MKSS_Attack_Nimbia_KrackletNeedle_Step.yy",},},
+    {"id":{"name":"scr_MKSS_Attack_Nimbia_Lightning_Draw","path":"scripts/scr_MKSS_Attack_Nimbia_Lightning_Draw/scr_MKSS_Attack_Nimbia_Lightning_Draw.yy",},},
     {"id":{"name":"scr_MKSS_Attack_Nimbia_Lightning_Step","path":"scripts/scr_MKSS_Attack_Nimbia_Lightning_Step/scr_MKSS_Attack_Nimbia_Lightning_Step.yy",},},
     {"id":{"name":"scr_MKSS_Attack_Nimbia_LightningGround_Step","path":"scripts/scr_MKSS_Attack_Nimbia_LightningGround_Step/scr_MKSS_Attack_Nimbia_LightningGround_Step.yy",},},
     {"id":{"name":"scr_MKSS_Attack_Nimbia_SwordThrow_Draw","path":"scripts/scr_MKSS_Attack_Nimbia_SwordThrow_Draw/scr_MKSS_Attack_Nimbia_SwordThrow_Draw.yy",},},
