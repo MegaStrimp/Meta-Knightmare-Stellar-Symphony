@@ -7,6 +7,7 @@ function scr_MKSS_Attack_Nimbia_Kracklet_Setup()
 	
 	spd = 0;
 	decel = .1;
+	spdMax = 8;
 	
 	movementTimerMaxAdd = 30;
 	movementTimerMax = 90;

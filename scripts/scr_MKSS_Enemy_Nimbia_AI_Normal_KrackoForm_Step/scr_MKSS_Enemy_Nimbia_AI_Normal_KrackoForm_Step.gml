@@ -35,6 +35,18 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_KrackoForm_Step()
 		i++;
 		#endregion
 		
+		#region Ball Shoot Timer
+		attackStateTimerMax[i] = 90;
+		attackStateTimer[i] = attackStateTimerMax[i];
+		i++;
+		#endregion
+		
+		#region Post-Ball Timer
+		attackStateTimerMax[i] = 90;
+		attackStateTimer[i] = attackStateTimerMax[i];
+		i++;
+		#endregion
+		
 		#region Fall Timer
 		attackStateTimerMax[i] = 120;
 		attackStateTimer[i] = attackStateTimerMax[i];
@@ -53,6 +65,7 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_KrackoForm_Step()
 		
 		yTop = y-64;
 		yBottom = y+8;
+		yMiddle = yBottom-48;
 		
 		lightningAngle = choose(false,true);
 		lightningAmount = 4;
@@ -64,6 +77,11 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_KrackoForm_Step()
 		
 		krackletTimerMax = 100;
 		krackletTimer = krackletTimerMax;
+		
+		particleTimerMax = 3;
+		particleTimer = particleTimerMax;
+		
+		ballId = -1;
 		#endregion
 		
 		#region Kracko Form Start
@@ -155,6 +173,7 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_KrackoForm_Step()
 				y = yTop;
 			}
 			
+			#region Kracklet Spawns
 			//if (krackletTimer != -1) and (krackletAmount < krackletLimit)
 			//{
 			//	krackletTimer = max(krackletTimer - speedMultFinal,0);
@@ -176,20 +195,29 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_KrackoForm_Step()
 			//		krackletTimer = krackletTimerMax;
 			//	}
 			//}
+			#endregion
 			
 			if (attackStateTimer[attackState] == -1)
 			{
 				if (lightningAmount <= 0) 
 				{
-					repeat(64)
+					hsp = 0;
+					vsp = 2;
+					
+					with (instance_create_depth(x,y - 64,depth - 2,obj_MKSS_Attack))
 					{
-						scr_MKSS_ParticleSet_NimbiaCloud(x + irandom_range(-48,48),y + irandom_range(-48,48),random_range(-1,1),random_range(-1,1),-3);
+						owner = other;
+						isEnemy = true;
+						dmg = -1;
+						dmgTarget = 1;
+						sprite_index = spr_MKSS_Attack_Nimbia_KrackoBall;
+						mask_index = spr_MKSS_Attack_Nimbia_KrackoBall;
+						scr_MKSS_Attack_Nimbia_KrackoBall_Setup();
+						scale = 0;
+						image_xscale = scale;
+						image_yscale = scale;
+						other.ballId = id;
 					}
-					
-					sprite_index = spriteSet.sprIdle;
-					image_index = 0;
-					
-					hasGravity = true;
 					
 					attackState++;
 				}
@@ -227,8 +255,72 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_KrackoForm_Step()
 			break;
 			#endregion
 			
-			#region Fall
+			#region Ball Shoot
 			case 3:
+			if (y < yMiddle) vsp = 2;
+			else 
+			{
+				y = yMiddle;
+				
+				vsp = 0;
+			}
+			
+			particleTimer = max(particleTimer - speedMultFinal,0);
+			if (particleTimer == 0)
+			{
+				var _x = x - (42 * dirX);
+				var _y = y - 54;
+				var _angle = point_direction(_x,_y,x,y - 64);
+				var _spd = 4;
+				var _timer = 8;
+				scr_MKSS_ParticleSet_GreenLightning(_x,_y,lengthdir_x(_spd,_angle),lengthdir_y(_spd,_angle),_timer);
+				_x = x + (44 * dirX);
+				_angle = point_direction(_x,_y,x,y - 64);
+				scr_MKSS_ParticleSet_GreenLightning(_x,_y,lengthdir_x(_spd,_angle),lengthdir_y(_spd,_angle),_timer);
+				
+				particleTimer = particleTimerMax;
+			}
+			
+			if (attackStateTimer[attackState] == -1)
+			{
+				with (ballId)
+				{
+					angle = point_direction(x,y,obj_Player.x,obj_Player.y);
+					spd = -2;
+					
+					scale = 1;
+					
+					dmg = dmgTarget;
+					
+					shot = true;
+				}
+				
+				attackState++;
+			}
+			break;
+			#endregion
+			
+			#region Post-Ball
+			case 4:
+			if (attackStateTimer[attackState] == -1)
+			{
+				repeat(64)
+				{
+					scr_MKSS_ParticleSet_NimbiaCloud(x + irandom_range(-48,48),y + irandom_range(-48,48),random_range(-1,1),random_range(-1,1),-3);
+				}
+					
+				sprite_index = spriteSet.sprIdle;
+				image_index = 0;
+					
+				hasGravity = true;
+					
+				attackState++;
+			}
+			break;
+			#endregion
+			
+			#region Fall
+			case 5:
 			if (attackStateTimer[attackState] == -1) or (instance_place(x,y+vsp+1,obj_Wall))
 			{
 				attackState++;
@@ -237,7 +329,7 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_KrackoForm_Step()
 			#endregion
 			
 			#region Finish Attack
-			case 4:
+			case 6:
 			if (attackStateTimer[attackState] == -1)
 			{
 				scr_Enemy_ChangeState_Step(id,enemyAIStepIdle);

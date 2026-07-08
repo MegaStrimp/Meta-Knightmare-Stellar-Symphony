@@ -26,6 +26,7 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_Setup(targetIsBoss = true,targetPlayBos
 	nimbia_Attack_DecoyClouds = scr_MKSS_Enemy_Nimbia_AI_Normal_DecoyClouds_Step;
 	nimbia_Attack_TornadoThrowJump = scr_MKSS_Enemy_Nimbia_AI_Normal_TornadoThrowJump_Step;
 	nimbia_Attack_TornadoThrow = scr_MKSS_Enemy_Nimbia_AI_Normal_TornadoThrow_Step;
+	nimbia_Attack_SummonKracklets = scr_MKSS_Enemy_Nimbia_AI_Normal_SummonKracklets_Step;
 	#endregion
 	
 	#region Phase 2
@@ -40,8 +41,8 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_Setup(targetIsBoss = true,targetPlayBos
 	
 	#region Attack Order
 	ds_list_add(attackList,nimbia_Attack_KrackoForm);
-	ds_list_add(attackList,nimbia_Attack_KrackoForm);
-	ds_list_add(attackList,nimbia_Attack_KrackoForm);
+	//ds_list_add(attackList,nimbia_Attack_SummonKracklets);
+	//ds_list_add(attackList,nimbia_Attack_SummonKracklets);
 	
 	ds_list_add(attackList,nimbia_Attack_SlashCombo);
 	ds_list_add(attackList,nimbia_Attack_TornadoThrow);
@@ -49,6 +50,7 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_Setup(targetIsBoss = true,targetPlayBos
 	ds_list_add(attackList,nimbia_Attack_TornadoThrowJump);
 	ds_list_add(attackList,nimbia_Attack_SlashStrike);
 	ds_list_add(attackList,nimbia_Attack_DecoyClouds);
+	ds_list_add(attackList,nimbia_Attack_SummonKracklets);
 	#endregion
 	
 	attackListIndex = 0;
