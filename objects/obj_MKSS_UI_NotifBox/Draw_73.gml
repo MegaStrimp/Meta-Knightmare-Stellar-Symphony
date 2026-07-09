@@ -15,7 +15,7 @@ var imageY = yy - ySize + 9;
 
 #region Overlay
 draw_set_alpha(overlayAlpha);
-draw_rectangle_color(0,0,global.gameWidth,global.gameHeight,c_black,c_black,c_black,c_black,false);
+draw_rectangle_color(xx,yy,xx + global.gameWidth,yy + global.gameHeight,c_black,c_black,c_black,c_black,false);
 draw_set_alpha(1);
 #endregion
 

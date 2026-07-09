@@ -1,7 +1,7 @@
 ///@description Room Creation Code
 
 #region Begin Stage
-scr_MKSS_Stage_Begin("iceCreamIsland");
+if (global.roomPrevious != room) scr_MKSS_Stage_Begin("iceCreamIsland");
 #endregion
 
 #region Room Setup

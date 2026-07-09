@@ -94,6 +94,16 @@ function scr_MKSS_Weapon_Buzzcut_Base()
 			parryAttackFlag = false;
 			buzzcut_Finisher_Timer = -1;
 		}
+		
+		if ((global.MKSS_SpecialCurrent == global.MKSS_SpecialTarget) and (input_check_pressed("Y",playerNum)))
+		{
+			global.MKSS_SpecialDeflation = true;
+			
+			with (obj_MKSS_Control)
+			{
+				playerMetaQuickTimer[other.playerNum] = playerMetaQuickTimerMax;
+			}
+		}
 	}
 	#endregion
 	

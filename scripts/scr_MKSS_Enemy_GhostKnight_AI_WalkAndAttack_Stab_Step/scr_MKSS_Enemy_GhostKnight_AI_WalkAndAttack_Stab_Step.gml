@@ -68,7 +68,7 @@ function scr_MKSS_Enemy_GhostKnight_AI_WalkAndAttack_Stab_Step()
 				{
 					owner = other;
 					isEnemy = true;
-					dmg = 20;
+					dmg = MKSS_Base_EnemyBasicDamage;
 					followOwner = true;
 					followOwnerImageIndex = true;
 					pauseAfterAnimation = true;

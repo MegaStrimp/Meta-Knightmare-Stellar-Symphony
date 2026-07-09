@@ -34,7 +34,7 @@ function scr_MKSS_Attack_Execute_Buzzcut_Slash1()
 	{
 		owner = other;
 		isEnemy = false;
-		dmg = 1;
+		dmg = MKSS_Base_BuzzcutDamage;
 		followOwner = true;
 		followOwnerImageIndex = true;
 		destroyIfOwnerNotAttack = true;

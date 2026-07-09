@@ -15,7 +15,7 @@ function scr_MKSS_Attack_Execute_Trappy_Pearl()
 	{
 		owner = other;
 		isEnemy = true;
-		dmg = 5;
+		dmg = MKSS_Base_EnemyBasicDamage;
 		canBeParried = true;
 		parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryTrappyPearl"];
 		sprite_index = spr_MKSS_Attack_Trappy_Pearl;

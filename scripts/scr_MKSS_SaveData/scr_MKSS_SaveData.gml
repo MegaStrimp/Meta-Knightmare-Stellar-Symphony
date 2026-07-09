@@ -13,6 +13,10 @@ function scr_MKSS_SaveData(file)
 	
 	ini_open(fileFinal);
 	
+	#region Save Status
+	ini_write_string("saveStatus","versionNumber",global.versionNumber);
+	#endregion
+	
 	#region Player Status
 	for (var i = 0; i < global.maxPlayers; i++)
 	{

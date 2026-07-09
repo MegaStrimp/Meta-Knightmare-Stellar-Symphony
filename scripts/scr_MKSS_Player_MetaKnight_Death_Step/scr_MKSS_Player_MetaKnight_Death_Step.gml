@@ -64,13 +64,13 @@ function scr_MKSS_Player_MetaKnight_Death_Step()
 	}
 	#endregion
 	
-	#region Death State Timer
+	#region Sprite Turn Timer
 	if (spriteTurnTimer != -1)
 	{
 		spriteTurnTimer = max(spriteTurnTimer - speedMultFinal,0);
 		if (spriteTurnTimer == 0)
 		{
-			image_index += 1;
+			image_index = (image_index + 1) % image_number;
 			
 			var par = scr_MKSS_ParticleSet_FallDuck(x,y,1,irandom_range(0,359));
 			par[0].particleAfterDeath[0] = scr_MKSS_ParticleSet_SmallSparkle_NoPause;

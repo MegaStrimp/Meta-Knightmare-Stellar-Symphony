@@ -9,7 +9,12 @@ function scr_MKSS_MacroTable()
 	
 	#macro MKSS_Base_GalaxiaDamage 40
 	
+	#macro MKSS_Base_BuzzcutDamage 15
+	
 	#macro MKSS_Base_EnemyContactDamage 50
+	
+	#macro MKSS_Base_EnemyBasicDamage 50
+	#macro MKSS_Base_EnemyMediumDamage 75
 	
 	#macro MKSS_Base_EnemyHP_Fodder 100
 	#macro MKSS_Base_EnemyHP_Attacker 150

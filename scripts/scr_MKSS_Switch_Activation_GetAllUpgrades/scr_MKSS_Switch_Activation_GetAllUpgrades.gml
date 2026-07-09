@@ -4,6 +4,7 @@ function scr_MKSS_Switch_Activation_GetAllUpgrades()
 {
 	for (var i = 0; i < ds_map_size(global.MKSS_UpgradeIDs); i++)
 	{
+		global.MKSS_UpgradeList[i].canBeUnlocked = true;
 		global.MKSS_UpgradeList[i].isUnlocked = true;
 	}
 	

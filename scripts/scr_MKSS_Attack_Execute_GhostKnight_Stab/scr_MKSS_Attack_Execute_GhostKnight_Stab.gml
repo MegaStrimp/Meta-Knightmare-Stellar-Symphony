@@ -10,7 +10,7 @@ function scr_MKSS_Attack_Execute_GhostKnight_Stab()
 	{
 		owner = other;
 		isEnemy = true;
-		dmg = 20;
+		dmg = MKSS_Base_EnemyBasicDamage;
 		followOwner = true;
 		followOwnerImageIndex = true;
 		pauseAfterAnimation = true;

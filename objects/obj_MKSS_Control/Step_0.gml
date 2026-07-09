@@ -29,6 +29,36 @@ for (var i = 0; i < global.maxPlayers; i++)
 		}
 	}
 	#endregion
+	
+	if (!global.pauseFinal)
+	{
+		#region Special Deflation
+		if (global.MKSS_SpecialDeflation)
+		{
+			global.MKSS_SpecialCurrent -= 1;
+			
+			if (global.MKSS_SpecialCurrent <= 0)
+			{
+				global.MKSS_SpecialCurrent = 0;
+				global.MKSS_SpecialDeflation = false;
+			}
+		}
+		#endregion
+		
+		#region Player Meta Quick Timer
+		if ((!global.MKSS_CutsceneStopMovement) and (!global.MKSS_SpecialDeflation))
+		{
+			if (playerMetaQuickTimer[i] != -1)
+			{
+				playerMetaQuickTimer[i] = max(playerMetaQuickTimer[i] - speedMultFinal,0);
+				if (playerMetaQuickTimer[i] == 0)
+				{
+					playerMetaQuickTimer[i] = -1;
+				}
+			}
+		}
+		#endregion
+	}
 }
 
 #region Debug

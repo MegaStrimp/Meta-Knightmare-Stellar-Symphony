@@ -1,7 +1,7 @@
 ///@description Room Creation Code
 
 #region Begin Stage
-scr_MKSS_Stage_Begin("starryShores");
+if (global.roomPrevious != room) scr_MKSS_Stage_Begin("starryShores");
 #endregion
 
 #region Room Setup

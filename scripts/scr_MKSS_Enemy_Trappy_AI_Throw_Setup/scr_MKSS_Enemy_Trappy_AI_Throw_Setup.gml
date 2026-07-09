@@ -26,8 +26,8 @@ function scr_MKSS_Enemy_Trappy_AI_Throw_Setup()
 	#endregion
 	
 	#region Gameplay Variables
-	defense = 2;
-	knockbackResistance = 2;
+	defense = 3;
+	knockbackResistance = 3;
 	
 	hopTimerMax = 60;
 	hopTimer = hopTimerMax;

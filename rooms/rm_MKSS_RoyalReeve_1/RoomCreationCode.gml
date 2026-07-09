@@ -1,7 +1,7 @@
 ///@description Room Creation Code
 
 #region Begin Stage
-scr_MKSS_Stage_Begin("royalReeve");
+if (global.roomPrevious != room) scr_MKSS_Stage_Begin("royalReeve");
 #endregion
 
 #region Room Setup

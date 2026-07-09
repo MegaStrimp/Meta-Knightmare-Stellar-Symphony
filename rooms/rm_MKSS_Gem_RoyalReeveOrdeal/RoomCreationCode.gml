@@ -1,7 +1,7 @@
 ///@description Room Creation Code
 
 #region Begin Stage
-scr_MKSS_Stage_Begin("gemArena2");
+if (global.roomPrevious != room) scr_MKSS_Stage_Begin("gemArena2");
 #endregion
 
 #region Room Setup

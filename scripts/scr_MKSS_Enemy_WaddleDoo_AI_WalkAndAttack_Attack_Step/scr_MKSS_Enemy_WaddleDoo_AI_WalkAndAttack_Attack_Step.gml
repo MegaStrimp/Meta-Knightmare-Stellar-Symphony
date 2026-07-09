@@ -92,7 +92,7 @@ function scr_MKSS_Enemy_WaddleDoo_AI_WalkAndAttack_Attack_Step()
 					{
 						owner = other;
 						isEnemy = true;
-						dmg = 20;
+						dmg = MKSS_Base_EnemyMediumDamage;
 						followOwner = true;
 						followOwnerImageIndex = true;
 						pauseAfterAnimation = true;

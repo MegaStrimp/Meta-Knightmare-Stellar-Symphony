@@ -18,7 +18,7 @@ function scr_MKSS_Enemy_GetHit(targetEnemy,targetDmg,targetKnockbackForce = 2,ta
 		targetEnemy.hpHealthbarMiddleTimer = 15;
 		targetEnemy.hpHealthbarShakeTimer = 15;
 			
-		global.MKSS_SpecialCurrent += 5; //STRIMPTODO
+		scr_MKSS_Player_SpecialPoints_Add(5); //STRIMPTODO
 			
 		var hitByFinisher = false;
 			

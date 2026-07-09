@@ -31,7 +31,7 @@ if (!localPause)
 	#endregion
 	
 	#region Animation
-	image_speed = 1 * speedMultFinal;
+	image_speed = speedMultFinal;
 	#endregion
 }
 else

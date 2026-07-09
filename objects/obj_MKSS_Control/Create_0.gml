@@ -34,6 +34,7 @@ for (var i = 0; i < global.maxPlayers; i++)
 	
 	healPauseTargetHeal[i] = 0;
 	healPauseTimer[i] = -1;
+	playerMetaQuickTimer[i] = -1;
 }
 
 global.pauseScript = scr_MKSS_PauseScript;
@@ -46,6 +47,7 @@ global.MKSS_PopupQueue = ds_list_create();
 global.MKSS_StageHasScore = true;
 global.MKSS_StageIntroPlaying = false;
 
+global.MKSS_SpecialDeflation = false;
 global.MKSS_SpecialCurrent = 0;
 global.MKSS_SpecialTarget = 100;
 
@@ -73,6 +75,8 @@ global.MKSS_DeathX = 0;
 global.MKSS_DeathY = 0;
 
 global.MKSS_CurrentDecalPalette = -1;
+
+playerMetaQuickTimerMax = 10;
 
 global.flag_MKSS_MetaPointCollect = false;
 global.flag_MKSS_AbilitySwitch = false;
