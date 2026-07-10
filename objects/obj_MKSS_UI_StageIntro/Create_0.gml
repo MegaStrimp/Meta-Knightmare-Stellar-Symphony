@@ -3,7 +3,6 @@
 if (instance_exists(obj_Transition)) instance_destroy(obj_Transition);
 
 #region Initialize Variables
-global.hasHud = false;
 global.canGamePause = false;
 global.MKSS_StageIntroPlaying = true;
 

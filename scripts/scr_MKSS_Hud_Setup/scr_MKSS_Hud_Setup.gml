@@ -21,6 +21,8 @@ function scr_MKSS_Hud_Setup()
 	hud_WeaponBgSpeed = sprite_get_speed(spr_MKSS_Hud_Weapon_Bg) / 60;
 	
 	hud_SpecialEnabled = true;
+	hud_SpecialBarFlashTimer = -1;
+	hud_SpecialBarFlashTimerMax = 4;
 	
 	hud_DisplayedMetaPoints = 0;
 	

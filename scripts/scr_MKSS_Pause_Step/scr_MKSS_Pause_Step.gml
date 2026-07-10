@@ -204,8 +204,6 @@ function scr_MKSS_Pause_Step()
 		MKSS_GamePause_EndTimer = max(MKSS_GamePause_EndTimer - speedMultFinal,0);
 		if (MKSS_GamePause_EndTimer == 0)
 		{
-			if (room != rm_MKSS_Menu_TitleScreen) global.hasHud = true;
-			
 			gamePauseEndTimer = 0;
 			gamePauseDelayTimer = gamePauseDelayTimerMax + 5;
 			

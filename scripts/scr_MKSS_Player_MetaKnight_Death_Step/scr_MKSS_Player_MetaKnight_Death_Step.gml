@@ -52,8 +52,6 @@ function scr_MKSS_Player_MetaKnight_Death_Step()
 				case 2:
 				with (instance_create_depth(0,0,0,obj_MKSS_UI_Death))
 				{
-					global.hasHud = false;
-					
 					playerNum = other.playerNum;
 				}
 				

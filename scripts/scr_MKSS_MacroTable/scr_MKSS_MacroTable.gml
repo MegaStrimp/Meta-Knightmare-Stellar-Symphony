@@ -5,6 +5,10 @@ function scr_MKSS_MacroTable()
 	#macro MKSS_Base_PlayerHP 200
 	#macro MKSS_Base_PlayerHP_Upgrade 50
 	
+	#macro MKSS_Base_MetaQuickMult .5
+	
+	#macro MKSS_Base_SonicWingsMult .5
+	
 	#macro MKSS_Base_PlayerContactDamage 50
 	
 	#macro MKSS_Base_GalaxiaDamage 40

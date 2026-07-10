@@ -2,6 +2,10 @@
 
 function scr_MKSS_Hud_DrawGUI()
 {
+	#region Variables
+	canDraw = (!instance_exists(obj_MKSS_UI_NotifBox));
+	#endregion
+	
 	#region Weapons
 	if (hud_LeftIcon != undefined)
 	{
@@ -36,8 +40,16 @@ function scr_MKSS_Hud_DrawGUI()
 	{
 		var barLength = floor((global.MKSS_SpecialCurrent / global.MKSS_SpecialTarget) * 80);
 		
+		if (hud_SpecialBarFlashTimer != -1) gpu_set_fog(true,c_white,0,0);
 		draw_sprite(spr_MKSS_Hud_Special_Border,0,69,global.gameHeight - 27);
 		draw_sprite_part(spr_MKSS_Hud_Special_Front,0,0,0,barLength,22,69,global.gameHeight - 27);
+		if (hud_SpecialBarFlashTimer != -1) gpu_set_fog(false,c_white,0,0);
+		
+		if (global.MKSS_SpecialCurrent == global.MKSS_SpecialTarget)
+		{
+			var targetIcon = global.UI_IconBindings[? string(input_binding_get("Y"))];
+			if (targetIcon != undefined) draw_sprite(targetIcon,0,104,global.gameHeight - 32 + (2 * (buttonInputTimerComponent_YTimer != -1)));
+		}
 	}
 	#endregion
 	

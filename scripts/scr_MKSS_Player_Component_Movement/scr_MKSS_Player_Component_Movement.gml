@@ -29,7 +29,7 @@ function scr_MKSS_Player_Component_Movement()
 		
 		if (canAccel)
 		{
-			var accelFinal = accel * ((isRunning * (movespeedRun / movespeedNormal)) + 1 + (((isFlying) and (hasSonicWings)) * .5)) * speedMultFinal;
+			var accelFinal = accel * ((isRunning * (movespeedRun / movespeedNormal)) + 1 + ((obj_MKSS_Control.playerMetaQuickTimer[playerNum] != -1) * MKSS_Base_MetaQuickMult) + (((isFlying) and (hasSonicWings)) * MKSS_Base_SonicWingsMult)) * speedMultFinal;
 			
 			if (input_check("right",playerNum))
 			{
@@ -105,7 +105,7 @@ function scr_MKSS_Player_Component_Movement()
 	
 	if (hasSpeedLimit)
 	{
-		var maxMovespeed = movespeed * (1 + (((isFlying) and (hasSonicWings)) * .5)) * speedMultFinal;
+		var maxMovespeed = movespeed * (1 + ((obj_MKSS_Control.playerMetaQuickTimer[playerNum] != -1) * MKSS_Base_MetaQuickMult)) * (1 + (((isFlying) and (hasSonicWings)) * MKSS_Base_SonicWingsMult)) * speedMultFinal;
 		hsp = clamp(hsp,-maxMovespeed,maxMovespeed);
 	}
 	#endregion

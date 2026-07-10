@@ -38,6 +38,7 @@ for (var i = 0; i < global.maxPlayers; i++)
 }
 
 global.pauseScript = scr_MKSS_PauseScript;
+global.hasHudCheckScript = scr_MKSS_HasHudCheck;
 
 scr_MKSS_MarkedEnemySetup();
 scr_MKSS_MarkedBossSetup();
@@ -50,6 +51,9 @@ global.MKSS_StageIntroPlaying = false;
 global.MKSS_SpecialDeflation = false;
 global.MKSS_SpecialCurrent = 0;
 global.MKSS_SpecialTarget = 100;
+
+specialDeflationTimer = -1;
+specialDeflationTimerMax = 3;
 
 global.MKSS_MedalScoreTargetBronze = 100;
 global.MKSS_MedalScoreTargetSilver = 200;
@@ -76,7 +80,7 @@ global.MKSS_DeathY = 0;
 
 global.MKSS_CurrentDecalPalette = -1;
 
-playerMetaQuickTimerMax = 10;
+playerMetaQuickTimerMax = 30;
 
 global.flag_MKSS_MetaPointCollect = false;
 global.flag_MKSS_AbilitySwitch = false;
@@ -99,6 +103,7 @@ global.fontSpriteEnemyHealthbar = font_add_sprite_ext(fnt_MKSS_UI_EnemyHealthbar
 global.fontSpriteHitNumbersBlue = font_add_sprite_ext(fnt_MKSS_UI_HitNumbers_Blue,"0123456789+-",true,0);
 global.fontSpriteHitNumbersRed = font_add_sprite_ext(fnt_MKSS_UI_HitNumbers_Red,"0123456789+-",true,0);
 global.fontSpriteHitNumbersGreen = font_add_sprite_ext(fnt_MKSS_UI_HitNumbers_Green,"0123456789+-",true,0);
+global.fontSpriteHitNumbersYellow = font_add_sprite_ext(fnt_MKSS_UI_HitNumbers_Yellow,"0123456789+-",true,0);
 
 global.fontSpriteMedalNone = font_add_sprite_ext(fnt_MKSS_UI_Medal_None,"0123456789",true,0);
 global.fontSpriteMedalBronze = font_add_sprite_ext(fnt_MKSS_UI_Medal_Bronze,"0123456789",true,0);

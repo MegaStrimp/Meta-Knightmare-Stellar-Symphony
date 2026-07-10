@@ -60,6 +60,8 @@ function scr_MKSS_Player_MetaKnight_Setup()
 	parryAttackFlag = false;
 	canParryAttackTimer = -1;
 	canParryAttackTimerMax = 15;
+	afterimageTimer = -1;
+	afterimageTimerMax = 2;
 	#endregion
 	
 	#region Player Attributes
@@ -104,6 +106,7 @@ function scr_MKSS_Player_MetaKnight_Setup()
 	
 	#region Palette Variables
 	palSprite = global.MKSS_SprayPaintList[global.playerSprayPaint[playerNum]].sprite;
+	palIndex_MetaQuick = spr_MKSS_SprayPaint_Misc_MetaQuick;
 	palIndex_ParryCooldown = spr_MKSS_SprayPaint_Misc_ParryCooldown;
 	palIndex_MetaPoint = spr_MKSS_SprayPaint_Misc_MetaPoint;
 	#endregion

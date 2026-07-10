@@ -35,7 +35,20 @@ for (var i = 0; i < global.maxPlayers; i++)
 		#region Special Deflation
 		if (global.MKSS_SpecialDeflation)
 		{
-			global.MKSS_SpecialCurrent -= 1;
+			if (specialDeflationTimer != -1)
+			{
+				specialDeflationTimer = max(specialDeflationTimer - speedMultFinal,0);
+				if (specialDeflationTimer == 0)
+				{
+					global.MKSS_SpecialCurrent -= 1;
+					
+					specialDeflationTimer = -1;
+				}
+			}
+			else
+			{
+				specialDeflationTimer = specialDeflationTimerMax;
+			}
 			
 			if (global.MKSS_SpecialCurrent <= 0)
 			{

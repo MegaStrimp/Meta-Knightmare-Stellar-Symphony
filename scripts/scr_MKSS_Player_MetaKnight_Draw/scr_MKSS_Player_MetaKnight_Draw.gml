@@ -2,28 +2,7 @@
 
 function scr_MKSS_Player_MetaKnight_Draw()
 {
-	image_blend = c_white;
-	if (obj_MKSS_Control.playerMetaQuickTimer[playerNum] != -1) image_blend = c_orange;
-	
 	#region Draw Self
-	var palSpriteFinal = palSprite;
-	var palIndexFinal = palIndex;
-	if ((hurtState != hurtStates.none)
-	or (attackMakeFlash)
-	or (global.flag_MKSS_AbilitySwitch)) palIndexFinal = 2;
-	
-	if (metaPointFlashTimer != -1)
-	{
-		palSpriteFinal = palIndex_MetaPoint;
-		palIndexFinal = 1;
-	}
-	
-	if ((parryCooldownFlashTimer != -1) or (parryAttackBuffer))
-	{
-		palSpriteFinal = palIndex_ParryCooldown;
-		palIndexFinal = 1;
-	}
-	
 	var hasStarryEyes = false;
 	
 	if (sprite_index != undefined)

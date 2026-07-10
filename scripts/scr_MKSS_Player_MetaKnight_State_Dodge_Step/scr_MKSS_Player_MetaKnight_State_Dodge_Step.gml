@@ -2,18 +2,16 @@
 
 function scr_MKSS_Player_MetaKnight_State_Dodge_Step()
 {
+	#region Variables
+	var hasShadowDodge = scr_MKSS_Player_CheckUpgrade(playerNum,"Base_ShadowDodge");
+	#endregion
+	
 	#region Setup
 	if (playerState_Setup)
 	{
-		var hasShadowDodge = scr_MKSS_Player_CheckUpgrade(playerNum,"Base_ShadowDodge");
-		
 		slideAccelTimer = floor(attackCancelTimer / 2);
 		dodgeEndTimer = 20;
 		attackMakeLightInvincible = hasShadowDodge;
-		
-		afterimageTimer = -1;
-		afterimageTimerMax = 2;
-		if (hasShadowDodge) afterimageTimer = afterimageTimerMax;
 		
 		playerState_Setup = false;
 	}
@@ -33,17 +31,10 @@ function scr_MKSS_Player_MetaKnight_State_Dodge_Step()
 		if (hurtState == hurtStates.hurt) dodgeEndTimer = 0;
 		#endregion
 		
-		#region Afterimage Timer
-		if (afterimageTimer != -1)
-		{
-			afterimageTimer = max(afterimageTimer - speedMultFinal,0);
-			if (afterimageTimer == 0)
-			{
-				scr_MKSS_ParticleSet_Afterimage();
-				
-				afterimageTimer = afterimageTimerMax;
-			}
-		}
+		#region Afterimage
+		var hasAfterimage = (hasShadowDodge);
+		
+		if ((afterimageTimer == -1) and (hasAfterimage)) afterimageTimer = afterimageTimerMax;
 		#endregion
 		
 		#region Slide Accel Timer

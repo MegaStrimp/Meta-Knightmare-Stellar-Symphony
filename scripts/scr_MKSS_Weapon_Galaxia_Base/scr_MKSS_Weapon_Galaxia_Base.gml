@@ -164,11 +164,15 @@ function scr_MKSS_Weapon_Galaxia_Base()
 			galaxia_Finisher_Timer = -1;
 		}
 		
-		if ((global.MKSS_SpecialCurrent == global.MKSS_SpecialTarget) and (input_check_pressed("Y",playerNum)))
+		if ((global.MKSS_SpecialCurrent == global.MKSS_SpecialTarget) and (!global.MKSS_SpecialDeflation) and (input_check_pressed("Y",playerNum)))
 		{
+			scr_PlaySfx(snd_MKSS_MetaHeal);
+			
+			scr_MKSS_UI_SpecialActionText_Create(spr_MKSS_UI_SpecialActionText_MetaHeal);
+			
 			global.MKSS_SpecialCurrent = 0;
 			
-			scr_MKSS_Player_Heal(playerNum,floor(global.playerMaxHp[playerNum] * .25));
+			scr_MKSS_Player_Heal(playerNum,floor(global.playerMaxHp[playerNum] * .25),true);
 		}
 	}
 	#endregion

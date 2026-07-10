@@ -19,9 +19,6 @@ function scr_MKSS_Player_MetaKnight_State_Normal_Step()
 		canFallHop = false;
 		fallHopJumped = false;
 		
-		afterimageTimer = -1;
-		afterimageTimerMax = 2;
-		
 		playerState_Setup = false;
 	}
 	#endregion
@@ -57,23 +54,10 @@ function scr_MKSS_Player_MetaKnight_State_Normal_Step()
 		}
 		#endregion
 		
-		#region Afterimage Timer
+		#region Afterimage
 		var hasAfterimage = ((isFlying) and (hasSonicWings));
 		
-		if (afterimageTimer != -1)
-		{
-			afterimageTimer = max(afterimageTimer - speedMultFinal,0);
-			if (afterimageTimer == 0)
-			{
-				scr_MKSS_ParticleSet_Afterimage();
-				
-				afterimageTimer = -1;
-			}
-		}
-		else
-		{
-			if (hasAfterimage) afterimageTimer = afterimageTimerMax;
-		}
+		if ((afterimageTimer == -1) and (hasAfterimage)) afterimageTimer = afterimageTimerMax;
 		#endregion
 		
 		#region Parry

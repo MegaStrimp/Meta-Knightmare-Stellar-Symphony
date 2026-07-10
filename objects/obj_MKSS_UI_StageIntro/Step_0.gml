@@ -39,7 +39,6 @@ if (endTimer != -1)
 	endTimer = max(endTimer - speedMultFinal,0);
 	if (endTimer == 0)
 	{
-		global.hasHud = true;
 		global.canGamePause = true;
 		global.MKSS_StageIntroPlaying = false;
 		

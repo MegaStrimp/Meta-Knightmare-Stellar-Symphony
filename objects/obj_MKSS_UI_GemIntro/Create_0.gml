@@ -7,7 +7,6 @@ scr_Component_ButtonInputTimer_Setup(5);
 #endregion
 
 #region Initialize Variables
-global.hasHud = false;
 global.canGamePause = false;
 global.MKSS_StageIntroPlaying = true;
 

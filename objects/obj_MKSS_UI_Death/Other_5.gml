@@ -1,7 +1,6 @@
 ///@description Room End
 
 #region Variables
-global.hasHud = true;
 global.canGamePause = true;
 #endregion
 

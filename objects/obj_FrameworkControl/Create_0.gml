@@ -152,6 +152,7 @@ global.lastSelectedStage = "";
 global.pause = false;
 global.pauseScript = -1;
 global.pauseFinal = false;
+global.hasHudCheckScript = -1;
 global.savePreviousRoom = true;
 global.roomPrevious = rm_Startup;
 global.roomNext = rm_Startup;

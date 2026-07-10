@@ -104,6 +104,25 @@ function scr_MKSS_Player_MetaKnight_Step()
 		}
 		#endregion
 		#endregion
+		
+		#region Afterimage
+		var hasAfterimage = (obj_MKSS_Control.playerMetaQuickTimer[playerNum] != -1);
+		
+		if ((afterimageTimer == -1) and (hasAfterimage)) afterimageTimer = afterimageTimerMax;
+		
+		#region Afterimage Timer
+		if (afterimageTimer != -1)
+		{
+			afterimageTimer = max(afterimageTimer - speedMultFinal,0);
+			if (afterimageTimer == 0)
+			{
+				scr_MKSS_ParticleSet_Afterimage(,,,,,,,palSpriteFinal,palIndexFinal);
+				
+				afterimageTimer = -1;
+			}
+		}
+		#endregion
+		#endregion
 	}
 	
 	#region Parry Attack Buffer

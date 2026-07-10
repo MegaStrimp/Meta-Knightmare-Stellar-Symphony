@@ -16,6 +16,11 @@ if (!localPause)
 				
 				if (other.hp <= 0)
 				{
+					scr_MKSS_ObtainNotif(global.MKSS_NotifIDs[? "concentratedGemTutorial"]);
+					
+					scr_MKSS_ParticleSet_Explosion1(other.x,other.y)
+					
+					instance_destroy(other);
 				}
 			}
 		}

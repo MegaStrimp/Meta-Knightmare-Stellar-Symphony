@@ -1,16 +1,18 @@
 ///@description Draw End
 
 #region Variables
-var xx = camera_get_view_x(mainView) + (global.gameWidth / 2);
-var yy = camera_get_view_y(mainView) + (global.gameHeight / 2) + closeOffset;
+var xx = camera_get_view_x(mainView);
+var yy = camera_get_view_y(mainView);
+var xxWithOffset = xx + (global.gameWidth / 2);
+var yyWithOffset = yy + (global.gameHeight / 2) + closeOffset;
 var ySize = sprite_get_height(spr_MKSS_UI_NotifBox_Back) * (image_yscale / 2);
 var xSize = sprite_get_width(spr_MKSS_UI_NotifBox_Back) * (image_xscale / 2);
 
-var textX = xx - xSize + 12;
-var textY = yy - ySize + 12 + ((image[page] != undefined) * 50);
+var textX = xxWithOffset - xSize + 12;
+var textY = yyWithOffset - ySize + 12 + ((image[page] != undefined) * 50);
 
-var imageX = xx;
-var imageY = yy - ySize + 9;
+var imageX = xxWithOffset;
+var imageY = yyWithOffset - ySize + 9;
 #endregion
 
 #region Overlay
@@ -20,18 +22,18 @@ draw_set_alpha(1);
 #endregion
 
 #region Back
-draw_sprite_ext(spr_MKSS_UI_NotifBox_Back,0,xx,yy,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
+draw_sprite_ext(spr_MKSS_UI_NotifBox_Back,0,xxWithOffset,yyWithOffset,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
 #endregion
 
 #region Mask
 scr_DrawMask_Begin();
-scr_DrawMask_Mask(spr_MKSS_UI_NotifBox_Mask,0,xx,yy,image_xscale,image_yscale);
+scr_DrawMask_Mask(spr_MKSS_UI_NotifBox_Mask,0,xxWithOffset,yyWithOffset,image_xscale,image_yscale);
 
 #region Texture
 for (var i = -5; i < 6; i++)
 {
-	draw_sprite(spr_MKSS_UI_NotifBox_Texture,0,xx + textureX + (textureWidth * i),yy - ySize);
-	draw_sprite(spr_MKSS_UI_NotifBox_Texture,0,xx - textureX + (textureWidth * i),yy + ySize - textureHeight);
+	draw_sprite(spr_MKSS_UI_NotifBox_Texture,0,xxWithOffset + textureX + (textureWidth * i),yyWithOffset - ySize);
+	draw_sprite(spr_MKSS_UI_NotifBox_Texture,0,xxWithOffset - textureX + (textureWidth * i),yyWithOffset + ySize - textureHeight);
 }
 #endregion
 
@@ -64,7 +66,7 @@ if ((textTypist.get_state() == 1) or (text[page] == undefined))
 	var BIconFinal = "";
 	if (BIcon != undefined) BIconFinal = BIcon;
 	
-	if (nextText != undefined) scribble(string(AIconFinal) + " " + nextText).align(fa_right).draw(xx + xSize - 2,yy + ySize - 9);
-	if (backText != undefined) scribble(string(BIconFinal) + " " + backText).draw(xx - xSize + 2,yy + ySize - 9);
+	if (nextText != undefined) scribble(string(AIconFinal) + " " + nextText).align(fa_right).draw(xxWithOffset + xSize - 2,yyWithOffset + ySize - 9);
+	if (backText != undefined) scribble(string(BIconFinal) + " " + backText).draw(xxWithOffset - xSize + 2,yyWithOffset + ySize - 9);
 }
 #endregion

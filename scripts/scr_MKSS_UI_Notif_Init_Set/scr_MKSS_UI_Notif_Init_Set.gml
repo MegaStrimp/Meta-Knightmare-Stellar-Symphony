@@ -8,6 +8,44 @@ function scr_MKSS_UI_Notif_Init_Set()
 	#endregion
 	
 	#region Add Notifs Here
+	#region Special Bar Tutorial
+	var notifUnlockMethod = function()
+	{
+		return true;
+	};
+	
+	var text = ["You filled your Special Bar!",
+	"Every sword has a unique Special Action you can execute by filling the bar and pressing [YIcon]",
+	"Some may be better depending on the situation. Try them all!"];
+	
+	var image = [spr_MKSS_UI_NotifBox_Image_SpecialBarTutorial,
+	spr_MKSS_UI_NotifBox_Image_SpecialBarTutorial,
+	spr_MKSS_UI_NotifBox_Image_SpecialBarTutorial];
+	
+	scr_MKSS_UI_Notif_Init_Add("specialBarTutorial",text,notifUnlockMethod,true,image);
+	#endregion
+	
+	#region Concentrated Gem Tutorial
+	var notifUnlockMethod = function()
+	{
+		return true;
+	};
+	
+	var text = ["You can find Blue and Red Concentrated Gems on each stage. They are made from pure Stellar Delusions.",
+	"Blue Gems unlock Enemy Ordeals, where you can take on harder waves of enemies to earn Stage-based Sprays!",
+	"While Red Gems unlock Starless Bosses, stellar manifestations of the most vicious foes Meta Knight has ever faced!",
+	"Defeat them for a Spray based on their original forms!",
+	"The Bonus Stages are accessible from Battleship Halberd. Good luck!"];
+	
+	var image = [spr_MKSS_UI_NotifBox_Image_ConcentratedGem1,
+	spr_MKSS_UI_NotifBox_Image_ConcentratedGem2,
+	spr_MKSS_UI_NotifBox_Image_ConcentratedGem2,
+	spr_MKSS_UI_NotifBox_Image_ConcentratedGem2,
+	spr_MKSS_UI_NotifBox_Image_ConcentratedGem2];
+	
+	scr_MKSS_UI_Notif_Init_Add("concentratedGemTutorial",text,notifUnlockMethod,true,image);
+	#endregion
+	
 	#region Back To Halberd
 	var notifUnlockMethod = function()
 	{

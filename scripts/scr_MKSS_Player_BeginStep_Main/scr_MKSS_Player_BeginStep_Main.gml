@@ -250,4 +250,30 @@ function scr_MKSS_Player_BeginStep_Main()
 		doorEnterBuffer = false;
 	}
 	#endregion
+	
+	#region Palette
+	palSpriteFinal = palSprite;
+	palIndexFinal = palIndex;
+	if ((hurtState != hurtStates.none)
+	or (attackMakeFlash)
+	or (global.flag_MKSS_AbilitySwitch)) palIndexFinal = 2;
+	
+	if ((obj_MKSS_Control.playerMetaQuickTimer[playerNum] != -1) and ((global.MKSS_SpecialCurrent > 0) or ((global.currentTimePausable % 2) == 0)))
+	{
+		palSpriteFinal = palIndex_MetaQuick;
+		palIndexFinal = 1;
+	}
+	
+	if (metaPointFlashTimer != -1)
+	{
+		palSpriteFinal = palIndex_MetaPoint;
+		palIndexFinal = 1;
+	}
+	
+	if ((parryCooldownFlashTimer != -1) or (parryAttackBuffer))
+	{
+		palSpriteFinal = palIndex_ParryCooldown;
+		palIndexFinal = 1;
+	}
+	#endregion
 }

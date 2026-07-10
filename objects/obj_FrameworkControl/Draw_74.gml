@@ -3,7 +3,10 @@
 if ((global.shaders) and (!global.applicationSurfaceAutoDraw) and (global.screenPalette != -1)) pal_swap_set(global.screenPalette,global.screenPaletteIndex,false);
 
 #region Hud
-if (global.hasHud)
+var hasHudCheck = true;
+if (global.hasHudCheckScript != -1) hasHudCheck = script_execute(global.hasHudCheckScript);
+
+if ((global.hasHud) and (hasHudCheck))
 {
 	if (hudDrawGUI != -1) script_execute(hudDrawGUI);
 }

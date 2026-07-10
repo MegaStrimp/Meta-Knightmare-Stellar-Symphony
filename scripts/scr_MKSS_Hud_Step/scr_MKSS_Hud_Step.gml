@@ -32,6 +32,17 @@ function scr_MKSS_Hud_Step()
 		hud_DisplayedMetaPoints = lerp(hud_DisplayedMetaPoints,global.MKSS_PlayerMetaPoints[0],.2);
 		#endregion
 		
+		#region Special Bar Flash Timer
+		if (hud_SpecialBarFlashTimer != -1)
+		{
+			hud_SpecialBarFlashTimer = max(hud_SpecialBarFlashTimer - speedMultFinal,0);
+			if (hud_SpecialBarFlashTimer == 0)
+			{
+				hud_SpecialBarFlashTimer = -1;
+			}
+		}
+		#endregion
+		
 		if (global.inStage)
 		{
 			#region Medal Spin Timer
