@@ -4,61 +4,57 @@ function scr_MKSS_Attack_Nimbia_Kracklet_Step()
 {
 	if (!localPause)
 	{
+		#region Get Movement
+		function KrackletMovement()
+		{
+			var _dirX = choose(-1,0,1);
+			if (movementX <= movementLimit) _dirX = choose(0,1);
+			if (movementX >= room_width-movementLimit) _dirX = choose(0,-1);
+			var _dirY = choose(-1,0,1);
+			if (movementY <= movementLimit) _dirY = choose(0,1);
+			if (movementY >= room_height-movementLimit) _dirY = choose(0,-1);
+			if (instance_place(x,y,obj_Wall)) _dirY = -1;
+				
+			movementTargetX = irandom_range(movementRangeMin,movementRangeMax) * _dirX;
+			movementTargetY = irandom_range(movementRangeMin,movementRangeMax) * _dirY;
+			
+			eyeAngle = round(point_direction(0,0,movementTargetX,movementTargetY)/90);
+		}
+		#endregion
+		
 		#region Kracklet Movement
 		if (movementTimer != -1)
 		{
 			movementTimer = max(movementTimer - speedMultFinal,0);
 			if (movementTimer == 0)
 			{
-				var _dirX = choose(-1,0,1);
-				if (x == movementLimit) _dirX = choose(0,1);
-				if (x == room_width-movementLimit) _dirX = choose(0,-1);
-				var _dirY = choose(-1,0,1);
-				if (y == movementLimit) _dirY = choose(0,1);
-				if (y == room_height-movementLimit) _dirY = choose(0,-1);
-				if (instance_place(x,y,obj_Wall)) _dir = -1;
+				movementX = x+movementTargetX;
+				movementY = y+movementTargetY;
 				
-				x += irandom_range(movementRangeMin,movementRangeMax) * _dirX;
-				y += irandom_range(movementRangeMin,movementRangeMax) * _dirY;
-				
-				x = clamp(x,movementLimit,room_width-movementLimit);
-				y = clamp(y,movementLimit,room_height-movementLimit);
-				
-				var _dir = point_direction(xprevious,yprevious,x,y);
-				var _len = point_distance(xprevious,yprevious,x,y);
-				var _spdMax = 1;
-				
-				if (_len >= movementRangeMax/2)
-				{
-					repeat(8)
-					{
-						var _spd = -random_range(0,_spdMax);
-						var _angleOffset = irandom_range(-4,4);
-					
-						scr_MKSS_ParticleSet_NimbiaCloud(xprevious + irandom_range(-16,16),yprevious + irandom_range(-16,16),lengthdir_x(_spd,_dir + _angleOffset),lengthdir_y(_spd,_dir + _angleOffset),0);
-					}
-				}
-				
-				repeat(ceil(_len/3))
-				{
-					var _range = irandom_range(4,_len-4);
-					var _spd = -random_range(0,_spdMax);
-					var _angleOffset = irandom_range(-4,4);
-					
-					scr_MKSS_ParticleSet_NimbiaCloud(xprevious + lengthdir_x(_range,_dir) + irandom_range(-2,2),yprevious + lengthdir_y(_range,_dir) + irandom_range(-2,2),lengthdir_x(_spd,_dir + _angleOffset),lengthdir_y(_spd,_dir + _angleOffset),1);
-				}
+				movementX = clamp(movementX,movementLimit,room_width-movementLimit);
+				movementY = clamp(movementY,movementLimit,room_height-movementLimit);
 				
 				repeat(8)
 				{
+					var _spdMax = 1;
 					var _spd = -random_range(0,_spdMax);
-					var _angleOffset = irandom_range(-4,4);
+					var _angle = irandom_range(0,359);
 					
-					scr_MKSS_ParticleSet_NimbiaCloud(x + irandom_range(-16,16),y + irandom_range(-16,16),lengthdir_x(_spd,_dir + _angleOffset),lengthdir_y(_spd,_dir + _angleOffset),-1);
+					scr_MKSS_ParticleSet_NimbiaCloud(x + irandom_range(-16,16),y + irandom_range(-16,16),lengthdir_x(_spd,_angle),lengthdir_y(_spd,_angle),-1);
 				}
+				
+				KrackletMovement();
 				
 				movementDmgCooldown = movementDmgCooldownMax;
 				movementTimer = movementTimerMax + irandom_range(-movementTimerMaxAdd,movementTimerMaxAdd);
 			}
+		}
+		
+		if (movementX != -1) or (movementY != -1) 
+		{
+			scr_MoveTo(movementX,movementY,movementFrames*speedMultFinal);
+			
+			if (abs(hsp) > .5) or (abs(vsp) > .5) scr_MKSS_ParticleSet_NimbiaCloud(x + irandom_range(-2,2),y + irandom_range(-2,2),random_range(0,1)*-sign(hsp),random_range(0,1)*-sign(vsp),1);
 		}
 		#endregion
 		
@@ -108,9 +104,9 @@ function scr_MKSS_Attack_Nimbia_Kracklet_Step()
 					attackAIStep = scr_MKSS_Attack_Nimbia_KrackletNeedle_Step;
 					angle = _angle;
 					spd = 3;
-					image_angle = angle;
 					destroyOutsideRoom = true;
 					destroyAfterCollideWall = true;
+					image_index = i;
 				}
 				i++;
 			}
@@ -126,11 +122,25 @@ function scr_MKSS_Attack_Nimbia_Kracklet_Step()
 		}
 		#endregion
 		
-		#region Position		
-		hsp = lengthdir_x(spd,angle);
-		vsp = lengthdir_y(spd,angle);		
+		#region Position
+		if (!init)
+		{
+			hsp = lengthdir_x(spd,angle);
+			vsp = lengthdir_y(spd,angle);
+			spd = scr_Entity_Friction(spd,decel * speedMultFinal);
+			if (spd <= .1)
+			{
+				spd = 0;
+				
+				movementX = x;
+				movementY = y;
+				
+				KrackletMovement();
+				
+				init = true;
+			}
+		}
 		scr_Component_SetPosition(hsp,vsp);
-		spd = scr_Entity_Friction(spd,decel * speedMultFinal);
 		#endregion
 	}
 }
