@@ -1,5 +1,22 @@
 ///@description Main
 
+#region Selection
+var canSelect = true;
+if (targetRoom != -1) canSelect = false;
+
+if (canSelect)
+{
+	if (input_check_pressed("A",playerNum))
+	{
+		scr_PlaySfx(snd_MKSS_ButtonYes);
+		
+		scr_MKSS_ObtainNotif(global.MKSS_NotifIDs[? "concentratedGemTutorial"]);
+		
+		instance_destroy();
+	}
+}
+#endregion
+
 #region Alpha
 alpha = lerp(alpha,1,.2);
 #endregion

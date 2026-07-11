@@ -164,7 +164,6 @@ function scr_MKSS_Weapon_Galaxia_Base()
 			galaxia_Finisher_Timer = -1;
 		}
 		
-		global.MKSS_SpecialCurrent = global.MKSS_SpecialTarget
 		if ((global.MKSS_SpecialCurrent == global.MKSS_SpecialTarget) and (!global.MKSS_SpecialDeflation) and (input_check_pressed("Y",playerNum)))
 		{
 			scr_PlaySfx(snd_MKSS_MetaHeal);

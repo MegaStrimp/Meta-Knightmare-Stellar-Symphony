@@ -765,7 +765,7 @@
     {"name":"Objects","order":1,"path":"folders/Meta Knightmare Stellar Symphony/UI/Gem Intro/Objects.yy",},
     {"name":"Gem Obtained","order":18,"path":"folders/Meta Knightmare Stellar Symphony/UI/Gem Obtained.yy",},
     {"name":"Objects","order":2,"path":"folders/Meta Knightmare Stellar Symphony/UI/Gem Obtained/Objects.yy",},
-    {"name":"Sprites","order":1,"path":"folders/Meta Knightmare Stellar Symphony/UI/Gem Obtained/Sprites.yy",},
+    {"name":"Scripts","order":1,"path":"folders/Meta Knightmare Stellar Symphony/UI/Gem Obtained/Scripts.yy",},
     {"name":"Hit Numbers","order":14,"path":"folders/Meta Knightmare Stellar Symphony/UI/Hit Numbers.yy",},
     {"name":"Objects","order":2,"path":"folders/Meta Knightmare Stellar Symphony/UI/Hit Numbers/Objects.yy",},
     {"name":"Scripts","order":1,"path":"folders/Meta Knightmare Stellar Symphony/UI/Hit Numbers/Scripts.yy",},

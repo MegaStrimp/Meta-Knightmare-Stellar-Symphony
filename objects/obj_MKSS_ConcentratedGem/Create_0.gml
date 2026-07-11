@@ -10,4 +10,6 @@ knockbackLengthMax = 8;
 knockbackAngle = -1;
 
 hp = 7;
+
+gemPalette = spr_MKSS_UI_GemObtained_Gem_Palette_Blue;
 #endregion
