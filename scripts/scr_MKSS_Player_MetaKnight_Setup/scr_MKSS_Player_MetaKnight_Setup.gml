@@ -62,6 +62,16 @@ function scr_MKSS_Player_MetaKnight_Setup()
 	canParryAttackTimerMax = 15;
 	afterimageTimer = -1;
 	afterimageTimerMax = 2;
+	
+	metaHealParticleAmount = -1;
+	metaHealParticleAmountMax = 4;
+	metaHealParticleTimer = -1;
+	metaHealParticleTimerMax = 10;
+	metaHealSparkleTimer = -1;
+	metaHealSparkleTimerMax = 4;
+	
+	metaQuickSparkleTimer = -1;
+	metaQuickSparkleTimerMax = 4;
 	#endregion
 	
 	#region Player Attributes

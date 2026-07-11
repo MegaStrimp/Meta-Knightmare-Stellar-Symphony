@@ -2,6 +2,10 @@
 
 function scr_MKSS_Player_MetaKnight_Step()
 {
+	#region Variables
+	var inMetaQuick = obj_MKSS_Control.playerMetaQuickTimer[playerNum] != -1;
+	#endregion
+	
 	if (!localPause)
 	{
 		#region Change Ability
@@ -106,7 +110,7 @@ function scr_MKSS_Player_MetaKnight_Step()
 		#endregion
 		
 		#region Afterimage
-		var hasAfterimage = (obj_MKSS_Control.playerMetaQuickTimer[playerNum] != -1);
+		var hasAfterimage = (inMetaQuick);
 		
 		if ((afterimageTimer == -1) and (hasAfterimage)) afterimageTimer = afterimageTimerMax;
 		
@@ -119,6 +123,62 @@ function scr_MKSS_Player_MetaKnight_Step()
 				scr_MKSS_ParticleSet_Afterimage(,,,,,,,palSpriteFinal,palIndexFinal);
 				
 				afterimageTimer = -1;
+			}
+		}
+		#endregion
+		#endregion
+		
+		#region Meta Heal
+		if ((metaHealParticleAmount != -1) and (metaHealParticleTimer == -1))
+		{
+			metaHealParticleTimer = metaHealParticleTimerMax;
+			metaHealSparkleTimer = metaHealSparkleTimerMax;
+		}
+		
+		#region Meta Heal Particle Timer
+		if (metaHealParticleTimer != -1)
+		{
+			metaHealParticleTimer = max(metaHealParticleTimer - speedMultFinal,0);
+			if (metaHealParticleTimer == 0)
+			{
+				scr_MKSS_ParticleSet_MetaHeal(x,y + 8);
+				
+				metaHealParticleAmount += 1;
+				if (metaHealParticleAmount == metaHealParticleAmountMax) metaHealParticleAmount = -1;
+				
+				metaHealParticleTimer = -1;
+			}
+		}
+		#endregion
+		
+		#region Meta Heal Sparkle Timer
+		if (metaHealSparkleTimer != -1)
+		{
+			metaHealSparkleTimer = max(metaHealSparkleTimer - speedMultFinal,0);
+			if (metaHealSparkleTimer == 0)
+			{
+				scr_MKSS_ParticleSet_SpecialSparkle(x,y,spr_MKSS_Particle_SpecialSparkle_Yellow);
+				
+				metaHealSparkleTimer = -1;
+			}
+		}
+		#endregion
+		
+		#region Meta Quick
+		if ((inMetaQuick) and (metaQuickSparkleTimer == -1))
+		{
+			metaQuickSparkleTimer = metaQuickSparkleTimerMax;
+		}
+		
+		#region Meta Quick Sparkle Timer
+		if (metaQuickSparkleTimer != -1)
+		{
+			metaQuickSparkleTimer = max(metaQuickSparkleTimer - speedMultFinal,0);
+			if (metaQuickSparkleTimer == 0)
+			{
+				scr_MKSS_ParticleSet_SpecialSparkle(x,y,spr_MKSS_Particle_SpecialSparkle_Orange);
+				
+				metaQuickSparkleTimer = -1;
 			}
 		}
 		#endregion
