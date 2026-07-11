@@ -21,6 +21,7 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_AnimationEnd()
 		case spriteSet.sprSwordThrow1:
 		case spriteSet.sprSwordThrow2:
 		case spriteSet.sprKrackoForm:
+		case spriteSet.sprSwordForm:
 		image_index = image_number - 1;
 		break;
 		

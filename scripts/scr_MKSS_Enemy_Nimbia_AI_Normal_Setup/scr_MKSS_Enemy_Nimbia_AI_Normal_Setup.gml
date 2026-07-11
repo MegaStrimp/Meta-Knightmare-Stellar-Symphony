@@ -31,7 +31,7 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_Setup(targetIsBoss = true,targetPlayBos
 	
 	#region Phase 2
 	nimbia_Attack_KrackoForm = scr_MKSS_Enemy_Nimbia_AI_Normal_KrackoForm_Step;
-	nimbia_Attack_SwordForm = scr_MKSS_Enemy_Nimbia_AI_Normal_SlashCombo_Step;
+	nimbia_Attack_SwordForm = scr_MKSS_Enemy_Nimbia_AI_Normal_SwordForm_Step;
 	nimbia_Attack_RaijinForm = scr_MKSS_Enemy_Nimbia_AI_Normal_SlashCombo_Step;
 	nimbia_Attack_CloneBarrage = scr_MKSS_Enemy_Nimbia_AI_Normal_SlashCombo_Step;
 	nimbia_Attack_CloudTraps = scr_MKSS_Enemy_Nimbia_AI_Normal_SlashCombo_Step;
@@ -40,7 +40,7 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_Setup(targetIsBoss = true,targetPlayBos
 	#endregion
 	
 	#region Attack Order
-	ds_list_add(attackList,nimbia_Attack_KrackoForm);
+	ds_list_add(attackList,nimbia_Attack_SwordForm);
 	//ds_list_add(attackList,nimbia_Attack_SummonKracklets);
 	//ds_list_add(attackList,nimbia_Attack_SummonKracklets);
 	

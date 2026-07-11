@@ -563,6 +563,8 @@ function scr_MKSS_Enemy_Init_Set()
 		
 		sprKrackoForm: spr_MKSS_Enemy_Nimbia_Base_KrackoForm,
 		
+		sprSwordForm: spr_MKSS_Enemy_Nimbia_Base_SwordForm,
+		
 		maskIndex: spr_16x16Mask_MiddleOrigin
 	});
 	
