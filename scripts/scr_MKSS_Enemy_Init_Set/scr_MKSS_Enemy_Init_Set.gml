@@ -565,6 +565,7 @@ function scr_MKSS_Enemy_Init_Set()
 		
 		sprSwordForm: spr_MKSS_Enemy_Nimbia_Base_SwordForm,
 		
+		maskIndexDefault: spr_16x16Mask_MiddleOrigin,
 		maskIndex: spr_16x16Mask_MiddleOrigin
 	});
 	
