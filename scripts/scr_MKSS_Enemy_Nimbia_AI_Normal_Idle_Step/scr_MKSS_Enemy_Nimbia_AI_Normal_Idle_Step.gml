@@ -7,7 +7,7 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_Idle_Step()
 	{
 		if ((isBoss) and (isBossSetup))
 		{
-			scr_MKSS_Enemy_Miniboss_Setup(playBossTheme);
+			//scr_MKSS_Enemy_Miniboss_Setup();
 			scr_MKSS_MarkBoss(id);
 			scr_MKSS_Enemy_HealthbarFill_Setup(id);
 			

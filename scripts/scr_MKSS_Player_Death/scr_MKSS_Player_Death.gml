@@ -15,6 +15,12 @@ function scr_MKSS_Player_Death(targetPlayer)
 		
 		global.playerRespawn[playerNum] = true;
 		
+		global.MKSS_SpecialCurrent -= 1;
+		obj_MKSS_Control.specialDeflationTimer = -1;
+		obj_MKSS_Control.playerMetaQuickTimer[playerNum] = -1;
+		
+		scr_Player_CancelAttack(id,attackIndex);
+		
 		global.MKSS_DeathX = x;
 		global.MKSS_DeathY = y;
 		

@@ -114,7 +114,7 @@ if (!localPause)
 				break;
 				
 				case 8:
-				with (instance_create_layer(room_width + 88,152,"Enemies",obj_MKSS_Enemy_Nimbia))
+				with (instance_create_layer(256,152,"Enemies",obj_MKSS_Enemy_Nimbia))
 				{
 					scr_MKSS_Enemy_Nimbia_AI_Normal_Setup();
 					
@@ -149,8 +149,24 @@ if (!localPause)
 				
 				if (!bossSpawned)
 				{
+					with (instance_create_layer(256,152,"Enemies",obj_MKSS_Enemy_Nimbia))
+					{
+						dirX = -1;
+						image_xscale = dirX;
+						
+						scr_MKSS_Enemy_Nimbia_AI_Normal_Setup();
+					}
+					
 					bossSpawned = true;
 				}
+				
+				with (obj_MKSS_Enemy_Nimbia)
+				{
+					scr_Enemy_ChangeState_Step(id,enemyAIStepIdle);
+					sprite_index = spriteSet.sprIdle;
+				}
+				
+				with (obj_MKSS_UI_Dialogue) instance_destroy();
 				
 				with (obj_Particle) instance_destroy();
 				
@@ -179,7 +195,7 @@ else
 	{
 		global.MKSS_CutsceneIsPaused = false;
 		
-		phase = 4;
+		phase = 10;
 		phaseTimer = 0;
 	}
 	#endregion

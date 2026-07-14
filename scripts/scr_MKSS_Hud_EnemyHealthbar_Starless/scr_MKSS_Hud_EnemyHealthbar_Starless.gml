@@ -22,9 +22,9 @@ function scr_MKSS_Hud_EnemyHealthbar_Starless(targetMarkedEnemyID,targetEnemyTit
 	var barLengthMiddle = floor((enemyHpMiddle / enemyMaxHp) * 66);
 	
 	draw_sprite(spr_MKSS_Hud_EnemyHealthbar_Starless_Back,0,global.gameWidth - 76 + shakeFinal,global.gameHeight - 11);
-	draw_sprite_stretched(spr_MKSS_Hud_EnemyHealthbar_Starless_Middle,0,global.gameWidth - 76 + shakeFinal,global.gameHeight - 11,barLengthMiddle,6);
+	draw_sprite_part(spr_MKSS_Hud_EnemyHealthbar_Starless_Middle,0,0,0,max(0,barLengthMiddle - 5),6,global.gameWidth - 76 + shakeFinal,global.gameHeight - 11);
 	draw_sprite(spr_MKSS_Hud_EnemyHealthbar_Starless_MiddleCorner,0,global.gameWidth - 76 - 5 + barLengthMiddle + shakeFinal,global.gameHeight - 11);
-	draw_sprite_stretched(spr_MKSS_Hud_EnemyHealthbar_Starless_Front,0,global.gameWidth - 76 + shakeFinal,global.gameHeight - 11,barLength,6);
+	draw_sprite_part(spr_MKSS_Hud_EnemyHealthbar_Starless_Front,0,0,0,max(0,barLength - 5),6,global.gameWidth - 76 + shakeFinal,global.gameHeight - 11);
 	draw_sprite(spr_MKSS_Hud_EnemyHealthbar_Starless_Corner,0,global.gameWidth - 76 - 5 + barLength + shakeFinal,global.gameHeight - 11);
 	draw_sprite(spr_MKSS_Hud_EnemyHealthbar_Starless_Border,0,global.gameWidth - 93 + shakeFinal,global.gameHeight - 20);
 	

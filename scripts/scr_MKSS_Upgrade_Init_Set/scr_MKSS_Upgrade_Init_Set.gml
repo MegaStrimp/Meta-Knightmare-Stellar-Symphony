@@ -25,7 +25,7 @@ function scr_MKSS_Upgrade_Init_Set()
 	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_ShadowDodge,"Shadow Dodge",["Dodge in shadow speed without taking hit from most attacks!\n\n[LTIcon]/[RTIcon] - [LTIcon]/[RTIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Base_ShadowDodge]);
 	
 	var targetMappedID_Base_SharpSlide = scr_MKSS_Upgrade_Init_Add("Base_SharpSlide",categoryID,120,122);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_SharpSlide,"Sharp Slide",["Pierce through your enemies while sliding with your sharp boots!\n\n[DownIcon] - [AIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Base_SharpSlide]);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_SharpSlide,"Sharp Slide",["Pierce through your enemies while sliding with your sharp boots!\n\n[DownIcon] - [AIcon] (Hold)"],[spr_MKSS_Menu_Upgrades_Notif_Base_SharpSlide]);
 	
 	var targetMappedID_Base_SonicWings = scr_MKSS_Upgrade_Init_Add("Base_SonicWings",categoryID,119,16);
 	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_SonicWings,"Sonic Wings",["Flap your bat wings faster and faster, allowing you to move faster and fly faster!\n\nMidair - [AIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Base_SonicWings]);

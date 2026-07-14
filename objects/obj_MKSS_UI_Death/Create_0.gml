@@ -21,6 +21,6 @@ if (decreasedMetaPoints != 0) pointTimer = pointTimerMax;
 
 pointFlagTimer = -1;
 
-exitTimerMax = 210;
+exitTimerMax = 210 - ((decreasedMetaPoints == 0) * 90);
 exitTimer = exitTimerMax;
 #endregion

@@ -5,7 +5,7 @@ function scr_MKSS_Attack_Buzzcut_Slash2_EnemyHitBehavior()
 	#region Recoil The Owner
 	with (owner)
 	{
-		hsp = -dirX * .4 * speedMultFinal;
+		hsp = -dirX * .8 * speedMultFinal;
 	}
 	#endregion
 }

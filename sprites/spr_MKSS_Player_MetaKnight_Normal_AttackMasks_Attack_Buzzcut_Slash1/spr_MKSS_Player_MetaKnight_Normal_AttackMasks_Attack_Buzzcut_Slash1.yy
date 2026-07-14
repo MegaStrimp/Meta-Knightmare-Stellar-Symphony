@@ -3,7 +3,7 @@
   "%Name":"spr_MKSS_Player_MetaKnight_Normal_AttackMasks_Attack_Buzzcut_Slash1",
   "bboxMode":0,
   "bbox_bottom":44,
-  "bbox_left":28,
+  "bbox_left":22,
   "bbox_right":79,
   "bbox_top":0,
   "collisionKind":1,

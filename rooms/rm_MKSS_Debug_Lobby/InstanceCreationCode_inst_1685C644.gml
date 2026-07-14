@@ -1,2 +1,2 @@
-targetRoom = rm_MKSS_Debug_Nimbia;
+targetRoom = rm_MKSS_RoyalReeve_Boss;
 text = "Nimbia";

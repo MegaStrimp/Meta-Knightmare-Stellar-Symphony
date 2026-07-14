@@ -17,17 +17,17 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"00d0c453-bea0-4dd2-a7b8-c30dbb4364e5","name":"00d0c453-bea0-4dd2-a7b8-c30dbb4364e5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"b318e6ac-c5ba-4140-ae88-a07899f5cb9b","name":"b318e6ac-c5ba-4140-ae88-a07899f5cb9b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"fb89b5d7-f616-44f7-8e5e-c4b809fa786c","name":"fb89b5d7-f616-44f7-8e5e-c4b809fa786c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"9d0deb7c-2948-40a4-a154-45fb3b58952f","name":"9d0deb7c-2948-40a4-a154-45fb3b58952f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d88ba095-20e8-40f0-9923-ff0014c42e75","name":"d88ba095-20e8-40f0-9923-ff0014c42e75","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"42c1f1f3-5d0b-4f1a-810e-1d74cab716e1","name":"42c1f1f3-5d0b-4f1a-810e-1d74cab716e1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e136e3a7-7a2e-4273-a654-02260b03d435","name":"e136e3a7-7a2e-4273-a654-02260b03d435","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"04601a2f-4d95-491b-a082-f203b7fc6e4e","name":"04601a2f-4d95-491b-a082-f203b7fc6e4e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":30,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"c4e5f496-468a-40fb-9c46-77a62f96d53a","blendMode":0,"displayName":"default","isLocked":false,"name":"c4e5f496-468a-40fb-9c46-77a62f96d53a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"ffecf045-c8a9-4159-a225-69d003a93ffc","blendMode":0,"displayName":"default","isLocked":false,"name":"ffecf045-c8a9-4159-a225-69d003a93ffc","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter",
   "nineSlice":null,
@@ -77,17 +77,17 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"00d0c453-bea0-4dd2-a7b8-c30dbb4364e5","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a8c12f7b-301f-4eaa-92b3-6753ce3807aa","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d88ba095-20e8-40f0-9923-ff0014c42e75","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9fe99bd3-a5fd-4ef2-ad18-0426122fb802","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b318e6ac-c5ba-4140-ae88-a07899f5cb9b","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6495592d-82b4-4258-9d4b-9c8353443da3","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"42c1f1f3-5d0b-4f1a-810e-1d74cab716e1","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"4993a14b-15b9-4ea4-ab14-7cb90132d6e6","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fb89b5d7-f616-44f7-8e5e-c4b809fa786c","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2c5d76e6-a8b0-49ad-b062-40cf6981198a","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e136e3a7-7a2e-4273-a654-02260b03d435","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a810a8bb-a808-475f-aeec-83fef7e302e4","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9d0deb7c-2948-40a4-a154-45fb3b58952f","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2c8527ba-e670-4d90-baff-cd77e17f48b8","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"04601a2f-4d95-491b-a082-f203b7fc6e4e","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter/spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"dcf1b5d4-bb0d-44c2-b5af-f046e38eb049","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

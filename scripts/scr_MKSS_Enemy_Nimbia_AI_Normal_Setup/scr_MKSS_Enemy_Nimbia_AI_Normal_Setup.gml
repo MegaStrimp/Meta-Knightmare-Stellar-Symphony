@@ -1,6 +1,6 @@
 ///@description MKSS - Enemy - Nimbia - AI - Normal - Setup
 
-function scr_MKSS_Enemy_Nimbia_AI_Normal_Setup(targetIsBoss = true,targetPlayBossTheme = true)
+function scr_MKSS_Enemy_Nimbia_AI_Normal_Setup(targetIsBoss = true)
 {
 	#region Physics Variables
 	jumpspeed = 3;
@@ -59,7 +59,6 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_Setup(targetIsBoss = true,targetPlayBos
 	attackTimerMax = 20;
 	
 	isBoss = targetIsBoss;
-	playBossTheme = targetPlayBossTheme;
 	#endregion
 	
 	#region Attack Variables
@@ -74,7 +73,7 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_Setup(targetIsBoss = true,targetPlayBos
 	#region AI Scripts
 	enemyAICleanUp = scr_MKSS_Enemy_Nimbia_AI_Normal_CleanUp;
 	enemyAIStepIdle = scr_MKSS_Enemy_Nimbia_AI_Normal_Idle_Step;
-	enemyAIStep = enemyAIStepIdle
+	enemyAIStep = enemyAIStepIdle;
 	enemyAnimationEnd = scr_MKSS_Enemy_Nimbia_AI_Normal_AnimationEnd;
 	#endregion
 	

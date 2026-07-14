@@ -38,7 +38,7 @@ function scr_MKSS_Player_MetaKnight_Death_Step()
 			switch (deathState)
 			{
 				case 1:
-				scr_ChangeSprite(spriteSet.sprDeath);
+				scr_ChangeSprite(spriteSet.sprDeath,true);
 				scr_MKSS_ParticleSet_Death(x,y);
 				
 				vsp = -jumpspeedDeath * speedMultFinal;

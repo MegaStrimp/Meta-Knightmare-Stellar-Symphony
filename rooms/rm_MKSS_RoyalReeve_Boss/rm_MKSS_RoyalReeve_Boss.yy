@@ -9,6 +9,9 @@
     {"name":"inst_2EFDF536_1_3_2_2_1_1_1","path":"rooms/rm_MKSS_RoyalReeve_Boss/rm_MKSS_RoyalReeve_Boss.yy",},
     {"name":"inst_6DAE57FA1","path":"rooms/rm_MKSS_RoyalReeve_Boss/rm_MKSS_RoyalReeve_Boss.yy",},
     {"name":"inst_437B9455","path":"rooms/rm_MKSS_RoyalReeve_Boss/rm_MKSS_RoyalReeve_Boss.yy",},
+    {"name":"inst_BE8BCFD","path":"rooms/rm_MKSS_RoyalReeve_Boss/rm_MKSS_RoyalReeve_Boss.yy",},
+    {"name":"inst_537489A2","path":"rooms/rm_MKSS_RoyalReeve_Boss/rm_MKSS_RoyalReeve_Boss.yy",},
+    {"name":"inst_54C3AA93","path":"rooms/rm_MKSS_RoyalReeve_Boss/rm_MKSS_RoyalReeve_Boss.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -21,19 +24,25 @@
       ],"layers":[],"name":"TriggerBoxes","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Environment","depth":300,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Environment","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"BackgroundEnvironments","depth":400,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"BackgroundEnvironments","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRTileLayer":"","%Name":"Tiles","depth":500,"effectEnabled":true,"effectType":null,"gridX":6,"gridY":6,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":13,"SerialiseWidth":15,"TileCompressedData":[
-          -7,0,8,495,496,497,498,499,500,501,502,-7,0,7,559,560,561,562,563,564,565,-8,0,8,623,624,625,626,627,
-          628,629,630,-7,0,8,687,688,689,690,691,692,693,694,-7,0,8,751,752,753,754,755,756,757,758,-7,0,11,815,
-          816,817,818,819,820,821,822,2862,2863,2864,-4,0,11,879,880,881,882,883,884,885,886,2926,2927,2928,-3,
-          0,12,2929,943,944,945,946,947,948,949,950,2990,2991,2992,-3,0,69,2993,1007,1008,1009,1010,1011,1012,
-          1013,1014,3054,3055,3056,3251,3252,0,3057,1071,1008,1073,1074,1074,1077,1077,1078,2,3,4,5,3,4,5,3,4,
-          5,3,4,5,3,6,66,67,132,69,67,133,69,67,68,69,67,261,69,67,70,130,131,328,260,131,132,133,131,132,133,
-          131,132,328,67,134,
+    {"$GMRAssetLayer":"","%Name":"Assets","assets":[
+        {"$GMRSpriteGraphic":"v1","%Name":"graphic_DEA7254","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_DEA7254","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_MKSS_MockupNimbiaPlatform","path":"sprites/spr_MKSS_MockupNimbiaPlatform/spr_MKSS_MockupNimbiaPlatform.yy",},"x":-3.0,"y":144.0,},
+      ],"depth":500,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Assets","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRTileLayer":"","%Name":"Tiles","depth":600,"effectEnabled":true,"effectType":null,"gridX":6,"gridY":6,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":13,"SerialiseWidth":21,"TileCompressedData":[
+          -13,0,8,495,496,497,498,499,500,501,502,-13,0,8,559,560,561,562,563,564,565,-2147483648,-13,0,8,623,
+          624,625,626,627,628,629,630,-13,0,8,687,688,689,690,691,692,693,694,-13,0,8,751,752,753,754,755,756,
+          757,758,-13,0,11,815,816,817,818,819,820,821,822,2862,2863,2864,-3,0,1,2929,-6,0,11,879,880,881,882,
+          883,884,885,886,2926,2927,2928,-3,0,4,2993,0,544,545,-3,0,34,943,944,945,946,947,948,949,950,2990,2991,
+          2992,544,545,0,3057,0,608,609,2866,2867,2868,1007,1008,1009,1010,1011,1012,1013,1014,3054,3055,3056,
+          608,609,-5,0,11,2930,2931,2932,1071,1008,1073,1074,1074,1077,1077,1078,-10,0,3,2994,2995,2996,-6,0,-2,
+          -2147483648,-10,0,3,3058,3059,3060,-6,0,-2,-2147483648,-19,0,-2,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_MKSS_RoyalReeve","path":"tilesets/ts_MKSS_RoyalReeve/ts_MKSS_RoyalReeve.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRInstanceLayer":"","%Name":"Collision","depth":600,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v4","%Name":"inst_6DAE57FA1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6DAE57FA1","objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":15.0,"scaleY":3.0,"x":0.0,"y":160.0,},
+    {"$GMRInstanceLayer":"","%Name":"Collision","depth":700,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v4","%Name":"inst_6DAE57FA1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6DAE57FA1","objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":21.0,"scaleY":3.0,"x":0.0,"y":160.0,},
+        {"$GMRInstance":"v4","%Name":"inst_BE8BCFD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_BE8BCFD","objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":11.0,"x":-16.0,"y":-16.0,},
+        {"$GMRInstance":"v4","%Name":"inst_537489A2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_537489A2","objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":21.0,"scaleY":1.0,"x":0.0,"y":-16.0,},
+        {"$GMRInstance":"v4","%Name":"inst_54C3AA93","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_54C3AA93","objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":11.0,"x":336.0,"y":-16.0,},
       ],"layers":[],"name":"Collision","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4289901234,"depth":700,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4289901234,"depth":800,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "name":"rm_MKSS_RoyalReeve_Boss",
   "parent":{
@@ -54,7 +63,7 @@
     "Height":208,
     "inheritRoomSettings":false,
     "persistent":false,
-    "Width":240,
+    "Width":336,
   },
   "sequenceId":null,
   "views":[

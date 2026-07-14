@@ -2,7 +2,25 @@
 
 function scr_MKSS_HasHudCheck()
 {
-	var hasHud = ((!instance_exists(obj_MKSS_UI_NotifBox)) and (!instance_exists(obj_MKSS_UI_StageIntro)) and (!instance_exists(obj_MKSS_UI_GemIntro)) and (!instance_exists(obj_MKSS_UI_StageClear)) and (!instance_exists(obj_MKSS_UI_Death)) and (!instance_exists(obj_MKSS_UI_GemObtained)));
+	var hasStageIntro = false;
+	with (obj_MKSS_UI_StageIntro)
+	{
+		if (destroyTimer == -1) hasStageIntro = true;
+	}
+	
+	var hasGemIntro = false;
+	with (obj_MKSS_UI_GemIntro)
+	{
+		if (destroyTimer == -1) hasGemIntro = true;
+	}
+	
+	var hasGemObtained = false;
+	with (obj_MKSS_UI_GemObtained)
+	{
+		if (destroyTimer == -1) hasGemObtained = true;
+	}
+	
+	var hasHud = ((!instance_exists(obj_MKSS_UI_NotifBox)) and (!hasStageIntro) and (!hasGemIntro) and (!instance_exists(obj_MKSS_UI_StageClear)) and (!instance_exists(obj_MKSS_UI_Death)) and (!hasGemObtained));
 	
 	return hasHud;
 }
