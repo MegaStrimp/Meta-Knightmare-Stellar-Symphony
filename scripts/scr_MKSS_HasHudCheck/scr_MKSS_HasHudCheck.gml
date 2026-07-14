@@ -20,7 +20,7 @@ function scr_MKSS_HasHudCheck()
 		if (destroyTimer == -1) hasGemObtained = true;
 	}
 	
-	var hasHud = ((!instance_exists(obj_MKSS_UI_NotifBox)) and (!hasStageIntro) and (!hasGemIntro) and (!instance_exists(obj_MKSS_UI_StageClear)) and (!instance_exists(obj_MKSS_UI_Death)) and (!hasGemObtained));
+	var hasHud = ((!global.gamePause) and (!instance_exists(obj_MKSS_UI_NotifBox)) and (!hasStageIntro) and (!hasGemIntro) and (!instance_exists(obj_MKSS_UI_StageClear)) and (!instance_exists(obj_MKSS_UI_Death)) and (!hasGemObtained));
 	
 	return hasHud;
 }

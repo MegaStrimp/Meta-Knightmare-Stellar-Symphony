@@ -47,6 +47,7 @@ if (endTimer != -1)
 		decalLengthTarget = -50;
 		stageTitleSpd = 8;
 		particleTimer = -1;
+		destroyTimer = 30;
 		
 		endTimer = -1;
 	}

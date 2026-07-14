@@ -2,8 +2,6 @@
 
 function scr_MKSS_Stage_Clear()
 {
-	global.hasHud = false;
-	
 	scr_MKSS_Music_Play(global.MKSS_MusicIDs[? "stageClear"]);
 	
 	with (obj_MKSS_UI_FadingText) instance_destroy();

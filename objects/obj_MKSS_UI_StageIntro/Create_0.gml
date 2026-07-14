@@ -31,5 +31,5 @@ particleTimer = 0;
 particleTimerMax = 10;
 endTimerMax = 240;
 endTimer = endTimerMax;
-destroyTimer = 480;
+destroyTimer = -1;
 #endregion

@@ -2,17 +2,21 @@
 
 function scr_MKSS_Player_MetaKnight_State_Galaxia_DownThrust_Step()
 {
+	#region Variables
+	var hasBlastPound = scr_MKSS_Player_CheckUpgrade(playerNum,"Galaxia_BlastPound");
+	#endregion
+	
 	#region Setup
 	if (playerState_Setup)
 	{
 		downThrustState = 0;
 		galaxia_DownThrust_StateTimer = galaxia_DownThrust_StateTimerMax;
 		galaxia_DownThrust_StateTimerMax = 20;
-		galaxia_DownThrust_EndTimer = 600;
+		galaxia_DownThrust_EndTimer = 300;
 		galaxia_DownThrust_EndTimerMax = 20;
 		
 		attackMakeLightInvincible = true;
-		hasImpactAttack = true; //STRIMPTODO IF HAS UPGRADE
+		hasImpactAttack = hasBlastPound;
 		
 		playerState_Setup = false;
 	}
@@ -34,7 +38,7 @@ function scr_MKSS_Player_MetaKnight_State_Galaxia_DownThrust_Step()
 		#endregion
 		
 		#region Grounded
-		if ((downThrustState == 1) and (grounded))
+		if ((downThrustState == 1) and ((grounded) or ((floor(vsp) == 0) and (galaxia_DownThrust_EndTimer < 240))))
 		{
 			var sfx = scr_PlaySfx(snd_MKSS_BlockBreak);
 			audio_sound_pitch(sfx,random_range(.85,1.15));

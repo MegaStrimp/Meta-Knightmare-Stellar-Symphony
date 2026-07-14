@@ -3,8 +3,6 @@
 function scr_MKSS_Pause_Step()
 {
 	#region Variables
-	global.hasHud = false;
-	
 	var xx = camera_get_view_x(mainView);
 	var yy = camera_get_view_y(mainView);
 	

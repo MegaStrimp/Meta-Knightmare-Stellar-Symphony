@@ -7,7 +7,6 @@ function scr_MKSS_Pause_Execute()
 		scr_PlaySfx(snd_MKSS_Pause);
 		
 		global.gamePause = true;
-		global.hasHud = false;
 		
 		MKSS_GamePause_Locked = false;
 		

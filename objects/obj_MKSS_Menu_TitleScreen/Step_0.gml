@@ -142,8 +142,11 @@ if (!global.pauseFinal)
 				var mappedButtonID = global.MKSS_ButtonIDs[? "github"];
 				scr_UI_Button_CreateFromList(mappedButtonID,161,miscButtonY,depth - 1,global.MKSS_ButtonList[mappedButtonID]);
 				
-				var mappedButtonID = global.MKSS_ButtonIDs[? "exit"];
-				scr_UI_Button_CreateFromList(mappedButtonID,203,miscButtonY,depth - 1,global.MKSS_ButtonList[mappedButtonID]);
+				if (!global.isOpera)
+				{
+					var mappedButtonID = global.MKSS_ButtonIDs[? "exit"];
+					scr_UI_Button_CreateFromList(mappedButtonID,203,miscButtonY,depth - 1,global.MKSS_ButtonList[mappedButtonID]);
+				}
 				
 				var targetButtonID = mappedButtonID_Save1;
 				switch (global.lastSelectedSave)
