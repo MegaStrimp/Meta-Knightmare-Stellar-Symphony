@@ -19,7 +19,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
 			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
-			text: "This motor oil is [shake]TIGHT![/shake]",
+			text: "This [" + MKSS_Base_Color_HalberdOil + "]motor oil[/color] is [shake]TIGHT![/shake]",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_OilWheelie,
 			drawScript: defaultDrawScript
@@ -67,7 +67,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
 			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
-			text: "This motor oil is [shake]TIGHT![/shake]",
+			text: "This [" + MKSS_Base_Color_HalberdOil + "]motor oil[/color] is [shake]TIGHT![/shake]",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_OilWheelie,
 			drawScript: defaultDrawScript
@@ -107,7 +107,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
 			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
-			text: "This motor oil is [shake]tight![/shake]...",
+			text: "This [" + MKSS_Base_Color_HalberdOil + "]motor oil[/color] is [shake]TIGHT![/shake]...",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_OilWheelie,
 			drawScript: defaultDrawScript
@@ -141,7 +141,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_PaintRoller_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_PaintRoller_Portrait_Talk,
-			text: "Oh hey boss! Sir! My lord?...",
+			text: "Oh hey boss![delay,200] Sir![delay,200] My lord?...",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
 			drawScript: defaultDrawScript
@@ -149,7 +149,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_PaintRoller_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_PaintRoller_Portrait_Talk,
-			text: "[shake]B-boss[/shake], yeah, yeah, I'm sticking with boss.",
+			text: "[shake]B-[delay,200]boss[/shake], yeah,[delay,500] yeah, I'm sticking with boss.",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
 			drawScript: defaultDrawScript
@@ -157,7 +157,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_PaintRoller_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_PaintRoller_Portrait_Talk,
-			text: "Hey-a, [c_red]pardon [c_green]the [c_blue]mess[/color], yeah? Not sure why Axie's [spr_MKSS_Dialogue_Icon_AxeKnight] mask is in a twist.",
+			text: "Hey-a, [c_red]pardon [c_lime]the [c_aqua]mess[/color], yeah?[delay,500] Not sure why Axie's [spr_MKSS_Dialogue_Icon_AxeKnight] mask is in a twist.",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
 			drawScript: defaultDrawScript
@@ -183,7 +183,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_JavelinKnight_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_JavelinKnight_Portrait_Talk,
-			text: "Hey master, good to see you back.",
+			text: "Hey master,[delay,200] good to see you back!",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
 			drawScript: defaultDrawScript
@@ -191,7 +191,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_JavelinKnight_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_JavelinKnight_Portrait_Talk,
-			text: "We ran out of target dummies so the Captain told me to always keep some junk ready for practice.",
+			text: "We ran out of target dummies so the [c_yellow]Captain[/color] told me to always keep some junk ready for practice.",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
 			drawScript: defaultDrawScript
@@ -199,7 +199,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_JavelinKnight_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_JavelinKnight_Portrait_Talk,
-			text: "Why not balloons, of course! Colorful and perfect to get a satisfying hit.",
+			text: "Why not balloons,[delay,200] of course![delay,500] [rainbow]Colorful[/rainbow] and perfect to get a satisfying hit.",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
 			drawScript: defaultDrawScript

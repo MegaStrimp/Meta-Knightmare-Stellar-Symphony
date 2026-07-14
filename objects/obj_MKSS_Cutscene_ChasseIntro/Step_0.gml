@@ -58,8 +58,8 @@ if (!localPause)
 				var bossTitle = instance_create_depth(0,0,0,obj_MKSS_UI_BossTitle);
 				with (bossTitle)
 				{
-					text = "[#" + MKSS_Base_Color_ChasseEmeeTitle + "]Chasse-Emee[/color]";
-					subtext = "[#" + MKSS_Base_Color_ChasseEmeeSubitle + "]Cruise Crustacean[/color]";
+					text = "[" + MKSS_Base_Color_ChasseEmeeTitle + "]Chasse-Emee[/color]";
+					subtext = "[" + MKSS_Base_Color_ChasseEmeeSubitle + "]Cruise Crustacean[/color]";
 					destroyTimer = 120;
 				}
 				

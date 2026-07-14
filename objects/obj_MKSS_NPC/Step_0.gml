@@ -40,6 +40,14 @@ if (!localPause)
 		}
 		#endregion
 	}
+	
+	#region Animation
+	image_speed = speedMultFinal;
+	#endregion
+}
+else
+{
+	image_speed = 0;
 }
 
 #region Button Input Timers

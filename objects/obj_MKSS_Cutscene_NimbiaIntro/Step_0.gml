@@ -134,8 +134,8 @@ if (!localPause)
 				var bossTitle = instance_create_depth(0,0,0,obj_MKSS_UI_BossTitle);
 				with (bossTitle)
 				{
-					text = "[#" + MKSS_Base_Color_NimbiaTitle + "]Nimbia[/color]";
-					subtext = "[#" + MKSS_Base_Color_NimbiaSubitle + "]Nimbus Warden[/color]";
+					text = "[" + MKSS_Base_Color_NimbiaTitle + "]Nimbia[/color]";
+					subtext = "[" + MKSS_Base_Color_NimbiaSubitle + "]Nimbus Warden[/color]";
 					destroyTimer = 120;
 				}
 				
