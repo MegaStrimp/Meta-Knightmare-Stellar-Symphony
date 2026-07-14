@@ -4,6 +4,9 @@ if (!localPause)
 {
 	#region Variables
 	var isObtained = ((targetStageID == -1) or (targetCollectibleID == -1) or (global.MKSS_StageList[targetStageID].collectibles[targetCollectibleID].isObtained));
+	
+	#region Ambience
+	if (!audio_is_playing(snd_MKSS_GemAmbience)) scr_PlaySfx(snd_MKSS_GemAmbience);
 	#endregion
 	
 	#region Get Hit
@@ -11,8 +14,10 @@ if (!localPause)
 	{
 		with (obj_Attack)
 		{
-			if ((place_meeting(x,y,other)) and (dmg != -1) and ((!isMultiHit) or ((isMultiHit) and (multiHitFlag))))
+			if ((place_meeting(x,y,other)) and (dmg != -1) and (((!isMultiHit) and (other.lastHitProjectile != id)) or ((isMultiHit) and (multiHitFlag))))
 			{
+				scr_PlaySfx(snd_MKSS_GemHit);
+				
 				other.lastHitProjectile = id;
 				other.knockbackLength = other.knockbackLengthMax;
 				other.knockbackAngle = knockbackAngle;
@@ -26,10 +31,14 @@ if (!localPause)
 					}
 					else
 					{
-						scr_MKSS_UI_GemObtained_Create(other.gemPalette);
+						scr_MKSS_UI_GemObtained_Create(other.gemTitle,other.unlockTitle,other.gemPalette);
 						
 						global.MKSS_StageList[other.targetStageID].collectibles[other.targetCollectibleID].isObtained = true;
 					}
+
+					scr_PlaySfx(snd_MKSS_GemBreak);
+					
+					if (audio_is_playing(snd_MKSS_GemAmbience)) audio_stop_sound(snd_MKSS_GemAmbience);
 					
 					scr_MKSS_ParticleSet_Explosion1(other.x,other.y)
 					
