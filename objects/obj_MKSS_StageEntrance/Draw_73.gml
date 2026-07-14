@@ -3,12 +3,12 @@
 if (isActive)
 {
 	#region Title
-	var color = "[#FFFFFF]";
+	var color = "[c_white]";
 	var offset = 0;
 	
 	if (isCompleted)
 	{
-		color = "[#FFD800]";
+		color = "[" + MKSS_Base_Color_Completion + "]";
 		draw_sprite(spr_MKSS_Menu_Common_Completion,0,camera_get_view_x(mainView) + (global.gameWidth / 2) - 8,camera_get_view_y(mainView) + 16);
 	}
 	

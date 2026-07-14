@@ -98,8 +98,8 @@ if (!localPause)
 				var bossTitle = instance_create_depth(0,0,depth,obj_MKSS_UI_BossTitle);
 				with (bossTitle)
 				{
-					text = "[#74B8FF]Starless Marx[/color]";
-					subtext = "[#235297]Celestines of the Twisted Jester[/color]";
+					text = "[#" + MKSS_Base_Color_StarlessTitle + "]Starless Marx[/color]";
+					subtext = "[#" + MKSS_Base_Color_StarlessSubitle + "]Celestines of the Twisted Jester[/color]";
 					destroyTimer = 180;
 				}
 				

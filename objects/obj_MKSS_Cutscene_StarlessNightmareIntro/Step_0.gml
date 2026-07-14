@@ -31,8 +31,8 @@ if (!localPause)
 				var bossTitle = instance_create_depth(0,0,0,obj_MKSS_UI_BossTitle);
 				with (bossTitle)
 				{
-					text = "[#74B8FF]Starless Nightmare[/color]";
-					subtext = "[#235297]King of Astral Dreams[/color]";
+					text = "[#" + MKSS_Base_Color_StarlessTitle + "]Starless Nightmare[/color]";
+					subtext = "[#" + MKSS_Base_Color_StarlessSubitle + "]King of Astral Dreams[/color]";
 					destroyTimer = 180;
 				}
 				

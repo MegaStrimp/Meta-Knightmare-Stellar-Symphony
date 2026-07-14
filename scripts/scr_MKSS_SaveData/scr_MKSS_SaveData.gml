@@ -108,7 +108,7 @@ function scr_MKSS_SaveData(file)
 		{
 			var currentCollectible = collectibles[j];
 			
-			ini_write_real("stageStatus",string(stageID) + "_Collectible_" + string(currentCollectible.ID) + "_IsObtained",currentCollectible.isObtained);
+			if (currentCollectible.isObtained) ini_write_real("stageStatus",string(stageID) + "_Collectible_" + string(currentCollectible.ID) + "_IsObtained",currentCollectible.isObtained);
 		}
 	}
 	#endregion

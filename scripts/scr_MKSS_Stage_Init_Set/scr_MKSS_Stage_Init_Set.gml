@@ -35,7 +35,7 @@ function scr_MKSS_Stage_Init_Set()
 	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_RoyalReeve);
 	
 	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeve_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeve_BlueGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeve_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
 	#endregion
 	
 	#region Living Loom
@@ -46,7 +46,7 @@ function scr_MKSS_Stage_Init_Set()
 	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	
 	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"livingLoom_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"livingLoom_BlueGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"livingLoom_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
 	#endregion
 	
 	#region Fission Factory
@@ -57,7 +57,7 @@ function scr_MKSS_Stage_Init_Set()
 	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	
 	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"fissionFactory_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"fissionFactory_BlueGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"fissionFactory_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
 	#endregion
 	
 	#region Ad Astra
@@ -68,7 +68,7 @@ function scr_MKSS_Stage_Init_Set()
 	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	
 	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstra_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstra_BlueGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstra_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
 	#endregion
 	
 	#region Gem Arena 1
@@ -159,7 +159,7 @@ function scr_MKSS_Stage_Init_Set()
 	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	
 	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"starryShoresEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"starryShoresEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"starryShoresEX_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
 	#endregion
 	
 	#region Royal Reeve EX
@@ -170,7 +170,7 @@ function scr_MKSS_Stage_Init_Set()
 	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	
 	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeveEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeveEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeveEX_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
 	#endregion
 	
 	#region Living Loom EX
@@ -181,7 +181,7 @@ function scr_MKSS_Stage_Init_Set()
 	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	
 	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"livingLoomEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"livingLoomEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"livingLoomEX_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
 	#endregion
 	
 	#region Fission Factory EX
@@ -192,7 +192,7 @@ function scr_MKSS_Stage_Init_Set()
 	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	
 	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"fissionFactoryEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"fissionFactoryEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"fissionFactoryEX_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
 	#endregion
 	
 	#region Ad Astra EX
@@ -203,7 +203,7 @@ function scr_MKSS_Stage_Init_Set()
 	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	
 	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstraEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstraEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstraEX_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
 	#endregion
 	
 	#region Gem Arena 1 EX

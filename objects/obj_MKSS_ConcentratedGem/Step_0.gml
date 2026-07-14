@@ -34,6 +34,8 @@ if (!localPause)
 						scr_MKSS_UI_GemObtained_Create(other.gemTitle,other.unlockTitle,other.gemPalette);
 						
 						global.MKSS_StageList[other.targetStageID].collectibles[other.targetCollectibleID].isObtained = true;
+						
+						if (targetUnlockedStageID != -1) global.MKSS_StageList[targetUnlockedStageID].isUnlocked = true;
 					}
 
 					scr_PlaySfx(snd_MKSS_GemBreak);

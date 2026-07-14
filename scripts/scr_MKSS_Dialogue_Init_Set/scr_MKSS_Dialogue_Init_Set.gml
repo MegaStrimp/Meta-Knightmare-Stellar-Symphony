@@ -27,7 +27,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
 			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
-			text: "If it weren't for your [#591F37]tasty benefits[/color], I wouldn't stand another second powering your airship.",
+			text: "If it weren't for your [" + MKSS_Base_Color_HalberdOil + "]tasty benefits[/color], I wouldn't stand another second powering your airship.",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_OilWheelie,
 			drawScript: defaultDrawScript
@@ -83,7 +83,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
 			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
-			text: "Everyone loves that catchphrase,[delay,200] and I love your [#591F37]oil[/color]!",
+			text: "Everyone loves that catchphrase,[delay,200] and I love your [" + MKSS_Base_Color_HalberdOil + "]oil[/color]!",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_OilWheelie,
 			drawScript: defaultDrawScript
@@ -91,7 +91,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
 			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
-			text: "A little [#591F37]grease[/color] to keep the wheels spinning!",
+			text: "A little [" + MKSS_Base_Color_HalberdOil + "]grease[/color] to keep the wheels spinning!",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_OilWheelie,
 			drawScript: defaultDrawScript

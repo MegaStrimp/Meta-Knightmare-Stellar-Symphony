@@ -1,2 +1,1 @@
-targetStageID = global.MKSS_StageIDs[? "starryShores"];
-targetCollectibleID = global.MKSS_CollectibleIDs[? "starryShores_BlueGem"];
+scr_MKSS_ConcentratedGem_Preset_StarryShoresBlue();

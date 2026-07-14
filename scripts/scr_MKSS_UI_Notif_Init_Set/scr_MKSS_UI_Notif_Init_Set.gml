@@ -237,7 +237,7 @@ function scr_MKSS_UI_Notif_Init_Set()
 		destroyTimer = destroyTimerMax;
 	};
 	
-	var text = ["[#FF0000]You're sure you won't regret this?[/color]"];
+	var text = ["[c_red]You're sure you won't regret this?[/color]"];
 	
 	scr_MKSS_UI_Notif_Init_Add("deleteSave3",text,notifUnlockMethod,false);
 	scr_MKSS_UI_Notif_Init_Add_Prompts("deleteSave3","Delete",notifNextScript,"Back",notifBackScript);

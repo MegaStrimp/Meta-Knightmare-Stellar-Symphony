@@ -160,5 +160,5 @@ text.draw(xx + global.gameWidth - 4 - text.get_width(),yy + 2 - hintOffset - not
 draw_sprite_ext(spr_MKSS_Hud_MetaPoints_Icon,0,xx + 2,yy + 18,1,1,0,#FFFFFF,1);
 
 var displayedPoints = string_replace_all(string_format(displayedMetaPoints,4,0)," ","0");
-scribble("[fnt_Advance_Small][#FFFFFF]x[fnt_Advance]" + string(displayedPoints) + "[/font][/color]").draw(xx + 14,yy + 24 + (2 * (metaPointsPurchaseTimer != -1)));
+scribble("[fnt_Advance_Small][c_white]x[fnt_Advance]" + string(displayedPoints) + "[/font][/color]").draw(xx + 14,yy + 24 + (2 * (metaPointsPurchaseTimer != -1)));
 #endregion

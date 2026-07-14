@@ -7,8 +7,8 @@ scr_Component_ButtonInputTimer_Setup(5);
 #region Initialize Variables
 playerNum = 0;
 
-gemTitle = "Starry Shores [#224CF5]Blue Gem[/color] Obtained!";
-unlockTitle = "[#0094FF]Starry Shores Enemy Ordeal[/color]";
+gemTitle = "";
+unlockTitle = "";
 
 alpha = 0;
 alphaTarget = 1;

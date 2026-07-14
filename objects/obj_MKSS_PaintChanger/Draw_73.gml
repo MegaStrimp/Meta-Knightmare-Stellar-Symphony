@@ -26,12 +26,12 @@ if (isActive)
 	#endregion
 	
 	#region Completion
-	var color = "[#FFFFFF]";
+	var color = "[c_white]";
 	var offset = 0;
 	
 	if (isCompleted)
 	{
-		color = "[#FFD800]";
+		color = "[" + MKSS_Base_Color_Completion + "]";
 		offset = 17;
 		draw_sprite(spr_MKSS_Menu_Common_Completion,0,camera_get_view_x(mainView) + 41,camera_get_view_y(mainView) + 28);
 	}

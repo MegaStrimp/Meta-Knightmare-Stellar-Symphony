@@ -5,11 +5,13 @@ speedMultFinal = 1;
 localPause = false;
 
 targetStageID = -1;
+targetUnlockedStageID = -1;
 targetCollectibleID = -1;
+
+gemPalette = spr_MKSS_UI_GemObtained_Gem_Palette_Blue;
 
 gemTitle = "";
 unlockTitle = "";
-gemPalette = spr_MKSS_UI_GemObtained_Gem_Palette_Blue;
 
 lastHitProjectile = -1;
 knockbackLength = 0;
