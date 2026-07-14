@@ -101,6 +101,15 @@ function scr_MKSS_SaveData(file)
 			ini_write_real("stageStatus",string(stageID) + "_EarnedHighScore",global.MKSS_StageList[i].earnedHighScore);
 			ini_write_real("stageStatus",string(stageID) + "_EarnedMedal",global.MKSS_StageList[i].earnedMedal);
 		}
+		
+		var collectibles = global.MKSS_StageList[i].collectibles;
+		
+		for (var j = 0; j < array_length(collectibles); j++)
+		{
+			var currentCollectible = collectibles[j];
+			
+			ini_write_real("stageStatus",string(stageID) + "_Collectible_" + string(currentCollectible.ID) + "_IsObtained",currentCollectible.isObtained);
+		}
 	}
 	#endregion
 	

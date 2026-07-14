@@ -96,6 +96,15 @@ function scr_MKSS_LoadData(file,importFile = false)
 		global.MKSS_StageList[i].isBeaten = ini_read_real("stageStatus",string(stageID) + "_IsBeaten",false);
 		global.MKSS_StageList[i].earnedHighScore = ini_read_real("stageStatus",string(stageID) + "_EarnedHighScore",0);
 		global.MKSS_StageList[i].earnedMedal = ini_read_real("stageStatus",string(stageID) + "_EarnedMedal",-1);
+		
+		var collectibles = global.MKSS_StageList[i].collectibles;
+		
+		for (var j = 0; j < array_length(collectibles); j++)
+		{
+			var currentCollectible = collectibles[j];
+			
+			global.MKSS_StageList[i].collectibles[j].isObtained = ini_read_real("stageStatus",string(stageID) + "_Collectible_" + string(currentCollectible.ID) + "_IsUnlocked",false);
+		}
 	}
 	#endregion
 	

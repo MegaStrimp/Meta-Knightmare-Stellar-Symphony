@@ -4,6 +4,9 @@
 speedMultFinal = 1;
 localPause = false;
 
+targetStageID = -1;
+targetCollectibleID = -1;
+
 lastHitProjectile = -1;
 knockbackLength = 0;
 knockbackLengthMax = 8;

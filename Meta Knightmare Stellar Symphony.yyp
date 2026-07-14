@@ -3466,6 +3466,7 @@
     {"id":{"name":"spr_MKSS_UI_Decal2","path":"sprites/spr_MKSS_UI_Decal2/spr_MKSS_UI_Decal2.yy",},},
     {"id":{"name":"spr_MKSS_UI_GemObtained_Gem_Palette_Blue","path":"sprites/spr_MKSS_UI_GemObtained_Gem_Palette_Blue/spr_MKSS_UI_GemObtained_Gem_Palette_Blue.yy",},},
     {"id":{"name":"spr_MKSS_UI_GemObtained_Gem_Palette_BlueEX","path":"sprites/spr_MKSS_UI_GemObtained_Gem_Palette_BlueEX/spr_MKSS_UI_GemObtained_Gem_Palette_BlueEX.yy",},},
+    {"id":{"name":"spr_MKSS_UI_GemObtained_Gem_Palette_Obtained","path":"sprites/spr_MKSS_UI_GemObtained_Gem_Palette_Obtained/spr_MKSS_UI_GemObtained_Gem_Palette_Obtained.yy",},},
     {"id":{"name":"spr_MKSS_UI_GemObtained_Gem_Palette_Red","path":"sprites/spr_MKSS_UI_GemObtained_Gem_Palette_Red/spr_MKSS_UI_GemObtained_Gem_Palette_Red.yy",},},
     {"id":{"name":"spr_MKSS_UI_GemObtained_Gem_Palette_RedEX","path":"sprites/spr_MKSS_UI_GemObtained_Gem_Palette_RedEX/spr_MKSS_UI_GemObtained_Gem_Palette_RedEX.yy",},},
     {"id":{"name":"spr_MKSS_UI_GemObtained_Gem","path":"sprites/spr_MKSS_UI_GemObtained_Gem/spr_MKSS_UI_GemObtained_Gem.yy",},},

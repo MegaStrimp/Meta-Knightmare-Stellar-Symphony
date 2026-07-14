@@ -2,6 +2,10 @@
 
 if (!localPause)
 {
+	#region Variables
+	var isObtained = ((targetStageID == -1) or (targetCollectibleID == -1) or (global.MKSS_StageList[targetStageID].collectibles[targetCollectibleID].isObtained));
+	#endregion
+	
 	#region Get Hit
 	if (hp > 0)
 	{
@@ -16,7 +20,16 @@ if (!localPause)
 				
 				if (other.hp <= 0)
 				{
-					scr_MKSS_UI_GemObtained_Create();
+					if (isObtained)
+					{
+						scr_MKSS_SpawnMetaPoint(50,other.x,other.y,other.depth - 1,owner,90);
+					}
+					else
+					{
+						scr_MKSS_UI_GemObtained_Create(other.gemPalette);
+						
+						global.MKSS_StageList[other.targetStageID].collectibles[other.targetCollectibleID].isObtained = true;
+					}
 					
 					scr_MKSS_ParticleSet_Explosion1(other.x,other.y)
 					
@@ -29,5 +42,14 @@ if (!localPause)
 	
 	#region Knockback
 	knockbackLength = lerp(knockbackLength,0,.1);
+	#endregion
+	
+	#region Animation
+	if (isObtained)
+	{
+		gemPalette = spr_MKSS_UI_GemObtained_Gem_Palette_Obtained;
+		
+		image_alpha = .5;
+	}
 	#endregion
 }
