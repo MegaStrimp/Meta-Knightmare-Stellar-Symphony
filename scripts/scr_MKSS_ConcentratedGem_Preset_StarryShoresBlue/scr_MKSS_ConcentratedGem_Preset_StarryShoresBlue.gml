@@ -1,9 +1,10 @@
 ///@description MKSS - Concentrated Gem - Preset - Starry Shores Blue
 
-function scr_MKSS_ConcentratedGem_Preset_StarryShoresBlue()
+function scr_MKSS_ConcentratedGem_Preset_StarryShoresBlue(targetX,targetY)
 {
 	scr_MKSS_ConcentratedGem_Create
 	(
+		targetX,targetY,
 		global.MKSS_StageIDs[? "starryShores"],
 		global.MKSS_StageIDs[? "gemArena1"],
 		global.MKSS_CollectibleIDs[? "starryShores_BlueGem"],

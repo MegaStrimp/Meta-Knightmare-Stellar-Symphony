@@ -1,9 +1,10 @@
 ///@description MKSS - Concentrated Gem - Preset - Ad Astra Red
 
-function scr_MKSS_ConcentratedGem_Preset_AdAstraRed()
+function scr_MKSS_ConcentratedGem_Preset_AdAstraRed(targetX,targetY)
 {
 	scr_MKSS_ConcentratedGem_Create
 	(
+		targetX,targetY,
 		global.MKSS_StageIDs[? "adAstra"],
 		global.MKSS_StageIDs[? "gemBoss5"],
 		global.MKSS_CollectibleIDs[? "adAstra_RedGem"],

@@ -1,1 +1,0 @@
-scr_MKSS_ConcentratedGem_Preset_StarryShoresBlue();

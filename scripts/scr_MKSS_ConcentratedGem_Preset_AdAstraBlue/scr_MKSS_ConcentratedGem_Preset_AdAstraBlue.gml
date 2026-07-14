@@ -1,9 +1,10 @@
 ///@description MKSS - Concentrated Gem - Preset - Ad Astra Blue
 
-function scr_MKSS_ConcentratedGem_Preset_AdAstraBlue()
+function scr_MKSS_ConcentratedGem_Preset_AdAstraBlue(targetX,targetY)
 {
 	scr_MKSS_ConcentratedGem_Create
 	(
+		targetX,targetY,
 		global.MKSS_StageIDs[? "adAstra"],
 		global.MKSS_StageIDs[? "gemArena5"],
 		global.MKSS_CollectibleIDs[? "adAstra_BlueGem"],

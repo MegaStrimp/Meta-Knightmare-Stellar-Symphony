@@ -1,9 +1,10 @@
 ///@description MKSS - Concentrated Gem - Preset - Fission Factory Red
 
-function scr_MKSS_ConcentratedGem_Preset_FissionFactoryRed()
+function scr_MKSS_ConcentratedGem_Preset_FissionFactoryRed(targetX,targetY)
 {
 	scr_MKSS_ConcentratedGem_Create
 	(
+		targetX,targetY,
 		global.MKSS_StageIDs[? "fissionFactory"],
 		global.MKSS_StageIDs[? "gemBoss4"],
 		global.MKSS_CollectibleIDs[? "fissionFactory_RedGem"],

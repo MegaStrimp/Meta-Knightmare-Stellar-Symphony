@@ -1,6 +1,6 @@
 ///@description MKSS - Concentrated Gem - Create
 
-function scr_MKSS_ConcentratedGem_Create(gemTargetStageID = -1,gemTargetUnlockedStageID = -1,gemTargetCollectibleID = -1,targetGemPalette = spr_MKSS_UI_GemObtained_Gem_Palette_Blue,targetGemTitle = "", targetUnlockTitle = "")
+function scr_MKSS_ConcentratedGem_Create(targetX,targetY,gemTargetStageID = -1,gemTargetUnlockedStageID = -1,gemTargetCollectibleID = -1,targetGemPalette = spr_MKSS_UI_GemObtained_Gem_Palette_Blue,targetGemTitle = "", targetUnlockTitle = "")
 {
 	//STRIMPTODO Make it so the gems fly to a target position like after killing a Sphere Doomer
 	

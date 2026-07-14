@@ -1,9 +1,10 @@
 ///@description MKSS - Concentrated Gem - Preset - Royal Reeve Red
 
-function scr_MKSS_ConcentratedGem_Preset_RoyalReeveRed()
+function scr_MKSS_ConcentratedGem_Preset_RoyalReeveRed(targetX,targetY)
 {
 	scr_MKSS_ConcentratedGem_Create
 	(
+		targetX,targetY,
 		global.MKSS_StageIDs[? "royalReeve"],
 		global.MKSS_StageIDs[? "gemBoss2"],
 		global.MKSS_CollectibleIDs[? "royalReeve_RedGem"],

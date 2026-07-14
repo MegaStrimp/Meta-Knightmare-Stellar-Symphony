@@ -1,9 +1,10 @@
 ///@description MKSS - Concentrated Gem - Preset - Fission Factory Blue
 
-function scr_MKSS_ConcentratedGem_Preset_FissionFactoryBlue()
+function scr_MKSS_ConcentratedGem_Preset_FissionFactoryBlue(targetX,targetY)
 {
 	scr_MKSS_ConcentratedGem_Create
 	(
+		targetX,targetY,
 		global.MKSS_StageIDs[? "fissionFactory"],
 		global.MKSS_StageIDs[? "gemArena4"],
 		global.MKSS_CollectibleIDs[? "fissionFactory_BlueGem"],
