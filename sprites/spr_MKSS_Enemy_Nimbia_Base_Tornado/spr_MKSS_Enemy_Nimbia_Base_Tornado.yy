@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_MachTornado",
+  "%Name":"spr_MKSS_Enemy_Nimbia_Base_Tornado",
   "bboxMode":2,
   "bbox_bottom":42,
   "bbox_left":6,
@@ -30,19 +30,19 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"f00ebad9-5725-45a7-bcc9-0c08b17c0c21","blendMode":0,"displayName":"default","isLocked":false,"name":"f00ebad9-5725-45a7-bcc9-0c08b17c0c21","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_MachTornado",
+  "name":"spr_MKSS_Enemy_Nimbia_Base_Tornado",
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Galaxia",
-    "path":"folders/Meta Knightmare Stellar Symphony/Player/Characters/Meta Knight/Sprites/Effects/Galaxia.yy",
+    "name":"Base",
+    "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Stage Bosses/Nimbia/Sprites/Base.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_MachTornado",
+    "%Name":"spr_MKSS_Enemy_Nimbia_Base_Tornado",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -66,7 +66,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_MachTornado",
+    "name":"spr_MKSS_Enemy_Nimbia_Base_Tornado",
     "playback":1,
     "playbackSpeed":24.0,
     "playbackSpeedType":0,
@@ -78,19 +78,19 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6d592553-1433-4462-ab26-78bf20928c92","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_MachTornado/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_MachTornado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6d592553-1433-4462-ab26-78bf20928c92","path":"sprites/spr_MKSS_Enemy_Nimbia_Base_Tornado/spr_MKSS_Enemy_Nimbia_Base_Tornado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"714f97c6-4144-4ad0-a79f-92326c14f29d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"016905b6-27f3-44cd-b9ce-e2b2c350b062","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_MachTornado/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_MachTornado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"016905b6-27f3-44cd-b9ce-e2b2c350b062","path":"sprites/spr_MKSS_Enemy_Nimbia_Base_Tornado/spr_MKSS_Enemy_Nimbia_Base_Tornado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"da956d58-5de7-46dc-806d-3c3057376036","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f8defa6c-cd97-462b-b377-63e193e394d3","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_MachTornado/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_MachTornado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f8defa6c-cd97-462b-b377-63e193e394d3","path":"sprites/spr_MKSS_Enemy_Nimbia_Base_Tornado/spr_MKSS_Enemy_Nimbia_Base_Tornado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"6ddbdbd8-cc8f-4068-a173-2d342e662344","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d29cc935-882b-4bd9-b29e-2f918e1c29fd","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_MachTornado/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_MachTornado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d29cc935-882b-4bd9-b29e-2f918e1c29fd","path":"sprites/spr_MKSS_Enemy_Nimbia_Base_Tornado/spr_MKSS_Enemy_Nimbia_Base_Tornado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"48f7a680-1c12-4364-84ba-dce1670bb29d","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"86888e66-b642-4e67-bc4c-623025f5f6c5","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_MachTornado/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_MachTornado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"86888e66-b642-4e67-bc4c-623025f5f6c5","path":"sprites/spr_MKSS_Enemy_Nimbia_Base_Tornado/spr_MKSS_Enemy_Nimbia_Base_Tornado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"cc6e24cc-bf05-4d83-80c2-368523603ac3","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

@@ -35,14 +35,14 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_Setup(targetIsBoss = true)
 	nimbia_Attack_RaijinForm = scr_MKSS_Enemy_Nimbia_AI_Normal_SlashCombo_Step;
 	nimbia_Attack_CloneBarrage = scr_MKSS_Enemy_Nimbia_AI_Normal_SlashCombo_Step;
 	nimbia_Attack_CloudTraps = scr_MKSS_Enemy_Nimbia_AI_Normal_SlashCombo_Step;
-	nimbia_Attack_TornadoAssault = scr_MKSS_Enemy_Nimbia_AI_Normal_SlashCombo_Step;
+	nimbia_Attack_TornadoAssault = scr_MKSS_Enemy_Nimbia_AI_Normal_TornadoAssault_Step;
 	#endregion
 	#endregion
 	
 	#region Attack Order
-	ds_list_add(attackList,nimbia_Attack_SwordForm);
-	//ds_list_add(attackList,nimbia_Attack_SummonKracklets);
-	//ds_list_add(attackList,nimbia_Attack_SummonKracklets);
+	ds_list_add(attackList,nimbia_Attack_TornadoAssault);
+	//ds_list_add(attackList,nimbia_Attack_TornadoAssault);
+	//ds_list_add(attackList,nimbia_Attack_TornadoAssault);
 	
 	ds_list_add(attackList,nimbia_Attack_SlashCombo);
 	ds_list_add(attackList,nimbia_Attack_TornadoThrow);
