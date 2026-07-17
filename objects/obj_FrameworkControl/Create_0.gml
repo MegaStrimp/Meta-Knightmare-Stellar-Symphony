@@ -57,6 +57,7 @@ playerNum = 0;
 global.gameTitle = "StarDream Framework";
 global.versionNumber = "1.0.0";
 global.savedVersionNumber = global.versionNumber;
+global.fullSaveLoaded = false;
 
 global.controlType = 0;
 

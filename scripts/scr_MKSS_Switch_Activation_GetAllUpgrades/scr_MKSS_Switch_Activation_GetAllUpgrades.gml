@@ -2,6 +2,10 @@
 
 function scr_MKSS_Switch_Activation_GetAllUpgrades()
 {
+	#region Variables
+	global.fullSaveLoaded = true;
+	#endregion
+	
 	for (var i = 0; i < ds_map_size(global.MKSS_UpgradeIDs); i++)
 	{
 		global.MKSS_UpgradeList[i].canBeUnlocked = true;

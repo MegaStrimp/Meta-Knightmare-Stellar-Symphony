@@ -2,6 +2,10 @@
 
 function scr_MKSS_Switch_Activation_GetFinishedWeapons()
 {
+	#region Variables
+	global.fullSaveLoaded = true;
+	#endregion
+	
 	for (var i = 0; i < 2; i++)
 	{
 		global.MKSS_WeaponList[i].isUnlocked = true;
