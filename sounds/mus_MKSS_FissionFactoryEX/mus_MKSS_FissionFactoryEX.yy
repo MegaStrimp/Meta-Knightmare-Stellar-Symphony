@@ -10,7 +10,7 @@
   "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":146.81023,
+  "duration":55.82823,
   "exportDir":"",
   "name":"mus_MKSS_FissionFactoryEX",
   "parent":{

@@ -76,7 +76,7 @@ if (!localPause)
 				global.canGamePause = true;
 			}
 			
-			if (endScript != -1) script_execute(endScript);
+			if (endScript != -1) script_execute_ext(endScript,endScriptArgs);
 			
 			instance_destroy();
 			

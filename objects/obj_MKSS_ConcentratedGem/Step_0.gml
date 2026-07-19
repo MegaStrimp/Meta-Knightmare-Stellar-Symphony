@@ -35,7 +35,7 @@ if (!localPause)
 						
 						global.MKSS_StageList[other.targetStageID].collectibles[other.targetCollectibleID].isObtained = true;
 						
-						if (targetUnlockedStageID != -1) global.MKSS_StageList[targetUnlockedStageID].isUnlocked = true;
+						if (other.targetUnlockedStageID != -1) global.MKSS_StageList[other.targetUnlockedStageID].isUnlocked = true;
 					}
 
 					scr_PlaySfx(snd_MKSS_GemBreak);

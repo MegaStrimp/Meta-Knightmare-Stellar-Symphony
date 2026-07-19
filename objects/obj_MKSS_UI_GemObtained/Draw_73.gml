@@ -27,7 +27,7 @@ if ((global.shaders) and (global.MKSS_CurrentDecalPalette != -1)) pal_swap_reset
 #endregion
 
 #region Text
-scribble("[fnt_Advance]"+ gemTitle + "\n\nYou Have Unlocked" + unlockTitle + "[/font]").wrap(200).draw(xx + 4 + textOffset,yy + 8);
+scribble("[fnt_Advance]"+ gemTitle + "\n\nYou Have Unlocked " + unlockTitle + "[/font]").wrap(200).draw(xx + 4 + textOffset,yy + 8);
 #endregion
 
 #region Button Hints

@@ -7,4 +7,5 @@ playerSpawnX = -1;
 playerSpawnY = -1;
 
 isTrackable = false;
+trackCheck = false;
 #endregion

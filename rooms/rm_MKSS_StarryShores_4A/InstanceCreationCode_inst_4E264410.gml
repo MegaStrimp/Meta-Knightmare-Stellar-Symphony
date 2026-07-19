@@ -1,28 +1,34 @@
 triggerScript = function()
 {
-	objectsToDestroyTemp[0] = instance_create_layer(544,240,"Collision",obj_Wall);
-	with (objectsToDestroyTemp[0]) image_yscale = 3;
-	objectsToDestroyTemp[1] = instance_create_layer(800,192,"Collision",obj_Wall);
-	with (objectsToDestroyTemp[1]) image_yscale = 6;
+	objectsToDestroyTemp[0] = instance_create_layer(128,0,"Collision",obj_Wall);
+	with (objectsToDestroyTemp[0]) image_yscale = 10;
 	
 	with (instance_create_depth(680,256,0,obj_MKSS_EnemyArena))
 	{
 		cameraSetsLimits = true;
 		objectsToDestroy = other.objectsToDestroyTemp;
+		endScript = scr_MKSS_EnemyArena_EndScript_SpawnGemPreset;
+		endScriptArgs = [scr_MKSS_ConcentratedGem_Preset_StarryShoresBlue,128 + floor((room_width - 128) / 2),floor(room_height / 2) - 32];
 		endTimerMax = 0;
 		
-		scr_Camera_SetLimits(544 + 16,800);
+		scr_Camera_SetLimits(128 + 16,room_width);
 		
-		scr_MKSS_EnemyArena_Add(704,280,obj_MKSS_Enemy_WaddleDee,scr_MKSS_Enemy_WaddleDee_AI_Walk_Setup,,,,-1);
-		scr_MKSS_EnemyArena_Add(760,280,obj_MKSS_Enemy_WaddleDee,scr_MKSS_Enemy_WaddleDee_AI_Walk_Setup,,-1,,-1);
+		scr_MKSS_EnemyArena_Add(208,32,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_Flop_Setup,,,,1);
+		scr_MKSS_EnemyArena_Add(400,32,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_Flop_Setup,,,,-1);
+		scr_MKSS_EnemyArena_Add(304,128,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Setup,,-1,,-1);
 		
-		scr_MKSS_EnemyArena_Add(736,280,obj_MKSS_Enemy_WaddleDee,scr_MKSS_Enemy_WaddleDee_AI_Walk_Setup,,,,-1);
-		scr_MKSS_EnemyArena_Add(752,232,obj_MKSS_Enemy_WaddleDee,scr_MKSS_Enemy_WaddleDee_AI_Angry_Setup,,-1,,-1);
+		scr_MKSS_EnemyArena_Add(320,32,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_Flop_Setup,,45,,-1);
+		scr_MKSS_EnemyArena_Add(264,64,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_Flop_Setup,,,,-1);
+		scr_MKSS_EnemyArena_Add(376,64,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_Flop_Setup,,90,,-1);
+		scr_MKSS_EnemyArena_Add(208,48,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_Flop_Setup,,,,-1);
+		scr_MKSS_EnemyArena_Add(432,48,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_Flop_Setup,,-1,,-1);
 		
-		scr_MKSS_EnemyArena_Add(584,240,obj_MKSS_Enemy_WaddleDee,scr_MKSS_Enemy_WaddleDee_AI_Angry_Setup);
-		scr_MKSS_EnemyArena_Add(624,264,obj_MKSS_Enemy_WaddleDee,scr_MKSS_Enemy_WaddleDee_AI_Angry_Setup,,-1);
-		
-		scr_MKSS_EnemyArena_Add(784,280,obj_MKSS_Enemy_GhostKnight,scr_MKSS_Enemy_GhostKnight_AI_WalkAndAttack_Setup,,-1,,-1);
+		scr_MKSS_EnemyArena_Add(328,88,obj_MKSS_Enemy_Trappy,scr_MKSS_Enemy_Trappy_AI_Throw_Setup,,45,,1);
+		scr_MKSS_EnemyArena_Add(232,144,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Setup,,45,,-1);
+		scr_MKSS_EnemyArena_Add(280,128,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Setup,,45,,-1);
+		scr_MKSS_EnemyArena_Add(328,144,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Setup,,45,,-1);
+		scr_MKSS_EnemyArena_Add(368,128,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Setup,,45,,-1);
+		scr_MKSS_EnemyArena_Add(416,144,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Setup,,-1,,-1);
 	}
 	
 	instance_destroy();

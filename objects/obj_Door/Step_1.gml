@@ -6,5 +6,10 @@ localPause = global.pauseFinal;
 #endregion
 
 #region Destroy If Tracked
-if (isTrackable) scr_StageEntityTracker_Check();
+if ((isTrackable) and (!trackCheck))
+{
+	scr_StageEntityTracker_Check();
+	
+	trackCheck = true;
+}
 #endregion

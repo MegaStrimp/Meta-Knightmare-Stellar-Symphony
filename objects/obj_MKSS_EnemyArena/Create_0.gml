@@ -14,6 +14,7 @@ cameraSetsLimits = false;
 arenaEnded = false;
 playEndSound = false;
 endScript = -1;
+endScriptArgs = [];
 
 activeTimer = 10;
 spawnTimer = -1;

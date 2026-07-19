@@ -3,7 +3,7 @@
 function scr_MKSS_RoomSetup_AdAstra()
 {
 	#region Music
-	//scr_MKSS_Music_Play(global.MKSS_MusicIDs[? "adAstra"]); STRIMPTODO
+	scr_MKSS_Music_Play(global.MKSS_MusicIDs[? "adAstra"]);
 	#endregion
 	
 	#region Background
