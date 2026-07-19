@@ -13,6 +13,8 @@ canBeHit = true;
 
 deathIndex = scr_MKSS_Wall_StarBlock_Death;
 
+isTrackable = true;
+
 metaPointsChance = 2;
 #endregion
 

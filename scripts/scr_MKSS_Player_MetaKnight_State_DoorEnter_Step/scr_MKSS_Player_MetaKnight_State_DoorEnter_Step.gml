@@ -5,6 +5,11 @@ function scr_MKSS_Player_MetaKnight_State_DoorEnter_Step()
 	#region Door Fade
 	if ((!doorFade) and (!instance_exists(obj_Transition)))
 	{
+		with (doorEntered)
+		{
+			if (isTrackable) scr_StageEntityTracker_Add();
+		}
+		
 		scr_GoToRoom_PlayerPosition(doorEntered.targetRoom,false,doorEntered.playerSpawnX,doorEntered.playerSpawnY);
 		doorFade = true;
 	}

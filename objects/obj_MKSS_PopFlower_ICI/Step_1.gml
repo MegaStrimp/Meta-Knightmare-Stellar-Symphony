@@ -5,6 +5,10 @@ speedMultFinal = global.speedMultGlobal * global.speedMultEnvironment * global.d
 localPause = global.pauseFinal;
 #endregion
 
+#region Destroy If Tracked
+scr_StageEntityTracker_Check();
+#endregion
+
 #region Shadow
 shadowAlphaTarget = 0;
 
@@ -58,6 +62,8 @@ if (!localPause)
 		image_index = 0;
 		
 		scr_MKSS_Score_Add(points);
+		
+		scr_StageEntityTracker_Add();
 		
 		if (activationScript != -1) script_execute(activationScript,targetOwner);
 	}

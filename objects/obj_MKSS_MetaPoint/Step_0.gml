@@ -72,6 +72,8 @@ if (!localPause)
 					
 					scr_MKSS_ParticleSet_MetaPointCollect(other.x,other.y,other.pointSize);
 					
+					scr_StageEntityTracker_Add(other);
+					
 					instance_destroy(other);
 				}
 			}

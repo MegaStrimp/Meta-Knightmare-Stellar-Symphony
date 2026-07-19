@@ -43,6 +43,6 @@ function scr_MKSS_Enemy_ChunkyDee_AI_Normal_Setup(targetIsBoss = true,targetPlay
 	#endregion
 	
 	#region Palette Variables
-	palSprite = spr_MKSS_Enemy_WaddleDee_Palette_Idle;
+	palSprite = spr_MKSS_Enemy_ChunkyDee_Palette_Normal;
 	#endregion
 }

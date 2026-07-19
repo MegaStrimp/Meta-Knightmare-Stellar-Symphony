@@ -12,6 +12,8 @@ if (!localPause)
 			
 			scr_MKSS_Player_Heal(playerNum,healthPointsFinal);
 			
+			scr_StageEntityTracker_Add(other);
+			
 			instance_destroy(other);
 		}
 	}

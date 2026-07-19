@@ -70,6 +70,8 @@ if (!localPause)
 	{
 		if (deathParticleIndex != -1) script_execute(deathParticleIndex,x + 8,y + 8);
 		if (deathIndex != -1) script_execute(deathIndex);
+		
+		if (isTrackable) scr_StageEntityTracker_Add();
 	
 		instance_destroy();
 	}

@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_MKSS_Enemy_Keke_Palette_Normal",
   "bboxMode":0,
-  "bbox_bottom":11,
+  "bbox_bottom":21,
   "bbox_left":0,
   "bbox_right":2,
   "bbox_top":0,
@@ -21,7 +21,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":12,
+  "height":22,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"c6e9ce46-50ca-44ee-b23f-b5d2c573a190","blendMode":0,"displayName":"default","isLocked":false,"name":"c6e9ce46-50ca-44ee-b23f-b5d2c573a190","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},

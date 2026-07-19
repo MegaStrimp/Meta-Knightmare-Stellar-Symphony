@@ -515,6 +515,32 @@ function scr_MKSS_Enemy_Init_Set()
 	});
 	#endregion
 	
+	#region Grand Wheelie
+	var targetMappedID = scr_MKSS_Enemy_Init_Add("grandWheelie","Grand Wheelie");
+	
+	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
+	{
+		sprIdle: spr_MKSS_Enemy_GrandWheelie_Base_Idle,
+		
+		//sprHurt1: spr_MKSS_Enemy_GrandWheelie_Base_Hurt1,
+		//sprHurt2: spr_MKSS_Enemy_GrandWheelie_Base_Hurt2,
+		
+	    //sprHurtList:
+		//[
+	    //    [
+		//		spr_MKSS_Enemy_GrandWheelie_Base_Hurt1,
+		//		1
+		//	],
+	    //    [
+		//		spr_MKSS_Enemy_GrandWheelie_Base_Hurt2,
+		//		1
+		//	]
+	    //],
+		
+		maskIndex: spr_16x16Mask_MiddleOrigin
+	});
+	#endregion
+	
 	#region Chasse-Emee
 	var targetMappedID = scr_MKSS_Enemy_Init_Add("chasseEmee","Chasse-Emee");
 	

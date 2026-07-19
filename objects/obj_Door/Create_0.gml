@@ -5,4 +5,6 @@ canBeEntered = true;
 targetRoom = rm_Startup;
 playerSpawnX = -1;
 playerSpawnY = -1;
+
+isTrackable = false;
 #endregion

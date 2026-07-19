@@ -9,6 +9,10 @@ localPause = global.pauseFinal;
 if ((enemyWallOwner != -1) and (!instance_exists(enemyWallOwner))) instance_destroy();
 #endregion
 
+#region Destroy If Tracked
+if (isTrackable) scr_StageEntityTracker_Check();
+#endregion
+
 #region Wall Setup
 if (wallSetup)
 {

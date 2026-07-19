@@ -43,7 +43,7 @@ function scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Swim_Step()
 			if (parryIndicator != -1) with (parryIndicator) instance_destroy();
 			
 			#region Revert Back
-			if ((knockbackTimer == -1) and (knockbackCheckTimer == -1) and (grounded)) knockbackTimer = knockbackTimerMax;
+			if ((knockbackTimer == -1) and (knockbackCheckTimer == -1) and ((grounded) or (inWater))) knockbackTimer = knockbackTimerMax;
 			#endregion
 			#endregion
 		}

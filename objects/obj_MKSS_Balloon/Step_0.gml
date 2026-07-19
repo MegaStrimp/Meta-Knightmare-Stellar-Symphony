@@ -39,6 +39,8 @@ if (!localPause)
 	{
 		scr_PlaySfx(snd_MKSS_EnemyHurt1);
 		
+		scr_StageEntityTracker_Add();
+		
 		isDestroyed = true;
 		if (activationScript != -1) script_execute(activationScript);
 	}
