@@ -1070,6 +1070,7 @@
     {"name":"rm_MKSS_IceCreamIsland_3","order":2,"path":"rooms/rm_MKSS_IceCreamIsland_3/rm_MKSS_IceCreamIsland_3.yy",},
     {"name":"rm_MKSS_IceCreamIsland_4","order":3,"path":"rooms/rm_MKSS_IceCreamIsland_4/rm_MKSS_IceCreamIsland_4.yy",},
     {"name":"rm_MKSS_RoyalReeve_2","order":1,"path":"rooms/rm_MKSS_RoyalReeve_2/rm_MKSS_RoyalReeve_2.yy",},
+    {"name":"rm_MKSS_RoyalReeve_3","order":3,"path":"rooms/rm_MKSS_RoyalReeve_3/rm_MKSS_RoyalReeve_3.yy",},
     {"name":"rm_MKSS_RoyalReeve_Boss","order":2,"path":"rooms/rm_MKSS_RoyalReeve_Boss/rm_MKSS_RoyalReeve_Boss.yy",},
     {"name":"rm_MKSS_Setpiece_TrappyBomb1","order":1,"path":"rooms/rm_MKSS_Setpiece_TrappyBomb1/rm_MKSS_Setpiece_TrappyBomb1.yy",},
     {"name":"rm_MKSS_StarryShores_10","order":11,"path":"rooms/rm_MKSS_StarryShores_10/rm_MKSS_StarryShores_10.yy",},

@@ -1,0 +1,1 @@
+targetRoom = rm_MKSS_RoyalReeve_2;

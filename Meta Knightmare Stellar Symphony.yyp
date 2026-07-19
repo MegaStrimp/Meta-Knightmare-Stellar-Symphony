@@ -1407,6 +1407,7 @@
     {"id":{"name":"rm_MKSS_Menu_TitleScreen","path":"rooms/rm_MKSS_Menu_TitleScreen/rm_MKSS_Menu_TitleScreen.yy",},},
     {"id":{"name":"rm_MKSS_RoyalReeve_1","path":"rooms/rm_MKSS_RoyalReeve_1/rm_MKSS_RoyalReeve_1.yy",},},
     {"id":{"name":"rm_MKSS_RoyalReeve_2","path":"rooms/rm_MKSS_RoyalReeve_2/rm_MKSS_RoyalReeve_2.yy",},},
+    {"id":{"name":"rm_MKSS_RoyalReeve_3","path":"rooms/rm_MKSS_RoyalReeve_3/rm_MKSS_RoyalReeve_3.yy",},},
     {"id":{"name":"rm_MKSS_RoyalReeve_Boss","path":"rooms/rm_MKSS_RoyalReeve_Boss/rm_MKSS_RoyalReeve_Boss.yy",},},
     {"id":{"name":"rm_MKSS_RoyalReeveEX_1","path":"rooms/rm_MKSS_RoyalReeveEX_1/rm_MKSS_RoyalReeveEX_1.yy",},},
     {"id":{"name":"rm_MKSS_Setpiece_TrappyBomb1","path":"rooms/rm_MKSS_Setpiece_TrappyBomb1/rm_MKSS_Setpiece_TrappyBomb1.yy",},},
@@ -3804,6 +3805,7 @@
     {"roomId":{"name":"rm_MKSS_BattleshipHalberd_TrainingRoom","path":"rooms/rm_MKSS_BattleshipHalberd_TrainingRoom/rm_MKSS_BattleshipHalberd_TrainingRoom.yy",},},
     {"roomId":{"name":"rm_MKSS_Debug_Nimbia","path":"rooms/rm_MKSS_Debug_Nimbia/rm_MKSS_Debug_Nimbia.yy",},},
     {"roomId":{"name":"rm_MKSS_Debug_GhostKnight","path":"rooms/rm_MKSS_Debug_GhostKnight/rm_MKSS_Debug_GhostKnight.yy",},},
+    {"roomId":{"name":"rm_MKSS_RoyalReeve_3","path":"rooms/rm_MKSS_RoyalReeve_3/rm_MKSS_RoyalReeve_3.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

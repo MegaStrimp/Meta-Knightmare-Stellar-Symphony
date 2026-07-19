@@ -24,7 +24,7 @@
   "option_windows_display_cursor":true,
   "option_windows_display_name":"StarDream Framework",
   "option_windows_enable_steam":false,
-  "option_windows_executable_name":"${project_name}.exe",
+  "option_windows_executable_name":"Meta Knightmare Stellar Symphony.exe",
   "option_windows_icon":"${options_dir}/windows/icons/icon.ico",
   "option_windows_installer_finished":"${options_dir}/windows/installer/finished.bmp",
   "option_windows_installer_header":"${options_dir}/windows/installer/header.bmp",
