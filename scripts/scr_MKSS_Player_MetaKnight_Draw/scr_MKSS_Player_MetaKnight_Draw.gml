@@ -63,6 +63,16 @@ function scr_MKSS_Player_MetaKnight_Draw()
 	}
 	#endregion
 	
+	#region Button Hints
+	var hasCounter = scr_MKSS_Player_CheckUpgrade(playerNum,"Base_Counter");
+	
+	if ((parryAttackBuffer) and (hasCounter))
+	{
+		var targetIcon = global.UI_IconBindings[? string(input_binding_get("B"))];
+		if (targetIcon != undefined) draw_sprite(targetIcon,0,x,y);
+	}
+	#endregion
+	
 	#region Tutorial Text
 	if (tutorialTextAlpha != 0)
 	{

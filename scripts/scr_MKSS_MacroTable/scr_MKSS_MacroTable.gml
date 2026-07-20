@@ -62,5 +62,6 @@ function scr_MKSS_MacroTable()
 	
 	#macro MKSS_Base_Color_HalberdOil "#591F37"
 	#macro MKSS_Base_Color_Completion "#FFD800"
+	#macro MKSS_Base_Color_Parry "#4EDB23"
 	#endregion
 }

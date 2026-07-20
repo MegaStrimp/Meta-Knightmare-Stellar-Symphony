@@ -1,2 +1,2 @@
-targetRoom = rm_MKSS_StarryShores_4A;
+targetRoom = rm_MKSS_StarryShores_BlueGem;
 isTrackable = true;
