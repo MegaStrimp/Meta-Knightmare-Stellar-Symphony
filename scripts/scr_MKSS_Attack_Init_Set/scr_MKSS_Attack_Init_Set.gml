@@ -52,8 +52,16 @@ function scr_MKSS_Attack_Init_Set()
 	scr_MKSS_Attack_Init_Add("rango_Jump",scr_MKSS_Attack_Execute_Rango_Jump);
 	#endregion
 	
+	#region Keke
+	scr_MKSS_Attack_Init_Add("keke_Throw");
+	#endregion
+	
 	#region Waddle Doo
 	scr_MKSS_Attack_Init_Add("WaddleDoo_Attack");
+	#endregion
+	
+	#region Wheelie
+	scr_MKSS_Attack_Init_Add("wheelie_Charge");
 	#endregion
 	
 	#region Chunky Dee

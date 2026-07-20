@@ -2,8 +2,6 @@
 
 function spr_MKSS_ParticleSet_BalloonExplode(parTargetX,parTargetY,parTargetExplodeSprite,parTargetPalSprite,parTargetPalIndex)
 {
-	var par = [];
-	
 	par[0] = instance_create_depth(parTargetX,parTargetY,depth,obj_Particle);
 	with (par[0])
 	{

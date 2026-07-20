@@ -64,6 +64,8 @@ deathTimerMax = 40;
 
 localFreezeFrameTimer = -1;
 
+attackIndex = -1;
+
 hitParticleIndex = -1;
 hitAttackParticleIndex = -1;
 deathParticleIndex = -1;

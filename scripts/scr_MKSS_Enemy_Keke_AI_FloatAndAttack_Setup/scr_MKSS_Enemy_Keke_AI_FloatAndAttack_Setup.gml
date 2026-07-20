@@ -1,6 +1,6 @@
-///@description MKSS - Enemy - Keke - AI - Float - Setup
+///@description MKSS - Enemy - Keke - AI - Float and Attack - Setup
 
-function scr_MKSS_Enemy_Keke_AI_Float_Setup()
+function scr_MKSS_Enemy_Keke_AI_FloatAndAttack_Setup()
 {
 	#region Component Setup
 	scr_Component_UpAndDown_Setup(.5,.075,45,45);
@@ -17,13 +17,14 @@ function scr_MKSS_Enemy_Keke_AI_Float_Setup()
 	#endregion
 	
 	#region Gameplay Variables
-	hp = MKSS_Base_EnemyHP_Fodder;
-	points = MKSS_Base_EnemyPoints_Fodder;
-	metaPointsOnDeath = MKSS_Base_EnemyMetaPoints_Fodder;
+	attackState = 0;
+	attackTimerMax = 30;
+	attackTimer = -1;
 	#endregion
 	
 	#region AI Scripts
-	enemyAIStep = scr_MKSS_Enemy_Keke_AI_Float_Step;
+	enemyAIStep = scr_MKSS_Enemy_Keke_AI_FloatAndAttack_Step;
+	enemyAnimationEnd = scr_MKSS_Enemy_Keke_AI_FloatAndAttack_AnimationEnd;
 	#endregion
 	
 	#region Visual Variables
@@ -31,6 +32,6 @@ function scr_MKSS_Enemy_Keke_AI_Float_Setup()
 	#endregion
 	
 	#region Palette Variables
-	palSprite = spr_MKSS_Enemy_Keke_Palette_Normal;
+	palSprite = spr_MKSS_Enemy_Keke_Palette_FloatAndAttack;
 	#endregion
 }

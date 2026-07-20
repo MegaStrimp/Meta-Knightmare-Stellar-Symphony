@@ -438,6 +438,33 @@ function scr_MKSS_Enemy_Init_Set()
 	});
 	#endregion
 	
+	#region Wheelie
+	var targetMappedID = scr_MKSS_Enemy_Init_Add("wheelie","Wheelie");
+	
+	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
+	{
+		sprWalk: spr_MKSS_Enemy_Wheelie_Base_Walk,
+		sprTurn: spr_MKSS_Enemy_Wheelie_Base_Turn,
+		
+		sprHurt1: spr_MKSS_Enemy_Wheelie_Base_Hurt1,
+		sprHurt2: spr_MKSS_Enemy_Wheelie_Base_Hurt2,
+		
+	    sprHurtList:
+		[
+	        [
+				spr_MKSS_Enemy_Wheelie_Base_Hurt1,
+				10
+			],
+	        [
+				spr_MKSS_Enemy_Wheelie_Base_Hurt2,
+				10
+			]
+	    ],
+		
+		maskIndex: spr_16x16Mask_MiddleOrigin
+	});
+	#endregion
+	
 	#region Chunky Dee
 	var targetMappedID = scr_MKSS_Enemy_Init_Add("chunkyDee","Chunky Dee");
 	
