@@ -618,6 +618,8 @@ function scr_MKSS_Enemy_Init_Set()
 		
 		sprSwordForm: spr_MKSS_Enemy_Nimbia_Base_SwordForm,
 		
+		sprRaijinForm: spr_MKSS_Enemy_Nimbia_Base_RaijinForm,
+		
 		sprTornado: spr_MKSS_Enemy_Nimbia_Base_Tornado,
 		
 		maskIndexDefault: spr_16x16Mask_MiddleOrigin,
