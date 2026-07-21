@@ -30,8 +30,8 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_RaijinForm_Step()
 		#endregion
 		
 		#region Drum Rotate Timer
-		attackStateTimerMax[i] = 180;
-		attackStateTimer[i] = attackStateTimerMax[i];
+		attackStateTimerMax[i] = 140;
+		attackStateTimer[i] = attackStateTimerMax[i]+irandom_range(-20,20);
 		i++;
 		#endregion
 		
@@ -47,8 +47,38 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_RaijinForm_Step()
 		i++;
 		#endregion
 		
+		#region Final Drum Rotate Timer
+		attackStateTimerMax[i] = 140+irandom_range(-20,20);
+		attackStateTimer[i] = attackStateTimerMax[i];
+		i++;
+		#endregion
+		
+		#region Final Drum Explosion Timer
+		attackStateTimerMax[i] = 60;
+		attackStateTimer[i] = attackStateTimerMax[i];
+		i++;
+		#endregion
+		
+		#region Final Post-Explosion Timer
+		attackStateTimerMax[i] = 40;
+		attackStateTimer[i] = attackStateTimerMax[i];
+		i++;
+		#endregion
+		
+		#region Final Second Drum Explosion Timer
+		attackStateTimerMax[i] = 60;
+		attackStateTimer[i] = attackStateTimerMax[i];
+		i++;
+		#endregion
+		
+		#region Final Second Post-Explosion Timer
+		attackStateTimerMax[i] = 60;
+		attackStateTimer[i] = attackStateTimerMax[i];
+		i++;
+		#endregion
+		
 		#region Fall Timer
-		attackStateTimerMax[i] = 120;
+		attackStateTimerMax[i] = 90;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
@@ -78,8 +108,9 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_RaijinForm_Step()
 		drumOrbitLengthMax = 108;
 		drumOrbitLengthSpeed = 3;
 		drumOrbitLength = 0;
-		drumOrbitSpeedNormal = 4;
 		drumOrbitSpeedFast = 8;
+		drumOrbitSpeedNormal = 5;
+		drumOrbitSpeedSlow = 1;
 		drumOrbitSpeed = drumOrbitSpeedNormal;
 		drumOrbitDir = choose(-1,1);
 		
@@ -226,7 +257,7 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_RaijinForm_Step()
 					}
 				}
 				
-				attackStateTimer[attackState] = attackStateTimerMax[attackState];
+				attackStateTimer[attackState] = attackStateTimerMax[attackState]+irandom_range(-20,20);
 				attackState++;
 			}
 			break;
@@ -289,8 +320,52 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_RaijinForm_Step()
 			case 4:
 			if (attackStateTimer[attackState] == -1)
 			{
-				//explosionAmount--;
-				if (explosionAmount <= 0) attackState++;
+				explosionAmount--;
+				if (explosionAmount <= 0) 
+				{
+					drumOrbitSpeed = drumOrbitSpeedFast;
+					
+					drumPicker = !drumPicker;
+				
+					if (!drumPicker)
+					{
+						with (drums[0]) 
+						{
+							particleTimerMax = 3;
+							shake = 2;
+						}
+						with (drums[2]) 
+						{
+							particleTimerMax = 3;
+							shake = 2;
+						}
+						with (drums[4]) 
+						{
+							particleTimerMax = 3;
+							shake = 2;
+						}
+					}
+					else
+					{
+						with (drums[1]) 
+						{
+							particleTimerMax = 3;
+							shake = 2;
+						}
+						with (drums[3]) 
+						{
+							particleTimerMax = 3;
+							shake = 2;
+						}
+						with (drums[5]) 
+						{
+							particleTimerMax = 3;
+							shake = 2;
+						}
+					}
+				
+					attackState++;
+				}
 				else 
 				{
 					raijinSpeed = 0;
@@ -303,8 +378,218 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_RaijinForm_Step()
 			break;
 			#endregion
 			
-			#region Fall
+			#region Final Drum Rotate
+			case 5:
+			Nimbia_Raijin_Movement()
+			drumOrbitLength = min(drumOrbitLength + (drumOrbitLengthSpeed * speedMultFinal),drumOrbitLengthMax);
+			
+			if (attackStateTimer[attackState] == -1)
+			{
+				hsp = 0;
+				drumOrbitSpeed = drumOrbitSpeedSlow;
+				
+				attackStateTimer[attackState] = attackStateTimerMax[attackState];
+				attackState++;
+			}
+			break;
+			#endregion
+			
+			#region Final Drum Explosion
+			case 6:
+			if (attackStateTimer[attackState] == -1)
+			{
+				drumOrbitSpeed = 0;
+				
+				if (!drumPicker)
+				{
+					with (drums[0]) 
+					{
+						Nimbia_Raijin_DrumExplosion();
+						shake = 0;
+						particleTimerMax = -1;
+						destroyTimer = 8;
+					}
+					with (drums[2]) 
+					{
+						Nimbia_Raijin_DrumExplosion();
+						shake = 0;
+						particleTimerMax = -1;
+						destroyTimer = 8;
+					}
+					with (drums[4]) 
+					{
+						Nimbia_Raijin_DrumExplosion();
+						shake = 0;
+						particleTimerMax = -1;
+						destroyTimer = 8;
+					}
+				}
+				else
+				{
+					with (drums[1]) 
+					{
+						Nimbia_Raijin_DrumExplosion();
+						shake = 0;
+						particleTimerMax = -1;
+						destroyTimer = 8;
+					}
+					with (drums[3]) 
+					{
+						Nimbia_Raijin_DrumExplosion();
+						shake = 0;
+						particleTimerMax = -1;
+						destroyTimer = 8;
+					}
+					with (drums[5]) 
+					{
+						Nimbia_Raijin_DrumExplosion();
+						shake = 0;
+						particleTimerMax = -1;
+						destroyTimer = 8;
+					}
+				}
+				
+				attackState++;
+			}
+			break;
+			#endregion
+			
+			#region Final Post-Explosion
+			case 7:
+			if (attackStateTimer[attackState] == -1)
+			{
+				drumPicker = !drumPicker;
+				
+				if (!drumPicker)
+				{
+					with (drums[0]) 
+					{
+						particleTimerMax = 3;
+						shake = 2;
+					}
+					with (drums[2]) 
+					{
+						particleTimerMax = 3;
+						shake = 2;
+					}
+					with (drums[4]) 
+					{
+						particleTimerMax = 3;
+						shake = 2;
+					}
+				}
+				else
+				{
+					with (drums[1]) 
+					{
+						particleTimerMax = 3;
+						shake = 2;
+					}
+					with (drums[3]) 
+					{
+						particleTimerMax = 3;
+						shake = 2;
+					}
+					with (drums[5]) 
+					{
+						particleTimerMax = 3;
+						shake = 2;
+					}
+				}
+					
+				attackState++;
+			}
+			break;
+			#endregion
+			
+			#region Final Second Drum Explosion
 			case 8:
+			if (attackStateTimer[attackState] == -1)
+			{
+				if (!drumPicker)
+				{
+					with (drums[0]) 
+					{
+						Nimbia_Raijin_DrumExplosion();
+						shake = 0;
+						particleTimerMax = -1;
+						destroyTimer = 8;
+					}
+					with (drums[2]) 
+					{
+						Nimbia_Raijin_DrumExplosion();
+						shake = 0;
+						particleTimerMax = -1;
+						destroyTimer = 8;
+					}
+					with (drums[4]) 
+					{
+						Nimbia_Raijin_DrumExplosion();
+						shake = 0;
+						particleTimerMax = -1;
+						destroyTimer = 8;
+					}
+				}
+				else
+				{
+					with (drums[1]) 
+					{
+						Nimbia_Raijin_DrumExplosion();
+						shake = 0;
+						particleTimerMax = -1;
+						destroyTimer = 8;
+					}
+					with (drums[3]) 
+					{
+						Nimbia_Raijin_DrumExplosion();
+						shake = 0;
+						particleTimerMax = -1;
+						destroyTimer = 8;
+					}
+					with (drums[5]) 
+					{
+						Nimbia_Raijin_DrumExplosion();
+						shake = 0;
+						particleTimerMax = -1;
+						destroyTimer = 8;
+					}
+				}
+				
+				attackState++;
+			}
+			break;
+			#endregion
+			
+			#region Final Second Post-Explosion
+			case 9:
+			if (attackStateTimer[attackState] == -1)
+			{
+				repeat(32)
+				{
+					var _len = irandom_range(0,12);
+					var _dir = irandom_range(0,359);
+					var _spd = random_range(.5,2);
+					var _x = lengthdir_x(_len,_dir);
+					var _y = lengthdir_y(_len,_dir);
+					scr_MKSS_ParticleSet_NimbiaCloud(x+_x,y-8+_y,lengthdir_x(_spd,_dir),lengthdir_y(_spd,_dir),-2)
+				}
+				
+				sprite_index = spriteSet.sprDownThrust1;
+				mask_index = spriteSet.maskIndexDefault;
+				image_index = 0;
+				
+				dirX = scr_MKSS_Enemy_DirTarget();
+				image_alpha = 1;
+				vsp = -2;
+				
+				hasGravity = true;
+				
+				attackState++;
+			}
+			#endregion
+			
+			#region Fall
+			case 10:
 			if (attackStateTimer[attackState] == -1) or (instance_place(x,y+vsp+1,obj_Wall))
 			{
 				attackState++;
@@ -313,7 +598,7 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_RaijinForm_Step()
 			#endregion
 			
 			#region Finish Attack
-			case 9:
+			case 11:
 			if (attackStateTimer[attackState] == -1)
 			{
 				scr_Enemy_ChangeState_Step(id,enemyAIStepIdle);
