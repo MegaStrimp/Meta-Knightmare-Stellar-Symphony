@@ -33,24 +33,19 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_Setup(targetIsBoss = true)
 	nimbia_Attack_KrackoForm = scr_MKSS_Enemy_Nimbia_AI_Normal_KrackoForm_Step;
 	nimbia_Attack_SwordForm = scr_MKSS_Enemy_Nimbia_AI_Normal_SwordForm_Step;
 	nimbia_Attack_RaijinForm = scr_MKSS_Enemy_Nimbia_AI_Normal_RaijinForm_Step;
-	nimbia_Attack_CloneBarrage = scr_MKSS_Enemy_Nimbia_AI_Normal_SlashCombo_Step;
-	nimbia_Attack_CloudTraps = scr_MKSS_Enemy_Nimbia_AI_Normal_SlashCombo_Step;
+	//nimbia_Attack_CloneBarrage = scr_MKSS_Enemy_Nimbia_AI_Normal_SlashCombo_Step;
+	//nimbia_Attack_CloudTraps = scr_MKSS_Enemy_Nimbia_AI_Normal_SlashCombo_Step;
 	nimbia_Attack_TornadoAssault = scr_MKSS_Enemy_Nimbia_AI_Normal_TornadoAssault_Step;
 	#endregion
 	#endregion
 	
 	#region Attack Order
-	ds_list_add(attackList,nimbia_Attack_RaijinForm);
+	//ds_list_add(attackList,nimbia_Attack_RaijinForm);
 	//ds_list_add(attackList,nimbia_Attack_RaijinForm);
 	//ds_list_add(attackList,nimbia_Attack_RaijinForm);
 	
-	ds_list_add(attackList,nimbia_Attack_SlashCombo);
-	ds_list_add(attackList,nimbia_Attack_TornadoThrow);
-	ds_list_add(attackList,nimbia_Attack_LightningSlash);
-	ds_list_add(attackList,nimbia_Attack_TornadoThrowJump);
-	ds_list_add(attackList,nimbia_Attack_SlashStrike);
-	ds_list_add(attackList,nimbia_Attack_DecoyClouds);
-	ds_list_add(attackList,nimbia_Attack_SummonKracklets);
+	scr_MKSS_Enemy_Nimbia_Normal_AttackOrder_Phase1(false);
+	if (global.debug) and (keyboard_check(ord("2"))) scr_MKSS_Enemy_Nimbia_Normal_AttackOrder_Phase2(true);
 	#endregion
 	
 	attackListIndex = 0;
