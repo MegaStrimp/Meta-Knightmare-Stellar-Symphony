@@ -80,6 +80,27 @@ if (!localPause)
 				
 				with (obj_Particle) instance_destroy();
 				
+				if (!instance_exists(obj_MKSS_Enemy_ChasseEmee))
+				{
+					with (instance_create_layer(room_width + 88,152,"Enemies",obj_MKSS_Enemy_ChasseEmee))
+					{
+						scr_MKSS_Enemy_ChasseEmee_AI_Normal_Setup();
+					}
+				}
+				
+				with (obj_MKSS_Enemy_ChasseEmee)
+				{
+					x = 448;
+					y = 152;
+					
+					scr_Enemy_ChangeState_Step(id,enemyAIStepIdle);
+					
+					sprite_index = spriteSet.sprIdle;
+					
+					dirX = -1;
+					image_xscale = dirX;
+				}
+				
 				instance_destroy();
 				
 				phaseTimer = -1;
@@ -104,6 +125,8 @@ else
 	if (input_check_pressed("select",playerNum))
 	{
 		global.MKSS_CutsceneIsPaused = false;
+		
+		if (global.debug) with (obj_MKSS_UI_Warning) instance_destroy();
 		
 		phase = 4;
 		phaseTimer = 0;

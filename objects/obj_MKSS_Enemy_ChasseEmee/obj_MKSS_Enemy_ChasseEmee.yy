@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_MKSS_Enemy_ChasseEmee_Base_Intro",
-    "path":"sprites/spr_MKSS_Enemy_ChasseEmee_Base_Intro/spr_MKSS_Enemy_ChasseEmee_Base_Intro.yy",
+    "name":"spr_MKSS_Enemy_ChasseEmee_Base_Idle",
+    "path":"sprites/spr_MKSS_Enemy_ChasseEmee_Base_Idle/spr_MKSS_Enemy_ChasseEmee_Base_Idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

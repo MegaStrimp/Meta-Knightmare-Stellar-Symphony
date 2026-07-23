@@ -41,10 +41,10 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_Idle_Step()
 			attackTimer = max(attackTimer - speedMultFinal,0);
 			if (attackTimer == 0)
 			{
-				//attackIndex = ds_list_find_value(attackList,attackListIndex);
-				//attackListIndex = (attackListIndex + 1) % (ds_list_size(attackList));
+				attackIndex = ds_list_find_value(attackList,attackListIndex);
+				attackListIndex = (attackListIndex + 1) % (ds_list_size(attackList));
 				
-				//if (script_exists(attackIndex)) scr_Enemy_ChangeState_Step(id,attackIndex);
+				if (script_exists(attackIndex)) scr_Enemy_ChangeState_Step(id,attackIndex);
 				
 				attackTimer = -1;
 			}

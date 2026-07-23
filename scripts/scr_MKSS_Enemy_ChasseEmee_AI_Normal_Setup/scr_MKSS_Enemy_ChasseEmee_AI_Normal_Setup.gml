@@ -1,14 +1,14 @@
 ///@description MKSS - Enemy - Chasse-Emee - AI - Normal - Setup
 
-function scr_MKSS_Enemy_ChasseEmee_AI_Normal_Setup()
+function scr_MKSS_Enemy_ChasseEmee_AI_Normal_Setup(targetIsBoss = true)
 {
 	#region Physics Variables
 	movespeedIntro = 4;
 	
 	jumpspeed = 3;
 	
-	decel = .05;
-	decelSlash = .5;
+	decel = .1;
+	decelFast = .3;
 	decelIntro = .05;
 	decelStun = .15;
 	
@@ -22,14 +22,14 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_Setup()
 	
 	#region Attack Scripts
 	#region Phase 1
-	chasse_Attack_SlashCombo = scr_MKSS_Enemy_ChasseEmee_AI_Normal_SlashCombo_Step;
+	chasse_Attack_HeavyDash = scr_MKSS_Enemy_ChasseEmee_AI_Normal_HeavyDash_Step;
 	#endregion
 	#endregion
 	
 	#region Attack Order
-	//ds_list_add(attackList,chasse_Attack_SlashCombo);
-	//ds_list_add(attackList,chasse_Attack_SlashCombo);
-	//ds_list_add(attackList,chasse_Attack_SlashCombo);
+	//ds_list_add(attackList,chasse_Attack_HeavyDash);
+	//ds_list_add(attackList,chasse_Attack_HeavyDash);
+	//ds_list_add(attackList,chasse_Attack_HeavyDash);
 	
 	scr_MKSS_Enemy_ChasseEmee_Normal_AttackOrder_Phase1(false);
 	if (global.debug) and (keyboard_check(ord("2"))) scr_MKSS_Enemy_ChasseEmee_Normal_AttackOrder_Phase2(true);
@@ -54,6 +54,7 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_Setup()
 	enemyAIStepIdle = scr_MKSS_Enemy_ChasseEmee_AI_Normal_Idle_Step;
 	enemyAIStep = enemyAIStepIdle;
 	enemyAnimationEnd = scr_MKSS_Enemy_ChasseEmee_AI_Normal_AnimationEnd;
+	enemyDraw = scr_MKSS_Enemy_ChasseEmee_AI_Normal_Draw;
 	#endregion
 	
 	#region Palette Variables

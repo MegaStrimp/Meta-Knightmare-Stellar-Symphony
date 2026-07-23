@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_MKSS_Enemy_ChasseEmee_AI_Normal_SlashCombo_Step",
+  "%Name":"scr_MKSS_Enemy_ChasseEmee_AI_Normal_HeavyDash_Step",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_MKSS_Enemy_ChasseEmee_AI_Normal_SlashCombo_Step",
+  "name":"scr_MKSS_Enemy_ChasseEmee_AI_Normal_HeavyDash_Step",
   "parent":{
     "name":"Normal",
     "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Stage Bosses/Chasse-Emee/Scripts/AI/Normal.yy",

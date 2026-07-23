@@ -575,6 +575,14 @@ function scr_MKSS_Enemy_Init_Set()
 	{
 		sprIntro: spr_MKSS_Enemy_ChasseEmee_Base_Intro,
 		
+		sprIdle: spr_MKSS_Enemy_ChasseEmee_Base_Idle,
+		
+		sprDash1: spr_MKSS_Enemy_ChasseEmee_Base_Dash1,
+		
+		
+		sprShipNormal: spr_MKSS_Enemy_ChasseEmee_Base_BackShip,
+		
+		maskIndexDefault: spr_16x16Mask_MiddleOrigin,
 		maskIndex: spr_16x16Mask_MiddleOrigin
 	});
 	

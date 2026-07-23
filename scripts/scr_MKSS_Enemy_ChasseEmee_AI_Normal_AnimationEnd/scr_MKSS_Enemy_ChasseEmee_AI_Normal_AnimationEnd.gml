@@ -4,8 +4,7 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_AnimationEnd()
 {
 	switch (sprite_index)
 	{
-		case spriteSet.sprSlashPrepare1:
-		case spriteSet.sprSlash1:
+		case spriteSet.sprDash1:
 		image_index = image_number - 1;
 		break;
 	}
