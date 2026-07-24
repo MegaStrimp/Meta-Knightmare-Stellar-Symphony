@@ -6,7 +6,7 @@ function scr_MKSS_Dialogue_Init_Set()
 	global.MKSS_DialogueList = [];
 	global.MKSS_DialogueIDs = ds_map_create();
 	
-	var defaultTextSpeed = .5;
+	var defaultTextSpeed = .35;
 	var defaultTextSound = snd_MKSS_Dialogue_Default;
 	var defaultDrawScript = scr_MKSS_UI_Dialogue_Draw_Default;
 	#endregion
