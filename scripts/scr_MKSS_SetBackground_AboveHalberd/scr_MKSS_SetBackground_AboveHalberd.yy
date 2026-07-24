@@ -6,7 +6,7 @@
   "name":"scr_MKSS_SetBackground_AboveHalberd",
   "parent":{
     "name":"Scripts",
-    "path":"folders/Meta Knightmare Stellar Symphony/Backgrounds/Royal Reeve/Scripts.yy",
+    "path":"folders/Meta Knightmare Stellar Symphony/Backgrounds/Above Halberd/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

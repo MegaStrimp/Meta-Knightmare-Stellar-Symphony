@@ -11,6 +11,9 @@ function scr_MKSS_SetBackground_AboveHalberd()
 		backgroundIndex[arrayIndex] = layer_background_create(backgroundLayer[arrayIndex],bg_MKSS_AboveHalberd);
 		arrayIndex += 1;
 		backgroundLayer[arrayIndex] = layer_create(backgroundAnchor - (arrayIndex + 1));
+		instance_create_layer(0,0,backgroundLayer[arrayIndex],obj_MKSS_BgEnv_AboveHalberdThunder_Controller);
+		arrayIndex += 1;
+		backgroundLayer[arrayIndex] = layer_create(backgroundAnchor - (arrayIndex + 1));
 		backgroundIndex[arrayIndex] = layer_background_create(backgroundLayer[arrayIndex],bg_MKSS_Pit);
 		layer_background_htiled(backgroundIndex[arrayIndex],true);
 		layer_y(backgroundLayer[arrayIndex],room_height - 32);
