@@ -38,6 +38,14 @@ function scr_MKSS_Stage_Init_Set()
 	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeve_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
 	#endregion
 	
+	#region Above Halberd
+	var stageID = "aboveHalberd";
+	
+	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Above Halberd",[0,0,0,0],false);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
+	#endregion
+	
 	#region Living Loom
 	var stageID = "livingLoom";
 	
@@ -171,6 +179,14 @@ function scr_MKSS_Stage_Init_Set()
 	
 	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeveEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
 	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeveEX_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
+	#endregion
+	
+	#region Above Halberd
+	var stageID = "aboveHalberdEX";
+	
+	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Above Halberd EX",[0,0,0,0],false);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	#endregion
 	
 	#region Living Loom EX

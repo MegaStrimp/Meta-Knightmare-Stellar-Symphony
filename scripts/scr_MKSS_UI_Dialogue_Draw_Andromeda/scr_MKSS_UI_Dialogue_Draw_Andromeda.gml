@@ -11,8 +11,11 @@ function scr_MKSS_UI_Dialogue_Draw_Andromeda()
 	
 	#region Background
 	var xOffset = (floor(global.currentTimePausable / 5) + backgroundWidth) % backgroundWidth;
-	draw_sprite(spr_MKSS_Dialogue_Andromeda_Background,0,xx - xOffset,yy);
-	draw_sprite(spr_MKSS_Dialogue_Andromeda_Background,0,xx - xOffset + backgroundWidth,yy);
+	
+	for (var i = 0; i < 3; i++)
+	{
+		draw_sprite(spr_MKSS_Dialogue_Andromeda_Background,0,xx - xOffset + (backgroundWidth * i),yy);
+	}
 	#endregion
 	
 	#region Portrait

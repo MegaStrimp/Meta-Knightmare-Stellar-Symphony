@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_MKSS_NPC_Andromeda_Portrait_Idle",
   "bboxMode":0,
-  "bbox_bottom":45,
+  "bbox_bottom":47,
   "bbox_left":0,
-  "bbox_right":94,
+  "bbox_right":96,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -17,14 +17,17 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"3bd5cd80-d5af-4e6c-b823-3818f829e66b","name":"3bd5cd80-d5af-4e6c-b823-3818f829e66b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e3a9b505-63a0-40ba-ae90-efdf0967501c","name":"e3a9b505-63a0-40ba-ae90-efdf0967501c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6c5edcf7-2bba-43e7-83cb-328e62e63128","name":"6c5edcf7-2bba-43e7-83cb-328e62e63128","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3a159001-f5dc-474a-9ca3-ed96079f6129","name":"3a159001-f5dc-474a-9ca3-ed96079f6129","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e68c9583-04f1-4040-b70c-261beb46ae04","name":"e68c9583-04f1-4040-b70c-261beb46ae04","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":46,
+  "height":48,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"d00ae012-07d3-4513-a4b0-49a352249d14","blendMode":0,"displayName":"default","isLocked":false,"name":"d00ae012-07d3-4513-a4b0-49a352249d14","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"305b304b-9c15-4636-a34d-c20a79dc2a97","blendMode":0,"displayName":"default","isLocked":false,"name":"305b304b-9c15-4636-a34d-c20a79dc2a97","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_MKSS_NPC_Andromeda_Portrait_Idle",
   "nineSlice":null,
@@ -54,7 +57,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":4.0,
     "lockOrigin":true,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -64,7 +67,7 @@
     },
     "name":"spr_MKSS_NPC_Andromeda_Portrait_Idle",
     "playback":1,
-    "playbackSpeed":0.0,
+    "playbackSpeed":6.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -76,8 +79,17 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3bd5cd80-d5af-4e6c-b823-3818f829e66b","path":"sprites/spr_MKSS_NPC_Andromeda_Portrait_Idle/spr_MKSS_NPC_Andromeda_Portrait_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"fe3e801f-dd05-495d-8e77-27879546f4d2","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e3a9b505-63a0-40ba-ae90-efdf0967501c","path":"sprites/spr_MKSS_NPC_Andromeda_Portrait_Idle/spr_MKSS_NPC_Andromeda_Portrait_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"6c5236d4-8596-404d-965e-e727f670f0ed","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6c5edcf7-2bba-43e7-83cb-328e62e63128","path":"sprites/spr_MKSS_NPC_Andromeda_Portrait_Idle/spr_MKSS_NPC_Andromeda_Portrait_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9d356654-dd6a-4127-bd2e-f58ec8475f8a","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3a159001-f5dc-474a-9ca3-ed96079f6129","path":"sprites/spr_MKSS_NPC_Andromeda_Portrait_Idle/spr_MKSS_NPC_Andromeda_Portrait_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"46cee765-c080-4a03-af62-752f8e425d76","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e68c9583-04f1-4040-b70c-261beb46ae04","path":"sprites/spr_MKSS_NPC_Andromeda_Portrait_Idle/spr_MKSS_NPC_Andromeda_Portrait_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"6b6dd8bc-26ac-41e4-896e-6552ec795a05","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -93,5 +105,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":95,
+  "width":97,
 }

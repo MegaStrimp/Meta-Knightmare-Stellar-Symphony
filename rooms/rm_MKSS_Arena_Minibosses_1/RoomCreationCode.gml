@@ -15,4 +15,6 @@ with (instance_create_depth(0,0,0,obj_MKSS_EnemyArena))
 	//endScript = scr_MKSS_EnemyArena_EndScript_ArenaProgress; STRIMPTODO
 	
 	scr_MKSS_EnemyArena_Add(248,200,obj_MKSS_Enemy_ChunkyDee,scr_MKSS_Enemy_ChunkyDee_AI_Normal_Setup,[true,false],-1,120,-1);
+	
+	scr_MKSS_EnemyArena_Add(248,200,obj_MKSS_Enemy_GigantEdge,scr_MKSS_Enemy_GigantEdge_AI_Normal_Setup,[true,false],-1,120,-1);
 }

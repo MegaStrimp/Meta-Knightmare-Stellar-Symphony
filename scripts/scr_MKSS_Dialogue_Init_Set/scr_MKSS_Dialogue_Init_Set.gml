@@ -17,24 +17,24 @@ function scr_MKSS_Dialogue_Init_Set()
 	var dialogue = 
 	[
 		{
-			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
-			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
+			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait_Talk,
 			text: "This [" + MKSS_Base_Color_HalberdOil + "]motor oil[/color] is [shake]TIGHT![/shake]",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_OilWheelie,
 			drawScript: defaultDrawScript
 		},
 		{
-			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
-			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
+			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait_Talk,
 			text: "If it weren't for your [" + MKSS_Base_Color_HalberdOil + "]tasty benefits[/color], I wouldn't stand another second powering your airship.",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_OilWheelie,
 			drawScript: defaultDrawScript
 		},
 		{
-			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
-			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
+			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait_Talk,
 			text: "...[delay,500]Boss.",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_OilWheelie,
@@ -49,48 +49,48 @@ function scr_MKSS_Dialogue_Init_Set()
 	var dialogue = 
 	[
 		{
-			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
-			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
+			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait_Talk,
 			text: "You want me to say it again, boss?",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_OilWheelie,
 			drawScript: defaultDrawScript
 		},
 		{
-			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
-			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
+			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait_Talk,
 			text: "Well, if you insist- [wave]ahem...[/wave]",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_OilWheelie,
 			drawScript: defaultDrawScript
 		},
 		{
-			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
-			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
+			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait_Talk,
 			text: "This [" + MKSS_Base_Color_HalberdOil + "]motor oil[/color] is [shake]TIGHT![/shake]",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_OilWheelie,
 			drawScript: defaultDrawScript
 		},
 		{
-			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
-			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
+			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait_Talk,
 			text: "[shake]TIGHT TIGHT TIGHT![/shake]",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_OilWheelie,
 			drawScript: defaultDrawScript
 		},
 		{
-			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
-			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
+			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait_Talk,
 			text: "Everyone loves that catchphrase,[delay,200] and I love your [" + MKSS_Base_Color_HalberdOil + "]oil[/color]!",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_OilWheelie,
 			drawScript: defaultDrawScript
 		},
 		{
-			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
-			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
+			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait_Talk,
 			text: "A little [" + MKSS_Base_Color_HalberdOil + "]grease[/color] to keep the wheels spinning!",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_OilWheelie,
@@ -105,24 +105,24 @@ function scr_MKSS_Dialogue_Init_Set()
 	var dialogue = 
 	[
 		{
-			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
-			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
+			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait_Talk,
 			text: "This [" + MKSS_Base_Color_HalberdOil + "]motor oil[/color] is [shake]TIGHT![/shake]...",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_OilWheelie,
 			drawScript: defaultDrawScript
 		},
 		{
-			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
-			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
+			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait_Talk,
 			text: "Hey[delay,200] don't give me that look,[delay,200] it's my iconic catchphrase![delay,500] Everyone loves it!",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_OilWheelie,
 			drawScript: defaultDrawScript
 		},
 		{
-			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait,
-			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait,
+			portrait_Idle: spr_MKSS_NPC_OilWheelie_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_OilWheelie_Portrait_Talk,
 			text: "In fact, some people have even tried to STEAL IT and SAY IT ELSEWHERE![delay,500] They can't DO that![delay,500] It's MY catchphrase,[delay,500] MINE!",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_OilWheelie,
@@ -543,7 +543,167 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Idle,
-			text: "Excuse me sir, there must be la la la la la la la",
+			text: "Persistent creature",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Andromeda1,
+			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Idle,
+			text: "Never have I seen anyone withstanding my Stellar Delusions like this",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Andromeda1,
+			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Idle,
+			text: "You must be quite a warrior in your realm",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Andromeda1,
+			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_MetaKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_MetaKnight_Portrait_Talk,
+			text: "So[delay,200] it is you behind this mess.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_MetaKnight,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_MetaKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_MetaKnight_Portrait_Talk,
+			text: "I have defeated two of your guardians.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_MetaKnight,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_MetaKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_MetaKnight_Portrait_Talk,
+			text: "Give up.[delay,500] Leave Planet Popstar.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_MetaKnight,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Idle,
+			text: "They were sentinels given flesh by your subconscious.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Andromeda1,
+			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Idle,
+			text: "Each one represents a hotspot I have anchored to your planet.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Andromeda1,
+			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Idle,
+			text: "The closer you get to them,[delay,200] the more your mind begins to manifest fragments of itself.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Andromeda1,
+			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Idle,
+			text: "Fragments of your memories,[delay,500] pieced together to create something new.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Andromeda1,
+			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Idle,
+			text: "And I can see you have faced many dangers in your past.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Andromeda1,
+			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Idle,
+			text: "Opponents as[delay,200] honorable as you.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Andromeda1,
+			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Idle,
+			text: "A life of rebellion has made you stronger.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Andromeda1,
+			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Ominous,
+			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Ominous,
+			text: "It must be overwhelming to go through all of that again.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Andromeda1,
+			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_MetaKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_MetaKnight_Portrait_Talk,
+			text: "Your magic has done me more good than harm.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_MetaKnight,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_MetaKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_MetaKnight_Portrait_Talk,
+			text: "I will never submit.[delay,500] I can face my rivals again and again,[delay,200] for none of them have defeated me.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_MetaKnight,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_MetaKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_MetaKnight_Portrait_Talk,
+			text: "Not with this power.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_MetaKnight,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_MetaKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_MetaKnight_Portrait_Talk,
+			text: "You are right,[delay,500] I am growing stronger.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_MetaKnight,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Ominous,
+			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Ominous,
+			text: "I do not expect you to submit,[delay,200] not anymore.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Andromeda1,
+			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Ominous,
+			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Ominous,
+			text: "You are different.",
+			textSpeed: defaultTextSpeed,
+			textSound: snd_MKSS_Dialogue_Andromeda1,
+			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Scary,
+			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Scary,
+			text: "I will make sure to give you an honorable end.",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_Andromeda1,
 			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda

@@ -96,6 +96,9 @@ if (!localPause)
 				case 4:
 				audio_stop_sound(global.musicPlaying);
 				scr_MKSS_Music_Play(global.MKSS_MusicIDs[? "boss"]);
+				
+				musicPlayed = true;
+				
 				instance_create_depth(0,0,0,obj_MKSS_UI_Warning);
 				
 				phaseTimer = 290;
@@ -147,6 +150,13 @@ if (!localPause)
 				global.canGamePause = true;
 				global.MKSS_CutsceneStopMovement = false;
 				
+				if (!musicPlayed)
+				{
+					scr_MKSS_Music_Play(global.MKSS_MusicIDs[? "boss"]);
+					
+					musicPlayed = true;
+				}
+				
 				if (!bossSpawned)
 				{
 					with (instance_create_layer(256,152,"Enemies",obj_MKSS_Enemy_Nimbia))
@@ -167,6 +177,10 @@ if (!localPause)
 				}
 				
 				with (obj_MKSS_UI_Dialogue) instance_destroy();
+				
+				with (obj_MKSS_UI_Warning) instance_destroy();
+				
+				with (obj_MKSS_UI_BossTitle) instance_destroy();
 				
 				with (obj_Particle) instance_destroy();
 				

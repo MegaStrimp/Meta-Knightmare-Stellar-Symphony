@@ -13,6 +13,15 @@ draw_set_color(c_white);
 draw_set_alpha(1);
 #endregion
 
-#region Text
-scribble("[fnt_Advance_Small]" + subtext + "\n[fnt_Advance]" + text + "[/font]").align(fa_center).draw(xx + (global.gameWidth / 2),yy + (global.gameHeight / 2));
-#endregion
+if (image != -1)
+{
+	#region Image
+	draw_sprite(image,0,xx + (global.gameWidth / 2),yy + (global.gameHeight / 2));
+	#endregion
+}
+else
+{
+	#region Text
+	scribble("[fnt_Advance_Small]" + subtext + "\n[fnt_Advance]" + text + "[/font]").align(fa_center).draw(xx + (global.gameWidth / 2),yy + (global.gameHeight / 2));
+	#endregion
+}

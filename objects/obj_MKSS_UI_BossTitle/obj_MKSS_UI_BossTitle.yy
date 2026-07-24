@@ -11,8 +11,8 @@
   "name":"obj_MKSS_UI_BossTitle",
   "overriddenProperties":[],
   "parent":{
-    "name":"Boss Title",
-    "path":"folders/Meta Knightmare Stellar Symphony/UI/Boss Title.yy",
+    "name":"Objects",
+    "path":"folders/Meta Knightmare Stellar Symphony/UI/Boss Title/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

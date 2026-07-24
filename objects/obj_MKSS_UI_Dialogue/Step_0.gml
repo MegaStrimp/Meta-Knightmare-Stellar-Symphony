@@ -52,6 +52,7 @@ if (!localPause)
 			text = localDialogue.dialogue[dialogueIndex].text;
 			textSpeed = localDialogue.dialogue[dialogueIndex].textSpeed;
 			textSound = localDialogue.dialogue[dialogueIndex].textSound;
+			drawScript = localDialogue.dialogue[dialogueIndex].drawScript;
 		}
 		
 		flag_NextDialogue = false;

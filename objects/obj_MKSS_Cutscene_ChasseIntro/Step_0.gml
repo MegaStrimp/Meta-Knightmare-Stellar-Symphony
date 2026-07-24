@@ -101,6 +101,10 @@ if (!localPause)
 					image_xscale = dirX;
 				}
 				
+				with (obj_MKSS_UI_Warning) instance_destroy();
+				
+				with (obj_MKSS_UI_BossTitle) instance_destroy();
+				
 				instance_destroy();
 				
 				phaseTimer = -1;
@@ -125,8 +129,6 @@ else
 	if (input_check_pressed("select",playerNum))
 	{
 		global.MKSS_CutsceneIsPaused = false;
-		
-		if (global.debug) with (obj_MKSS_UI_Warning) instance_destroy();
 		
 		phase = 4;
 		phaseTimer = 0;

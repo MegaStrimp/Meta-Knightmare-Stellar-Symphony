@@ -26,8 +26,8 @@ function scr_MKSS_Music_Init_Set()
 	scr_MKSS_Music_Init_Add("miniboss","Master of Tartarus","Persona 3 Reload",mus_MKSS_Miniboss,43.968,[47.632]);
 	scr_MKSS_Music_Init_Add("prelude","tartarus_0d01","Persona 3 Reload",mus_MKSS_Prelude,10.665);
 	scr_MKSS_Music_Init_Add("boss","Mass Destruction","Persona 3",mus_MKSS_Boss);
-	scr_MKSS_Music_Init_Add("andromedaBattle_1","Self Redemption","Persona 3 The Movie",mus_MKSS_AndromedaBattle_1);		//STRIMPTODO Set Points
-	scr_MKSS_Music_Init_Add("andromedaBattle_2","Ying Yang","Persona 4 The Golden Animation",mus_MKSS_AndromedaBattle_2);	//STRIMPTODO Set Points
+	scr_MKSS_Music_Init_Add("andromedaBattle_1","Self Redemption","Persona 3 The Movie",mus_MKSS_AndromedaBattle_1,8.912,[8.912,81.611,139.812]);
+	scr_MKSS_Music_Init_Add("andromedaBattle_2","Ying Yang","Persona 4 The Golden Animation",mus_MKSS_AndromedaBattle_2,18.776,[15.745,18.776,81.913,198.332]);
 	scr_MKSS_Music_Init_Add("starlessMarx","Vs. Marx","Kirby Air Riders",mus_MKSS_StarlessMarx);
 	scr_MKSS_Music_Init_Add("stageClear","Disconnected","Persona 3 Reload",mus_MKSS_StageClear,.436);
 	scr_MKSS_Music_Init_Add("crystalSpace","Deep Breath Deep Breath","Persona 3 Reload",mus_MKSS_CrystalSpace,,[17.285,34.184]);
