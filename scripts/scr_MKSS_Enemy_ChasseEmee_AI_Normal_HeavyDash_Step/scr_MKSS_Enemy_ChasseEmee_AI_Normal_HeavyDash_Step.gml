@@ -8,8 +8,6 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_HeavyDash_Step()
 		#region Attack Init
 		attackString = "Chasse-Emee - Heavy Dash";
 		scr_Debug_WriteLog(string(object_get_name(object_index)) + " Used [" + attackString + "]");
-	
-		dirX = scr_MKSS_Enemy_DirTarget();
 		
 		attackState = 0;
 		#endregion

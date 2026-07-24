@@ -12,9 +12,9 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_Setup(targetIsBoss = true)
 	decelIntro = .05;
 	decelStun = .15;
 	
-	grav = .12;
+	grav = .16;
 	
-	gravLimit = 4;
+	gravLimit = 6;
 	#endregion
 	
 	#region Gameplay Variables
@@ -23,13 +23,15 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_Setup(targetIsBoss = true)
 	#region Attack Scripts
 	#region Phase 1
 	chasse_Attack_HeavyDash = scr_MKSS_Enemy_ChasseEmee_AI_Normal_HeavyDash_Step;
+	chasse_Attack_CannonballBounce = scr_MKSS_Enemy_ChasseEmee_AI_Normal_CannonballBounce_Step;
+	chasse_Attack_ThrustCombo = scr_MKSS_Enemy_ChasseEmee_AI_Normal_ThrustCombo_Step;
 	#endregion
 	#endregion
 	
 	#region Attack Order
-	//ds_list_add(attackList,chasse_Attack_HeavyDash);
-	//ds_list_add(attackList,chasse_Attack_HeavyDash);
-	//ds_list_add(attackList,chasse_Attack_HeavyDash);
+	//ds_list_add(attackList,chasse_Attack_ThrustCombo);
+	//ds_list_add(attackList,chasse_Attack_ThrustCombo);
+	//ds_list_add(attackList,chasse_Attack_ThrustCombo);
 	
 	scr_MKSS_Enemy_ChasseEmee_Normal_AttackOrder_Phase1(false);
 	if (global.debug) and (keyboard_check(ord("2"))) scr_MKSS_Enemy_ChasseEmee_Normal_AttackOrder_Phase2(true);

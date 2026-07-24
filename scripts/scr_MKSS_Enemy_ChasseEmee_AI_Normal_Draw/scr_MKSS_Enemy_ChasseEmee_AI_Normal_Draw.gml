@@ -9,10 +9,19 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_Draw()
 	{
 		case spriteSet.sprIdle:
 		case spriteSet.sprDash1:
+		case spriteSet.sprLookDown:
+		case spriteSet.sprThrust1:
 		_ship = spriteSet.sprShipNormal;
 		
 		shipXOffset = -8;
 		shipYOffset = -20;
+		break;
+		
+		case spriteSet.sprDuck:
+		_ship = spriteSet.sprShipNormal;
+		
+		shipXOffset = -8;
+		shipYOffset = -12;
 		break;
 	}
 	

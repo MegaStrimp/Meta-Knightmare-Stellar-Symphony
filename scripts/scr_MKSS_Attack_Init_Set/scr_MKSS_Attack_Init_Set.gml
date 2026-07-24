@@ -14,6 +14,7 @@ function scr_MKSS_Attack_Init_Set()
 	scr_MKSS_Attack_Init_Add("metaKnight_ParryChunkyGordo",scr_MKSS_Attack_Execute_MetaKnight_ParryChunkyGordo);
 	scr_MKSS_Attack_Init_Add("metaKnight_ParryTrappyPearl",scr_MKSS_Attack_Execute_MetaKnight_ParryTrappyPearl);
 	scr_MKSS_Attack_Init_Add("metaKnight_ParryRangoSpin",scr_MKSS_Attack_Execute_MetaKnight_ParryRangoSpin);
+	scr_MKSS_Attack_Init_Add("metaKnight_ParryCannonball",scr_MKSS_Attack_Execute_MetaKnight_ParryCannonball);
 	scr_MKSS_Attack_Init_Add("metaKnight_ParryStarlessMarxCutter",scr_MKSS_Attack_Execute_MetaKnight_ParryStarlessMarxCutter);
 	#endregion
 	

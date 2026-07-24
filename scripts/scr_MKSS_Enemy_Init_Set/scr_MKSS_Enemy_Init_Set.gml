@@ -576,8 +576,13 @@ function scr_MKSS_Enemy_Init_Set()
 		sprIntro: spr_MKSS_Enemy_ChasseEmee_Base_Intro,
 		
 		sprIdle: spr_MKSS_Enemy_ChasseEmee_Base_Idle,
+		sprDuck: spr_MKSS_Enemy_ChasseEmee_Base_Duck,
 		
 		sprDash1: spr_MKSS_Enemy_ChasseEmee_Base_Dash1,
+		
+		sprLookDown: spr_MKSS_Enemy_ChasseEmee_Base_LookDown,
+		
+		sprThrust1: spr_MKSS_Enemy_ChasseEmee_Base_Thrust1,
 		
 		
 		sprShipNormal: spr_MKSS_Enemy_ChasseEmee_Base_BackShip,
