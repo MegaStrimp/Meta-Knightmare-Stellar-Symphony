@@ -64,7 +64,7 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_ThrustCombo_Step()
 		arm = -1;
 		#endregion
 		
-		#region Cannonball Bounce Start
+		#region Thrust Combo Start
 		sprite_index = spriteSet.sprThrust1;
 		image_index = 0;
 		

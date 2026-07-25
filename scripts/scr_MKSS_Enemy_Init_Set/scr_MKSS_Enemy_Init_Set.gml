@@ -584,6 +584,11 @@ function scr_MKSS_Enemy_Init_Set()
 		
 		sprThrust1: spr_MKSS_Enemy_ChasseEmee_Base_Thrust1,
 		
+		sprClawLaunch: spr_MKSS_Enemy_ChasseEmee_Base_ClawLaunch,
+		
+		sprUltraSwordPrepare: spr_MKSS_Enemy_ChasseEmee_Base_UltraSwordPrepare,
+		sprUltraSwordSwing: spr_MKSS_Enemy_ChasseEmee_Base_UltraSwordSwing,
+		
 		
 		sprShipNormal: spr_MKSS_Enemy_ChasseEmee_Base_BackShip,
 		

@@ -29,6 +29,9 @@ function scr_MKSS_Attack_Nimbia_Kracklet_Setup()
 	
 	eyeAngle = 0;
 	
+	detonateTimer = -1;
+	detonateTimerMax = 18;
+	
 	attackDraw = scr_MKSS_Attack_Nimbia_Kracklet_Draw;
 	attackAIStep = scr_MKSS_Attack_Nimbia_Kracklet_Step;
 }
