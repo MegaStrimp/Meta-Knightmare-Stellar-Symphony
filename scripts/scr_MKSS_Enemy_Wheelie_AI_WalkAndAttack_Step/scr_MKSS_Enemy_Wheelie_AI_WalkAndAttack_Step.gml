@@ -11,13 +11,15 @@ function scr_MKSS_Enemy_Wheelie_AI_WalkAndAttack_Step()
 			if (hp > 0)
 			{
 				#region Notice Player
-				if (attackIndex == -1)
+				if (attackState == 0)
 				{
 					var nearestPlayer = instance_nearest(x,y,obj_Player);
 					if (distance_to_object(nearestPlayer) <= 48)
 					{
 						dirX = 1;
 						if (nearestPlayer.x < x) dirX = -1;
+						
+						hsp = 0;
 						
 						attackTimer = 0;
 					}
@@ -61,6 +63,12 @@ function scr_MKSS_Enemy_Wheelie_AI_WalkAndAttack_Step()
 			hasFriction = true;
 			
 			isTurning = false;
+			isCharging = false;
+			
+			attackState = 0;
+			attackTimer = -1;
+			
+			revertTimer = -1;
 			
 			#region Revert Back
 			if ((knockbackTimer == -1) and (knockbackCheckTimer == -1) and (grounded)) knockbackTimer = knockbackTimerMax;

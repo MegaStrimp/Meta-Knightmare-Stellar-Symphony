@@ -2,7 +2,7 @@
 
 function scr_MKSS_Hud_Step()
 {
-	if (!global.pause)
+	if (!global.pauseFinal)
 	{
 		#region Weapons
 		var listSize = ds_list_size(global.MKSS_PlayerWeaponList[0]);
@@ -30,6 +30,20 @@ function scr_MKSS_Hud_Step()
 		
 		#region Meta Points
 		hud_DisplayedMetaPoints = lerp(hud_DisplayedMetaPoints,global.MKSS_PlayerMetaPoints[0],.2);
+		#endregion
+		
+		#region Special Bar Particles
+		for (var i = 0; i < hud_SpecialBarParticleAmount; i++)
+		{
+			hud_SpecialBarParticle[i].xOffset += hud_SpecialBarParticleSpeed * speedMultFinal;
+			
+			if (hud_SpecialBarParticle[i].xOffset >= 80)
+			{
+				hud_SpecialBarParticle[i].index = irandom(2);
+				hud_SpecialBarParticle[i].xOffset -= 80;
+				hud_SpecialBarParticle[i].yOffset = irandom(21);
+			}
+		}
 		#endregion
 		
 		#region Special Bar Flash Timer

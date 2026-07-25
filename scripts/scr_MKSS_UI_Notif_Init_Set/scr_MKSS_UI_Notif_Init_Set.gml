@@ -31,7 +31,7 @@ function scr_MKSS_UI_Notif_Init_Set()
 		return true;
 	};
 	
-	var text = ["You can find Blue and Red Concentrated Gems on each stage. They are made from pure Stellar Delusions.",
+	var text = ["You can find Blue and Red Concentrated Gems on each stage. They are made from pure [" + MKSS_Base_Color_Andromeda + "]Stellar Delusions[/color].",
 	"Blue Gems unlock Enemy Ordeals, where you can take on harder waves of enemies to earn Stage-based Sprays!",
 	"While Red Gems unlock Starless Bosses, stellar manifestations of the most vicious foes Meta Knight has ever faced!",
 	"Defeat them for a Spray based on their original forms!",

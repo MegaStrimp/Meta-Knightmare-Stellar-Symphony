@@ -31,7 +31,7 @@ function scr_MKSS_SetBackground_TitleScreen()
 		backgroundSetup = false;
 	}
 	
-	if (!global.pause)
+	if (!global.pauseFinal)
 	{
 		var arrayIndex = 0;
 		backgroundX[arrayIndex] = (backgroundX[arrayIndex] + .2) % 160;

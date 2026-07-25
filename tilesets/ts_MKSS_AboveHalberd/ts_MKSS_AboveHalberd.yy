@@ -1,0 +1,48 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"ts_MKSS_AboveHalberd",
+  "autoTileSets":[],
+  "ConfigValues":{
+    "DesktopDebug":{
+      "textureGroupId":"{ \"name\":\"MetaKnightmareStellarSymphony\", \"path\":\"texturegroups/MetaKnightmareStellarSymphony\" }",
+    },
+  },
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"ts_MKSS_AboveHalberd",
+  "out_columns":45,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Above Halberd",
+    "path":"folders/Meta Knightmare Stellar Symphony/Tiles/Above Halberd.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"tiles_MKSS_AboveHalberd",
+    "path":"sprites/tiles_MKSS_AboveHalberd/tiles_MKSS_AboveHalberd.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"MetaKnightmareStellarSymphony",
+    "path":"texturegroups/MetaKnightmareStellarSymphony",
+  },
+  "tileAnimationFrames":[
+    {"$GMTileAnimation":"","%Name":"Fan_1","frames":[2016,2017,2018,2019,],"name":"Fan_1","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
+    {"$GMTileAnimation":"","%Name":"Fan_2","frames":[2020,2021,2022,2023,],"name":"Fan_2","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
+    {"$GMTileAnimation":"","%Name":"Fan_3","frames":[2024,2025,2026,2027,],"name":"Fan_3","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
+    {"$GMTileAnimation":"","%Name":"Fan_4","frames":[2028,2029,2030,2031,],"name":"Fan_4","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
+  ],
+  "tileAnimationSpeed":6.0,
+  "tileHeight":16,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":16,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":2048,
+}

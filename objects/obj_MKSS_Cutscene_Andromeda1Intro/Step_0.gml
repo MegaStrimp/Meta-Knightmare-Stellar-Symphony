@@ -55,7 +55,7 @@ if (!localPause)
 				
 				bossSpawned = true;
 				
-				scr_MKSS_Dialogue_Create(global.MKSS_DialogueIDs[? "andromeda_PreBoss_1"],,,false,false,false);
+				scr_MKSS_Dialogue_Create(global.MKSS_DialogueIDs[? "andromeda_PreBoss_1"],,,false,false,false,depth + 1);
 				
 				phaseTimer = -1;
 				break;

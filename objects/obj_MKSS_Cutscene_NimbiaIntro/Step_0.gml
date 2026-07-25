@@ -76,19 +76,19 @@ if (!localPause)
 				break;
 				
 				case 1:
-				scr_MKSS_Dialogue_Create(global.MKSS_DialogueIDs[? "nimbia_PreBoss_1"],,,false,false,false);
+				scr_MKSS_Dialogue_Create(global.MKSS_DialogueIDs[? "nimbia_PreBoss_1"],,,false,false,false,depth + 1);
 				
 				phaseTimer = -1;
 				break;
 				
 				case 2:
-				scr_MKSS_Dialogue_Create(global.MKSS_DialogueIDs[? "nimbia_PreBoss_2"],,,false,false,false);
+				scr_MKSS_Dialogue_Create(global.MKSS_DialogueIDs[? "nimbia_PreBoss_2"],,,false,false,false,depth + 1);
 				
 				phaseTimer = -1;
 				break;
 				
 				case 3:
-				scr_MKSS_Dialogue_Create(global.MKSS_DialogueIDs[? "nimbia_PreBoss_3"],,,false,false,false);
+				scr_MKSS_Dialogue_Create(global.MKSS_DialogueIDs[? "nimbia_PreBoss_3"],,,false,false,false,depth + 1);
 				
 				phaseTimer = -1;
 				break;

@@ -38,18 +38,40 @@ function scr_MKSS_Hud_DrawGUI()
 	#region Special
 	if (hud_SpecialEnabled)
 	{
+		#region Bar
 		var barLength = floor((global.MKSS_SpecialCurrent / global.MKSS_SpecialTarget) * 80);
 		
 		if (hud_SpecialBarFlashTimer != -1) gpu_set_fog(true,c_white,0,0);
 		draw_sprite(spr_MKSS_Hud_Special_Border,0,69,global.gameHeight - 27);
 		draw_sprite_part(spr_MKSS_Hud_Special_Front,0,0,0,barLength,22,69,global.gameHeight - 27);
 		if (hud_SpecialBarFlashTimer != -1) gpu_set_fog(false,c_white,0,0);
+		#endregion
 		
+		#region Particles
+		scr_DrawMask_Begin();
+		draw_sprite_part_ext(spr_MKSS_Hud_Special_Mask,0,0,0,barLength,22,69,global.gameHeight - 27,1,1,c_white,1);
+		gpu_set_blendenable(true);
+		gpu_set_colorwriteenable(true,true,true,true);
+		
+		gpu_set_blendmode_ext(bm_dest_alpha,bm_inv_dest_alpha);
+		gpu_set_alphatestenable(true);
+		draw_set_alpha(1);
+		
+		for (var i = 0; i < hud_SpecialBarParticleAmount; i++)
+		{
+			draw_sprite(spr_MKSS_Hud_Special_Particles,hud_SpecialBarParticle[i].index,69 + hud_SpecialBarParticle[i].xOffset,global.gameHeight - 27 + hud_SpecialBarParticle[i].yOffset);
+		}
+		
+		scr_DrawMask_End();
+		#endregion
+		
+		#region Button Hints
 		if (global.MKSS_SpecialCurrent == global.MKSS_SpecialTarget)
 		{
 			var targetIcon = global.UI_IconBindings[? string(input_binding_get("Y"))];
 			if (targetIcon != undefined) draw_sprite(targetIcon,0,104,global.gameHeight - 32 + (2 * (buttonInputTimerComponent_YTimer != -1)));
 		}
+		#endregion
 	}
 	#endregion
 	

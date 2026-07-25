@@ -429,7 +429,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_Nimbia_Portrait_Ominous1,
 			portrait_Talk: spr_MKSS_NPC_Nimbia_Portrait_Ominous1,
-			text: "Stellar Delusions only bring forth what already exists in your mind.",
+			text: "[" + MKSS_Base_Color_Andromeda + "]Stellar Delusions[/color] only bring forth what already exists in your mind.",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_Nimbia,
 			drawScript: defaultDrawScript
@@ -461,7 +461,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_MetaKnight_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_MetaKnight_Portrait_Talk,
-			text: "'Stellar Delusions'...",
+			text: "'[" + MKSS_Base_Color_Andromeda + "]Stellar Delusions[/color]'...",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_MetaKnight,
 			drawScript: defaultDrawScript
@@ -551,7 +551,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Idle,
-			text: "Never have I seen anyone withstanding my Stellar Delusions like this",
+			text: "Never have I seen anyone withstanding my [" + MKSS_Base_Color_Andromeda + "]Stellar Delusions[/color] like this",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_Andromeda1,
 			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda

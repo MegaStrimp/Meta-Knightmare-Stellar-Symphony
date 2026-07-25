@@ -9,6 +9,8 @@ function scr_MKSS_SetBackground_AboveHalberd()
 		var arrayIndex = 0;
 		backgroundLayer[arrayIndex] = layer_create(backgroundAnchor - (arrayIndex + 1));
 		backgroundIndex[arrayIndex] = layer_background_create(backgroundLayer[arrayIndex],bg_MKSS_AboveHalberd);
+		backgroundX[arrayIndex] = 0;
+		layer_background_htiled(backgroundIndex[arrayIndex],true);
 		arrayIndex += 1;
 		backgroundLayer[arrayIndex] = layer_create(backgroundAnchor - (arrayIndex + 1));
 		instance_create_layer(0,0,backgroundLayer[arrayIndex],obj_MKSS_BgEnv_AboveHalberdThunder_Controller);
@@ -28,8 +30,10 @@ function scr_MKSS_SetBackground_AboveHalberd()
 	var bgWidth = sprite_get_width(bg_MKSS_AboveHalberd);
 	
 	var arrayIndex = 0;
-	if (bgWidth <= room_width) layer_x(backgroundLayer[arrayIndex],lerp(0,room_width - bgWidth,_xpos));
+	if (!global.pauseFinal) backgroundX[arrayIndex] = (backgroundX[arrayIndex] - .4) % bgWidth;
+	layer_x(backgroundLayer[arrayIndex],camX - (camX * .2) + backgroundX[arrayIndex]);
 	layer_y(backgroundLayer[arrayIndex],camY);
+	arrayIndex += 1;
 	arrayIndex += 1;
 	layer_x(backgroundLayer[arrayIndex],(layer_get_x(backgroundLayer[arrayIndex]) - .2) % 16);
 }

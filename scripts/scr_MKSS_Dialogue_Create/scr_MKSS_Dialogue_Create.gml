@@ -1,10 +1,10 @@
 ///@description MKSS - Dialogue - Create
 
-function scr_MKSS_Dialogue_Create(targetDialogueID = 0,targetDialogueIndex = 0,targetOwner = -1,targetDisableHud = true,targetDisableGamePause = true,targetDisableMovement = true)
+function scr_MKSS_Dialogue_Create(targetDialogueID = 0,targetDialogueIndex = 0,targetOwner = -1,targetDisableHud = true,targetDisableGamePause = true,targetDisableMovement = true,targetLayer = -100)
 {
 	with (obj_MKSS_UI_Dialogue) instance_destroy();
 	
-	with (instance_create_depth(0,0,-100,obj_MKSS_UI_Dialogue))
+	with (instance_create_depth(0,0,targetLayer,obj_MKSS_UI_Dialogue))
 	{
 		dialogueID = targetDialogueID;
 		dialogueIndex = targetDialogueIndex;

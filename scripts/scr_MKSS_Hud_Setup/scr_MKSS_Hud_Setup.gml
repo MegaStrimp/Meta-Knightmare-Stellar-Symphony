@@ -23,6 +23,17 @@ function scr_MKSS_Hud_Setup()
 	hud_SpecialEnabled = true;
 	hud_SpecialBarFlashTimer = -1;
 	hud_SpecialBarFlashTimerMax = 4;
+	hud_SpecialBarParticleAmount = 4;
+	hud_SpecialBarParticleSpeed = 1;
+	for (var i = 0; i < hud_SpecialBarParticleAmount; i++)
+	{
+		hud_SpecialBarParticle[i] = 
+		{
+			index: irandom(2),
+			xOffset: irandom(80),
+			yOffset: irandom(12)
+	    };
+	}
 	
 	hud_DisplayedMetaPoints = 0;
 	

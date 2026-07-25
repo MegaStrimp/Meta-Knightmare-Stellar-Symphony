@@ -71,7 +71,7 @@ function scr_MKSS_SetBackground_StarryShoresEX()
 		layer_y(backgroundLayer[arrayIndex],(room_height - bgHeight))
 	}
 	arrayIndex += 1;
-	if (!global.pause) backgroundX[arrayIndex] = (backgroundX[arrayIndex] - .2) % bgWidth;
+	if (!global.pauseFinal) backgroundX[arrayIndex] = (backgroundX[arrayIndex] - .2) % bgWidth;
 	layer_x(backgroundLayer[arrayIndex],camX - (camX * .1) + backgroundX[arrayIndex]);
 	if (bgHeight <= room_height)
 	{
@@ -82,7 +82,7 @@ function scr_MKSS_SetBackground_StarryShoresEX()
 		layer_y(backgroundLayer[arrayIndex],(room_height - bgHeight))
 	}
 	arrayIndex += 1;
-	if (!global.pause) backgroundX[arrayIndex] = (backgroundX[arrayIndex] - .4) % bgWidth;
+	if (!global.pauseFinal) backgroundX[arrayIndex] = (backgroundX[arrayIndex] - .4) % bgWidth;
 	layer_x(backgroundLayer[arrayIndex],camX - (camX * .2) + backgroundX[arrayIndex]);
 	if (bgHeight <= room_height)
 	{
@@ -103,7 +103,7 @@ function scr_MKSS_SetBackground_StarryShoresEX()
 		layer_y(backgroundLayer[arrayIndex],(room_height - bgHeight))
 	}
 	arrayIndex += 1;
-	if (!global.pause) backgroundX[arrayIndex] = (backgroundX[arrayIndex] - .6) % bgWidth;
+	if (!global.pauseFinal) backgroundX[arrayIndex] = (backgroundX[arrayIndex] - .6) % bgWidth;
 	layer_x(backgroundLayer[arrayIndex],camX - (camX * .3) + backgroundX[arrayIndex]);
 	if (bgHeight <= room_height)
 	{
