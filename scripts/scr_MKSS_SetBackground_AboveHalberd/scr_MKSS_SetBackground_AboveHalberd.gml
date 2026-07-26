@@ -42,10 +42,10 @@ function scr_MKSS_SetBackground_AboveHalberd()
 	arrayIndex += 1;
 	layer_x(backgroundLayer[arrayIndex],(layer_get_x(backgroundLayer[arrayIndex]) - .2) % 16);
 	arrayIndex += 1;
-	layer_background_speed(backgroundIndex[arrayIndex],!global.pauseFinal * 4);
+	layer_background_speed(backgroundIndex[arrayIndex],!global.pauseFinal * 60);
 	if (!global.pauseFinal)
 	{
-		//layer_x(backgroundLayer[arrayIndex],(layer_get_x(backgroundLayer[arrayIndex]) - 3) % 16);
-		//layer_y(backgroundLayer[arrayIndex],(layer_get_y(backgroundLayer[arrayIndex]) + 3) % 16);
+		layer_x(backgroundLayer[arrayIndex],(layer_get_x(backgroundLayer[arrayIndex]) - 3) % 16);
+		layer_y(backgroundLayer[arrayIndex],(layer_get_y(backgroundLayer[arrayIndex]) + 3) % 16);
 	}
 }

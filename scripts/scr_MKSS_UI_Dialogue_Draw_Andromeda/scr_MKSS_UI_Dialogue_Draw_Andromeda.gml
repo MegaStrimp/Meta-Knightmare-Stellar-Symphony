@@ -20,9 +20,8 @@ function scr_MKSS_UI_Dialogue_Draw_Andromeda()
 	for (var i = 0; i < 3; i++)
 	{
 		draw_sprite(spr_MKSS_Dialogue_Andromeda_Background,backgroundImageIndex,xx - xOffset + (backgroundWidth * i),yy);
+		draw_sprite(spr_MKSS_Dialogue_Andromeda_Pattern,0,xx - xOffset + (backgroundWidth * i),yy);
 	}
-	
-	draw_sprite(spr_MKSS_Dialogue_Andromeda_Pattern,0,xx,yy);
 	#endregion
 	
 	#region Portrait

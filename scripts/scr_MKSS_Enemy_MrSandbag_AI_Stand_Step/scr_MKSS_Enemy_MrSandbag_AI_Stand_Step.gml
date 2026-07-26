@@ -14,8 +14,8 @@ function scr_MKSS_Enemy_MrSandbag_AI_Stand_Step()
 		{
 			if (receivedAttackOwner != -1)
 			{
-				dirX = 1;
-				if (sign(x - receivedAttackOwner.x) == -1) dirX = -1;
+				dirX = -1;
+				if (sign(x - receivedAttackOwner.x) == -1) dirX = 1;
 			}
 			
 			#region Knockback Active

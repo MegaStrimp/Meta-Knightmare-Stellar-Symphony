@@ -543,7 +543,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Idle,
-			text: "Persistent creature",
+			text: "[fnt_MKSS_Andromeda]Persistent creature[/font]",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_Andromeda1,
 			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
