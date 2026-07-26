@@ -38,6 +38,13 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_Draw()
 		shipXOffset = -8;
 		shipYOffset = -12;
 		break;
+		
+		case spriteSet.sprShake:
+		_ship = spriteSet.sprShipNormal;
+		
+		shipXOffset = -8 + (random_range(-1,1) * imageSpeed);
+		shipYOffset = -20 + (random_range(-2,2) * imageSpeed);
+		break;
 	}
 	
 	if (sprite_index != -1)
