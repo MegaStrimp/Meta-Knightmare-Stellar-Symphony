@@ -15,7 +15,7 @@ function scr_MKSS_MacroTable()
 	
 	#macro MKSS_Base_BuzzcutDamage 15
 	
-	#macro MKSS_Base_EnemyContactDamage 50
+	#macro MKSS_Base_EnemyContactDamage 30
 	
 	#macro MKSS_Base_EnemyBasicDamage 50
 	#macro MKSS_Base_EnemyMediumDamage 75

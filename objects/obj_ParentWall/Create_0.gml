@@ -21,6 +21,7 @@ topWallMask = spr_TopWallMask_24x4Originless;
 topWallOwner = -1;
 enemyWallOwner = -1;
 isTrackable = false;
+trackCheck = false;
 
 groundMaterial = groundMaterials.none;
 groundSlopeType = groundSlopeTypes.none;

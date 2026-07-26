@@ -127,6 +127,8 @@ function scr_MKSS_Player_MetaKnight_Setup()
 		global.MKSS_GameOverPause = false;
 		global.playerHp[playerNum] = global.playerMaxHp[playerNum];
 		
+		global.MKSS_SpecialCurrent = 0;
+		
 		global.playerRespawn[playerNum] = false;
 	}
 	#endregion

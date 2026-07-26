@@ -5,7 +5,7 @@
 scr_Component_ButtonInputTimer_Setup(5);
 #endregion
 
-#region Settings Setup (Make scr_GAME_Settings_Init_Set)
+#region Settings Setup STRIMPTODO (Make scr_GAME_Settings_Init_Set)
 if (ds_map_empty(global.settingsIDs))
 {
 	#region Categories
@@ -16,7 +16,7 @@ if (ds_map_empty(global.settingsIDs))
 	
 	#region Display
 	scr_Settings_Init_Add("fullscreen","Toggle Fullscreen",,,scr_Settings_Component_Fullscreen_Select,,scr_Settings_Component_LoadPage,[scr_Settings_PageSetup_Default],);
-	scr_Settings_Init_Add("windowSize","Window Size",,,scr_Settings_Component_WindowSize_Select,,scr_Settings_Component_LoadPage,[scr_Settings_PageSetup_Default],,,,,scr_Settings_Component_WindowSize_Left,,,,scr_Settings_Component_WindowSize_Draw);
+	scr_Settings_Init_Add("windowSize","Window Size",,,scr_Settings_Component_WindowSize_Select,,scr_Settings_Component_LoadPage,[scr_Settings_PageSetup_Default],,,,,scr_Settings_Component_WindowSize_Left,,scr_Settings_Component_WindowSize_Right,,scr_Settings_Component_WindowSize_Draw);
 	scr_Settings_Init_Add("shaders","Shaders",,,scr_Settings_Component_Shaders_Select,,scr_Settings_Component_LoadPage,[scr_Settings_PageSetup_Default],,,,,,,,,scr_Settings_Component_Shaders_Draw);
 	#endregion
 	

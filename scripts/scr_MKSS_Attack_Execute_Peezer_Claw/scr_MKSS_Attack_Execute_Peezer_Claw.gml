@@ -10,7 +10,7 @@ function scr_MKSS_Attack_Execute_Peezer_Claw()
 	{
 		owner = other;
 		isEnemy = true;
-		dmg = 2;
+		dmg = MKSS_Base_EnemyBasicDamage;
 		followOwner = true;
 		followOwnerImageIndex = true;
 		isMelee = true;

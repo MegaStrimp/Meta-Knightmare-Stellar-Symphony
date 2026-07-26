@@ -10,5 +10,10 @@ if ((destroyOutsideView) and (scr_Entity_OutsideView(32))) instance_destroy();
 #endregion
 
 #region Destroy If Tracked
-scr_StageEntityTracker_Check();
+if (!trackCheck)
+{
+	scr_StageEntityTracker_Check();
+	
+	trackCheck = true;
+}
 #endregion

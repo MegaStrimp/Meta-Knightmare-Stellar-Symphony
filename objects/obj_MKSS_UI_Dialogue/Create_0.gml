@@ -22,6 +22,8 @@ portraitTalkTimer = -1;
 portraitTalkTimerMax = 10;
 text = undefined;
 
+backgroundImageIndex = 0;
+
 drawScript = scr_MKSS_UI_Dialogue_Draw_Default;
 finishScript = -1;
 

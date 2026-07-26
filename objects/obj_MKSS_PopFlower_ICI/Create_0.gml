@@ -23,6 +23,8 @@ points = 10;
 active = false;
 activationScript = scr_MKSS_PopFlower_Activation_GiveMetaPoint;
 
+trackCheck = false;
+
 shadowAlphaTarget = position_meeting(x,y,obj_MKSS_ShadowArea);
 shadowAlpha = shadowAlphaTarget;
 shadowAlphaFinal = shadowAlphaTarget;

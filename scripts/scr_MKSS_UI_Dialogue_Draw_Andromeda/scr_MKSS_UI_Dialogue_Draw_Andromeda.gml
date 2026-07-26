@@ -10,12 +10,19 @@ function scr_MKSS_UI_Dialogue_Draw_Andromeda()
 	#endregion
 	
 	#region Background
+	var backgroundImageNumber = sprite_get_number(spr_MKSS_Dialogue_Andromeda_Background);
+	var backgroundImageSpeed = sprite_get_speed(spr_MKSS_Dialogue_Andromeda_Background) / 60;
+	
+	backgroundImageIndex = (backgroundImageIndex + backgroundImageSpeed) % backgroundImageNumber;
+	
 	var xOffset = (floor(global.currentTimePausable / 5) + backgroundWidth) % backgroundWidth;
 	
 	for (var i = 0; i < 3; i++)
 	{
-		draw_sprite(spr_MKSS_Dialogue_Andromeda_Background,0,xx - xOffset + (backgroundWidth * i),yy);
+		draw_sprite(spr_MKSS_Dialogue_Andromeda_Background,backgroundImageIndex,xx - xOffset + (backgroundWidth * i),yy);
 	}
+	
+	draw_sprite(spr_MKSS_Dialogue_Andromeda_Pattern,0,xx,yy);
 	#endregion
 	
 	#region Portrait

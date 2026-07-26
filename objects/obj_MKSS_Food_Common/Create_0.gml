@@ -12,6 +12,8 @@ hasAura = false;
 auraTimerMax = 5;
 auraTimer = -1;
 
+trackCheck = false;
+
 sprite_index = choose(
 spr_MKSS_Food_Common_1,
 spr_MKSS_Food_Common_2,

@@ -10,7 +10,7 @@
   "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":171.42206,
+  "duration":171.42288,
   "exportDir":"",
   "name":"mus_MKSS_StarryShores",
   "parent":{
@@ -21,7 +21,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"mus_MKSS_StarryShores.mp3",
+  "soundFile":"mus_MKSS_StarryShores.wav",
   "tags":[
     "Music",
   ],

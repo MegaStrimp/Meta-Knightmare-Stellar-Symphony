@@ -19,6 +19,11 @@ function scr_MKSS_SetBackground_AboveHalberd()
 		backgroundIndex[arrayIndex] = layer_background_create(backgroundLayer[arrayIndex],bg_MKSS_Pit);
 		layer_background_htiled(backgroundIndex[arrayIndex],true);
 		layer_y(backgroundLayer[arrayIndex],room_height - 32);
+		arrayIndex += 1;
+		backgroundLayer[arrayIndex] = layer_create(layer_get_depth(layer_get_id("Player")) - 1);
+		backgroundIndex[arrayIndex] = layer_background_create(backgroundLayer[arrayIndex],bg_MKSS_Rain);
+		layer_background_htiled(backgroundIndex[arrayIndex],true);
+		layer_background_vtiled(backgroundIndex[arrayIndex],true);
 		
 		backgroundSetup = false;
 	}
@@ -36,4 +41,11 @@ function scr_MKSS_SetBackground_AboveHalberd()
 	arrayIndex += 1;
 	arrayIndex += 1;
 	layer_x(backgroundLayer[arrayIndex],(layer_get_x(backgroundLayer[arrayIndex]) - .2) % 16);
+	arrayIndex += 1;
+	layer_background_speed(backgroundIndex[arrayIndex],!global.pauseFinal * 4);
+	if (!global.pauseFinal)
+	{
+		//layer_x(backgroundLayer[arrayIndex],(layer_get_x(backgroundLayer[arrayIndex]) - 3) % 16);
+		//layer_y(backgroundLayer[arrayIndex],(layer_get_y(backgroundLayer[arrayIndex]) + 3) % 16);
+	}
 }

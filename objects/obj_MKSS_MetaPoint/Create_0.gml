@@ -25,6 +25,8 @@ speedMult = 1;
 speedMultFinal = 1;
 localPause = false;
 
+trackCheck = false;
+
 trailTimerMax = 15;
 trailTimer = trailTimerMax - irandom_range(0,3);
 #endregion

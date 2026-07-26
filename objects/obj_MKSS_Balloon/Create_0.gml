@@ -16,6 +16,8 @@ isDestroyed = false;
 destroyOutsideView = false;
 
 explodeSprite = spr_MKSS_Particle_BalloonExplode;
+
+trackCheck = false;
 #endregion
 
 #region Component Setup

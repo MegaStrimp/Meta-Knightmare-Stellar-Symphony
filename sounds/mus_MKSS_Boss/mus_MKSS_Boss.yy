@@ -10,7 +10,7 @@
   "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":208.35211,
+  "duration":169.41151,
   "exportDir":"",
   "name":"mus_MKSS_Boss",
   "parent":{
@@ -21,7 +21,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"mus_MKSS_Boss.mp3",
+  "soundFile":"mus_MKSS_Boss.wav",
   "tags":[
     "Music",
   ],

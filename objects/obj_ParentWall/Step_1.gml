@@ -10,7 +10,12 @@ if ((enemyWallOwner != -1) and (!instance_exists(enemyWallOwner))) instance_dest
 #endregion
 
 #region Destroy If Tracked
-if (isTrackable) scr_StageEntityTracker_Check();
+if ((isTrackable) and (!trackCheck))
+{
+	scr_StageEntityTracker_Check();
+	
+	trackCheck = true;
+}
 #endregion
 
 #region Wall Setup
