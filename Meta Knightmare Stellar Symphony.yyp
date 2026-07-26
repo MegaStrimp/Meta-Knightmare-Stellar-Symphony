@@ -2820,6 +2820,7 @@
     {"id":{"name":"snd_MKSS_MetaPointCollect1","path":"sounds/snd_MKSS_MetaPointCollect1/snd_MKSS_MetaPointCollect1.yy",},},
     {"id":{"name":"snd_MKSS_MetaPointCollect2","path":"sounds/snd_MKSS_MetaPointCollect2/snd_MKSS_MetaPointCollect2.yy",},},
     {"id":{"name":"snd_MKSS_MetaPointCollect3","path":"sounds/snd_MKSS_MetaPointCollect3/snd_MKSS_MetaPointCollect3.yy",},},
+    {"id":{"name":"snd_MKSS_MetaQuick","path":"sounds/snd_MKSS_MetaQuick/snd_MKSS_MetaQuick.yy",},},
     {"id":{"name":"snd_MKSS_Miniboss_Death","path":"sounds/snd_MKSS_Miniboss_Death/snd_MKSS_Miniboss_Death.yy",},},
     {"id":{"name":"snd_MKSS_NextScene","path":"sounds/snd_MKSS_NextScene/snd_MKSS_NextScene.yy",},},
     {"id":{"name":"snd_MKSS_Parry","path":"sounds/snd_MKSS_Parry/snd_MKSS_Parry.yy",},},

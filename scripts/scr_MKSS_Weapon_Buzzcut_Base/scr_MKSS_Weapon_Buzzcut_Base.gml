@@ -97,7 +97,7 @@ function scr_MKSS_Weapon_Buzzcut_Base()
 		
 		if ((global.MKSS_SpecialCurrent == global.MKSS_SpecialTarget) and (!global.MKSS_SpecialDeflation) and (input_check_pressed("Y",playerNum)))
 		{
-			scr_PlaySfx(snd_MKSS_MetaHeal);
+			scr_PlaySfx(snd_MKSS_MetaQuick);
 			
 			scr_MKSS_UI_SpecialActionText_Create(spr_MKSS_UI_SpecialActionText_MetaQuick);
 			

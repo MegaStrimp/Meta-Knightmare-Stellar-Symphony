@@ -26,8 +26,8 @@ function scr_MKSS_Enemy_Booler_AI_Chase_Mist_Step()
 		
 		if ((receivedAttackOwner != -1) and (instance_exists(receivedAttackOwner)))
 		{
-			var targetX = receivedAttackOwner.x + (40 * -dirX);
-			var targetY = receivedAttackOwner.y + (irandom_range(-8,8));
+			var targetX = receivedAttackOwner.x + (48 * -dirX);
+			var targetY = receivedAttackOwner.y + (irandom_range(-10,10));
 			
 			move_towards_point(targetX,targetY,mistSpd);
 			

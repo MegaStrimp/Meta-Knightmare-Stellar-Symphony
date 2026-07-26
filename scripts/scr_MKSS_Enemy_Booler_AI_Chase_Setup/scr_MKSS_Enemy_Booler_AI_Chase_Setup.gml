@@ -17,7 +17,7 @@ function scr_MKSS_Enemy_Booler_AI_Chase_Setup()
 	
 	yAnchorSpd = 1;
 	
-	mistSpd = 4;
+	mistSpd = 6;
 	#endregion
 	
 	#region Gameplay Variables
