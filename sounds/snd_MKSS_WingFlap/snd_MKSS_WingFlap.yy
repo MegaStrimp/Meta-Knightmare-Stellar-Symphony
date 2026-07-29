@@ -7,7 +7,7 @@
   },
   "bitDepth":1,
   "channelFormat":1,
-  "compression":0,
+  "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
   "duration":0.6858957,
@@ -21,7 +21,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_MKSS_WingFlap.wav",
+  "soundFile":"snd_MKSS_WingFlap.ogg",
   "tags":[
     "Sound Effect",
   ],

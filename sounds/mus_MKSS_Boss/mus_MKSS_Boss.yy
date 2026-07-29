@@ -21,7 +21,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"mus_MKSS_Boss.wav",
+  "soundFile":"mus_MKSS_Boss.ogg",
   "tags":[
     "Music",
   ],

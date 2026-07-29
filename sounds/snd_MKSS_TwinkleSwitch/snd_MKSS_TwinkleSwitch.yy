@@ -7,10 +7,10 @@
   },
   "bitDepth":1,
   "channelFormat":1,
-  "compression":0,
+  "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.0893197,
+  "duration":1.0893424,
   "exportDir":"",
   "name":"snd_MKSS_TwinkleSwitch",
   "parent":{
@@ -21,7 +21,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_MKSS_TwinkleSwitch.wav",
+  "soundFile":"snd_MKSS_TwinkleSwitch.ogg",
   "tags":[
     "Sound Effect",
   ],

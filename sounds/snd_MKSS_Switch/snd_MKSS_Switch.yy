@@ -7,10 +7,10 @@
   },
   "bitDepth":1,
   "channelFormat":1,
-  "compression":0,
+  "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.27453515,
+  "duration":0.2772109,
   "exportDir":"",
   "name":"snd_MKSS_Switch",
   "parent":{

@@ -2,6 +2,22 @@
 
 function scr_MKSS_Stage_Clear()
 {
+	#region Save Stage Data
+	var stageMappedID = global.MKSS_StageIDs[? global.currentStage];
+	var rawScore = global.levelScoreCurrent;
+	
+	if (global.levelScoreCurrent > global.MKSS_StageList[stageMappedID].earnedHighScore)
+	{
+		global.MKSS_StageList[stageMappedID].earnedHighScore = global.levelScoreCurrent;
+	}
+	
+	global.MKSS_StageList[stageMappedID].isBeaten = true;
+	if (global.MKSS_StageList[stageMappedID].clearScript != -1) script_execute(clearScript,global.MKSS_StageList[stageMappedID].stageMappedID);
+	
+	scr_MKSS_SaveData(global.selectedSave);
+	#endregion
+	
+	#region Animation
 	scr_MKSS_Music_Play(global.MKSS_MusicIDs[? "stageClear"]);
 	
 	with (obj_MKSS_UI_FadingText) instance_destroy();
@@ -13,12 +29,6 @@ function scr_MKSS_Stage_Clear()
 		scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_StageClear_Step);
 	}
 	
-	var xx = camera_get_view_x(mainView) + (global.gameWidth / 2);
-	var yy = camera_get_view_y(mainView) + (global.gameHeight / 2);
-	
-	with (instance_create_layer(xx,yy,"Player",obj_MKSS_UI_StageClear))
-	{
-		scr_Camera_FollowObject(id);
-	}
-	
+	scr_MKSS_UI_StageClear_Create(rawScore);
+	#endregion
 }

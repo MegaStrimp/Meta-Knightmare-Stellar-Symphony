@@ -7,10 +7,10 @@
   },
   "bitDepth":1,
   "channelFormat":1,
-  "compression":0,
+  "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":2.114535,
+  "duration":2.1043763,
   "exportDir":"",
   "name":"snd_MKSS_MetaQuick",
   "parent":{

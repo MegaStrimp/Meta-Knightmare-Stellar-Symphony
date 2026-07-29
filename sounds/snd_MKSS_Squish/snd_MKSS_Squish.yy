@@ -7,10 +7,10 @@
   },
   "bitDepth":1,
   "channelFormat":1,
-  "compression":0,
+  "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.11523809,
+  "duration":0.116099775,
   "exportDir":"",
   "name":"snd_MKSS_Squish",
   "parent":{
@@ -21,7 +21,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_MKSS_Squish.wav",
+  "soundFile":"snd_MKSS_Squish.ogg",
   "tags":[
     "Sound Effect",
   ],

@@ -7,10 +7,10 @@
   },
   "bitDepth":1,
   "channelFormat":1,
-  "compression":0,
+  "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.055986393,
+  "duration":0.058049887,
   "exportDir":"",
   "name":"snd_MKSS_Dialogue_Nimbia",
   "parent":{

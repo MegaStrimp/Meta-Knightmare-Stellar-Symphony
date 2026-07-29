@@ -4,7 +4,7 @@ function scr_Stage_Begin(targetStageID = -1)
 {
 	#region Variables
 	global.inStage = true;
-	global.currentStageID = targetStageID;
+	global.currentStage = targetStageID;
 	#endregion
 	
 	#region Stage Entity Tracker

@@ -15,10 +15,15 @@ hintOffsetTimerMax = 120;
 hintOffsetTimer = hintOffsetTimerMax;
 
 nextRoomTimer = -1;
-nextRoomTimerMax = 90;
+nextRoomTimerMax = 45;
 
 circleR = global.gameWidth + 20;
 
+currentScore = -1;
+scoreBonuses = [];
+
+targetRoom_Next = -1;
+targetRoom_Retry = -1;
 targetRoom = -1;
 
 drawSurface = -1;

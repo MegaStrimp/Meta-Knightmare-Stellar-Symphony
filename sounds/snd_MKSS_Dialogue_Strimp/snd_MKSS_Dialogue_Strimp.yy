@@ -7,10 +7,10 @@
   },
   "bitDepth":1,
   "channelFormat":1,
-  "compression":0,
+  "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.04553288,
+  "duration":0.04643991,
   "exportDir":"",
   "name":"snd_MKSS_Dialogue_Strimp",
   "parent":{

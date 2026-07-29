@@ -7,10 +7,10 @@
   },
   "bitDepth":1,
   "channelFormat":1,
-  "compression":0,
+  "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":2.1550114,
+  "duration":2.1549888,
   "exportDir":"",
   "name":"snd_MKSS_EnemySpawner_End",
   "parent":{
@@ -21,7 +21,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_MKSS_EnemySpawner_End.wav",
+  "soundFile":"snd_MKSS_EnemySpawner_End.ogg",
   "tags":[
     "Sound Effect",
   ],

@@ -1,6 +1,6 @@
 ///@description MKSS - Stage - Init - Add
 
-function scr_MKSS_Stage_Init_Add(targetID,targetName = "",targetMedalScores = [0,0,0,0],targetHasScore = true,targetDecalPalette = -1)
+function scr_MKSS_Stage_Init_Add(targetID,targetName = "",targetFirstRoom = -1,targetMedalScores = [0,0,0,0],targetHasScore = true,targetDecalPalette = -1)
 {
 	var targetMappedID = ds_map_size(global.MKSS_StageIDs);
 	ds_map_add(global.MKSS_StageIDs,targetID,targetMappedID);
@@ -9,6 +9,7 @@ function scr_MKSS_Stage_Init_Add(targetID,targetName = "",targetMedalScores = [0
 	{
         ID: targetID,
         name: targetName,
+        firstRoom: targetFirstRoom,
         isUnlocked: false,
         isBeaten: false,
 		isDefault: false,
@@ -18,6 +19,7 @@ function scr_MKSS_Stage_Init_Add(targetID,targetName = "",targetMedalScores = [0
         earnedMedal: -1,
 		collectibles: [],
 		icon: undefined,
+		clearScript: -1,
 		
 		decalPalette: targetDecalPalette
     };

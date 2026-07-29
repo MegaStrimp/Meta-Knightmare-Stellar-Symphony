@@ -1,7 +1,7 @@
 ///@description Room Creation Code
 
 #region Begin Stage
-if (global.roomPrevious != room) scr_MKSS_Stage_Begin("livingLoomEX");
+if (!global.inStage) scr_MKSS_Stage_Begin("livingLoomEX");
 #endregion
 
 #region Room Setup

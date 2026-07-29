@@ -75,16 +75,22 @@ if (targetIcon != undefined) hubIcon = "[" + sprite_get_name(targetIcon) + "]";
 
 scribble(hubIcon + " Halberd").draw(xx + 4,yy + global.gameHeight - 16 + hintOffset + (2 * (buttonInputTimerComponent_BTimer != -1)));
 
-var retryIcon = "";
-var targetIcon = global.UI_IconBindings[? string(input_binding_get("X"))];
-if (targetIcon != undefined) retryIcon = "[" + sprite_get_name(targetIcon) + "]";
+if (targetRoom_Retry != -1)
+{
+	var retryIcon = "";
+	var targetIcon = global.UI_IconBindings[? string(input_binding_get("X"))];
+	if (targetIcon != undefined) retryIcon = "[" + sprite_get_name(targetIcon) + "]";
+	
+	scribble(retryIcon + " Retry").align(fa_center).draw(xx + (global.gameWidth / 2),yy + global.gameHeight - 16 + hintOffset + (2 * (buttonInputTimerComponent_XTimer != -1)));
+}
 
-scribble(retryIcon + " Retry").align(fa_center).draw(xx + (global.gameWidth / 2),yy + global.gameHeight - 16 + hintOffset + (2 * (buttonInputTimerComponent_XTimer != -1)));
-
-var nextIcon = "";
-var targetIcon = global.UI_IconBindings[? string(input_binding_get("A"))];
-if (targetIcon != undefined) nextIcon = "[" + sprite_get_name(targetIcon) + "]";
-
-var text = scribble(nextIcon + " Next");
-text.draw(xx + global.gameWidth - 4 - text.get_width(),yy + global.gameHeight - 16 + hintOffset + (2 * (buttonInputTimerComponent_YTimer != -1)));
+if (targetRoom_Next != -1)
+{
+	var nextIcon = "";
+	var targetIcon = global.UI_IconBindings[? string(input_binding_get("A"))];
+	if (targetIcon != undefined) nextIcon = "[" + sprite_get_name(targetIcon) + "]";
+	
+	var text = scribble(nextIcon + " Next");
+	text.draw(xx + global.gameWidth - 4 - text.get_width(),yy + global.gameHeight - 16 + hintOffset + (2 * (buttonInputTimerComponent_YTimer != -1)));
+}
 #endregion

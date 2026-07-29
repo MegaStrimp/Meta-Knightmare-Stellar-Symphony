@@ -18,11 +18,39 @@ if (canSelect)
 		
 		nextRoomTimer = nextRoomTimerMax;
 	}
+	
+	if ((targetRoom_Retry != -1) and (input_check_pressed("X",playerNum)))
+	{
+		scr_PlaySfx(snd_MKSS_ButtonChange);
+		
+		global.canGamePause = true;
+		
+		with (obj_Player) stageClear_StateTimer = 0;
+		
+		targetRoom = targetRoom_Retry;
+		
+		nextRoomTimer = nextRoomTimerMax;
+	}
+	
+	if ((targetRoom_Next != -1) and (input_check_pressed("A",playerNum)))
+	{
+		scr_PlaySfx(snd_MKSS_ButtonYes);
+		
+		global.canGamePause = true;
+		
+		with (obj_Player) stageClear_StateTimer = 0;
+		
+		targetRoom = targetRoom_Next;
+		
+		nextRoomTimer = nextRoomTimerMax;
+	}
 }
 #endregion
 
 #region Circle
-circleR = lerp(circleR,48,.1);
+var circleWave = sine_wave(current_time / 2000,4,.1,0);
+
+circleR = lerp(circleR,48 + circleWave,.1);
 #endregion
 
 #region Title Offset
@@ -54,9 +82,7 @@ if (nextRoomTimer != -1)
 		
 		scr_MKSS_Stage_End();
 		
-		scr_MKSS_SaveData(global.selectedSave);
-		
-		with (scr_GoToRoom(targetRoom,false)) alphaSpd = (alphaSpd / 2);
+		with (scr_GoToRoom(targetRoom,false)) alphaSpd = (alphaSpd / 3);
 		
 		nextRoomTimer = -1;
 	}

@@ -7,10 +7,10 @@
   },
   "bitDepth":1,
   "channelFormat":1,
-  "compression":0,
+  "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.07931973,
+  "duration":0.10013606,
   "exportDir":"",
   "name":"snd_MKSS_EnemyJump",
   "parent":{
@@ -21,7 +21,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_MKSS_EnemyJump.wav",
+  "soundFile":"snd_MKSS_EnemyJump.ogg",
   "tags":[
     "Sound Effect",
   ],

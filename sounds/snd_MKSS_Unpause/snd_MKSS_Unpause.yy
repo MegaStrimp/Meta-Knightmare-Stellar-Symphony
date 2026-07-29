@@ -7,10 +7,10 @@
   },
   "bitDepth":1,
   "channelFormat":1,
-  "compression":0,
+  "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.36142856,
+  "duration":0.3614059,
   "exportDir":"",
   "name":"snd_MKSS_Unpause",
   "parent":{
@@ -21,7 +21,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_MKSS_Unpause.wav",
+  "soundFile":"snd_MKSS_Unpause.ogg",
   "tags":[
     "Sound Effect",
   ],

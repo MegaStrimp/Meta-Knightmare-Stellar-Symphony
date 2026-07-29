@@ -7,7 +7,7 @@
   },
   "bitDepth":1,
   "channelFormat":1,
-  "compression":0,
+  "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
   "duration":2.23,
@@ -21,7 +21,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_MKSS_EnemySpawner_Ready.wav",
+  "soundFile":"snd_MKSS_EnemySpawner_Ready.ogg",
   "tags":[
     "Sound Effect",
   ],
