@@ -28,11 +28,12 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_Setup(targetIsBoss = true)
 	chasse_Attack_ClawLaunch = scr_MKSS_Enemy_ChasseEmee_AI_Normal_ClawLaunch_Step;
 	chasse_Attack_UltraSword = scr_MKSS_Enemy_ChasseEmee_AI_Normal_UltraSword_Step;
 	chasse_Attack_ShakeEnemies = scr_MKSS_Enemy_ChasseEmee_AI_Normal_ShakeEnemies_Step;
+	chasse_Attack_BackgroundCannonballs = scr_MKSS_Enemy_ChasseEmee_AI_Normal_BackgroundCannonballs_Step;
 	#endregion
 	#endregion
 	
 	#region Attack Order
-	//ds_list_add(attackList,chasse_Attack_ShakeEnemies);
+	ds_list_add(attackList,chasse_Attack_BackgroundCannonballs);
 	//ds_list_add(attackList,chasse_Attack_ShakeEnemies);
 	//ds_list_add(attackList,chasse_Attack_ShakeEnemies);
 	

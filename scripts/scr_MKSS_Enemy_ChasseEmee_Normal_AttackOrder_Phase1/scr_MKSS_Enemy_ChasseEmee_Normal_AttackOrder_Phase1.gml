@@ -10,4 +10,5 @@ function scr_MKSS_Enemy_ChasseEmee_Normal_AttackOrder_Phase1(clear = true)
 	ds_list_add(attackList,chasse_Attack_ShakeEnemies);
 	ds_list_add(attackList,chasse_Attack_UltraSword);
 	ds_list_add(attackList,chasse_Attack_HeavyDash);
+	ds_list_add(attackList,chasse_Attack_BackgroundCannonballs);
 }
