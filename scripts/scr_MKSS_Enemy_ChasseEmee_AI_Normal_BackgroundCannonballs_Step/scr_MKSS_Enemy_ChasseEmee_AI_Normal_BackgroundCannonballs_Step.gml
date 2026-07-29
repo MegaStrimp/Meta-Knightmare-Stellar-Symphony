@@ -34,13 +34,13 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_BackgroundCannonballs_Step()
 		#endregion
 		
 		#region Go Under Start Timer
-		attackStateTimerMax[i] = 20;
+		attackStateTimerMax[i] = 60;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
 		
 		#region Go Under Timer
-		attackStateTimerMax[i] = 90;
+		attackStateTimerMax[i] = 100;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
@@ -120,11 +120,15 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_BackgroundCannonballs_Step()
 			if (attackStateTimer[attackState] == -1)
 			{
 				dirX = scr_MKSS_Enemy_DirTarget();
+				if (x <= 72) dirX = 1;
+				if (x >= room_width - 72) dirX = -1;
 				
 				var sfx = scr_PlaySfx(snd_MKSS_BlockBreak);
 				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				scr_MKSS_ParticleSet_BlockBreak1(x,y,depth - 1);
+				
+				var _choose = choose(0,1);
 				
 				with (instance_create_depth(x,y,depth - 4,obj_MKSS_Attack))
 				{
@@ -133,10 +137,16 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_BackgroundCannonballs_Step()
 					dmg = 1;
 					sprite_index = spr_MKSS_Attack_ChasseEmee_BigCannonball_Background;
 					mask_index = spr_MKSS_Attack_ChasseEmee_BigCannonball_Background;
-					hsp = 0;
+					hsp = random_range(-.2,.2);
 					vsp = -4;
 					destroyOutsideRoom = false;
 					attackAIStep = scr_MKSS_Attack_ChasseEmee_BigCannonball_Step;
+					if (_choose == 0) 
+					{
+						scr_MKSS_UI_ParryIndicator_Create(x,y,depth - 1,20,,id);
+						parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryBigCannonball"];
+						sprite_index = spr_MKSS_Attack_ChasseEmee_BigCannonball_BackgroundGreen;
+					}
 				}
 				
 				with (instance_create_layer(x,y,"Enemies",obj_MKSS_Attack))
@@ -146,10 +156,16 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_BackgroundCannonballs_Step()
 					dmg = 1;
 					sprite_index = spr_MKSS_Attack_ChasseEmee_BigCannonball_Background;
 					mask_index = spr_MKSS_Attack_ChasseEmee_BigCannonball_Background;
-					hsp = 1.75 * other.dirX;
+					hsp = (2 + random_range(-.2,.2)) * other.dirX;
 					vsp = -4;
 					destroyOutsideRoom = false;
 					attackAIStep = scr_MKSS_Attack_ChasseEmee_BigCannonball_Step;
+					if (_choose == 1) 
+					{
+						scr_MKSS_UI_ParryIndicator_Create(x,y,depth - 1,20,,id);
+						parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryBigCannonball"];
+						sprite_index = spr_MKSS_Attack_ChasseEmee_BigCannonball_BackgroundGreen;
+					}
 				}
 				
 				attackStateTimer[attackState] = attackStateTimerMax[attackState];
@@ -195,7 +211,7 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_BackgroundCannonballs_Step()
 				mask_index = spriteSet.maskIndexDefault;
 				
 				x = -96;
-				if (dirX == -1) x = room_width+96;
+				if (dirX == -1) x = room_width + 96;
 				y = startY;
 				
 				hsp = 5.6 * dirX;

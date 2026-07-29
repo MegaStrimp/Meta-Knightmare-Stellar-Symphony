@@ -12,8 +12,13 @@ function scr_MKSS_Attack_ChasseEmee_BigCannonball_Step()
 				hsp = 0;
 				vsp = 6;
 				
+				if (sprite_index == spr_MKSS_Attack_ChasseEmee_BigCannonball_BackgroundGreen) 
+				{
+					canBeParried = true;
+				}
+				
 				sprite_index = spr_MKSS_Attack_ChasseEmee_BigCannonball;
-				mask_index = spr_MKSS_Attack_ChasseEmee_BigCannonball;
+				mask_index = spr_MKSS_Attack_ChasseEmee_BigCannonball;				
 			}
 		}
 		

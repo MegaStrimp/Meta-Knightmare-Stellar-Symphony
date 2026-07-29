@@ -9,10 +9,12 @@ if (followedObject != -1)
 {
 	#region Destroy If Owner Doesn't Exist
 	if (!instance_exists(followedObject)) instance_destroy();
-	#endregion
-	
-	#region Follow Owner
-	x = followedObject.x;
-	y = followedObject.y;
+	else
+	{
+		#region Follow Owner
+		x = followedObject.x;
+		y = followedObject.y;
+		#endregion
+	}
 	#endregion
 }
