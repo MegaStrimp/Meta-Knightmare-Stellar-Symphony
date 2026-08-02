@@ -7,7 +7,7 @@ function scr_MKSS_UI_Button_Component_Save_Base(targetNum)
 	{
 		if (input_check_pressed("Y",playerNum))
 		{
-			obj_MKSS_Menu_TitleScreen.currentSelectedSave = "Save" + string(i + 1) + ".ini";
+			obj_MKSS_Menu_TitleScreen.currentSelectedSave = "Save" + string(targetNum + 1) + ".ini";
 			
 			scr_MKSS_ObtainNotif(global.MKSS_NotifIDs[? "deleteSave1"],true);
 		}

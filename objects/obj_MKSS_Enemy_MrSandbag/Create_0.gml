@@ -7,16 +7,15 @@ event_inherited();
 #region Gameplay Variables
 enemyID = global.MKSS_EnemyIDs[? "mrSandbag"];
 hp = 9999;
-points = 1;
-
-canHurtPlayer = false;
+points = MKSS_Base_EnemyPoints_Fodder;
+metaPointsOnDeath = MKSS_Base_EnemyMetaPoints_Fodder;
+metaPointsOnOverkill = floor(metaPointsOnDeath / 2);
 
 freezeFrameForce = 2;
-
-spriteSet = global.MKSS_EnemyList[enemyID].spriteSet;
 #endregion
 
-#region AI Scripts
-enemyBeginStep = scr_MKSS_Enemy_BeginStep_Normal;
-enemyStep = scr_MKSS_Enemy_Step_Normal;
+#region Sprites
+spriteSet = global.MKSS_EnemyList[enemyID].spriteSet;
+sprHurt = spriteSet.sprHurtList;
+mask_index = spriteSet.maskIndex;
 #endregion

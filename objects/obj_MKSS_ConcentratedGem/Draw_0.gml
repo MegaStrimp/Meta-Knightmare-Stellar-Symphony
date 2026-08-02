@@ -4,11 +4,24 @@
 var knockbackDir = 1;
 if (current_time % 2) knockbackDir = -1;
 
-var hasShake = (hp < hpMax);
+var hasShake = (shakeTimer != -1);
+
+var shakeX = choose(-hasShake,hasShake);
+var shakeY = choose(-hasShake,hasShake);
 #endregion
 
 #region Draw Self
 if (global.shaders) pal_swap_set(gemPalette,1,false);
-draw_sprite_ext(sprite_index,image_index,x + choose(-hasShake,hasShake) + lengthdir_x(knockbackLength * knockbackDir,knockbackAngle),y + choose(-hasShake,hasShake) + lengthdir_y(knockbackLength * knockbackDir,knockbackAngle),image_xscale,image_yscale,image_angle,image_blend,image_alpha); 
+draw_sprite_ext(sprite_index,image_index,x + shakeX + lengthdir_x(knockbackLength * knockbackDir,knockbackAngle),y + shakeY + lengthdir_y(knockbackLength * knockbackDir,knockbackAngle),image_xscale,image_yscale,image_angle,image_blend,image_alpha);
 if (global.shaders) pal_swap_reset();
+#endregion
+
+#region Crack
+scr_DrawMask_Begin();
+
+scr_DrawMask_Mask(sprite_index,image_index,x + shakeX + lengthdir_x(knockbackLength * knockbackDir,knockbackAngle),y + shakeY + lengthdir_y(knockbackLength * knockbackDir,knockbackAngle));
+
+draw_sprite_ext(crackSprite,(hpMax - hp),x + shakeX + lengthdir_x(knockbackLength * knockbackDir,knockbackAngle),y + shakeY + lengthdir_y(knockbackLength * knockbackDir,knockbackAngle),image_xscale,image_yscale,image_angle,image_blend,image_alpha); 
+
+scr_DrawMask_End();
 #endregion

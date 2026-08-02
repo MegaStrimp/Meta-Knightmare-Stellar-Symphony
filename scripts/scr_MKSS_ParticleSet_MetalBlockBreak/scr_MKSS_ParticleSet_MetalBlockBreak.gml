@@ -28,6 +28,7 @@ function scr_MKSS_ParticleSet_MetalBlockBreak(parTargetX,parTargetY)
 		par[i + 1].rotateSpd = 45;
 		par[i + 1].palSprite = palSprite;
 		par[i + 1].palIndex = palIndex;
+		par[i + 1].particleAfterDeath[0] = scr_MKSS_ParticleSet_SmallSparkle;
 	}
 	
 	return par;

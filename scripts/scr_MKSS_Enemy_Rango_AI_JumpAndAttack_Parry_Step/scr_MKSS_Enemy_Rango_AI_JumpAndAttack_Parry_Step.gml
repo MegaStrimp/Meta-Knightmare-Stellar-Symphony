@@ -5,7 +5,7 @@ function scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Parry_Step()
 	#region Setup
 	if (enemyState_Setup)
 	{
-		destroyTimer = 1200;
+		destroyTimer = 600;
 		pauseOutsideView = false;
 		hsp = 0;
 		vsp = 0;
@@ -63,11 +63,16 @@ function scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Parry_Step()
 		#endregion
 		
 		#region Destroy Timer
+		if (outsideViewTrigger) show_debug_message("aaa");
+		if (outsideViewTrigger) destroyTimer = 0;
+		
 		if (destroyTimer != -1)
 		{
 			destroyTimer = max(destroyTimer - speedMultFinal,0);
 			if (destroyTimer == 0)
 			{
+				scr_MKSS_ParticleSet_EnemyDefeatStars(x,y);
+				
 				instance_destroy();
 		
 				destroyTimer = -1;

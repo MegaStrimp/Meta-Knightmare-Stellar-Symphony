@@ -1,11 +1,11 @@
 ///@description Begin Step
 
 #region Variables
-var outsideViewTrigger = (scr_Entity_OutsideView(32) * pauseOutsideView * (hp > 0) * !hasKnockback * (hurtTimer == -1));
+outsideViewTrigger = (scr_Entity_OutsideView(32) * (hp > 0) * !hasKnockback * (hurtTimer == -1));
 
 speedMultFinal = global.speedMultGlobal * global.speedMultEnemy * speedMult;
-localPause = (global.pauseFinal) or (localFreezeFrameTimer != -1) or (outsideViewTrigger);
-localPause_NoFreezeFrame = (global.pauseFinal) or (outsideViewTrigger);
+localPause = (global.pauseFinal) or (localFreezeFrameTimer != -1) or ((outsideViewTrigger) and (pauseOutsideView));
+localPause_NoFreezeFrame = (global.pauseFinal) or ((outsideViewTrigger) and (pauseOutsideView));
 
 grounded = false;
 if (place_meeting(x,y + dirY,obj_ParentWall))
@@ -23,7 +23,7 @@ if (maxHp == -1) maxHp = hp;
 #endregion
 
 #region Spawner
-if ((hasSpawner) and (spawnerIndex != -1) and (outsideViewTrigger))
+if ((hasSpawner) and (spawnerIndex != -1) and ((outsideViewTrigger) and (pauseOutsideView)))
 {
 	with (spawnerIndex) canSpawnEnemy = true;
 	

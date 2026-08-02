@@ -16,11 +16,14 @@ if (!localPause)
 		{
 			if ((place_meeting(x,y,other)) and (dmg != -1) and (((!isMultiHit) and (other.lastHitProjectile != id)) or ((isMultiHit) and (multiHitFlag))))
 			{
+				scr_MKSS_ParticleSet_ConcentratedGemBreak(other.x,other.y,other.gemPalette);
+				
 				scr_PlaySfx(snd_MKSS_GemHit);
 				
 				other.lastHitProjectile = id;
 				other.knockbackLength = other.knockbackLengthMax;
 				other.knockbackAngle = knockbackAngle;
+				other.shakeTimer = other.shakeTimerMax;
 				other.hp -= 1;
 				
 				if (other.hp <= 0)
@@ -42,11 +45,22 @@ if (!localPause)
 					
 					if (audio_is_playing(snd_MKSS_GemAmbience)) audio_stop_sound(snd_MKSS_GemAmbience);
 					
-					scr_MKSS_ParticleSet_Explosion1(other.x,other.y)
+					scr_MKSS_ParticleSet_Explosion1(other.x,other.y);
 					
 					instance_destroy(other);
 				}
 			}
+		}
+	}
+	#endregion
+	
+	#region Shake Timer
+	if (shakeTimer != -1)
+	{
+		shakeTimer = max(shakeTimer - speedMultFinal,0);
+		if (shakeTimer == 0)
+		{
+			shakeTimer = -1;
 		}
 	}
 	#endregion

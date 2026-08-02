@@ -65,11 +65,11 @@ function scr_MKSS_Enemy_Init_Set()
 		[
 	        [
 				spr_MKSS_Enemy_BrontoBurt_Base_Hurt1,
-				10
+				1
 			],
 	        [
 				spr_MKSS_Enemy_BrontoBurt_Base_Hurt2,
-				10
+				1
 			]
 	    ],
 		
@@ -97,19 +97,19 @@ function scr_MKSS_Enemy_Init_Set()
 		[
 	        [
 				spr_MKSS_Enemy_GhostKnight_Base_Hurt1,
-				10
+				1
 			],
 	        [
 				spr_MKSS_Enemy_GhostKnight_Base_Hurt2,
-				10
+				1
 			],
 	        [
 				spr_MKSS_Enemy_GhostKnight_Base_Hurt3,
-				10
+				1
 			],
 	        [
 				spr_MKSS_Enemy_GhostKnight_Base_Hurt4,
-				10
+				1
 			]
 	    ],
 		
@@ -156,19 +156,19 @@ function scr_MKSS_Enemy_Init_Set()
 		[
 	        [
 				spr_MKSS_Enemy_Peezer_Base_Hurt1,
-				10
+				1
 			],
 	        [
 				spr_MKSS_Enemy_Peezer_Base_Hurt2,
-				10
+				1
 			],
 	        [
 				spr_MKSS_Enemy_Peezer_Base_Hurt3,
-				10
+				1
 			],
 	        [
 				spr_MKSS_Enemy_Peezer_Base_Hurt4,
-				10
+				1
 			]
 	    ],
 		
@@ -197,7 +197,7 @@ function scr_MKSS_Enemy_Init_Set()
 		[
 	        [
 				spr_MKSS_Enemy_Trappy_Base_Hurt1,
-				10
+				1
 			]
 	    ],
 		
@@ -205,19 +205,19 @@ function scr_MKSS_Enemy_Init_Set()
 		[
 	        [
 				spr_MKSS_Enemy_Trappy_Base_Hurt2,
-				10
+				1
 			],
 	        [
 				spr_MKSS_Enemy_Trappy_Base_Hurt3,
-				10
+				1
 			],
 	        [
 				spr_MKSS_Enemy_Trappy_Base_Hurt4,
-				10
+				1
 			],
 	        [
 				spr_MKSS_Enemy_Trappy_Base_Hurt5,
-				10
+				1
 			]
 	    ],
 		
@@ -244,15 +244,15 @@ function scr_MKSS_Enemy_Init_Set()
 		[
 	        [
 				spr_MKSS_Enemy_Rango_Base_Hurt1,
-				10
+				1
 			],
 	        [
 				spr_MKSS_Enemy_Rango_Base_Hurt2,
-				10
+				1
 			],
 	        [
 				spr_MKSS_Enemy_Rango_Base_Hurt3,
-				10
+				1
 			]
 	    ],
 		
@@ -453,15 +453,74 @@ function scr_MKSS_Enemy_Init_Set()
 		[
 	        [
 				spr_MKSS_Enemy_Wheelie_Base_Hurt1,
-				10
+				1
 			],
 	        [
 				spr_MKSS_Enemy_Wheelie_Base_Hurt2,
-				10
+				1
 			]
 	    ],
 		
 		maskIndex: spr_16x16Mask_MiddleOrigin
+	});
+	#endregion
+	
+	#region Dizzy
+	var targetMappedID = scr_MKSS_Enemy_Init_Add("dizzy","Dizzy");
+	
+	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
+	{
+		sprIdle: spr_MKSS_Enemy_Dizzy_Base_Idle,
+		sprSpin: spr_MKSS_Enemy_Dizzy_Base_Spin,
+		sprSpot: spr_MKSS_Enemy_Dizzy_Base_Spot,
+		sprJump: spr_MKSS_Enemy_Dizzy_Base_Jump,
+		sprAttackReady: spr_MKSS_Enemy_Dizzy_Base_AttackReady,
+		sprAttack: spr_MKSS_Enemy_Dizzy_Base_Attack,
+		
+		sprHurt1: spr_MKSS_Enemy_Dizzy_Base_Hurt1,
+		sprHurt2: spr_MKSS_Enemy_Dizzy_Base_Hurt2,
+		
+	    sprHurtList:
+		[
+	        [
+				spr_MKSS_Enemy_Dizzy_Base_Hurt1,
+				1
+			],
+	        [
+				spr_MKSS_Enemy_Dizzy_Base_Hurt2,
+				1
+			]
+	    ],
+		
+		maskIndex: spr_16x16Mask_MiddleOrigin
+	});
+	#endregion
+	
+	#region Bouncy Sis
+	var targetMappedID = scr_MKSS_Enemy_Init_Add("bouncySis","Bouncy Sis");
+	
+	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
+	{
+		sprBounceReady: spr_MKSS_Enemy_BouncySis_Base_BounceReady,
+		sprBounce: spr_MKSS_Enemy_BouncySis_Base_Bounce,
+		sprSpinJump: spr_MKSS_Enemy_BouncySis_Base_SpinJump,
+		
+		sprHurt1: spr_MKSS_Enemy_BouncySis_Base_Hurt1,
+		sprHurt2: spr_MKSS_Enemy_BouncySis_Base_Hurt2,
+		
+	    sprHurtList:
+		[
+	        [
+				spr_MKSS_Enemy_BouncySis_Base_Hurt1,
+				1
+			],
+	        [
+				spr_MKSS_Enemy_BouncySis_Base_Hurt2,
+				1
+			]
+	    ],
+		
+		maskIndex: spr_24x24Mask_BottomOrigin
 	});
 	#endregion
 	
@@ -496,7 +555,7 @@ function scr_MKSS_Enemy_Init_Set()
 			]
 	    ],
 		
-		maskIndex: spr_16x16Mask_MiddleOrigin
+		maskIndex: spr_24x24Mask_BottomOrigin
 	});
 	#endregion
 	

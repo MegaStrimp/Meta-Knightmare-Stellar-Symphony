@@ -3,7 +3,7 @@
   "%Name":"spr_MKSS_Player_MetaKnight_Normal_Base_Squish",
   "bboxMode":0,
   "bbox_bottom":31,
-  "bbox_left":14,
+  "bbox_left":13,
   "bbox_right":27,
   "bbox_top":11,
   "collisionKind":1,
@@ -17,14 +17,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"288e236b-b32d-4c22-a66b-2c6948f1febc","name":"288e236b-b32d-4c22-a66b-2c6948f1febc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"afa53f35-4805-4630-b770-80953df6b30f","name":"afa53f35-4805-4630-b770-80953df6b30f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":32,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"0bbbe747-71fa-4b12-856a-2bf0e2f04edf","blendMode":0,"displayName":"default","isLocked":false,"name":"0bbbe747-71fa-4b12-856a-2bf0e2f04edf","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"5b10c3b7-fd4e-44ae-83da-4e7f7677fa9e","blendMode":0,"displayName":"default","isLocked":false,"name":"5b10c3b7-fd4e-44ae-83da-4e7f7677fa9e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_MKSS_Player_MetaKnight_Normal_Base_Squish",
   "nineSlice":null,
@@ -76,8 +76,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"288e236b-b32d-4c22-a66b-2c6948f1febc","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Base_Squish/spr_MKSS_Player_MetaKnight_Normal_Base_Squish.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9f3c2b6f-c628-489f-a605-c9a4f1e3c8d4","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"afa53f35-4805-4630-b770-80953df6b30f","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Base_Squish/spr_MKSS_Player_MetaKnight_Normal_Base_Squish.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"27ef5319-a11d-44a8-ab23-2a2bfea5eebb","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
