@@ -23,7 +23,7 @@ function scr_MKSS_Familiar_Init_Set()
 	scr_MKSS_Familiar_Init_Add("boss4","Boss 4 Familiar");
 	scr_MKSS_Familiar_Init_Add("boss5","Boss 5 Familiar");
 	
-	scr_MKSS_Familiar_Init_Add("ksw","Soft & Wet Familiar",,true);
+	scr_MKSS_Familiar_Init_Add("ksw","Bubble Fish",spr_MKSS_Familiar_SoftAndWet,true);
 	scr_MKSS_Familiar_Init_Add("waddleKnight","Bronto Burt",spr_MKSS_Familiar_WaddleKnight,true);
 	#endregion
 }
