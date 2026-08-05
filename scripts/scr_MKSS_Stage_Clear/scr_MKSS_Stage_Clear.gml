@@ -12,7 +12,7 @@ function scr_MKSS_Stage_Clear()
 	}
 	
 	global.MKSS_StageList[stageMappedID].isBeaten = true;
-	if (global.MKSS_StageList[stageMappedID].clearScript != -1) script_execute(clearScript,global.MKSS_StageList[stageMappedID].stageMappedID);
+	if (global.MKSS_StageList[stageMappedID].clearScript != -1) script_execute(global.MKSS_StageList[stageMappedID].clearScript,stageMappedID);
 	
 	scr_MKSS_SaveData(global.selectedSave);
 	#endregion
