@@ -1,5 +1,5 @@
 ///@description Room Creation Code
 
 #region Room Setup
-script_execute(scr_MKSS_RoomSetup_RoyalReeve_Prelude);
+script_execute(scr_MKSS_RoomSetup_StarryShores);
 #endregion

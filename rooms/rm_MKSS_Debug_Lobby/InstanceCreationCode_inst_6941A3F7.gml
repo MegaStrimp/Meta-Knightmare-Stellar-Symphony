@@ -1,2 +1,2 @@
-targetRoom = rm_MKSS_Debug_GigantEdge;
+targetRoom = rm_MKSS_StarryShores_Miniboss;
 text = "Gigant Edge";

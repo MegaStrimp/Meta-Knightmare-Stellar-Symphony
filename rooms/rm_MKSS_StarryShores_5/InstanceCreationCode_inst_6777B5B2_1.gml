@@ -1,1 +1,1 @@
-targetRoom = rm_MKSS_StarryShores_6;
+targetRoom = rm_MKSS_StarryShores_Miniboss;

@@ -12,7 +12,10 @@ var circleRadiusFinal = min(1,circleRadius + circleRadiusWave);
 if (isActive)
 {
 	var circleRadiusBg = circleRadiusFinal + .1 + random_range(-.1,.1);
+	
+	gpu_set_blendmode(bm_add);
 	draw_sprite_ext(spr_MKSS_StageEntrance_Portal_Base_Afterimage,circleIndex,x,y - 36,circleRadiusBg,circleRadiusBg,circleAngleWave,c_gray,.5);
+	gpu_set_blendmode(bm_normal);
 }
 #endregion
 
