@@ -94,6 +94,7 @@ function scr_MKSS_Player_MetaKnight_State_Parry_Step()
 				scr_PlaySfx(snd_MKSS_Parry);
 				
 				other.parryAttackBuffer = true;
+				other.parryCooldownTimer = 0;
 				
 				scr_SetGlobalFreezeFrame(8);
 				

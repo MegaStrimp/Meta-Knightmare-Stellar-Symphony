@@ -17,6 +17,8 @@ function scr_MKSS_Enemy_Miniboss_Setup(targetPlayBossTheme)
 			scr_MKSS_Music_Play(global.MKSS_MusicIDs[? "miniboss"]);
 			
 			audio_sound_loop_end(global.musicPlaying,global.MKSS_MusicList[global.MKSS_MusicIDs[? "miniboss"]].timestamps[0]);
+			
+			scr_Music_SetFade(1,,0);
 		}
 		#endregion
 	}

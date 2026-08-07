@@ -4,7 +4,6 @@ function scr_MKSS_UI_Button_Component_Save_Trigger(targetSave)
 {
 	if (!instance_exists(obj_Transition))
 	{
-		show_debug_message("a")
 		scr_PlaySfx(snd_MKSS_DoorEnter);
 		scr_Music_SetFade(0);
 		

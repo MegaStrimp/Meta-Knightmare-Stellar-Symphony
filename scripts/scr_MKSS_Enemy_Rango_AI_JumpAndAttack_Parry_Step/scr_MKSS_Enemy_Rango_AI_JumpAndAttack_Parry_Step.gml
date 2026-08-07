@@ -63,7 +63,6 @@ function scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Parry_Step()
 		#endregion
 		
 		#region Destroy Timer
-		if (outsideViewTrigger) show_debug_message("aaa");
 		if (outsideViewTrigger) destroyTimer = 0;
 		
 		if (destroyTimer != -1)

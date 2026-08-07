@@ -12,7 +12,7 @@ function scr_MKSS_Enemy_Keke_AI_FloatAndAttack_Step()
 			if (hp > 0)
 			{
 				#region Movement
-				scr_Component_BasicHorizontal_Step();
+				scr_Component_BasicHorizontal_Step(true);
 				
 				scr_Component_UpAndDown_Step();
 				#endregion
