@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_MKSS_Enemy_GhoulKnight_Base_Idle",
-    "path":"sprites/spr_MKSS_Enemy_GhoulKnight_Base_Idle/spr_MKSS_Enemy_GhoulKnight_Base_Idle.yy",
+    "name":"spr_MKSS_Enemy_Wormiller_Base_Idle",
+    "path":"sprites/spr_MKSS_Enemy_Wormiller_Base_Idle/spr_MKSS_Enemy_Wormiller_Base_Idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,
