@@ -7,6 +7,7 @@ event_inherited();
 #region Gameplay Variables
 enemyID = global.MKSS_EnemyIDs[? "grandWheelie"];
 hp = MKSS_Base_EnemyHP_Miniboss;
+hp = 1; //STRIMPTODO
 points = MKSS_Base_EnemyPoints_Miniboss;
 metaPointsOnDeath = MKSS_Base_EnemyMetaPoints_Miniboss;
 metaPointsOnOverkill = floor(metaPointsOnDeath / 2);

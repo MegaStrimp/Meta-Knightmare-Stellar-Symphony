@@ -5,10 +5,10 @@ function scr_MKSS_Weapon_Buzzcut_Base()
 	#region Variables
 	var attackTriggered = false;
 	
-	var maxComboLength = 2; //STRIMPTODO Upgrades
-	var hasFinisher = true; //STRIMPTODO Upgrades
-	var comboCooldownToleranceMax = 5; //STRIMPTODO Upgrades
-	var comboCooldownToleranceMax = 15; //STRIMPTODO Upgrades
+	var maxComboLength = scr_MKSS_Player_CheckUpgrade(playerNum,"Buzzcut_ReverseSlash");
+	var hasFinisher = scr_MKSS_Player_CheckUpgrade(playerNum,"Buzzcut_Finisher");
+	var comboCooldownToleranceMax = 5;
+	if (scr_MKSS_Player_CheckUpgrade(playerNum,"Buzzcut_Overcharge")) comboCooldownToleranceMax = 15;
 	
 	if (!hasFinisher) parryAttackFlag = false;
 	#endregion

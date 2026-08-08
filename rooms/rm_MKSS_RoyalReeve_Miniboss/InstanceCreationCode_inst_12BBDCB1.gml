@@ -14,7 +14,7 @@ triggerScript = function()
 		
 		scr_Music_SetFade(1,,1);
 		
-		scr_MKSS_EnemyArena_Add(232,88,obj_MKSS_Enemy_GigantEdge,scr_MKSS_Enemy_GigantEdge_AI_Normal_Setup,,-1,120,-1);
+		scr_MKSS_EnemyArena_Add(232,88,obj_MKSS_Enemy_GrandWheelie,scr_MKSS_Enemy_GrandWheelie_AI_Normal_Setup,,-1,120,-1);
 	}
 	
 	instance_destroy();

@@ -7,4 +7,9 @@ function scr_MKSS_EnemyArena_EndScript_RoyalReeve_GrandWheelie()
 	audio_sound_set_track_position(global.musicPlaying,global.MKSS_MusicList[global.MKSS_MusicIDs[? "royalReeve"]].timestamps[0]);
 	
 	scr_Music_SetFade(1,,0);
+	
+	with (instance_create_layer(424,88,"Environment",obj_MKSS_Door))
+	{
+		targetRoom = rm_MKSS_RoyalReeve_2;
+	}
 }
