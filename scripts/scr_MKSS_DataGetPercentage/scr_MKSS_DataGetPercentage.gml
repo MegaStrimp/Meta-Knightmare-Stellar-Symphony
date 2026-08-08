@@ -2,9 +2,6 @@
 
 function scr_MKSS_DataGetPercentage(file)
 {
-	//STRIMPTODO Add more macros
-	#macro MKSS_DataPercentage_Upgrade 1
-	
 	var fileFinal = file;
 	if (!global.isMobile) fileFinal = environment_get_variable("LOCALAPPDATA") + chr(92) + global.gameTitle + chr(92) + file;
 	
@@ -64,10 +61,10 @@ function scr_MKSS_DataGetPercentage(file)
 			
 			var upgradeIsUnlocked = ini_read_real("upgradeStatus",string(upgradeID) + "_IsUnlocked",false);
 			
-			totalWeight += MKSS_DataPercentage_Upgrade;
+			totalWeight += MKSS_Base_DataPercentage_Upgrade;
 			if (upgradeIsUnlocked)
 			{
-				addedWeight += MKSS_DataPercentage_Upgrade;
+				addedWeight += MKSS_Base_DataPercentage_Upgrade;
 			}
 		}
 	}

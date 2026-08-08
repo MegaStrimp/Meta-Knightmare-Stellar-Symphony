@@ -16,8 +16,6 @@ function scr_MKSS_Player_SpecialPoints_Add(targetSpecialPoints)
 			}
 			
 			scr_MKSS_ObtainNotif(global.MKSS_NotifIDs[? "specialBarTutorial"]);
-			
-			//STRIMPTODO Effects
 		}
 	}
 }

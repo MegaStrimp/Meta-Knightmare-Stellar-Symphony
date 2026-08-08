@@ -119,28 +119,54 @@ function scr_MKSS_Hud_DrawGUI()
 	if (markedEnemyIDFinal != noone) script_execute_ext(enemyHealthbarScript,[markedEnemyIDFinal,enemyTitle]);
 	#endregion
 	
-	#region Stage Score
-	if ((global.inStage) and (global.MKSS_StageHasScore))
+	if (global.inStage)
 	{
-		draw_sprite(hud_MedalSprite,hud_MedalIndex,24,14);
-		
-		if (hud_MedalTier != -1)
+		#region Stage Score
+		if (global.MKSS_StageHasScore)
 		{
-			scr_DrawMask_Begin();
-			scr_DrawMask_Mask(hud_MedalSprite,hud_MedalIndex,24,14);
+			draw_sprite(hud_MedalSprite,hud_MedalIndex,24,14);
 			
-			draw_sprite_ext(spr_MKSS_UI_Medal_Shine,0,floor(200 - ((global.currentTimePausable * 2) % 200)),14,1,1,0,c_white,.5);
+			if (hud_MedalTier != -1)
+			{
+				scr_DrawMask_Begin();
+				scr_DrawMask_Mask(hud_MedalSprite,hud_MedalIndex,24,14);
+				
+				draw_sprite_ext(spr_MKSS_UI_Medal_Shine,0,floor(200 - ((global.currentTimePausable * 2) % 200)),14,1,1,0,c_white,.5);
+				
+				scr_DrawMask_End();
+			}
 			
-			scr_DrawMask_End();
+			for (var i = 0; i < max(0,hud_MedalTier); i++)
+			{
+				draw_sprite(spr_MKSS_Particle_SmallSparkle,hud_MedalSparkleIndex,floor(12 + hud_MedalSparkleX[i]),floor(26 - hud_MedalSparkleY[i]));
+			}
+			
+			var displayedScore = string_replace_all(string_format(global.levelScoreCurrent,6,0)," ","0");
+			scribble(hud_MedalFont + string(displayedScore) + "[/font]").align(fa_center).draw(24,28);
 		}
+		#endregion
 		
-		for (var i = 0; i < max(0,hud_MedalTier); i++)
+		#region Collectibles
+		draw_sprite_ext(spr_MKSS_Hud_Collectibles_Bg,0,global.gameWidth,2,1,1,0,c_white,.3);
+		
+		var collectibleList = global.MKSS_StageList[global.MKSS_StageIDs[? global.currentStage]].collectibles;
+		var collectibleCount = array_length(collectibleList);
+		
+		for (var i = 0; i < array_length(collectibleList); i++)
 		{
-			draw_sprite(spr_MKSS_Particle_SmallSparkle,hud_MedalSparkleIndex,floor(12 + hud_MedalSparkleX[i]),floor(26 - hud_MedalSparkleY[i]));
+			collectibleCount -= 1;
+			
+			if (collectibleList[i].icon != undefined)
+			{
+				var waveX = sine_wave(current_time / 4200,1,1,0);
+				var waveY = sine_wave(current_time / (4500 + (4500 * i)),.8,1.1,0);
+				
+				if (!collectibleList[i].isObtained) gpu_set_fog(true,c_black,0,0);
+				draw_sprite(collectibleList[i].icon,0,global.gameWidth - 12 - (22 * collectibleCount) + waveX,14 - (2 * collectibleCount) + waveY);
+				if (!collectibleList[i].isObtained) gpu_set_fog(false,c_white,0,0);
+			}
+			
 		}
-		
-		var displayedScore = string_replace_all(string_format(global.levelScoreCurrent,6,0)," ","0");
-		scribble(hud_MedalFont + string(displayedScore) + "[/font]").align(fa_center).draw(24,28);
+		#endregion
 	}
-	#endregion
 }

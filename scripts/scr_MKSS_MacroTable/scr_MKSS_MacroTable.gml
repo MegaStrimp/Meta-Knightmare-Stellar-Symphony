@@ -2,6 +2,7 @@
 
 function scr_MKSS_MacroTable()
 {
+	
 	#macro MKSS_Base_PlayerHP 200
 	#macro MKSS_Base_PlayerHP_Upgrade 50
 	
@@ -67,5 +68,10 @@ function scr_MKSS_MacroTable()
 	#macro MKSS_Base_Color_Andromeda "#4483D4"
 	#macro MKSS_Base_Color_Completion "#FFD800"
 	#macro MKSS_Base_Color_Parry "#4EDB23"
+	#endregion
+	
+	#region Colors
+	//STRIMPTODO Add more data percentage macros
+	#macro MKSS_Base_DataPercentage_Upgrade 1
 	#endregion
 }

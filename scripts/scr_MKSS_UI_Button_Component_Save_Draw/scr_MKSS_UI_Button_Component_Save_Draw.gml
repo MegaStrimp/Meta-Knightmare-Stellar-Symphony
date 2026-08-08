@@ -42,7 +42,7 @@ function scr_MKSS_UI_Button_Component_Save_Draw(targetNum)
 	if (obj_MKSS_Menu_TitleScreen.saveExists[targetNum])
 	{
 		var targetIcon = global.UI_IconBindings[? string(input_binding_get("Y"))];
-		if (targetIcon != undefined) draw_sprite(targetIcon,0,x - 17,y + 20); //STRIMPTODO  + (2 * (buttonInputTimerComponent_YTimer != -1)) maybe?
+		if (targetIcon != undefined) draw_sprite(targetIcon,0,x - 17,y + 20 + (2 * (buttonInputTimerComponent_YTimer != -1)));
 	}
 	#endregion
 }

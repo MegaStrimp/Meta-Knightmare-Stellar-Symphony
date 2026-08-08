@@ -3,7 +3,7 @@
 function scr_MKSS_RoomSetup_FissionFactoryEX()
 {
 	#region Music
-	//scr_MKSS_Music_Play(global.MKSS_MusicIDs[? "fissionFactoryEX"]); STRIMPTODO
+	scr_MKSS_Music_Play(global.MKSS_MusicIDs[? "fissionFactoryEX"]);
 	#endregion
 	
 	#region Background

@@ -64,7 +64,7 @@ function scr_MKSS_Enemy_WaddleDee_AI_Walk_Step()
 					
 					with (target)
 					{
-						//scr_MKSS_ParticleSet_Explosion1(x,y); STRIMPTODO smaller explosion
+						scr_MKSS_ParticleSet_Explosion3(x,y);
 						
 						with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
 						{
