@@ -232,7 +232,7 @@ function scr_MKSS_Stage_Init_Set()
 	
 	scr_MKSS_Stage_Init_Add_ClearScript(targetMappedID,function(targetMappedID)
 	{
-		//global.MKSS_SprayPaintList[global.MKSS_SprayPaintIDs[? "astra"]].isUnlocked = true; STRIMPTODO
+		global.MKSS_SprayPaintList[global.MKSS_SprayPaintIDs[? "nebula"]].isUnlocked = true;
 	});
 	#endregion
 	

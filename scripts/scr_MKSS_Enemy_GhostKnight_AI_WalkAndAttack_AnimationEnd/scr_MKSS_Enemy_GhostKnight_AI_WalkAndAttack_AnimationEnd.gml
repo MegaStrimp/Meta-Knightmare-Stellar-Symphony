@@ -1,4 +1,4 @@
-///@description MKSS - Enemy - GhostKnight - AI - Walk and Attack - Animation End
+///@description MKSS - Enemy - Ghost Knight - AI - Walk and Attack - Animation End
 
 function scr_MKSS_Enemy_GhostKnight_AI_WalkAndAttack_AnimationEnd()
 {

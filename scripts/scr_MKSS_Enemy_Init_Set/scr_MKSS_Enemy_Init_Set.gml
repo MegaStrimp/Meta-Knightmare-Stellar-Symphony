@@ -236,6 +236,7 @@ function scr_MKSS_Enemy_Init_Set()
 		sprAttack: spr_MKSS_Enemy_Rango_Base_Attack,
 		sprFlop: spr_MKSS_Enemy_Rango_Base_Flop,
 		sprFlopJump: spr_MKSS_Enemy_Rango_Base_FlopJump,
+		
 		sprHurt1: spr_MKSS_Enemy_Rango_Base_Hurt1,
 		sprHurt2: spr_MKSS_Enemy_Rango_Base_Hurt2,
 		sprHurt3: spr_MKSS_Enemy_Rango_Base_Hurt3,
@@ -252,6 +253,88 @@ function scr_MKSS_Enemy_Init_Set()
 			],
 	        [
 				spr_MKSS_Enemy_Rango_Base_Hurt3,
+				1
+			]
+	    ],
+		
+		maskIndex: spr_16x16Mask_MiddleOrigin
+	});
+	#endregion
+	
+	#region Ghoul Knight
+	var targetMappedID = scr_MKSS_Enemy_Init_Add("ghoulKnight","Ghoul Knight");
+	
+	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
+	{
+		sprIdle: spr_MKSS_Enemy_GhoulKnight_Base_Idle,
+		sprWalk: spr_MKSS_Enemy_GhoulKnight_Base_Walk,
+		sprAttackReady: spr_MKSS_Enemy_GhoulKnight_Base_AttackReady,
+		sprAttack: spr_MKSS_Enemy_GhoulKnight_Base_Attack,
+		sprShieldReady: spr_MKSS_Enemy_GhoulKnight_Base_ShieldReady,
+		sprGuard: spr_MKSS_Enemy_GhoulKnight_Base_Guard,
+		
+		sprHurt1: spr_MKSS_Enemy_GhoulKnight_Base_Hurt1,
+		sprHurt2: spr_MKSS_Enemy_GhoulKnight_Base_Hurt2,
+		sprHurt3: spr_MKSS_Enemy_GhoulKnight_Base_Hurt3,
+		sprHurt4: spr_MKSS_Enemy_GhoulKnight_Base_Hurt4,
+		
+	    sprHurtList:
+		[
+	        [
+				spr_MKSS_Enemy_GhoulKnight_Base_Hurt1,
+				1
+			],
+	        [
+				spr_MKSS_Enemy_GhoulKnight_Base_Hurt2,
+				1
+			],
+	        [
+				spr_MKSS_Enemy_GhoulKnight_Base_Hurt3,
+				1
+			],
+	        [
+				spr_MKSS_Enemy_GhoulKnight_Base_Hurt4,
+				1
+			]
+	    ],
+		
+		maskIndex: spr_16x16Mask_MiddleOrigin
+	});
+	#endregion
+	
+	#region Wormiller
+	var targetMappedID = scr_MKSS_Enemy_Init_Add("wormiller","Wormiller");
+	
+	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
+	{
+		sprIdle: spr_MKSS_Enemy_Wormiller_Base_Idle,
+		sprScoot: spr_MKSS_Enemy_Wormiller_Base_Scoot,
+		sprBounce: spr_MKSS_Enemy_Wormiller_Base_Bounce,
+		sprCling1: spr_MKSS_Enemy_Wormiller_Base_Cling1,
+		sprCling2: spr_MKSS_Enemy_Wormiller_Base_Cling2,
+		sprCling3: spr_MKSS_Enemy_Wormiller_Base_Cling3,
+		
+		sprHurt1: spr_MKSS_Enemy_Wormiller_Base_Hurt1,
+		sprHurt2: spr_MKSS_Enemy_Wormiller_Base_Hurt2,
+		sprHurt3: spr_MKSS_Enemy_Wormiller_Base_Hurt3,
+		sprHurt4: spr_MKSS_Enemy_Wormiller_Base_Hurt4,
+		
+	    sprHurtList:
+		[
+	        [
+				spr_MKSS_Enemy_Wormiller_Base_Hurt1,
+				1
+			],
+	        [
+				spr_MKSS_Enemy_Wormiller_Base_Hurt2,
+				1
+			],
+	        [
+				spr_MKSS_Enemy_Wormiller_Base_Hurt3,
+				1
+			],
+	        [
+				spr_MKSS_Enemy_Wormiller_Base_Hurt4,
 				1
 			]
 	    ],

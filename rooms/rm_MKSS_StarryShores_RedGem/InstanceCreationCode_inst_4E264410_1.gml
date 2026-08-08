@@ -13,21 +13,19 @@ triggerScript = function()
 		
 		scr_Camera_SetLimits(128 + 16,room_width);
 		
+		//Some Peezers
 		scr_MKSS_EnemyArena_Add(208,32,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_Flop_Setup,,,,1);
-		scr_MKSS_EnemyArena_Add(400,32,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_Flop_Setup,,,,-1);
 		scr_MKSS_EnemyArena_Add(304,128,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Setup,,-1,,-1);
 		
+		//Bring in the Ghost Knights
 		scr_MKSS_EnemyArena_Add(320,32,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_Flop_Setup,,45,,-1);
-		scr_MKSS_EnemyArena_Add(264,64,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_Flop_Setup,,,,-1);
-		scr_MKSS_EnemyArena_Add(376,64,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_Flop_Setup,,90,,-1);
-		scr_MKSS_EnemyArena_Add(208,48,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_Flop_Setup,,,,-1);
 		scr_MKSS_EnemyArena_Add(432,48,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_Flop_Setup,,-1,,-1);
 		
+		//Harder combo
 		scr_MKSS_EnemyArena_Add(328,88,obj_MKSS_Enemy_Trappy,scr_MKSS_Enemy_Trappy_AI_Throw_Setup,,45,,1);
-		scr_MKSS_EnemyArena_Add(232,144,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Setup,,45,,-1);
-		scr_MKSS_EnemyArena_Add(280,128,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Setup,,45,,-1);
-		scr_MKSS_EnemyArena_Add(328,144,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Setup,,45,,-1);
-		scr_MKSS_EnemyArena_Add(368,128,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Setup,,45,,-1);
+		scr_MKSS_EnemyArena_Add(416,144,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Setup,,-1,,-1);
+		
+		//The Big Ghost Knight >:)		(and his subjects)
 		scr_MKSS_EnemyArena_Add(416,144,obj_MKSS_Enemy_Rango,scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Setup,,-1,,-1);
 	}
 	
