@@ -21,7 +21,9 @@ scr_DrawMask_Begin();
 
 scr_DrawMask_Mask(sprite_index,image_index,x + shakeX + lengthdir_x(knockbackLength * knockbackDir,knockbackAngle),y + shakeY + lengthdir_y(knockbackLength * knockbackDir,knockbackAngle));
 
-draw_sprite_ext(crackSprite,(hpMax - hp),x + shakeX + lengthdir_x(knockbackLength * knockbackDir,knockbackAngle),y + shakeY + lengthdir_y(knockbackLength * knockbackDir,knockbackAngle),image_xscale,image_yscale,image_angle,image_blend,image_alpha); 
+var crackSpriteFinal = spr_MKSS_ConcentratedGem_Crack_Blue;
+if (global.shaders) crackSpriteFinal = crackSprite;
+draw_sprite_ext(crackSpriteFinal,(hpMax - hp),x + shakeX + lengthdir_x(knockbackLength * knockbackDir,knockbackAngle),y + shakeY + lengthdir_y(knockbackLength * knockbackDir,knockbackAngle),image_xscale,image_yscale,image_angle,image_blend,image_alpha); 
 
 scr_DrawMask_End();
 #endregion

@@ -17,6 +17,8 @@ function scr_MKSS_SprayPaint_Init_Set()
 	scr_MKSS_SprayPaint_Init_Add("astra","Astra",spr_MKSS_SprayPaint_Astra);
 	scr_MKSS_SprayPaint_Init_Add("wizard","Wizard",spr_MKSS_SprayPaint_Wizard);
 	scr_MKSS_SprayPaint_Init_Add("jester","Jester",spr_MKSS_SprayPaint_Jester);
+	scr_MKSS_SprayPaint_Init_Add("angel","Angel",spr_MKSS_SprayPaint_Angel);
+	scr_MKSS_SprayPaint_Init_Add("mind","Mind",spr_MKSS_SprayPaint_Mind);
 	scr_MKSS_SprayPaint_Init_Add("nebula","Nebula",spr_MKSS_SprayPaint_Nebula);
 	scr_MKSS_SprayPaint_Init_Add("superstar","Superstar",spr_MKSS_SprayPaint_Superstar);
 	scr_MKSS_SprayPaint_Init_Add("aeon","Aeon",spr_MKSS_SprayPaint_Aeon);
