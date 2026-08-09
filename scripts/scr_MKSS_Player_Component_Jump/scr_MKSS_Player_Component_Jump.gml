@@ -8,7 +8,8 @@ function scr_MKSS_Player_Component_Jump()
 	
 	#region Jump
 	var canJump = true;
-	if (global.MKSS_CutsceneStopMovement) canJump = false;
+	if ((global.MKSS_CutsceneStopMovement)
+	or (hurtState == hurtStates.hurt)) canJump = false;
 	
 	if (canJump)
 	{

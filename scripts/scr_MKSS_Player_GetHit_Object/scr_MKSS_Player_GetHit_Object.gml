@@ -1,23 +1,31 @@
 ///@description MKSS - Player - Get Hit - Object
 
-function scr_MKSS_Player_GetHit_Object(targetPlayer,targetObject)
+function scr_MKSS_Player_GetHit_Object(targetPlayer,targetAttack)
 {
 	with (targetPlayer)
 	{
-		scr_Debug_WriteLog("Player " + string(playerNum) + " Got Hit");
-		
+		#region Effects
 		scr_PlaySfx(snd_MKSS_Hurt);
+		#endregion
 		
-		var hurtDir = 1;
-		if (targetObject.x > targetPlayer.x) hurtDir = -1;
-		
-		hsp = 2 * hurtDir * speedMultFinal;
-		vsp = -2 * speedMultFinal;
+		#region Variables
 		hurtState = hurtStates.hurt;
 		hurtTimer = hurtTimer_Hurt;
-		lastHitProjectile = targetObject;
+		lastHitProjectile = targetAttack;
+		#endregion
 		
-		//hurtElement = irandom(MKSS_HurtElements.length - 1);
+		#region Knockback
+		var knockbackAngleFinal = targetAttack.knockbackAngle;
+		var finalKnockbackForce = max(0,(targetAttack.knockbackForce) * random_range(1,1.1) * speedMultFinal);
+		
+		//scr_Enemy_ReceiveKnockback(targetPlayer,finalKnockbackForce,knockbackAngleFinal);
+		hsp = lengthdir_x(finalKnockbackForce,knockbackAngleFinal);
+		vsp = lengthdir_y(finalKnockbackForce,knockbackAngleFinal);
+		forceJump = true;
+		#endregion
+		
+		#region Elemental Damange Effects
+		//hurtElement = targetAttack.element; STRIMPTODO Refactor this to attackTypes
 		
 		switch (hurtElement)
 		{
@@ -39,8 +47,15 @@ function scr_MKSS_Player_GetHit_Object(targetPlayer,targetObject)
 		}
 		
 		if (hurtElement == MKSS_HurtElements.shocked) scr_MKSS_ParticleSet_Spark(x,y,30);
+		#endregion
 		
-		global.playerHp[playerNum] -= targetObject.dmg;
+		#region Decrease Health
+		var dmgFinal = targetAttack.dmg;
+		
+		global.playerHp[playerNum] -= dmgFinal;
+		#endregion
+		
+		#region Death
 		if (global.playerHp[playerNum] <= 0)
 		{
 			global.playerHp[playerNum] = 0;
@@ -51,5 +66,8 @@ function scr_MKSS_Player_GetHit_Object(targetPlayer,targetObject)
 		{
 			scr_MKSS_ParticleSet_PlayerHit(x,y);
 		}
+		#endregion
+		
+		scr_Debug_WriteLog(string(object_get_name(targetPlayer.object_index)) + " " + string_copy(string(targetPlayer.id),14,6) + " Received " + string(dmgFinal) + " Damage And " + string(finalKnockbackForce) + " Knockback At " + string(knockbackAngleFinal) + " Degrees From " + string(object_get_name(targetAttack.object_index)));
 	}
 }

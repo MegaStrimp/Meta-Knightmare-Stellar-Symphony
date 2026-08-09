@@ -22,4 +22,8 @@ function scr_MKSS_UI_Button_Component_Save_Base(targetNum)
 	
 	if (isSelected) obj_MKSS_Menu_TitleScreen.currentButtonText = buttonText;
 	#endregion
+	
+	#region Button Input Timers
+	scr_Component_ButtonInputTimer_Step();
+	#endregion
 }
