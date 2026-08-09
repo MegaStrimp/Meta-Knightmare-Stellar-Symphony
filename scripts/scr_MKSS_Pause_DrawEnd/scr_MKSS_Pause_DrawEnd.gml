@@ -94,15 +94,7 @@ function scr_MKSS_Pause_DrawEnd()
 	gpu_set_alphatestenable(true);
 	draw_set_alpha(1);
 	
-	for (var ix = 0; ix < 5; ix++)
-	{
-		for (var iy = 0; iy < 5; iy++)
-		{
-			draw_sprite_ext(MKSS_GamePause_CircleBg,0,xx + MKSS_GamePause_CircleBgX + ((ix - 2) * MKSS_GamePause_CircleBgWidth),yy + MKSS_GamePause_CircleBgY + ((iy - 2) * MKSS_GamePause_CircleBgHeight),1,1,0,c_white,1);
-			draw_sprite_ext(MKSS_GamePause_CircleBgStars1,0,xx + MKSS_GamePause_CircleBgStars1X + ((ix - 2) * MKSS_GamePause_CircleBgStars1Width),yy + MKSS_GamePause_CircleBgStars1Y + ((iy - 2) * MKSS_GamePause_CircleBgStars1Height),1,1,0,c_white,1);
-			draw_sprite_ext(MKSS_GamePause_CircleBgStars2,0,xx + MKSS_GamePause_CircleBgStars2X + ((ix - 2) * MKSS_GamePause_CircleBgStars2Width),yy + MKSS_GamePause_CircleBgStars2Y + ((iy - 2) * MKSS_GamePause_CircleBgStars2Height),1,1,0,c_white,1);
-		}
-	}
+	draw_surface(obj_MKSS_Surface_Space.drawSurface,xx,yy);
 	
 	scr_DrawMask_End();
 	#endregion

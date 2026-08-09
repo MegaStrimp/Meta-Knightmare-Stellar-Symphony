@@ -1,5 +1,9 @@
 ///@description Draw
 
+#region Background
+draw_surface(obj_MKSS_Surface_Space.drawSurface,0,0);
+#endregion
+
 #region Title
 if (state <= 3)
 {

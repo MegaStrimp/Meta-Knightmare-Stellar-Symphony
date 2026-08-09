@@ -106,6 +106,8 @@ function scr_MKSS_LoadData(file,importFile = false)
 			global.MKSS_StageList[i].collectibles[j].isObtained = ini_read_real("stageStatus",string(stageID) + "_Collectible_" + string(currentCollectible.ID) + "_IsUnlocked",false);
 		}
 	}
+	
+	global.MKSS_BarrierIndex = ini_write_real("stageStatus","barrierIndex",0);
 	#endregion
 	
 	ini_close();

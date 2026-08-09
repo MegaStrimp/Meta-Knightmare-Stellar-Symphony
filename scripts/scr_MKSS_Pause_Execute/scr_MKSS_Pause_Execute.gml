@@ -23,5 +23,9 @@ function scr_MKSS_Pause_Execute()
 		gamePauseDelayTimer = gamePauseDelayTimerMax;
 		
 		gamePauseDelayTimer = gamePauseDelayTimerMax;
+	
+		#region Create Surface
+		if (!instance_exists(obj_MKSS_Surface_Space)) instance_create_depth(0,0,0,obj_MKSS_Surface_Space);
+		#endregion
 	}
 }

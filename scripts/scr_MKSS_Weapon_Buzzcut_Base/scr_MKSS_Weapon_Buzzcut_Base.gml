@@ -30,7 +30,7 @@ function scr_MKSS_Weapon_Buzzcut_Base()
 				case 0:
 				if ((!isAttacking) and (attackCooldown <= comboCooldownTolerance))
 				{
-					if (maxComboLength > 1)
+					if (maxComboLength > 0)
 					{
 						buzzcut_BasicCombo_Index = 1;
 						buzzcut_BasicCombo_Timer = buzzcut_BasicCombo_TimerMax;

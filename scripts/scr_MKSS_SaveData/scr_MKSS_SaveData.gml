@@ -115,6 +115,8 @@ function scr_MKSS_SaveData(file)
 				if (currentCollectible.isObtained) ini_write_real("stageStatus",string(stageID) + "_Collectible_" + string(currentCollectible.ID) + "_IsObtained",currentCollectible.isObtained);
 			}
 		}
+		
+		ini_write_real("stageStatus","barrierIndex",global.MKSS_BarrierIndex);
 		#endregion
 	
 		ini_close();

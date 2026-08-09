@@ -51,3 +51,7 @@ for (var i = 0; i < 3; i++)
 particleTimerMax = 30;
 particleTimer = particleTimerMax;
 #endregion
+
+#region Create Surface
+if (!instance_exists(obj_MKSS_Surface_Space)) instance_create_depth(0,0,0,obj_MKSS_Surface_Space);
+#endregion

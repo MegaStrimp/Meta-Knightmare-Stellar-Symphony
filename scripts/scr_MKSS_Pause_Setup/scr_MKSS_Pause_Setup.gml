@@ -36,21 +36,6 @@ function scr_MKSS_Pause_Setup()
 	MKSS_GamePause_CircleSurface_PixelW = shader_get_uniform(shd_ColoredOutline,"pixelW");
 	MKSS_GamePause_CircleSurface_OutlineColor = shader_get_uniform(shd_ColoredOutline,"outlineColor");
 	MKSS_GamePause_CircleCount = 8;
-	MKSS_GamePause_CircleBg = spr_MKSS_Menu_PauseScreen_Upgrades_Bg;
-	MKSS_GamePause_CircleBgWidth = sprite_get_width(MKSS_GamePause_CircleBg);
-	MKSS_GamePause_CircleBgHeight = sprite_get_height(MKSS_GamePause_CircleBg);
-	MKSS_GamePause_CircleBgX = 0;
-	MKSS_GamePause_CircleBgY = 0;
-	MKSS_GamePause_CircleBgStars1 = spr_MKSS_Menu_PauseScreen_Upgrades_BgStars1;
-	MKSS_GamePause_CircleBgStars1Width = sprite_get_width(MKSS_GamePause_CircleBgStars1);
-	MKSS_GamePause_CircleBgStars1Height = sprite_get_height(MKSS_GamePause_CircleBgStars1);
-	MKSS_GamePause_CircleBgStars1X = 0;
-	MKSS_GamePause_CircleBgStars1Y = 0;
-	MKSS_GamePause_CircleBgStars2 = spr_MKSS_Menu_PauseScreen_Upgrades_BgStars2;
-	MKSS_GamePause_CircleBgStars2Width = sprite_get_width(MKSS_GamePause_CircleBgStars2);
-	MKSS_GamePause_CircleBgStars2Height = sprite_get_height(MKSS_GamePause_CircleBgStars2);
-	MKSS_GamePause_CircleBgStars2X = 0;
-	MKSS_GamePause_CircleBgStars2Y = 0;
 	MKSS_GamePause_CircleZoom = 1;
 	MKSS_GamePause_CircleZoomTarget = 1;
 	

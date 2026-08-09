@@ -25,7 +25,9 @@ scoreBonuses = [];
 targetRoom_Next = -1;
 targetRoom_Retry = -1;
 targetRoom = -1;
-
-drawSurface = -1;
 #endregion
+#endregion
+
+#region Create Surface
+if (!instance_exists(obj_MKSS_Surface_Planetarium)) instance_create_depth(0,0,0,obj_MKSS_Surface_Planetarium);
 #endregion

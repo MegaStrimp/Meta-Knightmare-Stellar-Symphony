@@ -144,19 +144,6 @@ function scr_MKSS_Pause_Step()
 	}
 	
 	MKSS_GamePause_CircleZoom = lerp(MKSS_GamePause_CircleZoom,MKSS_GamePause_CircleZoomTarget,.1);
-	
-	MKSS_GamePause_CircleBgX += .2;
-	if (MKSS_GamePause_CircleBgX >= MKSS_GamePause_CircleBgWidth) MKSS_GamePause_CircleBgX -= MKSS_GamePause_CircleBgWidth;
-	MKSS_GamePause_CircleBgY += .075;
-	if (MKSS_GamePause_CircleBgY >= MKSS_GamePause_CircleBgHeight) MKSS_GamePause_CircleBgY -= MKSS_GamePause_CircleBgHeight;
-	MKSS_GamePause_CircleBgStars1X += .16;
-	if (MKSS_GamePause_CircleBgStars1X >= MKSS_GamePause_CircleBgStars1Width) MKSS_GamePause_CircleBgStars1X -= MKSS_GamePause_CircleBgStars1Width;
-	MKSS_GamePause_CircleBgStars1Y += .06;
-	if (MKSS_GamePause_CircleBgStars1Y >= MKSS_GamePause_CircleBgStars1Height) MKSS_GamePause_CircleBgStars1Y -= MKSS_GamePause_CircleBgStars1Height;
-	MKSS_GamePause_CircleBgStars2X += .12;
-	if (MKSS_GamePause_CircleBgStars2X >= MKSS_GamePause_CircleBgStars2Width) MKSS_GamePause_CircleBgStars2X -= MKSS_GamePause_CircleBgStars2Width;
-	MKSS_GamePause_CircleBgStars2Y += .04;
-	if (MKSS_GamePause_CircleBgStars2Y >= MKSS_GamePause_CircleBgStars2Height) MKSS_GamePause_CircleBgStars2Y -= MKSS_GamePause_CircleBgStars2Height;
 	#endregion
 	
 	#region Settings
