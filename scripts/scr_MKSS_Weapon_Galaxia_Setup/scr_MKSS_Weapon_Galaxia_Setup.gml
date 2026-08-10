@@ -23,5 +23,7 @@ function scr_MKSS_Weapon_Galaxia_Setup()
 	galaxia_DownThrust_GravLimit = 6;
 	galaxia_DownThrust_StateTimerMax = 15;
 	galaxia_DownThrust_EndTimerMax = 15;
+	
+	galaxia_CircleSlash_Movespeed = 4;
 	#endregion
 }

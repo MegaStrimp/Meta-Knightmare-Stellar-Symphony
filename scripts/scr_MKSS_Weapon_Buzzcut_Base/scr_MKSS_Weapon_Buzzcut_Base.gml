@@ -7,6 +7,8 @@ function scr_MKSS_Weapon_Buzzcut_Base()
 	
 	var maxComboLength = scr_MKSS_Player_CheckUpgrade(playerNum,"Buzzcut_ReverseSlash");
 	var hasFinisher = scr_MKSS_Player_CheckUpgrade(playerNum,"Buzzcut_Finisher");
+	var hasChainlings = scr_MKSS_Player_CheckUpgrade(playerNum,"Buzzcut_Chainlings");
+	
 	var comboCooldownToleranceMax = 5;
 	if (scr_MKSS_Player_CheckUpgrade(playerNum,"Buzzcut_Overcharge")) comboCooldownToleranceMax = 15;
 	
@@ -22,49 +24,62 @@ function scr_MKSS_Weapon_Buzzcut_Base()
 	{
 		if (input_check_pressed("X",playerNum))
 		{
-			var comboCooldownTolerance = -1;
-			if ((buzzcut_BasicCombo_Active) or (buzzcut_BasicCombo_Index > 0)) comboCooldownTolerance = comboCooldownToleranceMax;
-			
-			switch (buzzcut_BasicCombo_Index)
+			if ((!grounded) and (!isFlying) and (isRunning))
 			{
-				case 0:
-				if ((!isAttacking) and (attackCooldown <= comboCooldownTolerance))
+				if ((hasChainlings) and (!isAttacking) and (attackCooldown == -1))
 				{
-					if (maxComboLength > 0)
+					attackTriggered = true;
+					attackIndex = global.MKSS_AttackIDs[? "buzzcut_Chainlings"];
+					
+					script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript);
+				}
+			}
+			else
+			{
+				var comboCooldownTolerance = -1;
+				if ((buzzcut_BasicCombo_Active) or (buzzcut_BasicCombo_Index > 0)) comboCooldownTolerance = comboCooldownToleranceMax;
+			
+				switch (buzzcut_BasicCombo_Index)
+				{
+					case 0:
+					if ((!isAttacking) and (attackCooldown <= comboCooldownTolerance))
 					{
-						buzzcut_BasicCombo_Index = 1;
-						buzzcut_BasicCombo_Timer = buzzcut_BasicCombo_TimerMax;
+						if (maxComboLength > 0)
+						{
+							buzzcut_BasicCombo_Index = 1;
+							buzzcut_BasicCombo_Timer = buzzcut_BasicCombo_TimerMax;
+						}
+						else
+						{
+							buzzcut_BasicCombo_Index = 0;
+							buzzcut_BasicCombo_Timer = -1;
+						}
+							
+						attackTriggered = true;
+						attackIndex = global.MKSS_AttackIDs[? "buzzcut_Slash1"];
+							
+						script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript);
+					
+						if (buzzcut_BasicCombo_Active) buzzcut_Finisher_Timer = buzzcut_Finisher_TimerMax;
 					}
-					else
+					break;
+						
+					case 1:
+					if ((!isAttacking) and (attackCooldown <= comboCooldownTolerance))
 					{
 						buzzcut_BasicCombo_Index = 0;
-						buzzcut_BasicCombo_Timer = -1;
+						buzzcut_BasicCombo_Timer = buzzcut_BasicCombo_TimerMax;
+						buzzcut_BasicCombo_Active = true;
+							
+						attackTriggered = true;
+						attackIndex = global.MKSS_AttackIDs[? "buzzcut_Slash2"];
+							
+						script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript);
+							
+						buzzcut_Finisher_Timer = buzzcut_Finisher_TimerMax;
 					}
-							
-					attackTriggered = true;
-					attackIndex = global.MKSS_AttackIDs[? "buzzcut_Slash1"];
-							
-					script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript);
-					
-					if (buzzcut_BasicCombo_Active) buzzcut_Finisher_Timer = buzzcut_Finisher_TimerMax;
+					break;
 				}
-				break;
-						
-				case 1:
-				if ((!isAttacking) and (attackCooldown <= comboCooldownTolerance))
-				{
-					buzzcut_BasicCombo_Index = 0;
-					buzzcut_BasicCombo_Timer = buzzcut_BasicCombo_TimerMax;
-					buzzcut_BasicCombo_Active = true;
-							
-					attackTriggered = true;
-					attackIndex = global.MKSS_AttackIDs[? "buzzcut_Slash2"];
-							
-					script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript);
-							
-					buzzcut_Finisher_Timer = buzzcut_Finisher_TimerMax;
-				}
-				break;
 			}
 		}
 		

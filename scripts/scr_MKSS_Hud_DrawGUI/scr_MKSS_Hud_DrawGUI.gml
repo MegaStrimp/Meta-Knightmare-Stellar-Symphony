@@ -147,7 +147,7 @@ function scr_MKSS_Hud_DrawGUI()
 		#endregion
 		
 		#region Collectibles
-		draw_sprite_ext(spr_MKSS_Hud_Collectibles_Bg,0,global.gameWidth,2,1,1,0,c_white,.3);
+		draw_sprite_ext(spr_MKSS_Hud_Collectibles_Bg,0,global.gameWidth,2,1,1,0,c_white,.5);
 		
 		var collectibleList = global.MKSS_StageList[global.MKSS_StageIDs[? global.currentStage]].collectibles;
 		var collectibleCount = array_length(collectibleList);
@@ -162,7 +162,7 @@ function scr_MKSS_Hud_DrawGUI()
 				var waveY = sine_wave(current_time / (4500 + (4500 * i)),.8,1.1,0);
 				
 				if (!collectibleList[i].isObtained) gpu_set_fog(true,c_black,0,0);
-				draw_sprite(collectibleList[i].icon,0,global.gameWidth - 12 - (22 * collectibleCount) + waveX,14 - (2 * collectibleCount) + waveY);
+				draw_sprite(collectibleList[i].icon,0,global.gameWidth - 12 - (22 * collectibleCount) + floor(waveX),14 - (2 * collectibleCount) + floor(waveY));
 				if (!collectibleList[i].isObtained) gpu_set_fog(false,c_white,0,0);
 			}
 			

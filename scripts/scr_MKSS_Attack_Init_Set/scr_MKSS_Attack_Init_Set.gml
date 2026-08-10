@@ -27,13 +27,15 @@ function scr_MKSS_Attack_Init_Set()
 	scr_MKSS_Attack_Init_Add("galaxia_Finisher",scr_MKSS_Attack_Execute_Galaxia_Finisher);
 	scr_MKSS_Attack_Init_Add("galaxia_UpThrust",scr_MKSS_Attack_Execute_Galaxia_UpThrust);
 	scr_MKSS_Attack_Init_Add("galaxia_DownThrust",scr_MKSS_Attack_Execute_Galaxia_DownThrust);
-	//scr_MKSS_Attack_Init_Add("galaxia_MachTornado",scr_MKSS_Attack_Execute_Galaxia_MachTornado);
+	scr_MKSS_Attack_Init_Add("galaxia_MachTornado",scr_MKSS_Attack_Execute_Galaxia_MachTornado);
+	scr_MKSS_Attack_Init_Add("galaxia_CircleSlash",scr_MKSS_Attack_Execute_Galaxia_CircleSlash);
 	#endregion
 	
 	#region Buzzcut
 	scr_MKSS_Attack_Init_Add("buzzcut_Slash1",scr_MKSS_Attack_Execute_Buzzcut_Slash1);
 	scr_MKSS_Attack_Init_Add("buzzcut_Slash2",scr_MKSS_Attack_Execute_Buzzcut_Slash2);
 	scr_MKSS_Attack_Init_Add("buzzcut_Finisher",scr_MKSS_Attack_Execute_Buzzcut_Finisher);
+	scr_MKSS_Attack_Init_Add("buzzcut_Chainlings",scr_MKSS_Attack_Execute_Buzzcut_Chainlings);
 	#endregion
 	
 	#region Peezer

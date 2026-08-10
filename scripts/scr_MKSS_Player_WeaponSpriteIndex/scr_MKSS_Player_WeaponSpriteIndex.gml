@@ -128,12 +128,20 @@ function scr_MKSS_Player_WeaponSpriteIndex()
 		weaponSpriteIndex = weaponSpriteSet.sprAttackGalaxiaMachTornado;
 		break;
 		
+		case spriteSet.sprAttackGalaxiaCircleSlash:
+		weaponSpriteIndex = weaponSpriteSet.sprAttackGalaxiaCircleSlash;
+		break;
+		
 		case spriteSet.sprAttackBuzzcutSlash1:
 		weaponSpriteIndex = weaponSpriteSet.sprAttackBuzzcutSlash1;
 		break;
 		
 		case spriteSet.sprAttackBuzzcutSlash2:
 		weaponSpriteIndex = weaponSpriteSet.sprAttackBuzzcutSlash2;
+		break;
+		
+		case spriteSet.sprAttackBuzzcutChainlings:
+		weaponSpriteIndex = weaponSpriteSet.sprAttackBuzzcutChainlings;
 		break;
 	}
 	

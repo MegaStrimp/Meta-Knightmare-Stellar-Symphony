@@ -25,7 +25,7 @@ function scr_MKSS_Player_MetaKnight_State_Galaxia_Stab_Step()
 		#endregion
 		
 		#region Hurt
-		if (hurtState == hurtStates.hurt) galaxia_DownThrust_EndTimer = 0;
+		if (hurtState == hurtStates.hurt) galaxia_Stab_EndTimer = 0;
 		#endregion
 		
 		#region Slide Accel Timer

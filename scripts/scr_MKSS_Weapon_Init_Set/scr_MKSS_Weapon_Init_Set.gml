@@ -57,9 +57,11 @@ function scr_MKSS_Weapon_Init_Set()
 		sprAttackGalaxiaDownThrust: spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_Attack_DownAttack,
 		sprAttackGalaxiaDownThrustEnd: spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_Attack_DownAttackEnd,
 		sprAttackGalaxiaMachTornado: undefined,
+		sprAttackGalaxiaCircleSlash: spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_Attack_CircleSlash,
 		
 		sprAttackBuzzcutSlash1: undefined,
-		sprAttackBuzzcutSlash2: undefined
+		sprAttackBuzzcutSlash2: undefined,
+		sprAttackBuzzcutChainlings: undefined
 	});
 	
 	scr_MKSS_Weapon_Init_Add_Palette(targetMappedID,spr_MKSS_Player_MetaKnight_Normal_Sword_Palette_Galaxia);
@@ -109,9 +111,11 @@ function scr_MKSS_Weapon_Init_Set()
 		sprAttackGalaxiaDownThrust: undefined,
 		sprAttackGalaxiaDownThrustEnd: undefined,
 		sprAttackGalaxiaMachTornado: undefined,
+		sprAttackGalaxiaCircleSlash: undefined,
 		
 		sprAttackBuzzcutSlash1: undefined,
-		sprAttackBuzzcutSlash2: undefined
+		sprAttackBuzzcutSlash2: undefined,
+		sprAttackBuzzcutChainlings: undefined
 	});
 	#endregion
 	
@@ -159,9 +163,11 @@ function scr_MKSS_Weapon_Init_Set()
 		sprAttackGalaxiaDownThrust: undefined,
 		sprAttackGalaxiaDownThrustEnd: undefined,
 		sprAttackGalaxiaMachTornado: undefined,
+		sprAttackGalaxiaCircleSlash: undefined,
 		
 		sprAttackBuzzcutSlash1: undefined,
-		sprAttackBuzzcutSlash2: undefined
+		sprAttackBuzzcutSlash2: undefined,
+		sprAttackBuzzcutChainlings: undefined
 	});
 	#endregion
 	
@@ -209,9 +215,11 @@ function scr_MKSS_Weapon_Init_Set()
 		sprAttackGalaxiaDownThrust: undefined,
 		sprAttackGalaxiaDownThrustEnd: undefined,
 		sprAttackGalaxiaMachTornado: undefined,
+		sprAttackGalaxiaCircleSlash: undefined,
 		
 		sprAttackBuzzcutSlash1: undefined,
-		sprAttackBuzzcutSlash2: undefined
+		sprAttackBuzzcutSlash2: undefined,
+		sprAttackBuzzcutChainlings: undefined
 	});
 	#endregion
 	
@@ -259,9 +267,11 @@ function scr_MKSS_Weapon_Init_Set()
 		sprAttackGalaxiaDownThrust: undefined,
 		sprAttackGalaxiaDownThrustEnd: undefined,
 		sprAttackGalaxiaMachTornado: undefined,
+		sprAttackGalaxiaCircleSlash: undefined,
 		
 		sprAttackBuzzcutSlash1: undefined,
-		sprAttackBuzzcutSlash2: undefined
+		sprAttackBuzzcutSlash2: undefined,
+		sprAttackBuzzcutChainlings: undefined
 	});
 	#endregion
 	#endregion

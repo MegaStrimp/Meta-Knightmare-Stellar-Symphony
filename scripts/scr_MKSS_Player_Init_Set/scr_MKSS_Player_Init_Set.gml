@@ -51,10 +51,12 @@ function scr_MKSS_Player_Init_Set()
 		sprAttackGalaxiaUpAttack: spr_MKSS_Player_MetaKnight_Normal_Base_Attack_Galaxia_UpAttack,
 		sprAttackGalaxiaDownThrust: spr_MKSS_Player_MetaKnight_Normal_Base_Attack_Galaxia_DownAttack,
 		sprAttackGalaxiaDownThrustEnd: spr_MKSS_Player_MetaKnight_Normal_Base_Attack_Galaxia_DownAttackEnd,
-		sprAttackGalaxiaMachTornado: undefined,
+		sprAttackGalaxiaMachTornado: spr_MKSS_Player_MetaKnight_Normal_Base_Attack_Normal_Tornado,
+		sprAttackGalaxiaCircleSlash: spr_MKSS_Player_MetaKnight_Normal_Base_Attack_Normal_CircleSlash,
 		
 		sprAttackBuzzcutSlash1: spr_MKSS_Player_MetaKnight_Normal_Base_Attack_Buzzcut_Slash1,
-		sprAttackBuzzcutSlash2: spr_MKSS_Player_MetaKnight_Normal_Base_Attack_Buzzcut_Slash2
+		sprAttackBuzzcutSlash2: spr_MKSS_Player_MetaKnight_Normal_Base_Attack_Buzzcut_Slash2,
+		sprAttackBuzzcutChainlings: spr_MKSS_Player_MetaKnight_Normal_Base_Attack_Buzzcut_Chainlings
 	});
 	#endregion
 	#endregion

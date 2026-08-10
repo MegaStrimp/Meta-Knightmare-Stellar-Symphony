@@ -8,6 +8,11 @@ function scr_MKSS_Weapon_Galaxia_Base()
 	var maxComboLength = (scr_MKSS_Player_CheckUpgrade(playerNum,"Galaxia_Kick") + scr_MKSS_Player_CheckUpgrade(playerNum,"Galaxia_Barrage"));
 	var hasFinisher = scr_MKSS_Player_CheckUpgrade(playerNum,"Galaxia_Finisher");
 	var hasExtraFinisher = scr_MKSS_Player_CheckUpgrade(playerNum,"Galaxia_ExtraFinisher");
+	var hasMachTornado = scr_MKSS_Player_CheckUpgrade(playerNum,"Galaxia_MachTornado");
+	var hasStab = scr_MKSS_Player_CheckUpgrade(playerNum,"Galaxia_Stab");
+	var hasCircleSlash = scr_MKSS_Player_CheckUpgrade(playerNum,"Galaxia_CircleSlash");
+	var hasGroundPound = scr_MKSS_Player_CheckUpgrade(playerNum,"Galaxia_GroundPound");
+	var hasUpJuggle = scr_MKSS_Player_CheckUpgrade(playerNum,"Galaxia_UpJuggle");
 	
 	if (!hasFinisher) parryAttackFlag = false;
 	#endregion
@@ -29,7 +34,7 @@ function scr_MKSS_Weapon_Galaxia_Base()
 	{
 		if (input_check_pressed("X",playerNum))
 		{
-			if (input_check("up",playerNum))
+			if ((hasUpJuggle) and (input_check("up",playerNum)))
 			{
 				if ((!isAttacking) and (attackCooldown == -1))
 				{
@@ -39,7 +44,7 @@ function scr_MKSS_Weapon_Galaxia_Base()
 					script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript);
 				}
 			}
-			else if ((input_check("down",playerNum)) and (!isDucking))
+			else if ((hasGroundPound) and (input_check("down",playerNum)) and (!isDucking))
 			{
 				if ((!isAttacking) and (attackCooldown == -1))
 				{
@@ -49,11 +54,21 @@ function scr_MKSS_Weapon_Galaxia_Base()
 					script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript);
 				}
 			}
+			else if ((!grounded) and (!isFlying) and (isRunning))
+			{
+				if ((hasCircleSlash) and (!isAttacking) and (attackCooldown == -1))
+				{
+					attackTriggered = true;
+					attackIndex = global.MKSS_AttackIDs[? "galaxia_CircleSlash"];
+					
+					script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript);
+				}
+			}
 			else
 			{
 				if (galaxia_Run_Index == 2)
 				{
-					if ((!isAttacking) and (attackCooldown == -1))
+					if ((hasStab) and (!isAttacking) and (attackCooldown == -1))
 					{
 						attackTriggered = true;
 						attackIndex = global.MKSS_AttackIDs[? "galaxia_Stab"];
@@ -143,12 +158,12 @@ function scr_MKSS_Weapon_Galaxia_Base()
 				galaxia_BasicCombo_Timer = -1;
 				galaxia_Finisher_Timer = -1;
 			}
-			else
+			else if (hasMachTornado)
 			{
 				attackTriggered = true;
-				//attackIndex = global.MKSS_AttackIDs[? "galaxia_MachTornado"];
+				attackIndex = global.MKSS_AttackIDs[? "galaxia_MachTornado"];
 				
-				//script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript);
+				script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript);
 			}
 		}
 		

@@ -11,4 +11,6 @@ function scr_MKSS_Weapon_Buzzcut_Setup()
 	
 	buzzcut_Finisher_Timer = -1;
 	buzzcut_Finisher_TimerMax = 30;
+	
+	Buzzcut_Chainlings_Movespeed = 3;
 }
