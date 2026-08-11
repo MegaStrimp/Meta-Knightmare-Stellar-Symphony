@@ -12,8 +12,6 @@ function scr_MKSS_Player_MetaKnight_State_Buzzcut_Chainlings_Step()
 		
 		buzzcut_Chainlings_ShootCount = 0;
 		
-		attackMakeLightInvincible = true;
-		
 		playerState_Setup = false;
 	}
 	#endregion

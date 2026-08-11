@@ -1,12 +1,12 @@
 ///@description MKSS - Attack - Execute - Buzzcut - Finisher
 
-function scr_MKSS_Attack_Execute_Buzzcut_Finisher()
+function scr_MKSS_Attack_Execute_Buzzcut_Finisher(hasGigatorque = false)
 {
 	attackString = global.MKSS_AttackList[attackIndex].ID;
 	scr_Debug_WriteLog(string(object_get_name(object_index)) + " Used [" + attackString + "]");
 	
 	#region Audio
-	var sfx = scr_PlaySfx(snd_MKSS_Slash1);
+	var sfx = scr_PlaySfx(snd_MKSS_Slide);
 	audio_sound_pitch(sfx,random_range(.85,1.15));
 	#endregion
 	
@@ -14,18 +14,19 @@ function scr_MKSS_Attack_Execute_Buzzcut_Finisher()
 	isAttacking = true;
 	
 	hasAttackAnimation = false;
-	scr_ChangeSprite(spriteSet.sprAttackBuzzcutSlash1);
-	hasAttackAnimation = true;
+	scr_ChangeSprite(spriteSet.sprAttackGalaxiaCircleSlash);
 	
-	scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Normal_Step);
+	scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Buzzcut_Finisher_Step);
 	
 	canCancelAttackAnimation = false;
 	attackCanTurnSprite = false;
+	canAttackCancelTargetState = false;
 	
-	drawDirX = dirX;
+	attackStopSpeedLimit = true;
+	hsp = buzzcut_Finisher_Movespeed * dirX * speedMultFinal;
 	
-	attackCancelTimer = 60;
-	attackCooldownTarget = 15;
+	attackCancelTimer = 90;
+	attackCooldownTarget = 0;
 	#endregion
 	
 	#region Attack
@@ -33,23 +34,22 @@ function scr_MKSS_Attack_Execute_Buzzcut_Finisher()
 	{
 		owner = other;
 		isEnemy = false;
-		dmg = floor(MKSS_Base_BuzzcutDamage / 1.5);
+		dmg = floor(MKSS_Base_BuzzcutDamage / 2.5);
 		followOwner = true;
 		followOwnerImageIndex = true;
 		destroyIfOwnerNotAttack = true;
-		pauseAfterAnimation = true;
 		canBreakBlocks = true;
 		isMelee = true;
 		isMultiHit = true;
-		multiHitTimerMax = 2;
+		multiHitTimerMax = 4 - (hasGigatorque * 2);
 		multiHitTimer = 0;
 		enemyHurtTimerMult = 3;
 		freezeFrameForce = 1;
-		knockbackAngle = 10;
-		if (other.dirX == -1) knockbackAngle = 170;
+		knockbackAngle = 45;
+		if (other.dirX == -1) knockbackAngle = 135;
 		knockbackForce = 1;
-		sprite_index = spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash1;
-		mask_index = spr_MKSS_Player_MetaKnight_Normal_AttackMasks_Attack_Normal_Slash1;
+		sprite_index = spr_MKSS_Attack_Buzzcut_Finisher_Mask;
+		mask_index = spr_MKSS_Attack_Buzzcut_Finisher_Mask;
 		image_xscale = other.dirX;
 		dirX = other.dirX;
 		attackAIBeginStep = scr_MKSS_Attack_Buzzcut_Finisher_BeginStep;

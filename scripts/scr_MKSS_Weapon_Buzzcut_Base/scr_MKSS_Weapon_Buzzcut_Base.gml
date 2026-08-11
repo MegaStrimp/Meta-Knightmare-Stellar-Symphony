@@ -6,11 +6,16 @@ function scr_MKSS_Weapon_Buzzcut_Base()
 	var attackTriggered = false;
 	
 	var maxComboLength = scr_MKSS_Player_CheckUpgrade(playerNum,"Buzzcut_ReverseSlash");
+	var hasFinisher = scr_MKSS_Player_CheckUpgrade(playerNum,"Buzzcut_Overcharge");
 	var hasFinisher = scr_MKSS_Player_CheckUpgrade(playerNum,"Buzzcut_Finisher");
+	var hasGigatorque = scr_MKSS_Player_CheckUpgrade(playerNum,"Buzzcut_Gigatorque");
+	var hasDrillsaw = scr_MKSS_Player_CheckUpgrade(playerNum,"Buzzcut_Drillsaw");
 	var hasChainlings = scr_MKSS_Player_CheckUpgrade(playerNum,"Buzzcut_Chainlings");
+	var hasSawBombard = scr_MKSS_Player_CheckUpgrade(playerNum,"Buzzcut_SawBombard");
+	var hasChainChakram = scr_MKSS_Player_CheckUpgrade(playerNum,"Buzzcut_ChainChakram");
 	
 	var comboCooldownToleranceMax = 5;
-	if (scr_MKSS_Player_CheckUpgrade(playerNum,"Buzzcut_Overcharge")) comboCooldownToleranceMax = 15;
+	if (hasOvercharge) comboCooldownToleranceMax = 15;
 	
 	if (!hasFinisher) parryAttackFlag = false;
 	#endregion
@@ -103,7 +108,11 @@ function scr_MKSS_Weapon_Buzzcut_Base()
 			attackTriggered = true;
 			attackIndex = global.MKSS_AttackIDs[? "buzzcut_Finisher"];
 			
-			script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript);
+			script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript,hasGigatorque);
+			
+			buzzcut_BasicCombo_Index = 0;
+			buzzcut_BasicCombo_Active = false;
+			buzzcut_BasicCombo_Timer = -1;
 			
 			canParryAttackTimer = -1;
 			parryAttackFlag = false;
