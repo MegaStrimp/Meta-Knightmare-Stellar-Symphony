@@ -25,7 +25,7 @@ function scr_MKSS_Attack_Execute_Buzzcut_Finisher(hasGigatorque = false)
 	attackStopSpeedLimit = true;
 	hsp = buzzcut_Finisher_Movespeed * dirX * speedMultFinal;
 	
-	attackCancelTimer = 90;
+	attackCancelTimer = 45;
 	attackCooldownTarget = 0;
 	#endregion
 	

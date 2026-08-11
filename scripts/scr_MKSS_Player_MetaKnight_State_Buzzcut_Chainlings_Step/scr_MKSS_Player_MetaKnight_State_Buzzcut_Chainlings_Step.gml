@@ -42,7 +42,7 @@ function scr_MKSS_Player_MetaKnight_State_Buzzcut_Chainlings_Step()
 					{
 						owner = other;
 						isEnemy = false;
-						dmg = floor(MKSS_Base_BuzzcutDamage / 1.5);
+						dmg = floor(MKSS_Base_BuzzcutDamage * 3);
 						destroyAfterCollideWall = true;
 						destroyAfterHit = true;
 						canBreakBlocks = true;
@@ -69,7 +69,7 @@ function scr_MKSS_Player_MetaKnight_State_Buzzcut_Chainlings_Step()
 					{
 						owner = other;
 						isEnemy = false;
-						dmg = floor(MKSS_Base_BuzzcutDamage / 1.5);
+						dmg = floor(MKSS_Base_BuzzcutDamage * 3);
 						destroyAfterCollideWall = true;
 						destroyAfterHit = true;
 						canBreakBlocks = true;
