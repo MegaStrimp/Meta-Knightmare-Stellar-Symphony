@@ -112,6 +112,7 @@ function scr_MKSS_LoadData(file,importFile = false)
 	
 	#region NPC Status
 	global.MKSS_NPCStatus_TalkedToPaintRoller = ini_read_real("npcStatus","talkedToPaintRoller",false);
+	global.MKSS_NPCStatus_TalkedToCaptainVul = ini_read_real("npcStatus","talkedToCaptainVul",false);
 	#endregion
 	
 	ini_close();

@@ -121,6 +121,7 @@ function scr_MKSS_SaveData(file)
 		
 		#region NPC Status
 		if (global.MKSS_NPCStatus_TalkedToPaintRoller) ini_write_real("npcStatus","talkedToPaintRoller",global.MKSS_NPCStatus_TalkedToPaintRoller);
+		if (global.MKSS_NPCStatus_TalkedToCaptainVul) ini_write_real("npcStatus","talkedToCaptainVul",global.MKSS_NPCStatus_TalkedToCaptainVul);
 		#endregion
 	
 		ini_close();

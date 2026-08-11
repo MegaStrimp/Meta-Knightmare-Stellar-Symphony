@@ -197,7 +197,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_PaintRoller_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_PaintRoller_Portrait_Talk,
-			text: "Hey boss! Can I ask you somethin' uh... personal?... How many people 'round here have... uh...  noses? Cuz I just noticed that this paint I'm using... uh, it has a fume warning...?",
+			text: "Hey boss! Can I ask you somethin' uh... personal?... How many people 'round here have... uh... noses? Cuz I just noticed that this paint I'm using... uh, it has a fume warning...?",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
 			drawScript: defaultDrawScript
@@ -339,6 +339,46 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_CaptainVul_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_CaptainVul_Portrait_Talk,
+			text: "Ah, my lord! I'd say I'm surprised to see you but... well, my face isn't the ship's figurehead.",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_CaptainVul_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_CaptainVul_Portrait_Talk,
+			text: "What am I doing? With all due respect, things can get a bit stressful around here, and you told us to stand by. I'm the Halberd's captain, so if she's not in action, neither am I. I figured I'd pass the time tending bar.",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_CaptainVul_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_CaptainVul_Portrait_Talk,
+			text: "The crew's happy, I'm happy, I say two birds killed with one stone... Figure of speech, of course. But, uh... if you see any Rockies, I wasn't here.",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_CaptainVul_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_CaptainVul_Portrait_Talk,
+			text: "What, who are these 'others?' Oh, they know who they are.",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound,
+			drawScript: defaultDrawScript
+		}
+	]
+	
+	scr_MKSS_Dialogue_Init_Add("captainVul_Halberd_1",dialogue);
+	#endregion
+	
+	#region Halberd 2
+	var dialogue = 
+	[
+		{
+			portrait_Idle: spr_MKSS_NPC_CaptainVul_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_CaptainVul_Portrait_Talk,
 			text: "My lord, you're looking well. I'm glad you and the other Meta-Knights don't hold, you know, THAT, against me... But I still feel like I've heard 'chicken' thrown around from time to time. You know. From OTHERS.",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
@@ -355,14 +395,14 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_CaptainVul_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_CaptainVul_Portrait_Talk,
-			text: "What, who are these 'others?' Oh, they know who they are.",
+			text: "You should relax too. You're no good to anyone if you wear yourself out. Nothing's sadder than clipped wings, get me?",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
 			drawScript: defaultDrawScript
 		}
 	]
 	
-	scr_MKSS_Dialogue_Init_Add("captainVul_Halberd_1",dialogue);
+	scr_MKSS_Dialogue_Init_Add("captainVul_Halberd_2",dialogue);
 	#endregion
 	#endregion
 	

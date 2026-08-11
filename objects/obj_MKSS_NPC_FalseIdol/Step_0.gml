@@ -9,8 +9,6 @@ if (!localPause)
 		
 		sprite_index = spr_MKSS_NPC_FalseIdol_Idle;
 		image_index = 0;
-		
-		spriteTimer = spriteTimerMax;
 	}
 	#endregion
 }

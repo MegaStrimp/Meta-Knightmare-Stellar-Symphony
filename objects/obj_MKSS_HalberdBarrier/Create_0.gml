@@ -17,8 +17,6 @@ barrierX =
 	1848 //Postgame Unlocked
 ];
 
-show_debug_message(global.MKSS_BarrierIndex)
-show_debug_message(barrierX[0])
 x = barrierX[global.MKSS_BarrierIndex];
 #endregion
 
