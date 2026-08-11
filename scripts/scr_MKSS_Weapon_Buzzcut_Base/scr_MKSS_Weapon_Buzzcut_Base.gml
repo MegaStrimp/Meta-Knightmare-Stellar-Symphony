@@ -6,7 +6,7 @@ function scr_MKSS_Weapon_Buzzcut_Base()
 	var attackTriggered = false;
 	
 	var maxComboLength = scr_MKSS_Player_CheckUpgrade(playerNum,"Buzzcut_ReverseSlash");
-	var hasFinisher = scr_MKSS_Player_CheckUpgrade(playerNum,"Buzzcut_Overcharge");
+	var hasOvercharge = scr_MKSS_Player_CheckUpgrade(playerNum,"Buzzcut_Overcharge");
 	var hasFinisher = scr_MKSS_Player_CheckUpgrade(playerNum,"Buzzcut_Finisher");
 	var hasGigatorque = scr_MKSS_Player_CheckUpgrade(playerNum,"Buzzcut_Gigatorque");
 	var hasDrillsaw = scr_MKSS_Player_CheckUpgrade(playerNum,"Buzzcut_Drillsaw");
