@@ -107,7 +107,11 @@ function scr_MKSS_LoadData(file,importFile = false)
 		}
 	}
 	
-	global.MKSS_BarrierIndex = ini_write_real("stageStatus","barrierIndex",0);
+	global.MKSS_BarrierIndex = ini_read_real("stageStatus","barrierIndex",0);
+	#endregion
+	
+	#region NPC Status
+	global.MKSS_NPCStatus_TalkedToPaintRoller = ini_read_real("npcStatus","talkedToPaintRoller",false);
 	#endregion
 	
 	ini_close();

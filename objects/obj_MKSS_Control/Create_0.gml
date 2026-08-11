@@ -12,6 +12,7 @@ scr_MKSS_Upgrade_Init_Set();
 scr_MKSS_SprayPaint_Init_Set();
 scr_MKSS_Familiar_Init_Set();
 scr_MKSS_Enemy_Init_Set();
+scr_MKSS_AttackTypes_Init_Set();
 scr_MKSS_Attack_Init_Set();
 scr_MKSS_Dialogue_Init_Set();
 scr_MKSS_UI_Button_Init_Set();
@@ -82,6 +83,8 @@ global.MKSS_CurrentDecalPalette = -1;
 
 playerMetaQuickTimerMax = 30;
 
+global.MKSS_CurrentMassDestructionObject = -1;
+
 global.flag_MKSS_MetaPointCollect = false;
 global.flag_MKSS_AbilitySwitch = false;
 #endregion
@@ -126,6 +129,8 @@ scr_MKSS_SaveGeneral("general.ini");
 
 scr_MKSS_LoadConfig("config.ini");
 scr_MKSS_SaveConfig("config.ini");
+
+scr_MKSS_LoadData(global.selectedSave);
 
 scr_MKSS_DefaultKeybindings();
 scr_MKSS_LoadControls("controls.ini");

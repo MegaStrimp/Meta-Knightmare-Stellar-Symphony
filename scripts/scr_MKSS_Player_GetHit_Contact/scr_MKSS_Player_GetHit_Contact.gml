@@ -24,28 +24,33 @@ function scr_MKSS_Player_GetHit_Contact(targetPlayer,targetObject)
 		#endregion
 		
 		#region Elemental Damange Effects
-		//hurtElement = targetObject.element; STRIMPTODO Refactor this to attackTypes
+		ds_list_clear(MKSS_HurtElement);
 		
-		switch (hurtElement)
+		for (var i = 0; i < ds_list_size(targetObject.attackTypes); i++)
 		{
-			default:
-			scr_ChangeSprite(spriteSet.sprHurtNormal,true);
-			break;
+			var value = ds_list_find_value(targetObject.attackTypes,i);
 			
-			case MKSS_HurtElements.shocked:
-			scr_ChangeSprite(spriteSet.sprHurtShocked,true);
-			break;
-			
-			case MKSS_HurtElements.burned:
-			scr_ChangeSprite(spriteSet.sprHurtBurned,true);
-			break;
-			
-			case MKSS_HurtElements.frozen:
-			scr_ChangeSprite(spriteSet.sprHurtFrozen,true);
-			break;
+			ds_list_add(MKSS_HurtElement,value);
 		}
 		
-		if (hurtElement == MKSS_HurtElements.shocked) scr_MKSS_ParticleSet_Spark(x,y,30);
+		if (ds_list_find_index(MKSS_HurtElement,global.AttackTypeIDs[? "electric"]) != -1)
+		{
+			scr_ChangeSprite(spriteSet.sprHurtShocked,true);
+			
+			scr_MKSS_ParticleSet_Spark(x,y,30);
+		}
+		else if (ds_list_find_index(MKSS_HurtElement,global.AttackTypeIDs[? "fire"]) != -1)
+		{
+			scr_ChangeSprite(spriteSet.sprHurtBurned,true);
+		}
+		else if (ds_list_find_index(MKSS_HurtElement,global.AttackTypeIDs[? "ice"]) != -1)
+		{
+			scr_ChangeSprite(spriteSet.sprHurtFrozen,true);
+		}
+		else
+		{
+			scr_ChangeSprite(spriteSet.sprHurtNormal,true);
+		}
 		#endregion
 		
 		#region Decrease Health

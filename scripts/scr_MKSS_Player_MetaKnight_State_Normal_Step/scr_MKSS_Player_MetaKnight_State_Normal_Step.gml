@@ -102,23 +102,21 @@ function scr_MKSS_Player_MetaKnight_State_Normal_Step()
 		{
 			if (hurtState == hurtStates.hurt)
 			{
-				switch (hurtElement)
+				if (ds_list_find_index(MKSS_HurtElement,global.AttackTypeIDs[? "electric"]) != -1)
 				{
-					default:
-					sprite_index = spriteSet.sprHurtNormal;
-					break;
-					
-					case MKSS_HurtElements.shocked:
 					sprite_index = spriteSet.sprHurtShocked;
-					break;
-					
-					case MKSS_HurtElements.burned:
+				}
+				else if (ds_list_find_index(MKSS_HurtElement,global.AttackTypeIDs[? "fire"]) != -1)
+				{
 					sprite_index = spriteSet.sprHurtBurned;
-					break;
-					
-					case MKSS_HurtElements.frozen:
+				}
+				else if (ds_list_find_index(MKSS_HurtElement,global.AttackTypeIDs[? "ice"]) != -1)
+				{
 					sprite_index = spriteSet.sprHurtFrozen;
-					break;
+				}
+				else
+				{
+					sprite_index = spriteSet.sprHurtNormal;
 				}
 			}
 			else

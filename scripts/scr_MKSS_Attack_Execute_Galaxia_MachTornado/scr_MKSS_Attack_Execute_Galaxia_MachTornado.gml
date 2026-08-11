@@ -14,7 +14,7 @@ function scr_MKSS_Attack_Execute_Galaxia_MachTornado()
 	isAttacking = true;
 	
 	hasAttackAnimation = false;
-	scr_ChangeSprite(spriteSet.sprAttackGalaxiaMachTornado);
+	scr_ChangeSprite(-1);
 	
 	scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Galaxia_MachTornado_Step);
 	
@@ -22,8 +22,30 @@ function scr_MKSS_Attack_Execute_Galaxia_MachTornado()
 	attackCanTurnSprite = false;
 	canAttackCancelTargetState = false;
 	
+	grounded = false;
+	hasJumpLimit = false;
+	vsp = -(galaxia_MachTornado_Jumpspeed * speedMultFinal);
+	
 	attackCancelTimer = 30;
 	attackCooldownTarget = 0;
+	#endregion
+	
+	#region Starting Attack
+	with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+	{
+		owner = other;
+		isEnemy = false;
+		dmg = floor(MKSS_Base_GalaxiaDamage / 4);
+		followOwner = true;
+		canBreakBlocks = true;
+		isMelee = true;
+		destroyTimer = 5;
+		freezeFrameForce = 1;
+		mask_index = spr_64x64Mask_MiddleOrigin;
+		image_xscale = other.dirX;
+		dirX = other.dirX;
+		attackEnemyHitParticleIndex = scr_MKSS_ParticleSet_SlashRandom;
+	}
 	#endregion
 	
 	#region Attack
@@ -31,20 +53,22 @@ function scr_MKSS_Attack_Execute_Galaxia_MachTornado()
 	{
 		owner = other;
 		isEnemy = false;
-		dmg = floor(MKSS_Base_GalaxiaDamage / 2);
+		dmg = floor(MKSS_Base_GalaxiaDamage / 4);
 		followOwner = true;
 		destroyIfOwnerNotAttack = true;
 		canBreakBlocks = true;
 		isMelee = true;
-		freezeFrameForce = 1;
-		knockbackAngle = 10;
-		if (other.dirX == -1) knockbackAngle = 170;
-		knockbackForce = 1;
-		sprite_index = spr_48x48Mask_MiddleOrigin;
+		isMultiHit = true;
+		multiHitTimerMax = 5;
+		multiHitTimer = 0;
+		freezeFrameForce = 3;
+		knockbackForce = 2;
+		sprite_index = spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_MachTornado;
 		mask_index = spr_48x48Mask_MiddleOrigin;
 		image_xscale = other.dirX;
 		dirX = other.dirX;
 		attackAIBeginStep = scr_MKSS_Attack_Galaxia_MachTornado_BeginStep;
+		enemyKnockbackBehavior = scr_MKSS_Attack_Galaxia_MachTornado_EnemyKnockbackBehavior;
 		attackEnemyHitParticleIndex = scr_MKSS_ParticleSet_SlashRandom;
 	}
 	#endregion

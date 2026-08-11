@@ -97,7 +97,7 @@ for (var i = 0; i < global.maxPlayers; i++)
 	global.playerRespawn[i] = false;
 }
 
-scr_SetAttackTypes();
+scr_AttackTypes_Init_Set();
 scr_Settings_Init_Set();
 #endregion
 

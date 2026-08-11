@@ -5,7 +5,7 @@ function scr_MKSS_Player_MetaKnight_Draw()
 	#region Draw Self
 	var hasStarryEyes = false;
 	
-	if (sprite_index != undefined)
+	if (sprite_index != -1)
 	{
 		if ((global.shaders) and (palSpriteFinal != -1)) pal_swap_set(palSpriteFinal,palIndexFinal,false);
 		draw_sprite_ext(sprite_index,image_index,x + shakeXFinal + drawXOffset,y + shakeYFinal + drawYOffset,image_xscale,image_yscale,image_angle,image_blend,image_alpha);

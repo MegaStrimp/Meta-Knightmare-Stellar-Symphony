@@ -10,6 +10,8 @@ function scr_MKSS_Weapon_Galaxia_Setup()
 	galaxia_Finisher_Timer = -1;
 	galaxia_Finisher_TimerMax = 30;
 	
+	galaxia_MachTornado_Jumpspeed = 4.5;
+	
 	galaxia_Run_Index = 0;
 	galaxia_Run_Timer = -1;
 	galaxia_Run_TimerMax = 15;

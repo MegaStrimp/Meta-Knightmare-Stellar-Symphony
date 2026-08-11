@@ -38,12 +38,23 @@ function scr_MKSS_Hud_DrawGUI()
 	#region Special
 	if (hud_SpecialEnabled)
 	{
+		var specialPalSprite = -1;
+		var specialPalIndex = 1;
+		
+		if (global.MKSS_CurrentMassDestructionObject != -1)
+		{
+			specialPalSprite = spr_MKSS_Hud_Special_Palette_Rainbow;
+			specialPalIndex = 1 + floor((global.currentTimePausable / 4) % 9);
+		}
+		
 		#region Bar
 		var barLength = floor((global.MKSS_SpecialCurrent / global.MKSS_SpecialTarget) * 80);
 		
 		if (hud_SpecialBarFlashTimer != -1) gpu_set_fog(true,c_white,0,0);
+		if ((global.shaders) and (specialPalSprite != -1)) pal_swap_set(specialPalSprite,specialPalIndex,false);
 		draw_sprite(spr_MKSS_Hud_Special_Border,0,69,global.gameHeight - 27);
 		draw_sprite_part(spr_MKSS_Hud_Special_Front,0,0,0,barLength,22,69,global.gameHeight - 27);
+		if ((global.shaders) and (specialPalSprite != -1)) pal_swap_reset();
 		if (hud_SpecialBarFlashTimer != -1) gpu_set_fog(false,c_white,0,0);
 		#endregion
 		
@@ -59,7 +70,9 @@ function scr_MKSS_Hud_DrawGUI()
 		
 		for (var i = 0; i < hud_SpecialBarParticleAmount; i++)
 		{
+			if ((global.shaders) and (specialPalSprite != -1)) pal_swap_set(specialPalSprite,specialPalIndex,false);
 			draw_sprite(spr_MKSS_Hud_Special_Particles,hud_SpecialBarParticle[i].index,69 + hud_SpecialBarParticle[i].xOffset,global.gameHeight - 27 + hud_SpecialBarParticle[i].yOffset);
+			if ((global.shaders) and (specialPalSprite != -1)) pal_swap_reset();
 		}
 		
 		scr_DrawMask_End();
@@ -147,25 +160,27 @@ function scr_MKSS_Hud_DrawGUI()
 		#endregion
 		
 		#region Collectibles
-		draw_sprite_ext(spr_MKSS_Hud_Collectibles_Bg,0,global.gameWidth,2,1,1,0,c_white,.5);
-		
-		var collectibleList = global.MKSS_StageList[global.MKSS_StageIDs[? global.currentStage]].collectibles;
-		var collectibleCount = array_length(collectibleList);
-		
-		for (var i = 0; i < array_length(collectibleList); i++)
+		if (global.currentStage != -1)
 		{
-			collectibleCount -= 1;
+			draw_sprite_ext(spr_MKSS_Hud_Collectibles_Bg,0,global.gameWidth,2,1,1,0,c_white,.5);
 			
-			if (collectibleList[i].icon != undefined)
+			var collectibleList = global.MKSS_StageList[global.MKSS_StageIDs[? global.currentStage]].collectibles;
+			var collectibleCount = array_length(collectibleList);
+			
+			for (var i = 0; i < array_length(collectibleList); i++)
 			{
-				var waveX = sine_wave(current_time / 4200,1,1,0);
-				var waveY = sine_wave(current_time / (4500 + (4500 * i)),.8,1.1,0);
+				collectibleCount -= 1;
 				
-				if (!collectibleList[i].isObtained) gpu_set_fog(true,c_black,0,0);
-				draw_sprite(collectibleList[i].icon,0,global.gameWidth - 12 - (22 * collectibleCount) + floor(waveX),14 - (2 * collectibleCount) + floor(waveY));
-				if (!collectibleList[i].isObtained) gpu_set_fog(false,c_white,0,0);
+				if (collectibleList[i].icon != undefined)
+				{
+					var waveX = sine_wave(current_time / 4200,1,1,0);
+					var waveY = sine_wave(current_time / (4500 + (4500 * i)),.8,1.1,0);
+					
+					if (!collectibleList[i].isObtained) gpu_set_fog(true,c_black,0,0);
+					draw_sprite(collectibleList[i].icon,0,global.gameWidth - 12 - (22 * collectibleCount) + floor(waveX),14 - (2 * collectibleCount) + floor(waveY));
+					if (!collectibleList[i].isObtained) gpu_set_fog(false,c_white,0,0);
+				}
 			}
-			
 		}
 		#endregion
 	}

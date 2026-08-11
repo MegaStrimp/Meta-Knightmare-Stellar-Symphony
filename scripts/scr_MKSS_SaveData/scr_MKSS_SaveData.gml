@@ -118,6 +118,10 @@ function scr_MKSS_SaveData(file)
 		
 		ini_write_real("stageStatus","barrierIndex",global.MKSS_BarrierIndex);
 		#endregion
+		
+		#region NPC Status
+		if (global.MKSS_NPCStatus_TalkedToPaintRoller) ini_write_real("npcStatus","talkedToPaintRoller",global.MKSS_NPCStatus_TalkedToPaintRoller);
+		#endregion
 	
 		ini_close();
 	

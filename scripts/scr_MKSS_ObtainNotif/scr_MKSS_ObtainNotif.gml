@@ -15,6 +15,6 @@ function scr_MKSS_ObtainNotif(targetNotifID,forced = false)
 			ds_list_delete(global.MKSS_PopupQueue,0);
 		}
 		
-		if ((!forced) and (global.MKSS_NotifList[targetNotifID].isSavable)) scr_MKSS_SaveData("data1.ini");
+		if ((!forced) and (global.MKSS_NotifList[targetNotifID].isSavable)) scr_MKSS_SaveData("save1.ini");
 	}
 }

@@ -179,18 +179,27 @@ function scr_MKSS_Weapon_Galaxia_Base()
 			galaxia_Finisher_Timer = -1;
 		}
 		
-		if ((global.MKSS_SpecialCurrent == global.MKSS_SpecialTarget) and (!global.MKSS_SpecialDeflation) and (input_check_pressed("Y",playerNum)))
+		if (input_check_pressed("Y",playerNum))
 		{
-			scr_PlaySfx(snd_MKSS_MetaHeal);
-			
-			metaHealParticleAmount = 0;
-			metaHealParticleTimer = 0;
-			
-			scr_MKSS_UI_SpecialActionText_Create(spr_MKSS_UI_SpecialActionText_MetaHeal);
-			
-			global.MKSS_SpecialCurrent = 0;
-			
-			scr_MKSS_Player_Heal(playerNum,floor(global.playerMaxHp[playerNum] * .25),true);
+			if (global.MKSS_CurrentMassDestructionObject != -1)
+			{
+				instance_create_depth(0,0,0,global.MKSS_CurrentMassDestructionObject);
+				
+				global.MKSS_SpecialCurrent = 0;
+			}
+			else if ((global.MKSS_SpecialCurrent == global.MKSS_SpecialTarget) and (!global.MKSS_SpecialDeflation))
+			{
+				scr_PlaySfx(snd_MKSS_MetaHeal);
+				
+				metaHealParticleAmount = 0;
+				metaHealParticleTimer = 0;
+				
+				scr_MKSS_UI_SpecialActionText_Create(spr_MKSS_UI_SpecialActionText_MetaHeal);
+				
+				global.MKSS_SpecialCurrent = 0;
+				
+				scr_MKSS_Player_Heal(playerNum,floor(global.playerMaxHp[playerNum] * .25),true);
+			}
 		}
 	}
 	#endregion

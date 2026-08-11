@@ -6,6 +6,7 @@ function scr_MKSS_Player_MetaKnight_State_Galaxia_MachTornado_Step()
 	if (playerState_Setup)
 	{
 		galaxia_MachTornado_EndTimer = attackCancelTimer;
+		spawnEndAttack = true;
 		
 		attackMakeLightInvincible = true;
 		
@@ -15,38 +16,55 @@ function scr_MKSS_Player_MetaKnight_State_Galaxia_MachTornado_Step()
 	
 	if (!localPause)
 	{
-		#region Movement
-		scr_MKSS_Player_Component_SlideMovement(galaxia_MachTornado_Movespeed,galaxia_MachTornado_Decel);
+		#region Decelerate
+		hsp = scr_Entity_Friction(hsp,decel * speedMultFinal);
 		#endregion
 		
 		#region Gravity
-		scr_MKSS_Player_Component_DuckGravity();
+		scr_MKSS_Player_Component_Gravity(grav,,,true);
 		#endregion
 		
 		#region Hurt
-		if (hurtState == hurtStates.hurt) galaxia_DownThrust_EndTimer = 0;
-		#endregion
-		
-		#region Slide Accel Timer
-		if (slideAccelTimer != -1)
+		if (hurtState == hurtStates.hurt)
 		{
-			slideAccelTimer = max(slideAccelTimer - speedMultFinal,0);
-			if (slideAccelTimer == 0)
-			{
-				slideAccelTimer = -1;
-			}
+			spawnEndAttack = false;
+			galaxia_MachTornado_EndTimer = 0;
 		}
 		#endregion
 		
-		#region Galaxia - Down Thrust - End Timer
+		#region Galaxia - Mach Tornado - End Timer
 		if (galaxia_MachTornado_EndTimer != -1)
 		{
 			galaxia_MachTornado_EndTimer = max(galaxia_MachTornado_EndTimer - speedMultFinal,0);
 			if (galaxia_MachTornado_EndTimer == 0)
 			{
+				#region End Attack
+				if (spawnEndAttack)
+				{
+					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = false;
+						dmg = floor(MKSS_Base_GalaxiaDamage / 4);
+						followOwner = true;
+						canBreakBlocks = true;
+						isMelee = true;
+						canBeFinisher = true;
+						destroyTimer = 5;
+						freezeFrameForce = 3;
+						knockbackAngle = 90;
+						knockbackForce = 3;
+						mask_index = spr_64x64Mask_MiddleOrigin;
+						image_xscale = other.dirX;
+						dirX = other.dirX;
+						attackEnemyHitParticleIndex = scr_MKSS_ParticleSet_SlashRandom;
+					}
+				}
+				#endregion
+				
 				attackCancelTimer = 0;
 				
-				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Duck_Step);
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Normal_Step);
 				
 				galaxia_MachTornado_EndTimer = -1;
 			}
@@ -56,7 +74,7 @@ function scr_MKSS_Player_MetaKnight_State_Galaxia_MachTornado_Step()
 		#region Animation
 		if (!hasAttackAnimation)
 		{
-			sprite_index = spriteSet.sprAttackGalaxiaMachTornado;
+			sprite_index = -1;
 		}
 		#endregion
 		

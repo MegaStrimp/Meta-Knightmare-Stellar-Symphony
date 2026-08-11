@@ -48,5 +48,7 @@ drawSurface_PixelW = shader_get_uniform(shd_ColoredOutline,"pixelW");
 drawSurface_OutlineColor = shader_get_uniform(shd_ColoredOutline,"outlineColor");
 
 inWater = false;
+
+MKSS_HurtElement = ds_list_create();
 #endregion
 #endregion

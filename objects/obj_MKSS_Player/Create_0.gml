@@ -39,21 +39,8 @@ tutorialText = "";
 tutorialTextAlpha = 0;
 tutorialTextAlphaTarget = 0;
 tutorialTextTimer = -1;
-hurtElement = MKSS_HurtElements.none;
-#endregion
 
-#region Enums
-#region Hurt Elements
-enum MKSS_HurtElements
-{
-	none,
-	shocked,
-	burned,
-	frozen,
-	
-	length
-}
-#endregion
+MKSS_HurtElement = ds_list_create();
 #endregion
 
 #region State Scripts

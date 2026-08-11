@@ -39,6 +39,17 @@ function scr_MKSS_Enemy_GetHit_Object(targetEnemy,targetAttack)
 			var metaPointsOnHitFinal = irandom_range(0,targetEnemy.metaPointsOnHit);
 			if (metaPointsOnHitFinal != 0) scr_MKSS_SpawnMetaPoint(metaPointsOnHitFinal,targetEnemy.x,targetEnemy.y,targetEnemy.depth - 1,owner,knockbackAngleFinal);
 			
+			#region Elemental Damange Effects
+			ds_list_clear(targetEnemy.MKSS_HurtElement);
+			
+			for (var i = 0; i < ds_list_size(targetAttack.attackTypes); i++)
+			{
+				var value = ds_list_find_value(targetAttack.attackTypes,i);
+			
+				ds_list_add(targetEnemy.MKSS_HurtElement,value);
+			}
+			#endregion
+			
 			if (targetEnemy.canBeHurt)
 			{
 				scr_PlaySfx(snd_MKSS_EnemyHit);

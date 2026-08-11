@@ -119,17 +119,26 @@ function scr_MKSS_Weapon_Buzzcut_Base()
 			buzzcut_Finisher_Timer = -1;
 		}
 		
-		if ((global.MKSS_SpecialCurrent == global.MKSS_SpecialTarget) and (!global.MKSS_SpecialDeflation) and (input_check_pressed("Y",playerNum)))
+		if (input_check_pressed("Y",playerNum))
 		{
-			scr_PlaySfx(snd_MKSS_MetaQuick);
-			
-			scr_MKSS_UI_SpecialActionText_Create(spr_MKSS_UI_SpecialActionText_MetaQuick);
-			
-			global.MKSS_SpecialDeflation = true;
-			
-			with (obj_MKSS_Control)
+			if (global.MKSS_CurrentMassDestructionObject != -1)
 			{
-				playerMetaQuickTimer[other.playerNum] = playerMetaQuickTimerMax;
+				instance_create_depth(0,0,0,global.MKSS_CurrentMassDestructionObject);
+				
+				global.MKSS_SpecialCurrent = 0;
+			}
+			else if ((global.MKSS_SpecialCurrent == global.MKSS_SpecialTarget) and (!global.MKSS_SpecialDeflation))
+			{
+				scr_PlaySfx(snd_MKSS_MetaQuick);
+				
+				scr_MKSS_UI_SpecialActionText_Create(spr_MKSS_UI_SpecialActionText_MetaQuick);
+				
+				global.MKSS_SpecialDeflation = true;
+				
+				with (obj_MKSS_Control)
+				{
+					playerMetaQuickTimer[other.playerNum] = playerMetaQuickTimerMax;
+				}
 			}
 		}
 	}
