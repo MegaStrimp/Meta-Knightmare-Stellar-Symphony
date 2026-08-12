@@ -140,7 +140,7 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_BackgroundCannonballs_Step()
 					hsp = random_range(-.2,.2);
 					vsp = -4;
 					destroyOutsideRoom = false;
-					attackAIStep = scr_MKSS_Attack_ChasseEmee_BigCannonball_Step;
+					scr_MKSS_Attack_ChasseEmee_BigCannonball_Setup();
 					if (_choose == 0) 
 					{
 						scr_MKSS_UI_ParryIndicator_Create(x,y,depth - 1,20,,id);
@@ -159,7 +159,7 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_BackgroundCannonballs_Step()
 					hsp = (2 + random_range(-.2,.2)) * other.dirX;
 					vsp = -4;
 					destroyOutsideRoom = false;
-					attackAIStep = scr_MKSS_Attack_ChasseEmee_BigCannonball_Step;
+					scr_MKSS_Attack_ChasseEmee_BigCannonball_Setup();
 					if (_choose == 1) 
 					{
 						scr_MKSS_UI_ParryIndicator_Create(x,y,depth - 1,20,,id);

@@ -33,20 +33,22 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_ThrustCombo_Step()
 		i++;
 		#endregion
 		
-		#region Prepare Cannonball Timer
+		#region Prepare Cannonball/Jump Timer
 		attackStateTimerMax[i] = 10;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
 		
-		#region Cannonball Timer
+		#region Cannonball/Jump Timer
 		attackStateTimerMax[i] = 30;
+		if (enemyPhase >= 2) attackStateTimerMax[i] = 40;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
 		
 		#region Jump Back Timer
 		attackStateTimerMax[i] = 30;
+		if (enemyPhase >= 2) attackStateTimerMax[i] = 110;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
@@ -62,6 +64,8 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_ThrustCombo_Step()
 		thrustTimes = 3;
 		
 		arm = -1;
+		
+		slam = false;
 		#endregion
 		
 		#region Thrust Combo Start
@@ -143,7 +147,7 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_ThrustCombo_Step()
 			break;
 			#endregion
 			
-			#region Prepare Cannonball
+			#region Prepare Cannonball/Jump
 			case 3:
 			if (attackStateTimer[attackState] == -1)
 			{
@@ -153,29 +157,39 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_ThrustCombo_Step()
 				with (arm) instance_destroy();
 				
 				shakeX = (attackStateTimerMax[attackState + 1] / 10) - 1;
-				scr_MKSS_UI_ParryIndicator_Create(x,y - 32,depth - 1,attackStateTimerMax[attackState+1]);
+				if (enemyPhase == 1) scr_MKSS_UI_ParryIndicator_Create(x,y - 32,depth - 1,attackStateTimerMax[attackState+1]);
 			
 				attackState++;
 			}
 			break;
 			#endregion
 			
-			#region Cannonball
+			#region Cannonball/Jump
 			case 4:
 			if (attackStateTimer[attackState] == -1)
 			{
-				with (instance_create_depth(x,y -32,depth - 4,obj_MKSS_Attack))
+				if (enemyPhase == 1)
 				{
-					owner = other;
-					isEnemy = true;
-					dmg = 1;
-					sprite_index = spr_MKSS_Attack_ChasseEmee_Cannonball;
-					mask_index = spr_MKSS_Attack_ChasseEmee_Cannonball;
-					scr_MKSS_Attack_ChasseEmee_Cannonball_Setup();
-					hsp = 7 * other.dirX;
-					vsp = 3;
-					canBeParried = true;
-					parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryCannonball"];
+					with (instance_create_depth(x,y -32,depth - 4,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = 1;
+						sprite_index = spr_MKSS_Attack_ChasseEmee_Cannonball;
+						mask_index = spr_MKSS_Attack_ChasseEmee_Cannonball;
+						scr_MKSS_Attack_ChasseEmee_Cannonball_Setup();
+						hsp = 7 * other.dirX;
+						vsp = 3;
+						canBeParried = true;
+						parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryCannonball"];
+					}
+				}
+				else
+				{
+					sprite_index = spriteSet.sprLookDown;
+					image_index = 0;
+				
+					vsp = -6;
 				}
 				
 				attackState++;
@@ -185,6 +199,42 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_ThrustCombo_Step()
 			
 			#region Jump Back
 			case 5:
+			if (enemyPhase >= 2) 
+			{
+				if (!slam)
+				{
+					if (grounded)
+					{
+						sprite_index = spriteSet.sprDuck;
+						image_index = 0;
+				
+						scr_Camera_SetScreenshake(4,2);
+						
+						var _dir = 1;
+						repeat(2)
+						{
+							with (instance_create_depth(x + (12 * _dir),y,depth + 2,obj_MKSS_Attack))
+							{
+								owner = other;
+								isEnemy = true;
+								dmg = 1;
+								sprite_index = spr_MKSS_Attack_ChasseEmee_UltraSwordProjectile;
+								mask_index = spr_MKSS_Attack_ChasseEmee_UltraSwordProjectile;
+								dirX = _dir;
+								image_xscale = dirX;
+								hsp = 4 * dirX;
+								destroyAfterAnimation = true;
+								attackAIStep = scr_MKSS_Attack_ChasseEmee_UltraSwordProjectile_Step;
+							}
+							
+							_dir = -1;
+						}
+				
+						slam = true;
+					}
+				}
+			}
+			
 			if (attackStateTimer[attackState] == -1)
 			{
 				sprite_index = spriteSet.sprLookDown;

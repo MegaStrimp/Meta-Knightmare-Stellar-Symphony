@@ -9,8 +9,12 @@ function scr_MKSS_Attack_ChasseEmee_BigCannonball_Step()
 		{
 			if (y <= -32)
 			{
+				layer = layer_get_id("Enemies");
+				
 				hsp = 0;
 				vsp = 6;
+				
+				y = -32;
 				
 				if (sprite_index == spr_MKSS_Attack_ChasseEmee_BigCannonball_BackgroundGreen) 
 				{
@@ -27,6 +31,13 @@ function scr_MKSS_Attack_ChasseEmee_BigCannonball_Step()
 			scr_MKSS_ParticleSet_Explosion2(x,y);
 					
 			instance_destroy();
+		}
+		#endregion
+		
+		#region Shadow
+		if (vsp >= 0)
+		{
+			shadowScale = max(shadowScaleMin,shadowScaleMax-(((point_distance(x,y,x,shadowY))/(point_distance(x,-64,x,shadowY)))*shadowScaleMax));
 		}
 		#endregion
 		

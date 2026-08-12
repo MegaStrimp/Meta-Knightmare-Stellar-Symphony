@@ -1,12 +1,12 @@
-///@description MKSS - Enemy - Chasse Emee - AI - Normal - Ultra Sword - Step
+///@description MKSS - Enemy - Chasse Emee - AI - Normal - Repeat Jump - Step
 
-function scr_MKSS_Enemy_ChasseEmee_AI_Normal_UltraSword_Step()
+function scr_MKSS_Enemy_ChasseEmee_AI_Normal_RepeatJump_Step()
 {
 	#region Setup
 	if (enemyState_Setup)
 	{
 		#region Attack Init
-		attackString = "Chasse-Emee - Ultra Sword";
+		attackString = "Chasse-Emee - Repeat Jump";
 		scr_Debug_WriteLog(string(object_get_name(object_index)) + " Used [" + attackString + "]");
 		
 		attackState = 0;
@@ -16,39 +16,43 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_UltraSword_Step()
 		var i = 0;
 		
 		#region Prepare Timer
-		attackStateTimerMax[i] = 70;
+		attackStateTimerMax[i] = 40;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
 		
-		#region Ultra Sword Timer
-		attackStateTimerMax[i] = 8;
-		attackStateTimer[i] = attackStateTimerMax[i];
-		i++;
-		#endregion
-		
-		#region Post-Slash Timer
+		#region Duck Timer
 		attackStateTimerMax[i] = 20;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
 		
+		#region Jump Timer
+		attackStateTimerMax[i] = 120;
+		attackStateTimer[i] = attackStateTimerMax[i];
+		i++;
+		#endregion
+		
 		#region Revert Timer
-		attackStateTimerMax[i] = 50;
+		attackStateTimerMax[i] = 40;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
 		#endregion
 		
-		#region Ultra Sword Variables
-		xStart = x;
+		#region Repeat Jump Variables
+		hasCollision = true;
 		
-		swingTimes = 1;
-		if (enemyPhase >= 2) swingTimes = 3;
+		jumpSpeed = 2 + (irandom_range(-3,3) / 10);
+		jumpHeight = -4;
+		
+		xStart = x;
+		if (dirX == -1) xStart = room_width-xStart;
+		dirXStart = dirX;
 		#endregion
 		
-		#region Ultra Sword Start
-		sprite_index = spriteSet.sprUltraSwordPrepare;
+		#region Repeat Jump Start
+		sprite_index = spriteSet.sprShake;
 		image_index = 0;
 		#endregion
 		
@@ -59,7 +63,7 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_UltraSword_Step()
 	if (!localPause)
 	{
 		#region Friction
-		var decelFinal = decelFast * speedMultFinal;
+		var decelFinal = decel * speedMultFinal;
 		
 		hsp = scr_Entity_Friction(hsp,decelFinal);
 		#endregion
@@ -71,59 +75,54 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_UltraSword_Step()
 			case 0:
 			if (attackStateTimer[attackState] == -1)
 			{
-				hsp = 3 * dirX;
+				shakeX = (attackStateTimerMax[attackState + 1] / 10) - 1;
 				
-				sprite_index = spriteSet.sprUltraSwordSwing;
+				sprite_index = spriteSet.sprDuck;
 				image_index = 0;
-				
+		
 				attackState++;
 			}
 			break;
 			#endregion
 			
-			#region Ultra Sword
+			#region Duck
 			case 1:
 			if (attackStateTimer[attackState] == -1)
 			{
-				with (instance_create_depth(x + (32 * dirX),y,depth + 2,obj_MKSS_Attack))
-				{
-					owner = other;
-					isEnemy = true;
-					dmg = 1;
-					sprite_index = spr_MKSS_Attack_ChasseEmee_UltraSwordProjectile;
-					mask_index = spr_MKSS_Attack_ChasseEmee_UltraSwordProjectile;
-					dirX = other.dirX;
-					image_xscale = dirX;
-					hsp = 4 * dirX;
-					destroyAfterAnimation = true;
-					attackAIStep = scr_MKSS_Attack_ChasseEmee_UltraSwordProjectile_Step;
-				}
-				
 				attackStateTimer[attackState] = attackStateTimerMax[attackState];
+				
+				sprite_index = spriteSet.sprLookDown;
+				image_index = 0;
+				
+				vsp = jumpHeight;
+				
 				attackState++;
 			}
 			break;
 			#endregion
 			
-			#region Post-Slash
+			#region Jump
 			case 2:
-			if (attackStateTimer[attackState] == -1)
+			hsp = jumpSpeed * dirX;
+			
+			if (grounded) and (vsp >= 0)
 			{
-				swingTimes--;
-				if (swingTimes <= 0)
+				hsp = 0;
+				vsp = 0;
+				
+				sprite_index = spriteSet.sprDuck;
+				image_index = 0;
+				
+				shakeX = (attackStateTimerMax[attackState - 1] / 10) - 1;
+				
+				scr_Camera_SetScreenshake(2,1);
+				
+				attackStateTimer[attackState] = attackStateTimerMax[attackState];
+				if ((dirX == -1) and (x <= xStart)) or ((dirX == 1) and (x >= room_width - xStart))
 				{
 					attackState++;
 				}
-				else
-				{
-					hsp = 3 * dirX;
-					
-					sprite_index = spriteSet.sprUltraSwordSwing;
-					image_index = 0;
-				
-					attackStateTimer[attackState] = attackStateTimerMax[attackState];
-					attackState--;
-				}
+				else attackState--;
 			}
 			break;
 			#endregion
@@ -132,18 +131,21 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_UltraSword_Step()
 			case 3:
 			if (attackStateTimer[attackState] == -1)
 			{
+				dirX = -dirXStart;
+				
 				sprite_index = spriteSet.sprIdle;
 				image_index = 0;
 					
-				if ((dirX == -1) and (x >= xStart)) or ((dirX == 1) and (x <= xStart))
+				if ((dirX == -1) and (x <= room_width - xStart)) or ((dirX == 1) and (x >= xStart))
 				{
 					hsp = 0;
 					
 					x = xStart;
+					if (dirX == -1) x = room_width - xStart;
 					
 					scr_Enemy_ChangeState_Step(id,enemyAIStepIdle);
 				} 
-				else hsp = -3 * dirX;
+				else hsp = 3 * dirX;
 			}
 			break;
 			#endregion
@@ -155,7 +157,7 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_UltraSword_Step()
 		#endregion
 		
 		#region Collision
-		scr_Entity_Collision(,enemyWallXCollision,enemyWallYCollision);
+		scr_Entity_Collision(hasCollision,enemyWallXCollision,enemyWallYCollision);
 		#endregion
 		
 		#region Attack State Timer

@@ -30,15 +30,18 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_Setup(targetIsBoss = true)
 	chasse_Attack_ShakeEnemies = scr_MKSS_Enemy_ChasseEmee_AI_Normal_ShakeEnemies_Step;
 	chasse_Attack_BackgroundCannonballs = scr_MKSS_Enemy_ChasseEmee_AI_Normal_BackgroundCannonballs_Step;
 	#endregion
+	
+	#region Phase 2
+	chasse_Attack_RepeatJump = scr_MKSS_Enemy_ChasseEmee_AI_Normal_RepeatJump_Step;
+	#endregion
 	#endregion
 	
 	#region Attack Order
-	ds_list_add(attackList,chasse_Attack_BackgroundCannonballs);
-	//ds_list_add(attackList,chasse_Attack_ShakeEnemies);
-	//ds_list_add(attackList,chasse_Attack_ShakeEnemies);
+	//ds_list_add(attackList,chasse_Attack_RepeatJump);
+	//ds_list_add(attackList,chasse_Attack_RepeatJump);
+	//ds_list_add(attackList,chasse_Attack_RepeatJump);
 	
 	scr_MKSS_Enemy_ChasseEmee_Normal_AttackOrder_Phase1(false);
-	if (global.debug) and (keyboard_check(ord("2"))) scr_MKSS_Enemy_ChasseEmee_Normal_AttackOrder_Phase2(true);
 	#endregion
 	
 	attackListIndex = 0;
@@ -47,6 +50,12 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_Setup(targetIsBoss = true)
 	attackTimerMax = 30;
 	
 	isBoss = targetIsBoss;
+	enemyPhase = 1;
+	if (global.debug) and (keyboard_check(ord("2"))) 
+	{
+		enemyPhase = 2;
+		scr_MKSS_Enemy_ChasseEmee_Normal_AttackOrder_Phase2(true);
+	}
 	#endregion
 	
 	#region Attack Variables

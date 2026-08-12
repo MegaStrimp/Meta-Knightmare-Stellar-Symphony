@@ -17,6 +17,7 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_ClawLaunch_Step()
 		
 		#region Prepare Timer
 		attackStateTimerMax[i] = 50;
+		if (enemyPhase >= 2) attackStateTimerMax[i] = 40;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
@@ -29,6 +30,7 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_ClawLaunch_Step()
 		
 		#region Revert Timer
 		attackStateTimerMax[i] = 40;
+		if (enemyPhase >= 2) attackStateTimerMax[i] = 30;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
@@ -46,7 +48,7 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_ClawLaunch_Step()
 		{
 			owner = other;
 			isEnemy = true;
-			dmg = 1;
+			dmg = -1;
 			sprite_index = spr_MKSS_Attack_ChasseEmee_ClawOpen;
 			mask_index = spr_MKSS_Attack_ChasseEmee_ClawOpen;
 			scr_MKSS_Attack_ChasseEmee_ClawLaunch_Setup();
@@ -77,7 +79,10 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_ClawLaunch_Step()
 			{
 				with (arm) 
 				{
+					dmg = 1;
+					
 					hsp = 8;
+					if (other.enemyPhase >= 2) hsp = 10;
 					
 					launch = true;
 				}

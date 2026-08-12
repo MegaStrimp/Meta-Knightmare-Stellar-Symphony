@@ -46,6 +46,7 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_Draw()
 		shipYOffset = -20 + (random_range(-2,2) * imageSpeed);
 		break;
 	}
+	if (enemyPhase >= 2) _ship = -1;
 	
 	if (sprite_index != -1)
 	{
