@@ -746,6 +746,9 @@ function scr_MKSS_Enemy_Init_Set()
 		
 		sprShake: spr_MKSS_Enemy_ChasseEmee_Base_Shake,
 		
+		sprSpitPrepare: spr_MKSS_Enemy_ChasseEmee_Base_SpitPrepare,
+		sprSpit: spr_MKSS_Enemy_ChasseEmee_Base_Spit,
+		
 		
 		sprShipNormal: spr_MKSS_Enemy_ChasseEmee_Base_BackShip,
 		sprShipBackground: spr_MKSS_ChasseShip_Idle,

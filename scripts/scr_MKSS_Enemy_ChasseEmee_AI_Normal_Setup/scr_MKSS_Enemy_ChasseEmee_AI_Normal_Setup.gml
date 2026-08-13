@@ -33,6 +33,7 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_Setup(targetIsBoss = true)
 	
 	#region Phase 2
 	chasse_Attack_RepeatJump = scr_MKSS_Enemy_ChasseEmee_AI_Normal_RepeatJump_Step;
+	chasse_Attack_PearlShot = scr_MKSS_Enemy_ChasseEmee_AI_Normal_PearlShot_Step;
 	#endregion
 	#endregion
 	

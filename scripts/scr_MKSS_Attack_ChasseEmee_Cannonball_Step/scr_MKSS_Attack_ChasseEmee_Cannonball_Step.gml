@@ -5,7 +5,7 @@ function scr_MKSS_Attack_ChasseEmee_Cannonball_Step()
 	if (!localPause)
 	{
 		#region Position
-		if (bounceTimes < bounceTimesMax) vsp = scr_Entity_Gravity(vsp,grav,gravLimit,speedMultFinal);
+		if (bounceTimes < bounceTimesMax) or (hasGravity) vsp = scr_Entity_Gravity(vsp,grav,gravLimit,speedMultFinal);
 		
 		if (bounceDelayTimer != -1)
 		{

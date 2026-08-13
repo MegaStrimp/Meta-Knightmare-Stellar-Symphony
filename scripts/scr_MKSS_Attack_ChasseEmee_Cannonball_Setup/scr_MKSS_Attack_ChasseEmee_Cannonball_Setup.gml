@@ -4,6 +4,7 @@ function scr_MKSS_Attack_ChasseEmee_Cannonball_Setup()
 {
 	grav = .2;
 	gravLimit = 12;
+	hasGravity = false;
 	
 	bounceTimesMax = 1;
 	bounceTimes = bounceTimesMax;
