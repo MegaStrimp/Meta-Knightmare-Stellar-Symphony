@@ -50,12 +50,12 @@ function scr_MKSS_Attack_MetaKnight_ParryCannonball_Step()
 					script_execute(enemyGetHit,id,4,3,90 - (45 * sign(x - other.x)),other.owner,other.speedMultFinal);
 				}
 				
-				with (obj_Attack)
-				{
-					scr_MKSS_ParticleSet_SmallSparkle(x,y);
+				//with (obj_Attack)
+				//{
+				//	scr_MKSS_ParticleSet_SmallSparkle(x,y);
 					
-					if (owner == other.target) instance_destroy();
-				}
+				//	if (owner == other.target) instance_destroy();
+				//}
 				
 				instance_destroy();
 			}

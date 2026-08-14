@@ -62,6 +62,12 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_ShakeEnemies_Step()
 			case 0:
 			if (attackStateTimer[attackState] == -1)
 			{
+				if (enemyPhase >= 2)
+				{
+					sprite_index = spriteSet.sprSpitPrepare;
+					image_index = 0;
+				}
+				
 				attackState++;
 			}
 			break;
@@ -69,15 +75,34 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_ShakeEnemies_Step()
 			
 			#region Shake
 			case 1:
+			if (attackStateTimer[attackState] <= attackStateTimerMax[attackState]-20)
+			{
+				if (sprite_index != spriteSet.sprSpitPrepare)
+				{
+					sprite_index = spriteSet.sprSpitPrepare;
+					image_index = 0;
+				}
+			}
+			
 			if (attackStateTimer[attackState] == -1)
 			{
+				var _x = x;
+				var _y = y - 36;
+				if (enemyPhase >= 2)
+				{
+					_x = x + (36 * dirX);
+					_y = y - 8;
+					
+					sprite_index = spriteSet.sprSpit;
+					image_index = 0;
+				}
 				var _spd = random_range(2,3.5);
 				var _angle = 90 - (20 * dirX) + irandom_range(-10,10);
 				var _enemy = irandom_range(0,2);
 				switch (_enemy)
 				{
 					case 0:
-					with (instance_create_depth(x,y - 36,depth - 3,obj_MKSS_Enemy_Peezer))
+					with (instance_create_depth(_x,_y,depth - 3,obj_MKSS_Enemy_Peezer))
 					{
 						enemyAIStep = scr_MKSS_Enemy_Peezer_AI_WalkAndAttack_Setup;
 						
@@ -88,7 +113,7 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_ShakeEnemies_Step()
 					break;
 					
 					case 1:
-					with (instance_create_depth(x,y - 36,depth - 3,obj_MKSS_Enemy_Rango))
+					with (instance_create_depth(_x,_y,depth - 3,obj_MKSS_Enemy_Rango))
 					{
 						enemyAIStep = scr_MKSS_Enemy_Rango_AI_Flop_Setup;
 						
@@ -99,7 +124,7 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_ShakeEnemies_Step()
 					break;
 					
 					case 2:
-					with (instance_create_depth(x,y - 36,depth - 3,obj_MKSS_Enemy_Trappy))
+					with (instance_create_depth(_x,_y,depth - 3,obj_MKSS_Enemy_Trappy))
 					{
 						enemyAIStep = scr_MKSS_Enemy_Trappy_AI_Throw_Setup;
 						

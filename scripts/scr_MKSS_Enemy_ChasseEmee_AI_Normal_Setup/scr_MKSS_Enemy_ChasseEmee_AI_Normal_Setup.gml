@@ -56,6 +56,16 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_Setup(targetIsBoss = true)
 	{
 		enemyPhase = 2;
 		scr_MKSS_Enemy_ChasseEmee_Normal_AttackOrder_Phase2(true);
+		with (instance_create_layer(room_width/2,130,"BackgroundChasse",obj_MKSS_Attack))
+		{
+			owner = other;
+			isEnemy = true;
+			dmg = -1;
+			sprite_index = other.spriteSet.sprShipBackground;
+			mask_index = -1;
+			destroyOutsideRoom = false;
+			scr_MKSS_Attack_ChasseEmee_BackgroundShip_Setup();
+		}
 	}
 	#endregion
 	

@@ -74,8 +74,11 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_PearlShot_Step()
 			case 1:
 			if (attackStateTimer[attackState] <= attackStateTimerMax[attackState]-20)
 			{
-				sprite_index = spriteSet.sprSpitPrepare;
-				image_index = 0;
+				if (sprite_index != spriteSet.sprSpitPrepare)
+				{
+					sprite_index = spriteSet.sprSpitPrepare;
+					image_index = 0;
+				}
 			}
 			
 			if (attackStateTimer[attackState] == -1)

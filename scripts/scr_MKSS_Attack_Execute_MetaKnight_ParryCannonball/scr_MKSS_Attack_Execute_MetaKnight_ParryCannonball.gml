@@ -30,7 +30,7 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryCannonball(playerIndex,currentP
 			owner = playerIndex;
 			isEnemy = false;
 			dmg = -1;
-			sprite_index = spr_MKSS_Attack_ChasseEmee_Cannonball;
+			sprite_index = currentParriedObject.sprite_index;
 			attackAIStep = scr_MKSS_Attack_MetaKnight_ParryCannonball_Step;
 		}
 		
