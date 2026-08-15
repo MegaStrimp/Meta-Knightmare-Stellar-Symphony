@@ -26,7 +26,7 @@ function scr_MKSS_Enemy_WaddleDoo_AI_WalkAndAttack_Setup()
 	#region AI Scripts
 	enemyAIStepIdle = scr_MKSS_Enemy_WaddleDoo_AI_WalkAndAttack_Step;
 	enemyAIStep = enemyAIStepIdle;
-	//enemyAnimationEnd = scr_MKSS_Enemy_WaddleDoo_AI_WalkAndAttack_AnimationEnd;
+	enemyAnimationEnd = scr_MKSS_Enemy_WaddleDoo_AI_WalkAndAttack_AnimationEnd;
 	#endregion
 	
 	#region Palette Variables

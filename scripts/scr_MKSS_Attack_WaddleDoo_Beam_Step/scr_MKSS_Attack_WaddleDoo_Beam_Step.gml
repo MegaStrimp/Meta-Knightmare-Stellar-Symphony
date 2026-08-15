@@ -9,8 +9,8 @@ function scr_MKSS_Attack_WaddleDoo_Beam_Step()
 		{
 			angle = (angle + spd) % 360;
 			
-			x = lengthdir_x(orbit,angle) + (owner.x);
-			y = lengthdir_y(orbit,angle) + (owner.y);
+			x = lengthdir_x(orbit,angle) + (owner.x) + (12 * dirX);
+			y = lengthdir_y(orbit,angle) + (owner.y) - 1;
 		}
 		#endregion
 		

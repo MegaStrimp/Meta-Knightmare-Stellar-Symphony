@@ -12,7 +12,7 @@ function scr_MKSS_Enemy_Keke_AI_FloatAndAttack_Step()
 			if (hp > 0)
 			{
 				#region Movement
-				scr_Component_BasicHorizontal_Step(true);
+				if (attackIndex == -1) scr_Component_BasicHorizontal_Step(true);
 				
 				scr_Component_UpAndDown_Step();
 				#endregion
@@ -49,7 +49,7 @@ function scr_MKSS_Enemy_Keke_AI_FloatAndAttack_Step()
 		}
 		
 		#region Friction
-		if ((hasFriction) and (grounded))
+		if (((hasFriction) and (grounded)) or ((attackIndex != -1)))
 		{
 			var decelFinal = decel * speedMultFinal;
 			
@@ -77,9 +77,9 @@ function scr_MKSS_Enemy_Keke_AI_FloatAndAttack_Step()
 					break;
 					
 					case 2:
+					#region Attack
 					attackIndex = global.MKSS_AttackIDs[? "keke_Throw"];
 					
-					#region Attack
 					with (instance_create_depth(x - 6,y + 4,depth - 1,obj_MKSS_Attack))
 					{
 						owner = other;

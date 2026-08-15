@@ -18,7 +18,7 @@ function scr_MKSS_Enemy_WaddleDoo_AI_WalkAndAttack_Beam_Step()
 		var i = 0;
 		
 		#region Ready Timer
-		attackStateTimerMax[i] = 60;
+		attackStateTimerMax[i] = 30;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
@@ -29,8 +29,14 @@ function scr_MKSS_Enemy_WaddleDoo_AI_WalkAndAttack_Beam_Step()
 		i++;
 		#endregion
 		
+		#region Attack End Timer
+		attackStateTimerMax[i] = 30;
+		attackStateTimer[i] = attackStateTimerMax[i];
+		i++;
+		#endregion
+		
 		#region Revert Timer
-		attackStateTimerMax[i] = 60;
+		attackStateTimerMax[i] = 10;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
@@ -96,8 +102,8 @@ function scr_MKSS_Enemy_WaddleDoo_AI_WalkAndAttack_Beam_Step()
 						dirX = other.dirX;
 						image_xscale = other.dirX;
 						angle = 90 + ((40 - (i * 10)) * -dirX);
-						spd = (1.2 + (i * .2)) * -dirX;
-						orbit = 25 + (i * 15);
+						spd = (2.5 + (i * .5)) * -dirX;
+						orbit = 5 + (i * 12);
 						beamIndex = i;
 						pulseActive = false;
 						pulseTimerMax = 2;
@@ -113,15 +119,24 @@ function scr_MKSS_Enemy_WaddleDoo_AI_WalkAndAttack_Beam_Step()
 			break;
 			#endregion
 			
-			#region Revert
+			#region Attack End
 			case 2:
+			if (attackStateTimer[attackState] == -1)
+			{
+				attackIndex = -1;
+				
+				attackState++;
+			}
+			break;
+			#endregion
+			
+			#region Revert
+			case 3:
 			if (attackStateTimer[attackState] == -1)
 			{
 				scr_Enemy_ChangeState_Step(id,enemyAIStepIdle);
 				
 				dirX = scr_MKSS_Enemy_DirTarget();
-				
-				attackIndex = -1;
 			}
 			break;
 			#endregion
