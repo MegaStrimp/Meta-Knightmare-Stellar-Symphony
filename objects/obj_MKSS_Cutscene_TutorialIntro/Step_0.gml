@@ -97,6 +97,8 @@ if (!localPause)
 				
 				cameraOffset = cameraOffsetOld;
 				
+				with (obj_MKSS_CameraOffsetController) targetYOffset = other.cameraOffset;
+				
 				with (obj_Player)
 				{
 					clampToView = true;

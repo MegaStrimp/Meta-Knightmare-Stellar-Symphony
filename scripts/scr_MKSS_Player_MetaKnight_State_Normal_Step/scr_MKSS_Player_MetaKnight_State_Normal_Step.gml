@@ -43,7 +43,8 @@ function scr_MKSS_Player_MetaKnight_State_Normal_Step()
 		
 		#region Duck
 		var canDuck = true;
-		if (global.MKSS_CutsceneStopMovement) canDuck = false
+		if ((global.MKSS_CutsceneStopMovement)
+		or (hurtState == hurtStates.hurt)) canDuck = false
 		
 		if ((canDuck) and (input_check("down",playerNum)) and (grounded) and (!isAttacking) and (!input_check("up",playerNum)))
 		{

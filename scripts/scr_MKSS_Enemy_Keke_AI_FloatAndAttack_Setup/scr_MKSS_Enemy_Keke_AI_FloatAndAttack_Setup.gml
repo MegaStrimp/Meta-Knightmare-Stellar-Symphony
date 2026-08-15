@@ -18,8 +18,9 @@ function scr_MKSS_Enemy_Keke_AI_FloatAndAttack_Setup()
 	
 	#region Gameplay Variables
 	attackState = 0;
-	attackTimerMax = 30;
-	attackTimer = -1;
+	attackTimerMax = 120;
+	attackTimerMin = 30;
+	attackTimer = attackTimerMax;
 	#endregion
 	
 	#region AI Scripts

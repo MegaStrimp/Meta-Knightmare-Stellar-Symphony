@@ -61,7 +61,7 @@ function scr_MKSS_Attack_Init_Set()
 	#endregion
 	
 	#region Waddle Doo
-	scr_MKSS_Attack_Init_Add("WaddleDoo_Attack");
+	scr_MKSS_Attack_Init_Add("waddleDoo_Beam");
 	#endregion
 	
 	#region Wheelie

@@ -18,6 +18,19 @@ if (!localPause)
 				
 				scr_MKSS_ParticleSet_BlockBreak1(x,y,depth - 1);
 				
+				with (instance_create_depth(x,y,depth - 4,obj_MKSS_Attack))
+				{
+					owner = other;
+					isEnemy = true;
+					dmg = 1;
+					sprite_index = spr_MKSS_Attack_ChasseEmee_BigCannonball_Background;
+					mask_index = spr_MKSS_Attack_ChasseEmee_BigCannonball_Background;
+					hsp = 0;
+					vsp = -4;
+					destroyOutsideRoom = false;
+					scr_MKSS_Attack_ChasseEmee_BigCannonball_Setup();
+				}
+				
 				cannonballTimer = 15;
 				break;
 				
@@ -27,6 +40,19 @@ if (!localPause)
 				
 				scr_MKSS_ParticleSet_BlockBreak1(x,y,depth - 1);
 				
+				with (instance_create_depth(x,y,depth - 4,obj_MKSS_Attack))
+				{
+					owner = other;
+					isEnemy = true;
+					dmg = 1;
+					sprite_index = spr_MKSS_Attack_ChasseEmee_BigCannonball_Background;
+					mask_index = spr_MKSS_Attack_ChasseEmee_BigCannonball_Background;
+					hsp = 1;
+					vsp = -4;
+					destroyOutsideRoom = false;
+					scr_MKSS_Attack_ChasseEmee_BigCannonball_Setup();
+				}
+				
 				cannonballTimer = 30;
 				break;
 				
@@ -35,6 +61,19 @@ if (!localPause)
 				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				scr_MKSS_ParticleSet_BlockBreak1(x,y,depth - 1);
+				
+				with (instance_create_depth(x,y,depth - 4,obj_MKSS_Attack))
+				{
+					owner = other;
+					isEnemy = true;
+					dmg = 1;
+					sprite_index = spr_MKSS_Attack_ChasseEmee_BigCannonball_Background;
+					mask_index = spr_MKSS_Attack_ChasseEmee_BigCannonball_Background;
+					hsp = -1;
+					vsp = -4;
+					destroyOutsideRoom = false;
+					scr_MKSS_Attack_ChasseEmee_BigCannonball_Setup();
+				}
 				
 				cannonballTimer = 120;
 				break;

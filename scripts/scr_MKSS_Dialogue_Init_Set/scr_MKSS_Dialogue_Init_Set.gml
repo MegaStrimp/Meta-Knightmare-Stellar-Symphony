@@ -699,7 +699,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Idle,
-			text: "[fnt_MKSS_Andromeda]Persistent creature[/font]",
+			text: "[fnt_MKSS_Andromeda_Small]Persistent creature[/font]",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_Andromeda1,
 			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
@@ -707,7 +707,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Idle,
-			text: "Never have I seen anyone withstanding my [" + MKSS_Base_Color_Andromeda + "]Stellar Delusions[/color] like this",
+			text: "[fnt_MKSS_Andromeda_Small]Never have I seen anyone withstanding my [" + MKSS_Base_Color_Andromeda + "]Stellar Delusions[/color] like this[/font]",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_Andromeda1,
 			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
@@ -715,7 +715,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Idle,
-			text: "You must be quite a warrior in your realm",
+			text: "[fnt_MKSS_Andromeda_Small]You must be quite a warrior in your realm[/font]",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_Andromeda1,
 			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
@@ -747,7 +747,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Idle,
-			text: "They were sentinels given flesh by your subconscious.",
+			text: "[fnt_MKSS_Andromeda_Small]They were sentinels given flesh by your subconscious.[/font]",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_Andromeda1,
 			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
@@ -755,7 +755,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Idle,
-			text: "Each one represents a hotspot I have anchored to your planet.",
+			text: "[fnt_MKSS_Andromeda_Small]Each one represents a hotspot I have anchored to your planet.[/font]",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_Andromeda1,
 			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
@@ -763,7 +763,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Idle,
-			text: "The closer you get to them,[delay,200] the more your mind begins to manifest fragments of itself.",
+			text: "[fnt_MKSS_Andromeda_Small]The closer you get to them,[delay,200] the more your mind begins to manifest fragments of itself.[/font]",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_Andromeda1,
 			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
@@ -771,7 +771,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Idle,
-			text: "Fragments of your memories,[delay,500] pieced together to create something new.",
+			text: "[fnt_MKSS_Andromeda_Small]Fragments of your memories,[delay,500] pieced together to create something new.[/font]",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_Andromeda1,
 			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
@@ -779,7 +779,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Idle,
-			text: "And I can see you have faced many dangers in your past.",
+			text: "[fnt_MKSS_Andromeda_Small]And I can see you have faced many dangers in your past.[/font]",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_Andromeda1,
 			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
@@ -787,7 +787,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Idle,
-			text: "Opponents as[delay,200] honorable as you.",
+			text: "[fnt_MKSS_Andromeda_Small]Opponents as[delay,200] honorable as you.[/font]",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_Andromeda1,
 			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
@@ -795,7 +795,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Idle,
-			text: "A life of rebellion has made you stronger.",
+			text: "[fnt_MKSS_Andromeda_Small]A life of rebellion has made you stronger.[/font]",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_Andromeda1,
 			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
@@ -803,7 +803,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Ominous,
 			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Ominous,
-			text: "It must be overwhelming to go through all of that again.",
+			text: "[fnt_MKSS_Andromeda_Small]It must be overwhelming to go through all of that again.[/font]",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_Andromeda1,
 			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
@@ -843,7 +843,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Ominous,
 			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Ominous,
-			text: "I do not expect you to submit,[delay,200] not anymore.",
+			text: "[fnt_MKSS_Andromeda_Small]I do not expect you to submit,[delay,200] not anymore.[/font]",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_Andromeda1,
 			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
@@ -851,7 +851,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Ominous,
 			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Ominous,
-			text: "You are different.",
+			text: "[fnt_MKSS_Andromeda_Small]You are different.[/font]",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_Andromeda1,
 			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda
@@ -859,7 +859,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_Andromeda_Portrait_Scary,
 			portrait_Talk: spr_MKSS_NPC_Andromeda_Portrait_Scary,
-			text: "I will make sure to give you an honorable end.",
+			text: "[fnt_MKSS_Andromeda_Small]I will make sure to give you an honorable end.[/font]",
 			textSpeed: defaultTextSpeed,
 			textSound: snd_MKSS_Dialogue_Andromeda1,
 			drawScript: scr_MKSS_UI_Dialogue_Draw_Andromeda

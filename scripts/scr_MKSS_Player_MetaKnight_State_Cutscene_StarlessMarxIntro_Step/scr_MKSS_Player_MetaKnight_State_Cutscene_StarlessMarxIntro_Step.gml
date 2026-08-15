@@ -1,4 +1,4 @@
-///@description MKSS - Player - Meta Knight - State - Cutscene - StarlessMarxIntro - Step
+///@description MKSS - Player - Meta Knight - State - Cutscene - Starless Marx Intro - Step
 
 function scr_MKSS_Player_MetaKnight_State_Cutscene_StarlessMarxIntro_Step()
 {
@@ -26,66 +26,41 @@ function scr_MKSS_Player_MetaKnight_State_Cutscene_StarlessMarxIntro_Step()
 		#endregion
 		
 		#region Animation
-		if (!hasAttackAnimation)
+		if (grounded)
 		{
-			if (hurtState == hurtStates.hurt)
+			if ((hsp == 0) and (runTurnBuffer == -1))
 			{
-				if (ds_list_find_index(MKSS_HurtElement,global.AttackTypeIDs[? "electric"]) != -1)
+				if (lookingForward)
 				{
-					sprite_index = spriteSet.sprHurtShocked;
-				}
-				else if (ds_list_find_index(MKSS_HurtElement,global.AttackTypeIDs[? "fire"]) != -1)
-				{
-					sprite_index = spriteSet.sprHurtBurned;
-				}
-				else if (ds_list_find_index(MKSS_HurtElement,global.AttackTypeIDs[? "ice"]) != -1)
-				{
-					sprite_index = spriteSet.sprHurtFrozen;
+					sprite_index = spriteSet.sprFront;
 				}
 				else
 				{
-					sprite_index = spriteSet.sprHurtNormal;
+					sprite_index = spriteSet.sprIdle;
 				}
+			}
+		}
+		else
+		{
+			var sprAirFinal = sprite_index;
+					
+			if (vsp < 0)
+			{
+				sprAirFinal = spriteSet.sprJump;
 			}
 			else
 			{
-				if (grounded)
+				if (canFallRoll)
 				{
-				    if ((hsp == 0) and (runTurnBuffer == -1))
-					{
-						if (lookingForward)
-						{
-							sprite_index = spriteSet.sprFront;
-						}
-						else
-						{
-							sprite_index = spriteSet.sprIdle;
-						}
-					}
+					sprAirFinal = spriteSet.sprRoll;
 				}
 				else
 				{
-					var sprAirFinal = sprite_index;
-					
-					if (vsp < 0)
-					{
-						sprAirFinal = spriteSet.sprJump;
-					}
-					else
-					{
-						if (canFallRoll)
-						{
-							sprAirFinal = spriteSet.sprRoll;
-						}
-						else
-						{
-							sprAirFinal = spriteSet.sprFall;
-						}
-					}
-					
-					sprite_index = sprAirFinal;
+					sprAirFinal = spriteSet.sprFall;
 				}
 			}
+					
+			sprite_index = sprAirFinal;
 		}
 		#endregion
 		

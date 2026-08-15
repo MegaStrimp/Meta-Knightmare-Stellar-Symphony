@@ -1,6 +1,6 @@
 ///@description MKSS - Particle Set - Block Break 1
 
-function scr_MKSS_ParticleSet_BlockBreak1(parTargetX,parTargetY,parTargetDepth)
+function scr_MKSS_ParticleSet_BlockBreak1(parTargetX = x,parTargetY = y,parTargetDepth = depth)
 {
 	par[0] = instance_create_depth(parTargetX,parTargetY,parTargetDepth,obj_Particle);
 	par[0].sprite_index = spr_MKSS_Particle_BlockBreak1;

@@ -10,7 +10,7 @@
   "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":171.42288,
+  "duration":171.41272,
   "exportDir":"",
   "name":"mus_MKSS_StarryShores",
   "parent":{

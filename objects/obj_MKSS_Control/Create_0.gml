@@ -115,6 +115,7 @@ global.fontSpriteMedalGold = font_add_sprite_ext(fnt_MKSS_UI_Medal_Gold,"0123456
 global.fontSpriteMedalPlatinum = font_add_sprite_ext(fnt_MKSS_UI_Medal_Platinum,"0123456789",true,0);
 
 global.fontAndromeda = font_add_sprite_ext(fnt_MKSS_Andromeda,"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.,-':;!?*()&" + chr(47) + chr(92) + "#~+÷{}[]" + chr(34) + "“”<>%_|`0123456789",true,0);
+global.fontAndromeda_Small = font_add_sprite_ext(fnt_MKSS_Andromeda_Small,"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.,-':;!?*()&" + chr(47) + chr(92) + "#~+÷{}[]" + chr(34) + "“”<>%_|`0123456789",true,0);
 #endregion
 
 #region Set Window Caption

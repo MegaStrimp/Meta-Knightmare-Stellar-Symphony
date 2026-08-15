@@ -13,7 +13,7 @@ function scr_MKSS_Enemy_WaddleDoo_AI_WalkAndAttack_Setup()
 	#endregion
 	
 	#region Gameplay Variables
-	waddleDoo_Attack = scr_MKSS_Enemy_WaddleDoo_AI_WalkAndAttack_Attack_Step;
+	waddleDoo_Beam = scr_MKSS_Enemy_WaddleDoo_AI_WalkAndAttack_Beam_Step;
 	
 	attackTimer = -1;
 	attackTimerMax = 120;

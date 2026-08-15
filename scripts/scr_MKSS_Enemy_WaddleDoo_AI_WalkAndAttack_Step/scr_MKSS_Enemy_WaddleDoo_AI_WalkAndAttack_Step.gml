@@ -58,7 +58,7 @@ function scr_MKSS_Enemy_WaddleDoo_AI_WalkAndAttack_Step()
 			attackTimer = max(attackTimer - speedMultFinal,0);
 			if (attackTimer == 0)
 			{
-				scr_Enemy_ChangeState_Step(id,waddleDoo_Attack);
+				scr_Enemy_ChangeState_Step(id,waddleDoo_Beam);
 				
 				attackTimer = -1;
 			}

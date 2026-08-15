@@ -28,8 +28,9 @@ function scr_MKSS_Enemy_Keke_AI_FloatAndAttack_Step()
 			hasFriction = true;
 			hasGravity = true;
 			dirY = 1;
-			attackTimer = -1;
 			attackState = 0;
+			attackIndex = -1;
+			attackTimer = -1;
 			
 			#region Revert Back
 			if ((knockbackTimer == -1) and (knockbackCheckTimer == -1) and (grounded))
@@ -39,6 +40,7 @@ function scr_MKSS_Enemy_Keke_AI_FloatAndAttack_Step()
 			
 			if (knockbackTimer == 1)
 			{
+				attackTimer = attackTimerMax;
 				dirY = -1;
 				upAndDownComponent_TurnTimer = upAndDownComponent_TurnTimerMax;
 			}
@@ -71,18 +73,50 @@ function scr_MKSS_Enemy_Keke_AI_FloatAndAttack_Step()
 					case 1:
 					scr_PlaySfx(snd_MKSS_EnemyJump);
 					
-					attackTimer = attackTimerMax;
+					attackTimer = attackTimerMin;
 					break;
 					
 					case 2:
 					attackIndex = global.MKSS_AttackIDs[? "keke_Throw"];
 					
-					attackTimer = floor(attackTimerMax / 2);
+					#region Attack
+					with (instance_create_depth(x - 6,y + 4,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = MKSS_Base_EnemyBasicDamage;
+						destroyAfterHit = true;
+						destroyAfterCollideWall = true;
+						destroyAfterCollidePlatform = true;
+						attackWallHitParticleIndex = scr_MKSS_ParticleSet_BlockBreak1;
+						knockbackForce = 1;
+						vsp = 2;
+						dirX = other.dirX;
+						image_xscale = dirX * scale;
+						sprite_index = choose
+						(
+							spr_MKSS_Attack_Keke_Throw_Brick,
+							spr_MKSS_Attack_Keke_Throw_Rock,
+							spr_MKSS_Attack_Keke_Throw_Pearl,
+							spr_MKSS_Attack_Keke_Throw_StarBlock,
+							spr_MKSS_Attack_Keke_Throw_Kine,
+							spr_MKSS_Attack_Keke_Throw_Coo,
+							spr_MKSS_Attack_Keke_Throw_Rick,
+							spr_MKSS_Attack_Keke_Throw_Coal
+						);
+						attackAIStep = scr_MKSS_Attack_Keke_Throw_Step;
+						attackAIEndStep = scr_MKSS_Attack_Keke_Throw_EndStep;
+					}
+					#endregion
+					
+					attackTimer = attackTimerMin;
 					break;
 					
 					case 3:
 					attackState = 0;
-					attackTimer = -1;
+					attackIndex = -1;
+					
+					attackTimer = attackTimerMax;
 					break;
 				}
 			}

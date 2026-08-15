@@ -6,7 +6,7 @@ var yy = camera_get_view_y(mainView);
 #endregion
 
 #region Overlay
-var overlayAlpha = sine_wave(current_time / 1000,1,1,0) / 3;
+var overlayAlpha = sine_wave(global.currentTimePausable / 100,1,1,0) / 3;
 
 draw_set_color(c_red);
 draw_set_alpha(overlayAlpha);

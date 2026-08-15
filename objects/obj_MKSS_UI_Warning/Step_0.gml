@@ -1,46 +1,49 @@
 ///@description Main
 
-#region Text Animation
-topTextX = (topTextX + topTextSpd) % topTextWidth;
-topTextY = lerp(topTextY,topTextYTarget,.1);
-
-bottomTextX = (bottomTextX + bottomTextSpd) % bottomTextWidth;
-bottomTextY = lerp(bottomTextY,bottomTextYTarget,.1);
-
-middleTextLength = lerp(middleTextLength,middleTextLengthTarget,.1);
-
-imageIndex = (imageIndex + imageSpeed) % imageNumber;
-#endregion
-
-#region Decals
-decalWidth = lerp(decalWidth,decalWidthTarget,.2);
-#endregion
-
-#region State Timer
-if (stateTimer != -1)
+if (!localPause)
 {
-	stateTimer = max(stateTimer - speedMultFinal,0);
-	if (stateTimer == 0)
+	#region Text Animation
+	topTextX = (topTextX + topTextSpd) % topTextWidth;
+	topTextY = lerp(topTextY,topTextYTarget,.1);
+	
+	bottomTextX = (bottomTextX + bottomTextSpd) % bottomTextWidth;
+	bottomTextY = lerp(bottomTextY,bottomTextYTarget,.1);
+	
+	middleTextLength = lerp(middleTextLength,middleTextLengthTarget,.1);
+	
+	imageIndex = (imageIndex + imageSpeed) % imageNumber;
+	#endregion
+	
+	#region Decals
+	decalWidth = lerp(decalWidth,decalWidthTarget,.2);
+	#endregion
+	
+	#region State Timer
+	if (stateTimer != -1)
 	{
-		state += 1;
-		
-		switch (state)
+		stateTimer = max(stateTimer - speedMultFinal,0);
+		if (stateTimer == 0)
 		{
-			case 1:
-			middleTextLengthTarget = 0;
-			topTextYTarget = -20;
-			bottomTextYTarget = 169;
+			state += 1;
 			
-			stateTimer = 50;
-			break;
-			
-			case 2:
-			instance_destroy();
-			
-			stateTimer = -1;
-			break;
-		}
+			switch (state)
+			{
+				case 1:
+				middleTextLengthTarget = 0;
+				topTextYTarget = -20;
+				bottomTextYTarget = 169;
+				
+				stateTimer = 50;
+				break;
+				
+				case 2:
+				instance_destroy();
+				
+				stateTimer = -1;
+				break;
+			}
 		
+		}
 	}
+	#endregion
 }
-#endregion
