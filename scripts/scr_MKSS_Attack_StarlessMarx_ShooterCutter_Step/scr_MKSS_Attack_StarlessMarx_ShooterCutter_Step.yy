@@ -6,7 +6,7 @@
   "name":"scr_MKSS_Attack_StarlessMarx_ShooterCutter_Step",
   "parent":{
     "name":"AI",
-    "path":"folders/Meta Knightmare Stellar Symphony/Attacks/Attacks/Starless Marx/Shooter Cutter/Scripts/AI.yy",
+    "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Starless Bosses/Starless Marx/Attacks/Shooter Cutter/Scripts/AI.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

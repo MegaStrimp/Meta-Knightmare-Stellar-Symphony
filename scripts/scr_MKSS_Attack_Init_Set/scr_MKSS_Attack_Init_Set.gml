@@ -17,6 +17,7 @@ function scr_MKSS_Attack_Init_Set()
 	scr_MKSS_Attack_Init_Add("metaKnight_ParryCannonball",scr_MKSS_Attack_Execute_MetaKnight_ParryCannonball);
 	scr_MKSS_Attack_Init_Add("metaKnight_ParryBigCannonball",scr_MKSS_Attack_Execute_MetaKnight_ParryBigCannonball);
 	scr_MKSS_Attack_Init_Add("metaKnight_ParryStarlessMarxCutter",scr_MKSS_Attack_Execute_MetaKnight_ParryStarlessMarxCutter);
+	scr_MKSS_Attack_Init_Add("metaKnight_ParryIceBomb",scr_MKSS_Attack_Execute_MetaKnight_ParryIceBomb);
 	#endregion
 	
 	#region Galaxia

@@ -31,8 +31,20 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Idle_Step()
 		{
 			attackTimer = max(attackTimer - speedMultFinal,0);
 			if (attackTimer == 0)
-			{
-				scr_MKSS_Enemy_StarlessMarx_Teleport(64,84,scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShooterCutter_Step,,3);
+			{	
+				var _attackIndex = ds_list_find_value(attackList,attackListIndex);
+				
+				attackIndex = _attackIndex;
+				attackListIndex = (attackListIndex + 1) % (ds_list_size(attackList));
+				
+				if (_attackIndex == marx_Attack_ShooterCutter) 
+				{
+					scr_MKSS_Enemy_StarlessMarx_Teleport(64,84,marx_Attack_ShooterCutter,,3);
+				}
+				else 
+				{
+					if (script_exists(attackIndex)) scr_Enemy_ChangeState_Step(id,attackIndex);
+				}
 				
 				attackTimer = -1;
 			}

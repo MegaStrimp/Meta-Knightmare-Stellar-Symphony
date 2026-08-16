@@ -1,6 +1,6 @@
 ///@description MKSS - Particle Set - Parry Ghost
 
-function scr_MKSS_ParticleSet_ParryGhost(parTargetX,parTargetY,parTargetDir,parTargetSprite,parTargetPal = -1,targetIsEnemy = false)
+function scr_MKSS_ParticleSet_ParryGhost(parTargetX,parTargetY,parTargetDir,parTargetSprite,parTargetPal = -1,targetIsEnemy = false,targetEnemyColor = c_red)
 {
 	par[0] = instance_create_depth(parTargetX,parTargetY,depth,obj_Particle);
 	par[0].image_alpha = .35;
@@ -8,7 +8,7 @@ function scr_MKSS_ParticleSet_ParryGhost(parTargetX,parTargetY,parTargetDir,parT
 	if (targetIsEnemy)
 	{
 		par[0].sprite_index = sprite_index;
-		par[0].image_blend = c_red;
+		par[0].image_blend = targetEnemyColor;
 	}
 	else
 	{

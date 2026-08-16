@@ -32,7 +32,7 @@
   "origin":4,
   "parent":{
     "name":"Sprites",
-    "path":"folders/Meta Knightmare Stellar Symphony/Attacks/Attacks/Starless Marx/Shooter Cutter/Sprites.yy",
+    "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Starless Bosses/Starless Marx/Attacks/Shooter Cutter/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

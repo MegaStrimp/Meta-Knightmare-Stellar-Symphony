@@ -1,6 +1,6 @@
 ///@description MKSS - Enemy - Starless Marx - AI - Normal - Setup
 
-function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Setup()
+function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Setup(targetIsBoss = true)
 {
 	#region Physics Variables
 	decel = .05;
@@ -12,6 +12,29 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Setup()
 	#endregion
 	
 	#region Gameplay Variables
+	attackList = ds_list_create();
+	
+	#region Attack Scripts
+	marx_Attack_ShooterCutter = scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShooterCutter_Step;
+	marx_Attack_IceBomb = scr_MKSS_Enemy_StarlessMarx_AI_Normal_IceBomb_Step;
+	#endregion
+	
+	#region Attack Order
+	//ds_list_add(attackList,marx_Attack_IceBomb);
+	//ds_list_add(attackList,marx_Attack_ShooterCutter);
+	//ds_list_add(attackList,marx_Attack_ShooterCutter);
+	
+	scr_MKSS_Enemy_StarlessMarx_Normal_AttackOrder_Phase1(false);
+	if (global.debug) and (keyboard_check(ord("2"))) scr_MKSS_Enemy_StarlessMarx_Normal_AttackOrder_Phase1(true);
+	#endregion
+	
+	attackListIndex = 0;
+	
+	attackTimer = -1;
+	attackTimerMax = 20;
+	
+	isBoss = targetIsBoss;
+	
 	attackTimer = -1;
 	attackTimerMax = 90;
 	floatOffset = 0;
@@ -34,11 +57,18 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Setup()
 	teleport_TeleportTimerMax = 30;
 	#endregion
 	
+	#region Attack Variables
+	attackState = 0;
+	attackStateTimer[16] = -1;
+	attackStateTimerMax[16] = -1;
+	#endregion
+	
 	#region Sprites
 	sprite_index = spriteSet.sprAppear;
 	#endregion
 	
 	#region AI Scripts
+	enemyAIStepIdle = scr_MKSS_Enemy_StarlessMarx_AI_Normal_Idle_Step;
 	enemyAIStep = scr_MKSS_Enemy_StarlessMarx_AI_Normal_Appear_Step;
 	enemyAnimationEnd = scr_MKSS_Enemy_StarlessMarx_AI_Normal_Appear_AnimationEnd;
 	#endregion

@@ -6,7 +6,7 @@
   "name":"scr_MKSS_Attack_Execute_StarlessMarx_FlyingApparition",
   "parent":{
     "name":"Execute",
-    "path":"folders/Meta Knightmare Stellar Symphony/Attacks/Attacks/Starless Marx/Flying Apparition/Scripts/Execute.yy",
+    "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Starless Bosses/Starless Marx/Attacks/Flying Apparition/Scripts/Execute.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
