@@ -89,6 +89,10 @@ function scr_MKSS_Enemy_Wheelie_AI_WalkAndAttack_Step()
 		vsp = scr_Entity_Gravity(vsp,grav,gravLimit,speedMultFinal);
 		#endregion
 		
+		#region Parry
+		canBeParried = isCharging;
+		#endregion
+		
 		#region Attack Timer
 		if (attackTimer != -1)
 		{
@@ -100,6 +104,8 @@ function scr_MKSS_Enemy_Wheelie_AI_WalkAndAttack_Step()
 				{
 					case 1:
 					scr_PlaySfx(snd_MKSS_EnemyJump);
+					
+					scr_MKSS_UI_ParryIndicator_Create(x,y,depth - 1,attackTimerMax,,id);
 					
 					attackTimer = attackTimerMax;
 					break;

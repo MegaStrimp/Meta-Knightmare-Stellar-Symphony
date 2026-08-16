@@ -18,6 +18,7 @@ function scr_MKSS_Attack_Init_Set()
 	scr_MKSS_Attack_Init_Add("metaKnight_ParryBigCannonball",scr_MKSS_Attack_Execute_MetaKnight_ParryBigCannonball);
 	scr_MKSS_Attack_Init_Add("metaKnight_ParryStarlessMarxCutter",scr_MKSS_Attack_Execute_MetaKnight_ParryStarlessMarxCutter);
 	scr_MKSS_Attack_Init_Add("metaKnight_ParryIceBomb",scr_MKSS_Attack_Execute_MetaKnight_ParryIceBomb);
+	scr_MKSS_Attack_Init_Add("metaKnight_ParryWheelie",scr_MKSS_Attack_Execute_MetaKnight_ParryWheelie);
 	#endregion
 	
 	#region Galaxia
@@ -57,6 +58,10 @@ function scr_MKSS_Attack_Init_Set()
 	scr_MKSS_Attack_Init_Add("rango_Jump",scr_MKSS_Attack_Execute_Rango_Jump);
 	#endregion
 	
+	#region Bouncy
+	scr_MKSS_Attack_Init_Add("bouncy_Spin");
+	#endregion
+	
 	#region Keke
 	scr_MKSS_Attack_Init_Add("keke_Throw");
 	#endregion
@@ -67,6 +72,10 @@ function scr_MKSS_Attack_Init_Set()
 	
 	#region Wheelie
 	scr_MKSS_Attack_Init_Add("wheelie_Charge");
+	#endregion
+	
+	#region Bouncy Sis
+	scr_MKSS_Attack_Init_Add("bouncySis_Spin");
 	#endregion
 	
 	#region Chunky Dee

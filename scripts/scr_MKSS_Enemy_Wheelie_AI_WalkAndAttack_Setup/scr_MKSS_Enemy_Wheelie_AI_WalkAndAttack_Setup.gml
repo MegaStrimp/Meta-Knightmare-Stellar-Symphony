@@ -25,6 +25,8 @@ function scr_MKSS_Enemy_Wheelie_AI_WalkAndAttack_Setup()
 	points = MKSS_Base_EnemyPoints_Fodder;
 	metaPointsOnDeath = MKSS_Base_EnemyMetaPoints_Fodder;
 	
+	parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryWheelie"];
+	
 	isTurning = false;
 	isCharging = false;
 	

@@ -37,13 +37,30 @@ function scr_MKSS_Enemy_Bouncy_AI_Walk_Step()
 					jumpTimer = max(jumpTimer - speedMultFinal,0);
 					if (jumpTimer == 0)
 					{
+						if (jumpCount >= jumpCountMax)
+						{
+							dirX = scr_MKSS_Enemy_DirTarget();
+							
+							vsp = -jumpspeedSpin * dirY * speedMultFinal;
+							
+							scr_Component_BasicHorizontal_Setup(movespeedSpin);
+							scr_Enemy_ChangeState_Step(id,bouncy_Spin);
+							
+							jumpCount = 0;
+						}
+						else
+						{
+							vsp = -jumpspeed * dirY * speedMultFinal;
+							
+							jumpCount += 1;
+						}
+						
+						grounded = false;
+						
 						scr_PlaySfx(snd_MKSS_EnemyJump);
 						
 						var angle = 90 + (20 * dirX);
 						scr_MKSS_ParticleSet_Jump(x - (7 * dirX),y + 5,angle);
-						
-						vsp = -jumpspeed * dirY * speedMultFinal;
-						grounded = false;
 						
 						image_index = 0;
 						
