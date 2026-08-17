@@ -21,6 +21,7 @@
     {"$GMSpriteFrame":"v1","%Name":"7891050e-ffef-41b4-bc8d-21205b85e10c","name":"7891050e-ffef-41b4-bc8d-21205b85e10c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"eb87fc6b-63ff-482f-8b47-9f2972514885","name":"eb87fc6b-63ff-482f-8b47-9f2972514885","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"e05e172e-c798-47e0-8747-8627822d2fad","name":"e05e172e-c798-47e0-8747-8627822d2fad","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"07fd0682-19df-4967-941d-77f0c58c29c7","name":"07fd0682-19df-4967-941d-77f0c58c29c7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -57,7 +58,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":4.0,
+    "length":5.0,
     "lockOrigin":true,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -88,12 +89,15 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e05e172e-c798-47e0-8747-8627822d2fad","path":"sprites/spr_MKSS_Enemy_GhoulKnight_Base_Attack/spr_MKSS_Enemy_GhoulKnight_Base_Attack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"7f90a207-b3fe-49da-92a8-a7ae2ca1cb18","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"07fd0682-19df-4967-941d-77f0c58c29c7","path":"sprites/spr_MKSS_Enemy_GhoulKnight_Base_Attack/spr_MKSS_Enemy_GhoulKnight_Base_Attack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"eb59f23c-3050-4359-a651-f55619410edd","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
     "xorigin":29,
-    "yorigin":42,
+    "yorigin":41,
   },
   "swatchColours":null,
   "swfPrecision":2.525,

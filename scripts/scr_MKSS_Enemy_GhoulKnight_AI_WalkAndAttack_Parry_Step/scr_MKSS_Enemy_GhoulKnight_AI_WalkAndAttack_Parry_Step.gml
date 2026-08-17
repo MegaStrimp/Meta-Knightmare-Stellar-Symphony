@@ -63,12 +63,12 @@ function scr_MKSS_Enemy_GhoulKnight_AI_WalkAndAttack_Parry_Step()
 				sprite_index = spriteSet.sprGuard;
 				image_index = 0;
 				
-				attackIndex = global.MKSS_AttackIDs[? "GhoulKnight_Parry"];
+				attackIndex = global.MKSS_AttackIDs[? "ghoulKnight_Parry"];
 				
 				canBeHurt = false;
 				canParry = true;
 				
-				parryGhoulParticle = scr_MKSS_ParticleSet_ParryGhoul(x,y,dirX,,,true);
+				parryGhostParticle = scr_MKSS_ParticleSet_ParryGhost(x,y,dirX,,,true);
 				
 				attackState++;
 			}
@@ -84,7 +84,7 @@ function scr_MKSS_Enemy_GhoulKnight_AI_WalkAndAttack_Parry_Step()
 				dirX = scr_MKSS_Enemy_DirTarget();
 				
 				with (parryIndicator) instance_destroy();
-				with (parryGhoulParticle[0]) instance_destroy();
+				with (parryGhostParticle[0]) instance_destroy();
 				
 				canBeHurt = true;
 				canParry = false;
@@ -129,7 +129,7 @@ function scr_MKSS_Enemy_GhoulKnight_AI_WalkAndAttack_Parry_Step()
 			scr_Enemy_ChangeState_Step(id,enemyAIStepIdle);
 				
 			with (parryIndicator) instance_destroy();
-			if (attackState > 0) with (parryGhoulParticle[0]) instance_destroy();
+			if (attackState > 0) with (parryGhostParticle[0]) instance_destroy();
 			
 			canBeHurt = true;
 			canParry = false;

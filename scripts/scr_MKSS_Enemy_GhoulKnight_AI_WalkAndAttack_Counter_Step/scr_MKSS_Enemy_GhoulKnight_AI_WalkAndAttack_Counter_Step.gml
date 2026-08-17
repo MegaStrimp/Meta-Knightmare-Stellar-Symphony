@@ -58,7 +58,7 @@ function scr_MKSS_Enemy_GhoulKnight_AI_WalkAndAttack_Counter_Step()
 				sprite_index = spriteSet.sprAttack;
 				image_index = 0;
 				
-				attackIndex = global.MKSS_AttackIDs[? "GhoulKnight_Counter"];
+				attackIndex = global.MKSS_AttackIDs[? "ghoulKnight_Counter"];
 				
 				#region Attack
 				with (instance_create_depth(x,y,depth,obj_MKSS_Attack))
@@ -71,8 +71,8 @@ function scr_MKSS_Enemy_GhoulKnight_AI_WalkAndAttack_Counter_Step()
 					pauseAfterAnimation = true;
 					isMelee = true;
 					freezeFrameForce = 1;
-					knockbackAngle = 10;
-					knockbackForce = 1;
+					knockbackAngle = 90 - other.dirX;
+					knockbackForce = 2;
 					sprite_index = spr_MKSS_Enemy_GhoulKnight_Effects_Attack;
 					mask_index = spr_MKSS_Attack_GhoulKnight_Stab_Mask;
 					dirX = other.dirX;

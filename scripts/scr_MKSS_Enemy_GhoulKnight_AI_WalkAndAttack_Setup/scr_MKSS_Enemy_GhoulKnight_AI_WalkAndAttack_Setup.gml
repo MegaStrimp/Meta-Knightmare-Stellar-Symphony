@@ -20,13 +20,12 @@ function scr_MKSS_Enemy_GhoulKnight_AI_WalkAndAttack_Setup()
 	GhoulKnight_Attack_Counter = scr_MKSS_Enemy_GhoulKnight_AI_WalkAndAttack_Counter_Step;
 	
 	ds_list_add(attackList,GhoulKnight_Attack_Stab);
-	ds_list_add(attackList,GhoulKnight_Attack_Stab);
 	ds_list_add(attackList,GhoulKnight_Attack_Parry);
 	
 	attackListIndex = 0;
 	
 	attackTimer = -1;
-	attackTimerMax = 45;
+	attackTimerMax = 20;
 	#endregion
 	
 	#region Attack Variables

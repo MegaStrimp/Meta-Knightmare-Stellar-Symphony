@@ -19,8 +19,6 @@ function scr_MKSS_Enemy_GhoulKnight_AI_WalkAndAttack_Step()
 	{
 		var hasFriction = false;
 		
-		//if (!hasKnockback)
-		//{
 		if (hp > 0)
 		{
 			#region Movement
@@ -31,17 +29,6 @@ function scr_MKSS_Enemy_GhoulKnight_AI_WalkAndAttack_Step()
 		{
 			hasFriction = true;
 		}
-		//}
-		//else
-		//{
-		//	#region Knockback Active
-		//	hasFriction = true;
-			
-		//	#region Revert Back
-		//	if ((knockbackTimer == -1) and (knockbackCheckTimer == -1) and (grounded)) knockbackTimer = knockbackTimerMax;
-		//	#endregion
-		//	#endregion
-		//}
 		
 		#region Friction
 		if ((hasFriction) and (grounded))

@@ -58,6 +58,12 @@ function scr_MKSS_Attack_Init_Set()
 	scr_MKSS_Attack_Init_Add("rango_Jump",scr_MKSS_Attack_Execute_Rango_Jump);
 	#endregion
 	
+	#region Ghoul Knight
+	scr_MKSS_Attack_Init_Add("ghoulKnight_Stab");
+	scr_MKSS_Attack_Init_Add("ghoulKnight_Parry");
+	scr_MKSS_Attack_Init_Add("ghoulKnight_Counter");
+	#endregion
+	
 	#region Bouncy
 	scr_MKSS_Attack_Init_Add("bouncy_Spin");
 	#endregion

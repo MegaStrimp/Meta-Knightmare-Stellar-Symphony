@@ -74,7 +74,7 @@ function scr_MKSS_Enemy_GhostKnight_AI_WalkAndAttack_Stab_Step()
 					pauseAfterAnimation = true;
 					isMelee = true;
 					freezeFrameForce = 1;
-					knockbackAngle = 10;
+					knockbackAngle = 90 - other.dirX;
 					knockbackForce = 1;
 					sprite_index = spr_MKSS_Enemy_GhostKnight_Effects_Attack;
 					mask_index = spr_MKSS_Attack_GhostKnight_Stab_Mask;

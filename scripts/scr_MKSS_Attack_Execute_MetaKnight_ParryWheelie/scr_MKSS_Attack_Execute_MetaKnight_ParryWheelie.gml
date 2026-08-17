@@ -29,11 +29,18 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryWheelie(playerIndex,currentParr
 			target = currentParriedObject;
 			owner = playerIndex;
 			isEnemy = false;
+			destroyAfterCollideWall = true;
+			attackWallHitParticleIndex = scr_MKSS_ParticleSet_BlockBreak1;
+			hsp = 0;
+			vsp = 0;
+			movespeed = 2.5;
+			particleTimerMax = 5;
+			particleTimer = particleTimerMax;
+			dmg = MKSS_Base_PlayerContactDamage;
 			dirX = -scr_MKSS_Enemy_DirTarget();
 			image_xscale = scale * dirX;
-			dmg = -1;
 			sprite_index = spr_MKSS_Attack_MetaKnight_ParryWheelie;
-			attackAIStep = scr_MKSS_Attack_MetaKnight_ParryTrappyPearl_Step;
+			attackAIStep = scr_MKSS_Attack_MetaKnight_ParryWheelie_Step;
 		}
 		
 		with (currentParriedObject)

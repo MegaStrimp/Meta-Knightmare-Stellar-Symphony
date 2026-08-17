@@ -43,7 +43,7 @@ function scr_MKSS_Attack_Execute_Galaxia_CircleSlash()
 		destroyIfOwnerNotAttack = true;
 		canBreakBlocks = true;
 		isMelee = true;
-		freezeFrameForce = 1;
+		freezeFrameForce = 2;
 		knockbackAngle = 45;
 		if (other.dirX == -1) knockbackAngle = 135;
 		knockbackForce = 1;
