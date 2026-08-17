@@ -8,6 +8,34 @@ function scr_MKSS_UI_Notif_Init_Set()
 	#endregion
 	
 	#region Add Notifs Here
+	#region Crossovers
+	#region KSW Familiar
+	var notifUnlockMethod = function()
+	{
+		return global.MKSS_FamiliarList[global.MKSS_FamiliarIDs[? "ksw"]].isUnlocked;
+	};
+	
+	var text = ["Found a save file for [" + MKSS_Base_Color_Completion + "]Kirby ~ Soft & Wet[/color]\n\nYou have unlocked the [#40E8F8]Bubble Fish[/color] familiar!"];
+	
+	var image = [spr_MKSS_UI_NotifBox_Image_Crossover_KSW];
+	
+	scr_MKSS_UI_Notif_Init_Add("crossover_KSWFamiliar",text,notifUnlockMethod,true,image);
+	#endregion
+	
+	#region Waddle Knight Familiar
+	var notifUnlockMethod = function()
+	{
+		return global.MKSS_FamiliarList[global.MKSS_FamiliarIDs[? "waddleKnight"]].isUnlocked;
+	};
+	
+	var text = ["Found a save file for [" + MKSS_Base_Color_Completion + "]Waddle Knight Deluxe[/color]\n\nYou have unlocked the [#F860B9]Bronto Burt[/color] familiar!"];
+	
+	var image = [spr_MKSS_UI_NotifBox_Image_Crossover_WaddleKnight];
+	
+	scr_MKSS_UI_Notif_Init_Add("crossover_WaddleKnightFamiliar",text,notifUnlockMethod,true,image);
+	#endregion
+	#endregion
+	
 	#region Special Bar Tutorial
 	var notifUnlockMethod = function()
 	{
@@ -225,6 +253,7 @@ function scr_MKSS_UI_Notif_Init_Set()
 				if (!global.isMobile) fileFinal = environment_get_variable("LOCALAPPDATA") + chr(92) + global.gameTitle + chr(92) + fileName;
 				
 				saveExists[i] = file_exists(fileFinal);
+				saveProgress[i] = scr_MKSS_DataGetPercentage(fileName);
 			}
 		}
 	};

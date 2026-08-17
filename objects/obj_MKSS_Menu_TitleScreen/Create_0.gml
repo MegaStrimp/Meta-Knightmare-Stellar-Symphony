@@ -44,6 +44,7 @@ for (var i = 0; i < 3; i++)
 	if (!global.isMobile) fileFinal = environment_get_variable("LOCALAPPDATA") + chr(92) + global.gameTitle + chr(92) + fileName;
 	
 	saveExists[i] = file_exists(fileFinal);
+	saveProgress[i] = scr_MKSS_DataGetPercentage(fileName);
 }
 #endregion
 
@@ -52,6 +53,11 @@ particleTimerMax = 30;
 particleTimer = particleTimerMax;
 #endregion
 
-#region Create Surface
+#region Create Background
 if (!instance_exists(obj_MKSS_Surface_Space)) instance_create_depth(0,0,0,obj_MKSS_Surface_Space);
+
+with (instance_create_depth(0,0,depth + 100,obj_MKSS_SurfaceDrawer))
+{
+	targetObject = obj_MKSS_Surface_Space;
+}
 #endregion

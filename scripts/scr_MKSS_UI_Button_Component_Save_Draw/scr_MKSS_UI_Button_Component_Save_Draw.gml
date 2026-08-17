@@ -30,7 +30,7 @@ function scr_MKSS_UI_Button_Component_Save_Draw(targetNum)
 	#endregion
 	
 	#region Completion
-	var saveProgressFinal = saveProgress;
+	var saveProgressFinal = obj_MKSS_Menu_TitleScreen.saveExists[targetNum];
 	
 	draw_sprite_ext(spr_MKSS_Menu_TitleScreen_SaveText,0,x - 181,14 + (targetNum * 40),1,1,0,c_white,1);
 	draw_sprite_ext(fnt_MKSS_Menu_TitleScreen_Save,targetNum + 1,x - 138,14 + (targetNum * 40),1,1,0,c_white,1);

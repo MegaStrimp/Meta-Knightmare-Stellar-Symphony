@@ -11,6 +11,7 @@ function scr_MKSS_UI_Button_Component_Save_Trigger(targetSave)
 		global.lastSelectedSave = global.selectedSave;
 		
 		scr_MKSS_SaveGeneral("general.ini");
+		scr_MKSS_LoadCrossovers(global.selectedSave);
 		scr_MKSS_LoadData(global.selectedSave);
 		scr_MKSS_Player_SetWeapons();
 		
