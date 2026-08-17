@@ -285,46 +285,6 @@ function scr_MKSS_Dialogue_Init_Set()
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
 			drawScript: defaultDrawScript
-		},
-		{
-			portrait_Idle: spr_MKSS_NPC_JavelinKnight_Portrait_Idle,
-			portrait_Talk: spr_MKSS_NPC_JavelinKnight_Portrait_Talk,
-			text: "We ran out of target dummies so the [c_yellow]Captain[/color] told me to always keep some junk ready for practice.",
-			textSpeed: defaultTextSpeed,
-			textSound: defaultTextSound,
-			drawScript: defaultDrawScript
-		},
-		{
-			portrait_Idle: spr_MKSS_NPC_JavelinKnight_Portrait_Idle,
-			portrait_Talk: spr_MKSS_NPC_JavelinKnight_Portrait_Talk,
-			text: "Why not balloons,[delay,200] of course![delay,500] [rainbow]Colorful[/rainbow] and perfect to get a satisfying hit.",
-			textSpeed: defaultTextSpeed,
-			textSound: defaultTextSound,
-			drawScript: defaultDrawScript
-		},
-		{
-			portrait_Idle: spr_MKSS_NPC_JavelinKnight_Portrait_Idle,
-			portrait_Talk: spr_MKSS_NPC_JavelinKnight_Portrait_Talk,
-			text: "Not as durable but leave the thinking and blowing to me.",
-			textSpeed: defaultTextSpeed,
-			textSound: defaultTextSound,
-			drawScript: defaultDrawScript
-		},
-		{
-			portrait_Idle: spr_MKSS_NPC_JavelinKnight_Portrait_Idle,
-			portrait_Talk: spr_MKSS_NPC_JavelinKnight_Portrait_Talk,
-			text: "Mr. Sandbag? Yeah he's still there in the storage. You can play with him if you wish to.",
-			textSpeed: defaultTextSpeed,
-			textSound: defaultTextSound,
-			drawScript: defaultDrawScript
-		},
-		{
-			portrait_Idle: spr_MKSS_NPC_JavelinKnight_Portrait_Idle,
-			portrait_Talk: spr_MKSS_NPC_JavelinKnight_Portrait_Talk,
-			text: "Right through that door past the balloons.",
-			textSpeed: defaultTextSpeed,
-			textSound: defaultTextSound,
-			drawScript: defaultDrawScript
 		}
 	]
 	
@@ -407,13 +367,37 @@ function scr_MKSS_Dialogue_Init_Set()
 	#endregion
 	
 	#region False Idol
-	#region Halberd 1
+	#region Halberd 1 - 1
 	var dialogue = 
 	[
 		{
-			portrait_Idle: spr_MKSS_NPC_PaintRoller_Portrait_Idle,
-			portrait_Talk: spr_MKSS_NPC_PaintRoller_Portrait_Talk,
-			text: "My lord, you're looking well. I'm glad you and the other Meta-Knights don't hold, you know, THAT, against me... But I still feel like I've heard 'chicken' thrown around from time to time. You know. From OTHERS.",
+			portrait_Idle: spr_MKSS_NPC_Strimp_Portrait,
+			portrait_Talk: spr_MKSS_NPC_Strimp_Portrait,
+			text: "You might not know this,[delay,200] tough guy,[delay,200] but I [shake]own[/shake] this [" + MKSS_Base_Color_Completion + "]castle[/color].",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Strimp_Portrait,
+			portrait_Talk: spr_MKSS_NPC_Strimp_Portrait,
+			text: "Those [#4F79F0]penguin[/color] statues all around?[delay,200] Yeah uh[delay,200] that's uh[delay,500] my cousin.",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Strimp_Portrait,
+			portrait_Talk: spr_MKSS_NPC_Strimp_Portrait,
+			text: "I just uh really love him and ordered to make statues in his image,[delay,200] of course!",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Strimp_Portrait,
+			portrait_Talk: spr_MKSS_NPC_Strimp_Portrait,
+			text: "Do your research right, old chum.[delay,200] I know all about this place for it is [shake]mine[/shake]!",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
 			drawScript: defaultDrawScript
@@ -421,6 +405,46 @@ function scr_MKSS_Dialogue_Init_Set()
 	]
 	
 	scr_MKSS_Dialogue_Init_Add("falseIdol_Halberd_1",dialogue);
+	#endregion
+	
+	#region Halberd 1 - 2
+	var dialogue = 
+	[
+		{
+			portrait_Idle: spr_MKSS_NPC_Strimp_Portrait,
+			portrait_Talk: spr_MKSS_NPC_Strimp_Portrait,
+			text: "Good thing nobody has found my secret [" + MKSS_Base_Color_Completion + "]Gold Stash[/color] yet.",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound,
+			drawScript: defaultDrawScript
+		}
+	]
+	
+	scr_MKSS_Dialogue_Init_Add("falseIdol_Halberd_2",dialogue);
+	#endregion
+	
+	#region Halberd 1 - 3
+	var dialogue = 
+	[
+		{
+			portrait_Idle: spr_MKSS_NPC_Strimp_Portrait,
+			portrait_Talk: spr_MKSS_NPC_Strimp_Portrait,
+			text: "Chit chat time is over.[delay,200] A [" + MKSS_Base_Color_Completion + "]king[/color] can only spend time with the most royal.[delay,200] Get lost!",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_Strimp_Portrait,
+			portrait_Talk: spr_MKSS_NPC_Strimp_Portrait,
+			text: "Yeah! Get back to cleaning,[delay,200] Pep Brew!",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound,
+			drawScript: defaultDrawScript
+		}
+	]
+	
+	scr_MKSS_Dialogue_Init_Add("falseIdol_Halberd_3",dialogue);
 	#endregion
 	#endregion
 	
