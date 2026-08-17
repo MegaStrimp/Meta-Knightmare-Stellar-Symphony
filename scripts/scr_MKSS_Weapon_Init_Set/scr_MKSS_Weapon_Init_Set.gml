@@ -52,6 +52,7 @@ function scr_MKSS_Weapon_Init_Set()
 		
 		sprAttackGalaxiaSlash1: undefined,
 		sprAttackGalaxiaSlash2: undefined,
+		sprAttackGalaxiaMultisword: undefined,
 		sprAttackGalaxiaStab: spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_Attack_Stab,
 		sprAttackGalaxiaUpAttack: undefined,
 		sprAttackGalaxiaDownThrust: spr_MKSS_Player_MetaKnight_Normal_Sword_Galaxia_Attack_DownAttack,
@@ -106,6 +107,7 @@ function scr_MKSS_Weapon_Init_Set()
 		
 		sprAttackGalaxiaSlash1: undefined,
 		sprAttackGalaxiaSlash2: undefined,
+		sprAttackGalaxiaMultisword: undefined,
 		sprAttackGalaxiaStab: undefined,
 		sprAttackGalaxiaUpAttack: undefined,
 		sprAttackGalaxiaDownThrust: undefined,
@@ -158,6 +160,7 @@ function scr_MKSS_Weapon_Init_Set()
 		
 		sprAttackGalaxiaSlash1: undefined,
 		sprAttackGalaxiaSlash2: undefined,
+		sprAttackGalaxiaMultisword: undefined,
 		sprAttackGalaxiaStab: undefined,
 		sprAttackGalaxiaUpAttack: undefined,
 		sprAttackGalaxiaDownThrust: undefined,
@@ -210,6 +213,7 @@ function scr_MKSS_Weapon_Init_Set()
 		
 		sprAttackGalaxiaSlash1: undefined,
 		sprAttackGalaxiaSlash2: undefined,
+		sprAttackGalaxiaMultisword: undefined,
 		sprAttackGalaxiaStab: undefined,
 		sprAttackGalaxiaUpAttack: undefined,
 		sprAttackGalaxiaDownThrust: undefined,
@@ -262,6 +266,7 @@ function scr_MKSS_Weapon_Init_Set()
 		
 		sprAttackGalaxiaSlash1: undefined,
 		sprAttackGalaxiaSlash2: undefined,
+		sprAttackGalaxiaMultisword: undefined,
 		sprAttackGalaxiaStab: undefined,
 		sprAttackGalaxiaUpAttack: undefined,
 		sprAttackGalaxiaDownThrust: undefined,

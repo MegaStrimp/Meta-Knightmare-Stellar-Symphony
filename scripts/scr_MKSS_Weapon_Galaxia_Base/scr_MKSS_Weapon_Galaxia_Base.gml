@@ -83,7 +83,7 @@ function scr_MKSS_Weapon_Galaxia_Base()
 						case 0:
 						if ((!isAttacking) and (attackCooldown == -1))
 						{
-							if (maxComboLength > 1)
+							if (maxComboLength > 0)
 							{
 								galaxia_BasicCombo_Index = 1;
 								galaxia_BasicCombo_Timer = galaxia_BasicCombo_TimerMax;
@@ -106,7 +106,7 @@ function scr_MKSS_Weapon_Galaxia_Base()
 						case 1:
 						if ((!isAttacking) and (attackCooldown <= 15))
 						{
-							if (maxComboLength > 2)
+							if (maxComboLength > 1)
 							{
 								galaxia_BasicCombo_Index = 2;
 								galaxia_BasicCombo_Timer = galaxia_BasicCombo_TimerMax;
@@ -137,7 +137,7 @@ function scr_MKSS_Weapon_Galaxia_Base()
 							
 							script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript);
 							
-							galaxia_Finisher_Timer = galaxia_Finisher_TimerMax;
+							galaxia_Finisher_Timer = floor(galaxia_Finisher_TimerMax * 2);
 						}
 						break;
 					}
@@ -158,7 +158,7 @@ function scr_MKSS_Weapon_Galaxia_Base()
 				galaxia_BasicCombo_Timer = -1;
 				galaxia_Finisher_Timer = -1;
 			}
-			else if (hasMachTornado)
+			else if ((hasMachTornado) and (attackCooldownSpecial == -1))
 			{
 				attackTriggered = true;
 				attackIndex = global.MKSS_AttackIDs[? "galaxia_MachTornado"];

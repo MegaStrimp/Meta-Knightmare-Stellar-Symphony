@@ -1,11 +1,11 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_MKSS_Attack_Galaxia_Multisword_Mask",
+  "%Name":"spr_MKSS_Attack_Galaxia_Multisword",
   "bboxMode":0,
-  "bbox_bottom":9,
-  "bbox_left":6,
-  "bbox_right":37,
-  "bbox_top":3,
+  "bbox_bottom":12,
+  "bbox_left":0,
+  "bbox_right":44,
+  "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
   "ConfigValues":{
@@ -17,7 +17,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"b946ba59-3bf0-4758-a639-40fe8b2e9ce7","name":"b946ba59-3bf0-4758-a639-40fe8b2e9ce7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b4d42c59-5d54-4842-a3ae-bc5b62b731ef","name":"b4d42c59-5d54-4842-a3ae-bc5b62b731ef","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -26,7 +26,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"276e7410-35cf-4120-896c-5c8d8896f800","blendMode":0,"displayName":"default","isLocked":false,"name":"276e7410-35cf-4120-896c-5c8d8896f800","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_MKSS_Attack_Galaxia_Multisword_Mask",
+  "name":"spr_MKSS_Attack_Galaxia_Multisword",
   "nineSlice":null,
   "origin":4,
   "parent":{
@@ -38,7 +38,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_MKSS_Attack_Galaxia_Multisword_Mask",
+    "%Name":"spr_MKSS_Attack_Galaxia_Multisword",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -62,7 +62,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_MKSS_Attack_Galaxia_Multisword_Mask",
+    "name":"spr_MKSS_Attack_Galaxia_Multisword",
     "playback":1,
     "playbackSpeed":0.0,
     "playbackSpeedType":0,
@@ -74,8 +74,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b946ba59-3bf0-4758-a639-40fe8b2e9ce7","path":"sprites/spr_MKSS_Attack_Galaxia_Multisword_Mask/spr_MKSS_Attack_Galaxia_Multisword_Mask.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"cd6a5f32-b753-47a5-8438-f20ed7ac6f6b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b4d42c59-5d54-4842-a3ae-bc5b62b731ef","path":"sprites/spr_MKSS_Attack_Galaxia_Multisword/spr_MKSS_Attack_Galaxia_Multisword.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ae86871c-221c-4f12-9ec8-3f4bff2bff7f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

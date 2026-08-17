@@ -27,7 +27,7 @@ function scr_MKSS_Attack_Execute_Galaxia_MachTornado()
 	vsp = -(galaxia_MachTornado_Jumpspeed * speedMultFinal);
 	
 	attackCancelTimer = 30;
-	attackCooldownTarget = 0;
+	attackCooldownSpecial = 60;
 	#endregion
 	
 	#region Starting Attack

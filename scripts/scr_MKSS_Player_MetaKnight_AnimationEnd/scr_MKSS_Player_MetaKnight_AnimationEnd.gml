@@ -36,6 +36,10 @@ function scr_MKSS_Player_MetaKnight_AnimationEnd()
 		image_index = image_number - 1;
 		break;
 		
+		case spriteSet.sprAttackGalaxiaMultisword:
+		image_index = image_number - 1;
+		break;
+		
 		case spriteSet.sprAttackGalaxiaUpAttack:
 		scr_Player_CancelAttack(id,attackIndex);
 		image_index = image_number - 1;

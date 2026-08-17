@@ -108,6 +108,10 @@ function scr_MKSS_Player_WeaponSpriteIndex()
 		weaponSpriteIndex = weaponSpriteSet.sprAttackGalaxiaSlash2;
 		break;
 		
+		case spriteSet.sprAttackGalaxiaMultisword:
+		weaponSpriteIndex = weaponSpriteSet.sprAttackGalaxiaMultisword;
+		break;
+		
 		case spriteSet.sprAttackGalaxiaStab:
 		weaponSpriteIndex = weaponSpriteSet.sprAttackGalaxiaStab;
 		break;

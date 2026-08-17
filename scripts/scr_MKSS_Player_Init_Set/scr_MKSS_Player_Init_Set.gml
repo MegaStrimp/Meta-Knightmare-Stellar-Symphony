@@ -47,6 +47,7 @@ function scr_MKSS_Player_Init_Set()
 		
 		sprAttackGalaxiaSlash1: spr_MKSS_Player_MetaKnight_Normal_Base_Attack_Galaxia_Slash1,
 		sprAttackGalaxiaSlash2: spr_MKSS_Player_MetaKnight_Normal_Base_Attack_Galaxia_Slash2,
+		sprAttackGalaxiaMultisword: spr_MKSS_Player_MetaKnight_Normal_Base_Attack_Galaxia_Multisword,
 		sprAttackGalaxiaStab: spr_MKSS_Player_MetaKnight_Normal_Base_Attack_Galaxia_Stab,
 		sprAttackGalaxiaUpAttack: spr_MKSS_Player_MetaKnight_Normal_Base_Attack_Galaxia_UpAttack,
 		sprAttackGalaxiaDownThrust: spr_MKSS_Player_MetaKnight_Normal_Base_Attack_Galaxia_DownAttack,

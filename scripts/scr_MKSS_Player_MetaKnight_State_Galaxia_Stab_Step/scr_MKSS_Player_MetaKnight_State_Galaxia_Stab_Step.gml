@@ -39,7 +39,7 @@ function scr_MKSS_Player_MetaKnight_State_Galaxia_Stab_Step()
 		}
 		#endregion
 		
-		#region Galaxia - Down Thrust - End Timer
+		#region Galaxia - Stab - End Timer
 		if (galaxia_Stab_EndTimer != -1)
 		{
 			galaxia_Stab_EndTimer = max(galaxia_Stab_EndTimer - speedMultFinal,0);
