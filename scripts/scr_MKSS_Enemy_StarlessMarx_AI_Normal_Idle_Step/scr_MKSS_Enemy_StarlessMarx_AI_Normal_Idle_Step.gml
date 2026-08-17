@@ -37,14 +37,23 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Idle_Step()
 				attackIndex = _attackIndex;
 				attackListIndex = (attackListIndex + 1) % (ds_list_size(attackList));
 				
-				if (_attackIndex == marx_Attack_ShooterCutter) 
+				var _normal = true;
+				switch (_attackIndex)
 				{
-					scr_MKSS_Enemy_StarlessMarx_Teleport(64,84,marx_Attack_ShooterCutter,,3);
+					case marx_Attack_ShooterCutter:
+					scr_MKSS_Enemy_StarlessMarx_Teleport(64,84,_attackIndex,,3);
+					_normal = false;
+					break;
+					
+					case marx_Attack_ArrowArrow:
+					var _x = -40;
+					if (obj_Player.x <= room_width/2) _x = room_width - _x;
+					scr_MKSS_Enemy_StarlessMarx_Teleport(_x,144,_attackIndex,,0);
+					_normal = false;
+					break;
 				}
-				else 
-				{
-					if (script_exists(attackIndex)) scr_Enemy_ChangeState_Step(id,attackIndex);
-				}
+				
+				if (_normal) and (script_exists(attackIndex)) scr_Enemy_ChangeState_Step(id,attackIndex);
 				
 				attackTimer = -1;
 			}

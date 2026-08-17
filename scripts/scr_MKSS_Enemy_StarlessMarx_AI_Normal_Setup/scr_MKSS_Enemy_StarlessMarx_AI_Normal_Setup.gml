@@ -17,6 +17,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Setup(targetIsBoss = true)
 	#region Attack Scripts
 	marx_Attack_ShooterCutter = scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShooterCutter_Step;
 	marx_Attack_IceBomb = scr_MKSS_Enemy_StarlessMarx_AI_Normal_IceBomb_Step;
+	marx_Attack_ArrowArrow = scr_MKSS_Enemy_StarlessMarx_AI_Normal_ArrowArrow_Step;
 	#endregion
 	
 	#region Attack Order
