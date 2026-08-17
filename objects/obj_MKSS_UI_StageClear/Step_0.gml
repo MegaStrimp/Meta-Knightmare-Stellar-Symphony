@@ -2,7 +2,9 @@
 
 #region Selection
 var canSelect = true;
-if (targetRoom != -1) canSelect = false;
+if ((hintOffsetTimer == -1)
+and (targetRoom != -1)
+and (targetRoom != -1)) canSelect = false;
 
 if (canSelect)
 {
@@ -67,7 +69,42 @@ if (hintOffsetTimer != -1)
 	hintOffsetTimer = max(hintOffsetTimer - speedMultFinal,0);
 	if (hintOffsetTimer == 0)
 	{
+		if (!ds_list_empty(scoreBonuses)) scoreBonusTimer = 0;
+		
 		hintOffsetTimer = -1;
+	}
+}
+#endregion
+
+#region Score Bonus Timer
+if (scoreBonusTimer != -1)
+{
+	scoreBonusTimer = max(scoreBonusTimer - speedMultFinal,0);
+	if (scoreBonusTimer == 0)
+	{
+		scr_PlaySfx(snd_MKSS_MetaPointCollect3);
+		
+		var currentScoreBonus = ds_list_find_value(scoreBonuses,0);
+		
+		with (instance_create_depth(0,0,depth - 1,obj_MKSS_UI_ScoreBonus))
+		{
+			sprite_index = global.MKSS_ScoreBonusList[currentScoreBonus].sprite;
+			destroyTimer = other.scoreBonusTimerMax - 15;
+		}
+		
+		with (obj_FrameworkControl) metaPointCollectTimer = metaPointCollectTimerMax;
+		global.MKSS_PlayerMetaPoints[playerNum] = min(global.MKSS_PlayerMetaPoints[playerNum] + global.MKSS_ScoreBonusList[currentScoreBonus].metaPointCount,9999);
+		
+		ds_list_delete(scoreBonuses,0);
+		
+		if (ds_list_empty(scoreBonuses))
+		{
+			scoreBonusTimer = -1;
+		}
+		else
+		{
+			scoreBonusTimer = scoreBonusTimerMax;
+		}
 	}
 }
 #endregion

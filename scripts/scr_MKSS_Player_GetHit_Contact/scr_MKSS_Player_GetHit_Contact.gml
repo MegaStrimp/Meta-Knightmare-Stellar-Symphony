@@ -11,6 +11,8 @@ function scr_MKSS_Player_GetHit_Contact(targetPlayer,targetObject)
 		#region Variables
 		hurtState = hurtStates.hurt;
 		hurtTimer = hurtTimer_Hurt;
+		
+		global.MKSS_NoDamage = false;
 		#endregion
 		
 		#region Knockback

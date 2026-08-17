@@ -78,20 +78,20 @@ for (var i = 0; i < global.maxPlayers; i++)
 if (global.debug)
 {
 	#region Stage Clear Test
-	//if (!global.pauseFinal)
-	//{
-	//	if (keyboard_check_pressed(vk_space))
-	//	{
-	//		if (keyboard_check(vk_shift))
-	//		{
-	//			scr_MKSS_Player_GetStunned(obj_Player);
-	//		}
-	//		else
-	//		{
-	//			scr_MKSS_Stage_Clear();
-	//		}
-	//	}
-	//}
+	if (!global.pauseFinal)
+	{
+		if (keyboard_check_pressed(vk_space))
+		{
+			if (keyboard_check(vk_shift))
+			{
+				scr_MKSS_Player_GetStunned(obj_Player);
+			}
+			else
+			{
+				scr_MKSS_Stage_Clear();
+			}
+		}
+	}
 	#endregion
 	
 	#region Debug Lobby

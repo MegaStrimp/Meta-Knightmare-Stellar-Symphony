@@ -7,6 +7,8 @@ function scr_MKSS_Stage_Begin(targetStageID = -1)
 	#endregion
 	
 	#region Variables
+	global.MKSS_NoDamage = true;
+	
 	if (targetStageID != -1)
 	{
 		var mappedID = global.MKSS_StageIDs[? targetStageID];

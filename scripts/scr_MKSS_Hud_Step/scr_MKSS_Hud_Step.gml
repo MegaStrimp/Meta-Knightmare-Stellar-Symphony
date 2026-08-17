@@ -2,7 +2,7 @@
 
 function scr_MKSS_Hud_Step()
 {
-	if (!global.pauseFinal)
+	if (!global.pauseFinal) or (instance_exists(obj_MKSS_UI_StageClear))
 	{
 		#region Weapons
 		var listSize = ds_list_size(global.MKSS_PlayerWeaponList[0]);

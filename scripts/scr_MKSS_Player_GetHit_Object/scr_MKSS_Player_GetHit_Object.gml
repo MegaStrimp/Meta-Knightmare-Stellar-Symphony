@@ -12,6 +12,8 @@ function scr_MKSS_Player_GetHit_Object(targetPlayer,targetAttack)
 		hurtState = hurtStates.hurt;
 		hurtTimer = hurtTimer_Hurt;
 		lastHitProjectile = targetAttack;
+		
+		global.MKSS_NoDamage = false;
 		#endregion
 		
 		#region Knockback

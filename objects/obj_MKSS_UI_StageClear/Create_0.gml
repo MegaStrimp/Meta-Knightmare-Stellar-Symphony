@@ -20,7 +20,10 @@ nextRoomTimerMax = 45;
 circleR = global.gameWidth + 20;
 
 currentScore = -1;
-scoreBonuses = [];
+scoreBonuses = ds_list_create();
+
+scoreBonusTimer = -1;
+scoreBonusTimerMax = 45;
 
 targetRoom_Next = -1;
 targetRoom_Retry = -1;

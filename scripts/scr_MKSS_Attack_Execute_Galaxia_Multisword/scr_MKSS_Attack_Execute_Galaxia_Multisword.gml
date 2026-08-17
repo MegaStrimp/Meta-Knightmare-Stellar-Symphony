@@ -15,43 +15,15 @@ function scr_MKSS_Attack_Execute_Galaxia_Multisword()
 	
 	hasAttackAnimation = false;
 	scr_ChangeSprite(spriteSet.sprDuck);
-	hasAttackAnimation = true;
 	
-	scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Normal_Step);
+	scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Galaxia_Multisword_Step);
 	
 	canCancelAttackAnimation = false;
 	attackCanTurnSprite = false;
 	
 	drawDirX = dirX;
 	
-	attackCancelTimer = 10;
+	attackCancelTimer = 30;
 	attackCooldownTarget = 20;
-	#endregion
-	
-	#region Attack
-	with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
-	{
-		owner = other;
-		isEnemy = false;
-		dmg = floor(MKSS_Base_GalaxiaDamage / 5);
-		followOwner = true;
-		followOwnerImageIndex = true;
-		destroyIfOwnerNotAttack = true;
-		pauseAfterAnimation = true;
-		canBreakBlocks = true;
-		canBeFinisher = true;
-		isMelee = true;
-		freezeFrameForce = 1;
-		knockbackAngle = 10;
-		if (other.dirX == -1) knockbackAngle = 170;
-		knockbackForce = 1;
-		sprite_index = spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_Slash1;
-		mask_index = spr_MKSS_Player_MetaKnight_Normal_AttackMasks_Attack_Normal_Slash1;
-		image_xscale = other.dirX;
-		dirX = other.dirX;
-		attackAIBeginStep = scr_MKSS_Attack_Galaxia_Chop_BeginStep;
-		enemyHitBehavior = scr_MKSS_Attack_Galaxia_Chop_EnemyHitBehavior;
-		attackEnemyHitParticleIndex = scr_MKSS_ParticleSet_SlashRandom;
-	}
 	#endregion
 }

@@ -65,8 +65,7 @@ if (!localPause)
 				{
 					global.flag_MKSS_MetaPointCollect = true;
 					
-					global.MKSS_PlayerMetaPoints[playerNum] += other.points;
-					global.MKSS_PlayerMetaPoints[playerNum] = min(global.MKSS_PlayerMetaPoints[playerNum],9999);
+					global.MKSS_PlayerMetaPoints[playerNum] = min(global.MKSS_PlayerMetaPoints[playerNum] + other.points,9999);
 					
 					metaPointFlashTimer = metaPointFlashTimerMax;
 					

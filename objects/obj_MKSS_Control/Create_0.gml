@@ -17,6 +17,7 @@ scr_MKSS_Attack_Init_Set();
 scr_MKSS_Dialogue_Init_Set();
 scr_MKSS_UI_Button_Init_Set();
 scr_MKSS_UI_Notif_Init_Set();
+scr_MKSS_UI_ScoreBonus_Init_Set();
 scr_MKSS_Music_Init_Set();
 scr_MKSS_Stage_Init_Set();
 
@@ -60,6 +61,8 @@ global.MKSS_MedalScoreTargetBronze = 100;
 global.MKSS_MedalScoreTargetSilver = 200;
 global.MKSS_MedalScoreTargetGold = 300;
 global.MKSS_MedalScoreTargetPlatinum = 400;
+
+global.MKSS_NoDamage = true;
 
 global.MKSS_DisclaimerScreen_Skipped = false;
 

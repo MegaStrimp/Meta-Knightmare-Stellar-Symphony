@@ -9,6 +9,8 @@ function scr_MKSS_Player_GetHit(targetPlayer,dealtDamage)
 		hurtState = hurtStates.hurt;
 		hurtTimer = hurtTimer_Hurt;
 		
+		global.MKSS_NoDamage = false;
+		
 		global.playerHp[playerNum] -= dealtDamage;
 		if (global.playerHp[playerNum] <= 0)
 		{
