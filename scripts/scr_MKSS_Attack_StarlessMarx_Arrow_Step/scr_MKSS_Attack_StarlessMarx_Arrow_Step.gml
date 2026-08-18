@@ -17,6 +17,8 @@ function scr_MKSS_Attack_StarlessMarx_Arrow_Step()
 			accelTimer = max(accelTimer - speedMultFinal,0);
 			if (accelTimer == 0)
 			{
+				scr_PlaySfx(snd_MKSS_GhostKnightStab);
+				
 				dmg = dmgTarget;
 				
 				sprite_index = spr_MKSS_Attack_StarlessMarx_Arrow2;

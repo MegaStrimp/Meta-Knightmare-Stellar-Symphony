@@ -101,6 +101,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_ArrowArrowEnd_Step()
 			{
 				shakeX = 0;
 				
+				scr_PlaySfx(snd_MKSS_MarxNeedle);
+				
 				sprite_index = spriteSet.sprArrow;
 				image_index = 0;
 				
@@ -133,7 +135,12 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_ArrowArrowEnd_Step()
 				
 				arrowCount--;
 				attackStateTimer[attackState] = attackStateTimerMax[attackState];
-				if (arrowCount <= 0) attackState++;
+				if (arrowCount <= 0) 
+				{
+					audio_stop_sound(snd_MKSS_MarxNeedle);
+					
+					attackState++;
+				}
 			}
 			break;
 			#endregion
@@ -161,7 +168,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_ArrowArrowEnd_Step()
 				hsp = 0;
 				vsp = 0;
 				
-				scr_Enemy_ChangeState_Step(id,enemyAIStepIdle);
+				scr_MKSS_Enemy_StarlessMarx_Teleport((room_width/2) + irandom_range(-32,32),72 + irandom_range(-8,8),enemyAIStepIdle,,0);
 			}
 			break;
 			#endregion
