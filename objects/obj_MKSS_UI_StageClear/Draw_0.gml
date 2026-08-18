@@ -45,16 +45,6 @@ if (global.MKSS_StageHasScore)
 	{
 		draw_sprite(hud_MedalSprite,hud_MedalIndex,xx + 24 - (other.hintOffset * 3),yy + 14);
 		
-		if (hud_MedalTier != -1)
-		{
-			scr_DrawMask_Begin();
-			scr_DrawMask_Mask(hud_MedalSprite,hud_MedalIndex,xx + 24 - (other.hintOffset * 3),yy + 14);
-				
-			draw_sprite_ext(spr_MKSS_UI_Medal_Shine,0,xx + floor(200 - ((global.currentTimePausable * 2) % 200)) - (other.hintOffset * 3),yy + 14,1,1,0,c_white,.5);
-				
-			scr_DrawMask_End();
-		}
-		
 		for (var i = 0; i < max(0,hud_MedalTier); i++)
 		{
 			draw_sprite(spr_MKSS_Particle_SmallSparkle,hud_MedalSparkleIndex,floor(12 + hud_MedalSparkleX[i]),floor(26 - hud_MedalSparkleY[i]));

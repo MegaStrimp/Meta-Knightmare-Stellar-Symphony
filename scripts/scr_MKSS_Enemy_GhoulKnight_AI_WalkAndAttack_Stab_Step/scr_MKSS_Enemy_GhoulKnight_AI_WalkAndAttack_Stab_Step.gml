@@ -74,7 +74,7 @@ function scr_MKSS_Enemy_GhoulKnight_AI_WalkAndAttack_Stab_Step()
 					pauseAfterAnimation = true;
 					isMelee = true;
 					freezeFrameForce = 1;
-					knockbackAngle = 90 - other.dirX;
+					knockbackAngle = 90 - (90 * other.dirX);
 					knockbackForce = 2;
 					sprite_index = spr_MKSS_Enemy_GhoulKnight_Effects_Attack;
 					mask_index = spr_MKSS_Attack_GhoulKnight_Stab_Mask;

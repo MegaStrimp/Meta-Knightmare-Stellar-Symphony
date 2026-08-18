@@ -84,10 +84,6 @@ if (global.debug)
 		{
 			if (keyboard_check(vk_shift))
 			{
-				scr_MKSS_Player_GetStunned(obj_Player);
-			}
-			else
-			{
 				scr_MKSS_Stage_Clear();
 			}
 		}

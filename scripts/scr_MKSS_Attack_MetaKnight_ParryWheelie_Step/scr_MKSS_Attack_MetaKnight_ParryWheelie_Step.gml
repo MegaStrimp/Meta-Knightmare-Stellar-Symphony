@@ -21,6 +21,19 @@ function scr_MKSS_Attack_MetaKnight_ParryWheelie_Step()
 		}
 		#endregion
 		
+		#region Afterimage Timer
+		if (afterimageTimer != -1)
+		{
+			afterimageTimer = max(afterimageTimer - speedMultFinal,0);
+			if (afterimageTimer == 0)
+			{
+				scr_MKSS_ParticleSet_Afterimage();
+				
+				afterimageTimer = afterimageTimerMax;
+			}
+		}
+		#endregion
+		
 		#region Destroy
 		if (place_meeting(x + dirX,y,obj_Wall))
 		{

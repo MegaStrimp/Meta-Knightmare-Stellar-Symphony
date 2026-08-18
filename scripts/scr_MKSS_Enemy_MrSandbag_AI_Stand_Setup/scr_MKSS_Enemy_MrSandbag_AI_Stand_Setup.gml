@@ -2,19 +2,6 @@
 
 function scr_MKSS_Enemy_MrSandbag_AI_Stand_Setup()
 {
-	#region Sprites
-	mask_index = spr_MKSS_Enemy_MrSandbag_CollisionMask;
-	
-	sprIdle = spr_MKSS_Enemy_MrSandbag_Base_Idle;
-	
-	var i = 0;
-	sprHurt[i][0] = spr_MKSS_Enemy_MrSandbag_Base_Hurt1;
-	sprHurt[i][1] = 10;
-	i += 1;
-	sprHurt[i][0] = spr_MKSS_Enemy_MrSandbag_Base_Hurt2;
-	sprHurt[i][1] = 10;
-	#endregion
-	
 	#region Physics Variables
 	decel = .05;
 	

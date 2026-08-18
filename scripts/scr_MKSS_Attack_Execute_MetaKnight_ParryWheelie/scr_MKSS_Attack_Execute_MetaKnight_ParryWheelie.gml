@@ -33,9 +33,11 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryWheelie(playerIndex,currentParr
 			attackWallHitParticleIndex = scr_MKSS_ParticleSet_BlockBreak1;
 			hsp = 0;
 			vsp = 0;
-			movespeed = 2.5;
+			movespeed = 4;
 			particleTimerMax = 5;
 			particleTimer = particleTimerMax;
+			afterimageTimerMax = 2;
+			afterimageTimer = afterimageTimerMax;
 			dmg = MKSS_Base_PlayerContactDamage;
 			dirX = -scr_MKSS_Enemy_DirTarget();
 			image_xscale = scale * dirX;

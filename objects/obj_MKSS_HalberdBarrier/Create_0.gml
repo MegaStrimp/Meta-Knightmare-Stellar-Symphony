@@ -18,6 +18,7 @@ barrierX =
 ];
 
 x = barrierX[global.MKSS_BarrierIndex];
+targetX = x;
 #endregion
 
 #region Create Surface
