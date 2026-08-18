@@ -10,7 +10,7 @@
   "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.70251703,
+  "duration":0.7024943,
   "exportDir":"",
   "name":"snd_MKSS_WheelieSkid",
   "parent":{

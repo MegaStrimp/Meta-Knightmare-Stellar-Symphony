@@ -2525,6 +2525,7 @@
     {"id":{"name":"scr_MKSS_ParticleSet_Afterimage","path":"scripts/scr_MKSS_ParticleSet_Afterimage/scr_MKSS_ParticleSet_Afterimage.yy",},},
     {"id":{"name":"scr_MKSS_ParticleSet_BaggieCoins","path":"scripts/scr_MKSS_ParticleSet_BaggieCoins/scr_MKSS_ParticleSet_BaggieCoins.yy",},},
     {"id":{"name":"scr_MKSS_ParticleSet_BlockBreak1","path":"scripts/scr_MKSS_ParticleSet_BlockBreak1/scr_MKSS_ParticleSet_BlockBreak1.yy",},},
+    {"id":{"name":"scr_MKSS_ParticleSet_BouncyHearts","path":"scripts/scr_MKSS_ParticleSet_BouncyHearts/scr_MKSS_ParticleSet_BouncyHearts.yy",},},
     {"id":{"name":"scr_MKSS_ParticleSet_Bubble","path":"scripts/scr_MKSS_ParticleSet_Bubble/scr_MKSS_ParticleSet_Bubble.yy",},},
     {"id":{"name":"scr_MKSS_ParticleSet_Circle1","path":"scripts/scr_MKSS_ParticleSet_Circle1/scr_MKSS_ParticleSet_Circle1.yy",},},
     {"id":{"name":"scr_MKSS_ParticleSet_Common","path":"scripts/scr_MKSS_ParticleSet_Common/scr_MKSS_ParticleSet_Common.yy",},},

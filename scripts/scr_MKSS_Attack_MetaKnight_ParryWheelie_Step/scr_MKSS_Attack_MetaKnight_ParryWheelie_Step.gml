@@ -27,7 +27,7 @@ function scr_MKSS_Attack_MetaKnight_ParryWheelie_Step()
 			afterimageTimer = max(afterimageTimer - speedMultFinal,0);
 			if (afterimageTimer == 0)
 			{
-				scr_MKSS_ParticleSet_Afterimage();
+				scr_MKSS_ParticleSet_Afterimage(,,,,,,,-1,0);
 				
 				afterimageTimer = afterimageTimerMax;
 			}
@@ -43,7 +43,7 @@ function scr_MKSS_Attack_MetaKnight_ParryWheelie_Step()
 			
 			with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
 			{
-				owner = other;
+				owner = other.owner;
 				isEnemy = false;
 				dmg = floor(MKSS_Base_PlayerContactDamage * 1.5);
 				canBreakBlocks = true;

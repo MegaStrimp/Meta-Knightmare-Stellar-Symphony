@@ -38,5 +38,8 @@ function scr_MKSS_Enemy_BouncySis_AI_Walk_Setup()
 	
 	jumpTimerMax = 15;
 	jumpTimer = jumpTimerMax;
+	
+	heartTimer = -1;
+	heartTimerMax = 3;
 	#endregion
 }

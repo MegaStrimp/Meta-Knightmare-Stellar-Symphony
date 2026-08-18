@@ -2,6 +2,20 @@
 
 function scr_MKSS_Enemy_Bouncy_AI_Walk_Spin_Step()
 {
+	#region Setup
+	if (enemyState_Setup)
+	{
+		#region Variables
+		attackString = "Bouncy - Spin";
+		scr_Debug_WriteLog(string(object_get_name(object_index)) + " Used [" + attackString + "]");
+		
+		heartTimer = 0;
+		#endregion
+		
+		enemyState_Setup = false;
+	}
+	#endregion
+	
 	if (!localPause)
 	{
 		#region Movement
@@ -50,6 +64,19 @@ function scr_MKSS_Enemy_Bouncy_AI_Walk_Spin_Step()
 			var decelFinal = decel * speedMultFinal;
 			
 			hsp = scr_Entity_Friction(hsp,decelFinal);
+		}
+		#endregion
+		
+		#region Heart Timer
+		if (heartTimer != -1)
+		{
+			heartTimer = max(heartTimer - speedMultFinal,0);
+			if (heartTimer == 0)
+			{
+				scr_MKSS_ParticleSet_BouncyHearts(x + irandom_range(-2,2),y - 4 + irandom_range(-2,2),depth);
+				
+				heartTimer = heartTimerMax;
+			}
 		}
 		#endregion
 			

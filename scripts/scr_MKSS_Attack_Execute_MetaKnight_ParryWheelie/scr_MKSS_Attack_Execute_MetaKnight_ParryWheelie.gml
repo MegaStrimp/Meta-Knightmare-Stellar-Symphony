@@ -8,7 +8,7 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryWheelie(playerIndex,currentParr
 		scr_Debug_WriteLog(string(object_get_name(object_index)) + " Used [" + attackString + "]");
 		
 		#region Audio
-		var sfx = scr_PlaySfx(snd_MKSS_Slide);
+		var sfx = scr_PlaySfx(snd_MKSS_WheelieSkid);
 		audio_sound_pitch(sfx,random_range(.85,1.15));
 		#endregion
 		
@@ -26,7 +26,6 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryWheelie(playerIndex,currentParr
 	{
 		with (instance_create_depth(currentParriedObject.x,currentParriedObject.y,depth,obj_MKSS_Attack))
 		{
-			target = currentParriedObject;
 			owner = playerIndex;
 			isEnemy = false;
 			destroyAfterCollideWall = true;

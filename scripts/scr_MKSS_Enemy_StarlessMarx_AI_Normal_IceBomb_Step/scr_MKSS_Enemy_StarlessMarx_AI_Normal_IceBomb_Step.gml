@@ -8,7 +8,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_IceBomb_Step()
 		#region Attack Init
 		attackString = "Starless Marx - Ice Bomb";
 		scr_Debug_WriteLog(string(object_get_name(object_index)) + " Used [" + attackString + "]");
-	
+		
 		dirX = scr_MKSS_Enemy_DirTarget();
 		
 		attackState = 0;
