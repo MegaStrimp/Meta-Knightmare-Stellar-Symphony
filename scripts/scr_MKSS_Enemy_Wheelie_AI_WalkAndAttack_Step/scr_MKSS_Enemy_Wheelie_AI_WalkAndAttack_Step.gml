@@ -70,6 +70,8 @@ function scr_MKSS_Enemy_Wheelie_AI_WalkAndAttack_Step()
 			
 			revertTimer = -1;
 			
+			scr_PlaySfx(snd_MKSS_WheelieSkid);
+			
 			#region Revert Back
 			if ((knockbackTimer == -1) and (knockbackCheckTimer == -1) and (grounded)) knockbackTimer = knockbackTimerMax;
 			#endregion
