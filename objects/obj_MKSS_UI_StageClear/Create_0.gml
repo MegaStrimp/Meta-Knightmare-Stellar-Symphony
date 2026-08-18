@@ -15,7 +15,7 @@ hintOffsetTimerMax = 120;
 hintOffsetTimer = hintOffsetTimerMax;
 
 nextRoomTimer = -1;
-nextRoomTimerMax = 45;
+nextRoomTimerMax = 60;
 
 circleR = global.gameWidth + 20;
 
@@ -23,7 +23,7 @@ currentScore = -1;
 scoreBonuses = ds_list_create();
 
 scoreBonusTimer = -1;
-scoreBonusTimerMax = 45;
+scoreBonusTimerMax = 60;
 
 targetRoom_Next = -1;
 targetRoom_Retry = -1;

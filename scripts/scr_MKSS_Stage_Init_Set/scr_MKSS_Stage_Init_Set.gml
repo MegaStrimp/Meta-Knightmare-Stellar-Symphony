@@ -15,6 +15,8 @@ function scr_MKSS_Stage_Init_Set()
 	var stageID = "iceCreamIsland";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Ice Cream Island",rm_MKSS_IceCreamIsland_1,[0,0,0,0],false);
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
+	
 	global.MKSS_StageList[targetMappedID].isDefault = true;
 	#endregion
 	
@@ -27,6 +29,8 @@ function scr_MKSS_Stage_Init_Set()
 	
 	scr_MKSS_Stage_Init_Add_ClearScript(targetMappedID,function(targetMappedID)
 	{
+		global.MKSS_BarrierIndexTarget = 1;
+		
 		global.MKSS_StageList[global.MKSS_StageIDs[? "royalReeve"]].isUnlocked = true;
 	});
 	
@@ -59,6 +63,8 @@ function scr_MKSS_Stage_Init_Set()
 	
 	scr_MKSS_Stage_Init_Add_ClearScript(targetMappedID,function(targetMappedID)
 	{
+		global.MKSS_BarrierIndexTarget = 2;
+		
 		global.MKSS_StageList[global.MKSS_StageIDs[? "livingLoom"]].isUnlocked = true;
 	});
 	#endregion
@@ -72,6 +78,8 @@ function scr_MKSS_Stage_Init_Set()
 	
 	scr_MKSS_Stage_Init_Add_ClearScript(targetMappedID,function(targetMappedID)
 	{
+		global.MKSS_BarrierIndexTarget = 3;
+		
 		global.MKSS_StageList[global.MKSS_StageIDs[? "fissionFactory"]].isUnlocked = true;
 	});
 	
@@ -88,6 +96,8 @@ function scr_MKSS_Stage_Init_Set()
 	
 	scr_MKSS_Stage_Init_Add_ClearScript(targetMappedID,function(targetMappedID)
 	{
+		global.MKSS_BarrierIndexTarget = 4;
+		
 		global.MKSS_StageList[global.MKSS_StageIDs[? "adAstra"]].isUnlocked = true;
 	});
 	
@@ -101,6 +111,11 @@ function scr_MKSS_Stage_Init_Set()
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Ad Astra",rm_MKSS_AdAstra_1,[100,200,300,400],,spr_MKSS_UI_Decal_Pal_AdAstra);
 	
 	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
+	
+	scr_MKSS_Stage_Init_Add_ClearScript(targetMappedID,function(targetMappedID)
+	{
+		global.MKSS_BarrierIndexTarget = 5;
+	});
 	
 	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstra_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
 	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstra_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);

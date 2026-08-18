@@ -2298,6 +2298,7 @@
     {"id":{"name":"scr_MKSS_ConcentratedGem_Preset_StarryShoresRed","path":"scripts/scr_MKSS_ConcentratedGem_Preset_StarryShoresRed/scr_MKSS_ConcentratedGem_Preset_StarryShoresRed.yy",},},
     {"id":{"name":"scr_MKSS_Cutscene_Preset_Andromeda1Intro","path":"scripts/scr_MKSS_Cutscene_Preset_Andromeda1Intro/scr_MKSS_Cutscene_Preset_Andromeda1Intro.yy",},},
     {"id":{"name":"scr_MKSS_Cutscene_Preset_ChasseIntro","path":"scripts/scr_MKSS_Cutscene_Preset_ChasseIntro/scr_MKSS_Cutscene_Preset_ChasseIntro.yy",},},
+    {"id":{"name":"scr_MKSS_Cutscene_Preset_HalberdBarrier","path":"scripts/scr_MKSS_Cutscene_Preset_HalberdBarrier/scr_MKSS_Cutscene_Preset_HalberdBarrier.yy",},},
     {"id":{"name":"scr_MKSS_Cutscene_Preset_NimbiaIntro","path":"scripts/scr_MKSS_Cutscene_Preset_NimbiaIntro/scr_MKSS_Cutscene_Preset_NimbiaIntro.yy",},},
     {"id":{"name":"scr_MKSS_Cutscene_Preset_StarlessMarxIntro","path":"scripts/scr_MKSS_Cutscene_Preset_StarlessMarxIntro/scr_MKSS_Cutscene_Preset_StarlessMarxIntro.yy",},},
     {"id":{"name":"scr_MKSS_Cutscene_Preset_StarlessNightmareIntro","path":"scripts/scr_MKSS_Cutscene_Preset_StarlessNightmareIntro/scr_MKSS_Cutscene_Preset_StarlessNightmareIntro.yy",},},

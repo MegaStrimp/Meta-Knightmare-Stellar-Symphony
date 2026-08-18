@@ -116,6 +116,7 @@ function scr_MKSS_SaveData(file)
 			}
 		}
 		
+		ini_write_real("stageStatus","barrierIndexTarget",global.MKSS_BarrierIndexTarget);
 		ini_write_real("stageStatus","barrierIndex",global.MKSS_BarrierIndex);
 		#endregion
 		
