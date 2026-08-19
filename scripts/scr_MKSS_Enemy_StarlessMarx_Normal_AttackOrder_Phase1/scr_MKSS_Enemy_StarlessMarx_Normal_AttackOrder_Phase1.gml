@@ -4,7 +4,10 @@ function scr_MKSS_Enemy_StarlessMarx_Normal_AttackOrder_Phase1(clear = true)
 {
 	if (clear) ds_list_clear(attackList);
 	
+	//ds_list_add(attackList,marx_Attack_SeedAttack);
+	
 	ds_list_add(attackList,marx_Attack_ShooterCutter);
 	ds_list_add(attackList,marx_Attack_IceBomb);
 	ds_list_add(attackList,marx_Attack_ArrowArrow);
+	ds_list_add(attackList,marx_Attack_SeedAttack);
 }

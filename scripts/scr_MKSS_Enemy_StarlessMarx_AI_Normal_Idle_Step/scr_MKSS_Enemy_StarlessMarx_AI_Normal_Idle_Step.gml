@@ -31,7 +31,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Idle_Step()
 		{
 			attackTimer = max(attackTimer - speedMultFinal,0);
 			if (attackTimer == 0)
-			{	
+			{
 				var _attackIndex = ds_list_find_value(attackList,attackListIndex);
 				
 				attackIndex = _attackIndex;

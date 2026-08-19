@@ -77,7 +77,7 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_ShakeEnemies_Step()
 			case 1:
 			if (attackStateTimer[attackState] <= attackStateTimerMax[attackState]-20)
 			{
-				if (sprite_index != spriteSet.sprSpitPrepare)
+				if (sprite_index != spriteSet.sprSpitPrepare) and (enemyPhase >= 2)
 				{
 					sprite_index = spriteSet.sprSpitPrepare;
 					image_index = 0;

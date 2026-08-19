@@ -12,6 +12,8 @@ function scr_MKSS_Enemy_ChasseEmee_AI_Normal_Draw()
 		case spriteSet.sprLookDown:
 		case spriteSet.sprThrust1:
 		case spriteSet.sprClawLaunch:
+		case spriteSet.sprSpitPrepare:
+		case spriteSet.sprSpit:
 		_ship = spriteSet.sprShipNormal;
 		
 		shipXOffset = -8;

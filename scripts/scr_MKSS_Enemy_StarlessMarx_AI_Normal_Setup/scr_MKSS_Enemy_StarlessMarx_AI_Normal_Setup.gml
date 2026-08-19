@@ -18,13 +18,10 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Setup(targetIsBoss = true)
 	marx_Attack_ShooterCutter = scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShooterCutter_Step;
 	marx_Attack_IceBomb = scr_MKSS_Enemy_StarlessMarx_AI_Normal_IceBomb_Step;
 	marx_Attack_ArrowArrow = scr_MKSS_Enemy_StarlessMarx_AI_Normal_ArrowArrow_Step;
+	marx_Attack_SeedAttack = scr_MKSS_Enemy_StarlessMarx_AI_Normal_SeedAttack_Step;
 	#endregion
 	
 	#region Attack Order
-	//ds_list_add(attackList,marx_Attack_IceBomb);
-	//ds_list_add(attackList,marx_Attack_ShooterCutter);
-	//ds_list_add(attackList,marx_Attack_ShooterCutter);
-	
 	scr_MKSS_Enemy_StarlessMarx_Normal_AttackOrder_Phase1(false);
 	if (global.debug) and (keyboard_check(ord("2"))) scr_MKSS_Enemy_StarlessMarx_Normal_AttackOrder_Phase1(true);
 	#endregion
