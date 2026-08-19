@@ -50,7 +50,7 @@ function scr_MKSS_Cutscene_Preset_HalberdBarrier()
 			
 			global.MKSS_BarrierIndex = global.MKSS_BarrierIndexTarget;
 			
-			//scr_MKSS_SaveData(global.selectedSave);
+			scr_MKSS_SaveData(global.selectedSave);
 			
 			scr_Camera_FollowObject(obj_MKSS_HalberdBarrier);
 			

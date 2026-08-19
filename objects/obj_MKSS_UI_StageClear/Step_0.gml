@@ -3,7 +3,7 @@
 #region Selection
 var canSelect = true;
 if ((hintOffsetTimer == -1)
-and (scoreBonusTimer != -1)
+and (scoreBonusTimer == -1)
 and (targetRoom != -1)) canSelect = false;
 
 if (canSelect)
@@ -60,7 +60,7 @@ titleOffset = lerp(titleOffset,0,.1);
 #endregion
 
 #region Hint Offset
-hintOffset = lerp(hintOffset,32 * ((hintOffsetTimer != -1) and (scoreBonusTimer != -1)),.1);
+hintOffset = lerp(hintOffset,32 * ((hintOffsetTimer != -1) or (scoreBonusTimer != -1)),.1);
 #endregion
 
 #region Hint Offset Timer

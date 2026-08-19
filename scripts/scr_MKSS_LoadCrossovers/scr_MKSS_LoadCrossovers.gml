@@ -22,7 +22,6 @@ function scr_MKSS_LoadCrossovers(file)
 	if (file_exists(fileFinal))
 	{
 		file_copy(fileFinal,string(fileFinal) + "_bak");
-		file_delete(fileFinal);
 	}
 	
 	ini_open(fileFinal);
