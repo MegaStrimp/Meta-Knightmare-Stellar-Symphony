@@ -1,4 +1,4 @@
-///@description MKSS - Enemy - Starless Marx - AI - Normal - SeedAttack - Step
+///@description MKSS - Enemy - Starless Marx - AI - Normal - Seed Attack - Step
 
 function scr_MKSS_Enemy_StarlessMarx_AI_Normal_SeedAttack_Step()
 {
@@ -8,8 +8,6 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_SeedAttack_Step()
 		#region Attack Init
 		attackString = "Starless Marx - Seed Attack";
 		scr_Debug_WriteLog(string(object_get_name(object_index)) + " Used [" + attackString + "]");
-		
-		dirX = scr_MKSS_Enemy_DirTarget();
 		
 		attackState = 0;
 		#endregion
