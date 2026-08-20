@@ -36,6 +36,8 @@ function scr_MKSS_Attack_MetaKnight_IceBomb_Step()
 							
 							scr_SetGlobalFreezeFrame(8);
 							
+							scr_PlaySfx(snd_MKSS_MarxIceBombDetonate);
+							
 							with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
 							{
 								owner = other;

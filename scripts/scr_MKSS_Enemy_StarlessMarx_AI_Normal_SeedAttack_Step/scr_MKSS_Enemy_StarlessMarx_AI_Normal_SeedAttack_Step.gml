@@ -104,6 +104,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_SeedAttack_Step()
 			case 1:
 			if (attackStateTimer[attackState] == -1)
 			{
+				scr_PlaySfx(snd_MKSS_MarxSeedFall);
+				
 				with (instance_create_depth(seedStartX + (seedOffsetX * (seedAdd * seedDir)) + irandom_range(-6,6),-6,depth - 1,obj_MKSS_Attack))
 				{
 					owner = other;
@@ -131,6 +133,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_SeedAttack_Step()
 			case 2:
 			if (attackStateTimer[attackState] == -1)
 			{
+				scr_PlaySfx(snd_MKSS_MarxSeedFall);
+				
 				var i = 0;
 				repeat(spreadCount)
 				{

@@ -149,6 +149,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_ArrowArrowEnd_Step()
 			case 3:
 			if (attackStateTimer[attackState] == -1)
 			{
+				scr_PlaySfx(snd_MKSS_MarxLaugh3);
+				
 				sprite_index = spriteSet.sprFly;
 				image_index = 0;
 				
