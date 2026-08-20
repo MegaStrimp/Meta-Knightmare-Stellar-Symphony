@@ -24,7 +24,7 @@ function scr_MKSS_Attack_StarlessMarx_Seed_Step()
 					mask_index = spr_MKSS_Attack_StarlessMarx_Vine;
 					destroyOutsideRoom = false;
 					destroyAfterCollideWall = false;
-						pauseOutsideView = false;
+					pauseOutsideView = false;
 					scr_MKSS_Attack_StarlessMarx_Vine_Setup();
 					growLimit = 16;
 				}

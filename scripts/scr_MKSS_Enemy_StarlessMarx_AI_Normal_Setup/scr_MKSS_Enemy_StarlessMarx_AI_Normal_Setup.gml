@@ -19,6 +19,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Setup(targetIsBoss = true)
 	marx_Attack_IceBomb = scr_MKSS_Enemy_StarlessMarx_AI_Normal_IceBomb_Step;
 	marx_Attack_ArrowArrow = scr_MKSS_Enemy_StarlessMarx_AI_Normal_ArrowArrow_Step;
 	marx_Attack_SeedAttack = scr_MKSS_Enemy_StarlessMarx_AI_Normal_SeedAttack_Step;
+	marx_Attack_ShadowUppercut = scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShadowUppercut_Step;
 	#endregion
 	
 	#region Attack Order
