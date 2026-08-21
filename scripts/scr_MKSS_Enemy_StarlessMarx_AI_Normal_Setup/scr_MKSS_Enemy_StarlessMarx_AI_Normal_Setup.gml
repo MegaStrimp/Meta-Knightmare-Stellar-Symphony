@@ -20,6 +20,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Setup(targetIsBoss = true)
 	marx_Attack_ArrowArrow = scr_MKSS_Enemy_StarlessMarx_AI_Normal_ArrowArrow_Step;
 	marx_Attack_SeedAttack = scr_MKSS_Enemy_StarlessMarx_AI_Normal_SeedAttack_Step;
 	marx_Attack_ShadowUppercut = scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShadowUppercut_Step;
+	marx_Attack_BlackHole = scr_MKSS_Enemy_StarlessMarx_AI_Normal_BlackHole_Step;
 	#endregion
 	
 	#region Attack Order
@@ -54,6 +55,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Setup(targetIsBoss = true)
 	teleport_TeleportTimer = -1;
 	teleport_TeleportTimerMin = 10;
 	teleport_TeleportTimerMax = 30;
+	
+	blackHole = -1;
 	#endregion
 	
 	#region Attack Variables

@@ -34,7 +34,7 @@ function scr_MKSS_Attack_MetaKnight_IceBomb_Step()
 							
 							attackStateTimer[attackState] = attackStateTimerMax[attackState];
 							
-							scr_SetGlobalFreezeFrame(8);
+							scr_SetGlobalFreezeFrame(16);
 							
 							scr_PlaySfx(snd_MKSS_MarxIceBombDetonate);
 							
