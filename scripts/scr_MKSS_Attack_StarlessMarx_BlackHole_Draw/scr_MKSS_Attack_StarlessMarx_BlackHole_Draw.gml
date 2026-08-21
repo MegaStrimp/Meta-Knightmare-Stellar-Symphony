@@ -2,6 +2,8 @@
 
 function scr_MKSS_Attack_StarlessMarx_BlackHole_Draw()
 {
+	draw_sprite_ext(spr_MKSS_Attack_StarlessMarx_BlackHoleSwirl,0,x,y,1,1,swirlAngle,image_blend,swirlAlpha);
+	
 	draw_self();
 	
 	draw_set_alpha(circleAlpha);

@@ -57,6 +57,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Setup(targetIsBoss = true)
 	teleport_TeleportTimerMax = 30;
 	
 	blackHole = -1;
+	suckedMeta = false;
 	#endregion
 	
 	#region Attack Variables

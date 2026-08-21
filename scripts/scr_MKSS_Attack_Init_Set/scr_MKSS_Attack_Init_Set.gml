@@ -18,6 +18,7 @@ function scr_MKSS_Attack_Init_Set()
 	scr_MKSS_Attack_Init_Add("metaKnight_ParryBigCannonball",scr_MKSS_Attack_Execute_MetaKnight_ParryBigCannonball);
 	scr_MKSS_Attack_Init_Add("metaKnight_ParryStarlessMarxCutter",scr_MKSS_Attack_Execute_MetaKnight_ParryStarlessMarxCutter);
 	scr_MKSS_Attack_Init_Add("metaKnight_ParryIceBomb",scr_MKSS_Attack_Execute_MetaKnight_ParryIceBomb);
+	scr_MKSS_Attack_Init_Add("metaKnight_ParryMarxArrow",scr_MKSS_Attack_Execute_MetaKnight_ParryMarxArrow);
 	scr_MKSS_Attack_Init_Add("metaKnight_ParryWheelie",scr_MKSS_Attack_Execute_MetaKnight_ParryWheelie);
 	#endregion
 	

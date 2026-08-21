@@ -11,6 +11,12 @@ function scr_MKSS_Attack_StarlessMarx_BlackHole_Setup()
 	circleAlpha = 0;
 	circleAlphaGain = .005;
 	
+	swirlAlpha = 0;
+	swirlAlphaGain = .025;
+	swirlAlphaMax = .5;
+	swirlAngle = 0;
+	swirlRotateSpeed = 10;
+	
 	particleTimerMax = 6;
 	particleTimer = 0;
 					

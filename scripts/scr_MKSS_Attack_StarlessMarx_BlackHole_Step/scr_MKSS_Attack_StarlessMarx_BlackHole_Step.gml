@@ -7,6 +7,8 @@ function scr_MKSS_Attack_StarlessMarx_BlackHole_Step()
 		circleAlpha += circleAlphaGain * speedMultFinal;
 		circleRadius -= circleSpeed * speedMultFinal;
 		
+		swirlAngle = (swirlAngle - (swirlRotateSpeed * speedMultFinal)) % 360;
+		
 		var suckDir = 0;
 		var range = 4;
 		if (obj_Player.x > x + range) suckDir = -1;
@@ -18,6 +20,8 @@ function scr_MKSS_Attack_StarlessMarx_BlackHole_Step()
 		{
 			#region Prepare
 			case 0:
+			swirlAlpha = min(swirlAlpha + (swirlAlphaGain * speedMultFinal),swirlAlphaMax);
+			
 			var suckSpeed = .25;
 			break;
 			#endregion
@@ -25,6 +29,8 @@ function scr_MKSS_Attack_StarlessMarx_BlackHole_Step()
 			#region Active
 			case 1:
 			suckSpeed = 2.25;
+			
+			swirlAlpha = min(swirlAlpha + (swirlAlphaGain * speedMultFinal),swirlAlphaMax);
 			
 			particleTimer = max(particleTimer - speedMultFinal,0);
 			if (particleTimer == 0)
@@ -46,6 +52,8 @@ function scr_MKSS_Attack_StarlessMarx_BlackHole_Step()
 			
 			#region End
 			case 2:
+			swirlAlpha = max(swirlAlpha - (swirlAlphaGain * speedMultFinal * 2),0);
+			
 			suckSpeed = .25;
 			break;
 			#endregion
@@ -59,7 +67,7 @@ function scr_MKSS_Attack_StarlessMarx_BlackHole_Step()
 		else blackHoleSuckSpeed += blackHoleSuckAccel * suckSpeedDir * speedMultFinal;
 		with (obj_Player)
 		{
-			x += other.blackHoleSuckSpeed * suckDir * other.speedMultFinal;
+			if (playerStateStep != scr_MKSS_Player_MetaKnight_State_Parry_Step) x += other.blackHoleSuckSpeed * suckDir * other.speedMultFinal;
 		}
 	}
 }

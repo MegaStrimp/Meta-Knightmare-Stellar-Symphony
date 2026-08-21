@@ -17,6 +17,12 @@ function scr_MKSS_Attack_StarlessMarx_Arrow_Step()
 			accelTimer = max(accelTimer - speedMultFinal,0);
 			if (accelTimer == 0)
 			{
+				if (parryArrow)
+				{
+					canBeParried = true;
+					parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryMarxArrow"];
+				}
+				
 				scr_PlaySfx(snd_MKSS_GhostKnightStab);
 				
 				dmg = dmgTarget;

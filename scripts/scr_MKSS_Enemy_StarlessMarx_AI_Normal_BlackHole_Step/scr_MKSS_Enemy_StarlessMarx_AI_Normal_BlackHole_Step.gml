@@ -63,7 +63,12 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_BlackHole_Step()
 		#region Black Hole Variables
 		splitL = -1;
 		splitR = -1;
+		
 		blackHole = -1;
+		suckedMeta = false;
+		
+		arrowTimerMax = 60;
+		arrowTimer = arrowTimerMax;
 		#endregion
 		
 		#region Black Hole Start
@@ -197,6 +202,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_BlackHole_Step()
 					other.blackHole = id;
 				}
 				
+				y = -196;
+				
 				attackState++;
 			}
 			break;
@@ -206,7 +213,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_BlackHole_Step()
 			case 4:
 			if (attackStateTimer[attackState] == -1)
 			{
-				instance_create_layer(x,y,"Player",obj_MKSS_Attack_BlackHole_ScreenDarken);
+				instance_create_layer(0,0,"Player",obj_MKSS_Attack_BlackHole_ScreenDarken);
 				
 				with (blackHole)
 				{
@@ -223,8 +230,64 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_BlackHole_Step()
 			
 			#region Black Hole
 			case 5:
+			if (arrowTimer != -1)
+			{
+				arrowTimer = max(arrowTimer - speedMultFinal,0);
+				if (arrowTimer == 0)
+				{
+					var _dir = 1;
+					if (obj_Player.x <= room_width/2) _dir = -1;
+					var _x = 0;
+					if (_dir == -1) _x = room_width;
+					
+					with (instance_create_depth(_x,152,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = -1;
+						knockbackForce = 1;
+						sprite_index = spr_MKSS_Attack_StarlessMarx_Arrow1;
+						mask_index = spr_MKSS_Attack_StarlessMarx_Arrow1;
+						scr_MKSS_Attack_StarlessMarx_Arrow_Setup();
+						accelTimer = 30;
+						dmgTarget = 4;
+						destroyOutsideRoom = false;
+						destroyAfterCollideWall = false;
+						angle = 0;
+						if (_dir == -1) angle = 180;
+						image_angle = angle;
+						scr_MKSS_UI_ParryIndicator_Create(x,y,depth - 1,accelTimer,,id);
+						parryArrow = true;
+					}
+					
+					arrowTimer = arrowTimerMax;
+				}
+			}
+			
 			if (attackStateTimer[attackState] == -1)
 			{
+				x = -216;
+				
+				if (suckedMeta)
+				{
+					with (obj_Player)
+					{
+						attackMakeHeavyInvincible = false;
+						
+						suckState++;
+						
+						clampToRoom = false;
+						clampToView = false;
+						
+						image_alpha = 1;
+						
+						x = room_width/2;
+						y = -32;
+					}
+					
+					suckedMeta = false;
+				}
+				
 				with (obj_MKSS_Attack_BlackHole_ScreenDarken) destroy = true;
 				
 				with (blackHole)

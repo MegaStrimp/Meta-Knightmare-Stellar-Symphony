@@ -21,11 +21,14 @@ function scr_MKSS_Player_MetaKnight_State_StarlessMarxBlackHole_Step()
 		var _blackHole = -1;
 		if (instance_exists(obj_MKSS_Enemy_StarlessMarx))
 		{
-			if (blackHole != -1)
+			with (obj_MKSS_Enemy_StarlessMarx)
 			{
-				if (instance_exists(blackHole))
+				if (blackHole != -1)
 				{
-					_blackHole = blackHole;
+					if (instance_exists(blackHole))
+					{
+						_blackHole = blackHole;
+					}
 				}
 			}
 		}
@@ -43,6 +46,15 @@ function scr_MKSS_Player_MetaKnight_State_StarlessMarxBlackHole_Step()
 				
 				if (instance_place(x,y,_blackHole))
 				{
+					with (obj_MKSS_Enemy_StarlessMarx) suckedMeta = true;
+					
+					with (obj_Attack)
+					{
+						if (!isEnemy) instance_destroy();
+					}
+					
+					attackMakeHeavyInvincible = true;
+					
 					hsp = 0;
 					vsp = 0;
 					
@@ -68,9 +80,18 @@ function scr_MKSS_Player_MetaKnight_State_StarlessMarxBlackHole_Step()
 			{
 				vsp = 8;
 				
-				if (y >= room_height/2) and (instance_place(x,y,obj_Wall))
+				if (y >= room_height/2) and (instance_place(x,y + (vsp * 2),obj_Wall))
 				{
+					scr_PlaySfx(snd_MKSS_Hurt);
 					
+					clampToRoom = false;
+					clampToView = false;
+					
+					vsp = -2;
+					
+					scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Normal_Step);
+					scr_MKSS_Player_GetHit(id,floor(global.playerMaxHp[playerNum]/3));
+					scr_MKSS_Player_GetStunned(id);
 				}
 			}
 			break;

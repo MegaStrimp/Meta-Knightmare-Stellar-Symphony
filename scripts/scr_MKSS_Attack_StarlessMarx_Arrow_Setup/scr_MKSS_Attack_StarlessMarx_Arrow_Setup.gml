@@ -17,6 +17,7 @@ function scr_MKSS_Attack_StarlessMarx_Arrow_Setup(_spd = 8 + random_range(-6,6))
 	accelTimer = 60;
 	
 	dmgTarget = 4;
+	parryArrow = false;
 	
 	attackAIStep = scr_MKSS_Attack_StarlessMarx_Arrow_Step;
 	pauseAfterAnimation = true;
