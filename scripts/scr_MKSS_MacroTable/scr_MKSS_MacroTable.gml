@@ -2,7 +2,6 @@
 
 function scr_MKSS_MacroTable()
 {
-	
 	#macro MKSS_Base_PlayerHP 200
 	#macro MKSS_Base_PlayerHP_Upgrade 50
 	
@@ -70,8 +69,64 @@ function scr_MKSS_MacroTable()
 	#macro MKSS_Base_Color_Parry "#4EDB23"
 	#endregion
 	
-	#region Colors
+	#region Data Percentages
 	//STRIMPTODO Add more data percentage macros
 	#macro MKSS_Base_DataPercentage_Upgrade 1
+	#endregion
+	
+	#region Virtual Buttons
+	#macro MKSS_Base_VirtualButton_Thumbstick_X 21
+	#macro MKSS_Base_VirtualButton_Thumbstick_Y 139
+	#macro MKSS_Base_VirtualButton_Thumbstick_Radius 16
+	
+	#macro MKSS_Base_VirtualButton_A_X1 190
+	#macro MKSS_Base_VirtualButton_A_Y1 135
+	#macro MKSS_Base_VirtualButton_A_X2 211 - 5
+	#macro MKSS_Base_VirtualButton_A_Y2 156 - 5
+	
+	#macro MKSS_Base_VirtualButton_B_X1 215
+	#macro MKSS_Base_VirtualButton_B_Y1 135
+	#macro MKSS_Base_VirtualButton_B_X2 236 - 5
+	#macro MKSS_Base_VirtualButton_B_Y2 156 - 5
+	
+	#macro MKSS_Base_VirtualButton_X_X1 190
+	#macro MKSS_Base_VirtualButton_X_Y1 110
+	#macro MKSS_Base_VirtualButton_X_X2 211 - 5
+	#macro MKSS_Base_VirtualButton_X_Y2 131 - 5
+	
+	#macro MKSS_Base_VirtualButton_Y_X1 215
+	#macro MKSS_Base_VirtualButton_Y_Y1 110
+	#macro MKSS_Base_VirtualButton_Y_X2 236 - 5
+	#macro MKSS_Base_VirtualButton_Y_Y2 131 - 5
+	
+	#macro MKSS_Base_VirtualButton_L_X1 4
+	#macro MKSS_Base_VirtualButton_L_Y1 93
+	#macro MKSS_Base_VirtualButton_L_X2 27 - 5
+	#macro MKSS_Base_VirtualButton_L_Y2 106 - 5
+	
+	#macro MKSS_Base_VirtualButton_LT_X1 4
+	#macro MKSS_Base_VirtualButton_LT_Y1 76
+	#macro MKSS_Base_VirtualButton_LT_X2 27 - 5
+	#macro MKSS_Base_VirtualButton_LT_Y2 89 - 5
+	
+	#macro MKSS_Base_VirtualButton_R_X1 213
+	#macro MKSS_Base_VirtualButton_R_Y1 93
+	#macro MKSS_Base_VirtualButton_R_X2 236 - 5
+	#macro MKSS_Base_VirtualButton_R_Y2 106 - 5
+	
+	#macro MKSS_Base_VirtualButton_RT_X1 213
+	#macro MKSS_Base_VirtualButton_RT_Y1 76
+	#macro MKSS_Base_VirtualButton_RT_X2 236 - 5
+	#macro MKSS_Base_VirtualButton_RT_Y2 89 - 5
+	
+	#macro MKSS_Base_VirtualButton_Start_X1 122
+	#macro MKSS_Base_VirtualButton_Start_Y1 4
+	#macro MKSS_Base_VirtualButton_Start_X2 145 - 5
+	#macro MKSS_Base_VirtualButton_Start_Y2 17 - 5
+	
+	#macro MKSS_Base_VirtualButton_Select_X1 95
+	#macro MKSS_Base_VirtualButton_Select_Y1 4
+	#macro MKSS_Base_VirtualButton_Select_X2 118 - 5
+	#macro MKSS_Base_VirtualButton_Select_Y2 17 - 5
 	#endregion
 }
