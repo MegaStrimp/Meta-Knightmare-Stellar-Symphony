@@ -22,14 +22,16 @@ if ((!instance_exists(obj_Transition)) and (hintOffsetTimer == -1) and (endTimer
 {
 	if ((input_check_pressed("A",playerNum)) or (input_check_pressed("start",playerNum)))
 	{
-		scr_PlaySfx(snd_MKSS_ButtonYes);
+		var sfx = scr_PlaySfx(snd_MKSS_ButtonYes);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		endTimer = 0;
 	}
 	
 	if (input_check_pressed("B",playerNum))
 	{
-		scr_PlaySfx(snd_MKSS_ButtonNo);
+		var sfx = scr_PlaySfx(snd_MKSS_ButtonNo);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		endStage = true;
 		

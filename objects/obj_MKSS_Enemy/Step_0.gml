@@ -44,6 +44,10 @@ if (!localPause)
 	
 	inWater = place_meeting(x,y,obj_Water);
 	
-	if (inWaterPrev != inWater) scr_PlaySfx(snd_MKSS_WaterOut);
+	if (inWaterPrev != inWater)
+	{
+		var sfx = scr_PlaySfx(snd_MKSS_WaterOut);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
+	}
 	#endregion
 }

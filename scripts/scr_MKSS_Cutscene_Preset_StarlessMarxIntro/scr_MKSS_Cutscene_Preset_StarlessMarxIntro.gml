@@ -75,8 +75,10 @@ function scr_MKSS_Cutscene_Preset_StarlessMarxIntro()
 					}
 					apparitionDirPrev = apparitionDir;
 					
-					scr_PlaySfx(snd_MKSS_MarxRise);
+					var sfx = scr_PlaySfx(snd_MKSS_MarxRise);
+					audio_sound_pitch(sfx,random_range(.85,1.15));
 					var laughSfx = scr_PlaySfx(choose(snd_MKSS_MarxLaugh1,snd_MKSS_MarxLaugh2,snd_MKSS_MarxLaugh3,snd_MKSS_MarxLaugh4));
+					audio_sound_pitch(laughSfx,random_range(.85,1.15));
 					
 					with (instance_create_layer(xFinal + (30 * -apparitionDir),yFinal,"Enemies",obj_MKSS_Attack))
 					{

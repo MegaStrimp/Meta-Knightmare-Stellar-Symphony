@@ -5,7 +5,8 @@ function scr_MKSS_Player_MetaKnight_State_Parry_Step()
 	#region Setup
 	if (playerState_Setup)
 	{
-		scr_PlaySfx(snd_MKSS_ParryExecute);
+		var sfx = scr_PlaySfx(snd_MKSS_ParryExecute);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		parryGhostParticle = scr_MKSS_ParticleSet_ParryGhost(x,y,dirX,spr_MKSS_Player_MetaKnight_Normal_Base_Parry,spr_MKSS_SprayPaint_Misc_ParryCooldown);
 		
@@ -60,7 +61,8 @@ function scr_MKSS_Player_MetaKnight_State_Parry_Step()
 					script_execute(global.MKSS_AttackList[other.attackIndex].executeAttackScript,other,id);
 				}
 				
-				scr_PlaySfx(snd_MKSS_Parry);
+				var sfx = scr_PlaySfx(snd_MKSS_Parry);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				other.parryAttackBuffer = true;
 				other.parryCooldownTimer = 0;
@@ -91,7 +93,8 @@ function scr_MKSS_Player_MetaKnight_State_Parry_Step()
 					script_execute(global.MKSS_AttackList[other.attackIndex].executeAttackScript,other,id);
 				}
 				
-				scr_PlaySfx(snd_MKSS_Parry);
+				var sfx = scr_PlaySfx(snd_MKSS_Parry);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				other.parryAttackBuffer = true;
 				other.parryCooldownTimer = 0;
@@ -143,7 +146,8 @@ function scr_MKSS_Player_MetaKnight_State_Parry_Step()
 				
 				with (parryGhostParticle[0]) instance_destroy();
 				
-				scr_PlaySfx(snd_MKSS_RunBegin);
+				var sfx = scr_PlaySfx(snd_MKSS_RunBegin);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				scr_MKSS_ParticleSet_Run(x + (16 * -dirX),y + 16,dirX);
 				

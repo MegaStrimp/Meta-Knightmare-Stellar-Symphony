@@ -15,7 +15,8 @@ function scr_MKSS_Enemy_Baggie_AI_Run_Step()
 					#region Run Begin
 					if (runBegin)
 					{
-						scr_PlaySfx(snd_MKSS_RunBegin);
+						var sfx = scr_PlaySfx(snd_MKSS_RunBegin);
+						audio_sound_pitch(sfx,random_range(.85,1.15));
 						
 						runParticleNum = 0;
 						runParticleTimer = 0;
@@ -43,7 +44,8 @@ function scr_MKSS_Enemy_Baggie_AI_Run_Step()
 					#region Jump
 					if ((grounded) and (place_meeting(x + (24 * dirX),y,obj_Wall)))
 					{
-						scr_PlaySfx(snd_MKSS_EnemyJump);
+						var sfx = scr_PlaySfx(snd_MKSS_EnemyJump);
+						audio_sound_pitch(sfx,random_range(.85,1.15));
 						
 						var angle = 90 + (20 * dirX);
 						scr_MKSS_ParticleSet_Jump(x - (7 * dirX),y + 5,angle);
@@ -89,7 +91,8 @@ function scr_MKSS_Enemy_Baggie_AI_Run_Step()
 						dirX = 1;
 						if (nearestPlayer.x < x) dirX = -1;
 						
-						scr_PlaySfx(snd_MKSS_EnemyJump);
+						var sfx = scr_PlaySfx(snd_MKSS_EnemyJump);
+						audio_sound_pitch(sfx,random_range(.85,1.15));
 						
 						var angle = 90 + (20 * dirX);
 						scr_MKSS_ParticleSet_Jump(x - (7 * dirX),y + 5,angle);

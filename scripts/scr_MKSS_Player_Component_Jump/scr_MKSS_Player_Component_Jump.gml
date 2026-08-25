@@ -21,7 +21,8 @@ function scr_MKSS_Player_Component_Jump()
 		
 			if (jumpCoyoteTimeBuffer > 0)
 			{
-				scr_PlaySfx(snd_MKSS_Jump);
+				var sfx = scr_PlaySfx(snd_MKSS_Jump);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 			
 				scr_ChangeSprite(spriteSet.sprJump);
 			

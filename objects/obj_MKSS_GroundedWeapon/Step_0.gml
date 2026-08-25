@@ -7,9 +7,9 @@ if (!localPause)
 	{
 		if (place_meeting(x,y,other))
 		{
-			scr_PlaySfx(snd_MKSS_AbilitySwitch);
+			var sfx = scr_PlaySfx(snd_MKSS_AbilitySwitch);
+			audio_sound_pitch(sfx,random_range(.85,1.15));
 			
-			//global.MKSS_PlayerUpgrade[MKSS_PlayerAbilities.galaxia][0] = true; STRIMPTODO
 			scr_Camera_SetLimits(-1,-1,-1,-1);
 			global.MKSS_WeaponList[other.weaponID].isUnlocked = true;
 			scr_MKSS_Player_SetWeapons();

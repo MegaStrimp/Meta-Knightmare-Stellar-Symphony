@@ -41,7 +41,8 @@ function scr_MKSS_Enemy_Trappy_AI_Throw_Step()
 					attackTimer = max(attackTimer - speedMultFinal,0);
 					if (attackTimer == 0)
 					{
-						scr_PlaySfx(snd_MKSS_EnemyJump);
+						var sfx = scr_PlaySfx(snd_MKSS_EnemyJump);
+						audio_sound_pitch(sfx,random_range(.85,1.15));
 						
 						var angle = 90 + (20 * dirX);
 						scr_MKSS_ParticleSet_Jump(x - (7 * dirX),y + 5,angle);
@@ -69,7 +70,8 @@ function scr_MKSS_Enemy_Trappy_AI_Throw_Step()
 			#region Jump Buffer
 			if ((jumpBuffer) and (image_index >= 3))
 			{
-				scr_PlaySfx(snd_MKSS_EnemyJump);
+				var sfx = scr_PlaySfx(snd_MKSS_EnemyJump);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				var angle = 90 + (20 * dirX);
 				scr_MKSS_ParticleSet_Jump(x - (7 * dirX),y + 5,angle);

@@ -26,8 +26,10 @@ if (pointTimer != -1)
 	pointTimer = max(pointTimer - speedMultFinal,0);
 	if (pointTimer == 0)
 	{
-		scr_PlaySfx(snd_MKSS_Pop);
-		scr_PlaySfx(snd_MKSS_MetaPointCollect2);
+		var sfx = scr_PlaySfx(snd_MKSS_Pop);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
+		var sfx = scr_PlaySfx(snd_MKSS_MetaPointCollect2);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		pointFlagTimer = 4;
 		

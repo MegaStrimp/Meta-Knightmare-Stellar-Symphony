@@ -13,7 +13,8 @@ function scr_MKSS_Enemy_GhoulKnight_AI_WalkAndAttack_Stab_Step()
 		
 		attackState = 0;
 		
-		scr_PlaySfx(snd_MKSS_Action1);
+		var sfx = scr_PlaySfx(snd_MKSS_Action1);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		#endregion
 		
 		#region Attack Timers
@@ -61,7 +62,8 @@ function scr_MKSS_Enemy_GhoulKnight_AI_WalkAndAttack_Stab_Step()
 				
 				attackIndex = global.MKSS_AttackIDs[? "ghoulKnight_Stab"];
 				
-				scr_PlaySfx(snd_MKSS_GhostKnightStab);
+				var sfx = scr_PlaySfx(snd_MKSS_GhostKnightStab);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				#region Attack
 				with (instance_create_depth(x,y,depth,obj_MKSS_Attack))

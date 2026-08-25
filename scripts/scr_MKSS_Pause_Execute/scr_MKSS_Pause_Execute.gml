@@ -4,7 +4,8 @@ function scr_MKSS_Pause_Execute()
 {
 	if ((!global.pause) and (global.canGamePause) and (gamePauseDelayTimer == -1) and (input_check_pressed("start",playerNum)) and (!instance_exists(obj_Transition)))
 	{
-		scr_PlaySfx(snd_MKSS_Pause);
+		var sfx = scr_PlaySfx(snd_MKSS_Pause);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		global.gamePause = true;
 		
@@ -23,9 +24,5 @@ function scr_MKSS_Pause_Execute()
 		gamePauseDelayTimer = gamePauseDelayTimerMax;
 		
 		gamePauseDelayTimer = gamePauseDelayTimerMax;
-	
-		#region Create Surface
-		if (!instance_exists(obj_MKSS_Surface_Space)) instance_create_depth(0,0,0,obj_MKSS_Surface_Space);
-		#endregion
 	}
 }

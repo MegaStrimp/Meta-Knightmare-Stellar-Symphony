@@ -10,7 +10,8 @@ function scr_MKSS_Attack_StarlessMarx_IceBomb_Step()
 			var _dir = 1;
 			repeat(2)
 			{
-				scr_PlaySfx(snd_MKSS_MarxIceBombDetonate);
+				var sfx = scr_PlaySfx(snd_MKSS_MarxIceBombDetonate);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
 				{

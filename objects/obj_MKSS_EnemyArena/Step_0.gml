@@ -12,7 +12,8 @@ if (!localPause)
 		global.hasHud = false;
 		global.canGamePause = false;
 		
-		scr_PlaySfx(snd_MKSS_Miniboss_Death);
+		var sfx = scr_PlaySfx(snd_MKSS_Miniboss_Death);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		scr_Camera_SetScreenshake(2);
 		
@@ -115,7 +116,8 @@ if (!localPause)
 				
 				playEndSound = true;
 				
-				scr_PlaySfx(snd_MKSS_Boss_Death1);
+				var sfx = scr_PlaySfx(snd_MKSS_Boss_Death1);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				scr_SetGlobalFreezeFrame(60);
 				scr_MKSS_UI_BackgroundOverlay_Create(60,layer_get_depth("Player") + 1,false,[c_red,c_black,c_white],10);

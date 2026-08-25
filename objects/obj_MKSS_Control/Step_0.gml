@@ -12,7 +12,8 @@ for (var i = 0; i < global.maxPlayers; i++)
 		{
 			if ((healPauseTargetHeal[i] > 0) and (global.playerHp[i] < global.playerMaxHp[i]) and (healPauseTargetHeal[i] >= healthAccel))
 			{
-				scr_PlaySfx(snd_MKSS_BossHealth);
+				var sfx = scr_PlaySfx(snd_MKSS_BossHealth);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				global.playerHp[i] = min(global.playerMaxHp[i],global.playerHp[i] + healthAccel);
 				healPauseTargetHeal[i] -= healthAccel;

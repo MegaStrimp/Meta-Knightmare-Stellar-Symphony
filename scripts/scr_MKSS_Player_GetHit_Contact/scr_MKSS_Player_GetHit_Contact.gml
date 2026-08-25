@@ -5,7 +5,8 @@ function scr_MKSS_Player_GetHit_Contact(targetPlayer,targetObject)
 	with (targetPlayer)
 	{
 		#region Effects
-		scr_PlaySfx(snd_MKSS_Hurt);
+		var sfx = scr_PlaySfx(snd_MKSS_Hurt);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		#endregion
 		
 		#region Variables

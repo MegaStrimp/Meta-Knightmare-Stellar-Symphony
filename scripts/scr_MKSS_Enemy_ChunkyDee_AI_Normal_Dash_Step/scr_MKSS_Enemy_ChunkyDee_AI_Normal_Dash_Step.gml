@@ -53,7 +53,8 @@ function scr_MKSS_Enemy_ChunkyDee_AI_Normal_Dash_Step()
 			dashPoundTimer = max(dashPoundTimer - speedMultFinal,0);
 			if (dashPoundTimer == 0)
 			{
-				scr_PlaySfx(snd_MKSS_BlockBreak);
+				var sfx = scr_PlaySfx(snd_MKSS_BlockBreak);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				scr_Camera_SetScreenshake(0,1);
 				
@@ -96,7 +97,8 @@ function scr_MKSS_Enemy_ChunkyDee_AI_Normal_Dash_Step()
 			dashEndTimer = max(dashEndTimer - speedMultFinal,0);
 			if (dashEndTimer == 0)
 			{
-				scr_PlaySfx(snd_MKSS_RunBegin);
+				var sfx = scr_PlaySfx(snd_MKSS_RunBegin);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				scr_MKSS_ParticleSet_Run(x + (16 * -dirX),y + 16,dirX);
 				

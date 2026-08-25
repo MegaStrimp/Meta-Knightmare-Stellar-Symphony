@@ -18,14 +18,16 @@ if (canSelect)
 	#region Navigation
 	if (input_check_pressed("up",playerNum))
 	{
-		scr_PlaySfx(snd_MKSS_BossHealth);
+		var sfx = scr_PlaySfx(snd_MKSS_BossHealth);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		selection = (selection - 1 + ds_list_size(currentList)) % ds_list_size(currentList);
 	}
 	
 	if (input_check_pressed("down",playerNum))
 	{
-		scr_PlaySfx(snd_MKSS_BossHealth);
+		var sfx = scr_PlaySfx(snd_MKSS_BossHealth);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		selection = (selection + 1 + ds_list_size(currentList)) % ds_list_size(currentList);
 	}
@@ -44,7 +46,8 @@ if (canSelect)
 			}
 			else
 			{
-				scr_PlaySfx(snd_MKSS_BossHealth);
+				var sfx = scr_PlaySfx(snd_MKSS_BossHealth);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				selection = i;
 			}
@@ -63,7 +66,8 @@ if (canSelect)
 	{
 		if (global.settingsList[selectionIndex].selectAction != undefined)
 		{
-			scr_PlaySfx(snd_MKSS_ButtonYes);
+			var sfx = scr_PlaySfx(snd_MKSS_ButtonYes);
+			audio_sound_pitch(sfx,random_range(.85,1.15));
 			
 			script_execute_ext(global.settingsList[selectionIndex].selectAction,global.settingsList[selectionIndex].selectActionArgs);
 		}
@@ -75,7 +79,8 @@ if (canSelect)
 	{
 		if (global.settingsList[selectionIndex].backAction != undefined)
 		{
-			scr_PlaySfx(snd_MKSS_ButtonNo);
+			var sfx = scr_PlaySfx(snd_MKSS_ButtonNo);
+			audio_sound_pitch(sfx,random_range(.85,1.15));
 			
 			script_execute_ext(global.settingsList[selectionIndex].backAction,global.settingsList[selectionIndex].backActionArgs);
 		}
@@ -107,7 +112,8 @@ if (canSelect)
 	{
 		if (global.settingsList[selectionIndex].leftAction != undefined)
 		{
-			scr_PlaySfx(snd_MKSS_BossHealth);
+			var sfx = scr_PlaySfx(snd_MKSS_BossHealth);
+			audio_sound_pitch(sfx,random_range(.85,1.15));
 			
 			script_execute_ext(global.settingsList[selectionIndex].leftAction,global.settingsList[selectionIndex].leftActionArgs);
 		}
@@ -119,7 +125,8 @@ if (canSelect)
 	{
 		if (global.settingsList[selectionIndex].rightAction != undefined)
 		{
-			scr_PlaySfx(snd_MKSS_BossHealth);
+			var sfx = scr_PlaySfx(snd_MKSS_BossHealth);
+			audio_sound_pitch(sfx,random_range(.85,1.15));
 			
 			script_execute_ext(global.settingsList[selectionIndex].rightAction,global.settingsList[selectionIndex].rightActionArgs);
 		}

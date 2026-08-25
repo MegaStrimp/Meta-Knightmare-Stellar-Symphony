@@ -89,7 +89,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_IceBomb_Step()
 			
 			if (attackStateTimer[attackState] == -1)
 			{
-				scr_PlaySfx(snd_MKSS_MarxIceBombDrop);
+				var sfx = scr_PlaySfx(snd_MKSS_MarxIceBombDrop);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				vsp = -1;
 				

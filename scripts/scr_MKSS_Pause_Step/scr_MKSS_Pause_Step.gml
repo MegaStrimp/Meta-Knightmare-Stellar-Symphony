@@ -16,7 +16,8 @@ function scr_MKSS_Pause_Step()
 		{
 			if ((input_check_pressed("A",playerNum)) or (input_check_pressed("start",playerNum)) or ((scr_MouseIsInbetween(xx + 75,yy + 115,xx + 166,yy + 155)) and (mouse_check_button_pressed(mb_left))))
 			{
-				scr_PlaySfx(snd_MKSS_Unpause);
+				var sfx = scr_PlaySfx(snd_MKSS_Unpause);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				MKSS_GamePause_TitleXTarget = -70;
 				
@@ -161,7 +162,8 @@ function scr_MKSS_Pause_Step()
 				MKSS_GamePause_Settings_Cog[i].appearTimer = max(MKSS_GamePause_Settings_Cog[i].appearTimer - speedMultFinal,0);
 				if (MKSS_GamePause_Settings_Cog[i].appearTimer == 0)
 				{
-					scr_PlaySfx(snd_MKSS_SettingsCog);
+					var sfx = scr_PlaySfx(snd_MKSS_SettingsCog);
+					audio_sound_pitch(sfx,random_range(.85,1.15));
 					
 					MKSS_GamePause_Settings_Cog[i].appearTimer = -1;
 				}
@@ -172,7 +174,8 @@ function scr_MKSS_Pause_Step()
 				MKSS_GamePause_Settings_Cog[i].disappearTimer = max(MKSS_GamePause_Settings_Cog[i].disappearTimer - speedMultFinal,0);
 				if (MKSS_GamePause_Settings_Cog[i].disappearTimer == 0)
 				{
-					scr_PlaySfx(snd_MKSS_SettingsCog);
+					var sfx = scr_PlaySfx(snd_MKSS_SettingsCog);
+					audio_sound_pitch(sfx,random_range(.85,1.15));
 					
 					MKSS_GamePause_Settings_Cog[i].disappearTimer = -1;
 				}

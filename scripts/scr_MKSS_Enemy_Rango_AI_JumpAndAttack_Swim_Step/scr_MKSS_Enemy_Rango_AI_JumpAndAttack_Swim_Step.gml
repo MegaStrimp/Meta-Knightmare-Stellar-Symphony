@@ -17,7 +17,8 @@ function scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Swim_Step()
 					var nearestPlayer = instance_nearest(x,y,obj_Player);
 					if ((nearestPlayer != noone) and (abs(x - nearestPlayer.x) <= 48))
 					{
-						scr_PlaySfx(snd_MKSS_RangoSpot);
+						var sfx = scr_PlaySfx(snd_MKSS_RangoSpot);
+						audio_sound_pitch(sfx,random_range(.85,1.15));
 						
 						sprite_index = spriteSet.sprSpot;
 						image_index = 0;

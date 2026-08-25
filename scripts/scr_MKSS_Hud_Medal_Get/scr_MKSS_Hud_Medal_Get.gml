@@ -2,8 +2,10 @@
 
 function scr_MKSS_Hud_Medal_Get(targetTier)
 {
-	scr_PlaySfx(snd_MKSS_Medal);
-	scr_PlaySfx(snd_MKSS_ParryExecute);
+	var sfx = scr_PlaySfx(snd_MKSS_Medal);
+	audio_sound_pitch(sfx,random_range(.85,1.15));
+	var sfx = scr_PlaySfx(snd_MKSS_ParryExecute);
+	audio_sound_pitch(sfx,random_range(.85,1.15));
 	
 	with (obj_FrameworkControl)
 	{

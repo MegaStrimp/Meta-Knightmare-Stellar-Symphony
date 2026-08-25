@@ -46,7 +46,7 @@ function scr_MKSS_Player_MetaKnight_State_Normal_Step()
 		if ((global.MKSS_CutsceneStopMovement)
 		or (hurtState == hurtStates.hurt)) canDuck = false
 		
-		if ((canDuck) and (input_check("down",playerNum)) and (grounded) and (!isAttacking) and (!input_check("up",playerNum)))
+		if ((canDuck) and (grounded) and (!isAttacking) and (((input_check("down",playerNum)) and (!input_check("up",playerNum))) or (place_meeting(x,y,obj_Wall))))
 		{
 			scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Duck_Step);
 			

@@ -103,7 +103,8 @@ function scr_MKSS_Enemy_Wheelie_AI_WalkAndAttack_Step()
 				switch (attackState)
 				{
 					case 1:
-					scr_PlaySfx(snd_MKSS_EnemyJump);
+					var sfx = scr_PlaySfx(snd_MKSS_EnemyJump);
+					audio_sound_pitch(sfx,random_range(.85,1.15));
 					
 					scr_MKSS_UI_ParryIndicator_Create(x,y,depth - 1,attackTimerMax,,id);
 					

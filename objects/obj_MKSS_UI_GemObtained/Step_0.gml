@@ -8,7 +8,8 @@ if (canSelect)
 {
 	if (input_check_pressed("A",playerNum))
 	{
-		scr_PlaySfx(snd_MKSS_ButtonYes);
+		var sfx = scr_PlaySfx(snd_MKSS_ButtonYes);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		endTimer = 0;
 	}

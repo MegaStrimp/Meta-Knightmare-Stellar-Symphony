@@ -10,7 +10,8 @@ if (canSelect)
 {
 	if (input_check_pressed("B",playerNum))
 	{
-		scr_PlaySfx(snd_MKSS_ButtonNo);
+		var sfx = scr_PlaySfx(snd_MKSS_ButtonNo);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		global.canGamePause = true;
 		
@@ -23,7 +24,8 @@ if (canSelect)
 	
 	if ((targetRoom_Retry != -1) and (input_check_pressed("X",playerNum)))
 	{
-		scr_PlaySfx(snd_MKSS_ButtonChange);
+		var sfx = scr_PlaySfx(snd_MKSS_NextScene);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		global.canGamePause = true;
 		
@@ -36,7 +38,8 @@ if (canSelect)
 	
 	if ((targetRoom_Next != -1) and (input_check_pressed("A",playerNum)))
 	{
-		scr_PlaySfx(snd_MKSS_ButtonYes);
+		var sfx = scr_PlaySfx(snd_MKSS_NextScene);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		global.canGamePause = true;
 		
@@ -82,7 +85,8 @@ if (scoreBonusTimer != -1)
 	scoreBonusTimer = max(scoreBonusTimer - speedMultFinal,0);
 	if (scoreBonusTimer == 0)
 	{
-		scr_PlaySfx(snd_MKSS_MetaPointCollect3);
+		var sfx = scr_PlaySfx(snd_MKSS_MetaPointCollect3);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		var currentScoreBonus = ds_list_find_value(scoreBonuses,0);
 		
@@ -115,7 +119,8 @@ if (nextRoomTimer != -1)
 	nextRoomTimer = max(nextRoomTimer - speedMultFinal,0);
 	if (nextRoomTimer == 0)
 	{
-		scr_PlaySfx(snd_MKSS_NextScene);
+		var sfx = scr_PlaySfx(snd_MKSS_DoorEnter);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		scr_MKSS_Stage_End();
 		

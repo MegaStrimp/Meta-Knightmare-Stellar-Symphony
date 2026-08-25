@@ -23,7 +23,8 @@ function scr_MKSS_Attack_StarlessMarx_Arrow_Step()
 					parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryMarxArrow"];
 				}
 				
-				scr_PlaySfx(snd_MKSS_GhostKnightStab);
+				var sfx = scr_PlaySfx(snd_MKSS_GhostKnightStab);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				dmg = dmgTarget;
 				

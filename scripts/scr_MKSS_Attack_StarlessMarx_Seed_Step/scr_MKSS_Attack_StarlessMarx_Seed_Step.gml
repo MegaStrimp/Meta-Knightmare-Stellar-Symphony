@@ -10,7 +10,8 @@ function scr_MKSS_Attack_StarlessMarx_Seed_Step()
 			growTimer = max(growTimer - speedMultFinal,0);
 			if (growTimer == 0)
 			{
-				scr_PlaySfx(snd_MKSS_MarxVine);
+				var sfx = scr_PlaySfx(snd_MKSS_MarxVine);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				scr_MKSS_ParticleSet_Common(x,y - 8,spr_MKSS_Particle_VineEffect1,-2);
 				
@@ -36,7 +37,8 @@ function scr_MKSS_Attack_StarlessMarx_Seed_Step()
 		{
 			if (instance_place(x,y,obj_Wall))
 			{
-				scr_PlaySfx(snd_MKSS_MarxSeedImpact);
+				var sfx = scr_PlaySfx(snd_MKSS_MarxSeedImpact);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				image_alpha = 0;
 				

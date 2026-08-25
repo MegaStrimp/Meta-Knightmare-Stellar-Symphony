@@ -37,7 +37,8 @@ function scr_MKSS_Enemy_ChunkyDee_AI_Normal_Jump_Step()
 					sprite_index = spriteSet.sprSlam;
 					image_index = 0;
 					
-					scr_PlaySfx(snd_MKSS_BlockBreak);
+					var sfx = scr_PlaySfx(snd_MKSS_BlockBreak);
+					audio_sound_pitch(sfx,random_range(.85,1.15));
 					
 					scr_Camera_SetScreenshake(0,2);
 					
@@ -60,7 +61,9 @@ function scr_MKSS_Enemy_ChunkyDee_AI_Normal_Jump_Step()
 							
 							scr_Camera_SetScreenshake(2,0);
 							
-							scr_PlaySfx(snd_MKSS_Hurt);
+							var sfx = scr_PlaySfx(snd_MKSS_Hurt);
+							audio_sound_pitch(sfx,random_range(.85,1.15));
+							
 							script_execute_ext(playerGetHit,[id,10]);
 							scr_MKSS_Player_GetStunned(id);
 						}
@@ -106,7 +109,8 @@ function scr_MKSS_Enemy_ChunkyDee_AI_Normal_Jump_Step()
 					sprite_index = spriteSet.sprFall;
 					image_index = 0;
 					
-					scr_PlaySfx(snd_MKSS_RunBegin);
+					var sfx = scr_PlaySfx(snd_MKSS_RunBegin);
+					audio_sound_pitch(sfx,random_range(.85,1.15));
 					
 					scr_MKSS_ParticleSet_Run(x + (16 * -dirX),y + 16,dirX);
 					
@@ -133,7 +137,8 @@ function scr_MKSS_Enemy_ChunkyDee_AI_Normal_Jump_Step()
 			jumpTimer = max(jumpTimer - speedMultFinal,0);
 			if (jumpTimer == 0)
 			{
-				scr_PlaySfx(snd_MKSS_EnemyJump);
+				var sfx = scr_PlaySfx(snd_MKSS_EnemyJump);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				var angle = 90 + (20 * dirX);
 				scr_MKSS_ParticleSet_Jump(x - (7 * dirX),y + 5,angle);

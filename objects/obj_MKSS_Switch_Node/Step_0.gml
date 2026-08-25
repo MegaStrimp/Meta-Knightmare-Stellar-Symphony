@@ -8,7 +8,8 @@ if (!localPause)
 		destroyTimer = max(destroyTimer - speedMultFinal,0);
 		if (destroyTimer == 0)
 		{
-			scr_PlaySfx(snd_MKSS_Chain);
+			var sfx = scr_PlaySfx(snd_MKSS_Chain);
+			audio_sound_pitch(sfx,random_range(.85,1.15));
 			
 			scr_MKSS_ParticleSet_Explosion3(x,y);
 			

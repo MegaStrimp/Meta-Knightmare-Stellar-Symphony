@@ -33,8 +33,10 @@ function scr_MKSS_Enemy_Gordo_AI_Bounce_Parry_Step()
 					prevKnockbackResistance = knockbackResistance;
 					knockbackResistance /= 1.5;
 					
-					scr_PlaySfx(snd_MKSS_EnemyHit);
-					scr_PlaySfx(snd_MKSS_Stun);
+					var sfx = scr_PlaySfx(snd_MKSS_EnemyHit);
+					audio_sound_pitch(sfx,random_range(.85,1.15));
+					var sfx = scr_PlaySfx(snd_MKSS_Stun);
+					audio_sound_pitch(sfx,random_range(.85,1.15));
 					
 					shakeX = 4;
 					

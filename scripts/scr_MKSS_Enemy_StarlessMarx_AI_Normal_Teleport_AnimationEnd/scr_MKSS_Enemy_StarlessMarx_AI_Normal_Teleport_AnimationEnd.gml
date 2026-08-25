@@ -18,7 +18,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Teleport_AnimationEnd()
 		break;
 		
 		case spriteSet.sprBallOut:
-		scr_PlaySfx(snd_MKSS_MarxAppear);
+		var sfx = scr_PlaySfx(snd_MKSS_MarxAppear);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		canBeHit = true;
 		canHurtPlayer = true;

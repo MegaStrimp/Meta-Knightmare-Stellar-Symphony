@@ -52,7 +52,8 @@ function scr_MKSS_Enemy_GetHit_Object(targetEnemy,targetAttack)
 			
 			if (targetEnemy.canBeHurt)
 			{
-				scr_PlaySfx(snd_MKSS_EnemyHit);
+				var sfx = scr_PlaySfx(snd_MKSS_EnemyHit);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				targetEnemy.palIndex = 2;
 				dmgFinal = floor(dmg / targetEnemy.defense);
@@ -99,7 +100,8 @@ function scr_MKSS_Enemy_GetHit_Object(targetEnemy,targetAttack)
 			}
 			else
 			{
-				scr_PlaySfx(snd_MKSS_EnemyHurtInvincible);
+				var sfx = scr_PlaySfx(snd_MKSS_EnemyHurtInvincible);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 			}
 			
 			var finalKnockbackForce = -1;

@@ -25,7 +25,8 @@ function scr_MKSS_Enemy_BouncySis_AI_Walk_Spin_Step()
 		#region Grounded
 		if (grounded)
 		{
-			scr_PlaySfx(snd_MKSS_BlockBreak);
+			var sfx = scr_PlaySfx(snd_MKSS_BlockBreak);
+			audio_sound_pitch(sfx,random_range(.85,1.15));
 			
 			scr_Camera_SetScreenshake(0,2);
 			
@@ -48,7 +49,9 @@ function scr_MKSS_Enemy_BouncySis_AI_Walk_Spin_Step()
 					
 					scr_Camera_SetScreenshake(2,0);
 					
-					scr_PlaySfx(snd_MKSS_Hurt);
+					var sfx = scr_PlaySfx(snd_MKSS_Hurt);
+					audio_sound_pitch(sfx,random_range(.85,1.15));
+					
 					script_execute_ext(playerGetHit,[id,10]);
 					scr_MKSS_Player_GetStunned(id);
 				}

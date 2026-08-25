@@ -28,7 +28,9 @@ function scr_MKSS_Enemy_WaddleDee_AI_Walk_Step()
 				
 				if (grounded)
 				{
-					scr_PlaySfx(snd_MKSS_Squeak);
+					var sfx = scr_PlaySfx(snd_MKSS_Squeak);
+					audio_sound_pitch(sfx,random_range(.85,1.15));
+					
 					var parAngle = irandom_range(0,359);
 					var parScaleDir = 1;
 					if ((parAngle > 90) and (parAngle <= 270))
@@ -88,7 +90,8 @@ function scr_MKSS_Enemy_WaddleDee_AI_Walk_Step()
 						scr_MKSS_Score_Add(50);
 						scr_MKSS_SpawnMetaPoint(2,x,y,depth - 1,other.owner,90);
 						
-						scr_PlaySfx(snd_MKSS_EnemyHit);
+						var sfx = scr_PlaySfx(snd_MKSS_EnemyHit);
+						audio_sound_pitch(sfx,random_range(.85,1.15));
 						
 						shakeX = 2;
 						other.shakeX = 2;

@@ -65,7 +65,8 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_LightningSlash_Step()
 				
 				hsp = 5 * dirX;
 				
-				scr_PlaySfx(snd_MKSS_Throw);
+				var sfx = scr_PlaySfx(snd_MKSS_Throw);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				attackState++;
 			}

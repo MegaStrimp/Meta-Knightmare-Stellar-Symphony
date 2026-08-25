@@ -9,7 +9,7 @@ if (cutsceneCheck)
 {
 	if (global.MKSS_BarrierIndex != global.MKSS_BarrierIndexTarget)
 	{
-		if (global.MKSS_BarrierIndex < 2) //STRIMPTODO For the demo
+		if (global.MKSS_BarrierIndex < 2) //STRIMPTODO [Release]
 		{
 			with (instance_create_depth(0,0,0,obj_MKSS_Cutscene))
 			{

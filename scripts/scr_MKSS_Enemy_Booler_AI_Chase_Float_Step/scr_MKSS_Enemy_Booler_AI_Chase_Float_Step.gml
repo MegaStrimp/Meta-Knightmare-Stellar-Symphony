@@ -58,7 +58,8 @@ function scr_MKSS_Enemy_Booler_AI_Chase_Float_Step()
 			
 			if ((knockbackTimer == 1) and (hp > 0))
 			{
-				scr_PlaySfx(snd_MKSS_Ghost);
+				var sfx = scr_PlaySfx(snd_MKSS_Ghost);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				hsp = 0;
 				vsp = 0;

@@ -82,7 +82,8 @@ function scr_MKSS_Player_MetaKnight_State_StarlessMarxBlackHole_Step()
 				
 				if (y >= room_height/2) and (instance_place(x,y + (vsp * 2),obj_Wall))
 				{
-					scr_PlaySfx(snd_MKSS_Hurt);
+					var sfx = scr_PlaySfx(snd_MKSS_Hurt);
+					audio_sound_pitch(sfx,random_range(.85,1.15));
 					
 					clampToRoom = false;
 					clampToView = false;

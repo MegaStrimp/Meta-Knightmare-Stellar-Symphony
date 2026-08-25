@@ -174,7 +174,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_BlackHole_Step()
 			case 3:
 			if (attackStateTimer[attackState] == -1)
 			{
-				scr_PlaySfx(snd_MKSS_MarxBlackHole1);
+				var sfx = scr_PlaySfx(snd_MKSS_MarxBlackHole1);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				with (splitL) 
 				{

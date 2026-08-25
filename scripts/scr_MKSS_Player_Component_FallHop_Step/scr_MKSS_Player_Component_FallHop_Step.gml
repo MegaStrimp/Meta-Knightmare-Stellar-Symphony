@@ -11,7 +11,8 @@ function scr_MKSS_Player_Component_FallHop_Step(targetSprite = -1)
 	
 	if (flag_FallHop)
 	{
-		scr_PlaySfx(snd_MKSS_FallHop);
+		var sfx = scr_PlaySfx(snd_MKSS_FallHop);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 			
 		forceJump = true;
 		vsp = -(1.5 * speedMultFinal);

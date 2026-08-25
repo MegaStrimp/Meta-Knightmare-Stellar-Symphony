@@ -5,6 +5,8 @@ function scr_MKSS_Player_MetaKnight_State_Galaxia_MachTornado_Step()
 	#region Setup
 	if (playerState_Setup)
 	{
+		scr_ChangeSprite(-1);
+		
 		galaxia_MachTornado_EndTimer = attackCancelTimer;
 		spawnEndAttack = true;
 		

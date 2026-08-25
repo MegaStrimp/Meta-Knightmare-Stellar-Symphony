@@ -4,7 +4,8 @@ function scr_MKSS_Enemy_GetHit(targetEnemy,targetDmg,targetKnockbackForce = 2,ta
 {
 	if ((targetEnemy.hp > 0) or (targetEnemy.canBeOverkilled))
 	{
-		scr_PlaySfx(snd_MKSS_EnemyHit);
+		var sfx = scr_PlaySfx(snd_MKSS_EnemyHit);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 			
 		if (targetEnemy.hitParticleIndex != -1) script_execute(targetEnemy.hitParticleIndex,targetEnemy.x,targetEnemy.y);
 			

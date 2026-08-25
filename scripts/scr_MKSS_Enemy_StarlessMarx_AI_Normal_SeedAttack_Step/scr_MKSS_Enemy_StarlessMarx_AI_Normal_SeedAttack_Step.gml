@@ -60,7 +60,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_SeedAttack_Step()
 		sprite_index = spriteSet.sprFlyUp;
 		image_index = 0;
 		
-		scr_PlaySfx(snd_MKSS_MarxLaugh3);
+		var sfx = scr_PlaySfx(snd_MKSS_MarxLaugh3);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		#endregion
 		
 		enemyState_Setup = false;
@@ -104,7 +105,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_SeedAttack_Step()
 			case 1:
 			if (attackStateTimer[attackState] == -1)
 			{
-				scr_PlaySfx(snd_MKSS_MarxSeedFall);
+				var sfx = scr_PlaySfx(snd_MKSS_MarxSeedFall);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				with (instance_create_depth(seedStartX + (seedOffsetX * (seedAdd * seedDir)) + irandom_range(-6,6),-6,depth - 1,obj_MKSS_Attack))
 				{
@@ -133,7 +135,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_SeedAttack_Step()
 			case 2:
 			if (attackStateTimer[attackState] == -1)
 			{
-				scr_PlaySfx(snd_MKSS_MarxSeedFall);
+				var sfx = scr_PlaySfx(snd_MKSS_MarxSeedFall);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				var i = 0;
 				repeat(spreadCount)

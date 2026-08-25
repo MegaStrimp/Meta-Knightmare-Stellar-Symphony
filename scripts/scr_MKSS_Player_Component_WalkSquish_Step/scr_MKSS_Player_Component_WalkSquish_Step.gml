@@ -12,7 +12,8 @@ function scr_MKSS_Player_Component_WalkSquish_Step(targetSprite = -1)
 	{
 		walkSquishTimer = 7;
 		
-		scr_PlaySfx(snd_MKSS_Squish);
+		var sfx = scr_PlaySfx(snd_MKSS_Squish);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		var parAngle = irandom_range(0,359);
 		var parScaleDir = 1;

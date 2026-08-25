@@ -25,7 +25,8 @@ function scr_MKSS_Attack_MetaKnight_IceBomb_Step()
 						{
 							wingOutTimer = wingOutTimerMax;
 							
-							scr_PlaySfx(snd_MKSS_ParryExecute);
+							var sfx = scr_PlaySfx(snd_MKSS_ParryExecute);
+							audio_sound_pitch(sfx,random_range(.85,1.15));
 							
 							sprite_index = spriteSet.sprCharge;
 							image_index = 0;
@@ -36,7 +37,8 @@ function scr_MKSS_Attack_MetaKnight_IceBomb_Step()
 							
 							scr_SetGlobalFreezeFrame(16);
 							
-							scr_PlaySfx(snd_MKSS_MarxIceBombDetonate);
+							var sfx = scr_PlaySfx(snd_MKSS_MarxIceBombDetonate);
+							audio_sound_pitch(sfx,random_range(.85,1.15));
 							
 							with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
 							{
@@ -112,9 +114,10 @@ function scr_MKSS_Attack_MetaKnight_IceBomb_Step()
 					
 						scr_MKSS_Score_Add(50);
 						scr_MKSS_SpawnMetaPoint(3,x,y,depth - 1,other.owner,90);
-					
-						scr_PlaySfx(snd_MKSS_EnemyHit);
-					
+						
+						var sfx = scr_PlaySfx(snd_MKSS_EnemyHit);
+						audio_sound_pitch(sfx,random_range(.85,1.15));
+						
 						shakeX = 4;
 					
 						scr_Camera_SetScreenshake(4);

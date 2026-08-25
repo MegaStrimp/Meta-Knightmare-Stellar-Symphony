@@ -85,7 +85,8 @@ function scr_MKSS_Enemy_Peezer_AI_WalkAndAttack_Step()
 				switch (attackState)
 				{
 					case 1:
-					scr_PlaySfx(snd_MKSS_EnemyJump);
+					var sfx = scr_PlaySfx(snd_MKSS_EnemyJump);
+					audio_sound_pitch(sfx,random_range(.85,1.15));
 					
 					sprite_index = spriteSet.sprAttackStart;
 					image_index = 0;

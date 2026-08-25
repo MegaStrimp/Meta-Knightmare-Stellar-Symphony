@@ -47,7 +47,8 @@ function scr_MKSS_Player_Component_Movement()
 			{
 				if ((canRunTurn) and (grounded) and (isRunning) and (runTurnActivate))
 				{
-					scr_PlaySfx(snd_MKSS_RunBegin);
+					var sfx = scr_PlaySfx(snd_MKSS_RunBegin);
+					audio_sound_pitch(sfx,random_range(.85,1.15));
 					
 					runParticleNum = 0;
 					runParticleTimer = 0;
@@ -74,7 +75,8 @@ function scr_MKSS_Player_Component_Movement()
 			{
 				if ((canRunTurn) and (grounded) and (isRunning) and (runTurnActivate))
 				{
-					scr_PlaySfx(snd_MKSS_RunBegin);
+					var sfx = scr_PlaySfx(snd_MKSS_RunBegin);
+					audio_sound_pitch(sfx,random_range(.85,1.15));
 					
 					runParticleNum = 0;
 					runParticleTimer = 0;

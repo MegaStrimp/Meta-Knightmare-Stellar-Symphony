@@ -76,7 +76,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShadowUppercut_Step()
 		}
 		else
 		{
-			scr_PlaySfx(snd_MKSS_MarxLaugh3);
+			var sfx = scr_PlaySfx(snd_MKSS_MarxLaugh3);
+			audio_sound_pitch(sfx,random_range(.85,1.15));
 			
 			sprite_index = spriteSet.sprFlyUp;
 			image_index = 0;
@@ -178,8 +179,10 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShadowUppercut_Step()
 				x = shadow.x;
 				y = shadow.y;
 				
-				scr_PlaySfx(snd_MKSS_MarxLaugh2);
-				scr_PlaySfx(snd_MKSS_MarxAppear);
+				var sfx = scr_PlaySfx(snd_MKSS_MarxLaugh2);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
+				var sfx = scr_PlaySfx(snd_MKSS_MarxAppear);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 			
 				sprite_index = spriteSet.sprFlyUp;
 				image_index = 0;
@@ -219,7 +222,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShadowUppercut_Step()
 				sprite_index = spriteSet.sprIdle;
 				image_index = 0;
 				
-				scr_PlaySfx(snd_MKSS_MarxNeedle);
+				var sfx = scr_PlaySfx(snd_MKSS_MarxNeedle);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				var _dir = -1;
 				var _angle = 225;

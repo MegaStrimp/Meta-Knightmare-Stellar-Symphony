@@ -92,7 +92,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_ArrowArrow_Step()
 			{
 				shakeX = 0;
 				
-				scr_PlaySfx(snd_MKSS_MarxNeedle);
+				var sfx = scr_PlaySfx(snd_MKSS_MarxNeedle);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				sprite_index = spriteSet.sprArrow;
 				image_index = 0;

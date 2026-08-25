@@ -101,7 +101,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_ArrowArrowEnd_Step()
 			{
 				shakeX = 0;
 				
-				scr_PlaySfx(snd_MKSS_MarxNeedle);
+				var sfx = scr_PlaySfx(snd_MKSS_MarxNeedle);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				sprite_index = spriteSet.sprArrow;
 				image_index = 0;
@@ -149,7 +150,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_ArrowArrowEnd_Step()
 			case 3:
 			if (attackStateTimer[attackState] == -1)
 			{
-				scr_PlaySfx(snd_MKSS_MarxLaugh3);
+				var sfx = scr_PlaySfx(snd_MKSS_MarxLaugh3);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				sprite_index = spriteSet.sprFly;
 				image_index = 0;

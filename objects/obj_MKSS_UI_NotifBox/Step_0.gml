@@ -76,7 +76,8 @@ if (inputDelayTimer == -1)
 			
 			if (page == pageMax)
 			{
-				scr_PlaySfx(snd_MKSS_ButtonYes);
+				var sfx = scr_PlaySfx(snd_MKSS_ButtonYes);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				isClosed = true;
 				destroyTimer = destroyTimerMax;

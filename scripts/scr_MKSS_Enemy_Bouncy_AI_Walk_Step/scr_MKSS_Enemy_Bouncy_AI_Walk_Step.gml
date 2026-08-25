@@ -57,7 +57,8 @@ function scr_MKSS_Enemy_Bouncy_AI_Walk_Step()
 						
 						grounded = false;
 						
-						scr_PlaySfx(snd_MKSS_EnemyJump);
+						var sfx = scr_PlaySfx(snd_MKSS_EnemyJump);
+						audio_sound_pitch(sfx,random_range(.85,1.15));
 						
 						var angle = 90 + (20 * dirX);
 						scr_MKSS_ParticleSet_Jump(x - (7 * dirX),y + 5,angle);

@@ -26,7 +26,3 @@ cutsceneCheck = true;
 #region Create Surface
 if (!instance_exists(obj_MKSS_Surface_Planetarium)) instance_create_depth(0,0,0,obj_MKSS_Surface_Planetarium);
 #endregion
-
-/*STRIMPTODO read below
-
-if X stage is unlocked and global.MKSS_BarrierIndex is < than Y, execute a cutscene

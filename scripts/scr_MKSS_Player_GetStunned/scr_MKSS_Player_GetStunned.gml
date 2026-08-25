@@ -2,7 +2,8 @@
 
 function scr_MKSS_Player_GetStunned(targetPlayer)
 {
-	scr_PlaySfx(snd_MKSS_Stun);
+	var sfx = scr_PlaySfx(snd_MKSS_Stun);
+	audio_sound_pitch(sfx,random_range(.85,1.15));
 	
 	with (targetPlayer)
 	{

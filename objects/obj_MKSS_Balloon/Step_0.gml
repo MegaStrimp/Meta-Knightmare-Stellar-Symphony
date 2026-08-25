@@ -37,7 +37,8 @@ if (!localPause)
 	
 	if (activated)
 	{
-		scr_PlaySfx(snd_MKSS_EnemyHurt1);
+		var sfx = scr_PlaySfx(snd_MKSS_EnemyHurt1);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		scr_StageEntityTracker_Add();
 		

@@ -5,7 +5,8 @@ function scr_MKSS_Attack_Execute_Rango_Jump()
 	attackString = global.MKSS_AttackList[attackIndex].ID;
 	scr_Debug_WriteLog(string(object_get_name(object_index)) + " Used [" + attackString + "]");
 	
-	scr_PlaySfx(snd_MKSS_RangoAttack);
+	var sfx = scr_PlaySfx(snd_MKSS_RangoAttack);
+	audio_sound_pitch(sfx,random_range(.85,1.15));
 	
 	#region Owner Variables
 	var nearestPlayer = instance_nearest(x,y,obj_Player);

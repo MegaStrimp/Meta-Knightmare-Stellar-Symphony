@@ -84,7 +84,8 @@ function scr_MKSS_UI_Notif_Init_Set()
 	
 	var notifNextScript = function()
 	{
-		scr_PlaySfx(snd_MKSS_ButtonChange);
+		var sfx = scr_PlaySfx(snd_MKSS_ButtonChange);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		var targetRoom = rm_MKSS_BattleshipHalberd;
 		scr_GoToRoom(targetRoom,false);
@@ -111,7 +112,8 @@ function scr_MKSS_UI_Notif_Init_Set()
 	
 	var notifBackScript = function()
 	{
-		scr_PlaySfx(snd_MKSS_ButtonNo);
+		var sfx = scr_PlaySfx(snd_MKSS_ButtonNo);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		isClosed = true;
 		destroyTimer = destroyTimerMax;
@@ -131,7 +133,8 @@ function scr_MKSS_UI_Notif_Init_Set()
 	
 	var notifNextScript = function()
 	{
-		scr_PlaySfx(snd_MKSS_ButtonChange);
+		var sfx = scr_PlaySfx(snd_MKSS_ButtonChange);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		var targetRoom = rm_MKSS_Menu_TitleScreen;
 		scr_GoToRoom(targetRoom,false);
@@ -158,7 +161,8 @@ function scr_MKSS_UI_Notif_Init_Set()
 	
 	var notifBackScript = function()
 	{
-		scr_PlaySfx(snd_MKSS_ButtonNo);
+		var sfx = scr_PlaySfx(snd_MKSS_ButtonNo);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		isClosed = true;
 		destroyTimer = destroyTimerMax;
@@ -186,7 +190,8 @@ function scr_MKSS_UI_Notif_Init_Set()
 	
 	var notifBackScript = function()
 	{
-		scr_PlaySfx(snd_MKSS_ButtonNo);
+		var sfx = scr_PlaySfx(snd_MKSS_ButtonNo);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		isClosed = true;
 		destroyTimer = destroyTimerMax;
@@ -208,7 +213,8 @@ function scr_MKSS_UI_Notif_Init_Set()
 	{
 		destroyTimer = 0;
 		
-		scr_PlaySfx(snd_MKSS_DeleteSaveAlert);
+		var sfx = scr_PlaySfx(snd_MKSS_DeleteSaveAlert);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		var notifID = global.MKSS_NotifIDs[? "deleteSave3"];
 		scr_MKSS_ObtainNotif(notifID,true);
@@ -216,7 +222,8 @@ function scr_MKSS_UI_Notif_Init_Set()
 	
 	var notifBackScript = function()
 	{
-		scr_PlaySfx(snd_MKSS_ButtonNo);
+		var sfx = scr_PlaySfx(snd_MKSS_ButtonNo);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		isClosed = true;
 		destroyTimer = destroyTimerMax;
@@ -234,7 +241,8 @@ function scr_MKSS_UI_Notif_Init_Set()
 	
 	var notifNextScript = function()
 	{
-		scr_PlaySfx(snd_MKSS_DeleteSave);
+		var sfx = scr_PlaySfx(snd_MKSS_DeleteSave);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		scr_Camera_SetScreenshake(3,1);
 		
@@ -260,7 +268,8 @@ function scr_MKSS_UI_Notif_Init_Set()
 	
 	var notifBackScript = function()
 	{
-		scr_PlaySfx(snd_MKSS_ButtonNo);
+		var sfx = scr_PlaySfx(snd_MKSS_ButtonNo);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		isClosed = true;
 		destroyTimer = destroyTimerMax;

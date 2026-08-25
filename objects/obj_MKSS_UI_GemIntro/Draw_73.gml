@@ -60,5 +60,5 @@ var targetIcon = global.UI_IconBindings[? string(input_binding_get("A"))];
 if (targetIcon != undefined) nextIcon = "[" + sprite_get_name(targetIcon) + "]";
 
 var text = scribble(nextIcon + " Begin");
-text.draw(xx + global.gameWidth - 4 - text.get_width(),yy + global.gameHeight - 16 + hintOffset + (2 * (buttonInputTimerComponent_YTimer != -1)));
+text.draw(xx + global.gameWidth - 4 - text.get_width(),yy + global.gameHeight - 16 + hintOffset + (2 * (buttonInputTimerComponent_ATimer != -1)));
 #endregion

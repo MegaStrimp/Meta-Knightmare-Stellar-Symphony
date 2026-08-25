@@ -8,7 +8,8 @@ function scr_MKSS_Player_SpecialPoints_Add(targetSpecialPoints)
 		
 		if ((global.MKSS_SpecialCurrent == global.MKSS_SpecialTarget) and (!global.MKSS_SpecialDeflation))
 		{
-			scr_PlaySfx(snd_MKSS_SpecialBarCharge);
+			var sfx = scr_PlaySfx(snd_MKSS_SpecialBarCharge);
+			audio_sound_pitch(sfx,random_range(.85,1.15));
 			
 			with (obj_FrameworkControl)
 			{

@@ -34,9 +34,12 @@ function scr_MKSS_Player_MetaKnight_State_Duck_Step()
 		#endregion
 		
 		#region Attack
-		if (currentAbility != -1)
+		if (!place_meeting(x,y - 1,obj_Wall))
 		{
-			script_execute(global.MKSS_WeaponList[currentAbility].baseScript);
+			if (currentAbility != -1)
+			{
+				script_execute(global.MKSS_WeaponList[currentAbility].baseScript);
+			}
 		}
 		#endregion
 		

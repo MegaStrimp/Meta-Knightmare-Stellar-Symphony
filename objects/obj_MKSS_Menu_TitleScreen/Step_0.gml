@@ -119,7 +119,8 @@ if (!global.pauseFinal)
 		{
 			if ((input_check_pressed("start",playerNum)) or (input_check_pressed("A",playerNum)) or (mouse_check_button_pressed(mb_left)))
 			{
-				scr_PlaySfx(snd_MKSS_ButtonYes);
+				var sfx = scr_PlaySfx(snd_MKSS_ButtonYes);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				state = 4;
 				

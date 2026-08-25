@@ -82,6 +82,10 @@ function scr_MKSS_Pause_DrawEnd()
 	draw_surface_ext(MKSS_GamePause_CircleSurfaceOutline,xx,yy,1,1,0,c_white,MKSS_GamePause_UpgradesAlpha);
 	#endregion
 	
+	#region Create Surface
+	if (!instance_exists(obj_MKSS_Surface_Space)) instance_create_depth(0,0,0,obj_MKSS_Surface_Space);
+	#endregion
+	
 	#region Draw Surface
 	scr_DrawMask_Begin(xx,yy,xx + global.gameWidth,yy + global.gameHeight);
 	

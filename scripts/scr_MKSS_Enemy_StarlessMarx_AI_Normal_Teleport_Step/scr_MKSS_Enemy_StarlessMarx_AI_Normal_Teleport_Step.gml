@@ -45,7 +45,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Teleport_Step()
 				}
 				else
 				{
-					scr_PlaySfx(snd_MKSS_MarxAppear);
+					var sfx = scr_PlaySfx(snd_MKSS_MarxAppear);
+					audio_sound_pitch(sfx,random_range(.85,1.15));
 					
 					sprite_index = spriteSet.sprBallIn;
 					image_index = 0;

@@ -86,7 +86,11 @@ for (var i = 0; i < ds_list_size(constellationList); i++)
 		
 		selection = ds_list_find_value(constellationList,i);
 		
-		if (selectionPrev != selection) scr_PlaySfx(snd_MKSS_BossHealth);
+		if (selectionPrev != selection)
+		{
+			var sfx = scr_PlaySfx(snd_MKSS_BossHealth);
+			audio_sound_pitch(sfx,random_range(.85,1.15));
+		}
 	}
 }
 #endregion

@@ -10,7 +10,8 @@ function scr_MKSS_Attack_StarlessMarx_Vine_Step()
 			growTimer = max(growTimer - speedMultFinal,0);
 			if (growTimer == 0)
 			{
-				scr_PlaySfx(snd_MKSS_MarxVine);
+				var sfx = scr_PlaySfx(snd_MKSS_MarxVine);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				var _x = choose(0,irandom_range(-3,3));
 				scr_MKSS_ParticleSet_Common(x + _x,y - 16,spr_MKSS_Particle_VineEffect1,-2);

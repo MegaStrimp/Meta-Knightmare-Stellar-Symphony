@@ -68,7 +68,8 @@ function scr_MKSS_Enemy_ChunkyDee_AI_Normal_ThrowEnemy_Step()
 			if (throwTimer == 0)
 			{
 				sprite_index = spriteSet.sprThrow;
-				scr_PlaySfx(snd_MKSS_Throw);
+				var sfx = scr_PlaySfx(snd_MKSS_Throw);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				image_index = 0;
 				
 				with (heldEnemy)

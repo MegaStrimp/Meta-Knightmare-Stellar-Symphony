@@ -30,7 +30,6 @@ arenaIndex = -1;
 
 dmg = MKSS_Base_EnemyContactDamage;
 
-//hitParticleIndex = scr_MKSS_ParticleSet_StarBlockBreak; STRIMPTODO
 deathParticleIndex = scr_MKSS_ParticleSet_EnemyDefeatStars;
 
 shadowAlphaTarget = position_meeting(x,y,obj_MKSS_ShadowArea);

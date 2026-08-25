@@ -18,7 +18,8 @@ if (!localPause)
 			{
 				scr_MKSS_ParticleSet_ConcentratedGemBreak(other.x,other.y,other.gemPalette);
 				
-				scr_PlaySfx(snd_MKSS_GemHit);
+				var sfx = scr_PlaySfx(snd_MKSS_GemHit);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				other.lastHitProjectile = id;
 				other.knockbackLength = other.knockbackLengthMax;
@@ -41,7 +42,8 @@ if (!localPause)
 						if (other.targetUnlockedStageID != -1) global.MKSS_StageList[other.targetUnlockedStageID].isUnlocked = true;
 					}
 
-					scr_PlaySfx(snd_MKSS_GemBreak);
+					var sfx = scr_PlaySfx(snd_MKSS_GemBreak);
+					audio_sound_pitch(sfx,random_range(.85,1.15));
 					
 					if (audio_is_playing(snd_MKSS_GemAmbience)) audio_stop_sound(snd_MKSS_GemAmbience);
 					

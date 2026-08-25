@@ -59,7 +59,8 @@ function scr_MKSS_Player_MetaKnight_State_StageClear_Step()
 				break;
 				
 				case 3:
-				scr_PlaySfx(snd_MKSS_WingFlap);
+				var sfx = scr_PlaySfx(snd_MKSS_WingFlap);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				scr_ChangeSprite(spriteSet.sprFlap);
 				

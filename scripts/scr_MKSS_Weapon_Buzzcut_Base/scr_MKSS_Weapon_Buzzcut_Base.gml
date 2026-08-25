@@ -129,7 +129,8 @@ function scr_MKSS_Weapon_Buzzcut_Base()
 			}
 			else if ((global.MKSS_SpecialCurrent == global.MKSS_SpecialTarget) and (!global.MKSS_SpecialDeflation))
 			{
-				scr_PlaySfx(snd_MKSS_MetaQuick);
+				var sfx = scr_PlaySfx(snd_MKSS_MetaQuick);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				scr_MKSS_UI_SpecialActionText_Create(spr_MKSS_UI_SpecialActionText_MetaQuick);
 				

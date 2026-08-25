@@ -189,7 +189,8 @@ function scr_MKSS_Weapon_Galaxia_Base()
 			}
 			else if ((global.MKSS_SpecialCurrent == global.MKSS_SpecialTarget) and (!global.MKSS_SpecialDeflation))
 			{
-				scr_PlaySfx(snd_MKSS_MetaHeal);
+				var sfx = scr_PlaySfx(snd_MKSS_MetaHeal);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				metaHealParticleAmount = 0;
 				metaHealParticleTimer = 0;

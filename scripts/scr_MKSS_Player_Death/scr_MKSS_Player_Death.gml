@@ -7,7 +7,8 @@ function scr_MKSS_Player_Death(targetPlayer)
 		scr_Debug_WriteLog("Player " + string(playerNum) + " Died");
 		
 		audio_stop_all();
-		scr_PlaySfx(snd_MKSS_Hurt);
+		var sfx = scr_PlaySfx(snd_MKSS_Hurt);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		global.canGamePause = false;
 		

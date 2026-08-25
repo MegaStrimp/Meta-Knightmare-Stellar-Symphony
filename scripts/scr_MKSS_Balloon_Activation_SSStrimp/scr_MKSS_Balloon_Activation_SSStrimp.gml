@@ -3,7 +3,8 @@
 function scr_MKSS_Balloon_Activation_SSStrimp()
 {
 	audio_stop_sound(global.musicPlaying);
-	scr_PlaySfx(snd_MKSS_MarxLaugh1);
+	var sfx = scr_PlaySfx(snd_MKSS_MarxLaugh1);
+	audio_sound_pitch(sfx,random_range(.85,1.15));
 	
 	scr_MKSS_UI_BackgroundOverlay_Create(localFreezeFrameTimer);
 	

@@ -58,7 +58,8 @@ function scr_MKSS_Enemy_GhostKnight_AI_WalkAndAttack_Parry_Step()
 			case 0:
 			if (attackStateTimer[attackState] == -1)
 			{
-				scr_PlaySfx(snd_MKSS_ParryExecuteEnemy);
+				var sfx = scr_PlaySfx(snd_MKSS_ParryExecuteEnemy);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				sprite_index = spriteSet.sprGuard;
 				image_index = 0;
@@ -107,7 +108,8 @@ function scr_MKSS_Enemy_GhostKnight_AI_WalkAndAttack_Parry_Step()
 			{
 				if ((!isEnemy) and (isMelee) and (distance_to_object(other) <= 8))
 				{
-					scr_PlaySfx(snd_MKSS_ParryEnemy);
+					var sfx = scr_PlaySfx(snd_MKSS_ParryEnemy);
+					audio_sound_pitch(sfx,random_range(.85,1.15));
 					
 					scr_Enemy_ChangeState_Step(other,other.ghostKnight_Attack_Counter);
 					

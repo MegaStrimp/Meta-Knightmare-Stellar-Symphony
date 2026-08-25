@@ -27,7 +27,8 @@ if (!global.pauseFinal)
 				break;
 				
 				case 3:
-				scr_PlaySfx(snd_MKSS_IntroSlash);
+				var sfx = scr_PlaySfx(snd_MKSS_IntroSlash);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				strimpState = 1;
 				stateTimer = 30;
 				break;

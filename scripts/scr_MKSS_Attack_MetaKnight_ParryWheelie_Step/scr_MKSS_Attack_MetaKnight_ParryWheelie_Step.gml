@@ -37,7 +37,8 @@ function scr_MKSS_Attack_MetaKnight_ParryWheelie_Step()
 		#region Destroy
 		if (place_meeting(x + dirX,y,obj_Wall))
 		{
-			scr_PlaySfx(snd_MKSS_BlockBreak);
+			var sfx = scr_PlaySfx(snd_MKSS_BlockBreak);
+			audio_sound_pitch(sfx,random_range(.85,1.15));
 			
 			scr_MKSS_ParticleSet_Explosion2(x,y);
 			

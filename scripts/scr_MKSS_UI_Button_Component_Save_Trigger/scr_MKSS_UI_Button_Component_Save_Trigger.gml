@@ -4,7 +4,8 @@ function scr_MKSS_UI_Button_Component_Save_Trigger(targetSave)
 {
 	if (!instance_exists(obj_Transition))
 	{
-		scr_PlaySfx(snd_MKSS_DoorEnter);
+		var sfx = scr_PlaySfx(snd_MKSS_DoorEnter);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
 		scr_Music_SetFade(0);
 		
 		global.selectedSave = targetSave;
