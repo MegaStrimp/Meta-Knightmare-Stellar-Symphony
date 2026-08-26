@@ -1,6 +1,6 @@
-///@description MKSS - Enemy - Wheelie - AI - Walk and Attack - Animation End
+///@description MKSS - Enemy - Grand Wheelie - AI - Normal - Animation End
 
-function scr_MKSS_Enemy_Wheelie_AI_WalkAndAttack_AnimationEnd()
+function scr_MKSS_Enemy_GrandWheelie_AI_Normal_AnimationEnd()
 {
 	switch (sprite_index)
 	{

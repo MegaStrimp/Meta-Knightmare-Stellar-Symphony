@@ -7,7 +7,7 @@ function scr_MKSS_Enemy_Wheelie_AI_Walk_AnimationEnd()
 		case spriteSet.sprTurn:
 		isTurning = false;
 		
-		sprite_index = spriteSet.sprTurn;
+		sprite_index = spriteSet.sprWalk;
 		image_index = 0;
 		break;
 	}

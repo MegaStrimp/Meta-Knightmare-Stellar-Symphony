@@ -15,11 +15,12 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Idle_Step()
 		}
 		
 		dirX = scr_MKSS_Enemy_DirTarget();
-				
-		sprite_index = spriteSet.sprIdle;
+		
+		sprite_index = spriteSet.sprWalk;
 		image_index = 0;
 		
 		attackTimer = attackTimerMax;
+		attackTimer = -1;
 		
 		enemyState_Setup = false;
 	}
@@ -27,6 +28,23 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Idle_Step()
 	
 	if (!localPause)
 	{
+		#region Movement
+		scr_Component_WalkAndTurn_Step();
+		#endregion
+		
+		#region Wall Detection
+		if ((!isTurning) and (place_meeting(x + (dirX * floor(global.gameTileSize / 2)),y,obj_Wall)))
+		{
+			dirX *= -1;
+			isTurning = true;
+			
+			revertTimer = 0;
+			
+			sprite_index = spriteSet.sprTurn;
+			image_index = 0;
+		}
+		#endregion
+		
 		#region Friction
 		var decelFinal = decel * speedMultFinal;
 		
@@ -60,7 +78,14 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Idle_Step()
 		#region Animation
 		if ((hurtTimer == -1) and (hp > 0))
 		{
-			sprite_index = spriteSet.sprIdle;
+			if (isTurning)
+			{
+				sprite_index = spriteSet.sprTurn;
+			}
+			else
+			{
+				sprite_index = spriteSet.sprWalk;
+			}
 		}
 		#endregion
 	}

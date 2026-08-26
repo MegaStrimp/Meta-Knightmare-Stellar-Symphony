@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_MKSS_Enemy_GrandWheelie_Base_Idle",
+  "%Name":"spr_MKSS_Enemy_GrandWheelie_Base_Walk",
   "bboxMode":0,
   "bbox_bottom":33,
   "bbox_left":0,
@@ -33,7 +33,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"2bbe9e77-e8c3-4f48-a30b-b221dc72c649","blendMode":0,"displayName":"default","isLocked":false,"name":"2bbe9e77-e8c3-4f48-a30b-b221dc72c649","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_MKSS_Enemy_GrandWheelie_Base_Idle",
+  "name":"spr_MKSS_Enemy_GrandWheelie_Base_Walk",
   "nineSlice":null,
   "origin":9,
   "parent":{
@@ -45,7 +45,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_MKSS_Enemy_GrandWheelie_Base_Idle",
+    "%Name":"spr_MKSS_Enemy_GrandWheelie_Base_Walk",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -69,7 +69,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_MKSS_Enemy_GrandWheelie_Base_Idle",
+    "name":"spr_MKSS_Enemy_GrandWheelie_Base_Walk",
     "playback":1,
     "playbackSpeed":18.0,
     "playbackSpeedType":0,
@@ -81,28 +81,28 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"076d9505-e00a-4f0d-933e-25c5b1a908f0","path":"sprites/spr_MKSS_Enemy_GrandWheelie_Base_Idle/spr_MKSS_Enemy_GrandWheelie_Base_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"076d9505-e00a-4f0d-933e-25c5b1a908f0","path":"sprites/spr_MKSS_Enemy_GrandWheelie_Base_Walk/spr_MKSS_Enemy_GrandWheelie_Base_Walk.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"2ca7619b-b307-40dd-b695-d11ad14cfe98","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"aafaec4b-7cc7-4a6b-a472-a343c7663157","path":"sprites/spr_MKSS_Enemy_GrandWheelie_Base_Idle/spr_MKSS_Enemy_GrandWheelie_Base_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"aafaec4b-7cc7-4a6b-a472-a343c7663157","path":"sprites/spr_MKSS_Enemy_GrandWheelie_Base_Walk/spr_MKSS_Enemy_GrandWheelie_Base_Walk.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"3112758d-d0c8-4f8b-b23c-ad1e10be1c82","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4bd670e1-1bd8-4261-8294-212577cb5e43","path":"sprites/spr_MKSS_Enemy_GrandWheelie_Base_Idle/spr_MKSS_Enemy_GrandWheelie_Base_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4bd670e1-1bd8-4261-8294-212577cb5e43","path":"sprites/spr_MKSS_Enemy_GrandWheelie_Base_Walk/spr_MKSS_Enemy_GrandWheelie_Base_Walk.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"6003f48e-483b-4743-898e-69c73f776279","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"745cdbc8-cf5c-497a-ac12-b002d6ed5af9","path":"sprites/spr_MKSS_Enemy_GrandWheelie_Base_Idle/spr_MKSS_Enemy_GrandWheelie_Base_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"745cdbc8-cf5c-497a-ac12-b002d6ed5af9","path":"sprites/spr_MKSS_Enemy_GrandWheelie_Base_Walk/spr_MKSS_Enemy_GrandWheelie_Base_Walk.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"18844e25-2b72-416b-855d-d0e0deaf80ce","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"815a4152-65b7-4002-aaa1-be978c5bd1cf","path":"sprites/spr_MKSS_Enemy_GrandWheelie_Base_Idle/spr_MKSS_Enemy_GrandWheelie_Base_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"815a4152-65b7-4002-aaa1-be978c5bd1cf","path":"sprites/spr_MKSS_Enemy_GrandWheelie_Base_Walk/spr_MKSS_Enemy_GrandWheelie_Base_Walk.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"f83309ff-36f4-4265-bfc7-074aad1f34ed","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"66c24d43-4fc9-4352-ba73-f48c52482932","path":"sprites/spr_MKSS_Enemy_GrandWheelie_Base_Idle/spr_MKSS_Enemy_GrandWheelie_Base_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"66c24d43-4fc9-4352-ba73-f48c52482932","path":"sprites/spr_MKSS_Enemy_GrandWheelie_Base_Walk/spr_MKSS_Enemy_GrandWheelie_Base_Walk.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"11fab86d-47eb-4ada-b9b8-286175025250","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"99c9ba03-baae-4040-a203-12003ed450ed","path":"sprites/spr_MKSS_Enemy_GrandWheelie_Base_Idle/spr_MKSS_Enemy_GrandWheelie_Base_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"99c9ba03-baae-4040-a203-12003ed450ed","path":"sprites/spr_MKSS_Enemy_GrandWheelie_Base_Walk/spr_MKSS_Enemy_GrandWheelie_Base_Walk.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"8c8114fa-abc1-40a9-aef3-8115007cd7ad","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f2b54f5c-8dd0-42ca-ba2d-bdd7ead06ba3","path":"sprites/spr_MKSS_Enemy_GrandWheelie_Base_Idle/spr_MKSS_Enemy_GrandWheelie_Base_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f2b54f5c-8dd0-42ca-ba2d-bdd7ead06ba3","path":"sprites/spr_MKSS_Enemy_GrandWheelie_Base_Walk/spr_MKSS_Enemy_GrandWheelie_Base_Walk.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"7ff13e6a-1518-4cbe-a41c-dc4c7546fd66","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

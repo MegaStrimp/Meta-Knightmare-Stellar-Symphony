@@ -2,6 +2,10 @@
 
 function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Setup(targetIsBoss = true,targetPlayBossTheme = true)
 {
+	#region Component Setup
+	scr_Component_WalkAndTurn_Setup(1.5,.15,-1,-1);
+	#endregion
+	
 	#region Physics Variables
 	jumpspeed = 3;
 	
@@ -16,8 +20,6 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Setup(targetIsBoss = true,targetP
 	#region Gameplay Variables
 	attackList = ds_list_create();
 	
-	hasWalked = false;
-	
 	grandWheelie_Attack_FlameTrail = scr_MKSS_Enemy_GrandWheelie_AI_Normal_FlameTrail_Step;
 	grandWheelie_Attack_BigRush = scr_MKSS_Enemy_GrandWheelie_AI_Normal_BigRush_Step;
 	
@@ -31,6 +33,16 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Setup(targetIsBoss = true,targetP
 	
 	isBoss = targetIsBoss;
 	playBossTheme = targetPlayBossTheme;
+	
+	parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryWheelie"];
+	
+	isTurning = false;
+	
+	revertTimer = -1;
+	revertTimerMax = 120;
+	
+	afterimageTimer = -1;
+	afterimageTimerMax = 2;
 	#endregion
 	
 	#region Attack Variables

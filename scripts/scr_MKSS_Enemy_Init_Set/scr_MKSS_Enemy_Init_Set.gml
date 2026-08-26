@@ -702,7 +702,9 @@ function scr_MKSS_Enemy_Init_Set()
 	
 	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
 	{
-		sprIdle: spr_MKSS_Enemy_GrandWheelie_Base_Idle,
+		sprWalk: spr_MKSS_Enemy_GrandWheelie_Base_Walk,
+		sprTurn: spr_MKSS_Enemy_GrandWheelie_Base_Turn,
+		sprLayDown: spr_MKSS_Enemy_GrandWheelie_Base_LayDown,
 		
 		sprHurt1: spr_MKSS_Enemy_GrandWheelie_Base_Hurt1,
 		sprHurt2: spr_MKSS_Enemy_GrandWheelie_Base_Hurt2,

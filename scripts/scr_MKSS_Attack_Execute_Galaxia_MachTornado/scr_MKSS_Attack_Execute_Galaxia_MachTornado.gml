@@ -13,6 +13,9 @@ function scr_MKSS_Attack_Execute_Galaxia_MachTornado()
 	#region Owner Variables
 	isAttacking = true;
 	
+	hasAttackAnimation = false;
+	scr_ChangeSprite(-1);
+	
 	scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Galaxia_MachTornado_Step);
 	
 	canCancelAttackAnimation = false;
