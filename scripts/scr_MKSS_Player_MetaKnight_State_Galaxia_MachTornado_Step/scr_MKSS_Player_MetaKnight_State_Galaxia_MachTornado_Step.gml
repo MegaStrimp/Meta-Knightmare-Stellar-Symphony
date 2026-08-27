@@ -48,6 +48,7 @@ function scr_MKSS_Player_MetaKnight_State_Galaxia_MachTornado_Step()
 						owner = other;
 						isEnemy = false;
 						dmg = floor(MKSS_Base_GalaxiaDamage / 4);
+						bonusValue = MKSS_Base_AttackBonusValue;
 						followOwner = true;
 						canBreakBlocks = true;
 						isMelee = true;

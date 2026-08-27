@@ -40,6 +40,7 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryIceBomb(playerIndex,currentParr
 			owner = playerIndex;
 			isEnemy = false;
 			dmg = -1;
+			bonusValue = MKSS_Base_AttackBonusValue;
 			sprite_index = currentParriedObject.sprite_index;
 			attackAIStep = scr_MKSS_Attack_MetaKnight_IceBomb_Step;
 		}

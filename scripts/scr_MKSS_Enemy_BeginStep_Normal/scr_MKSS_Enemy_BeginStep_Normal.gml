@@ -13,6 +13,18 @@ function scr_MKSS_Enemy_BeginStep_Normal()
 	}
 	#endregion
 	
+	#region Enemy Phase
+	if (array_length(enemyPhaseTargetHp) >= enemyPhase)
+	{
+		if (hp <= enemyPhaseTargetHp[enemyPhase - 1])
+		{
+			if (enemyPhaseSetupScript[enemyPhase - 1] != -1) script_execute(enemyPhaseSetupScript[enemyPhase - 1])
+			
+			enemyPhase += 1;
+		}
+	}
+	#endregion
+	
 	#region Shadow
 	shadowAlphaTarget = 0;
 	

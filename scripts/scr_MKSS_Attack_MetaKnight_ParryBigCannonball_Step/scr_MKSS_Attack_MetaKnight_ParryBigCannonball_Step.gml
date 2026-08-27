@@ -40,6 +40,7 @@ function scr_MKSS_Attack_MetaKnight_ParryBigCannonball_Step()
 							owner = cannonballOwner;
 							isEnemy = false;
 							dmg = 4;
+							bonusValue = MKSS_Base_AttackBonusValue;
 							canBreakBlocks = true;
 							canBeFinisher = true;
 							isMelee = false;

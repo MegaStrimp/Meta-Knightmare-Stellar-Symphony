@@ -26,6 +26,7 @@ function scr_MKSS_Attack_MetaKnight_ParryGigantEdgeSwordThrow_Step()
 						owner = cutterOwner;
 						isEnemy = false;
 						dmg = floor(MKSS_Base_EnemyHP_Fodder / 2);
+						bonusValue = MKSS_Base_AttackBonusValue;
 						canBreakBlocks = true;
 						canBeFinisher = true;
 						isMelee = false;

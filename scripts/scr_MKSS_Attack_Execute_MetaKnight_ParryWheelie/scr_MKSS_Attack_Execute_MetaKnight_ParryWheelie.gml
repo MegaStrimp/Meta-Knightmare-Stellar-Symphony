@@ -38,6 +38,7 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryWheelie(playerIndex,currentParr
 			afterimageTimerMax = 2;
 			afterimageTimer = afterimageTimerMax;
 			dmg = MKSS_Base_PlayerContactDamage;
+			bonusValue = MKSS_Base_AttackBonusValue;
 			dirX = -scr_MKSS_Enemy_DirTarget();
 			image_xscale = scale * dirX;
 			sprite_index = spr_MKSS_Attack_MetaKnight_ParryWheelie;

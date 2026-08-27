@@ -10,7 +10,8 @@ maxHsp = 0;
 
 //Sprites
 
-sprIdle = spr_MKSS_BgEnv_StarlessMarxArena_Ground_Row2;
+sprIdle = spr_MKSS_BgEnv_StarlessMarxArena_Ground_Row2_Normal;
+sprEnraged = spr_MKSS_BgEnv_StarlessMarxArena_Ground_Row2_Enraged;
 
 //Other Variables
 
@@ -24,4 +25,3 @@ scaleDir = 1;
 scaleOffset = 0;
 
 accel = 0;
-alpha = 1;

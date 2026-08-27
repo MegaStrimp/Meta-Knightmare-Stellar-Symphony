@@ -1,6 +1,11 @@
 ///@description Draw Begin
 
-draw_rectangle_colour(0,0,room_width,room_height,c_black,c_black,c_black,c_black,false);
+#region Variables
+var xx = camera_get_view_x(mainView);
+var yy = camera_get_view_y(mainView);
+#endregion
+
+draw_rectangle_color(xx,yy,xx + global.gameWidth,yy + global.gameHeight,c_black,c_black,c_black,c_black,false);
 
 if (global.shaders) pal_swap_set(sprBGPal,palIndex,false);
 
@@ -8,6 +13,17 @@ if (global.shaders) pal_swap_set(sprBGPal,palIndex,false);
 draw_sprite_tiled_ext(sprBG,0,bgX,bgY,1,1,c_white,alpha);
 
 if (global.shaders) pal_swap_reset();
+
+#region Overlay
+if (hasOverlay)
+{
+	var targetAlpha = sine_between((global.currentTimePausable / 10),10,0,.5);
+	
+	draw_set_alpha(targetAlpha);
+	draw_rectangle_color(xx,yy,xx + global.gameWidth,yy + global.gameHeight,c_black,c_black,c_black,c_black,false);
+	draw_set_alpha(1);
+}
+#endregion
 
 for (var i = 0; i < 2; i++)
 {

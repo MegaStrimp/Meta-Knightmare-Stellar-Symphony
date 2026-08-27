@@ -15,6 +15,7 @@ function scr_MKSS_Player_MetaKnight_State_Slide_Step()
 			owner = other;
 			isEnemy = false;
 			dmg = floor(MKSS_Base_PlayerContactDamage / 2);
+			bonusValue = MKSS_Base_AttackBonusValue;
 			followOwner = true;
 			destroyIfOwnerNotAttack = true;
 			canBreakBlocks = true;

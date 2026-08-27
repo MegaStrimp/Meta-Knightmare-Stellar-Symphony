@@ -2,10 +2,6 @@
 
 if (!localPause)
 {
-	if(secondphase){
-		bgVDir = -1;
-	}
-	
 	bgX -= bgSp;
 	bgY += bgSp*bgVDir;
 

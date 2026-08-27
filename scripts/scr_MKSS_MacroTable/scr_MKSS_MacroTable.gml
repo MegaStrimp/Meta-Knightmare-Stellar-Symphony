@@ -9,6 +9,8 @@ function scr_MKSS_MacroTable()
 	
 	#macro MKSS_Base_SonicWingsMult .5
 	
+	#macro MKSS_Base_AttackBonusValue 5
+	
 	#macro MKSS_Base_PlayerContactDamage 50
 	
 	#macro MKSS_Base_GalaxiaDamage 40

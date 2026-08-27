@@ -30,6 +30,7 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryGigantEdgeSwordThrow(playerInde
 			owner = playerIndex;
 			isEnemy = false;
 			dmg = -1;
+			bonusValue = MKSS_Base_AttackBonusValue;
 			dirX = currentParriedObject.dirX;
 			sprite_index = spr_MKSS_Attack_GigantEdge_SwordProjectile;
 			image_index = currentParriedObject.image_index;

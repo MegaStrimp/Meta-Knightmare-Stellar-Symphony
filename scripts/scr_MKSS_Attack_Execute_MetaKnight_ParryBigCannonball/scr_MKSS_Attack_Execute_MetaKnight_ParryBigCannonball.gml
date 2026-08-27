@@ -30,6 +30,7 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryBigCannonball(playerIndex,curre
 			owner = playerIndex;
 			isEnemy = false;
 			dmg = -1;
+			bonusValue = MKSS_Base_AttackBonusValue;
 			sprite_index = spr_MKSS_Attack_ChasseEmee_BigCannonball;
 			attackAIStep = scr_MKSS_Attack_MetaKnight_ParryBigCannonball_Step;
 			hsp = 0;

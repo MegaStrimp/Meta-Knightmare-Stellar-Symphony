@@ -14,6 +14,28 @@ pauseOutsideView = false;
 canHaveKnockback = false;
 
 freezeFrameForce = 2;
+
+enemyPhaseTargetHp = [MKSS_Base_EnemyHP_Boss - 100];
+enemyPhaseSetupScript = 
+[
+	function()
+	{
+		with (obj_MKSS_BgEnv_StarlessMarxArena)
+		{
+			sprBG = bg_MKSS_BgEnv_StarlessMarxArena_Enraged;
+			sprBGPal = bg_MKSS_BgEnv_StarlessMarxArena_Palette_Enraged;
+			
+			hasOverlay = true;
+			
+			bgVDir = -1;
+		}
+		
+		with (obj_MKSS_BgEnv_StarlessMarxArena_Ground)
+		{
+			sprite_index = sprEnraged;
+		}
+	}
+];
 #endregion
 
 #region Sprites

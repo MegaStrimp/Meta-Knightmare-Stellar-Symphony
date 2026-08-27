@@ -39,6 +39,7 @@ function scr_MKSS_Attack_Execute_Galaxia_Stab()
 		owner = other;
 		isEnemy = false;
 		dmg = floor(MKSS_Base_GalaxiaDamage / 2);
+		bonusValue = MKSS_Base_AttackBonusValue;
 		followOwner = true;
 		followOwnerImageIndex = true;
 		destroyIfOwnerNotAttack = true;

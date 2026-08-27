@@ -30,6 +30,7 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryStarlessMarxCutter(playerIndex,
 			owner = playerIndex;
 			isEnemy = false;
 			dmg = -1;
+			bonusValue = MKSS_Base_AttackBonusValue;
 			dirX = currentParriedObject.dirX;
 			sprite_index = spr_MKSS_Attack_StarlessMarx_ShooterCutter;
 			attackAIStep = scr_MKSS_Attack_MetaKnight_ParryStarlessMarxCutter_Step;

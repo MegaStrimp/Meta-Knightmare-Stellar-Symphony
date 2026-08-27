@@ -17,6 +17,8 @@ parryAttackIndex = -1;
 parriableParticleTimer = -1;
 parriableParticleTimerMax = 5;
 
+bonusValue = MKSS_Base_AttackBonusValue;
+
 outlineColor = [-1,-1,-1];
 drawSurface = -1;
 drawSurface_PixelH = shader_get_uniform(shd_ColoredOutline,"pixelH");

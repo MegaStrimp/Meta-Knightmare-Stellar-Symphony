@@ -223,7 +223,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_JavelinKnight_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_JavelinKnight_Portrait_Talk,
-			text: "Hey master,[delay,200] good to see you back!",
+			text: "Hey boss,[delay,200] good to see you back!",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
 			drawScript: defaultDrawScript
@@ -281,7 +281,39 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_JavelinKnight_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_JavelinKnight_Portrait_Talk,
-			text: "Hey master,[delay,200] good to see you back!",
+			text: "Hey boss,[delay,200] sorry I can't help you this time around.",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_JavelinKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_JavelinKnight_Portrait_Talk,
+			text: "The Captain has assigned me to take care of our new recruits.",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_JavelinKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_JavelinKnight_Portrait_Talk,
+			text: "Some of them are a bit...[delay,500] small and weak.",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_JavelinKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_JavelinKnight_Portrait_Talk,
+			text: "Would you mind carrying them around and show them how we do stuff?",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_JavelinKnight_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_JavelinKnight_Portrait_Talk,
+			text: "They are too sleepy to attend our trainings.",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
 			drawScript: defaultDrawScript

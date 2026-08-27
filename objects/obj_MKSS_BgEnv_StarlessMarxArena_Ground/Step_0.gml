@@ -28,6 +28,8 @@ if (!localPause)
 		newTileRow.maxHsp = maxHsp;
 		newTileRow.accel = accel;
 		newTileRow.sprIdle = sprIdle;
+		newTileRow.sprEnraged = sprEnraged;
+		newTileRow.sprite_index = sprite_index;
 		newTileRow.valueShiftPos = valueShiftPos;
 		newTileRow.valueShiftDir = valueShiftDir;
 		newTileRow.valueShiftPos = valueShiftPos;
@@ -41,9 +43,6 @@ if (!localPause)
 	//image_speed = imageSpeed;
 	//image_xscale = scale + (scaleOffset / 4);
 	//image_yscale = scale - (scaleOffset / 4);
-	image_alpha = alpha;
-	
-	sprite_index = sprIdle;
 }
 else
 {

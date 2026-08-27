@@ -753,8 +753,8 @@ function scr_MKSS_Enemy_Init_Set()
 		
 		
 		sprShipNormal: spr_MKSS_Enemy_ChasseEmee_Base_BackShip,
-		sprShipBackground: spr_MKSS_ChasseShip_Idle,
-		sprShipBackgroundAppear: spr_MKSS_ChasseShip_Appear,
+		sprShipBackground: spr_MKSS_BgEnv_ChasseShip_Idle,
+		sprShipBackgroundAppear: spr_MKSS_BgEnv_ChasseShip_Appear,
 		
 		maskIndexDefault: spr_16x16Mask_MiddleOrigin,
 		maskIndex: spr_16x16Mask_MiddleOrigin

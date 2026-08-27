@@ -60,6 +60,7 @@ function scr_MKSS_Player_MetaKnight_State_Galaxia_DownThrust_Step()
 					owner = other;
 					isEnemy = false;
 					dmg = MKSS_Base_GalaxiaDamage;
+					bonusValue = MKSS_Base_AttackBonusValue;
 					destroyIfOwnerNotAttack = true;
 					pauseAfterAnimation = true;
 					canBreakBlocks = true;
@@ -95,6 +96,7 @@ function scr_MKSS_Player_MetaKnight_State_Galaxia_DownThrust_Step()
 						owner = other;
 						isEnemy = false;
 						dmg = floor(MKSS_Base_GalaxiaDamage / 1.5);
+						bonusValue = MKSS_Base_AttackBonusValue;
 						followOwner = true;
 						followOwnerImageIndex = true;
 						destroyIfOwnerNotAttack = true;

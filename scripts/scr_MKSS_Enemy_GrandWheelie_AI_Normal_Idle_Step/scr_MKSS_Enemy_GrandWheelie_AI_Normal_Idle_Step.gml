@@ -20,7 +20,6 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Idle_Step()
 		image_index = 0;
 		
 		attackTimer = attackTimerMax;
-		attackTimer = -1;
 		
 		enemyState_Setup = false;
 	}
@@ -37,8 +36,6 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Idle_Step()
 		{
 			dirX *= -1;
 			isTurning = true;
-			
-			revertTimer = 0;
 			
 			sprite_index = spriteSet.sprTurn;
 			image_index = 0;

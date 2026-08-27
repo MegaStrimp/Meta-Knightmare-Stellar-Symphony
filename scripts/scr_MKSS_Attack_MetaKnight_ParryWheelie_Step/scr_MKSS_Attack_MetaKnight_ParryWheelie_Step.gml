@@ -47,6 +47,7 @@ function scr_MKSS_Attack_MetaKnight_ParryWheelie_Step()
 				owner = other.owner;
 				isEnemy = false;
 				dmg = floor(MKSS_Base_PlayerContactDamage * 1.5);
+				bonusValue = MKSS_Base_AttackBonusValue;
 				canBreakBlocks = true;
 				destroyTimer = 5;
 				freezeFrameForce = 1;

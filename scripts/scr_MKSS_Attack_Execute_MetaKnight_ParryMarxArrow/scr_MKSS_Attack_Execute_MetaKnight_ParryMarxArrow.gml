@@ -30,6 +30,7 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryMarxArrow(playerIndex,currentPa
 			owner = playerIndex;
 			isEnemy = false;
 			dmg = -1;
+			bonusValue = MKSS_Base_AttackBonusValue;
 			sprite_index = currentParriedObject.sprite_index;
 			image_index = 5;
 			imageSpeed = 0;

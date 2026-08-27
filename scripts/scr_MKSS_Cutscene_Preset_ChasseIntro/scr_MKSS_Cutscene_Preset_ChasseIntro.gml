@@ -24,7 +24,7 @@ function scr_MKSS_Cutscene_Preset_ChasseIntro()
 		},
 		function()
 		{
-			instance_create_depth(camera_get_view_x(mainView) + (global.gameWidth / 2),camera_get_view_y(mainView) + (global.gameHeight / 2),layer_get_depth("BackgroundEnvironment") + 2,obj_MKSS_ChasseShip);
+			instance_create_depth(camera_get_view_x(mainView) + (global.gameWidth / 2),camera_get_view_y(mainView) + (global.gameHeight / 2),layer_get_depth("BackgroundEnvironment") + 2,obj_MKSS_BgEnv_ChasseShip);
 			
 			phaseTimer = 600;
 		},
@@ -43,7 +43,7 @@ function scr_MKSS_Cutscene_Preset_ChasseIntro()
 			
 			bossSpawned = true;
 			
-			with (obj_MKSS_ChasseShip) instance_destroy();
+			with (obj_MKSS_BgEnv_ChasseShip) instance_destroy();
 			
 			phaseTimer = 200;
 		},
@@ -75,7 +75,7 @@ function scr_MKSS_Cutscene_Preset_ChasseIntro()
 				bossSpawned = true;
 			}
 			
-			with (obj_MKSS_ChasseShip) instance_destroy();
+			with (obj_MKSS_BgEnv_ChasseShip) instance_destroy();
 			
 			with (obj_Particle) instance_destroy();
 			

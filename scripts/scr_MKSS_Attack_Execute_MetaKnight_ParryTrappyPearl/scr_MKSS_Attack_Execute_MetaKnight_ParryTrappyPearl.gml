@@ -30,6 +30,7 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryTrappyPearl(playerIndex,current
 			owner = playerIndex;
 			isEnemy = false;
 			dmg = -1;
+			bonusValue = MKSS_Base_AttackBonusValue;
 			sprite_index = spr_MKSS_Attack_Trappy_Pearl;
 			attackAIStep = scr_MKSS_Attack_MetaKnight_ParryTrappyPearl_Step;
 		}

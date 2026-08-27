@@ -35,6 +35,7 @@ function scr_MKSS_Attack_Execute_Buzzcut_Finisher(hasGigatorque = false)
 		owner = other;
 		isEnemy = false;
 		dmg = floor(MKSS_Base_BuzzcutDamage / 2.5);
+		bonusValue = MKSS_Base_AttackBonusValue;
 		followOwner = true;
 		followOwnerImageIndex = true;
 		destroyIfOwnerNotAttack = true;

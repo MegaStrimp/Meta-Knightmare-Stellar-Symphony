@@ -73,6 +73,7 @@ function scr_MKSS_Enemy_WaddleDee_AI_Walk_Step()
 							owner = deeOwner;
 							isEnemy = false;
 							dmg = floor(MKSS_Base_EnemyHP_Fodder / 2);
+							bonusValue = MKSS_Base_AttackBonusValue;
 							canBreakBlocks = true;
 							canBeFinisher = true;
 							isMelee = false;

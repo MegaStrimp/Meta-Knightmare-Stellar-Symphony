@@ -24,6 +24,7 @@ function scr_MKSS_Attack_MetaKnight_ParryMarxArrow_Step()
 						owner = parryOwner;
 						isEnemy = false;
 						dmg = 4;
+						bonusValue = MKSS_Base_AttackBonusValue;
 						canBreakBlocks = true;
 						canBeFinisher = true;
 						isMelee = false;

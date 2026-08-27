@@ -34,6 +34,7 @@ function scr_MKSS_Attack_Execute_Galaxia_UpThrust()
 		owner = other;
 		isEnemy = false;
 		dmg = MKSS_Base_GalaxiaDamage;
+		bonusValue = MKSS_Base_AttackBonusValue;
 		followOwner = true;
 		followOwnerImageIndex = true;
 		destroyIfOwnerNotAttack = true;
