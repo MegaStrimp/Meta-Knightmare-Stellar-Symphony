@@ -15,12 +15,14 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Setup(targetIsBoss = true)
 	attackList = ds_list_create();
 	
 	#region Attack Scripts
+	marx_Attack_Teleport = -1;
 	marx_Attack_ShooterCutter = scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShooterCutter_Step;
 	marx_Attack_IceBomb = scr_MKSS_Enemy_StarlessMarx_AI_Normal_IceBomb_Step;
 	marx_Attack_ArrowArrow = scr_MKSS_Enemy_StarlessMarx_AI_Normal_ArrowArrow_Step;
 	marx_Attack_SeedAttack = scr_MKSS_Enemy_StarlessMarx_AI_Normal_SeedAttack_Step;
 	marx_Attack_ShadowUppercut = scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShadowUppercut_Step;
 	marx_Attack_BlackHole = scr_MKSS_Enemy_StarlessMarx_AI_Normal_BlackHole_Step;
+	marx_Attack_SpawnMinimarx = scr_MKSS_Enemy_StarlessMarx_AI_Normal_SpawnMinimarx_Step;
 	#endregion
 	
 	#region Attack Order

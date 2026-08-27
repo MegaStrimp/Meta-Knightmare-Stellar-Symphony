@@ -42,6 +42,11 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Idle_Step()
 				var _normal = true;
 				switch (_attackIndex)
 				{
+					case marx_Attack_Teleport:
+					scr_MKSS_Enemy_StarlessMarx_Teleport((room_width / 2) + irandom_range(-32,32),80 + irandom_range(-12,12),scr_MKSS_Enemy_StarlessMarx_AI_Normal_Idle_Step,,2);
+					_normal = false;
+					break;
+					
 					case marx_Attack_ShooterCutter:
 					scr_MKSS_Enemy_StarlessMarx_Teleport(64,84,_attackIndex,,3);
 					_normal = false;
