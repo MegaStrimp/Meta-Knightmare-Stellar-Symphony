@@ -11,6 +11,7 @@ function scr_MKSS_Enemy_StarlessMinimarx_AI_Walk_Step()
 			if (hp > 0)
 			{
 				#region Movement
+				movespeed = min(movespeed + (accel * speedMultFinal),movespeedMax);
 				if (!grounded) scr_Component_BasicHorizontal_Step(true);
 				#endregion
 				
@@ -27,6 +28,24 @@ function scr_MKSS_Enemy_StarlessMinimarx_AI_Walk_Step()
 						grounded = false;
 				
 						jumpTimer = jumpTimerMax;
+					}
+				}
+				#endregion
+				
+				#region Laugh Timer
+				if (laughTimer != -1)
+				{
+					laughTimer = max(laughTimer - speedMultFinal,0);
+					if (laughTimer == 0)
+					{
+						var chance = irandom_range(1,laughChance);
+						if (chance == laughChance)
+						{
+							var sfx = scr_PlaySfx(choose(snd_MKSS_Minimarx1,snd_MKSS_Minimarx2,snd_MKSS_Minimarx3,snd_MKSS_Minimarx4));
+							audio_sound_pitch(sfx,random_range(.85,1.15));
+						}
+						
+						laughTimer = laughTimerMax + irandom_range(-laughTimerOffset,laughTimerOffset);
 					}
 				}
 				#endregion

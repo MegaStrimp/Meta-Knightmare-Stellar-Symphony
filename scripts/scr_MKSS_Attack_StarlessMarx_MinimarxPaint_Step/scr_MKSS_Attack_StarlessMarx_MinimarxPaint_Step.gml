@@ -31,6 +31,9 @@ function scr_MKSS_Attack_StarlessMarx_MinimarxPaint_Step()
 				createStartTimer = max(createStartTimer - speedMultFinal,0);
 				if (createStartTimer == 0)
 				{
+					var sfx = scr_PlaySfx(choose(snd_MKSS_Minimarx1,snd_MKSS_Minimarx2,snd_MKSS_Minimarx3,snd_MKSS_Minimarx4));
+					audio_sound_pitch(sfx,random_range(.85,1.15));
+					
 					createStartTimer = -1;
 				}
 			}

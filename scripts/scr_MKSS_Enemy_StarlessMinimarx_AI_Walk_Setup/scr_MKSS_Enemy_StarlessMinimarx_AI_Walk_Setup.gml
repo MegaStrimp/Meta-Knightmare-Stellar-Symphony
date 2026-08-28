@@ -6,6 +6,8 @@ function scr_MKSS_Enemy_StarlessMinimarx_AI_Walk_Setup()
 	decel = .05;
 	
 	movespeed = .3;
+	movespeedMax = .6;
+	accel = (movespeedMax - movespeed) / 900;
 	jumpspeed1 = 1.2;
 	jumpspeed2 = 1.5;
 	
@@ -26,5 +28,10 @@ function scr_MKSS_Enemy_StarlessMinimarx_AI_Walk_Setup()
 	jumpCount = 0;
 	jumpTimerMax = 10;
 	jumpTimer = jumpTimerMax;
+	
+	laughTimerMax = 240;
+	laughTimerOffset = 60;
+	laughTimer = laughTimerMax + irandom_range(-laughTimerOffset,laughTimerOffset);
+	laughChance = 2;
 	#endregion
 }
