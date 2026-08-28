@@ -97,6 +97,32 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_SpawnMinimarx_Step()
 				sprite_index = spriteSet.sprIdle;
 				image_index = 0;
 				
+				with (instance_create_depth(x - 24 + irandom_range(-8,8),y + irandom_range(-6,6),depth - 1,obj_MKSS_Attack))
+				{
+					owner = other;
+					isEnemy = true;
+					dmg = -1;
+					knockbackForce = 1;
+					sprite_index = spr_MKSS_Attack_StarlessMarx_MinimarxPaint_Ball;
+					mask_index = spr_MKSS_Attack_StarlessMarx_MinimarxPaint_Ball;
+					scr_MKSS_Attack_StarlessMarx_MinimarxPaint_Setup();
+					hsp = -random_range(.5,1.75);
+					vsp = -random_range(2.5,4.5);
+				}
+				
+				with (instance_create_depth(x + 24 + irandom_range(-8,8),y + irandom_range(-6,6),depth - 1,obj_MKSS_Attack))
+				{
+					owner = other;
+					isEnemy = true;
+					dmg = -1;
+					knockbackForce = 1;
+					sprite_index = spr_MKSS_Attack_StarlessMarx_MinimarxPaint_Ball;
+					mask_index = spr_MKSS_Attack_StarlessMarx_MinimarxPaint_Ball;
+					scr_MKSS_Attack_StarlessMarx_MinimarxPaint_Setup();
+					hsp = random_range(.5,1.75);
+					vsp = -random_range(2.5,4.5);
+				}
+				
 				minimarxCount--;
 				attackStateTimer[attackState] = attackStateTimerMax[attackState];
 				if (minimarxCount <= 0) attackState++;
