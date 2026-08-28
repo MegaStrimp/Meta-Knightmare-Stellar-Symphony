@@ -49,7 +49,7 @@ function scr_MKSS_Enemy_MrSandbag_AI_Stand_Step()
 		}
 		else
 		{
-			sprite_index = spriteSet.sprHurt[hurtFrame][0];
+			sprite_index = sprHurt[hurtFrame][0];
 		}
 		#endregion
 	}

@@ -30,6 +30,7 @@ if (!localPause)
 		newTileRow.sprIdle = sprIdle;
 		newTileRow.sprEnraged = sprEnraged;
 		newTileRow.sprite_index = sprite_index;
+		newTileRow.hasOverlay = hasOverlay;
 		newTileRow.valueShiftPos = valueShiftPos;
 		newTileRow.valueShiftDir = valueShiftDir;
 		newTileRow.valueShiftPos = valueShiftPos;

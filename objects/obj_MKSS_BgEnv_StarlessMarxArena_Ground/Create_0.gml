@@ -15,6 +15,7 @@ sprEnraged = spr_MKSS_BgEnv_StarlessMarxArena_Ground_Row2_Enraged;
 
 //Other Variables
 
+hasOverlay = false;
 //imageSpeed = 0.75;
 valueShiftSpeed = 1.5;
 valueShiftDir = -1;

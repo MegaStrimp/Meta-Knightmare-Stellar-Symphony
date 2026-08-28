@@ -32,7 +32,7 @@ enemyPhaseSetupScript =
 		
 		with (obj_MKSS_BgEnv_StarlessMarxArena_Ground)
 		{
-			sprite_index = sprEnraged;
+			hasOverlay = true;
 		}
 	}
 ];

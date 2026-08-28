@@ -31,11 +31,6 @@ if (!localPause)
 					scr_MKSS_Attack_ChasseEmee_BigCannonball_Setup();
 				}
 				
-				//with (obj_Player)
-				//{
-				//	scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Slide_Step);
-				//}
-				
 				cannonballTimer = 15;
 				break;
 				

@@ -8,6 +8,10 @@ function scr_MKSS_Attack_MetaKnight_ParryWheelie_Step()
 		hsp = movespeed * dirX * speedMultFinal;
 		#endregion
 		
+		#region Gravity
+		scr_Entity_Gravity(vsp,grav,gravLimit,speedMultFinal)
+		#endregion
+		
 		#region Particle Timer
 		if (particleTimer != -1)
 		{
@@ -34,8 +38,12 @@ function scr_MKSS_Attack_MetaKnight_ParryWheelie_Step()
 		}
 		#endregion
 		
+		#region Collision
+		scr_Entity_Collision(,XCollisionScript);
+		#endregion
+		
 		#region Destroy
-		if (place_meeting(x + dirX,y,obj_Wall))
+		if (destroyFlag)
 		{
 			var sfx = scr_PlaySfx(snd_MKSS_BlockBreak);
 			audio_sound_pitch(sfx,random_range(.85,1.15));
@@ -59,11 +67,9 @@ function scr_MKSS_Attack_MetaKnight_ParryWheelie_Step()
 			}
 			
 			destroyTimer = 0;
+			
+			destroyFlag = false;
 		}
-		#endregion
-		
-		#region Collision
-		scr_Entity_Collision();
 		#endregion
 	}
 }

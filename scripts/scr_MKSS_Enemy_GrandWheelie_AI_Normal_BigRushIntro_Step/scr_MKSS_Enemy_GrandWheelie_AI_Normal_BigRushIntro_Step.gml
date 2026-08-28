@@ -16,7 +16,7 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_BigRushIntro_Step()
 		#endregion
 		
 		#region Wall Detection
-		if ((!isTurning) and (place_meeting(x + (dirX * floor(global.gameTileSize / 2)),y,obj_Wall)))
+		if ((!isTurning) and (position_meeting(x + (dirX * floor(global.gameTileSize / 2)),y - 8,obj_Wall)))
 		{
 			dirX *= -1;
 			isTurning = true;

@@ -55,6 +55,7 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Setup(targetIsBoss = true,targetP
 	enemyAICleanUp = scr_MKSS_Enemy_GrandWheelie_AI_Normal_CleanUp;
 	enemyAIStepIdle = scr_MKSS_Enemy_GrandWheelie_AI_Normal_Idle_Step;
 	enemyAIStep = enemyAIStepIdle;
+	enemyAnimationEnd = scr_MKSS_Enemy_GrandWheelie_AI_Normal_AnimationEnd;
 	#endregion
 	
 	#region Palette Variables

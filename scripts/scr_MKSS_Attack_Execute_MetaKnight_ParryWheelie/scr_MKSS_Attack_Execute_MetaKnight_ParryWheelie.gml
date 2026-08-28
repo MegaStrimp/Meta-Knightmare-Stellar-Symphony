@@ -24,7 +24,7 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryWheelie(playerIndex,currentParr
 	#region Parry
 	if (instance_exists(currentParriedObject))
 	{
-		with (instance_create_depth(currentParriedObject.x,currentParriedObject.y,depth,obj_MKSS_Attack))
+		with (instance_create_depth(currentParriedObject.x,currentParriedObject.y - 2,depth,obj_MKSS_Attack))
 		{
 			owner = playerIndex;
 			isEnemy = false;
@@ -33,13 +33,20 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryWheelie(playerIndex,currentParr
 			hsp = 0;
 			vsp = 0;
 			movespeed = 4;
+			grav = .15;
+			gravLimit = 2.5;
 			particleTimerMax = 5;
 			particleTimer = particleTimerMax;
 			afterimageTimerMax = 2;
 			afterimageTimer = afterimageTimerMax;
+			destroyFlag = false;
 			dmg = MKSS_Base_PlayerContactDamage;
 			bonusValue = MKSS_Base_AttackBonusValue;
 			dirX = -scr_MKSS_Enemy_DirTarget();
+			XCollisionScript = function()
+			{
+				destroyFlag = true;
+			}
 			image_xscale = scale * dirX;
 			sprite_index = spr_MKSS_Attack_MetaKnight_ParryWheelie;
 			attackAIStep = scr_MKSS_Attack_MetaKnight_ParryWheelie_Step;

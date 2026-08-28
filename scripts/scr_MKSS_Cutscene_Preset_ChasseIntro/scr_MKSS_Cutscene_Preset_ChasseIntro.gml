@@ -26,7 +26,16 @@ function scr_MKSS_Cutscene_Preset_ChasseIntro()
 		{
 			instance_create_depth(camera_get_view_x(mainView) + (global.gameWidth / 2),camera_get_view_y(mainView) + (global.gameHeight / 2),layer_get_depth("BackgroundEnvironment") + 2,obj_MKSS_BgEnv_ChasseShip);
 			
-			phaseTimer = 600;
+			phaseTimer = 300;
+		},
+		function()
+		{
+			with (obj_Player)
+			{
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Slide_Step);
+			}
+			
+			phaseTimer = 300;
 		},
 		function()
 		{
