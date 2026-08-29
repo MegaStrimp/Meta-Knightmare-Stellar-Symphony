@@ -87,20 +87,23 @@ function scr_MKSS_Pause_DrawEnd()
 	#endregion
 	
 	#region Draw Surface
-	scr_DrawMask_Begin(xx,yy,xx + global.gameWidth,yy + global.gameHeight);
-	
-	draw_surface_ext(MKSS_GamePause_CircleSurface,xx,yy,1,1,0,c_white,MKSS_GamePause_UpgradesAlpha);
-	
-	gpu_set_blendenable(true);
-	gpu_set_colorwriteenable(true,true,true,true);
-	
-	gpu_set_blendmode_ext(bm_dest_alpha,bm_inv_dest_alpha);
-	gpu_set_alphatestenable(true);
-	draw_set_alpha(1);
-	
-	draw_surface(obj_MKSS_Surface_Space.drawSurface,xx,yy);
-	
-	scr_DrawMask_End();
+	if (surface_exists(obj_MKSS_Surface_Space.drawSurface))
+	{
+		scr_DrawMask_Begin(xx,yy,xx + global.gameWidth,yy + global.gameHeight);
+		
+		draw_surface_ext(MKSS_GamePause_CircleSurface,xx,yy,1,1,0,c_white,MKSS_GamePause_UpgradesAlpha);
+		
+		gpu_set_blendenable(true);
+		gpu_set_colorwriteenable(true,true,true,true);
+		
+		gpu_set_blendmode_ext(bm_dest_alpha,bm_inv_dest_alpha);
+		gpu_set_alphatestenable(true);
+		draw_set_alpha(1);
+		
+		draw_surface(obj_MKSS_Surface_Space.drawSurface,xx,yy);
+		
+		scr_DrawMask_End();
+	}
 	#endregion
 	#endregion
 	
