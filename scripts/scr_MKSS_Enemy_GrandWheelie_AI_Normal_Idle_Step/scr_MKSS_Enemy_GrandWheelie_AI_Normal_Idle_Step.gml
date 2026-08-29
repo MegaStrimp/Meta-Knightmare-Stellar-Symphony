@@ -5,21 +5,15 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Idle_Step()
 	#region Setup
 	if (enemyState_Setup)
 	{
-		if ((isBoss) and (isBossSetup))
-		{
-			scr_MKSS_Enemy_Miniboss_Setup(playBossTheme);
-			scr_MKSS_MarkBoss(id);
-			scr_MKSS_Enemy_HealthbarFill_Setup(id);
-			
-			isBossSetup = false;
-		}
-		
 		dirX = scr_MKSS_Enemy_DirTarget();
 		
 		sprite_index = spriteSet.sprWalk;
 		image_index = 0;
 		
 		attackTimer = attackTimerMax;
+		
+		movespeed = movespeedBase * speedMultFinal;
+		accel = accelBase * speedMultFinal;
 		
 		enemyState_Setup = false;
 	}

@@ -53,5 +53,9 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_FlameTrail_Step()
 			}
 		}
 		#endregion
+		
+		#region Attack State Timer
+		scr_MKSS_Enemy_AttackStateTimer();
+		#endregion
 	}
 }

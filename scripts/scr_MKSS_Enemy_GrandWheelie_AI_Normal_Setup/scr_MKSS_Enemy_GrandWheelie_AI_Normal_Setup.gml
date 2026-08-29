@@ -3,10 +3,16 @@
 function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Setup(targetIsBoss = true,targetPlayBossTheme = true)
 {
 	#region Component Setup
-	scr_Component_WalkAndTurn_Setup(1.5,.15,-1,-1);
+	scr_Component_WalkAndTurn_Setup(,,-1,-1);
 	#endregion
 	
 	#region Physics Variables
+	movespeedBase = 1.5;
+	
+	accelBase = .15;
+	
+	chargeMult = 2.5;
+	
 	jumpspeed = 3;
 	
 	decel = .05;
@@ -55,6 +61,7 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Setup(targetIsBoss = true,targetP
 	enemyAICleanUp = scr_MKSS_Enemy_GrandWheelie_AI_Normal_CleanUp;
 	enemyAIStepIdle = scr_MKSS_Enemy_GrandWheelie_AI_Normal_Idle_Step;
 	enemyAIStep = enemyAIStepIdle;
+	enemyAIStep = scr_MKSS_Enemy_GrandWheelie_AI_Normal_BigRushIntro_Step;
 	enemyAnimationEnd = scr_MKSS_Enemy_GrandWheelie_AI_Normal_AnimationEnd;
 	#endregion
 	
