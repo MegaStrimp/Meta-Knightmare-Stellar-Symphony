@@ -5,6 +5,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_BlackHole_AnimationEnd()
 	switch (sprite_index)
 	{
 		case spriteSet.sprSplit:
+		case spriteSet.sprSplitEnd:
 		image_index = image_number - 1;
 		break;
 	}

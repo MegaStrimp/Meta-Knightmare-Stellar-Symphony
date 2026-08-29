@@ -10,6 +10,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_SpawnMinimarx_Step()
 		scr_Debug_WriteLog(string(object_get_name(object_index)) + " Used [" + attackString + "]");
 		
 		attackState = 0;
+		
+		enemyAnimationEnd = scr_MKSS_Enemy_StarlessMarx_AI_Normal_BlackHole_AnimationEnd;
 		#endregion
 		
 		#region Attack Timers
@@ -42,7 +44,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_SpawnMinimarx_Step()
 		#endregion
 		
 		#region Spawn Minimarx Start
-		sprite_index = spriteSet.sprIdle;
+		sprite_index = spriteSet.sprSplit;
 		image_index = 0;
 		#endregion
 		
@@ -80,11 +82,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_SpawnMinimarx_Step()
 				wingOutTimer = max(wingOutTimer - speedMultFinal,0);
 				if (wingOutTimer == 0)
 				{
-					shakeX = 5;
-					shakeY = 2;
-					
-					sprite_index = spriteSet.sprCharge;
-					image_index = 0;
+					shakeX = 3;
+					shakeY = 1;
 							
 					wingOutTimer = -1;
 				}
@@ -92,12 +91,11 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_SpawnMinimarx_Step()
 			
 			if (attackStateTimer[attackState] == -1)
 			{
+				shakeY = 4;
+				
 				wingOutTimer = wingOutTimerMax;
 				
-				sprite_index = spriteSet.sprIdle;
-				image_index = 0;
-				
-				with (instance_create_depth(x - 24 + irandom_range(-8,8),y + irandom_range(-6,6),depth - 1,obj_MKSS_Attack))
+				with (instance_create_depth(x - 8,y - 8,depth - 1,obj_MKSS_Attack))
 				{
 					owner = other;
 					isEnemy = true;
@@ -110,7 +108,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_SpawnMinimarx_Step()
 					vsp = -random_range(2.5,4.5);
 				}
 				
-				with (instance_create_depth(x + 24 + irandom_range(-8,8),y + irandom_range(-6,6),depth - 1,obj_MKSS_Attack))
+				with (instance_create_depth(x + 8,y - 8,depth - 1,obj_MKSS_Attack))
 				{
 					owner = other;
 					isEnemy = true;
@@ -125,7 +123,13 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_SpawnMinimarx_Step()
 				
 				minimarxCount--;
 				attackStateTimer[attackState] = attackStateTimerMax[attackState];
-				if (minimarxCount <= 0) attackState++;
+				if (minimarxCount <= 0) 
+				{
+					sprite_index = spriteSet.sprSplitEnd;
+					image_index = 0;
+					
+					attackState++;
+				}
 			}
 			break;
 			#endregion

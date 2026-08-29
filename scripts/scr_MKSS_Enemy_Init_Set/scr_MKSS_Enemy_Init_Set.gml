@@ -843,6 +843,7 @@ function scr_MKSS_Enemy_Init_Set()
 		sprArrow: spr_MKSS_Enemy_StarlessMarx_Base_Arrow,
 		sprLaser: spr_MKSS_Enemy_StarlessMarx_Base_Laser,
 		sprSplit: spr_MKSS_Enemy_StarlessMarx_Base_Split,
+		sprSplitEnd: spr_MKSS_Enemy_StarlessMarx_Base_SplitEnd,
 		
 		maskIndex: spr_32x32Mask_MiddleOrigin
 	});

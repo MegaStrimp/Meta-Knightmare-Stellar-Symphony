@@ -63,6 +63,13 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Idle_Step()
 					scr_MKSS_Enemy_StarlessMarx_Teleport(room_width/2,72,_attackIndex,,0);
 					_normal = false;
 					break;
+					
+					case marx_Attack_MarxCannon:
+					var _x = 52;
+					if (obj_Player.x <= room_width/2) _x = room_width - _x;
+					scr_MKSS_Enemy_StarlessMarx_Teleport(_x,144,_attackIndex,,0);
+					_normal = false;
+					break;
 				}
 				
 				if (_normal) and (script_exists(attackIndex)) scr_Enemy_ChangeState_Step(id,attackIndex);

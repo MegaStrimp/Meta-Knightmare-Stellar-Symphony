@@ -5,6 +5,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Setup(targetIsBoss = true)
 	#region Physics Variables
 	decel = .05;
 	decelStun = .25;
+	decelFast = .15;
 	
 	grav = .15;
 	
@@ -23,6 +24,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Setup(targetIsBoss = true)
 	marx_Attack_ShadowUppercut = scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShadowUppercut_Step;
 	marx_Attack_BlackHole = scr_MKSS_Enemy_StarlessMarx_AI_Normal_BlackHole_Step;
 	marx_Attack_SpawnMinimarx = scr_MKSS_Enemy_StarlessMarx_AI_Normal_SpawnMinimarx_Step;
+	marx_Attack_MarxCannon = scr_MKSS_Enemy_StarlessMarx_AI_Normal_MarxCannon_Step;
 	#endregion
 	
 	#region Attack Order
