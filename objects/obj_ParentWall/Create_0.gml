@@ -30,7 +30,7 @@ groundPlatformType = groundPlatformTypes.none;
 hitSfxIndex = -1;
 deathIndex = -1;
 deathParticleIndex = -1;
-lastHitProjectile = -1;
+hitList = ds_list_create();
 freezeFrameForce = 3;
 
 canBeHit = false;

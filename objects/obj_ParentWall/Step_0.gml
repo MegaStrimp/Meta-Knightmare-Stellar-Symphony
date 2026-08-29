@@ -19,7 +19,7 @@ if (!localPause)
 		{
 			if (canBreakBlocks)
 			{
-				if ((place_meeting(x,y,other)) and ((other.lastHitProjectile != id) or ((isMultiHit) and (multiHitFlag))))
+				if ((place_meeting(x,y,other)) and ((!scr_Entity_HitList_Check(other,id)) or ((isMultiHit) and (multiHitFlag))))
 				{
 					if (!isEnemy)
 					{
@@ -28,7 +28,7 @@ if (!localPause)
 					
 					if (other.hitSfxIndex != -1) scr_PlaySfx(other.hitSfxIndex);
 					
-					other.lastHitProjectile = id;
+					scr_Attack_HitList_Add(other,id);
 					
 					other.receivedAttackOwner = owner;
 					other.receivedKnockbackAngle = knockbackAngle;

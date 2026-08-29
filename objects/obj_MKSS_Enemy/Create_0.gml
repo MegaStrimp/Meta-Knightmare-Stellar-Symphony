@@ -52,6 +52,8 @@ drawSurface_OutlineColor = shader_get_uniform(shd_ColoredOutline,"outlineColor")
 
 inWater = false;
 
+trackCheck = false;
+
 MKSS_HurtElement = ds_list_create();
 #endregion
 #endregion

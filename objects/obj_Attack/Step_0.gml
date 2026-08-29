@@ -19,7 +19,7 @@ if (!localPause)
 		(attackMakeHeavyInvincible)
 		) canGetHurt = false;
 		
-		if ((canGetHurt) and (other.dmg != -1) and (other.isEnemy) and (((!other.isMultiHit) and (lastHitProjectile != id)) or ((other.isMultiHit) and (other.multiHitFlag))))
+		if ((canGetHurt) and (other.dmg != -1) and (other.isEnemy) and (((!other.isMultiHit) and (!scr_Entity_HitList_Check(id,other))) or ((other.isMultiHit) and (other.multiHitFlag))))
 		{
 			if (hurtState == hurtStates.none)
 			{

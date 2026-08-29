@@ -15,7 +15,7 @@ function scr_Enemy_GetHit_Object(targetEnemy,targetObject)
 			targetEnemy.shakeX = 1;
 			targetEnemy.shakeY = 1;
 			
-			if (canSetLastHitProjectile) targetEnemy.lastHitProjectile = id;
+			if (canSetHitList) scr_Attack_HitList_Add(targetEnemy,id);
 			
 			var hitByFinisher = false;
 			
@@ -47,6 +47,8 @@ function scr_Enemy_GetHit_Object(targetEnemy,targetObject)
 				
 				if (targetEnemy.hp <= 0)
 				{
+					targetEnemy.pauseOutsideView = false;
+					
 					scr_Camera_SetScreenshake(0,1);
 					
 					targetEnemy.deathTimerMax = max(5,targetEnemy.deathTimerMax + (targetEnemy.hp / 6) - 1);

@@ -61,7 +61,7 @@ multiHitTimerMax = -1;
 enemyHurtTimerMult = 1;
 freezeFrameForce = 1;
 canHitIfHurt = true;
-canSetLastHitProjectile = true;
+canSetHitList = true;
 canBeParried = false;
 
 bonusLootingAmount = 0;

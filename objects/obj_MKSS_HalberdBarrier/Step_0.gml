@@ -11,7 +11,7 @@ if (!localPause)
 	#endregion
 	
 	#region Audio
-	var soundVolume = max(0,1 - (abs(camera_get_view_x(mainView) - x) / 240)) * global.soundVolume;
+	var soundVolume = max(0,1 - (abs((camera_get_view_x(mainView) + (global.gameWidth / 2)) - x) / 240)) * global.soundVolume;
 	if (global.audioMuted) soundVolume = 0;
 	
 	if (!audio_is_playing(ambience)) ambience = scr_PlaySfx(snd_MKSS_BarrierAmbience);

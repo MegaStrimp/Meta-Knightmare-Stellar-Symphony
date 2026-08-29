@@ -17,7 +17,7 @@ function scr_MKSS_Player_Interaction_Door(targetState)
 				entered = true;
 				
 				var sfx = scr_PlaySfx(snd_MKSS_DoorEnter);
-				audio_sound_pitch(sfx,random_range(.85,1.15));
+				//audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				if (targetState != -1)
 				{

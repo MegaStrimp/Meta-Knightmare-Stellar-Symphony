@@ -28,6 +28,8 @@ function scr_Enemy_GetHit(targetEnemy,dealtDamage,dealtKnockback,knockbackAngle,
 			
 			if (hp <= 0)
 			{
+				targetEnemy.pauseOutsideView = false;
+				
 				scr_Camera_SetScreenshake(0,1);
 				
 				deathTimerMax = max(5,deathTimerMax + (hp / 6) - 1);

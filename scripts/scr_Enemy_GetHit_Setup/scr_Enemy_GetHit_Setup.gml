@@ -7,7 +7,7 @@ function scr_Enemy_GetHit_Setup(targetEnemy,targetHitbox)
 	{
 		with (obj_Attack)
 		{
-			if ((place_meeting(x,y,targetHitbox)) and (dmg != -1) and (((!isMultiHit) and (targetEnemy.lastHitProjectile != id)) or ((isMultiHit) and (multiHitFlag))))
+			if ((place_meeting(x,y,targetHitbox)) and (dmg != -1) and (((!isMultiHit) and (!scr_Entity_HitList_Check(targetEnemy,id))) or ((isMultiHit) and (multiHitFlag))))
 			{
 				if (targetEnemy.enemyGetHitObject != -1) script_execute(targetEnemy.enemyGetHitObject,targetEnemy,id);
 			}

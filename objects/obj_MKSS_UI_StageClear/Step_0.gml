@@ -120,7 +120,7 @@ if (nextRoomTimer != -1)
 	if (nextRoomTimer == 0)
 	{
 		var sfx = scr_PlaySfx(snd_MKSS_DoorEnter);
-		audio_sound_pitch(sfx,random_range(.85,1.15));
+		//audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		scr_MKSS_Stage_End();
 		

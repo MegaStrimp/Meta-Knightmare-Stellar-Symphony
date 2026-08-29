@@ -135,7 +135,7 @@ deathStateTimer = -1;
 
 localFreezeFrameTimer = -1;
 
-lastHitProjectile = -1;
+hitList = ds_list_create();
 
 attackTypes = ds_list_create();
 attackTypeResistances = ds_map_create();

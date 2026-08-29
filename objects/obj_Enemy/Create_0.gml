@@ -73,7 +73,7 @@ deathAttackParticleIndex = -1;
 
 freezeFrameForce = 0;
 
-lastHitProjectile = -1;
+hitList = ds_list_create();
 receivedAttackOwner = -1;
 receivedKnockbackAngle = -1;
 

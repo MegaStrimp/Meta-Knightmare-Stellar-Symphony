@@ -17,7 +17,7 @@ function scr_MKSS_Enemy_GetHit_Object(targetEnemy,targetAttack)
 			targetEnemy.shakeX = 1;
 			targetEnemy.shakeY = 1;
 			
-			if (canSetLastHitProjectile) targetEnemy.lastHitProjectile = id;
+			if (canSetHitList) scr_Attack_HitList_Add(targetEnemy,id);
 			
 			if (!targetEnemy.isBoss) scr_MKSS_MarkEnemy(targetEnemy);
 			
