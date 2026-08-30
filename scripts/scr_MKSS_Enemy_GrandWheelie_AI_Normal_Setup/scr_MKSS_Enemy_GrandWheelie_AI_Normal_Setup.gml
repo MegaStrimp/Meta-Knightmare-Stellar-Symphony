@@ -11,7 +11,7 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Setup(targetIsBoss = true,targetP
 	
 	accelBase = .15;
 	
-	chargeMult = 2.5;
+	chargeMult = 2;
 	
 	jumpspeed = 3;
 	

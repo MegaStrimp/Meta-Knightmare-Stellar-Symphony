@@ -112,6 +112,8 @@ function scr_MKSS_Enemy_Wheelie_AI_WalkAndAttack_Step()
 					break;
 					
 					case 2:
+					scr_MKSS_ParticleSet_FastWheel(x,y,dirX);
+					
 					attackIndex = global.MKSS_AttackIDs[? "wheelie_Charge"];
 					isCharging = true;
 					

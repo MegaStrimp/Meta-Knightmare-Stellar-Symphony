@@ -36,6 +36,12 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_BigRush_Step()
 		vsp = 0;
 		#endregion
 		
+		#region Attack Variables
+		parriableTimer = -1;
+		#endregion
+		
+		scr_MKSS_UI_ParryIndicator_Create(x,y - 6,depth - 1,attackStateTimer[0],,id);
+		
 		enemyState_Setup = false;
 	}
 	#endregion
@@ -50,6 +56,9 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_BigRush_Step()
 			if (attackStateTimer[attackState] == -1)
 			{
 				scr_MKSS_ParticleSet_FastWheel(x,y,dirX);
+				
+				parriableTimer = 60;
+				canBeParried = true;
 				
 				attackState++;
 			}
@@ -107,6 +116,19 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_BigRush_Step()
 				scr_MKSS_ParticleSet_Afterimage();
 				
 				afterimageTimer = -1;
+			}
+		}
+		#endregion
+		
+		#region Parriable Timer
+		if (parriableTimer != -1)
+		{
+			parriableTimer = max(parriableTimer - speedMultFinal,0);
+			if (parriableTimer == 0)
+			{
+				canBeParried = false;
+				
+				parriableTimer = -1;
 			}
 		}
 		#endregion

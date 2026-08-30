@@ -2,6 +2,9 @@
 
 function scr_Particle_SpecialBehavior_FollowOwner_EndStep()
 {
-	x = owner.x;
-	y = owner.y;
+	if (instance_exists(owner))
+	{
+		x = owner.x;
+		y = owner.y;
+	}
 }
