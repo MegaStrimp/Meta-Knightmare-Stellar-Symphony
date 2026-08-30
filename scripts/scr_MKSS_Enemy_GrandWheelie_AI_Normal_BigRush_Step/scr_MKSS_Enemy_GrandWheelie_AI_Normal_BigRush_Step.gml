@@ -16,7 +16,7 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_BigRush_Step()
 		var i = 0;
 		
 		#region Start Timer
-		attackStateTimerMax[i] = 45;
+		attackStateTimerMax[i] = 90;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
@@ -49,6 +49,8 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_BigRush_Step()
 			case 0:
 			if (attackStateTimer[attackState] == -1)
 			{
+				scr_MKSS_ParticleSet_FastWheel(x,y,dirX);
+				
 				attackState++;
 			}
 			break;

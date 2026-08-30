@@ -38,6 +38,8 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_BigRushIntro_Step()
 		accel = accelBase * (1 + (chargeMult)) * speedMultFinal;
 		#endregion
 		
+		scr_MKSS_ParticleSet_FastWheel(x,y,dirX);
+		
 		enemyState_Setup = false;
 	}
 	#endregion
