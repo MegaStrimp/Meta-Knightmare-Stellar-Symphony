@@ -40,7 +40,6 @@ function scr_MKSS_Enemy_AI_Stun_Step()
 				flashTimer = -1;
 				palIndex = 1;
 				
-				sprite_index = spriteSet.sprIdle;
 				image_index = 0;
 				
 				scr_Enemy_ChangeState_Step(id,stunRevertAI);

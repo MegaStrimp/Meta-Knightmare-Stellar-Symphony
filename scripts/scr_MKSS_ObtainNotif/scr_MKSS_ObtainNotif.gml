@@ -2,7 +2,7 @@
 
 function scr_MKSS_ObtainNotif(targetNotifID,forced = false)
 {
-	if ((forced) or (!global.MKSS_NotifList[targetNotifID].isObtained))
+	if ((!global.debug) and ((forced) or (!global.MKSS_NotifList[targetNotifID].isObtained)))
 	{
 		if (!forced) global.MKSS_NotifList[targetNotifID].isObtained = true;
 		
