@@ -62,9 +62,11 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_Setup(targetIsBoss = true,targetPla
 	
 	#region AI Scripts
 	enemyAICleanUp = scr_MKSS_Enemy_GigantEdge_AI_Normal_CleanUp;
-	enemyAIStepIdle = scr_MKSS_Enemy_GigantEdge_AI_Normal_Idle_Step
+	enemyAIStepIdle = scr_MKSS_Enemy_GigantEdge_AI_Normal_Idle_Step;
 	enemyAIStep = enemyAIStepIdle
 	enemyAnimationEnd = scr_MKSS_Enemy_GigantEdge_AI_Normal_AnimationEnd;
+	
+	stunRevertAI = scr_MKSS_Enemy_GigantEdge_AI_Normal_Idle_Step;
 	#endregion
 	
 	#region Palette Variables

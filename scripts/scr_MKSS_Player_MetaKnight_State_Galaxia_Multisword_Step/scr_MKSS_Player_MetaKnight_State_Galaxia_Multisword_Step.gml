@@ -20,8 +20,8 @@ function scr_MKSS_Player_MetaKnight_State_Galaxia_Multisword_Step()
 	
 	if (!localPause)
 	{
-		#region Decelerate
-		hsp = scr_Entity_Friction(hsp,decel * speedMultFinal);
+		#region Movement
+		hsp = (movespeedNormal / 3) * -dirX * speedMultFinal;
 		#endregion
 		
 		#region Gravity

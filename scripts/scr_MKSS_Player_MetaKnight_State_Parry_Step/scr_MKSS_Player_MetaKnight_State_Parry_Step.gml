@@ -119,7 +119,7 @@ function scr_MKSS_Player_MetaKnight_State_Parry_Step()
 			parryHeavyInvinTimer = max(parryHeavyInvinTimer - speedMultFinal,0);
 			if (parryHeavyInvinTimer == 0)
 			{
-				attackMakeHeavyInvincible = false;
+				attackMakeHeavyInvincibleTimer = 15;
 				
 				parryHeavyInvinTimer = -1;
 			}

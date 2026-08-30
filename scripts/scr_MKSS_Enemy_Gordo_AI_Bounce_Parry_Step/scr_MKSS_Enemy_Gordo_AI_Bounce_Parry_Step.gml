@@ -23,15 +23,17 @@ function scr_MKSS_Enemy_Gordo_AI_Bounce_Parry_Step()
 					if (!global.MKSS_MinibossIsStunned) scr_MKSS_Score_Add(250);
 					scr_MKSS_SpawnMetaPoint(8,x,y,depth - 1,other.owner,90);
 					
-					scr_MKSS_Enemy_Miniboss_Stun();
-					scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_ChunkyDee_AI_Normal_Stun_Step);
+					if (heldEnemy != -1)
+					{
+						with (heldEnemy)
+						{
+							isHeld = false;
+							canBeHit = true;
+						}
+					}
 					
-					canHaveKnockback = true;
-					hasKnockback = true;
-					prevDefense = defense;
-					defense /= 2;
-					prevKnockbackResistance = knockbackResistance;
-					knockbackResistance /= 1.5;
+					scr_MKSS_Enemy_Miniboss_Stun();
+					scr_MKSS_Enemy_GetStunned(id);
 					
 					var sfx = scr_PlaySfx(snd_MKSS_EnemyHit);
 					audio_sound_pitch(sfx,random_range(.85,1.15));

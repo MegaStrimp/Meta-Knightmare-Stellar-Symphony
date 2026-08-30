@@ -20,6 +20,13 @@ function scr_MKSS_Cutscene_Preset_ChasseIntro()
 			scr_MKSS_Music_Play(global.MKSS_MusicIDs[? "boss"]);
 			instance_create_depth(0,0,0,obj_MKSS_UI_Warning);
 			
+			with (obj_Player)
+			{
+				attackMakeHeavyInvincible = true;
+				
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Step);
+			}
+			
 			phaseTimer = 290;
 		},
 		function()
@@ -82,6 +89,13 @@ function scr_MKSS_Cutscene_Preset_ChasseIntro()
 				}
 				
 				bossSpawned = true;
+			}
+			
+			with (obj_Player)
+			{
+				attackMakeHeavyInvincibleTimer = 15;
+				
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Normal_Step);
 			}
 			
 			with (obj_MKSS_BgEnv_ChasseShip) instance_destroy();

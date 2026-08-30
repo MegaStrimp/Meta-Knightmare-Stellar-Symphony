@@ -36,7 +36,7 @@ function scr_MKSS_Enemy_GetHit_Object(targetEnemy,targetAttack)
 			
 			var dmgFinal = -1;
 			
-			var metaPointsOnHitFinal = irandom_range(0,targetEnemy.metaPointsOnHit);
+			var metaPointsOnHitFinal = floor(irandom_range(0,targetEnemy.metaPointsOnHit) * (MKSS_Base_AttackBonusValue / bonusValue));
 			if (metaPointsOnHitFinal != 0) scr_MKSS_SpawnMetaPoint(metaPointsOnHitFinal,targetEnemy.x,targetEnemy.y,targetEnemy.depth - 1,owner,knockbackAngleFinal);
 			
 			#region Elemental Damange Effects
@@ -76,22 +76,31 @@ function scr_MKSS_Enemy_GetHit_Object(targetEnemy,targetAttack)
 				
 				if (targetEnemy.hp <= 0)
 				{
-					if (targetEnemy.metaPointsOnDeath != 0)
-					{
-						scr_MKSS_SpawnMetaPoint(targetEnemy.metaPointsOnDeath,targetEnemy.x,targetEnemy.y,targetEnemy.depth - 1,owner,knockbackAngleFinal);
-						targetEnemy.metaPointsOnDeath = 0;
-					}
-					
 					var metaPointsFinal = min(irandom_range(0,1),targetEnemy.metaPointsOnOverkill) + (irandom_range(0,bonusLootingAmount) * (targetEnemy.metaPointsOnOverkill != 0));
 					targetEnemy.metaPointsOnOverkill = max(0,targetEnemy.metaPointsOnOverkill - metaPointsFinal);
 					if (metaPointsFinal != 0) scr_MKSS_SpawnMetaPoint(metaPointsFinal,targetEnemy.x,targetEnemy.y,targetEnemy.depth - 1,owner,knockbackAngleFinal);
 					
 					scr_MKSS_ParticleSet_EnemyHitStars(targetEnemy.x,targetEnemy.y,true);
 					
+					if (targetEnemy.metaPointsOnDeath != 0)
+					{
+						scr_MKSS_SpawnMetaPoint(targetEnemy.metaPointsOnDeath,targetEnemy.x,targetEnemy.y,targetEnemy.depth - 1,owner,knockbackAngleFinal);
+						targetEnemy.metaPointsOnDeath = 0;
+					}
+					
 					scr_Camera_SetScreenshake(0,1);
 					
-					targetEnemy.deathTimerMax = max(5,targetEnemy.deathTimerMax + (targetEnemy.hp / 6) - 1);
-					targetEnemy.deathTimer = targetEnemy.deathTimerMax;
+					if ((targetEnemy.canHaveCorpse) and (!targetEnemy.hasCorpse))
+					{
+						targetEnemy.hasCorpse = true;
+						
+						scr_MKSS_Enemy_GetStunned(targetEnemy);
+					}
+					else
+					{
+						targetEnemy.deathTimerMax = max(5,targetEnemy.deathTimerMax + (targetEnemy.hp / 6) - 1);
+						targetEnemy.deathTimer = targetEnemy.deathTimerMax;
+					}
 				}
 				else
 				{

@@ -19,7 +19,9 @@ function scr_MKSS_EnemyArena_Add(targetEnemyX,targetEnemyY,targetEnemyObject,tar
 		scale: targetScale,
 		
 		nextTimer: targetNextTimer,
-		spawnTimer: targetSpawnTimer
+		spawnTimer: targetSpawnTimer,
+		
+		bypassViewCheck: false
     };
 	
 	return index;

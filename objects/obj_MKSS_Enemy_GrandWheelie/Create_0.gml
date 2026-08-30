@@ -15,6 +15,8 @@ pauseOutsideView = false;
 canHaveKnockback = false;
 
 freezeFrameForce = 2;
+
+canHaveCorpse = true;
 #endregion
 
 #region Sprites

@@ -10,6 +10,7 @@ hp = 9999;
 points = MKSS_Base_EnemyPoints_Fodder;
 metaPointsOnDeath = MKSS_Base_EnemyMetaPoints_Fodder;
 metaPointsOnOverkill = floor(metaPointsOnDeath / 2);
+canHurtPlayer = false;
 
 freezeFrameForce = 2;
 #endregion

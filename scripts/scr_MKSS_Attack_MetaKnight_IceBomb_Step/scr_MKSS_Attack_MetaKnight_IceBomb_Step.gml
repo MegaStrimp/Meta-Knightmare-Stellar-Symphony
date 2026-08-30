@@ -112,6 +112,8 @@ function scr_MKSS_Attack_MetaKnight_IceBomb_Step()
 							visible = false;
 							attackEnemyHitParticleIndex = scr_MKSS_ParticleSet_Impact;
 						}
+						
+						scr_MKSS_Enemy_GetStunned(id);
 					
 						scr_MKSS_Score_Add(50);
 						scr_MKSS_SpawnMetaPoint(3,x,y,depth - 1,other.owner,90);

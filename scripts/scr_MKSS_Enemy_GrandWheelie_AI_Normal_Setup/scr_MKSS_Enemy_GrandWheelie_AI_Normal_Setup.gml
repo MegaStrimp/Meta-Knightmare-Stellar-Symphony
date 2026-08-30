@@ -29,7 +29,7 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Setup(targetIsBoss = true,targetP
 	grandWheelie_Attack_FlameTrail = scr_MKSS_Enemy_GrandWheelie_AI_Normal_FlameTrail_Step;
 	grandWheelie_Attack_BigRush = scr_MKSS_Enemy_GrandWheelie_AI_Normal_BigRush_Step;
 	
-	ds_list_add(attackList,grandWheelie_Attack_FlameTrail);
+	//ds_list_add(attackList,grandWheelie_Attack_FlameTrail);
 	ds_list_add(attackList,grandWheelie_Attack_BigRush);
 	
 	attackListIndex = 0;
@@ -40,7 +40,7 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Setup(targetIsBoss = true,targetP
 	isBoss = targetIsBoss;
 	playBossTheme = targetPlayBossTheme;
 	
-	parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryWheelie"];
+	parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryGrandWheelie"];
 	
 	isTurning = false;
 	
@@ -63,6 +63,8 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Setup(targetIsBoss = true,targetP
 	enemyAIStep = enemyAIStepIdle;
 	enemyAIStep = scr_MKSS_Enemy_GrandWheelie_AI_Normal_BigRushIntro_Step;
 	enemyAnimationEnd = scr_MKSS_Enemy_GrandWheelie_AI_Normal_AnimationEnd;
+	
+	stunRevertAI = scr_MKSS_Enemy_GrandWheelie_AI_Normal_Idle_Step;
 	#endregion
 	
 	#region Palette Variables

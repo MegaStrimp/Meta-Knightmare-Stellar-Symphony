@@ -14,7 +14,8 @@ triggerScript = function()
 		
 		scr_Music_SetFade(1,,1);
 		
-		scr_MKSS_EnemyArena_Add(560,104,obj_MKSS_Enemy_GrandWheelie,scr_MKSS_Enemy_GrandWheelie_AI_Normal_Setup,,-1,120,-1);
+		var grandWheelieSpawner = scr_MKSS_EnemyArena_Add(560,104,obj_MKSS_Enemy_GrandWheelie,scr_MKSS_Enemy_GrandWheelie_AI_Normal_Setup,,-1,120,-1);
+		spawnList[grandWheelieSpawner].bypassViewCheck = true;
 	}
 	
 	instance_destroy();

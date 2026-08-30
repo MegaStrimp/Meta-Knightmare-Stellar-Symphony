@@ -54,7 +54,7 @@ function scr_MKSS_Player_MetaKnight_State_Dodge_Step()
 			dodgeEndTimer = max(dodgeEndTimer - speedMultFinal,0);
 			if (dodgeEndTimer == 0)
 			{
-				attackMakeLightInvincible = false;
+				attackMakeLightInvincibleTimer = 15;
 				
 				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Normal_Step);
 				

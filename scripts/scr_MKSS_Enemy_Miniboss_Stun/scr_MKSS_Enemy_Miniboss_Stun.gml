@@ -4,7 +4,6 @@ function scr_MKSS_Enemy_Miniboss_Stun()
 {
 	if (!global.MKSS_MinibossIsStunned)
 	{
-		
 		if (audio_sound_get_asset(global.musicPlaying) == global.MKSS_MusicList[global.MKSS_MusicIDs[? "miniboss"]].audio)
 		{
 			audio_sound_loop_end(global.musicPlaying,0);

@@ -78,6 +78,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Setup(targetIsBoss = true)
 	enemyAIStepIdle = scr_MKSS_Enemy_StarlessMarx_AI_Normal_Idle_Step;
 	enemyAIStep = scr_MKSS_Enemy_StarlessMarx_AI_Normal_Appear_Step;
 	enemyAnimationEnd = scr_MKSS_Enemy_StarlessMarx_AI_Normal_Appear_AnimationEnd;
+	
+	stunRevertAI = scr_MKSS_Enemy_StarlessMarx_AI_Normal_SeedAttack_Step;
 	#endregion
 	
 	#region Palette Variables

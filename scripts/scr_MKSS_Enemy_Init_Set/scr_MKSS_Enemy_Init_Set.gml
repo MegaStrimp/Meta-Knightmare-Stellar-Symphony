@@ -845,6 +845,16 @@ function scr_MKSS_Enemy_Init_Set()
 		sprSplit: spr_MKSS_Enemy_StarlessMarx_Base_Split,
 		sprSplitEnd: spr_MKSS_Enemy_StarlessMarx_Base_SplitEnd,
 		
+		sprHurt1: spr_MKSS_Enemy_StarlessMarx_Base_Hurt1,
+		
+	    sprHurtList:
+		[
+	        [
+				spr_MKSS_Enemy_StarlessMarx_Base_Hurt1,
+				1
+			]
+	    ],
+		
 		maskIndex: spr_32x32Mask_MiddleOrigin
 	});
 	

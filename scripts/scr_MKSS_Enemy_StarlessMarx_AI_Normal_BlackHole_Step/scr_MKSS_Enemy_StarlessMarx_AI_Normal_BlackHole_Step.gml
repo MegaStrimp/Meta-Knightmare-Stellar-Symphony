@@ -273,7 +273,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_BlackHole_Step()
 				{
 					with (obj_Player)
 					{
-						attackMakeHeavyInvincible = false;
+						attackMakeHeavyInvincibleTimer = 15;
 						
 						suckState++;
 						

@@ -147,6 +147,8 @@ if (!localPause)
 					enemyHasSpawner = false;
 					destroyAfterSpawning = true;
 					
+					bypassViewCheck = enemyStruct.bypassViewCheck;
+					
 					scr_MKSS_ParticleSet_EnemySpawn(x,y,spawnTimer);
 				}
 				

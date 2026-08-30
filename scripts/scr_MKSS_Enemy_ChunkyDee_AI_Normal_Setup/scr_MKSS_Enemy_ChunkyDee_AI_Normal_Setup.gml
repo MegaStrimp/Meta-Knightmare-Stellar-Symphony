@@ -40,6 +40,8 @@ function scr_MKSS_Enemy_ChunkyDee_AI_Normal_Setup(targetIsBoss = true,targetPlay
 	enemyAICleanUp = scr_MKSS_Enemy_ChunkyDee_AI_Normal_CleanUp;
 	enemyAIStep = scr_MKSS_Enemy_ChunkyDee_AI_Normal_Idle_Step
 	enemyAnimationEnd = scr_MKSS_Enemy_ChunkyDee_AI_Normal_AnimationEnd;
+	
+	stunRevertAI = scr_MKSS_Enemy_ChunkyDee_AI_Normal_Idle_Step;
 	#endregion
 	
 	#region Palette Variables

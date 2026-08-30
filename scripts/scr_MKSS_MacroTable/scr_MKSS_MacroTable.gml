@@ -41,6 +41,8 @@ function scr_MKSS_MacroTable()
 	#macro MKSS_Base_EnemyMetaPoints_Microboss 50
 	#macro MKSS_Base_EnemyMetaPoints_Miniboss 150
 	
+	#macro MKSS_Base_EnemyMetaPointsOnHit_Stun 2
+	
 	#region Colors
 	#macro MKSS_Base_Color_StarryShores "#0094FF"
 	#macro MKSS_Base_Color_RoyalReeve "#FF9A13"

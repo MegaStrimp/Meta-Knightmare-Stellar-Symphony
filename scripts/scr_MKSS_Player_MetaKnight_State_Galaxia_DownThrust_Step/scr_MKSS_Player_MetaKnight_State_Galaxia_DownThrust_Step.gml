@@ -129,7 +129,7 @@ function scr_MKSS_Player_MetaKnight_State_Galaxia_DownThrust_Step()
 			galaxia_DownThrust_EndTimer = max(galaxia_DownThrust_EndTimer - speedMultFinal,0);
 			if (galaxia_DownThrust_EndTimer == 0)
 			{
-				attackMakeLightInvincible = false;
+				attackMakeLightInvincibleTimer = 15;
 				attackCancelTimer = 0;
 				
 				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Normal_Step);

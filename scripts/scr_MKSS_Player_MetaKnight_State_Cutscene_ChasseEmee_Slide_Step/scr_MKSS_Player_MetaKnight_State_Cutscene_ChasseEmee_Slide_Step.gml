@@ -1,6 +1,6 @@
 ///@description Player - Meta Knight - State - Cutscene - Chasse-Emee - Slide - Step
 
-function scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Slide_Step(targetSlideEndTimer)
+function scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Slide_Step(targetSlideEndTimer = 30)
 {
 	#region Setup
 	if (playerState_Setup)
@@ -39,7 +39,7 @@ function scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Slide_Step(targetS
 			slideEndTimer = max(slideEndTimer - speedMultFinal,0);
 			if (slideEndTimer == 0)
 			{
-				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Duck_Step);
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Step);
 				
 				slideEndTimer = -1;
 			}
