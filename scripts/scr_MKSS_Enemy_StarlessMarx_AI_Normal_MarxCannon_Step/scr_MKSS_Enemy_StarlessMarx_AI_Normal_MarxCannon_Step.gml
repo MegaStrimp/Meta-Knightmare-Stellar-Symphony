@@ -158,6 +158,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_MarxCannon_Step()
 				
 				sprite_index = spriteSet.sprCloseWing;
 				image_index = 0;
+				
+				scr_MKSS_UI_ParryIndicator_Create(x + (24 * dirX),y,depth - 1,attackStateTimerMax[attackState] + attackStateTimerMax[attackState+1]);
 					
 				attackState++;
 			}

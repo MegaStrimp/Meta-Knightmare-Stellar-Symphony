@@ -17,6 +17,14 @@ function scr_MKSS_Attack_StarlessMarx_MarxCannon_Setup()
 	
 	particleTimerMax = 6;
 	particleTimer = particleTimerMax;
+	
+	laserHurtTimer = 0;
+	laserHurtTimerMax = 8;
+	
+	damageMax = 75;
+	damage = damageMax;
+	
+	parried = false;
 					
 	attackAIStep = scr_MKSS_Attack_StarlessMarx_MarxCannon_Step;
 	attackDraw = scr_MKSS_Attack_StarlessMarx_MarxCannon_Draw;
