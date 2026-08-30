@@ -5,7 +5,7 @@
   "bbox_bottom":46,
   "bbox_left":0,
   "bbox_right":27,
-  "bbox_top":1,
+  "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
   "ConfigValues":{
@@ -17,26 +17,17 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"2934fa0a-2aa2-4ceb-a219-73314cbf9d05","name":"2934fa0a-2aa2-4ceb-a219-73314cbf9d05","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"4e616418-8bcc-46fc-9d69-39c6478f19a5","name":"4e616418-8bcc-46fc-9d69-39c6478f19a5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"68a10be1-fe20-467b-ae7d-5171ccbfe44f","name":"68a10be1-fe20-467b-ae7d-5171ccbfe44f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"bc8adb08-16fd-4dd3-9d91-0feaea677963","name":"bc8adb08-16fd-4dd3-9d91-0feaea677963","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"1934c66c-1d64-49b8-ad80-75f92de105e1","name":"1934c66c-1d64-49b8-ad80-75f92de105e1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"b1bb4c88-8c1e-4a0e-8fcb-9d2da0313db6","name":"b1bb4c88-8c1e-4a0e-8fcb-9d2da0313db6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"f2978e84-7f46-4ea0-9a10-add1523c8944","name":"f2978e84-7f46-4ea0-9a10-add1523c8944","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"66ec045c-9b39-40c1-83fa-b258be6b3c50","name":"66ec045c-9b39-40c1-83fa-b258be6b3c50","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"34c21724-913d-4e56-bedc-d536853db532","name":"34c21724-913d-4e56-bedc-d536853db532","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"4c940bfb-e59c-4b93-9cdd-b33ef0a1a6d0","name":"4c940bfb-e59c-4b93-9cdd-b33ef0a1a6d0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"c1d548b1-cd38-4249-a378-bdf46bfc117f","name":"c1d548b1-cd38-4249-a378-bdf46bfc117f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"7e464300-f395-4ff3-bbf8-e0793748e168","name":"7e464300-f395-4ff3-bbf8-e0793748e168","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"464575dc-d6fc-46d6-92ce-e60c29f8d50e","name":"464575dc-d6fc-46d6-92ce-e60c29f8d50e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8da9e4c4-322a-4839-acf5-9fa1f952795c","name":"8da9e4c4-322a-4839-acf5-9fa1f952795c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"70333c4c-3131-4f6b-b8f0-5b4046cf3d14","name":"70333c4c-3131-4f6b-b8f0-5b4046cf3d14","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4ee4a2dd-4266-42bf-a21d-d248fd990a2c","name":"4ee4a2dd-4266-42bf-a21d-d248fd990a2c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3cd97f7f-c6f1-4be9-821c-68558892a8e8","name":"3cd97f7f-c6f1-4be9-821c-68558892a8e8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":47,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"545d34d2-3b21-4743-93da-d9b61bbcffc1","blendMode":0,"displayName":"default","isLocked":false,"name":"545d34d2-3b21-4743-93da-d9b61bbcffc1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"18b9e70d-aa45-4cb3-ae97-ed321a833cac","blendMode":0,"displayName":"default","isLocked":false,"name":"18b9e70d-aa45-4cb3-ae97-ed321a833cac","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_MKSS_NPC_CaptainVul_Idle",
   "nineSlice":null,
@@ -66,7 +57,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":13.0,
+    "length":4.0,
     "lockOrigin":true,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -76,7 +67,7 @@
     },
     "name":"spr_MKSS_NPC_CaptainVul_Idle",
     "playback":1,
-    "playbackSpeed":6.0,
+    "playbackSpeed":3.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -86,44 +77,17 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2934fa0a-2aa2-4ceb-a219-73314cbf9d05","path":"sprites/spr_MKSS_NPC_CaptainVul_Idle/spr_MKSS_NPC_CaptainVul_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3744a233-7663-4b7f-9bbf-847c11d47546","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8da9e4c4-322a-4839-acf5-9fa1f952795c","path":"sprites/spr_MKSS_NPC_CaptainVul_Idle/spr_MKSS_NPC_CaptainVul_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"2d3fc9f8-c84f-4dc6-9e5e-d1c2c49ea729","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4e616418-8bcc-46fc-9d69-39c6478f19a5","path":"sprites/spr_MKSS_NPC_CaptainVul_Idle/spr_MKSS_NPC_CaptainVul_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c6c594cd-a31e-4f0b-a69d-0d282a51239a","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"70333c4c-3131-4f6b-b8f0-5b4046cf3d14","path":"sprites/spr_MKSS_NPC_CaptainVul_Idle/spr_MKSS_NPC_CaptainVul_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"908287ff-b002-4114-8c02-3a9c94142ee2","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"68a10be1-fe20-467b-ae7d-5171ccbfe44f","path":"sprites/spr_MKSS_NPC_CaptainVul_Idle/spr_MKSS_NPC_CaptainVul_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0edd47e6-14bb-4d06-97cb-8bec95b0022d","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4ee4a2dd-4266-42bf-a21d-d248fd990a2c","path":"sprites/spr_MKSS_NPC_CaptainVul_Idle/spr_MKSS_NPC_CaptainVul_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e4d46285-5afc-4761-8620-d627c238f6f7","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bc8adb08-16fd-4dd3-9d91-0feaea677963","path":"sprites/spr_MKSS_NPC_CaptainVul_Idle/spr_MKSS_NPC_CaptainVul_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d98f9ded-4d85-4707-a37d-2e00b7991740","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1934c66c-1d64-49b8-ad80-75f92de105e1","path":"sprites/spr_MKSS_NPC_CaptainVul_Idle/spr_MKSS_NPC_CaptainVul_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7683131c-5a21-49be-b110-388d0692a083","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b1bb4c88-8c1e-4a0e-8fcb-9d2da0313db6","path":"sprites/spr_MKSS_NPC_CaptainVul_Idle/spr_MKSS_NPC_CaptainVul_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e341b2c5-a9d8-4e69-a99a-9ce2608f5d31","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f2978e84-7f46-4ea0-9a10-add1523c8944","path":"sprites/spr_MKSS_NPC_CaptainVul_Idle/spr_MKSS_NPC_CaptainVul_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"fa5b1b77-a544-4a10-86d9-8f8c2be5a777","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"66ec045c-9b39-40c1-83fa-b258be6b3c50","path":"sprites/spr_MKSS_NPC_CaptainVul_Idle/spr_MKSS_NPC_CaptainVul_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3dae1eaf-5bc7-4fca-bade-bbdb3afc7258","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"34c21724-913d-4e56-bedc-d536853db532","path":"sprites/spr_MKSS_NPC_CaptainVul_Idle/spr_MKSS_NPC_CaptainVul_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a218752f-d1dd-4684-b2f9-eb90fd9fc1cb","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4c940bfb-e59c-4b93-9cdd-b33ef0a1a6d0","path":"sprites/spr_MKSS_NPC_CaptainVul_Idle/spr_MKSS_NPC_CaptainVul_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c21f90df-1798-4e36-807f-324e74ae2e91","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c1d548b1-cd38-4249-a378-bdf46bfc117f","path":"sprites/spr_MKSS_NPC_CaptainVul_Idle/spr_MKSS_NPC_CaptainVul_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"f48231f4-b986-40ec-8a8e-8fa4235fcd9b","IsCreationKey":false,"Key":10.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7e464300-f395-4ff3-bbf8-e0793748e168","path":"sprites/spr_MKSS_NPC_CaptainVul_Idle/spr_MKSS_NPC_CaptainVul_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2796f16b-e269-4e71-9dc6-e4866965df86","IsCreationKey":false,"Key":11.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"464575dc-d6fc-46d6-92ce-e60c29f8d50e","path":"sprites/spr_MKSS_NPC_CaptainVul_Idle/spr_MKSS_NPC_CaptainVul_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"092b06bf-3f96-4d60-943e-a4997529bab5","IsCreationKey":false,"Key":12.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3cd97f7f-c6f1-4be9-821c-68558892a8e8","path":"sprites/spr_MKSS_NPC_CaptainVul_Idle/spr_MKSS_NPC_CaptainVul_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"7ede8553-607f-4678-9cdd-8b61691e159f","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -139,5 +103,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":29,
+  "width":28,
 }

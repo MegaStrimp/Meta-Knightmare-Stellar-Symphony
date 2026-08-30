@@ -28,7 +28,7 @@ if (!localPause)
 					
 					if (other.hitSfxIndex != -1) scr_PlaySfx(other.hitSfxIndex);
 					
-					scr_Attack_HitList_Add(other,id);
+					scr_Entity_HitList_Add(other,id);
 					
 					other.receivedAttackOwner = owner;
 					other.receivedKnockbackAngle = knockbackAngle;

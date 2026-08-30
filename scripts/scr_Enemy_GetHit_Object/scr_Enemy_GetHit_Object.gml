@@ -15,7 +15,7 @@ function scr_Enemy_GetHit_Object(targetEnemy,targetObject)
 			targetEnemy.shakeX = 1;
 			targetEnemy.shakeY = 1;
 			
-			if (canSetHitList) scr_Attack_HitList_Add(targetEnemy,id);
+			if (canSetHitList) scr_Entity_HitList_Add(targetEnemy,id);
 			
 			var hitByFinisher = false;
 			

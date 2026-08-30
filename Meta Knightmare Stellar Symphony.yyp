@@ -3747,6 +3747,7 @@
     {"id":{"name":"spr_MKSS_NPC_AxeKnight","path":"sprites/spr_MKSS_NPC_AxeKnight/spr_MKSS_NPC_AxeKnight.yy",},},
     {"id":{"name":"spr_MKSS_NPC_CaptainVul_HappyTalk","path":"sprites/spr_MKSS_NPC_CaptainVul_HappyTalk/spr_MKSS_NPC_CaptainVul_HappyTalk.yy",},},
     {"id":{"name":"spr_MKSS_NPC_CaptainVul_Idle","path":"sprites/spr_MKSS_NPC_CaptainVul_Idle/spr_MKSS_NPC_CaptainVul_Idle.yy",},},
+    {"id":{"name":"spr_MKSS_NPC_CaptainVul_IdleHappy","path":"sprites/spr_MKSS_NPC_CaptainVul_IdleHappy/spr_MKSS_NPC_CaptainVul_IdleHappy.yy",},},
     {"id":{"name":"spr_MKSS_NPC_CaptainVul_Portrait_Idle","path":"sprites/spr_MKSS_NPC_CaptainVul_Portrait_Idle/spr_MKSS_NPC_CaptainVul_Portrait_Idle.yy",},},
     {"id":{"name":"spr_MKSS_NPC_CaptainVul_Portrait_Talk","path":"sprites/spr_MKSS_NPC_CaptainVul_Portrait_Talk/spr_MKSS_NPC_CaptainVul_Portrait_Talk.yy",},},
     {"id":{"name":"spr_MKSS_NPC_CaptainVul_Talk","path":"sprites/spr_MKSS_NPC_CaptainVul_Talk/spr_MKSS_NPC_CaptainVul_Talk.yy",},},

@@ -13,7 +13,7 @@ function scr_Player_GetHit_Contact(targetPlayer,targetObject)
 		vsp = 0;
 		hurtState = hurtStates.hurt;
 		hurtTimer = hurtTimer_Hurt;
-		scr_Attack_HitList_Add(id,targetObject);
+		scr_Entity_HitList_Add(id,targetObject);
 		
 		global.playerHp[playerNum] -= targetObject.dmg;
 		if (global.playerHp[playerNum] <= 0)
