@@ -9,7 +9,7 @@ function scr_MKSS_Player_MetaKnight_State_Dodge_Step()
 	#region Setup
 	if (playerState_Setup)
 	{
-		slideAccelTimer = floor(attackCancelTimer / 2);
+		slideAccelTimer = -1;
 		dodgeEndTimer = 20;
 		attackMakeLightInvincible = hasShadowDodge;
 		

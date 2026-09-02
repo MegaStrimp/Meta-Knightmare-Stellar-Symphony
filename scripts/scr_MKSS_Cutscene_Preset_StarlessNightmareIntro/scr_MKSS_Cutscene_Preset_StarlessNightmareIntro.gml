@@ -23,6 +23,21 @@ function scr_MKSS_Cutscene_Preset_StarlessNightmareIntro()
 	[
 		function()
 		{
+			global.hasHud = false;
+			global.canGamePause = false;
+			global.MKSS_CutsceneStopMovement = true;
+			
+			with (obj_Player)
+			{
+				attackMakeHeavyInvincible = true;
+				
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_StarlessNightmareIntro_Step);
+			}
+			
+			phaseTimer = 100;
+		},
+		function()
+		{
 			var bossTitle = instance_create_depth(0,0,0,obj_MKSS_UI_BossTitle);
 			with (bossTitle)
 			{

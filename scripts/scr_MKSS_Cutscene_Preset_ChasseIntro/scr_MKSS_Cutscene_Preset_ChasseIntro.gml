@@ -33,18 +33,29 @@ function scr_MKSS_Cutscene_Preset_ChasseIntro()
 		{
 			instance_create_depth(camera_get_view_x(mainView) + (global.gameWidth / 2),camera_get_view_y(mainView) + (global.gameHeight / 2),layer_get_depth("BackgroundEnvironment") + 2,obj_MKSS_BgEnv_ChasseShip);
 			
-			phaseTimer = 260;
+			phaseTimer = 60;
 		},
 		function()
 		{
 			with (obj_Player)
 			{
-				dir = -1;
+				scr_ChangeSprite(spriteSet.sprFront);
+				
+				lookingForward = true;
+			}
+			
+			phaseTimer = 200;
+		},
+		function()
+		{
+			with (obj_Player)
+			{
+				dirX = -1;
 				
 				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Slide_Step);
 			}
 			
-			phaseTimer = 100;
+			phaseTimer = 40;
 		},
 		function()
 		{
@@ -55,18 +66,7 @@ function scr_MKSS_Cutscene_Preset_ChasseIntro()
 				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Slide_Step);
 			}
 			
-			phaseTimer = 100;
-		},
-		function()
-		{
-			with (obj_Player)
-			{
-				dir = -1;
-				
-				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Dodge_Step);
-			}
-			
-			phaseTimer = 140;
+			phaseTimer = 300;
 		},
 		function()
 		{
@@ -85,7 +85,19 @@ function scr_MKSS_Cutscene_Preset_ChasseIntro()
 			
 			with (obj_MKSS_BgEnv_ChasseShip) instance_destroy();
 			
-			phaseTimer = 200;
+			phaseTimer = 30;
+		},
+		function()
+		{
+			with (obj_Player)
+			{
+				hsp = movespeedSlide * -1 * speedMultFinal;
+				dirX = 1;
+				
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Dodge_Step);
+			}
+			
+			phaseTimer = 170;
 		},
 		function()
 		{

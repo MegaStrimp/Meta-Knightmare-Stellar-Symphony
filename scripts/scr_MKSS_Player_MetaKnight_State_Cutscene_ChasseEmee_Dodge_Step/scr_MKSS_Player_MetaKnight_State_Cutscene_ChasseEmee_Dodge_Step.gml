@@ -5,7 +5,7 @@ function scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Dodge_Step(targetD
 	#region Setup
 	if (playerState_Setup)
 	{
-		slideAccelTimer = floor(targetDodgeEndTimer / 2);
+		slideAccelTimer = -1;
 		dodgeEndTimer = targetDodgeEndTimer;
 		
 		playerState_Setup = false;

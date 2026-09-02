@@ -5,6 +5,8 @@ function scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Step()
 	#region Setup
 	if (playerState_Setup)
 	{
+		lookingForward = false;
+		
 		playerState_Setup = false;
 	}
 	#endregion
@@ -19,7 +21,17 @@ function scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Step()
 		
 		if ((hsp == 0) and (runTurnBuffer == -1))
 		{
-			if (!isWalking) sprite_index = spriteSet.sprIdle;
+			if (!isWalking)
+			{
+				if (lookingForward)
+				{
+					sprite_index = spriteSet.sprFront;
+				}
+				else
+				{
+					sprite_index = spriteSet.sprIdle;
+				}
+			}
 		}
 		else
 		{

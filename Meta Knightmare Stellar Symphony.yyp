@@ -2713,6 +2713,7 @@
     {"id":{"name":"scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Slide_Step","path":"scripts/scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Slide_Step/scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Slide_Step.yy",},},
     {"id":{"name":"scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Step","path":"scripts/scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Step/scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Step.yy",},},
     {"id":{"name":"scr_MKSS_Player_MetaKnight_State_Cutscene_StarlessMarxIntro_Step","path":"scripts/scr_MKSS_Player_MetaKnight_State_Cutscene_StarlessMarxIntro_Step/scr_MKSS_Player_MetaKnight_State_Cutscene_StarlessMarxIntro_Step.yy",},},
+    {"id":{"name":"scr_MKSS_Player_MetaKnight_State_Cutscene_StarlessNightmareIntro_Step","path":"scripts/scr_MKSS_Player_MetaKnight_State_Cutscene_StarlessNightmareIntro_Step/scr_MKSS_Player_MetaKnight_State_Cutscene_StarlessNightmareIntro_Step.yy",},},
     {"id":{"name":"scr_MKSS_Player_MetaKnight_State_Dodge_Step","path":"scripts/scr_MKSS_Player_MetaKnight_State_Dodge_Step/scr_MKSS_Player_MetaKnight_State_Dodge_Step.yy",},},
     {"id":{"name":"scr_MKSS_Player_MetaKnight_State_DoorEnter_Step","path":"scripts/scr_MKSS_Player_MetaKnight_State_DoorEnter_Step/scr_MKSS_Player_MetaKnight_State_DoorEnter_Step.yy",},},
     {"id":{"name":"scr_MKSS_Player_MetaKnight_State_Duck_Step","path":"scripts/scr_MKSS_Player_MetaKnight_State_Duck_Step/scr_MKSS_Player_MetaKnight_State_Duck_Step.yy",},},
