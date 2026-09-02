@@ -11,7 +11,7 @@ if (canSelect)
 	if (input_check_pressed("B",playerNum))
 	{
 		var sfx = scr_PlaySfx(snd_MKSS_ButtonNo);
-		audio_sound_pitch(sfx,random_range(.85,1.15));
+		//audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		global.canGamePause = true;
 		

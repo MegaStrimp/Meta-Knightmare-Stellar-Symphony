@@ -67,6 +67,8 @@ function scr_MKSS_Enemy_Booler_AI_Chase_Float_Step()
 				dirY = choose(-1,1);
 				upAndDownComponent_TurnTimer = upAndDownComponent_TurnTimerMax;
 				
+				pauseOutsideView = false;
+				
 				scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_Booler_AI_Chase_Mist_Step);
 			}
 			#endregion

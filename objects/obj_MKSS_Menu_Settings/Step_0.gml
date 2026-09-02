@@ -67,7 +67,7 @@ if (canSelect)
 		if (global.settingsList[selectionIndex].selectAction != undefined)
 		{
 			var sfx = scr_PlaySfx(snd_MKSS_ButtonYes);
-			audio_sound_pitch(sfx,random_range(.85,1.15));
+			//audio_sound_pitch(sfx,random_range(.85,1.15));
 			
 			script_execute_ext(global.settingsList[selectionIndex].selectAction,global.settingsList[selectionIndex].selectActionArgs);
 		}
@@ -80,7 +80,7 @@ if (canSelect)
 		if (global.settingsList[selectionIndex].backAction != undefined)
 		{
 			var sfx = scr_PlaySfx(snd_MKSS_ButtonNo);
-			audio_sound_pitch(sfx,random_range(.85,1.15));
+			//audio_sound_pitch(sfx,random_range(.85,1.15));
 			
 			script_execute_ext(global.settingsList[selectionIndex].backAction,global.settingsList[selectionIndex].backActionArgs);
 		}

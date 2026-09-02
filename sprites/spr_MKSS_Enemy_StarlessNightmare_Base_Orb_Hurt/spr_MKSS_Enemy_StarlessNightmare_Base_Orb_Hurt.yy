@@ -36,8 +36,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Base",
-    "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Starless Bosses/Starless Nightmare/Sprites/Base.yy",
+    "name":"Orb",
+    "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Starless Bosses/Starless Nightmare/Sprites/Base/Orb.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

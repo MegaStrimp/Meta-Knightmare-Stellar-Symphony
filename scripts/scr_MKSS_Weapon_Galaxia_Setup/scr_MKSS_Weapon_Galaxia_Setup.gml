@@ -18,6 +18,8 @@ function scr_MKSS_Weapon_Galaxia_Setup()
 	
 	galaxia_Kick_Movespeed = 4;
 	
+	galaxia_Finisher_Movespeed = 3;
+	
 	galaxia_Stab_Movespeed = 4;
 	galaxia_Stab_Decel = .125;
 	

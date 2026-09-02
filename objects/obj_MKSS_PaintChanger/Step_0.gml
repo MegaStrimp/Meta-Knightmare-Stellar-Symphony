@@ -83,7 +83,7 @@ if (isActive)
 	if (input_check_pressed("B",playerNum))
 	{
 		var sfx = scr_PlaySfx(snd_MKSS_ButtonNo);
-		audio_sound_pitch(sfx,random_range(.85,1.15));
+		//audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		global.hasHud = true;
 		
@@ -106,7 +106,7 @@ if (isActive)
 		if (input_check_pressed("L",playerNum))
 		{
 			var sfx = scr_PlaySfx(snd_MKSS_ButtonChange);
-			audio_sound_pitch(sfx,random_range(.85,1.15));
+			//audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 			var pedestalList = obj_MKSS_Pedestal_Controller.pedestalList;
 			var pedestalListSize = ds_list_size(pedestalList);
@@ -140,7 +140,7 @@ if (isActive)
 		if (input_check_pressed("R",playerNum))
 		{
 			var sfx = scr_PlaySfx(snd_MKSS_ButtonChange);
-			audio_sound_pitch(sfx,random_range(.85,1.15));
+			//audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 			var pedestalList = obj_MKSS_Pedestal_Controller.pedestalList;
 			var pedestalListSize = ds_list_size(pedestalList);

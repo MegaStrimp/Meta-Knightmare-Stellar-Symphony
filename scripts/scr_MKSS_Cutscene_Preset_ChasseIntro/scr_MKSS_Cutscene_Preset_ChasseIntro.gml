@@ -33,16 +33,40 @@ function scr_MKSS_Cutscene_Preset_ChasseIntro()
 		{
 			instance_create_depth(camera_get_view_x(mainView) + (global.gameWidth / 2),camera_get_view_y(mainView) + (global.gameHeight / 2),layer_get_depth("BackgroundEnvironment") + 2,obj_MKSS_BgEnv_ChasseShip);
 			
-			phaseTimer = 300;
+			phaseTimer = 260;
 		},
 		function()
 		{
 			with (obj_Player)
 			{
+				dir = -1;
+				
 				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Slide_Step);
 			}
 			
-			phaseTimer = 300;
+			phaseTimer = 100;
+		},
+		function()
+		{
+			with (obj_Player)
+			{
+				dirX = 1;
+				
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Slide_Step);
+			}
+			
+			phaseTimer = 100;
+		},
+		function()
+		{
+			with (obj_Player)
+			{
+				dir = -1;
+				
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Dodge_Step);
+			}
+			
+			phaseTimer = 140;
 		},
 		function()
 		{

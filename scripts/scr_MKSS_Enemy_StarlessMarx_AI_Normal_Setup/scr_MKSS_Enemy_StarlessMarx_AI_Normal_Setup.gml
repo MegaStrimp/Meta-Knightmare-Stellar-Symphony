@@ -41,7 +41,6 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_Setup(targetIsBoss = true)
 	
 	attackTimer = -1;
 	attackTimerMax = 90;
-	floatOffset = 0;
 	
 	shooterCutter_Count = 0;
 	shooterCutter_CurrentCutterIndex = 0;

@@ -51,7 +51,7 @@ function scr_MKSS_Attack_Execute_Buzzcut_Slash1()
 		if (other.dirX == -1) knockbackAngle = 180;
 		knockbackForce = (other.buzzcut_Slash_Movespeed / 1.75);
 		sprite_index = spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash1;
-		mask_index = spr_MKSS_Player_MetaKnight_Normal_AttackMasks_Attack_Normal_Slash1;
+		mask_index = spr_MKSS_Player_MetaKnight_Normal_AttackMasks_Attack_Buzzcut_Slash1;
 		image_xscale = other.dirX;
 		dirX = other.dirX;
 		attackAIBeginStep = scr_MKSS_Attack_Buzzcut_Slash1_BeginStep;

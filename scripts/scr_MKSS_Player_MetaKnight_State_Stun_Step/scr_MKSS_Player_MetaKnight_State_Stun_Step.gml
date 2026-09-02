@@ -7,6 +7,9 @@ function scr_MKSS_Player_MetaKnight_State_Stun_Step()
 	{
 		hsp = 0;
 		
+		hurtState = hurtStates.none;
+		hurtTimer = -1;
+		
 		stunEndTimer = 60;
 		scr_MKSS_ParticleSet_Stun1(stunEndTimer);
 		

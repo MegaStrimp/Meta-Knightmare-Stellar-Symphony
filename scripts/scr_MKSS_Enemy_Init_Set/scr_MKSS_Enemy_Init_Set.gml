@@ -817,7 +817,10 @@ function scr_MKSS_Enemy_Init_Set()
 	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
 	{
 		sprOrbIdle: spr_MKSS_Enemy_StarlessNightmare_Base_Orb_Idle,
+		sprOrbGrow: spr_MKSS_Enemy_StarlessNightmare_Base_Orb_Grow,
 		sprOrbHurt: spr_MKSS_Enemy_StarlessNightmare_Base_Orb_Hurt,
+		
+		sprWizardIdle: spr_MKSS_Enemy_StarlessNightmare_Base_Wizard_Idle,
 		
 		maskIndex: spr_16x16Mask_MiddleOrigin
 	});

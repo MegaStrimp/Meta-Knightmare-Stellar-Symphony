@@ -85,7 +85,7 @@ function scr_MKSS_UI_Notif_Init_Set()
 	var notifNextScript = function()
 	{
 		var sfx = scr_PlaySfx(snd_MKSS_ButtonChange);
-		audio_sound_pitch(sfx,random_range(.85,1.15));
+		//audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		var targetRoom = rm_MKSS_BattleshipHalberd;
 		scr_GoToRoom(targetRoom,false);
@@ -113,7 +113,7 @@ function scr_MKSS_UI_Notif_Init_Set()
 	var notifBackScript = function()
 	{
 		var sfx = scr_PlaySfx(snd_MKSS_ButtonNo);
-		audio_sound_pitch(sfx,random_range(.85,1.15));
+		//audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		isClosed = true;
 		destroyTimer = destroyTimerMax;
@@ -134,7 +134,7 @@ function scr_MKSS_UI_Notif_Init_Set()
 	var notifNextScript = function()
 	{
 		var sfx = scr_PlaySfx(snd_MKSS_ButtonChange);
-		audio_sound_pitch(sfx,random_range(.85,1.15));
+		//audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		var targetRoom = rm_MKSS_Menu_TitleScreen;
 		scr_GoToRoom(targetRoom,false);
@@ -162,7 +162,7 @@ function scr_MKSS_UI_Notif_Init_Set()
 	var notifBackScript = function()
 	{
 		var sfx = scr_PlaySfx(snd_MKSS_ButtonNo);
-		audio_sound_pitch(sfx,random_range(.85,1.15));
+		//audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		isClosed = true;
 		destroyTimer = destroyTimerMax;
@@ -191,7 +191,7 @@ function scr_MKSS_UI_Notif_Init_Set()
 	var notifBackScript = function()
 	{
 		var sfx = scr_PlaySfx(snd_MKSS_ButtonNo);
-		audio_sound_pitch(sfx,random_range(.85,1.15));
+		//audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		isClosed = true;
 		destroyTimer = destroyTimerMax;
@@ -223,7 +223,7 @@ function scr_MKSS_UI_Notif_Init_Set()
 	var notifBackScript = function()
 	{
 		var sfx = scr_PlaySfx(snd_MKSS_ButtonNo);
-		audio_sound_pitch(sfx,random_range(.85,1.15));
+		//audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		isClosed = true;
 		destroyTimer = destroyTimerMax;
@@ -269,7 +269,7 @@ function scr_MKSS_UI_Notif_Init_Set()
 	var notifBackScript = function()
 	{
 		var sfx = scr_PlaySfx(snd_MKSS_ButtonNo);
-		audio_sound_pitch(sfx,random_range(.85,1.15));
+		//audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		isClosed = true;
 		destroyTimer = destroyTimerMax;

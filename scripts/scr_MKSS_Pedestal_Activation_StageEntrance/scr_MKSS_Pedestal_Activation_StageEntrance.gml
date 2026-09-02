@@ -3,7 +3,7 @@
 function scr_MKSS_Pedestal_Activation_StageEntrance()
 {
 	var sfx = scr_PlaySfx(snd_MKSS_ButtonChange);
-	audio_sound_pitch(sfx,random_range(.85,1.15));
+	//audio_sound_pitch(sfx,random_range(.85,1.15));
 	
 	global.hasHud = false;
 	

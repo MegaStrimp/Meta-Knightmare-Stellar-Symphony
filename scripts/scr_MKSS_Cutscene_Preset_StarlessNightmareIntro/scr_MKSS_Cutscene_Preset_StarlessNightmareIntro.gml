@@ -2,21 +2,11 @@
 
 function scr_MKSS_Cutscene_Preset_StarlessNightmareIntro()
 {
-	/*
-	Black stage
-	Orb appears
-	Orb runs to the right
-	MK starts running
-	Orb is getting closer to MK
-	Orb flies upwards fast and in an arc
-	Returns in his wizard dash form and goes off screen to the left
-	Black overlay is gone
-	Teleports to the center with namedrop and music
-	*/
-	
 	#region Setup
 	bossSpawned = false;
 	musicPlayed = false;
+	
+	nightmareSpawned = false;
 	#endregion
 	
 	#region Step Script
@@ -42,6 +32,46 @@ function scr_MKSS_Cutscene_Preset_StarlessNightmareIntro()
 			}
 			
 			phaseTimer = 180;
+		},
+		function()
+		{
+			global.hasHud = true;
+			global.canGamePause = true;
+			global.MKSS_CutsceneStopMovement = false;
+			
+			if (!musicPlayed)
+			{
+				scr_MKSS_Music_Play(global.MKSS_MusicIDs[? "starlessNightmare"]);
+				
+				musicPlayed = true;
+			}
+			
+			if (!nightmareSpawned)
+			{
+				with (instance_create_layer(128,72,"Enemies",obj_MKSS_Enemy_StarlessNightmare))
+				{
+					scr_MKSS_Enemy_StarlessNightmare_AI_Normal_Setup();
+				}
+				
+				nightmareSpawned = true;
+			}
+			
+			with (obj_Player)
+			{
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Normal_Step);
+			}
+			
+			with (obj_MKSS_Enemy_StarlessNightmare)
+			{
+				//scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_StarlessNightmare_AI_Normal_Idle_Step);
+				//sprite_index = spriteSet.sprIdle;
+			}
+			
+			with (obj_MKSS_UI_BossTitle) instance_destroy();
+			
+			instance_destroy();
+			
+			phaseTimer = -1;
 		}
 	];
 	#endregion

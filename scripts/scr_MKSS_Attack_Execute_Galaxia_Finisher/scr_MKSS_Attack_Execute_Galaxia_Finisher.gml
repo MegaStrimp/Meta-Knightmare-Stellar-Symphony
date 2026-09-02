@@ -22,6 +22,10 @@ function scr_MKSS_Attack_Execute_Galaxia_Finisher(hasExtraFinisher = false)
 	canCancelAttackAnimation = false;
 	attackCanTurnSprite = false;
 	
+	attackStopSpeedLimit = true;
+	hsp = galaxia_Finisher_Movespeed * dirX * speedMultFinal;
+	drawDirX = dirX;
+	
 	drawDirX = dirX;
 	
 	grounded = false;

@@ -9,6 +9,9 @@ if (!localPause)
 	#region Pause
 	if (input_check_pressed("start",playerNum))
 	{
+		scr_Debug_WriteLog("Cutscene Phase - " + string(phase));
+		scr_Debug_WriteLog("Cutscene Timer - " + string(phaseTimer));
+		
 		global.MKSS_CutsceneIsPaused = true;
 	}
 	#endregion

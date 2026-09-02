@@ -17,7 +17,7 @@ if (canSelect)
 	if ((input_check_pressed("B",playerNum)) or ((scr_MouseIsInbetween(xx + 4,yy + 144,xx + 50,yy + 156)) and (mouse_check_button_pressed(mb_left))))
 	{
 		var sfx = scr_PlaySfx(snd_MKSS_ButtonNo);
-		audio_sound_pitch(sfx,random_range(.85,1.15));
+		//audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		with (obj_FrameworkControl)
 		{
@@ -42,7 +42,7 @@ if (canSelect)
 		if ((input_check_pressed("X",playerNum)) or ((scr_MouseIsInbetween(xx + 97,yy + 144,xx + 143,yy + 156)) and (mouse_check_button_pressed(mb_left))))
 		{
 			var sfx = scr_PlaySfx(snd_MKSS_ButtonChange);
-			audio_sound_pitch(sfx,random_range(.85,1.15));
+			//audio_sound_pitch(sfx,random_range(.85,1.15));
 			
 			var notif = scr_MKSS_UI_Notif_Create_Custom(currentIndex.description,currentIndex.icon,"fnt_Advance_Small");
 			with (notif)
@@ -79,7 +79,7 @@ if (canSelect)
 				else
 				{
 					var sfx = scr_PlaySfx(snd_MKSS_ButtonNo);
-					audio_sound_pitch(sfx,random_range(.85,1.15));
+					//audio_sound_pitch(sfx,random_range(.85,1.15));
 				}
 			}
 		}
@@ -90,7 +90,7 @@ if (canSelect)
 	if ((input_check_pressed("L",playerNum)) or ((scr_MouseIsInbetween(xx + 4,yy + 2,xx + 50,yy + 14)) and (mouse_check_button_pressed(mb_left))))
 	{
 		var sfx = scr_PlaySfx(snd_MKSS_ButtonChange);
-		audio_sound_pitch(sfx,random_range(.85,1.15));
+		//audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		constellationTypeList_CurrentIndex = (constellationTypeList_CurrentIndex - 1 + ds_list_size(constellationTypeList)) % ds_list_size(constellationTypeList);
 		currentCategory = ds_list_find_value(constellationTypeList,constellationTypeList_CurrentIndex);
@@ -103,7 +103,7 @@ if (canSelect)
 	if ((input_check_pressed("R",playerNum)) or ((scr_MouseIsInbetween(xx + 189,yy + 2,xx + 235,yy + 14)) and (mouse_check_button_pressed(mb_left))))
 	{
 		var sfx = scr_PlaySfx(snd_MKSS_ButtonChange);
-		audio_sound_pitch(sfx,random_range(.85,1.15));
+		//audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		constellationTypeList_CurrentIndex = (constellationTypeList_CurrentIndex + 1 + ds_list_size(constellationTypeList)) % ds_list_size(constellationTypeList);
 		currentCategory = ds_list_find_value(constellationTypeList,constellationTypeList_CurrentIndex);
