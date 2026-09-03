@@ -15,4 +15,6 @@ drawScript = -1;
 
 bossSpawned = false;
 musicPlayed = false;
+
+canBePaused = true;
 #endregion

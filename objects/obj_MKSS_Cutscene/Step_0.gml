@@ -7,7 +7,7 @@ if (stepScript != -1) script_execute(stepScript);
 if (!localPause)
 {
 	#region Pause
-	if (input_check_pressed("start",playerNum))
+	if ((input_check_pressed("start",playerNum)) and (canBePaused))
 	{
 		scr_Debug_WriteLog("Cutscene Phase - " + string(phase));
 		scr_Debug_WriteLog("Cutscene Timer - " + string(phaseTimer));

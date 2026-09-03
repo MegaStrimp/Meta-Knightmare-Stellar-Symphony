@@ -15,5 +15,7 @@ bigStarNumber = sprite_get_number(spr_MKSS_Particle_BigStar_Yellow);
 particleDir = 1;
 particleTimerMax = 15;
 particleTimer = particleTimerMax;
+
+hasButtonHint = false;
 #endregion
 #endregion

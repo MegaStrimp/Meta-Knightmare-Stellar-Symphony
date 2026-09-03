@@ -3,6 +3,8 @@
 function scr_MKSS_Cutscene_Preset_TutorialIntro()
 {
 	#region Setup
+	canBePaused = false;
+	
 	cameraOffset = -200;
 	cameraOffsetOld = global.camera.yOffset;
 	moveCamera = false;
