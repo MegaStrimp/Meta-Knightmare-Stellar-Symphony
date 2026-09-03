@@ -14,7 +14,7 @@ var currentIndex = global.MKSS_UpgradeList[selection];
 if (canSelect)
 {
 	#region Go Back
-	if ((input_check_pressed("B",playerNum)) or ((scr_MouseIsInbetween(xx + 4,yy + 144,xx + 50,yy + 156)) and (mouse_check_button_pressed(mb_left))))
+	if (((input_check_pressed("B",playerNum)) or ((scr_MouseIsInbetween(xx + 4,yy + 144,xx + 50,yy + 156)) and (mouse_check_button_pressed(mb_left)))) and (!global.MKSS_Tutorial_FirstUpgrade))
 	{
 		var sfx = scr_PlaySfx(snd_MKSS_ButtonNo);
 		//audio_sound_pitch(sfx,random_range(.85,1.15));
@@ -36,7 +36,7 @@ if (canSelect)
 	}
 	#endregion
 	
-	if ((!currentIndex.isLesserNode) and (currentIndex.canBeUnlocked))
+	if ((!currentIndex.isLesserNode) and (currentIndex.canBeUnlocked) and ((!global.MKSS_Tutorial_FirstUpgrade) or (currentIndex.ID == "Base_Parry")))
 	{
 		#region Info
 		if ((input_check_pressed("X",playerNum)) or ((scr_MouseIsInbetween(xx + 97,yy + 144,xx + 143,yy + 156)) and (mouse_check_button_pressed(mb_left))))
@@ -63,6 +63,8 @@ if (canSelect)
 					audio_sound_pitch(sfx,random_range(.85,1.15));
 					var sfx = scr_PlaySfx(snd_MKSS_Pop);
 					audio_sound_pitch(sfx,random_range(.85,1.15));
+					
+					global.MKSS_Tutorial_FirstUpgrade = false;
 					
 					global.MKSS_PlayerMetaPoints[playerNum] -= currentIndex.price;
 					metaPointsPurchaseTimer = metaPointsPurchaseTimerMax;

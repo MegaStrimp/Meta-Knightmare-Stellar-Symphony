@@ -50,6 +50,15 @@ function scr_MKSS_Cutscene_Preset_ChasseIntro()
 		{
 			with (obj_Player)
 			{
+				#region Audio
+				var sfx = scr_PlaySfx(snd_MKSS_Slide);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
+				#endregion
+				
+				#region Particles
+				scr_MKSS_ParticleSet_Run(x + (16 * -dirX),y + 16,dirX);
+				#endregion
+				
 				dirX = -1;
 				
 				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Slide_Step);
@@ -61,6 +70,15 @@ function scr_MKSS_Cutscene_Preset_ChasseIntro()
 		{
 			with (obj_Player)
 			{
+				#region Audio
+				var sfx = scr_PlaySfx(snd_MKSS_Slide);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
+				#endregion
+				
+				#region Particles
+				scr_MKSS_ParticleSet_Run(x + (16 * -dirX),y + 16,dirX);
+				#endregion
+				
 				dirX = 1;
 				
 				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_ChasseEmee_Slide_Step);
@@ -91,6 +109,15 @@ function scr_MKSS_Cutscene_Preset_ChasseIntro()
 		{
 			with (obj_Player)
 			{
+				#region Audio
+				var sfx = scr_PlaySfx(snd_MKSS_RunBegin);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
+				#endregion
+				
+				#region Particles
+				scr_MKSS_ParticleSet_Run(x + (16 * -dirX),y + 16,dirX);
+				#endregion
+				
 				hsp = movespeedSlide * -1 * speedMultFinal;
 				dirX = 1;
 				

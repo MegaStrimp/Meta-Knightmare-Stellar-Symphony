@@ -14,10 +14,10 @@ function scr_MKSS_Pause_Step()
 		#region Selection
 		if ((gamePauseDelayTimer == -1) and (gamePauseEndTimer == -1))
 		{
-			if ((input_check_pressed("A",playerNum)) or (input_check_pressed("start",playerNum)) or ((scr_MouseIsInbetween(xx + 75,yy + 115,xx + 166,yy + 155)) and (mouse_check_button_pressed(mb_left))))
+			if (((input_check_pressed("A",playerNum)) or (input_check_pressed("start",playerNum)) or ((scr_MouseIsInbetween(xx + 75,yy + 115,xx + 166,yy + 155)) and (mouse_check_button_pressed(mb_left)))) and (!global.MKSS_Tutorial_FirstUpgrade))
 			{
 				var sfx = scr_PlaySfx(snd_MKSS_Unpause);
-				audio_sound_pitch(sfx,random_range(.85,1.15));
+				//audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				MKSS_GamePause_TitleXTarget = -70;
 				
@@ -31,7 +31,7 @@ function scr_MKSS_Pause_Step()
 				
 				MKSS_GamePause_EndTimer = 30;
 			}
-			else if ((input_check_pressed("B",playerNum)) or ((scr_MouseIsInbetween(xx + 163,yy + 63,xx + 217,yy + 116)) and (mouse_check_button_pressed(mb_left))))
+			else if (((input_check_pressed("B",playerNum)) or ((scr_MouseIsInbetween(xx + 163,yy + 63,xx + 217,yy + 116)) and (mouse_check_button_pressed(mb_left)))) and (!global.MKSS_Tutorial_FirstUpgrade))
 			{
 				var notifKey = "backToTitle";
 				if (global.inStage) notifKey = "backToHalberd";
@@ -39,7 +39,7 @@ function scr_MKSS_Pause_Step()
 				var notifID = global.MKSS_NotifIDs[? notifKey];
 				scr_MKSS_ObtainNotif(notifID,true);
 			}
-			else if ((input_check_pressed("X",playerNum)) or ((scr_MouseIsInbetween(xx + 17,yy + 61,xx + 94,yy + 130)) and (mouse_check_button_pressed(mb_left))))
+			else if (((input_check_pressed("X",playerNum)) or ((scr_MouseIsInbetween(xx + 17,yy + 61,xx + 94,yy + 130)) and (mouse_check_button_pressed(mb_left)))) and (!global.MKSS_Tutorial_FirstUpgrade))
 			{
 				instance_create_depth(0,0,depth - 1,obj_MKSS_Menu_Settings);
 				

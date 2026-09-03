@@ -108,32 +108,35 @@ function scr_MKSS_Pause_DrawEnd()
 	#endregion
 	
 	#region Settings
-	scr_DrawMask_Begin(xx,yy,xx + global.gameWidth,yy + global.gameHeight);
-	
-	draw_set_alpha(1);
-	draw_rectangle(xx,yy,xx + MKSS_GamePause_Settings_TransitionX,yy + 160,false);
-	draw_sprite(spr_MKSS_Menu_PauseScreen_Settings_Transition,0,xx + MKSS_GamePause_Settings_TransitionX,yy);
-	draw_set_alpha(0);
-	gpu_set_blendenable(true);
-	gpu_set_colorwriteenable(true,true,true,true);
-	
-	gpu_set_blendmode_ext(bm_dest_alpha,bm_inv_dest_alpha);
-	gpu_set_alphatestenable(true);
-	draw_set_alpha(1);
-	
-	for (var i = 0; i < 3; i++)
+	if (!global.MKSS_Tutorial_FirstUpgrade)
 	{
-		draw_sprite(spr_MKSS_Menu_PauseScreen_Settings_Background_2,0,xx,yy - (160 * (i - 1)) + sine_wave(current_time / 1000,12,64,0));
-		draw_sprite(spr_MKSS_Menu_PauseScreen_Settings_Background_1,0,xx,yy - (224 * (i - 1)) + MKSS_GamePause_Settings_BackgroundY);
-	}
-	
-	scr_DrawMask_End();
-	
-	if (MKSS_GamePause_SettingsActive)
-	{
-		for (var i = 0; i < array_length(MKSS_GamePause_Settings_Cog); i++)
+		scr_DrawMask_Begin(xx,yy,xx + global.gameWidth,yy + global.gameHeight);
+		
+		draw_set_alpha(1);
+		draw_rectangle(xx,yy,xx + MKSS_GamePause_Settings_TransitionX,yy + 160,false);
+		draw_sprite(spr_MKSS_Menu_PauseScreen_Settings_Transition,0,xx + MKSS_GamePause_Settings_TransitionX,yy);
+		draw_set_alpha(0);
+		gpu_set_blendenable(true);
+		gpu_set_colorwriteenable(true,true,true,true);
+		
+		gpu_set_blendmode_ext(bm_dest_alpha,bm_inv_dest_alpha);
+		gpu_set_alphatestenable(true);
+		draw_set_alpha(1);
+		
+		for (var i = 0; i < 3; i++)
 		{
-			if ((MKSS_GamePause_Settings_Cog[i].appearTimer == -1) and (MKSS_GamePause_Settings_Cog[i].disappearTimer != -1)) draw_sprite(spr_MKSS_Menu_PauseScreen_Settings_Cog,0,xx + MKSS_GamePause_Settings_Cog[i].x,yy + MKSS_GamePause_Settings_Cog[i].y);
+			draw_sprite(spr_MKSS_Menu_PauseScreen_Settings_Background_2,0,xx,yy - (160 * (i - 1)) + sine_wave(current_time / 1000,12,64,0));
+			draw_sprite(spr_MKSS_Menu_PauseScreen_Settings_Background_1,0,xx,yy - (224 * (i - 1)) + MKSS_GamePause_Settings_BackgroundY);
+		}
+		
+		scr_DrawMask_End();
+		
+		if (MKSS_GamePause_SettingsActive)
+		{
+			for (var i = 0; i < array_length(MKSS_GamePause_Settings_Cog); i++)
+			{
+				if ((MKSS_GamePause_Settings_Cog[i].appearTimer == -1) and (MKSS_GamePause_Settings_Cog[i].disappearTimer != -1)) draw_sprite(spr_MKSS_Menu_PauseScreen_Settings_Cog,0,xx + MKSS_GamePause_Settings_Cog[i].x,yy + MKSS_GamePause_Settings_Cog[i].y);
+			}
 		}
 	}
 	#endregion
@@ -149,25 +152,28 @@ function scr_MKSS_Pause_DrawEnd()
 	var targetIcon = global.UI_IconBindings[? string(input_binding_get("Y"))];
 	if (targetIcon != undefined) draw_sprite_ext(targetIcon,0,xx + 123 + 24 + waveX,yy + MKSS_GamePause_Upgrades_ButtonY + 2 + waveY,1,1,image_angle,c_white,MKSS_GamePause_PauseButtonAlpha);
 	
-	waveX = -sine_wave(current_time / 4800,1,1,0);
-	waveY = -sine_wave(current_time / 4700,1,1.2,0);
-	draw_sprite_ext(spr_MKSS_Menu_PauseScreen_SettingsButton,MKSS_GamePause_SettingsButtonIndex,xx + 55 + waveX,yy + MKSS_GamePause_SettingsButtonY + waveY,1,1,image_angle,c_white,MKSS_GamePause_PauseButtonAlpha);
-	
-	var targetIcon = global.UI_IconBindings[? string(input_binding_get("X"))];
-	if (targetIcon != undefined) draw_sprite_ext(targetIcon,0,xx + 55 + 26 + waveX,yy + MKSS_GamePause_SettingsButtonY + 16 + waveY,1,1,image_angle,c_white,MKSS_GamePause_PauseButtonAlpha);
-	
-	waveX = sine_wave(current_time / 4100,1,1,0);
-	waveY = sine_wave(current_time / 4300,1.15,1.15,0);
-	draw_sprite_ext(spr_MKSS_Menu_PauseScreen_ExitButton,MKSS_GamePause_ExitButtonIndex,xx + 190 + waveX,yy + MKSS_GamePause_ExitButtonY + waveY,1,1,image_angle,c_white,MKSS_GamePause_PauseButtonAlpha);
-	
-	var targetIcon = global.UI_IconBindings[? string(input_binding_get("B"))];
-	if (targetIcon != undefined) draw_sprite_ext(targetIcon,0,xx + 190 + 7 + waveX,yy + MKSS_GamePause_ExitButtonY + 18 + waveY,1,1,image_angle,c_white,MKSS_GamePause_PauseButtonAlpha);
-	
-	waveX = -sine_wave(current_time / 4500,1,1,0);
-	waveY = -sine_wave(current_time / 4300,1.05,.85,0);
-	draw_sprite_ext(spr_MKSS_Menu_PauseScreen_ReturnButton,MKSS_GamePause_ReturnButtonIndex,xx + 120 + waveX,yy + MKSS_GamePause_ReturnButtonY + waveY,1,1,image_angle,c_white,MKSS_GamePause_PauseButtonAlpha);
-	
-	var targetIcon = global.UI_IconBindings[? string(input_binding_get("A"))];
-	if (targetIcon != undefined) draw_sprite_ext(targetIcon,0,xx + 120 + 26 + waveX,yy + MKSS_GamePause_ReturnButtonY + 10 + waveY,1,1,image_angle,c_white,MKSS_GamePause_PauseButtonAlpha);
+	if (!global.MKSS_Tutorial_FirstUpgrade)
+	{
+		waveX = -sine_wave(current_time / 4800,1,1,0);
+		waveY = -sine_wave(current_time / 4700,1,1.2,0);
+		draw_sprite_ext(spr_MKSS_Menu_PauseScreen_SettingsButton,MKSS_GamePause_SettingsButtonIndex,xx + 55 + waveX,yy + MKSS_GamePause_SettingsButtonY + waveY,1,1,image_angle,c_white,MKSS_GamePause_PauseButtonAlpha);
+		
+		var targetIcon = global.UI_IconBindings[? string(input_binding_get("X"))];
+		if (targetIcon != undefined) draw_sprite_ext(targetIcon,0,xx + 55 + 26 + waveX,yy + MKSS_GamePause_SettingsButtonY + 16 + waveY,1,1,image_angle,c_white,MKSS_GamePause_PauseButtonAlpha);
+		
+		waveX = sine_wave(current_time / 4100,1,1,0);
+		waveY = sine_wave(current_time / 4300,1.15,1.15,0);
+		draw_sprite_ext(spr_MKSS_Menu_PauseScreen_ExitButton,MKSS_GamePause_ExitButtonIndex,xx + 190 + waveX,yy + MKSS_GamePause_ExitButtonY + waveY,1,1,image_angle,c_white,MKSS_GamePause_PauseButtonAlpha);
+		
+		var targetIcon = global.UI_IconBindings[? string(input_binding_get("B"))];
+		if (targetIcon != undefined) draw_sprite_ext(targetIcon,0,xx + 190 + 7 + waveX,yy + MKSS_GamePause_ExitButtonY + 18 + waveY,1,1,image_angle,c_white,MKSS_GamePause_PauseButtonAlpha);
+		
+		waveX = -sine_wave(current_time / 4500,1,1,0);
+		waveY = -sine_wave(current_time / 4300,1.05,.85,0);
+		draw_sprite_ext(spr_MKSS_Menu_PauseScreen_ReturnButton,MKSS_GamePause_ReturnButtonIndex,xx + 120 + waveX,yy + MKSS_GamePause_ReturnButtonY + waveY,1,1,image_angle,c_white,MKSS_GamePause_PauseButtonAlpha);
+		
+		var targetIcon = global.UI_IconBindings[? string(input_binding_get("A"))];
+		if (targetIcon != undefined) draw_sprite_ext(targetIcon,0,xx + 120 + 26 + waveX,yy + MKSS_GamePause_ReturnButtonY + 10 + waveY,1,1,image_angle,c_white,MKSS_GamePause_PauseButtonAlpha);
+	}
 	#endregion
 }

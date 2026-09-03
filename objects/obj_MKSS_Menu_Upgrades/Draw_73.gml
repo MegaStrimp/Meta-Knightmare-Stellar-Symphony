@@ -54,17 +54,40 @@ for (var i = 0; i < ds_list_size(constellationList); i++)
 	var nodeX = xx + iIndex.x + constellationOffsets[i].x;
 	var nodeY = yy + iIndex.y + constellationOffsets[i].y;
 	var targetSprite = spr_MKSS_Menu_Upgrades_Node_Locked;
-	if (iIndex.isUnlocked)
-	{
-		var targetSprite = spr_MKSS_Menu_Upgrades_Node_Bought;
-	}
-	else if (iIndex.canBeUnlocked)
-	{
-		var targetSprite = spr_MKSS_Menu_Upgrades_Node_Unlocked;
-	}
-	if (iIndex.isLesserNode) targetSprite = spr_MKSS_Menu_Upgrades_LesserNode;
 	
+	if (iIndex.isLesserNode)
+	{
+		targetSprite = spr_MKSS_Menu_Upgrades_LesserNode;
+	}
+	else
+	{
+		if (global.MKSS_Tutorial_FirstUpgrade)
+		{
+			if (iIndex.ID == "Base_Parry")
+			{
+				if (global.MKSS_PlayerMetaPoints[playerNum] >= iIndex.price) draw_circle(nodeX,nodeY,floor((current_time / 40) % 12),true);
+				
+				var targetSprite = spr_MKSS_Menu_Upgrades_Node_Unlocked;
+			}
+		}
+		else
+		{
+			if (iIndex.isUnlocked)
+			{
+				var targetSprite = spr_MKSS_Menu_Upgrades_Node_Bought;
+			}
+			else if (iIndex.canBeUnlocked)
+			{
+				if (global.MKSS_PlayerMetaPoints[playerNum] >= iIndex.price) draw_circle(nodeX,nodeY,floor((current_time / 40) % 12),true);
+				
+				var targetSprite = spr_MKSS_Menu_Upgrades_Node_Unlocked;
+			}
+		}
+	}
+	
+	#region Node
 	draw_sprite(targetSprite,0,nodeX,nodeY);
+	#endregion
 	
 	if (ds_list_find_value(constellationList,i) == selection)
 	{
@@ -107,11 +130,14 @@ if (finalTitle != undefined) scribble(finalTitle).align(fa_center).draw(xx + (gl
 #endregion
 
 #region Button Hints
-var backIcon = "";
-var targetIcon = global.UI_IconBindings[? string(input_binding_get("B"))];
-if (targetIcon != undefined) backIcon = "[" + sprite_get_name(targetIcon) + "]";
-
-scribble(backIcon + " Back").draw(xx + 4,yy + global.gameHeight - 16 + hintOffset + notifBoxOffset + (2 * (buttonInputTimerComponent_BTimer != -1)));
+if (!global.MKSS_Tutorial_FirstUpgrade)
+{
+	var backIcon = "";
+	var targetIcon = global.UI_IconBindings[? string(input_binding_get("B"))];
+	if (targetIcon != undefined) backIcon = "[" + sprite_get_name(targetIcon) + "]";
+	
+	scribble(backIcon + " Back").draw(xx + 4,yy + global.gameHeight - 16 + hintOffset + notifBoxOffset + (2 * (buttonInputTimerComponent_BTimer != -1)));
+}
 
 if ((!currentIndex.isLesserNode) and (currentIndex.canBeUnlocked))
 {
