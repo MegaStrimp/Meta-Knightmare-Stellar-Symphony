@@ -1,11 +1,11 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_MKSS_Enemy_StarlessMarx_Base_Fly",
-  "bboxMode":0,
-  "bbox_bottom":59,
-  "bbox_left":39,
-  "bbox_right":117,
-  "bbox_top":18,
+  "bboxMode":2,
+  "bbox_bottom":62,
+  "bbox_left":73,
+  "bbox_right":121,
+  "bbox_top":25,
   "collisionKind":1,
   "collisionTolerance":0,
   "ConfigValues":{

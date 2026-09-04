@@ -52,19 +52,40 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_MarxCannon_Step()
 		#endregion
 		
 		#region Laser Timer
-		attackStateTimerMax[i] = 300;
+		attackStateTimerMax[i] = 150;
+		attackStateTimer[i] = attackStateTimerMax[i];
+		i++;
+		#endregion
+		
+		#region Finish Laser Timer
+		attackStateTimerMax[i] = 60;
+		attackStateTimer[i] = attackStateTimerMax[i];
+		i++;
+		#endregion
+		
+		#region Parry Dash Prepare Timer
+		attackStateTimerMax[i] = 60;
+		attackStateTimer[i] = attackStateTimerMax[i];
+		i++;
+		#endregion
+		
+		#region Parry Dash Timer
+		attackStateTimerMax[i] = 80;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
 		
 		#region Revert Timer
-		attackStateTimerMax[i] = 90;
+		attackStateTimerMax[i] = 40;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
 		#endregion
 		
 		#region Marx Cannon Variables
+		laser = -1;
+		
+		parryDash = false;
 		#endregion
 		
 		#region Marx Cannon Start
@@ -159,7 +180,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_MarxCannon_Step()
 				sprite_index = spriteSet.sprCloseWing;
 				image_index = 0;
 				
-				scr_MKSS_UI_ParryIndicator_Create(x + (24 * dirX),y,depth - 1,attackStateTimerMax[attackState] + attackStateTimerMax[attackState+1]);
+				scr_MKSS_UI_ParryIndicator_Create(x + (24 * dirX),y,depth - 1,attackStateTimerMax[attackState+1]);
 					
 				attackState++;
 			}
@@ -186,6 +207,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_MarxCannon_Step()
 					dmg = -1;
 					knockbackForce = 1;
 					scr_MKSS_Attack_StarlessMarx_MarxCannon_Setup();
+					other.laser = id;
 				}
 					
 				attackState++;
@@ -198,23 +220,72 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_MarxCannon_Step()
 			if (x >= -40) and (x <= room_width + 40) hsp = -8 * dirX;
 			else hsp = 0;
 			
-			//if (attackStateTimer[attackState] == -1)
-			//{
-			//	dirX = 1;
+			if (attackStateTimer[attackState] == -1)
+			{
+				with (laser) finish = true;
 				
-			//	sprite_index = spriteSet.sprIdle;
-			//	image_index = 0;
+				attackState++;
+			}
+			break;
+			#endregion
+			
+			#region Finish Laser
+			case 7:
+			if (attackStateTimer[attackState] == -1) or (!instance_exists(laser))
+			{
+				if (parryDash) 
+				{
+					scr_MKSS_UI_ParryIndicator_Create(obj_Player.x,obj_Player.y,depth - 1,attackStateTimerMax[attackState+1],,obj_Player);
 					
-			//	attackState++;
-			//}
+					attackState++;
+				}
+				else attackState = 10;
+			}
+			break;
+			#endregion
+			
+			#region Parry Dash Prepare
+			case 8:
+			if (attackStateTimer[attackState] == -1)
+			{
+				sprite_index = spriteSet.sprFly;
+				image_index = 0;
+				
+				with (instance_create_depth(0,0,depth - 1,obj_MKSS_Attack))
+				{
+					owner = other;
+					isEnemy = true;
+					dmg = -1;
+					knockbackForce = 1;
+					attackAIStep = scr_MKSS_Attack_StarlessMarx_ParryDash_Step;
+					sprite_index = spr_MKSS_Enemy_StarlessMarx_Base_Fly;
+					mask_index = spr_MKSS_Enemy_StarlessMarx_Base_Fly;
+					image_alpha = 0;
+					canBeParried = true;
+					parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryMarxDash"];
+				}
+				
+				attackState++;
+			}
+			break;
+			#endregion
+			
+			#region Parry Dash
+			case 9:
+			hsp = 8 * dirX;
+			
+			if (attackStateTimer[attackState] == -1)
+			{
+				attackState++;
+			}
 			break;
 			#endregion
 			
 			#region Finish Attack
-			case 8:
+			case 10:
 			if (attackStateTimer[attackState] == -1)
 			{
-				scr_Enemy_ChangeState_Step(id,enemyAIStepIdle);
+				scr_MKSS_Enemy_StarlessMarx_Teleport((room_width/2) + irandom_range(-32,32),72 + irandom_range(-8,8),enemyAIStepIdle,,0);
 			}
 			break;
 			#endregion

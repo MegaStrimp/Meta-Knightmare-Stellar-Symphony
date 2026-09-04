@@ -20,7 +20,27 @@ function scr_MKSS_Attack_StarlessMarx_MarxCannon_Step()
 		#region Laser
 		if (!parried) laserWidth = min(laserWidth + (laserWidthGain * speedMultFinal),laserWidthMax);
 		else laserWidth = point_distance(owner.x + (28 * owner.dirX),owner.y,obj_Player.x + (8 * obj_Player.dirX),owner.y);
-		laserHeight = min(laserHeight + (laserHeightGain * speedMultFinal),laserHeightMax);
+		if (!finish) laserHeight = min(laserHeight + (laserHeightGain * speedMultFinal),laserHeightMax);
+		else 
+		{
+			laserHeight = max(laserHeight - (laserHeightGain * 2 * speedMultFinal),0);
+			if (laserHeight <= 0) 
+			{
+				with (obj_Player)
+				{
+					if (playerStateStep == scr_MKSS_Player_MetaKnight_State_StarlessMarxLaserParry_Step)
+					{
+						scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Normal_Step);
+					}
+				}
+				
+				with (obj_MKSS_Attack_BlackHole_ScreenDarken) instance_destroy();
+				
+				if (parried) with (owner) parryDash = true;
+				
+				instance_destroy();
+			}
+		}
 		
 		laserHeightOffsetTimer = max(laserHeightOffsetTimer - speedMultFinal,0);
 		if (laserHeightOffsetTimer == 0)
