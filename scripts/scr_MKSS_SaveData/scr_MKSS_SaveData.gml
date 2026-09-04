@@ -120,6 +120,10 @@ function scr_MKSS_SaveData(file)
 		ini_write_real("stageStatus","barrierIndex",global.MKSS_BarrierIndex);
 		#endregion
 		
+		#region Cutscene Status
+		if (global.MKSS_CutsceneStatus_HalberdIntro) ini_write_real("cutsceneStatus","halberdIntro",global.MKSS_CutsceneStatus_HalberdIntro);
+		#endregion
+		
 		#region NPC Status
 		if (global.MKSS_NPCStatus_TalkedToPaintRoller) ini_write_real("npcStatus","talkedToPaintRoller",global.MKSS_NPCStatus_TalkedToPaintRoller);
 		if (global.MKSS_NPCStatus_TalkedToCaptainVul) ini_write_real("npcStatus","talkedToCaptainVul",global.MKSS_NPCStatus_TalkedToCaptainVul);

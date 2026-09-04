@@ -21,6 +21,19 @@ switch (global.MKSS_HalberdThemeProgression) //STRIMPTODO 1 after Andy 1
 script_execute(scr_MKSS_RoomSetup_BattleshipHalberd);
 #endregion
 
+#region Intro Cutscene
+if (!global.MKSS_CutsceneStatus_HalberdIntro)
+{
+	with (instance_create_layer(0,0,"Instances",obj_MKSS_Cutscene))
+	{
+		scr_MKSS_Cutscene_Preset_HalberdIntro();
+	}
+	
+	global.MKSS_CutsceneStatus_HalberdIntro = true;
+	scr_MKSS_SaveData(global.selectedSave);
+}
+#endregion
+
 #region Crossover Notifs
 var notifID = global.MKSS_NotifIDs[? "crossover_KSWFamiliar"];
 if (global.MKSS_NotifList[notifID].unlockScript()) scr_MKSS_ObtainNotif(notifID);

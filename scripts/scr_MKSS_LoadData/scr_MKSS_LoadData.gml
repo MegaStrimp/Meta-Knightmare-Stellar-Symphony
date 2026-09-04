@@ -111,6 +111,10 @@ function scr_MKSS_LoadData(file,importFile = false)
 	global.MKSS_BarrierIndex = ini_read_real("stageStatus","barrierIndex",0);
 	#endregion
 	
+	#region Cutscene Status
+	global.MKSS_CutsceneStatus_HalberdIntro = ini_read_real("cutsceneStatus","halberdIntro",false);
+	#endregion
+	
 	#region NPC Status
 	global.MKSS_NPCStatus_TalkedToPaintRoller = ini_read_real("npcStatus","talkedToPaintRoller",false);
 	global.MKSS_NPCStatus_TalkedToCaptainVul = ini_read_real("npcStatus","talkedToCaptainVul",false);
