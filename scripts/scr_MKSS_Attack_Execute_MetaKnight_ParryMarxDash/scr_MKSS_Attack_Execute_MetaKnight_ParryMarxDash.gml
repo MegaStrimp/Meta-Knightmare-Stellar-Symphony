@@ -25,7 +25,7 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryMarxDash(playerIndex,currentPar
 	if (instance_exists(currentParriedObject))
 	{
 		scr_MKSS_ParticleSet_Explosion2(x,y);
-					
+		
 		with (instance_create_depth(currentParriedObject.owner.x,currentParriedObject.owner.y,depth - 1,obj_MKSS_Attack))
 		{
 			owner = playerIndex;
@@ -47,17 +47,17 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryMarxDash(playerIndex,currentPar
 		}
 					
 		scr_MKSS_Score_Add(50);
-		//scr_MKSS_SpawnMetaPoint(3,x,y,depth - 1,playerIndex,90);
+		scr_MKSS_SpawnMetaPoint(3,x,y,depth - 1,playerIndex,90);
 		
 		scr_MKSS_Enemy_GetStunned(currentParriedObject.owner);
-					
+		
 		var sfx = scr_PlaySfx(snd_MKSS_EnemyHit);
 		audio_sound_pitch(sfx,random_range(.85,1.15));
-					
+		
 		shakeX = 4;
-					
+		
 		scr_Camera_SetScreenshake(4);
-					
+		
 		script_execute(currentParriedObject.owner.enemyGetHit,currentParriedObject.owner,4,3,90 - (45 * sign(x - currentParriedObject.x)),playerIndex,currentParriedObject.speedMultFinal);
 		
 		with (currentParriedObject)

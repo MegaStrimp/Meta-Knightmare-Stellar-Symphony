@@ -91,6 +91,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_MarxCannon_Step()
 		#region Marx Cannon Start
 		sprite_index = spriteSet.sprIdle;
 		image_index = 0;
+		
+		hitbox = -1;
 		#endregion
 		
 		enemyState_Setup = false;
@@ -181,7 +183,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_MarxCannon_Step()
 				image_index = 0;
 				
 				scr_MKSS_UI_ParryIndicator_Create(x + (24 * dirX),y,depth - 1,attackStateTimerMax[attackState+1]);
-					
+				
 				attackState++;
 			}
 			break;
@@ -199,6 +201,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_MarxCannon_Step()
 			if (attackStateTimer[attackState] == -1)
 			{
 				image_index = 1;
+				
+				scr_PlaySfx(snd_MKSS_MarxWave);
 				
 				with (instance_create_depth(0,0,depth - 1,obj_MKSS_Attack))
 				{
@@ -222,6 +226,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_MarxCannon_Step()
 			
 			if (attackStateTimer[attackState] == -1)
 			{
+				imageSpeed = 1;
+				
 				with (laser) finish = true;
 				
 				attackState++;
@@ -263,6 +269,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_MarxCannon_Step()
 					image_alpha = 0;
 					canBeParried = true;
 					parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryMarxDash"];
+					other.hitbox = id;
 				}
 				
 				attackState++;
@@ -276,6 +283,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_MarxCannon_Step()
 			
 			if (attackStateTimer[attackState] == -1)
 			{
+				with (hitbox) instance_destroy();
+				
 				attackState++;
 			}
 			break;

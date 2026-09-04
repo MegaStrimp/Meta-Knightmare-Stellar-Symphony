@@ -108,7 +108,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_SeedAttack_Step()
 				var sfx = scr_PlaySfx(snd_MKSS_MarxSeedFall);
 				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
-				with (instance_create_depth(seedStartX + (seedOffsetX * (seedAdd * seedDir)) + irandom_range(-6,6),-6,depth - 1,obj_MKSS_Attack))
+				with (instance_create_depth(seedStartX + (seedOffsetX * (seedAdd * seedDir)) + irandom_range(-6,6),6,depth - 1,obj_MKSS_Attack))
 				{
 					owner = other;
 					isEnemy = true;
@@ -116,7 +116,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_SeedAttack_Step()
 					knockbackForce = 1;
 					sprite_index = spr_MKSS_Attack_StarlessMarx_Seed;
 					mask_index = spr_MKSS_Attack_StarlessMarx_Seed;
-						pauseOutsideView = false;
+					pauseOutsideView = false;
 					destroyOutsideRoom = false;
 					destroyAfterCollideWall = false;
 					scr_MKSS_Attack_StarlessMarx_Seed_Setup();

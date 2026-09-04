@@ -2542,6 +2542,7 @@
     {"id":{"name":"scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShooterCutter_AnimationEnd","path":"scripts/scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShooterCutter_AnimationEnd/scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShooterCutter_AnimationEnd.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShooterCutter_Step","path":"scripts/scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShooterCutter_Step/scr_MKSS_Enemy_StarlessMarx_AI_Normal_ShooterCutter_Step.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_StarlessMarx_AI_Normal_SpawnMinimarx_Step","path":"scripts/scr_MKSS_Enemy_StarlessMarx_AI_Normal_SpawnMinimarx_Step/scr_MKSS_Enemy_StarlessMarx_AI_Normal_SpawnMinimarx_Step.yy",},},
+    {"id":{"name":"scr_MKSS_Enemy_StarlessMarx_AI_Normal_StunRevert_Step","path":"scripts/scr_MKSS_Enemy_StarlessMarx_AI_Normal_StunRevert_Step/scr_MKSS_Enemy_StarlessMarx_AI_Normal_StunRevert_Step.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_StarlessMarx_AI_Normal_Teleport_AnimationEnd","path":"scripts/scr_MKSS_Enemy_StarlessMarx_AI_Normal_Teleport_AnimationEnd/scr_MKSS_Enemy_StarlessMarx_AI_Normal_Teleport_AnimationEnd.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_StarlessMarx_AI_Normal_Teleport_Step","path":"scripts/scr_MKSS_Enemy_StarlessMarx_AI_Normal_Teleport_Step/scr_MKSS_Enemy_StarlessMarx_AI_Normal_Teleport_Step.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_StarlessMarx_Normal_AttackOrder_Phase1","path":"scripts/scr_MKSS_Enemy_StarlessMarx_Normal_AttackOrder_Phase1/scr_MKSS_Enemy_StarlessMarx_Normal_AttackOrder_Phase1.yy",},},

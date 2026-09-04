@@ -52,6 +52,9 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Normal_ArrowArrow_Step()
 		sprite_index = spriteSet.sprFly;
 		image_index = 0;
 		
+		hsp = 0;
+		vsp = 0;
+		
 		dirX = 1;
 		if (x >= room_width/2) dirX = -1;
 		#endregion
