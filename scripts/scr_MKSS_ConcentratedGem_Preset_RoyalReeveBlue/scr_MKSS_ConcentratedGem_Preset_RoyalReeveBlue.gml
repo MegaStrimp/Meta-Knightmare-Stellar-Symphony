@@ -6,7 +6,7 @@ function scr_MKSS_ConcentratedGem_Preset_RoyalReeveBlue(targetX,targetY)
 	(
 		targetX,targetY,
 		global.MKSS_StageIDs[? "royalReeve"],
-		global.MKSS_StageIDs[? "gemArena2"],
+		global.MKSS_StageIDs[? "royalReeveOrdeal"],
 		global.MKSS_CollectibleIDs[? "royalReeve_BlueGem"],
 		spr_MKSS_UI_GemObtained_Gem_Palette_Blue,
 		"Starry Shores [" + MKSS_Base_Color_BlueGem + "]Blue Gem[/color] Obtained!",

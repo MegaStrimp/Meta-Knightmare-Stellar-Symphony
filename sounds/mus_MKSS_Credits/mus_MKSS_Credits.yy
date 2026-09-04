@@ -1,0 +1,29 @@
+{
+  "$GMSound":"v2",
+  "%Name":"mus_MKSS_Credits",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":1,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":260.35693,
+  "exportDir":"",
+  "name":"mus_MKSS_Credits",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Meta Knightmare Stellar Symphony/Audio/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"mus_MKSS_Credits.ogg",
+  "tags":[
+    "Music",
+  ],
+  "volume":1.0,
+}

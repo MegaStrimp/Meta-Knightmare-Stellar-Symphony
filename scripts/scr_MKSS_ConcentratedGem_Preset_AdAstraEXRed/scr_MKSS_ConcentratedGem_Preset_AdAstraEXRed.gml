@@ -6,7 +6,7 @@ function scr_MKSS_ConcentratedGem_Preset_AdAstraEXRed(targetX,targetY)
 	(
 		targetX,targetY,
 		global.MKSS_StageIDs[? "adAstraEX"],
-		global.MKSS_StageIDs[? "gemBoss5EX"],
+		global.MKSS_StageIDs[? "VSStarlessNebulaEX"],
 		global.MKSS_CollectibleIDs[? "adAstraEX_RedGem"],
 		spr_MKSS_UI_GemObtained_Gem_Palette_RedEX,
 		"Ad Astra EX [" + MKSS_Base_Color_RedGem + "]Red Gem[/color] Obtained!",

@@ -1,7 +1,7 @@
 ///@description Room Creation Code
 
 #region Begin Stage
-if (!global.inStage) scr_MKSS_Stage_Begin("gemArena3");
+if (!global.inStage) scr_MKSS_Stage_Begin("livingLoomOrdeal");
 #endregion
 
 #region Room Setup
@@ -9,7 +9,7 @@ script_execute(scr_MKSS_RoomSetup_CrystalSpace);
 #endregion
 
 #region Stage Intro
-scr_MKSS_UI_GemIntro_Create("Enemy Ordeal","Living Loom","Defeat Waves of Enemies",global.MKSS_StageIDs[? "gemArena3"],spr_MKSS_UI_Decal_Pal_LivingLoom);
+scr_MKSS_UI_GemIntro_Create("Enemy Ordeal","Living Loom","Defeat Waves of Enemies",global.MKSS_StageIDs[? "livingLoomOrdeal"],spr_MKSS_UI_Decal_Pal_LivingLoom);
 #endregion
 
 #region Arena Setup

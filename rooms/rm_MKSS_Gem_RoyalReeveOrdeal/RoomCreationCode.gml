@@ -1,7 +1,7 @@
 ///@description Room Creation Code
 
 #region Begin Stage
-if (!global.inStage) scr_MKSS_Stage_Begin("gemArena2");
+if (!global.inStage) scr_MKSS_Stage_Begin("royalReeveOrdeal");
 #endregion
 
 #region Room Setup
@@ -9,7 +9,7 @@ script_execute(scr_MKSS_RoomSetup_CrystalSpace);
 #endregion
 
 #region Stage Intro
-scr_MKSS_UI_GemIntro_Create("Enemy Ordeal","Royal Reeve","Defeat Waves of Enemies",global.MKSS_StageIDs[? "gemArena2"],spr_MKSS_UI_Decal_Pal_RoyalReeve);
+scr_MKSS_UI_GemIntro_Create("Enemy Ordeal","Royal Reeve","Defeat Waves of Enemies",global.MKSS_StageIDs[? "royalReeveOrdeal"],spr_MKSS_UI_Decal_Pal_RoyalReeve);
 #endregion
 
 #region Arena Setup

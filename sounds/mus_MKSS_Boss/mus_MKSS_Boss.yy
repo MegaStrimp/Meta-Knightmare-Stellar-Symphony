@@ -10,7 +10,7 @@
   "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":169.41151,
+  "duration":169.4115,
   "exportDir":"",
   "name":"mus_MKSS_Boss",
   "parent":{

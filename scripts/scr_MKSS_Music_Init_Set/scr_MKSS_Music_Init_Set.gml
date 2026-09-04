@@ -9,6 +9,7 @@ function scr_MKSS_Music_Init_Set()
 	
 	#region Music
 	scr_MKSS_Music_Init_Add("title","Sound of Siren","Mother 3",mus_MKSS_Title);
+	scr_MKSS_Music_Init_Add("credits","Ultramarine Meditation","Mega Man ZX Tunes",mus_MKSS_Credits);
 	scr_MKSS_Music_Init_Add("iceCreamIsland","Second Wind - Sonic Mvt","Sonic Frontiers",mus_MKSS_IceCreamIsland);
 	scr_MKSS_Music_Init_Add("battleshipHalberd_1","Iwatodai Dorm","Persona 3 Reload",mus_MKSS_BattleshipHalberd_1,12.996,[86.265]);
 	scr_MKSS_Music_Init_Add("battleshipHalberd_2","Butterfly Kiss","Persona 5",mus_MKSS_BattleshipHalberd_2,19.063,[39.376]);
@@ -26,10 +27,16 @@ function scr_MKSS_Music_Init_Set()
 	scr_MKSS_Music_Init_Add("miniboss","Master of Tartarus","Persona 3 Reload",mus_MKSS_Miniboss,43.968,[47.632]);
 	scr_MKSS_Music_Init_Add("prelude","tartarus_0d01","Persona 3 Reload",mus_MKSS_Prelude,10.665);
 	scr_MKSS_Music_Init_Add("boss","Mass Destruction","Persona 3",mus_MKSS_Boss);
+	scr_MKSS_Music_Init_Add("bossEX","Mass Destruction -FES-","Persona 3 Reload",mus_MKSS_BossEX,9.832);
 	scr_MKSS_Music_Init_Add("andromedaBattle_1","Self Redemption","Persona 3 The Movie",mus_MKSS_AndromedaBattle_1,8.912,[8.912,81.611,139.812]);
 	scr_MKSS_Music_Init_Add("andromedaBattle_2","Ying Yang","Persona 4 The Golden Animation",mus_MKSS_AndromedaBattle_2,18.776,[15.745,18.776,81.913,198.332]);
-	scr_MKSS_Music_Init_Add("starlessNightmare","Vs. Nightmare","Kirby Air Riders",mus_MKSS_StarlessNightmare);
+	scr_MKSS_Music_Init_Add("andromedaBattle_3","Mass Destruction","Persona 3 The Movie",mus_MKSS_AndromedaBattle_3,0.017,[0.017,169.429,174.190,189.593]);
+	scr_MKSS_Music_Init_Add("finalBoss","Burn My Dread -Last Battle-","Persona 3 The Movie",mus_MKSS_FinalBoss,87.294);
+	scr_MKSS_Music_Init_Add("starlessNightmare","Vs. Nightmare","Kirby Air Riders",mus_MKSS_StarlessNightmare,6.795);
 	scr_MKSS_Music_Init_Add("starlessMarx","Vs. Marx","Kirby Air Riders",mus_MKSS_StarlessMarx);
+	scr_MKSS_Music_Init_Add("starlessZeroTwo","VS. Zero Two","Kirby Air Riders",mus_MKSS_StarlessZeroTwo,14.781);
+	scr_MKSS_Music_Init_Add("starlessMind","Last Boss Dark Mind (2nd Form)","Kirby Air Riders",mus_MKSS_StarlessMind,4.082);
+	scr_MKSS_Music_Init_Add("starlessNebula","Oppression","Akineko",mus_MKSS_StarlessNebula,1.363);
 	scr_MKSS_Music_Init_Add("stageClear","Disconnected","Persona 3 Reload",mus_MKSS_StageClear,.436);
 	scr_MKSS_Music_Init_Add("crystalSpace","Deep Breath Deep Breath","Persona 3 Reload",mus_MKSS_CrystalSpace,,[17.285,34.184]);
 	scr_MKSS_Music_Init_Add("arenaLobby","Let Butterflies Spread Until the Dawn","Persona 1 PSP",mus_MKSS_ArenaLobby,.613,[23.835]);

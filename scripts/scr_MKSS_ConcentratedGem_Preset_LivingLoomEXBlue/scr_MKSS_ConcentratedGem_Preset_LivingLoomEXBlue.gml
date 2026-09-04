@@ -6,7 +6,7 @@ function scr_MKSS_ConcentratedGem_Preset_LivingLoomEXBlue(targetX,targetY)
 	(
 		targetX,targetY,
 		global.MKSS_StageIDs[? "livingLoomEX"],
-		global.MKSS_StageIDs[? "gemArena3EX"],
+		global.MKSS_StageIDs[? "livingLoomOrdealEX"],
 		global.MKSS_CollectibleIDs[? "livingLoomEX_BlueGem"],
 		spr_MKSS_UI_GemObtained_Gem_Palette_BlueEX,
 		"Living Loom EX [" + MKSS_Base_Color_BlueGem + "]Blue Gem[/color] Obtained!",

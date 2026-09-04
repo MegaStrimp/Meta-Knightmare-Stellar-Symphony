@@ -1,2 +1,2 @@
-selection = global.MKSS_StageIDs[? "gemBoss1"];
+selection = global.MKSS_StageIDs[? "VSStarlessNightmare"];
 //targetRoom = rm_MKSS_Gem_StarlessNightmare; STRIMPTODO

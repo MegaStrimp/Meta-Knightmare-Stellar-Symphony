@@ -1,7 +1,7 @@
 ///@description Room Creation Code
 
 #region Begin Stage
-if (!global.inStage) scr_MKSS_Stage_Begin("gemBoss2");
+if (!global.inStage) scr_MKSS_Stage_Begin("VSStarlessMarx");
 #endregion
 
 #region Room Setup

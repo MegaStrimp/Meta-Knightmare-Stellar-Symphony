@@ -1,7 +1,7 @@
 ///@description Room Creation Code
 
 #region Begin Stage
-if (!global.inStage) scr_MKSS_Stage_Begin("gemArena1");
+if (!global.inStage) scr_MKSS_Stage_Begin("starryShoresOrdeal");
 #endregion
 
 #region Room Setup
@@ -9,7 +9,7 @@ script_execute(scr_MKSS_RoomSetup_CrystalSpace);
 #endregion
 
 #region Stage Intro
-scr_MKSS_UI_GemIntro_Create("Enemy Ordeal","Starry Shores","Defeat Waves of Enemies",global.MKSS_StageIDs[? "gemArena1"]);
+scr_MKSS_UI_GemIntro_Create("Enemy Ordeal","Starry Shores","Defeat Waves of Enemies",global.MKSS_StageIDs[? "starryShoresOrdeal"]);
 #endregion
 
 #region Arena Setup

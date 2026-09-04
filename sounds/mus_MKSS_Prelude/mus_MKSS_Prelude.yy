@@ -10,7 +10,7 @@
   "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":21.333424,
+  "duration":21.333447,
   "exportDir":"",
   "name":"mus_MKSS_Prelude",
   "parent":{

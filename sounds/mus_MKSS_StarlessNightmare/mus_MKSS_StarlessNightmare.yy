@@ -10,7 +10,7 @@
   "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":123.15764,
+  "duration":136.29526,
   "exportDir":"",
   "name":"mus_MKSS_StarlessNightmare",
   "parent":{

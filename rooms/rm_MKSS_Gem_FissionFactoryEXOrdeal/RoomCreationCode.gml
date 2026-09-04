@@ -1,7 +1,7 @@
 ///@description Room Creation Code
 
 #region Begin Stage
-if (!global.inStage) scr_MKSS_Stage_Begin("gemArena4EX");
+if (!global.inStage) scr_MKSS_Stage_Begin("fissionFactoryOrdealEX");
 #endregion
 
 #region Room Setup
@@ -9,7 +9,7 @@ script_execute(scr_MKSS_RoomSetup_CrystalSpace);
 #endregion
 
 #region Stage Intro
-scr_MKSS_UI_GemIntro_Create("Enemy Ordeal","Fission Factory EX","Defeat Waves of Enemies",global.MKSS_StageIDs[? "gemArena4EX"],spr_MKSS_UI_Decal_Pal_FissionFactory);
+scr_MKSS_UI_GemIntro_Create("Enemy Ordeal","Fission Factory EX","Defeat Waves of Enemies",global.MKSS_StageIDs[? "fissionFactoryOrdealEX"],spr_MKSS_UI_Decal_Pal_FissionFactory);
 #endregion
 
 #region Arena Setup

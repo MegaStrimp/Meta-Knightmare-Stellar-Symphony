@@ -6,7 +6,7 @@ function scr_MKSS_ConcentratedGem_Preset_FissionFactoryEXRed(targetX,targetY)
 	(
 		targetX,targetY,
 		global.MKSS_StageIDs[? "fissionFactoryEX"],
-		global.MKSS_StageIDs[? "gemBoss4EX"],
+		global.MKSS_StageIDs[? "VSStarlessMindEX"],
 		global.MKSS_CollectibleIDs[? "fissionFactoryEX_RedGem"],
 		spr_MKSS_UI_GemObtained_Gem_Palette_RedEX,
 		"Fission Factory EX [" + MKSS_Base_Color_RedGem + "]Red Gem[/color] Obtained!",

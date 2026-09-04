@@ -6,7 +6,7 @@ function scr_MKSS_ConcentratedGem_Preset_FissionFactoryBlue(targetX,targetY)
 	(
 		targetX,targetY,
 		global.MKSS_StageIDs[? "fissionFactory"],
-		global.MKSS_StageIDs[? "gemArena4"],
+		global.MKSS_StageIDs[? "fissionFactoryOrdeal"],
 		global.MKSS_CollectibleIDs[? "fissionFactory_BlueGem"],
 		spr_MKSS_UI_GemObtained_Gem_Palette_Blue,
 		"Fission Factory [" + MKSS_Base_Color_BlueGem + "]Blue Gem[/color] Obtained!",

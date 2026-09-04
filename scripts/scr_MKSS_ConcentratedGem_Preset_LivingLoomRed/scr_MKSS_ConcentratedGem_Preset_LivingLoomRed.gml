@@ -6,7 +6,7 @@ function scr_MKSS_ConcentratedGem_Preset_LivingLoomRed(targetX,targetY)
 	(
 		targetX,targetY,
 		global.MKSS_StageIDs[? "livingLoom"],
-		global.MKSS_StageIDs[? "gemBoss3"],
+		global.MKSS_StageIDs[? "VSStarlessZeroTwo"],
 		global.MKSS_CollectibleIDs[? "livingLoom_RedGem"],
 		spr_MKSS_UI_GemObtained_Gem_Palette_Red,
 		"Living Loom [" + MKSS_Base_Color_RedGem + "]Red Gem[/color] Obtained!",

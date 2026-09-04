@@ -121,8 +121,8 @@ function scr_MKSS_Stage_Init_Set()
 	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstra_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
 	#endregion
 	
-	#region Gem Arena 1
-	var stageID = "gemArena1";
+	#region Starry Shores Ordeal
+	var stageID = "starryShoresOrdeal";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Starry Shores Enemy Ordeal",rm_MKSS_Gem_StarryShoresOrdeal,[100,200,300,400]);
 	
@@ -134,8 +134,8 @@ function scr_MKSS_Stage_Init_Set()
 	});
 	#endregion
 	
-	#region Gem Arena 2
-	var stageID = "gemArena2";
+	#region Royal Reeve Ordeal
+	var stageID = "royalReeveOrdeal";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Royal Reeve Enemy Ordeal",rm_MKSS_Gem_RoyalReeveOrdeal,[100,200,300,400]);
 	
@@ -147,8 +147,8 @@ function scr_MKSS_Stage_Init_Set()
 	});
 	#endregion
 	
-	#region Gem Arena 3
-	var stageID = "gemArena3";
+	#region Living Loom Ordeal
+	var stageID = "livingLoomOrdeal";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Living Loom Enemy Ordeal",rm_MKSS_Gem_LivingLoomOrdeal,[100,200,300,400]);
 	
@@ -160,8 +160,8 @@ function scr_MKSS_Stage_Init_Set()
 	});
 	#endregion
 	
-	#region Gem Arena 4
-	var stageID = "gemArena4";
+	#region Fission Factory Ordeal
+	var stageID = "fissionFactoryOrdeal";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Fission Factory Enemy Ordeal",rm_MKSS_Gem_FissionFactoryOrdeal,[100,200,300,400]);
 	
@@ -173,8 +173,8 @@ function scr_MKSS_Stage_Init_Set()
 	});
 	#endregion
 	
-	#region Gem Arena 5
-	var stageID = "gemArena5";
+	#region Ad Astra Ordeal
+	var stageID = "adAstraOrdeal";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Ad Astra Enemy Ordeal",rm_MKSS_Gem_AdAstraOrdeal,[100,200,300,400]);
 	
@@ -186,8 +186,8 @@ function scr_MKSS_Stage_Init_Set()
 	});
 	#endregion
 	
-	#region Gem Boss 1
-	var stageID = "gemBoss1";
+	#region VS. Starless Nightmare
+	var stageID = "VSStarlessNightmare";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"VS. Starless Nightmare",,[100,200,300,400]);
 	
@@ -199,8 +199,8 @@ function scr_MKSS_Stage_Init_Set()
 	});
 	#endregion
 	
-	#region Gem Boss 2
-	var stageID = "gemBoss2";
+	#region VS. Starless Marx
+	var stageID = "VSStarlessMarx";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"VS. Starless Marx",rm_MKSS_Gem_StarlessMarx,[100,200,300,400]);
 	
@@ -212,8 +212,8 @@ function scr_MKSS_Stage_Init_Set()
 	});
 	#endregion
 	
-	#region Gem Boss 3
-	var stageID = "gemBoss3";
+	#region VS. Starless Zero Two
+	var stageID = "VSStarlessZeroTwo";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"VS. Someone",,[100,200,300,400]);
 	
@@ -225,8 +225,8 @@ function scr_MKSS_Stage_Init_Set()
 	});
 	#endregion
 	
-	#region Gem Boss 4
-	var stageID = "gemBoss4";
+	#region VS. Starless Mind
+	var stageID = "VSStarlessMind";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"VS. Someone",,[100,200,300,400]);
 	
@@ -238,8 +238,8 @@ function scr_MKSS_Stage_Init_Set()
 	});
 	#endregion
 	
-	#region Gem Boss 5
-	var stageID = "gemBoss5";
+	#region VS. Starless Nebula
+	var stageID = "VSStarlessNebula";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"VS. Someone",,[100,200,300,400]);
 	
@@ -339,8 +339,8 @@ function scr_MKSS_Stage_Init_Set()
 	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstraEX_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
 	#endregion
 	
-	#region Gem Arena 1 EX
-	var stageID = "gemArena1EX";
+	#region Starry Shores Ordeal EX
+	var stageID = "starryShoresOrdealEX";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Starry Shores Enemy Ordeal EX",rm_MKSS_Gem_StarryShoresEXOrdeal,[100,200,300,400]);
 	
@@ -348,12 +348,12 @@ function scr_MKSS_Stage_Init_Set()
 	
 	scr_MKSS_Stage_Init_Add_ClearScript(targetMappedID,function(targetMappedID)
 	{
-		global.MKSS_FamiliarList[global.MKSS_FamiliarIDs[? "stage1"]].isUnlocked = true;
+		global.MKSS_FamiliarList[global.MKSS_FamiliarIDs[? "starryShores"]].isUnlocked = true;
 	});
 	#endregion
 	
-	#region Gem Arena 2 EX
-	var stageID = "gemArena2EX";
+	#region Royal Reeve Ordeal EX
+	var stageID = "royalReeveOrdealEX";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Royal Reeve Enemy Ordeal EX",rm_MKSS_Gem_RoyalReeveEXOrdeal,[100,200,300,400]);
 	
@@ -361,12 +361,12 @@ function scr_MKSS_Stage_Init_Set()
 	
 	scr_MKSS_Stage_Init_Add_ClearScript(targetMappedID,function(targetMappedID)
 	{
-		global.MKSS_FamiliarList[global.MKSS_FamiliarIDs[? "stage2"]].isUnlocked = true;
+		global.MKSS_FamiliarList[global.MKSS_FamiliarIDs[? "royalReeve"]].isUnlocked = true;
 	});
 	#endregion
 	
-	#region Gem Arena 3 EX
-	var stageID = "gemArena3EX";
+	#region Living Loom Ordeal EX
+	var stageID = "livingLoomOrdealEX";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Living Loom Enemy Ordeal EX",rm_MKSS_Gem_LivingLoomEXOrdeal,[100,200,300,400]);
 	
@@ -374,12 +374,12 @@ function scr_MKSS_Stage_Init_Set()
 	
 	scr_MKSS_Stage_Init_Add_ClearScript(targetMappedID,function(targetMappedID)
 	{
-		global.MKSS_FamiliarList[global.MKSS_FamiliarIDs[? "stage3"]].isUnlocked = true;
+		global.MKSS_FamiliarList[global.MKSS_FamiliarIDs[? "livingLoom"]].isUnlocked = true;
 	});
 	#endregion
 	
-	#region Gem Arena 4 EX
-	var stageID = "gemArena4EX";
+	#region Fission Factory Ordeal EX
+	var stageID = "fissionFactoryOrdealEX";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Fission Factory Enemy Ordeal EX",rm_MKSS_Gem_FissionFactoryEXOrdeal,[100,200,300,400]);
 	
@@ -387,12 +387,12 @@ function scr_MKSS_Stage_Init_Set()
 	
 	scr_MKSS_Stage_Init_Add_ClearScript(targetMappedID,function(targetMappedID)
 	{
-		global.MKSS_FamiliarList[global.MKSS_FamiliarIDs[? "stage4"]].isUnlocked = true;
+		global.MKSS_FamiliarList[global.MKSS_FamiliarIDs[? "fissionFactory"]].isUnlocked = true;
 	});
 	#endregion
 	
-	#region Gem Arena 5 EX
-	var stageID = "gemArena5EX";
+	#region Ad Astra Ordeal EX
+	var stageID = "adAstraOrdealEX";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Ad Astra Enemy Ordeal EX",rm_MKSS_Gem_AdAstraEXOrdeal,[100,200,300,400]);
 	
@@ -400,12 +400,12 @@ function scr_MKSS_Stage_Init_Set()
 	
 	scr_MKSS_Stage_Init_Add_ClearScript(targetMappedID,function(targetMappedID)
 	{
-		global.MKSS_FamiliarList[global.MKSS_FamiliarIDs[? "stage5"]].isUnlocked = true;
+		global.MKSS_FamiliarList[global.MKSS_FamiliarIDs[? "adAstra"]].isUnlocked = true;
 	});
 	#endregion
 	
-	#region Gem Boss 1 EX
-	var stageID = "gemBoss1EX";
+	#region VS. Starless Nightmare EX
+	var stageID = "VSStarlessNightmareEX";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"VS. Starless Nightmare EX",,[100,200,300,400]);
 	
@@ -413,12 +413,12 @@ function scr_MKSS_Stage_Init_Set()
 	
 	scr_MKSS_Stage_Init_Add_ClearScript(targetMappedID,function(targetMappedID)
 	{
-		global.MKSS_FamiliarList[global.MKSS_FamiliarIDs[? "boss1"]].isUnlocked = true;
+		global.MKSS_FamiliarList[global.MKSS_FamiliarIDs[? "nightmare"]].isUnlocked = true;
 	});
 	#endregion
 	
-	#region Gem Boss 2 EX
-	var stageID = "gemBoss2EX";
+	#region VS. Starless Marx EX
+	var stageID = "VSStarlessMarxEX";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"VS. Starless Marx EX",,[100,200,300,400]);
 	
@@ -426,12 +426,12 @@ function scr_MKSS_Stage_Init_Set()
 	
 	scr_MKSS_Stage_Init_Add_ClearScript(targetMappedID,function(targetMappedID)
 	{
-		global.MKSS_FamiliarList[global.MKSS_FamiliarIDs[? "boss2"]].isUnlocked = true;
+		global.MKSS_FamiliarList[global.MKSS_FamiliarIDs[? "marx"]].isUnlocked = true;
 	});
 	#endregion
 	
-	#region Gem Boss 3 EX
-	var stageID = "gemBoss3EX";
+	#region VS. Starless Zero Two EX
+	var stageID = "VSStarlessZeroTwoEX";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"VS. Someone EX",,[100,200,300,400]);
 	
@@ -439,12 +439,12 @@ function scr_MKSS_Stage_Init_Set()
 	
 	scr_MKSS_Stage_Init_Add_ClearScript(targetMappedID,function(targetMappedID)
 	{
-		global.MKSS_FamiliarList[global.MKSS_FamiliarIDs[? "boss3"]].isUnlocked = true;
+		global.MKSS_FamiliarList[global.MKSS_FamiliarIDs[? "zeroTwo"]].isUnlocked = true;
 	});
 	#endregion
 	
-	#region Gem Boss 4 EX
-	var stageID = "gemBoss4EX";
+	#region VS. Starless Mind EX
+	var stageID = "VSStarlessMindEX";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"VS. Someone EX",,[100,200,300,400]);
 	
@@ -452,12 +452,12 @@ function scr_MKSS_Stage_Init_Set()
 	
 	scr_MKSS_Stage_Init_Add_ClearScript(targetMappedID,function(targetMappedID)
 	{
-		global.MKSS_FamiliarList[global.MKSS_FamiliarIDs[? "boss4"]].isUnlocked = true;
+		global.MKSS_FamiliarList[global.MKSS_FamiliarIDs[? "darkMind"]].isUnlocked = true;
 	});
 	#endregion
 	
-	#region Gem Boss 5 EX
-	var stageID = "gemBoss5EX";
+	#region VS. Starless Nebula EX
+	var stageID = "VSStarlessNebulaEX";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"VS. Someone EX",,[100,200,300,400]);
 	
@@ -465,7 +465,7 @@ function scr_MKSS_Stage_Init_Set()
 	
 	scr_MKSS_Stage_Init_Add_ClearScript(targetMappedID,function(targetMappedID)
 	{
-		global.MKSS_FamiliarList[global.MKSS_FamiliarIDs[? "boss5"]].isUnlocked = true;
+		global.MKSS_FamiliarList[global.MKSS_FamiliarIDs[? "darkNebula"]].isUnlocked = true;
 	});
 	#endregion
 	#endregion

@@ -1,7 +1,7 @@
 ///@description Room Creation Code
 
 #region Begin Stage
-if (!global.inStage) scr_MKSS_Stage_Begin("gemArena5EX");
+if (!global.inStage) scr_MKSS_Stage_Begin("adAstraOrdealEX");
 #endregion
 
 #region Room Setup
@@ -9,7 +9,7 @@ script_execute(scr_MKSS_RoomSetup_CrystalSpace);
 #endregion
 
 #region Stage Intro
-scr_MKSS_UI_GemIntro_Create("Enemy Ordeal","Ad Astra EX","Defeat Waves of Enemies",global.MKSS_StageIDs[? "gemArena5EX"],spr_MKSS_UI_Decal_Pal_AdAstraEX);
+scr_MKSS_UI_GemIntro_Create("Enemy Ordeal","Ad Astra EX","Defeat Waves of Enemies",global.MKSS_StageIDs[? "adAstraOrdealEX"],spr_MKSS_UI_Decal_Pal_AdAstraEX);
 #endregion
 
 #region Arena Setup

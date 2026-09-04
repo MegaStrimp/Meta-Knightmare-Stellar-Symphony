@@ -6,7 +6,7 @@ function scr_MKSS_ConcentratedGem_Preset_StarryShoresBlue(targetX,targetY)
 	(
 		targetX,targetY,
 		global.MKSS_StageIDs[? "starryShores"],
-		global.MKSS_StageIDs[? "gemArena1"],
+		global.MKSS_StageIDs[? "starryShoresOrdeal"],
 		global.MKSS_CollectibleIDs[? "starryShores_BlueGem"],
 		spr_MKSS_UI_GemObtained_Gem_Palette_Blue,
 		"Starry Shores [" + MKSS_Base_Color_BlueGem + "]Blue Gem[/color] Obtained!",
