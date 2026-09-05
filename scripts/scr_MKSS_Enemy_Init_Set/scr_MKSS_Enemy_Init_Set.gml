@@ -811,6 +811,32 @@ function scr_MKSS_Enemy_Init_Set()
 	scr_MKSS_Enemy_Init_Add_EnemyHealthbar(targetMappedID,scr_MKSS_Hud_EnemyHealthbar_Starless);
 	#endregion
 	
+	#region Andromeda 1
+	var targetMappedID = scr_MKSS_Enemy_Init_Add("andromeda1","Andromeda");
+	
+	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
+	{
+		sprIdle: spr_MKSS_Enemy_Andromeda1_Idle,
+		
+		sprTail_Idle: spr_MKSS_Enemy_Andromeda1_Tail_Idle,
+		
+		sprCape_Idle: spr_MKSS_Enemy_Andromeda1_Cape_Idle,
+		
+		sprArmLB_Idle: spr_MKSS_Enemy_Andromeda1_Arm_LB_Idle,
+		
+		sprArmRB_Idle: spr_MKSS_Enemy_Andromeda1_Arm_RB_Idle,
+		
+		sprArmLT_Idle: spr_MKSS_Enemy_Andromeda1_Arm_LT_Idle,
+		
+		sprArmRT_Idle: spr_MKSS_Enemy_Andromeda1_Arm_RT_Idle,
+		
+		maskIndexDefault: spr_16x16Mask_MiddleOrigin,
+		maskIndex: spr_16x16Mask_MiddleOrigin
+	});
+	
+	scr_MKSS_Enemy_Init_Add_EnemyHealthbar(targetMappedID,scr_MKSS_Hud_EnemyHealthbar_Starless);
+	#endregion
+	
 	#region Starless Nightmare
 	var targetMappedID = scr_MKSS_Enemy_Init_Add("starlessNightmare","Starless Nightmare");
 	

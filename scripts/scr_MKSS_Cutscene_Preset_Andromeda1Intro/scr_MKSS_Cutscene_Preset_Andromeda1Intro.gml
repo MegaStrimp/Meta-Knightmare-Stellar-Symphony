@@ -37,14 +37,14 @@ function scr_MKSS_Cutscene_Preset_Andromeda1Intro()
 		{
 			scr_Music_SetFade(0);
 			
-			with (instance_create_layer(256,152,"Enemies",obj_MKSS_Enemy_Nimbia))
+			with (instance_create_layer(256,152,"Enemies",obj_MKSS_Enemy_Andromeda1))
 			{
-				scr_MKSS_Enemy_Nimbia_AI_Normal_Setup();
+				scr_MKSS_Enemy_Andromeda1_AI_Normal_Setup();
 				
 				dirX = -1;
 				image_xscale = dirX;
 				
-				scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_Nimbia_AI_Normal_Intro_Step);
+				scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_Andromeda1_AI_Normal_Idle_Step);
 				sprite_index = spriteSet.sprIdle;
 			}
 			
@@ -95,18 +95,18 @@ function scr_MKSS_Cutscene_Preset_Andromeda1Intro()
 			
 			if (!bossSpawned)
 			{
-				with (instance_create_layer(256,152,"Enemies",obj_MKSS_Enemy_Nimbia))
+				with (instance_create_layer(256,152,"Enemies",obj_MKSS_Enemy_Andromeda1))
 				{
 					dirX = -1;
 					image_xscale = dirX;
 					
-					scr_MKSS_Enemy_Nimbia_AI_Normal_Setup();
+					scr_MKSS_Enemy_Andromeda1_AI_Normal_Setup();
 				}
 				
 				bossSpawned = true;
 			}
 			
-			with (obj_MKSS_Enemy_Nimbia)
+			with (obj_MKSS_Enemy_Andromeda1)
 			{
 				scr_Enemy_ChangeState_Step(id,enemyAIStepIdle);
 				sprite_index = spriteSet.sprIdle;

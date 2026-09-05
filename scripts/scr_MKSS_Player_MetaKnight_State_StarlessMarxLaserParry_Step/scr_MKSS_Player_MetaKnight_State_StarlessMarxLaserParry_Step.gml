@@ -8,6 +8,12 @@ function scr_MKSS_Player_MetaKnight_State_StarlessMarxLaserParry_Step()
 		hsp = 0;
 		vsp = 0;
 		
+		dirX = 1;
+		with (obj_MKSS_Enemy_StarlessMarx)
+		{
+			if (x <= other.x) other.dirX = -1;
+		}
+		
 		parryState = 0;
 		
 		playerState_Setup = false;
