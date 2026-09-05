@@ -2577,6 +2577,7 @@
     {"id":{"name":"scr_MKSS_Enemy_Wheelie_AI_WalkAndAttack_Setup","path":"scripts/scr_MKSS_Enemy_Wheelie_AI_WalkAndAttack_Setup/scr_MKSS_Enemy_Wheelie_AI_WalkAndAttack_Setup.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_Wheelie_AI_WalkAndAttack_Step","path":"scripts/scr_MKSS_Enemy_Wheelie_AI_WalkAndAttack_Step/scr_MKSS_Enemy_Wheelie_AI_WalkAndAttack_Step.yy",},},
     {"id":{"name":"scr_MKSS_EnemyArena_Add","path":"scripts/scr_MKSS_EnemyArena_Add/scr_MKSS_EnemyArena_Add.yy",},},
+    {"id":{"name":"scr_MKSS_EnemyArena_EndScript_IceCreamIsland_ChunkyDee","path":"scripts/scr_MKSS_EnemyArena_EndScript_IceCreamIsland_ChunkyDee/scr_MKSS_EnemyArena_EndScript_IceCreamIsland_ChunkyDee.yy",},},
     {"id":{"name":"scr_MKSS_EnemyArena_EndScript_RoyalReeve_GrandWheelie","path":"scripts/scr_MKSS_EnemyArena_EndScript_RoyalReeve_GrandWheelie/scr_MKSS_EnemyArena_EndScript_RoyalReeve_GrandWheelie.yy",},},
     {"id":{"name":"scr_MKSS_EnemyArena_EndScript_SpawnGemPreset","path":"scripts/scr_MKSS_EnemyArena_EndScript_SpawnGemPreset/scr_MKSS_EnemyArena_EndScript_SpawnGemPreset.yy",},},
     {"id":{"name":"scr_MKSS_EnemyArena_EndScript_StarryShores_GigantEdge","path":"scripts/scr_MKSS_EnemyArena_EndScript_StarryShores_GigantEdge/scr_MKSS_EnemyArena_EndScript_StarryShores_GigantEdge.yy",},},

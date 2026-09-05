@@ -15,6 +15,9 @@ function scr_MKSS_Enemy_Booler_AI_Chase_Mist_Step()
 		visibleTimer = 0;
 		visibleTimerMax = 3;
 		
+		particleTimerMax = 6;
+		particleTimer = particleTimerMax;
+		
 		enemyState_Setup = false;
 	}
 	#endregion
@@ -52,6 +55,19 @@ function scr_MKSS_Enemy_Booler_AI_Chase_Mist_Step()
 			y = floor(y);
 			
 			scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_Booler_AI_Chase_Float_Step);
+		}
+		#endregion
+		
+		#region Particle Timer
+		if (particleTimer != -1)
+		{
+			particleTimer = max(particleTimer - speedMultFinal,0);
+			if (particleTimer == 0)
+			{
+				scr_MKSS_ParticleSet_Run(x + (16 * -dirX),y + 16,dirX);
+				
+				particleTimer = particleTimerMax;
+			}
 		}
 		#endregion
 		

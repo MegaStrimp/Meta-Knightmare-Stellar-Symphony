@@ -89,7 +89,6 @@ playerMetaQuickTimerMax = 30;
 global.MKSS_CurrentMassDestructionObject = -1;
 
 global.MKSS_Tutorial_FirstUpgrade = false;
-global.MKSS_Tutorial_FirstUpgrade = true;
 
 global.flag_MKSS_MetaPointCollect = false;
 global.flag_MKSS_AbilitySwitch = false;
