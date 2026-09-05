@@ -15,7 +15,8 @@ function scr_MKSS_Stage_Init_Set()
 	var stageID = "iceCreamIsland";
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Ice Cream Island",rm_MKSS_IceCreamIsland_1,[0,0,0,0],false);
-	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
+	
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_IceCreamIsland);
 	
 	global.MKSS_StageList[targetMappedID].isDefault = true;
 	#endregion
@@ -59,7 +60,7 @@ function scr_MKSS_Stage_Init_Set()
 	
 	var targetMappedID = scr_MKSS_Stage_Init_Add(stageID,"Above Halberd",rm_MKSS_AboveHalberd,[0,0,0,0],false);
 	
-	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
+	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_AboveHalberd);
 	
 	scr_MKSS_Stage_Init_Add_ClearScript(targetMappedID,function(targetMappedID)
 	{

@@ -135,7 +135,7 @@ function scr_MKSS_Enemy_WaddleDee_AI_Walk_Step()
 		
 		if (isHeld)
 		{
-			if (!instance_exists(owner))
+			if ((!instance_exists(owner)) or (owner.enemyAIStep == scr_MKSS_Enemy_AI_Stun_Step))
 			{
 				isHeld = false;
 				canBeHit = true;

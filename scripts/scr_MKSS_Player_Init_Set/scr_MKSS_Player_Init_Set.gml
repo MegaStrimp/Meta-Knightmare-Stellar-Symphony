@@ -33,6 +33,7 @@ function scr_MKSS_Player_Init_Set()
 		sprFloatSpit: spr_MKSS_Player_MetaKnight_Normal_Base_Float,
 		sprDoorEnter: spr_MKSS_Player_MetaKnight_Normal_Base_DoorEnter,
 		sprFront: spr_MKSS_Player_MetaKnight_Normal_Base_Front,
+		sprFallen: spr_MKSS_Player_MetaKnight_Normal_Base_Fallen,
 		sprHurtNormal: spr_MKSS_Player_MetaKnight_Normal_Base_Hurt_Normal,
 		sprHurtShocked: spr_MKSS_Player_MetaKnight_Normal_Base_Hurt_Shocked,
 		sprHurtBurned: spr_MKSS_Player_MetaKnight_Normal_Base_Hurt_Burned,

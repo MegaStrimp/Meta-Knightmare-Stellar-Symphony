@@ -7,7 +7,14 @@ script_execute(scr_MKSS_RoomSetup_IceCreamIsland,true);
 #region Enemy Arena
 with (instance_create_depth(0,0,0,obj_MKSS_EnemyArena))
 {
-	endScript = scr_MKSS_EnemyArena_EndScript_IceCreamIsland_ChunkyDee;
+	if (global.MKSS_StageList[global.MKSS_StageIDs[? "starryShores"]].isBeaten)
+	{
+		endsTheStage = true;
+	}
+	else
+	{
+		endScript = scr_MKSS_EnemyArena_EndScript_IceCreamIsland_ChunkyDee;
+	}
 	
 	scr_MKSS_EnemyArena_Add(168,120,obj_MKSS_Enemy_ChunkyDee,scr_MKSS_Enemy_ChunkyDee_AI_Normal_Setup,,-1,120,-1);
 }

@@ -5,7 +5,7 @@ function scr_MKSS_Attack_Galaxia_Finisher_EnemyHitBehavior()
 	#region Recoil The Owner
 	with (owner)
 	{
-		hsp = -dirX * 1 * speedMultFinal;
+		hsp = (-dirX * 2 * speedMultFinal);
 	}
 	#endregion
 }

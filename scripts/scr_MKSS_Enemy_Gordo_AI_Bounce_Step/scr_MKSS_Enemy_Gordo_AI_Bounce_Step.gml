@@ -56,7 +56,7 @@ function scr_MKSS_Enemy_Gordo_AI_Bounce_Step()
 	}
 	else
 	{
-		if (!instance_exists(owner))
+		if ((!instance_exists(owner)) or (owner.enemyAIStep == scr_MKSS_Enemy_AI_Stun_Step))
 		{
 			isHeld = false;
 			canBeHit = true;
