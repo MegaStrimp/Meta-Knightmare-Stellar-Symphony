@@ -39,7 +39,11 @@ function scr_MKSS_Attack_StarlessMarx_Arrow_Step()
 		{
 			spd = clamp(spd + (accel * accelDir * speedMultFinal),-spdMaxReverse,spdMax);
 			if (spd <= -spdMaxReverse) accelDir = 1;
-			if (spd >= spdMax) destroyOutsideRoom = true;
+			if (spd >= spdMax)
+			{
+				destroyOutsideRoom = true;
+				destroyOutsideView = true;
+			}
 		}
 		#endregion
 		
