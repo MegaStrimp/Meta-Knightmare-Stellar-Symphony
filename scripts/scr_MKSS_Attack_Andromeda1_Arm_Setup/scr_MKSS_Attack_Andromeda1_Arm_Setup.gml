@@ -7,6 +7,7 @@ function scr_MKSS_Attack_Andromeda1_Arm_Setup()
 	
 	pauseOutsideView = false;
 	destroyOutsideRoom = false;
+	pauseAfterAnimation = true;
 	
 	attackDraw = scr_MKSS_Attack_Andromeda1_Arm_Draw;
 	attackAIStep = scr_MKSS_Attack_Andromeda1_Arm_Step;

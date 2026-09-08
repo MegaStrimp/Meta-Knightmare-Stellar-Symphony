@@ -23,20 +23,14 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_StarSlash_Step()
 		i++;
 		#endregion
 		
-		#region Slash Start Timer
-		attackStateTimerMax[i] = 30;
-		attackStateTimer[i] = attackStateTimerMax[i];
-		i++;
-		#endregion
-		
 		#region Slash Timer
-		attackStateTimerMax[i] = 10;
+		attackStateTimerMax[i] = 40;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
 		
 		#region Revert Timer
-		attackStateTimerMax[i] = 40;
+		attackStateTimerMax[i] = 60;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
@@ -53,17 +47,20 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_StarSlash_Step()
 		
 		slashList = ds_list_create();
 		
-		arm[0] = true;
-		arm[1] = true;
+		//arm[0] = true;
+		//arm[1] = true;
 		
-		armRBOffsetX = 22;
-		armRBOffsetY = -14;
-		armRBAngle = 180;
-		armRBDir[0] = -1;
+		//armLBOffsetX = -26;
+		//armLBOffsetY = -14;
+		//armLBAngle = -130;
+		armLB.sprite_index = spriteSet.sprArmLB_SlashPrepare;
+		armLB.image_index = 0;
 		
-		armLBOffsetX = -26;
-		armLBOffsetY = -14;
-		armLBAngle = -130;
+		//armRBOffsetX = 22;
+		//armRBOffsetY = -14;
+		//armRBAngle = 180;
+		armRB.sprite_index = spriteSet.sprArmRB_SlashPrepare;
+		armRB.image_index = 0;
 		#endregion
 		
 		enemyState_Setup = false;
@@ -85,6 +82,16 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_StarSlash_Step()
 			case 0:
 			if (attackStateTimer[attackState] == -1)
 			{
+				with (instance_create_depth(obj_Player.x,0,depth + 6,obj_MKSS_Attack))
+				{
+					owner = other.id;
+					isEnemy = true;
+					dmg = -1;
+					dmgTarget = 20;
+					scr_MKSS_Attack_Andromeda1_StarSlash_Setup();
+					ds_list_add(other.slashList,id);
+				}
+				
 				slashCount--;
 				
 				attackStateTimer[attackState] = attackStateTimerMax[attackState];
@@ -93,26 +100,23 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_StarSlash_Step()
 			break;
 			#endregion
 			
-			#region Slash Start
+			#region Slash
 			case 1:
 			if (attackStateTimer[attackState] == -1)
 			{
-				attackState++;
-			}
-			break;
-			#endregion
-			
-			#region Slash
-			case 2:
-			if (attackStateTimer[attackState] == -1)
-			{
-				armRBOffsetX = 22;
-				armRBOffsetY = 9;
-				armRBAngle = 15;
+				armLB.sprite_index = spriteSet.sprArmLB_Slash;
+				armLB.image_index = 0;
+				
+				armRB.sprite_index = spriteSet.sprArmRB_Slash;
+				armRB.image_index = 0;
 		
-				armLBOffsetX = -23;
-				armLBOffsetY = 15;
-				armLBAngle = 50;
+				var i = 0;
+				repeat(ds_list_size)
+				{
+					if (instance_exists(ds_list_find_value(slashList,i))) ds_list_find_value(slashList,i).slashState = 1;
+					
+					i++;
+				}
 				
 				attackState++;
 			}
@@ -120,7 +124,7 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_StarSlash_Step()
 			#endregion
 			
 			#region Finish Attack
-			case 3:
+			case 2:
 			if (hsp != 0) 
 			{
 				var decelFinal = decelThrust * speedMultFinal;
@@ -138,6 +142,8 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_StarSlash_Step()
 			
 			if (attackStateTimer[attackState] == -1)
 			{
+				ds_list_clear(slashList);
+				
 				scr_Enemy_ChangeState_Step(id,enemyAIStepIdle);
 			}
 			break;

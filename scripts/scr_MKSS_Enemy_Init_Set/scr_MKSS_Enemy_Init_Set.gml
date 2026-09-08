@@ -823,8 +823,12 @@ function scr_MKSS_Enemy_Init_Set()
 		sprCape_Idle: spr_MKSS_Enemy_Andromeda1_Cape_Idle,
 		
 		sprArmLB_Idle: spr_MKSS_Enemy_Andromeda1_Arm_LB_Idle,
+		sprArmLB_SlashPrepare: spr_MKSS_Enemy_Andromeda1_Arm_LB_SlashPrepare,
+		sprArmLB_Slash: spr_MKSS_Enemy_Andromeda1_Arm_LB_Slash,
 		
 		sprArmRB_Idle: spr_MKSS_Enemy_Andromeda1_Arm_RB_Idle,
+		sprArmRB_SlashPrepare: spr_MKSS_Enemy_Andromeda1_Arm_RB_SlashPrepare,
+		sprArmRB_Slash: spr_MKSS_Enemy_Andromeda1_Arm_RB_Slash,
 		
 		sprArmLT_Idle: spr_MKSS_Enemy_Andromeda1_Arm_LT_Idle,
 		

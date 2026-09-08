@@ -19,6 +19,8 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_Idle_Step()
 		sprite_index = spriteSet.sprIdle;
 		image_index = 0;
 		
+		arm = [false,false,false,false];
+		
 		attackTimer = attackTimerMax;
 		
 		enemyState_Setup = false;

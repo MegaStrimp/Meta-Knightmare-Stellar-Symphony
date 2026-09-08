@@ -40,72 +40,52 @@ function scr_MKSS_Enemy_Andromeda1_Normal_BeginStep()
 			{
 				armLBOffsetX = -28 * dirX;
 				armLBOffsetY = 8 + _offsetShouldersF;
-				armLB.dirX = dirX;
 				armLBAngle = 0;
-				armLBDir = [1,1];
-			}
-			else
-			{
-				armLBDir = [0,0];
+				armLBDir = [dirX,1];
 			}
 			armLB.x = x + armLBOffsetX;
 			armLB.y = y + armLBOffsetY;
 			armLB.image_angle = armLBAngle;
-			armLB.dirX = armLBDir[0] * dirX;
+			armLB.dirX = armLBDir[0];
 			armLB.dirY = armLBDir[1];
 			
 			if (!arm[1])
 			{
 				armRBOffsetX = 20 * dirX;
 				armRBOffsetY = 16 + _offsetShouldersF;
-				armRB.dirX = dirX;
 				armRBAngle = 0;
-				armRBDir = [1,1];
-			}
-			else
-			{
-				armRBDir = [0,0];
+				armRBDir = [dirX,1];
 			}
 			armRB.x = x + armRBOffsetX;
 			armRB.y = y + armRBOffsetY;
 			armRB.image_angle = armRBAngle;
-			armRB.dirX = armRBDir[0] * dirX;
+			armRB.dirX = armRBDir[0];
 			armRB.dirY = armRBDir[1];
 			
 			if (!arm[2])
 			{
 				armLTOffsetX = -40 * dirX;
 				armLTOffsetY = 0 + _offsetShouldersB;
-				armLT.dirX = dirX;
 				armLTAngle = 0;
-				armLTDir = [1,1];
-			}
-			else
-			{
-				armLTDir = [0,0];
+				armLTDir = [dirX,1];
 			}
 			armLT.x = x + armLTOffsetX;
 			armLT.y = y + armLTOffsetY;
 			armLT.image_angle = armLTAngle;
-			armLT.dirX = armLTDir[0] * dirX;
+			armLT.dirX = armLTDir[0];
 			armLT.dirY = armLTDir[1];
 			
 			if (!arm[3])
 			{
 				armRTOffsetX = 34 * dirX;
 				armRTOffsetY = 0 + _offsetShouldersB;
-				armRT.dirX = dirX;
 				armRTAngle = 0;
-				armRTDir = [1,1];
-			}
-			else
-			{
-				armRTDir = [0,0];
+				armRTDir = [dirX,1];
 			}
 			armRT.x = x + armRTOffsetX;
 			armRT.y = y + armRTOffsetY;
 			armRT.image_angle = armRTAngle;
-			armRT.dirX = armRTDir[0] * dirX;
+			armRT.dirX = armRTDir[0];
 			armRT.dirY = armRTDir[1];
 			break;
 		}
