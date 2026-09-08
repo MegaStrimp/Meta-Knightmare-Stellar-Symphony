@@ -36,29 +36,77 @@ function scr_MKSS_Enemy_Andromeda1_Normal_BeginStep()
 			tailOffsetX = 0 * dirX;
 			tailOffsetY = 4;
 			
-			armLBOffsetX = -28 * dirX;
-			armLBOffsetY = 8;
+			if (!arm[0])
+			{
+				armLBOffsetX = -28 * dirX;
+				armLBOffsetY = 8 + _offsetShouldersF;
+				armLB.dirX = dirX;
+				armLBAngle = 0;
+				armLBDir = [1,1];
+			}
+			else
+			{
+				armLBDir = [0,0];
+			}
 			armLB.x = x + armLBOffsetX;
-			armLB.y = y + armLBOffsetY + _offsetShouldersF;
-			armLB.dirX = dirX;
+			armLB.y = y + armLBOffsetY;
+			armLB.image_angle = armLBAngle;
+			armLB.dirX = armLBDir[0] * dirX;
+			armLB.dirY = armLBDir[1];
 			
-			armRBOffsetX = 20 * dirX;
-			armRBOffsetY = 16;
+			if (!arm[1])
+			{
+				armRBOffsetX = 20 * dirX;
+				armRBOffsetY = 16 + _offsetShouldersF;
+				armRB.dirX = dirX;
+				armRBAngle = 0;
+				armRBDir = [1,1];
+			}
+			else
+			{
+				armRBDir = [0,0];
+			}
 			armRB.x = x + armRBOffsetX;
-			armRB.y = y + armRBOffsetY + _offsetShouldersF;
-			armRB.dirX = dirX;
+			armRB.y = y + armRBOffsetY;
+			armRB.image_angle = armRBAngle;
+			armRB.dirX = armRBDir[0] * dirX;
+			armRB.dirY = armRBDir[1];
 			
-			armLTOffsetX = -40 * dirX;
-			armLTOffsetY = 0;
+			if (!arm[2])
+			{
+				armLTOffsetX = -40 * dirX;
+				armLTOffsetY = 0 + _offsetShouldersB;
+				armLT.dirX = dirX;
+				armLTAngle = 0;
+				armLTDir = [1,1];
+			}
+			else
+			{
+				armLTDir = [0,0];
+			}
 			armLT.x = x + armLTOffsetX;
-			armLT.y = y + armLTOffsetY + _offsetShouldersB;
-			armLT.dirX = dirX;
+			armLT.y = y + armLTOffsetY;
+			armLT.image_angle = armLTAngle;
+			armLT.dirX = armLTDir[0] * dirX;
+			armLT.dirY = armLTDir[1];
 			
-			armRTOffsetX = 34 * dirX;
-			armRTOffsetY = 0;
+			if (!arm[3])
+			{
+				armRTOffsetX = 34 * dirX;
+				armRTOffsetY = 0 + _offsetShouldersB;
+				armRT.dirX = dirX;
+				armRTAngle = 0;
+				armRTDir = [1,1];
+			}
+			else
+			{
+				armRTDir = [0,0];
+			}
 			armRT.x = x + armRTOffsetX;
-			armRT.y = y + armRTOffsetY + _offsetShouldersB;
-			armRT.dirX = dirX;
+			armRT.y = y + armRTOffsetY;
+			armRT.image_angle = armRTAngle;
+			armRT.dirX = armRTDir[0] * dirX;
+			armRT.dirY = armRTDir[1];
 			break;
 		}
 	}

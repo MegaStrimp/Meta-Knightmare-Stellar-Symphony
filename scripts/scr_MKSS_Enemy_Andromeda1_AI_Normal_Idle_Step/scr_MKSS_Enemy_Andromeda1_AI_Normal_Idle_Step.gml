@@ -36,7 +36,7 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_Idle_Step()
 		#region Attack Timer
 		if (attackTimer != -1)
 		{
-			//attackTimer = max(attackTimer - speedMultFinal,0);
+			attackTimer = max(attackTimer - speedMultFinal,0);
 			if (attackTimer == 0)
 			{
 				attackIndex = ds_list_find_value(attackList,attackListIndex);

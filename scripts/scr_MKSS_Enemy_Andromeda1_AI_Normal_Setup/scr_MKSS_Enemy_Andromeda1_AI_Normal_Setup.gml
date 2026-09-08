@@ -18,7 +18,7 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_Setup(targetIsBoss = true)
 	
 	#region Attack Scripts
 	#region Phase 1
-	andromeda1_Attack_SlashCombo = scr_MKSS_Enemy_Nimbia_AI_Normal_SlashCombo_Step;
+	andromeda1_Attack_StarSlash = scr_MKSS_Enemy_Andromeda1_AI_Normal_StarSlash_Step;
 	#endregion
 	#endregion
 	
@@ -50,6 +50,10 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_Setup(targetIsBoss = true)
 	tailOffsetX = 0;
 	tailOffsetY = 0;
 	
+	arm = [false,false,false,false];
+	
+	armLBDir = [1,1];
+	armLBAngle = 0;
 	armLBOffsetX = 0;
 	armLBOffsetY = 0;
 	armLB = instance_create_depth(0,0,depth-2,obj_MKSS_Attack);
@@ -64,6 +68,8 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_Setup(targetIsBoss = true)
 		scr_MKSS_Attack_Andromeda1_Arm_Setup();
 	}
 	
+	armRBDir = [1,1];
+	armRBAngle = 0;
 	armRBOffsetX = 0;
 	armRBOffsetY = 0;
 	armRB = instance_create_depth(0,0,depth-2,obj_MKSS_Attack);
@@ -78,6 +84,8 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_Setup(targetIsBoss = true)
 		scr_MKSS_Attack_Andromeda1_Arm_Setup();
 	}
 	
+	armLTDir = [1,1];
+	armLTAngle = 0;
 	armLTOffsetX = 0;
 	armLTOffsetY = 0;
 	armLT = instance_create_depth(0,0,depth-1,obj_MKSS_Attack);
@@ -92,6 +100,8 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_Setup(targetIsBoss = true)
 		scr_MKSS_Attack_Andromeda1_Arm_Setup();
 	}
 	
+	armRTDir = [1,1];
+	armRTAngle = 0;
 	armRTOffsetX = 0;
 	armRTOffsetY = 0;
 	armRT = instance_create_depth(0,0,depth-1,obj_MKSS_Attack);

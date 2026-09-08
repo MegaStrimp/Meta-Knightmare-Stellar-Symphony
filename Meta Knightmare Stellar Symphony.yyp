@@ -2416,6 +2416,7 @@
     {"id":{"name":"scr_MKSS_Enemy_Andromeda1_AI_Normal_CleanUp","path":"scripts/scr_MKSS_Enemy_Andromeda1_AI_Normal_CleanUp/scr_MKSS_Enemy_Andromeda1_AI_Normal_CleanUp.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_Andromeda1_AI_Normal_Idle_Step","path":"scripts/scr_MKSS_Enemy_Andromeda1_AI_Normal_Idle_Step/scr_MKSS_Enemy_Andromeda1_AI_Normal_Idle_Step.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_Andromeda1_AI_Normal_Setup","path":"scripts/scr_MKSS_Enemy_Andromeda1_AI_Normal_Setup/scr_MKSS_Enemy_Andromeda1_AI_Normal_Setup.yy",},},
+    {"id":{"name":"scr_MKSS_Enemy_Andromeda1_AI_Normal_StarSlash_Step","path":"scripts/scr_MKSS_Enemy_Andromeda1_AI_Normal_StarSlash_Step/scr_MKSS_Enemy_Andromeda1_AI_Normal_StarSlash_Step.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_Andromeda1_Normal_AttackOrder_Phase1","path":"scripts/scr_MKSS_Enemy_Andromeda1_Normal_AttackOrder_Phase1/scr_MKSS_Enemy_Andromeda1_Normal_AttackOrder_Phase1.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_Andromeda1_Normal_AttackOrder_Phase2","path":"scripts/scr_MKSS_Enemy_Andromeda1_Normal_AttackOrder_Phase2/scr_MKSS_Enemy_Andromeda1_Normal_AttackOrder_Phase2.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_Andromeda1_Normal_BeginStep","path":"scripts/scr_MKSS_Enemy_Andromeda1_Normal_BeginStep/scr_MKSS_Enemy_Andromeda1_Normal_BeginStep.yy",},},
