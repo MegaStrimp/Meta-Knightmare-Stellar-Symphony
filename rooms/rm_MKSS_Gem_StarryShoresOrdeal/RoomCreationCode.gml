@@ -17,24 +17,33 @@ with (instance_create_depth(0,0,0,obj_MKSS_EnemyArena))
 {
 	endsTheStage = true;
 	
-	scr_MKSS_EnemyArena_Add(368,292,obj_MKSS_Enemy_WaddleDee,scr_MKSS_Enemy_WaddleDee_AI_Walk_Setup,,-1,,-1);
+	scr_MKSS_EnemyArena_Add(208,152,obj_MKSS_Enemy_WaddleDee,scr_MKSS_Enemy_WaddleDee_AI_Walk_Setup);
+	scr_MKSS_EnemyArena_Add(416,152,obj_MKSS_Enemy_WaddleDee,scr_MKSS_Enemy_WaddleDee_AI_Walk_Setup,,-1,,-1);
 	
-	scr_MKSS_EnemyArena_Add(248,292,obj_MKSS_Enemy_Bouncy,scr_MKSS_Enemy_Bouncy_AI_Walk_Setup);
-	scr_MKSS_EnemyArena_Add(368,292,obj_MKSS_Enemy_Bouncy,scr_MKSS_Enemy_Bouncy_AI_Walk_Setup,,-1,,-1);
+	scr_MKSS_EnemyArena_Add(72,112,obj_MKSS_Enemy_BrontoBurt, scr_MKSS_Enemy_BrontoBurt_AI_FlyStraightHorizontal_Setup);
+	scr_MKSS_EnemyArena_Add(560,112,obj_MKSS_Enemy_BrontoBurt, scr_MKSS_Enemy_BrontoBurt_AI_FlyStraightHorizontal_Setup,,-1,,-1);
 	
-	scr_MKSS_EnemyArena_Add(216,242,obj_MKSS_Enemy_Bouncy,scr_MKSS_Enemy_Bouncy_AI_Walk_Setup);
-	scr_MKSS_EnemyArena_Add(320,194,obj_MKSS_Enemy_WaddleDee, scr_MKSS_Enemy_WaddleDee_AI_Walk_Setup);
-	scr_MKSS_EnemyArena_Add(424,242,obj_MKSS_Enemy_Bouncy,scr_MKSS_Enemy_Bouncy_AI_Walk_Setup,,-1,,-1);
+	scr_MKSS_EnemyArena_Add(104,200,obj_MKSS_Enemy_WaddleDee, scr_MKSS_Enemy_WaddleDee_AI_Walk_Setup);
+	scr_MKSS_EnemyArena_Add(536,200,obj_MKSS_Enemy_WaddleDee, scr_MKSS_Enemy_WaddleDee_AI_Walk_Setup);
+	scr_MKSS_EnemyArena_Add(320,200,obj_MKSS_Enemy_Trappy, scr_MKSS_Enemy_Trappy_AI_Throw_Setup,,-1,,-1);
 	
-	scr_MKSS_EnemyArena_Add(320,188,obj_MKSS_Enemy_Peezer,scr_MKSS_Enemy_Peezer_AI_WalkAndAttack_Setup);
-	scr_MKSS_EnemyArena_Add(190,290,obj_MKSS_Enemy_WaddleDee,scr_MKSS_Enemy_WaddleDee_AI_Angry_Setup);
-	scr_MKSS_EnemyArena_Add(448,290,obj_MKSS_Enemy_WaddleDee,scr_MKSS_Enemy_WaddleDee_AI_Angry_Setup,,-1,,-1);
+	scr_MKSS_EnemyArena_Add(312,64,obj_MKSS_Enemy_Peezer,scr_MKSS_Enemy_Peezer_AI_WalkAndAttack_Setup);
+	scr_MKSS_EnemyArena_Add(208,160,obj_MKSS_Enemy_WaddleDee,scr_MKSS_Enemy_WaddleDee_AI_Angry_Setup);
+	scr_MKSS_EnemyArena_Add(416,160,obj_MKSS_Enemy_WaddleDee,scr_MKSS_Enemy_WaddleDee_AI_Angry_Setup,,-1,,-1);
 	
-	scr_MKSS_EnemyArena_Add(184,242,obj_MKSS_Enemy_Bouncy,scr_MKSS_Enemy_Bouncy_AI_Walk_Setup);
-	scr_MKSS_EnemyArena_Add(456,242,obj_MKSS_Enemy_Bouncy,scr_MKSS_Enemy_Bouncy_AI_Walk_Setup);
-	scr_MKSS_EnemyArena_Add(70,196,obj_MKSS_Enemy_Peezer,scr_MKSS_Enemy_Peezer_AI_WalkAndAttack_Setup);
-	scr_MKSS_EnemyArena_Add(568,196,obj_MKSS_Enemy_Peezer,scr_MKSS_Enemy_Peezer_AI_WalkAndAttack_Setup);
-	scr_MKSS_EnemyArena_Add(190,150,obj_MKSS_Enemy_WaddleDee, scr_MKSS_Enemy_WaddleDee_AI_Walk_Setup);
-	scr_MKSS_EnemyArena_Add(448,150,obj_MKSS_Enemy_WaddleDee, scr_MKSS_Enemy_WaddleDee_AI_Walk_Setup,,-1,,-1);
+	scr_MKSS_EnemyArena_Add(152,152,obj_MKSS_Enemy_BrontoBurt, scr_MKSS_Enemy_BrontoBurt_AI_FlyStraightHorizontal_Setup);
+	scr_MKSS_EnemyArena_Add(480,152,obj_MKSS_Enemy_BrontoBurt, scr_MKSS_Enemy_BrontoBurt_AI_FlyStraightHorizontal_Setup);
+	scr_MKSS_EnemyArena_Add(32,104,obj_MKSS_Enemy_Peezer,scr_MKSS_Enemy_Peezer_AI_WalkAndAttack_Setup);
+	scr_MKSS_EnemyArena_Add(608,104,obj_MKSS_Enemy_Peezer,scr_MKSS_Enemy_Peezer_AI_WalkAndAttack_Setup);
+	scr_MKSS_EnemyArena_Add(104,208,obj_MKSS_Enemy_WaddleDee, scr_MKSS_Enemy_WaddleDee_AI_Walk_Setup);
+	scr_MKSS_EnemyArena_Add(528,208,obj_MKSS_Enemy_WaddleDee, scr_MKSS_Enemy_WaddleDee_AI_Walk_Setup,,-1,,-1);
+	
+	scr_MKSS_EnemyArena_Add(312,56,obj_MKSS_Enemy_GhostKnight, scr_MKSS_Enemy_GhostKnight_AI_WalkAndAttack_Setup);
+	scr_MKSS_EnemyArena_Add(88,112,obj_MKSS_Enemy_Trappy, scr_MKSS_Enemy_Trappy_AI_Throw_Setup);
+	scr_MKSS_EnemyArena_Add(544,112,obj_MKSS_Enemy_Trappy, scr_MKSS_Enemy_Trappy_AI_Throw_Setup,,-1,,-1);
+	
+	scr_MKSS_EnemyArena_Add(208,152,obj_MKSS_Enemy_GhostKnight, scr_MKSS_Enemy_GhostKnight_AI_WalkAndAttack_Setup);
+	scr_MKSS_EnemyArena_Add(424,152,obj_MKSS_Enemy_GhostKnight, scr_MKSS_Enemy_GhostKnight_AI_WalkAndAttack_Setup);
+	scr_MKSS_EnemyArena_Add(320,200,obj_MKSS_Enemy_WaddleDee,scr_MKSS_Enemy_WaddleDee_AI_Idle_Setup,,-1,,-1);
 }
 #endregion
