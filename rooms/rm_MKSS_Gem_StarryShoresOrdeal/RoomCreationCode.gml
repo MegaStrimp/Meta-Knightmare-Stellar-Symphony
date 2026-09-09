@@ -45,5 +45,10 @@ with (instance_create_depth(0,0,0,obj_MKSS_EnemyArena))
 	scr_MKSS_EnemyArena_Add(208,152,obj_MKSS_Enemy_GhostKnight, scr_MKSS_Enemy_GhostKnight_AI_WalkAndAttack_Setup);
 	scr_MKSS_EnemyArena_Add(424,152,obj_MKSS_Enemy_GhostKnight, scr_MKSS_Enemy_GhostKnight_AI_WalkAndAttack_Setup);
 	scr_MKSS_EnemyArena_Add(320,200,obj_MKSS_Enemy_WaddleDee,scr_MKSS_Enemy_WaddleDee_AI_Idle_Setup,,-1,,-1);
+	
+	scr_MKSS_EnemyArena_Add(136,192,obj_MKSS_Enemy_BrontoBurt, scr_MKSS_Enemy_BrontoBurt_AI_FlyStraightHorizontal_Setup);
+	scr_MKSS_EnemyArena_Add(504,192,obj_MKSS_Enemy_BrontoBurt, scr_MKSS_Enemy_BrontoBurt_AI_FlyStraightHorizontal_Setup);
+	scr_MKSS_EnemyArena_Add(64,112,obj_MKSS_Enemy_BrontoBurt, scr_MKSS_Enemy_BrontoBurt_AI_FlyStraightHorizontal_Setup);
+	scr_MKSS_EnemyArena_Add(560,112,obj_MKSS_Enemy_BrontoBurt, scr_MKSS_Enemy_BrontoBurt_AI_FlyStraightHorizontal_Setup);
 }
 #endregion
