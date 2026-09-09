@@ -5,7 +5,7 @@
   "bbox_bottom":55,
   "bbox_left":5,
   "bbox_right":79,
-  "bbox_top":8,
+  "bbox_top":4,
   "collisionKind":1,
   "collisionTolerance":0,
   "ConfigValues":{
@@ -17,18 +17,18 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"77c9b0e2-a2fe-4de9-88a7-43a42d23eb99","name":"77c9b0e2-a2fe-4de9-88a7-43a42d23eb99","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"ea9116de-b34c-4c33-bda0-d429e6f9d901","name":"ea9116de-b34c-4c33-bda0-d429e6f9d901","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"52d8fe3e-7f9c-4a50-83bf-600e96ac18bb","name":"52d8fe3e-7f9c-4a50-83bf-600e96ac18bb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"a4608204-ef22-47fc-9a5d-b1cea2ad5629","name":"a4608204-ef22-47fc-9a5d-b1cea2ad5629","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"0c9251f3-11a7-4db8-9161-12175c3c1f25","name":"0c9251f3-11a7-4db8-9161-12175c3c1f25","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5a437e0e-386a-40e5-b122-056189b9f3c6","name":"5a437e0e-386a-40e5-b122-056189b9f3c6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f7cd9718-8a99-4b2a-a814-f5a09802bdd2","name":"f7cd9718-8a99-4b2a-a814-f5a09802bdd2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0d79e59a-3f44-446f-87ae-72a9a4c0e6fc","name":"0d79e59a-3f44-446f-87ae-72a9a4c0e6fc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2454248c-8863-414a-b9d5-65b8c8b17c02","name":"2454248c-8863-414a-b9d5-65b8c8b17c02","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"dcfe789f-2173-406b-aba3-5b7f8361ce9d","name":"dcfe789f-2173-406b-aba3-5b7f8361ce9d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":56,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"1b700557-2226-4f73-b0ed-97e9716c85a2","blendMode":0,"displayName":"default","isLocked":false,"name":"1b700557-2226-4f73-b0ed-97e9716c85a2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"e75055b6-e000-48a8-8840-43f5880dabea","blendMode":0,"displayName":"default","isLocked":false,"name":"e75055b6-e000-48a8-8840-43f5880dabea","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2",
   "nineSlice":null,
@@ -68,7 +68,7 @@
     },
     "name":"spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2",
     "playback":1,
-    "playbackSpeed":16.0,
+    "playbackSpeed":18.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -78,20 +78,20 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"77c9b0e2-a2fe-4de9-88a7-43a42d23eb99","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d6fbbd8f-0ae2-42c2-b034-650d1703877e","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5a437e0e-386a-40e5-b122-056189b9f3c6","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"947005db-161d-40fa-890a-b8ca02e1480d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ea9116de-b34c-4c33-bda0-d429e6f9d901","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6f6c15ad-866c-4ce9-bf4f-136c8741801a","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f7cd9718-8a99-4b2a-a814-f5a09802bdd2","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9e7af5b4-ec31-492b-b793-03591b1fb4a9","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"52d8fe3e-7f9c-4a50-83bf-600e96ac18bb","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b0bcdec8-d8af-4043-a4de-573479752388","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0d79e59a-3f44-446f-87ae-72a9a4c0e6fc","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e1c432c3-c2a7-48a5-b987-6909aa1b7428","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a4608204-ef22-47fc-9a5d-b1cea2ad5629","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"4d8a9096-8330-4b65-ae4e-7d32386dfa9b","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2454248c-8863-414a-b9d5-65b8c8b17c02","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"253aa02c-48ee-4ed1-81f0-6c77d7927138","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0c9251f3-11a7-4db8-9161-12175c3c1f25","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"f46264a6-9c79-469d-b192-50d933f4a888","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dcfe789f-2173-406b-aba3-5b7f8361ce9d","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e2c9b3a1-b44d-474f-8a32-53a09d5dec8d","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

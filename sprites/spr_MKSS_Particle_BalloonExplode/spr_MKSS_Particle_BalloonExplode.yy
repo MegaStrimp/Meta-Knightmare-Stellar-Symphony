@@ -67,7 +67,7 @@
     },
     "name":"spr_MKSS_Particle_BalloonExplode",
     "playback":1,
-    "playbackSpeed":18.0,
+    "playbackSpeed":24.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",

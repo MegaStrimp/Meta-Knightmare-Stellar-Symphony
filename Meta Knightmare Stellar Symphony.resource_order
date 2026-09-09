@@ -3010,6 +3010,7 @@
     {"name":"spr_MKSS_Player_MetaKnight_Normal_Base_Stun","order":34,"path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Base_Stun/spr_MKSS_Player_MetaKnight_Normal_Base_Stun.yy",},
     {"name":"spr_MKSS_Player_MetaKnight_Normal_Base_UpDuck","order":25,"path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Base_UpDuck/spr_MKSS_Player_MetaKnight_Normal_Base_UpDuck.yy",},
     {"name":"spr_MKSS_Player_MetaKnight_Normal_Base_Walk","order":1,"path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Base_Walk/spr_MKSS_Player_MetaKnight_Normal_Base_Walk.yy",},
+    {"name":"spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_SawProjectile","order":2,"path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_SawProjectile/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_SawProjectile.yy",},
     {"name":"spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2","order":1,"path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_Slash2.yy",},
     {"name":"spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_MachTornado","order":1,"path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_MachTornado/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_MachTornado.yy",},
     {"name":"spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_Slash1","order":4,"path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_Slash1/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Galaxia_Slash1.yy",},
