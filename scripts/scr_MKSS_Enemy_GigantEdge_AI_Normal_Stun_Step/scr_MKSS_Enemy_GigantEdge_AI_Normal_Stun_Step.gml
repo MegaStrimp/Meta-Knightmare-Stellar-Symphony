@@ -20,7 +20,10 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_Stun_Step()
 		#endregion
 		
 		#region Flash Timer
-		if (flashTimer == -1) flashTimer = flashTimerTarget;
+		if (flashTimer == -1)
+		{
+			flashTimer = flashTimerTarget;
+		}
 		#endregion
 		
 		#region Revert Back

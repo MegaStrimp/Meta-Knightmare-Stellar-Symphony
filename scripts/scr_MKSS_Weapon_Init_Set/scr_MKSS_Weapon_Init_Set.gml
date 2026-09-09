@@ -117,8 +117,8 @@ function scr_MKSS_Weapon_Init_Set()
 		sprAttackGalaxiaMachTornado: undefined,
 		sprAttackGalaxiaCircleSlash: undefined,
 		
-		sprAttackBuzzcutSlash1: undefined,
-		sprAttackBuzzcutSlash2: undefined,
+		sprAttackBuzzcutSlash1: spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Attack_Slash1,
+		sprAttackBuzzcutSlash2: spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Attack_Slash2,
 		sprAttackBuzzcutChainlings: undefined
 	});
 	#endregion
