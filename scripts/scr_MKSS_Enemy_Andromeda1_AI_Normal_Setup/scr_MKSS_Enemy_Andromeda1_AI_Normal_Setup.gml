@@ -19,6 +19,7 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_Setup(targetIsBoss = true)
 	#region Attack Scripts
 	#region Phase 1
 	andromeda1_Attack_StarSlash = scr_MKSS_Enemy_Andromeda1_AI_Normal_StarSlash_Step;
+	andromeda1_Attack_StarShot = scr_MKSS_Enemy_Andromeda1_AI_Normal_StarShot_Step;
 	#endregion
 	#endregion
 	

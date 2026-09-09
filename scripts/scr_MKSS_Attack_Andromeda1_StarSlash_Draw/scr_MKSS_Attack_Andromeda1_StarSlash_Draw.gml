@@ -10,7 +10,7 @@ function scr_MKSS_Attack_Andromeda1_StarSlash_Draw()
 	{
 		for (var h = -2; h < 2; h++)
 		{
-			draw_sprite_ext(bg_MKSS_AdAstra,0,x + textureX + (textureWidth * i),y + textureY + (textureHeight * h),image_xscale,image_yscale,0,c_white,1);
+			draw_sprite_ext(textureSprite,0,x + textureX + (textureWidth * i),y + textureY + (textureHeight * h),image_xscale,image_yscale,0,c_white,1);
 		}
 	}
 	
@@ -24,7 +24,7 @@ function scr_MKSS_Attack_Andromeda1_StarSlash_Draw()
 	{
 		for (var h = -2; h < 2; h++)
 		{
-			draw_sprite_ext(bg_MKSS_AdAstra,0,x + textureX + (textureWidth * i),y + textureY + (textureHeight * h),image_xscale,image_yscale,0,c_white,1);
+			draw_sprite_ext(textureSprite,0,x + textureX + (textureWidth * i),y + textureY + (textureHeight * h),image_xscale,image_yscale,0,c_white,1);
 		}
 	}
 	

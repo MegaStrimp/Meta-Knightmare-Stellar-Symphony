@@ -20,6 +20,10 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_Idle_Step()
 		image_index = 0;
 		
 		arm = [false,false,false,false];
+		armRB.depth = armRB.depthDefault;
+		armLB.depth = armLB.depthDefault;
+		armRT.depth = armRT.depthDefault;
+		armLT.depth = armLT.depthDefault;
 		
 		attackTimer = attackTimerMax;
 		

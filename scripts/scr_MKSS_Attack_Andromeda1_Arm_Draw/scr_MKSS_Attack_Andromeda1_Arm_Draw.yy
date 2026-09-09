@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_MKSS_Attack_Andromeda1_Arm_Draw",
   "parent":{
-    "name":"Arm",
-    "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Stage Bosses/Andromeda 1/Attacks/Arm.yy",
+    "name":"Scripts",
+    "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Stage Bosses/Andromeda 1/Attacks/Arm/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

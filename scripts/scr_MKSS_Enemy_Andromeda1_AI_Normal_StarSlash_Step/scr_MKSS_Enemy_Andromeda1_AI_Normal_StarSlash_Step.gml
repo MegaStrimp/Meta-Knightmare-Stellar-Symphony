@@ -125,21 +125,6 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_StarSlash_Step()
 			
 			#region Finish Attack
 			case 2:
-			if (hsp != 0) 
-			{
-				var decelFinal = decelThrust * speedMultFinal;
-		
-				hsp = scr_Entity_Friction(hsp,decelFinal);
-				
-				repeat(4) 
-				{
-					scr_MKSS_ParticleSet_LightningBall(x-(irandom_range(-3,6)*dirX),y-12+lightningOffset);
-					lightningOffset += lightningOffsetDir;
-					if (lightningOffset <= -lightningOffsetLimit) lightningOffsetDir = 1;
-					if (lightningOffset >= lightningOffsetLimit) lightningOffsetDir = -1;
-				}
-			}
-			
 			if (attackStateTimer[attackState] == -1)
 			{
 				ds_list_clear(slashList);

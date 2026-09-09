@@ -825,14 +825,22 @@ function scr_MKSS_Enemy_Init_Set()
 		sprArmLB_Idle: spr_MKSS_Enemy_Andromeda1_Arm_LB_Idle,
 		sprArmLB_SlashPrepare: spr_MKSS_Enemy_Andromeda1_Arm_LB_SlashPrepare,
 		sprArmLB_Slash: spr_MKSS_Enemy_Andromeda1_Arm_LB_Slash,
+		sprArmLB_Lower: spr_MKSS_Enemy_Andromeda1_Arm_LB_Lower,
 		
 		sprArmRB_Idle: spr_MKSS_Enemy_Andromeda1_Arm_RB_Idle,
 		sprArmRB_SlashPrepare: spr_MKSS_Enemy_Andromeda1_Arm_RB_SlashPrepare,
 		sprArmRB_Slash: spr_MKSS_Enemy_Andromeda1_Arm_RB_Slash,
+		sprArmRB_Lower: spr_MKSS_Enemy_Andromeda1_Arm_RB_Lower,
 		
 		sprArmLT_Idle: spr_MKSS_Enemy_Andromeda1_Arm_LT_Idle,
+		sprArmLT_Palm: spr_MKSS_Enemy_Andromeda1_Arm_LT_Palm,
+		sprArmLT_PalmCharge: spr_MKSS_Enemy_Andromeda1_Arm_LT_PalmCharge,
+		sprArmLT_PalmAttack: spr_MKSS_Enemy_Andromeda1_Arm_LT_PalmAttack,
 		
 		sprArmRT_Idle: spr_MKSS_Enemy_Andromeda1_Arm_RT_Idle,
+		sprArmRT_Palm: spr_MKSS_Enemy_Andromeda1_Arm_RT_Palm,
+		sprArmRT_PalmCharge: spr_MKSS_Enemy_Andromeda1_Arm_RT_PalmCharge,
+		sprArmRT_PalmAttack: spr_MKSS_Enemy_Andromeda1_Arm_RT_PalmAttack,
 		
 		maskIndexDefault: spr_16x16Mask_MiddleOrigin,
 		maskIndex: spr_16x16Mask_MiddleOrigin

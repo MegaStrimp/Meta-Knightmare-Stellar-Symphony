@@ -9,6 +9,8 @@ function scr_MKSS_Attack_Andromeda1_Arm_Setup()
 	destroyOutsideRoom = false;
 	pauseAfterAnimation = true;
 	
+	depthDefault = depth;
+	
 	attackDraw = scr_MKSS_Attack_Andromeda1_Arm_Draw;
 	attackAIStep = scr_MKSS_Attack_Andromeda1_Arm_Step;
 }

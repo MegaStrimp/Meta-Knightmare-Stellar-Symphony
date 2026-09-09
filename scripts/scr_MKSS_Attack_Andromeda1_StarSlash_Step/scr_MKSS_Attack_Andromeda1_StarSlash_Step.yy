@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_MKSS_Attack_Andromeda1_StarSlash_Step",
   "parent":{
-    "name":"Star Slash",
-    "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Stage Bosses/Andromeda 1/Attacks/Star Slash.yy",
+    "name":"Scripts",
+    "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Stage Bosses/Andromeda 1/Attacks/Star Slash/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
