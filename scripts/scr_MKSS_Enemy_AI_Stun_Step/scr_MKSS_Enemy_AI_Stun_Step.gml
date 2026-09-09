@@ -23,6 +23,20 @@ function scr_MKSS_Enemy_AI_Stun_Step()
 		if (flashTimer == -1) flashTimer = flashTimerTarget;
 		#endregion
 		
+		#region Corpse Flash
+		if (hasCorpse)
+		{
+			if (palIndex == 2)
+			{
+				image_blend = c_red;
+			}
+			else
+			{
+				image_blend = c_white;
+			}
+		}
+		#endregion
+		
 		#region Revert Back
 		if (stunCancelTimer == -1)
 		{

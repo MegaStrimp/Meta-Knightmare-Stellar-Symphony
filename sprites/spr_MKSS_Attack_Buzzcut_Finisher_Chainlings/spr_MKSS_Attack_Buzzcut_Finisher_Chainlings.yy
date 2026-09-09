@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_SawProjectile",
+  "%Name":"spr_MKSS_Attack_Buzzcut_Finisher_Chainlings",
   "bboxMode":0,
   "bbox_bottom":15,
   "bbox_left":0,
@@ -24,19 +24,19 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"7bd0da29-07d3-43d1-86f0-7fac2e89925d","blendMode":0,"displayName":"default","isLocked":false,"name":"7bd0da29-07d3-43d1-86f0-7fac2e89925d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_SawProjectile",
+  "name":"spr_MKSS_Attack_Buzzcut_Finisher_Chainlings",
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Buzzcut",
-    "path":"folders/Meta Knightmare Stellar Symphony/Player/Characters/Meta Knight/Sprites/Effects/Buzzcut.yy",
+    "name":"Sprites",
+    "path":"folders/Meta Knightmare Stellar Symphony/Attacks/Attacks/Buzzcut/Chainlings/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_SawProjectile",
+    "%Name":"spr_MKSS_Attack_Buzzcut_Finisher_Chainlings",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -60,7 +60,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_SawProjectile",
+    "name":"spr_MKSS_Attack_Buzzcut_Finisher_Chainlings",
     "playback":1,
     "playbackSpeed":24.0,
     "playbackSpeedType":0,
@@ -72,16 +72,16 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"175a394f-205e-4776-992f-b7ab50468edc","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_SawProjectile/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_SawProjectile.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"175a394f-205e-4776-992f-b7ab50468edc","path":"sprites/spr_MKSS_Attack_Buzzcut_Finisher_Chainlings/spr_MKSS_Attack_Buzzcut_Finisher_Chainlings.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"ae62bdba-faac-4609-a7a8-15ecbb066fc8","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"333eeba2-215a-47db-baff-a4182759696f","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_SawProjectile/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_SawProjectile.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"333eeba2-215a-47db-baff-a4182759696f","path":"sprites/spr_MKSS_Attack_Buzzcut_Finisher_Chainlings/spr_MKSS_Attack_Buzzcut_Finisher_Chainlings.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"f83aa7a2-6bdb-42dd-8e7a-ebde48ee7c66","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d294ee72-9abd-4427-a2c2-ccd11266094e","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_SawProjectile/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_SawProjectile.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d294ee72-9abd-4427-a2c2-ccd11266094e","path":"sprites/spr_MKSS_Attack_Buzzcut_Finisher_Chainlings/spr_MKSS_Attack_Buzzcut_Finisher_Chainlings.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"f9884002-26f1-4896-a117-6b02e59691c9","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"45d78386-a680-42fb-b224-1335dc7c424d","path":"sprites/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_SawProjectile/spr_MKSS_Player_MetaKnight_Normal_Effects_Attack_Buzzcut_SawProjectile.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"45d78386-a680-42fb-b224-1335dc7c424d","path":"sprites/spr_MKSS_Attack_Buzzcut_Finisher_Chainlings/spr_MKSS_Attack_Buzzcut_Finisher_Chainlings.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"256217bd-fe2c-4e1e-9123-e376b7964fc2","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

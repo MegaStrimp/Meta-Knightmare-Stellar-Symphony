@@ -34,61 +34,55 @@ function scr_MKSS_Player_MetaKnight_State_Buzzcut_Chainlings_Step()
 			{
 				buzzcut_Chainlings_ShootCount += 1;
 				
+				var sfx = scr_PlaySfx(snd_MKSS_GhostKnightStab);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
+				
+				var targetAngle = 0;
+				
 				if (buzzcut_Chainlings_ShootCount == 1)
 				{
-					var targetAngle = 270 + (70 * dirX);
-					
-					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
-					{
-						owner = other;
-						isEnemy = false;
-						dmg = floor(MKSS_Base_BuzzcutDamage * 3);
-						bonusValue = MKSS_Base_AttackBonusValue;
-						destroyAfterCollideWall = true;
-						destroyAfterHit = true;
-						canBreakBlocks = true;
-						freezeFrameForce = 1;
-						hsp = lengthdir_x(4 * speedMultFinal,targetAngle);
-						vsp = lengthdir_y(4 * speedMultFinal,targetAngle);
-						knockbackAngle = targetAngle;
-						knockbackForce = 1;
-						sprite_index = spr_24x24Mask_MiddleOrigin;
-						mask_index = spr_24x24Mask_MiddleOrigin;
-						image_xscale = other.dirX;
-						dirX = other.dirX;
-						attackAIStep = scr_MKSS_Attack_Buzzcut_Chainlings_Step;
-						attackEnemyHitParticleIndex = scr_MKSS_ParticleSet_SlashRandom;
-					}
+					targetAngle = 270 + (45 * dirX);
 					
 					buzzcut_Chainlings_ShootTimer = buzzcut_Chainlings_ShootTimerMax;
 				}
 				else
 				{
-					var targetAngle = 270 - (70 * dirX);
-					
-					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
-					{
-						owner = other;
-						isEnemy = false;
-						dmg = floor(MKSS_Base_BuzzcutDamage * 3);
-						bonusValue = MKSS_Base_AttackBonusValue;
-						destroyAfterCollideWall = true;
-						destroyAfterHit = true;
-						canBreakBlocks = true;
-						freezeFrameForce = 1;
-						hsp = lengthdir_x(4 * speedMultFinal,targetAngle);
-						vsp = lengthdir_y(4 * speedMultFinal,targetAngle);
-						knockbackAngle = targetAngle;
-						knockbackForce = 1;
-						sprite_index = spr_24x24Mask_MiddleOrigin;
-						mask_index = spr_24x24Mask_MiddleOrigin;
-						image_xscale = other.dirX;
-						dirX = other.dirX;
-						attackAIStep = scr_MKSS_Attack_Buzzcut_Chainlings_Step;
-						attackEnemyHitParticleIndex = scr_MKSS_ParticleSet_SlashRandom;
-					}
+					targetAngle = 270 - (45 * dirX);
 					
 					buzzcut_Chainlings_ShootTimer = -1;
+				}
+				
+				with (obj_Enemy)
+				{
+					if ((canBeHit) and (y > other.y) and (abs(x - other.x) <= 48))
+					{
+						targetAngle = point_direction(other.x,other.y,x,y);
+					}
+				}
+				
+				with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+				{
+					owner = other;
+					isEnemy = false;
+					dmg = floor(MKSS_Base_BuzzcutDamage * 3);
+					bonusValue = MKSS_Base_AttackBonusValue;
+					destroyAfterCollideWall = true;
+					destroyAfterHit = true;
+					canBreakBlocks = true;
+					freezeFrameForce = 1;
+					hsp = lengthdir_x(6 * speedMultFinal,targetAngle);
+					vsp = lengthdir_y(6 * speedMultFinal,targetAngle);
+					knockbackAngle = targetAngle;
+					knockbackForce = 1;
+					sprite_index = spr_MKSS_Attack_Buzzcut_Finisher_Chainlings;
+					mask_index = spr_16x16Mask_MiddleOrigin;
+					image_xscale = other.dirX;
+					dirX = other.dirX;
+					attackAIStep = scr_MKSS_Attack_Buzzcut_Chainlings_Step;
+					attackEnemyHitParticleIndex = scr_MKSS_ParticleSet_SlashRandom;
+					attackWallHitParticleIndex = scr_MKSS_ParticleSet_Impact;
+					afterimageTimerMax = 2;
+					afterimageTimer = afterimageTimerMax;
 				}
 			}
 		}
