@@ -826,6 +826,7 @@ function scr_MKSS_Enemy_Init_Set()
 		sprArmLB_SlashPrepare: spr_MKSS_Enemy_Andromeda1_Arm_LB_SlashPrepare,
 		sprArmLB_Slash: spr_MKSS_Enemy_Andromeda1_Arm_LB_Slash,
 		sprArmLB_Lower: spr_MKSS_Enemy_Andromeda1_Arm_LB_Lower,
+		sprArmLB_Straight: spr_MKSS_Enemy_Andromeda1_Arm_LB_Straight,
 		
 		sprArmRB_Idle: spr_MKSS_Enemy_Andromeda1_Arm_RB_Idle,
 		sprArmRB_SlashPrepare: spr_MKSS_Enemy_Andromeda1_Arm_RB_SlashPrepare,

@@ -254,9 +254,13 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_StarShot_Step()
 				}
 				else
 				{
-					var _spd = 8;
-					if (point_distance(armLTAngle,0,270 + (15 * dirX),0) > _spd) armLTAngle -= (_spd * dirX) % 360;
-					if (point_distance(armRTAngle,0,270 + (15 * dirX),0) > _spd) armRTAngle -= (_spd * dirX) % 360;
+					var _spd = 16;
+					if (point_distance(abs(armLTAngle),0,270 + (15 * dirX),0) > _spd) armLTAngle -= (_spd * dirX);
+					if (armLTAngle < 0) armLTAngle += 360;
+					if (armLTAngle >= 360) armLTAngle -= 360;
+					if (point_distance(abs(armRTAngle),0,270 + (15 * dirX),0) > _spd) armRTAngle -= (_spd * dirX);
+					if (armRTAngle < 0) armRTAngle += 360;
+					if (armRTAngle >= 360) armRTAngle -= 360;
 				}
 			}
 				

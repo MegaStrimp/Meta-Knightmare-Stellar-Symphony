@@ -47,18 +47,12 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_StarSlash_Step()
 		
 		slashList = ds_list_create();
 		
-		//arm[0] = true;
-		//arm[1] = true;
+		arm[0] = true;
+		arm[1] = true;
 		
-		//armLBOffsetX = -26;
-		//armLBOffsetY = -14;
-		//armLBAngle = -130;
 		armLB.sprite_index = spriteSet.sprArmLB_SlashPrepare;
 		armLB.image_index = 0;
 		
-		//armRBOffsetX = 22;
-		//armRBOffsetY = -14;
-		//armRBAngle = 180;
 		armRB.sprite_index = spriteSet.sprArmRB_SlashPrepare;
 		armRB.image_index = 0;
 		#endregion

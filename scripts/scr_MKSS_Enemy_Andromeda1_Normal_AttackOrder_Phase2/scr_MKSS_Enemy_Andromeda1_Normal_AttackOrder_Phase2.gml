@@ -6,4 +6,5 @@ function scr_MKSS_Enemy_Andromeda1_Normal_AttackOrder_Phase2(clear = true)
 	
 	ds_list_add(attackList,andromeda1_Attack_StarSlash);
 	ds_list_add(attackList,andromeda1_Attack_StarShot);
+	ds_list_add(attackList,andromeda1_Attack_SlashThrust);
 }
