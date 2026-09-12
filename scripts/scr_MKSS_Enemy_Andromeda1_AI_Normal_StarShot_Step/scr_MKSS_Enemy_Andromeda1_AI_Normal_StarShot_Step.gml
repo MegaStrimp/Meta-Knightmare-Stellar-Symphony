@@ -57,6 +57,8 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_StarShot_Step()
 		#region Star Shot Variables
 		slashCountMax = 2;
 		slashCount = slashCountMax;
+		
+		moveSpeed = 1;
 		#endregion
 		
 		#region Star Shot Start
@@ -104,11 +106,23 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_StarShot_Step()
 		hsp = scr_Entity_Friction(hsp,decelFinal);
 		#endregion
 		
+		#region Move to middle
+		var _dir = 0;
+		if (x < room_width / 2) _dir = 1;
+		if (x > room_width / 2) _dir = -1;
+		if (point_distance(x,0,room_width / 2,0) > moveSpeed) hsp = moveSpeed * _dir * speedMultFinal;
+		else
+		{
+			hsp = 0;
+			x = room_width / 2;
+		}
+		#endregion
+		
 		#region Attack States
 		switch (attackState)
 		{
 			#region Charge Arm
-			case 0:
+			case 0:			
 			armLTAngle = point_direction(armLT.x,armLT.y,obj_Player.x,obj_Player.y);
 			armRTAngle = point_direction(armRT.x,armRT.y,obj_Player.x,obj_Player.y);
 				
@@ -220,6 +234,7 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_StarShot_Step()
 			armLTOffsetY -= .25;
 			armRTOffsetY -= .25;
 			chargeShot.y -= .25;
+			chargeShot.x = x;
 			
 			if (attackStateTimer[attackState] == -1)
 			{

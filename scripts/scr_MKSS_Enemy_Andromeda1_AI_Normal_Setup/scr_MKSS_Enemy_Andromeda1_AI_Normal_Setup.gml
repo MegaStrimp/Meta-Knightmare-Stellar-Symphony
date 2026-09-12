@@ -21,6 +21,7 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_Setup(targetIsBoss = true)
 	andromeda1_Attack_StarSlash = scr_MKSS_Enemy_Andromeda1_AI_Normal_StarSlash_Step;
 	andromeda1_Attack_StarShot = scr_MKSS_Enemy_Andromeda1_AI_Normal_StarShot_Step;
 	andromeda1_Attack_SlashThrust = scr_MKSS_Enemy_Andromeda1_AI_Normal_SlashThrust_Step;
+	andromeda1_Attack_RapidSlash = scr_MKSS_Enemy_Andromeda1_AI_Normal_RapidSlash_Step;
 	#endregion
 	#endregion
 	

@@ -837,11 +837,13 @@ function scr_MKSS_Enemy_Init_Set()
 		sprArmLT_Palm: spr_MKSS_Enemy_Andromeda1_Arm_LT_Palm,
 		sprArmLT_PalmCharge: spr_MKSS_Enemy_Andromeda1_Arm_LT_PalmCharge,
 		sprArmLT_PalmAttack: spr_MKSS_Enemy_Andromeda1_Arm_LT_PalmAttack,
+		sprArmLT_SwordAppear: spr_MKSS_Enemy_Andromeda1_Arm_LT_SwordAppear,
 		
 		sprArmRT_Idle: spr_MKSS_Enemy_Andromeda1_Arm_RT_Idle,
 		sprArmRT_Palm: spr_MKSS_Enemy_Andromeda1_Arm_RT_Palm,
 		sprArmRT_PalmCharge: spr_MKSS_Enemy_Andromeda1_Arm_RT_PalmCharge,
 		sprArmRT_PalmAttack: spr_MKSS_Enemy_Andromeda1_Arm_RT_PalmAttack,
+		sprArmRT_SwordAppear: spr_MKSS_Enemy_Andromeda1_Arm_RT_SwordAppear,
 		
 		maskIndexDefault: spr_16x16Mask_MiddleOrigin,
 		maskIndex: spr_16x16Mask_MiddleOrigin
