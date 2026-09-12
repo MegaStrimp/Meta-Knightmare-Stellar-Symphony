@@ -43,6 +43,15 @@ function scr_MKSS_Attack_Init_Set()
 	scr_MKSS_Attack_Init_Add("buzzcut_Chainlings",scr_MKSS_Attack_Execute_Buzzcut_Chainlings);
 	#endregion
 	
+	#region Whiplash
+	#endregion
+	
+	#region Trifecta
+	#endregion
+	
+	#region Stella
+	#endregion
+	
 	#region Peezer
 	scr_MKSS_Attack_Init_Add("peezer_Claw",scr_MKSS_Attack_Execute_Peezer_Claw);
 	#endregion

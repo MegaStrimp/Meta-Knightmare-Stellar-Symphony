@@ -63,6 +63,13 @@ function scr_MKSS_Player_MetaKnight_Draw()
 	}
 	#endregion
 	
+	#region Weapon
+	if (currentAbility != -1)
+	{
+		if (global.MKSS_WeaponList[currentAbility].drawScript != undefined) script_execute(global.MKSS_WeaponList[currentAbility].drawScript);
+	}
+	#endregion
+	
 	#region Button Hints
 	var hasCounter = scr_MKSS_Player_CheckUpgrade(playerNum,"Base_Counter");
 	
