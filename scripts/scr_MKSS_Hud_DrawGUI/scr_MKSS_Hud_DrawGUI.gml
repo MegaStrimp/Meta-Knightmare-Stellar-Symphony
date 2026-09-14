@@ -41,7 +41,7 @@ function scr_MKSS_Hud_DrawGUI()
 		var specialPalSprite = -1;
 		var specialPalIndex = 1;
 		
-		if (global.MKSS_CurrentMassDestructionObject != -1)
+		if (global.MKSS_CurrentMassDestructionScript != -1)
 		{
 			specialPalSprite = spr_MKSS_Hud_Special_Palette_Rainbow;
 			specialPalIndex = 1 + floor((global.currentTimePausable / 4) % 9);

@@ -2451,6 +2451,7 @@
     {"id":{"name":"scr_MKSS_Dialogue_Create","path":"scripts/scr_MKSS_Dialogue_Create/scr_MKSS_Dialogue_Create.yy",},},
     {"id":{"name":"scr_MKSS_Dialogue_Init_Add","path":"scripts/scr_MKSS_Dialogue_Init_Add/scr_MKSS_Dialogue_Init_Add.yy",},},
     {"id":{"name":"scr_MKSS_Dialogue_Init_Set","path":"scripts/scr_MKSS_Dialogue_Init_Set/scr_MKSS_Dialogue_Init_Set.yy",},},
+    {"id":{"name":"scr_MKSS_Enemy_AI_BossFinalBlow_Step","path":"scripts/scr_MKSS_Enemy_AI_BossFinalBlow_Step/scr_MKSS_Enemy_AI_BossFinalBlow_Step.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_AI_Stun_Step","path":"scripts/scr_MKSS_Enemy_AI_Stun_Step/scr_MKSS_Enemy_AI_Stun_Step.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_Andromeda1_AI_Normal_AnimationEnd","path":"scripts/scr_MKSS_Enemy_Andromeda1_AI_Normal_AnimationEnd/scr_MKSS_Enemy_Andromeda1_AI_Normal_AnimationEnd.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_Andromeda1_AI_Normal_CleanUp","path":"scripts/scr_MKSS_Enemy_Andromeda1_AI_Normal_CleanUp/scr_MKSS_Enemy_Andromeda1_AI_Normal_CleanUp.yy",},},
@@ -2551,6 +2552,7 @@
     {"id":{"name":"scr_MKSS_Enemy_GrandWheelie_AI_Normal_CleanUp","path":"scripts/scr_MKSS_Enemy_GrandWheelie_AI_Normal_CleanUp/scr_MKSS_Enemy_GrandWheelie_AI_Normal_CleanUp.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_GrandWheelie_AI_Normal_FlameTrail_Step","path":"scripts/scr_MKSS_Enemy_GrandWheelie_AI_Normal_FlameTrail_Step/scr_MKSS_Enemy_GrandWheelie_AI_Normal_FlameTrail_Step.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_GrandWheelie_AI_Normal_Idle_Step","path":"scripts/scr_MKSS_Enemy_GrandWheelie_AI_Normal_Idle_Step/scr_MKSS_Enemy_GrandWheelie_AI_Normal_Idle_Step.yy",},},
+    {"id":{"name":"scr_MKSS_Enemy_GrandWheelie_AI_Normal_Jump_Step","path":"scripts/scr_MKSS_Enemy_GrandWheelie_AI_Normal_Jump_Step/scr_MKSS_Enemy_GrandWheelie_AI_Normal_Jump_Step.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_GrandWheelie_AI_Normal_Setup","path":"scripts/scr_MKSS_Enemy_GrandWheelie_AI_Normal_Setup/scr_MKSS_Enemy_GrandWheelie_AI_Normal_Setup.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_HealthbarFill_Setup","path":"scripts/scr_MKSS_Enemy_HealthbarFill_Setup/scr_MKSS_Enemy_HealthbarFill_Setup.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_Init_Add_EnemyHealthbar","path":"scripts/scr_MKSS_Enemy_Init_Add_EnemyHealthbar/scr_MKSS_Enemy_Init_Add_EnemyHealthbar.yy",},},
@@ -4251,6 +4253,7 @@
     {"id":{"name":"spr_MKSS_UI_ScoreBonus_FirstTimeClear","path":"sprites/spr_MKSS_UI_ScoreBonus_FirstTimeClear/spr_MKSS_UI_ScoreBonus_FirstTimeClear.yy",},},
     {"id":{"name":"spr_MKSS_UI_ScoreBonus_NoDamage","path":"sprites/spr_MKSS_UI_ScoreBonus_NoDamage/spr_MKSS_UI_ScoreBonus_NoDamage.yy",},},
     {"id":{"name":"spr_MKSS_UI_Shared_Selection","path":"sprites/spr_MKSS_UI_Shared_Selection/spr_MKSS_UI_Shared_Selection.yy",},},
+    {"id":{"name":"spr_MKSS_UI_SpecialActionText_MassDestruction","path":"sprites/spr_MKSS_UI_SpecialActionText_MassDestruction/spr_MKSS_UI_SpecialActionText_MassDestruction.yy",},},
     {"id":{"name":"spr_MKSS_UI_SpecialActionText_MetaHeal","path":"sprites/spr_MKSS_UI_SpecialActionText_MetaHeal/spr_MKSS_UI_SpecialActionText_MetaHeal.yy",},},
     {"id":{"name":"spr_MKSS_UI_SpecialActionText_MetaQuick","path":"sprites/spr_MKSS_UI_SpecialActionText_MetaQuick/spr_MKSS_UI_SpecialActionText_MetaQuick.yy",},},
     {"id":{"name":"spr_MKSS_UI_StageIntro_GameLogo","path":"sprites/spr_MKSS_UI_StageIntro_GameLogo/spr_MKSS_UI_StageIntro_GameLogo.yy",},},
@@ -4577,35 +4580,13 @@
   "templateType":null,
   "TextureGroups":[
     {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","ConfigValues":{
-        "DesktopDebug":{
-          "compressFormat":"bz2",
-          "groupParent":"null",
-          "loadType":"default",
-        },
-        "DesktopDemo":{
-          "groupParent":"null",
-          "compressFormat":"bz2",
-          "loadType":"default",
-        },
         "Desktop":{
           "groupParent":"null",
           "compressFormat":"bz2",
           "loadType":"default",
         },
       },"customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
-    {"$GMTextureGroup":"","%Name":"StarDreamFramework","autocrop":true,"border":2,"compressFormat":"bz2","ConfigValues":{
-        "DesktopDebug":{
-          "compressFormat":"bz2",
-          "groupParent":"null",
-          "loadType":"default",
-        },
-      },"customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"StarDreamFramework","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
-    {"$GMTextureGroup":"","%Name":"MetaKnightmareStellarSymphony","autocrop":true,"border":2,"compressFormat":"bz2","ConfigValues":{
-        "DesktopDebug":{
-          "groupParent":"null",
-          "compressFormat":"bz2",
-          "loadType":"default",
-        },
-      },"customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"MetaKnightmareStellarSymphony","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMTextureGroup":"","%Name":"StarDreamFramework","autocrop":true,"border":2,"compressFormat":"bz2","ConfigValues":{},"customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"StarDreamFramework","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMTextureGroup":"","%Name":"MetaKnightmareStellarSymphony","autocrop":true,"border":2,"compressFormat":"bz2","ConfigValues":{},"customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"MetaKnightmareStellarSymphony","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
   ],
 }

@@ -8,11 +8,7 @@
   "bbox_top":5,
   "collisionKind":4,
   "collisionTolerance":0,
-  "ConfigValues":{
-    "DesktopDebug":{
-      "textureGroupId":"{ \"name\":\"MetaKnightmareStellarSymphony\", \"path\":\"texturegroups/MetaKnightmareStellarSymphony\" }",
-    },
-  },
+  "ConfigValues":{},
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,

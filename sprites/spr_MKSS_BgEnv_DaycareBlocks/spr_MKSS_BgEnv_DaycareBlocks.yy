@@ -2,26 +2,22 @@
   "$GMSprite":"v2",
   "%Name":"spr_MKSS_BgEnv_DaycareBlocks",
   "bboxMode":0,
-  "bbox_bottom":23,
+  "bbox_bottom":27,
   "bbox_left":0,
-  "bbox_right":23,
+  "bbox_right":31,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
-  "ConfigValues":{
-    "DesktopDebug":{
-      "textureGroupId":"{ \"name\":\"MetaKnightmareStellarSymphony\", \"path\":\"texturegroups/MetaKnightmareStellarSymphony\" }",
-    },
-  },
+  "ConfigValues":{},
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"21356a34-1518-4418-804f-3fae0b2d7c26","name":"21356a34-1518-4418-804f-3fae0b2d7c26","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a6d7c624-65a9-4357-9758-01cfc376d954","name":"a6d7c624-65a9-4357-9758-01cfc376d954","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":24,
+  "height":28,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"3b202d1c-91d7-454d-a30f-718bc222bf95","blendMode":0,"displayName":"default","isLocked":false,"name":"3b202d1c-91d7-454d-a30f-718bc222bf95","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -74,14 +70,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"21356a34-1518-4418-804f-3fae0b2d7c26","path":"sprites/spr_MKSS_BgEnv_DaycareBlocks/spr_MKSS_BgEnv_DaycareBlocks.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"96a14913-64fc-42ad-bf13-39ece5c8df1d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a6d7c624-65a9-4357-9758-01cfc376d954","path":"sprites/spr_MKSS_BgEnv_DaycareBlocks/spr_MKSS_BgEnv_DaycareBlocks.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"df08a8d5-60fc-42b5-b304-b371ff68c196","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":12,
-    "yorigin":24,
+    "xorigin":16,
+    "yorigin":28,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -91,5 +87,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":24,
+  "width":32,
 }

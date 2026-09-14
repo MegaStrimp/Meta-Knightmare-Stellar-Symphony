@@ -12,9 +12,6 @@
     "OperaDebug":{
       "textureGroupId":"{ \"name\":\"Default\", \"path\":\"texturegroups/Default\" }",
     },
-    "DesktopDebug":{
-      "textureGroupId":"{ \"name\":\"MetaKnightmareStellarSymphony\", \"path\":\"texturegroups/MetaKnightmareStellarSymphony\" }",
-    },
   },
   "DynamicTexturePage":false,
   "edgeFiltering":false,

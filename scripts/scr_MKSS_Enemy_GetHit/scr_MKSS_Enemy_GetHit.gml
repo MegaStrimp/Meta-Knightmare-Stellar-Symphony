@@ -69,7 +69,16 @@ function scr_MKSS_Enemy_GetHit(targetEnemy,targetDmg,targetKnockbackForce = 2,ta
 				
 				scr_Camera_SetScreenshake(0,1);
 				
-				if ((targetEnemy.canHaveCorpse) and (!targetEnemy.hasCorpse))
+				if (targetEnemy.massDestructionScript != -1)
+				{
+					with (obj_Player)
+					{
+						scr_MKSS_Player_MassDestruction_Setup(targetEnemy.massDestructionScript);
+					}
+					
+					scr_Enemy_ChangeState_Step(targetEnemy,scr_MKSS_Enemy_AI_BossFinalBlow_Step);
+				}
+				else if ((targetEnemy.canHaveCorpse) and (!targetEnemy.hasCorpse))
 				{
 					targetEnemy.hasCorpse = true;
 					

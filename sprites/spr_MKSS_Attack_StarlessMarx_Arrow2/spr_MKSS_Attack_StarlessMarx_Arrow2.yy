@@ -8,11 +8,7 @@
   "bbox_top":4,
   "collisionKind":5,
   "collisionTolerance":0,
-  "ConfigValues":{
-    "DesktopDebug":{
-      "textureGroupId":"{ \"name\":\"Default\", \"path\":\"texturegroups/Default\" }",
-    },
-  },
+  "ConfigValues":{},
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
@@ -106,8 +102,8 @@
   "swatchColours":null,
   "swfPrecision":0.5,
   "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
+    "name":"MetaKnightmareStellarSymphony",
+    "path":"texturegroups/MetaKnightmareStellarSymphony",
   },
   "type":0,
   "VTile":false,

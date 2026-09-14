@@ -17,6 +17,8 @@ function scr_MKSS_Enemy_ChunkyDee_AI_Normal_Jump_Step()
 		
 		jumpTimer = 90;
 		
+		parryIndicator = scr_MKSS_UI_ParryIndicator_Create(x,y,depth - 1,jumpTimer,,id,true);
+		
 		isTired = false;
 		revertTimer = -1;
 		revertTimerMax = 90;

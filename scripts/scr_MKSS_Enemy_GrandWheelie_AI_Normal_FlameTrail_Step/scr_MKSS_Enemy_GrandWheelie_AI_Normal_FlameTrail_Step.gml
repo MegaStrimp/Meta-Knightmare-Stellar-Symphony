@@ -6,7 +6,7 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_FlameTrail_Step()
 	if (enemyState_Setup)
 	{
 		#region Attack Init
-		attackString = "Grand Wheelie - Big Rush";
+		attackString = "Grand Wheelie - Flame Trail";
 		scr_Debug_WriteLog(string(object_get_name(object_index)) + " Used [" + attackString + "]");
 		
 		attackState = 0;

@@ -121,9 +121,17 @@ function scr_MKSS_Weapon_Buzzcut_Base()
 		
 		if (input_check_pressed("Y",playerNum))
 		{
-			if (global.MKSS_CurrentMassDestructionObject != -1)
+			if (global.MKSS_CurrentMassDestructionScript != -1)
 			{
-				instance_create_depth(0,0,0,global.MKSS_CurrentMassDestructionObject);
+				var sfx = scr_PlaySfx(snd_MKSS_MetaHeal);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
+				
+				scr_MKSS_UI_SpecialActionText_Create(spr_MKSS_UI_SpecialActionText_MassDestruction);
+				
+				with (instance_create_depth(0,0,0,obj_MKSS_Cutscene))
+				{
+					script_execute(global.MKSS_CurrentMassDestructionScript);
+				}
 				
 				global.MKSS_SpecialCurrent = 0;
 			}

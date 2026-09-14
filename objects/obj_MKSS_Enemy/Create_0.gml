@@ -32,6 +32,8 @@ enemyPhase = 1;
 enemyPhaseTargetHp = -1;
 enemyPhaseSetupScript = -1;
 
+massDestructionScript = -1;
+
 dmg = MKSS_Base_EnemyContactDamage;
 
 deathParticleIndex = scr_MKSS_ParticleSet_EnemyDefeatStars;

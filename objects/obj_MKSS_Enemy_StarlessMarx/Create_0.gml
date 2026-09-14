@@ -7,6 +7,7 @@ event_inherited();
 #region Gameplay Variables
 enemyID = global.MKSS_EnemyIDs[? "starlessMarx"];
 hp = MKSS_Base_EnemyHP_Boss;
+hp = 1;
 points = 5000;
 isBoss = true;
 
@@ -36,6 +37,8 @@ enemyPhaseSetupScript =
 		}
 	}
 ];
+
+massDestructionScript = scr_MKSS_Cutscene_Preset_StarlessMarxMassDestruction;
 #endregion
 
 #region Sprites

@@ -27,10 +27,12 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Setup(targetIsBoss = true,targetP
 	attackList = ds_list_create();
 	
 	grandWheelie_Attack_FlameTrail = scr_MKSS_Enemy_GrandWheelie_AI_Normal_FlameTrail_Step;
+	grandWheelie_Attack_Jump = scr_MKSS_Enemy_GrandWheelie_AI_Normal_Jump_Step;
 	grandWheelie_Attack_BigRush = scr_MKSS_Enemy_GrandWheelie_AI_Normal_BigRush_Step;
 	
-	//ds_list_add(attackList,grandWheelie_Attack_FlameTrail);
+	//ds_list_add(attackList,grandWheelie_Attack_FlameTrail); STRIMPTODO Phase 2
 	ds_list_add(attackList,grandWheelie_Attack_BigRush);
+	ds_list_add(attackList,grandWheelie_Attack_Jump);
 	
 	attackListIndex = 0;
 	

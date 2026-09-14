@@ -2,26 +2,22 @@
   "$GMSprite":"v2",
   "%Name":"spr_MKSS_BgEnv_DaycarePillow",
   "bboxMode":0,
-  "bbox_bottom":19,
+  "bbox_bottom":21,
   "bbox_left":0,
-  "bbox_right":21,
+  "bbox_right":27,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
-  "ConfigValues":{
-    "DesktopDebug":{
-      "textureGroupId":"{ \"name\":\"MetaKnightmareStellarSymphony\", \"path\":\"texturegroups/MetaKnightmareStellarSymphony\" }",
-    },
-  },
+  "ConfigValues":{},
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"8ebbc115-38ea-476d-a896-1e373bf61e2a","name":"8ebbc115-38ea-476d-a896-1e373bf61e2a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d3990add-ca3a-4f20-9595-6ebf744ec736","name":"d3990add-ca3a-4f20-9595-6ebf744ec736","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":20,
+  "height":22,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"3b202d1c-91d7-454d-a30f-718bc222bf95","blendMode":0,"displayName":"default","isLocked":false,"name":"3b202d1c-91d7-454d-a30f-718bc222bf95","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -74,14 +70,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8ebbc115-38ea-476d-a896-1e373bf61e2a","path":"sprites/spr_MKSS_BgEnv_DaycarePillow/spr_MKSS_BgEnv_DaycarePillow.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a85cf8db-bafc-4380-a477-ed721e1c9e7a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d3990add-ca3a-4f20-9595-6ebf744ec736","path":"sprites/spr_MKSS_BgEnv_DaycarePillow/spr_MKSS_BgEnv_DaycarePillow.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"12161276-3900-4e20-9796-0119e4e7ca14","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":11,
-    "yorigin":20,
+    "xorigin":14,
+    "yorigin":22,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -91,5 +87,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":22,
+  "width":28,
 }

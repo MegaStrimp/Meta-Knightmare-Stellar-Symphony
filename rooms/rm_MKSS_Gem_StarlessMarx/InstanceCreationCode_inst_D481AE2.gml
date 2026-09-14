@@ -1,1 +1,1 @@
-scr_MKSS_Cutscene_Preset_StarlessMarxMassDestruction();
+scr_MKSS_Cutscene_Preset_StarlessMarxIntro();

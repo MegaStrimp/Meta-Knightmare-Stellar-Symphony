@@ -2,11 +2,7 @@
   "$GMTileSet":"v1",
   "%Name":"ts_MKSS_FissionFactory",
   "autoTileSets":[],
-  "ConfigValues":{
-    "DesktopDebug":{
-      "textureGroupId":"{ \"name\":\"MetaKnightmareStellarSymphony\", \"path\":\"texturegroups/MetaKnightmareStellarSymphony\" }",
-    },
-  },
+  "ConfigValues":{},
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
