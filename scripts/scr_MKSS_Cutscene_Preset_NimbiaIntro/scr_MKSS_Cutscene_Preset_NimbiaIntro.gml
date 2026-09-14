@@ -41,6 +41,7 @@ function scr_MKSS_Cutscene_Preset_NimbiaIntro()
 	#region Setup
 	bossSpawned = false;
 	musicPlayed = false;
+
 	#endregion
 	
 	#region Step Script
@@ -101,17 +102,41 @@ function scr_MKSS_Cutscene_Preset_NimbiaIntro()
 		function()
 		{
 			phaseTimer = 200;
+			with (instance_create_depth(-32,76,depth-1,obj_MKSS_Cutscene_NimbiaCloud))
+			{
+				moveTime = other.phaseTimer
+				targetY = 152
+				hsp = 5
+				vsp = 0
+			}
 		},
 		function()
 		{
 			phaseTimer = 200;
+			with (obj_MKSS_Cutscene_NimbiaCloud)
+			{
+				advanceProgress()
+				x = room_width + 32
+				y = obj_MKSS_Player.y
+				hsp = -7
+				vsp = 0
+			}
 		},
 		function()
 		{
 			phaseTimer = 200;
+			with (obj_MKSS_Cutscene_NimbiaCloud)
+			{
+				x = 256
+				y = -50
+				hsp = 0
+				vsp = 2
+				advanceProgress()
+			}
 		},
 		function()
 		{
+			with (obj_MKSS_Cutscene_NimbiaCloud) instance_destroy();
 			with (instance_create_layer(256,152,"Enemies",obj_MKSS_Enemy_Nimbia))
 			{
 				scr_MKSS_Enemy_Nimbia_AI_Normal_Setup();
@@ -126,6 +151,13 @@ function scr_MKSS_Cutscene_Preset_NimbiaIntro()
 			bossSpawned = true;
 			
 			phaseTimer = 200;
+			
+			with (obj_Player)
+			{
+				attackMakeHeavyInvincibleTimer = 15;
+				
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Normal_Step);
+			}
 		},
 		function()
 		{

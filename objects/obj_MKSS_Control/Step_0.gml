@@ -98,6 +98,8 @@ if (global.debug)
 		
 		scr_MKSS_Stage_End();
 		
+		global.MKSS_CutsceneStopMovement = false
+		
 		room_goto(rm_MKSS_Debug_Lobby);
 	}
 	#endregion
