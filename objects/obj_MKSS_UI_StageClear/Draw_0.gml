@@ -8,6 +8,10 @@ circleX = xx + global.gameWidth / 2;
 circleY = yy + global.gameHeight / 2;
 #endregion
 
+#region Create Surface
+if (!instance_exists(obj_MKSS_Surface_Planetarium)) instance_create_depth(0,0,0,obj_MKSS_Surface_Planetarium);
+#endregion
+
 #region Circle
 scr_DrawMask_Begin(,,,,1);
 
@@ -19,7 +23,7 @@ gpu_set_colorwriteenable(true,true,true,true);
 gpu_set_blendmode_ext(bm_dest_alpha,bm_inv_dest_alpha);
 draw_set_alpha(1);
 
-draw_surface(obj_MKSS_Surface_Planetarium.drawSurface,xx,yy);
+if (surface_exists(obj_MKSS_Surface_Planetarium.drawSurface)) draw_surface(obj_MKSS_Surface_Planetarium.drawSurface,xx,yy);
 //draw_rectangle_color(xx,yy,xx + global.gameWidth,yy + global.gameHeight,c_black,c_black,c_black,c_black,false);
 
 if (circleR > 0)

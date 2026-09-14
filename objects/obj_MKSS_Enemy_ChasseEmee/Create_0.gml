@@ -7,18 +7,21 @@ event_inherited();
 #region Gameplay Variables
 enemyID = global.MKSS_EnemyIDs[? "chasseEmee"];
 hp = MKSS_Base_EnemyHP_Boss;
-points = 5000;
+points = MKSS_Base_EnemyPoints_Boss;
+metaPointsOnDeath = MKSS_Base_EnemyMetaPoints_Boss;
 isBoss = true;
 
 pauseOutsideView = false;
 canHaveKnockback = false;
 
 freezeFrameForce = 2;
+
+massDestructionScript = scr_MKSS_Cutscene_Preset_ChasseMassDestruction;
 #endregion
 
 #region Sprites
 spriteSet = global.MKSS_EnemyList[enemyID].spriteSet;
-//sprHurt = spriteSet.sprHurtList;
+sprHurt = spriteSet.sprHurtList;
 mask_index = spriteSet.maskIndex;
 #endregion
 

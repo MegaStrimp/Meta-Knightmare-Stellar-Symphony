@@ -1,4 +1,10 @@
-function scr_MKSS_Cutscene_Preset_StarlessMarxMassDestruction(){
+///@description MKSS - Cutscene - Preset - Starless Marx Mass Destruction
+
+function scr_MKSS_Cutscene_Preset_StarlessMarxMassDestruction()
+{
+	#region Setup
+	canBePaused = false;
+	#endregion
 	
 	#region Step Script
 	stepScript = function()
@@ -23,7 +29,6 @@ function scr_MKSS_Cutscene_Preset_StarlessMarxMassDestruction(){
 				with (instance_create_layer(128,72,"Enemies",obj_MKSS_Enemy_StarlessMarx))
 				{
 					scr_MKSS_Enemy_StarlessMarx_AI_Normal_Setup();
-				
 				}
 			}
 			with (obj_MKSS_Player)
@@ -50,7 +55,23 @@ function scr_MKSS_Cutscene_Preset_StarlessMarxMassDestruction(){
 		},
 		function()
 		{
-			phaseTimer = 300
+			global.MKSS_CutsceneStopMovement = false;
+			
+			with (obj_MKSS_Enemy_StarlessMarx) deathTimer = 0;
+			
+			phaseTimer = 60;
+		},
+		function()
+		{
+			global.hasHud = true;
+			global.canGamePause = true;
+			global.MKSS_CutsceneStopMovement = false;
+			
+			scr_MKSS_Stage_Clear();
+			
+			instance_destroy();
+			
+			phaseTimer = -1;
 		}
 	]
 }

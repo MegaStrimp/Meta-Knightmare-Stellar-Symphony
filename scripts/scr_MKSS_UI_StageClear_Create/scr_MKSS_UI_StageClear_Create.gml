@@ -4,7 +4,8 @@ function scr_MKSS_UI_StageClear_Create(targetScore = global.levelScoreCurrent,ta
 {
 	var xx = camera_get_view_x(mainView) + (global.gameWidth / 2);
 	var yy = camera_get_view_y(mainView) + (global.gameHeight / 2);
-	var currentStageID = global.MKSS_StageIDs[? global.currentStage];
+	var currentStageID = -1;
+	if (global.currentStage != -1) currentStageID = global.MKSS_StageIDs[? global.currentStage];
 	
 	with (instance_create_layer(xx,yy,"Player",obj_MKSS_UI_StageClear))
 	{
@@ -31,11 +32,14 @@ function scr_MKSS_UI_StageClear_Create(targetScore = global.levelScoreCurrent,ta
 		scr_Camera_FollowObject(id);
 		
 		#region Score Bonuses
-		for (var i = 0; i < ds_map_size(global.MKSS_ScoreBonusIDs); i++)
+		if (currentStageID != -1)
 		{
-			var unlocked = script_execute(global.MKSS_ScoreBonusList[i].unlockScript);
-			
-			if (unlocked) ds_list_add(scoreBonuses,i);
+			for (var i = 0; i < ds_map_size(global.MKSS_ScoreBonusIDs); i++)
+			{
+				var unlocked = script_execute(global.MKSS_ScoreBonusList[i].unlockScript);
+				
+				if (unlocked) ds_list_add(scoreBonuses,i);
+			}
 		}
 		#endregion
 	}

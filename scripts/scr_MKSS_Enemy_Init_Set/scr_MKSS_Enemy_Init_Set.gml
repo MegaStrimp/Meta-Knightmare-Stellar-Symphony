@@ -751,10 +751,24 @@ function scr_MKSS_Enemy_Init_Set()
 		sprSpitPrepare: spr_MKSS_Enemy_ChasseEmee_Base_SpitPrepare,
 		sprSpit: spr_MKSS_Enemy_ChasseEmee_Base_Spit,
 		
-		
 		sprShipNormal: spr_MKSS_Enemy_ChasseEmee_Base_BackShip,
 		sprShipBackground: spr_MKSS_BgEnv_ChasseShip_Idle,
 		sprShipBackgroundAppear: spr_MKSS_BgEnv_ChasseShip_Appear,
+		
+		sprHurt1: spr_MKSS_Enemy_ChasseEmee_Base_Intro,
+		sprHurt2: spr_MKSS_Enemy_ChasseEmee_Base_Intro,
+		
+	    sprHurtList:
+		[
+	        [
+				spr_MKSS_Enemy_ChasseEmee_Base_Intro,
+				1
+			],
+	        [
+				spr_MKSS_Enemy_ChasseEmee_Base_Intro,
+				1
+			]
+	    ],
 		
 		maskIndexDefault: spr_16x16Mask_MiddleOrigin,
 		maskIndex: spr_16x16Mask_MiddleOrigin
@@ -804,6 +818,21 @@ function scr_MKSS_Enemy_Init_Set()
 		
 		sprTornado: spr_MKSS_Enemy_Nimbia_Base_Tornado,
 		
+		sprHurt1: spr_MKSS_Enemy_Nimbia_Base_Idle,
+		sprHurt2: spr_MKSS_Enemy_Nimbia_Base_Idle,
+		
+	    sprHurtList:
+		[
+	        [
+				spr_MKSS_Enemy_Nimbia_Base_Idle,
+				1
+			],
+	        [
+				spr_MKSS_Enemy_Nimbia_Base_Idle,
+				1
+			]
+	    ],
+		
 		maskIndexDefault: spr_16x16Mask_MiddleOrigin,
 		maskIndex: spr_16x16Mask_MiddleOrigin
 	});
@@ -845,6 +874,21 @@ function scr_MKSS_Enemy_Init_Set()
 		sprArmRT_PalmAttack: spr_MKSS_Enemy_Andromeda1_Arm_RT_PalmAttack,
 		sprArmRT_SwordAppear: spr_MKSS_Enemy_Andromeda1_Arm_RT_SwordAppear,
 		
+		sprHurt1: spr_MKSS_Enemy_Andromeda1_Idle,
+		sprHurt2: spr_MKSS_Enemy_Andromeda1_Idle,
+		
+	    sprHurtList:
+		[
+	        [
+				spr_MKSS_Enemy_Andromeda1_Idle,
+				1
+			],
+	        [
+				spr_MKSS_Enemy_Andromeda1_Idle,
+				1
+			]
+	    ],
+		
 		maskIndexDefault: spr_16x16Mask_MiddleOrigin,
 		maskIndex: spr_16x16Mask_MiddleOrigin
 	});
@@ -862,6 +906,21 @@ function scr_MKSS_Enemy_Init_Set()
 		sprOrbHurt: spr_MKSS_Enemy_StarlessNightmare_Base_Orb_Hurt,
 		
 		sprWizardIdle: spr_MKSS_Enemy_StarlessNightmare_Base_Wizard_Idle,
+		
+		sprHurt1: spr_MKSS_Enemy_StarlessNightmare_Base_Wizard_Idle,
+		sprHurt2: spr_MKSS_Enemy_StarlessNightmare_Base_Wizard_Idle,
+		
+	    sprHurtList:
+		[
+	        [
+				spr_MKSS_Enemy_StarlessNightmare_Base_Wizard_Idle,
+				1
+			],
+	        [
+				spr_MKSS_Enemy_StarlessNightmare_Base_Wizard_Idle,
+				1
+			]
+	    ],
 		
 		maskIndex: spr_16x16Mask_MiddleOrigin
 	});

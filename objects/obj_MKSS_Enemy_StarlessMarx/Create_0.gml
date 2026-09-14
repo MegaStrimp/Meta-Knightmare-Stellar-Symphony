@@ -8,7 +8,8 @@ event_inherited();
 enemyID = global.MKSS_EnemyIDs[? "starlessMarx"];
 hp = MKSS_Base_EnemyHP_Boss;
 hp = 1;
-points = 5000;
+points = MKSS_Base_EnemyPoints_Boss;
+metaPointsOnDeath = MKSS_Base_EnemyMetaPoints_Boss;
 isBoss = true;
 
 pauseOutsideView = false;

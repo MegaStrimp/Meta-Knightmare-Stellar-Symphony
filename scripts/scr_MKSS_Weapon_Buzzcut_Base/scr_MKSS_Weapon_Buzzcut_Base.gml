@@ -134,6 +134,7 @@ function scr_MKSS_Weapon_Buzzcut_Base()
 				}
 				
 				global.MKSS_SpecialCurrent = 0;
+				global.MKSS_CurrentMassDestructionScript != -1;
 			}
 			else if ((global.MKSS_SpecialCurrent == global.MKSS_SpecialTarget) and (!global.MKSS_SpecialDeflation))
 			{

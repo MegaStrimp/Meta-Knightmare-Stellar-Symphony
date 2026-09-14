@@ -34,12 +34,14 @@ function scr_MKSS_MacroTable()
 	#macro MKSS_Base_EnemyPoints_Advanced 250
 	#macro MKSS_Base_EnemyPoints_Microboss 500
 	#macro MKSS_Base_EnemyPoints_Miniboss 2500
+	#macro MKSS_Base_EnemyPoints_Boss 5000
 	
 	#macro MKSS_Base_EnemyMetaPoints_Fodder 10
 	#macro MKSS_Base_EnemyMetaPoints_Attacker 15
 	#macro MKSS_Base_EnemyMetaPoints_Advanced 25
 	#macro MKSS_Base_EnemyMetaPoints_Microboss 50
 	#macro MKSS_Base_EnemyMetaPoints_Miniboss 150
+	#macro MKSS_Base_EnemyMetaPoints_Boss 300
 	
 	#macro MKSS_Base_EnemyMetaPointsOnHit_Stun 2
 	

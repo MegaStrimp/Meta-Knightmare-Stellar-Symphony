@@ -22,15 +22,18 @@ function scr_MKSS_Stage_Clear()
 	#endregion
 	
 	#region Save Stage Data
-	var stageMappedID = global.MKSS_StageIDs[? global.currentStage];
-	
-	if (global.levelScoreCurrent > global.MKSS_StageList[stageMappedID].earnedHighScore)
+	if (global.currentStage != -1)
 	{
-		global.MKSS_StageList[stageMappedID].earnedHighScore = global.levelScoreCurrent;
+		var stageMappedID = global.MKSS_StageIDs[? global.currentStage];
+		
+		if (global.levelScoreCurrent > global.MKSS_StageList[stageMappedID].earnedHighScore)
+		{
+			global.MKSS_StageList[stageMappedID].earnedHighScore = global.levelScoreCurrent;
+		}
+		
+		global.MKSS_StageList[stageMappedID].isBeaten = true;
+		if (global.MKSS_StageList[stageMappedID].clearScript != -1) script_execute(global.MKSS_StageList[stageMappedID].clearScript,stageMappedID);
 	}
-	
-	global.MKSS_StageList[stageMappedID].isBeaten = true;
-	if (global.MKSS_StageList[stageMappedID].clearScript != -1) script_execute(global.MKSS_StageList[stageMappedID].clearScript,stageMappedID);
 	
 	scr_MKSS_SaveData(global.selectedSave);
 	#endregion
