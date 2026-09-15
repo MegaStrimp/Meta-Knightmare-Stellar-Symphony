@@ -13,7 +13,7 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Setup(targetIsBoss = true,targetP
 	
 	chargeMult = 2;
 	
-	jumpspeed = 3;
+	jumpspeed = 4;
 	
 	decel = .05;
 	decelStun = .15;
@@ -30,9 +30,7 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Setup(targetIsBoss = true,targetP
 	grandWheelie_Attack_Jump = scr_MKSS_Enemy_GrandWheelie_AI_Normal_Jump_Step;
 	grandWheelie_Attack_BigRush = scr_MKSS_Enemy_GrandWheelie_AI_Normal_BigRush_Step;
 	
-	//ds_list_add(attackList,grandWheelie_Attack_FlameTrail); STRIMPTODO Phase 2
-	ds_list_add(attackList,grandWheelie_Attack_BigRush);
-	ds_list_add(attackList,grandWheelie_Attack_Jump);
+	scr_MKSS_Enemy_GrandWheelie_Normal_AttackOrder_Phase1();
 	
 	attackListIndex = 0;
 	

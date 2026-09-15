@@ -5,7 +5,12 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Idle_Step()
 	#region Setup
 	if (enemyState_Setup)
 	{
-		dirX = scr_MKSS_Enemy_DirTarget();
+		var dirXNew = scr_MKSS_Enemy_DirTarget();
+		if (dirX != dirXNew)
+		{
+			dirX *= -1;
+			isTurning = true;
+		}
 		
 		sprite_index = spriteSet.sprWalk;
 		image_index = 0;

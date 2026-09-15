@@ -15,7 +15,18 @@ function scr_MKSS_Weapon_Whiplash_Base()
 		}
 	}
 	
-	whiplash_MarkedObjectID = ds_priority_find_min(whiplash_MarkableObjectList);
+	if (!ds_priority_empty(whiplash_MarkableObjectList))
+	{
+		var whiplash_MarkedObjectIDNew = ds_priority_find_min(whiplash_MarkableObjectList);
+		
+		if (whiplash_MarkedObjectID != whiplash_MarkedObjectIDNew)
+		{
+			var sfx = scr_PlaySfx(snd_MKSS_WhiplashTarget);
+			audio_sound_pitch(sfx,random_range(.85,1.15));
+			
+			whiplash_MarkedObjectID = whiplash_MarkedObjectIDNew;
+		}
+	}
 	#endregion
 	
 	#region Target Animation

@@ -16,6 +16,15 @@ canHaveKnockback = false;
 
 freezeFrameForce = 2;
 
+enemyPhaseTargetHp = [floor(MKSS_Base_EnemyHP_Miniboss / 2)];
+enemyPhaseSetupScript = 
+[
+	function()
+	{
+		scr_MKSS_Enemy_GrandWheelie_Normal_AttackOrder_Phase2();
+	}
+];
+
 canHaveCorpse = true;
 #endregion
 

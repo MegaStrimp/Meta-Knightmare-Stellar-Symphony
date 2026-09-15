@@ -15,17 +15,26 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Jump_Step()
 		#region Attack Timers
 		var i = 0;
 		
+		#region Start Timer
+		attackStateTimerMax[i] = 90;
+		attackStateTimer[i] = attackStateTimerMax[i];
+		i++;
+		#endregion
+		
 		#region Revert Timer
-		attackStateTimerMax[i] = 300;
+		attackStateTimerMax[i] = 1200;
+		attackStateTimerMin[i] = 30;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
 		#endregion
 		
 		#region Attack Variables
-		fireTimerMax = 45;
-		fireTimer = fireTimerMax;
+		gravityTimer = -1;
+		gravityTimerMax = 15;
 		#endregion
+		
+		scr_MKSS_UI_ParryIndicator_Create(x,y - 6,depth - 1,attackStateTimer[0],,id,id);
 		
 		enemyState_Setup = false;
 	}
@@ -36,8 +45,49 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Jump_Step()
 		#region Attack States
 		switch (attackState)
 		{
-			#region Revert
+			#region Jump
 			case 0:
+			if (attackStateTimer[attackState] == -1)
+			{
+				var sfx = scr_PlaySfx(snd_MKSS_EnemyJump);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
+				
+				var angle = 90 + (20 * dirX);
+				scr_MKSS_ParticleSet_Jump(x - (7 * dirX),y + 5,angle);
+				
+				vsp = -jumpspeed * dirY * speedMultFinal;
+				grounded = false;
+				
+				gravityTimer = gravityTimerMax;
+				
+				attackState++;
+			}
+			break;
+			#endregion
+			
+			#region Revert
+			case 1:
+			if ((grounded) and (attackStateTimer[attackState] > attackStateTimerMin[attackState]))
+			{
+				var sfx = scr_PlaySfx(snd_MKSS_BlockBreak);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
+				
+				scr_Camera_SetScreenshake(0,2);
+				
+				var parAngle = irandom_range(0,359);
+				var parScaleDir = 1;
+				if ((parAngle > 90) and (parAngle <= 270))
+				{
+					parScaleDir = -1;
+				}
+				
+				scr_MKSS_ParticleSet_FallDuck(x,y,parScaleDir,parAngle);
+				scr_MKSS_ParticleSet_Run(x + 16,y + 16,-1);
+				scr_MKSS_ParticleSet_Run(x - 16,y + 16,1);
+					
+				attackStateTimer[attackState] = attackStateTimerMin[attackState];
+			}
+			
 			if (attackStateTimer[attackState] == -1)
 			{
 				scr_Enemy_ChangeState_Step(id,enemyAIStepIdle);
@@ -69,28 +119,31 @@ function scr_MKSS_Enemy_GrandWheelie_AI_Normal_Jump_Step()
 		#endregion
 		
 		#region Gravity
-		vsp = scr_Entity_Gravity(vsp,grav,gravLimit,speedMultFinal);
+		if (gravityTimer == -1)
+		{
+			vsp = scr_Entity_Gravity(vsp,grav,gravLimit,speedMultFinal);
+		}
+		else
+		{
+			vsp = min(0,scr_Entity_Gravity(vsp,grav,gravLimit,speedMultFinal));
+		}
 		#endregion
 		
-		#region Fire Timer
-		if (fireTimer != -1)
+		#region Gravity Timer
+		if (gravityTimer != -1)
 		{
-			fireTimer = max(fireTimer - speedMultFinal,0);
-			if (fireTimer == 0)
+			if (vsp >= 0)
 			{
-				#region Attack
-				with (instance_create_depth(x,y,depth,obj_MKSS_Attack))
+				gravityTimer = max(gravityTimer - speedMultFinal,0);
+				if (gravityTimer == 0)
 				{
-					owner = other;
-					isEnemy = true;
-					dmg = MKSS_Base_EnemyBasicDamage;
-					sprite_index = spr_MKSS_Attack_GrandWheelie_Fire;
-					destroyTimer = 150;
-					attackAIStep = scr_MKSS_Attack_GrandWheelie_Fire_Step;
+					var sfx = scr_PlaySfx(snd_MKSS_RunBegin);
+					audio_sound_pitch(sfx,random_range(.85,1.15));
+					
+					scr_MKSS_ParticleSet_Run(x + (16 * -dirX),y + 16,dirX);
+					
+					gravityTimer = -1;
 				}
-				#endregion
-				
-				fireTimer = fireTimerMax;
 			}
 		}
 		#endregion
