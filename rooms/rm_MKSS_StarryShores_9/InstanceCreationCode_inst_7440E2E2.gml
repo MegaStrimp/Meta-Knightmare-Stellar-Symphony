@@ -1,1 +1,1 @@
-targetRoom = rm_MKSS_StarryShores_9;
+targetRoom = rm_MKSS_StarryShores_RedGem;
