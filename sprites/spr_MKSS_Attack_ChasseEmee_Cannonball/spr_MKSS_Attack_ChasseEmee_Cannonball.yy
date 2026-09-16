@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"cfe37d9f-4f87-4c19-9adb-aff66a9e4c2c","name":"cfe37d9f-4f87-4c19-9adb-aff66a9e4c2c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cf064ebc-042b-4e88-8e88-31c7e524b17b","name":"cf064ebc-042b-4e88-8e88-31c7e524b17b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":20,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"331e1882-363e-4723-a992-533384e23e66","blendMode":0,"displayName":"default","isLocked":false,"name":"331e1882-363e-4723-a992-533384e23e66","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"0d93a34a-71d9-48ed-9a87-3c4aef7508ec","blendMode":0,"displayName":"default","isLocked":false,"name":"0d93a34a-71d9-48ed-9a87-3c4aef7508ec","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_MKSS_Attack_ChasseEmee_Cannonball",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cfe37d9f-4f87-4c19-9adb-aff66a9e4c2c","path":"sprites/spr_MKSS_Attack_ChasseEmee_Cannonball/spr_MKSS_Attack_ChasseEmee_Cannonball.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"fb53e98b-301d-4f68-af56-2aab149bc736","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cf064ebc-042b-4e88-8e88-31c7e524b17b","path":"sprites/spr_MKSS_Attack_ChasseEmee_Cannonball/spr_MKSS_Attack_ChasseEmee_Cannonball.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5af0f67f-ebe9-46a0-9fcd-7adb84abb71c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
