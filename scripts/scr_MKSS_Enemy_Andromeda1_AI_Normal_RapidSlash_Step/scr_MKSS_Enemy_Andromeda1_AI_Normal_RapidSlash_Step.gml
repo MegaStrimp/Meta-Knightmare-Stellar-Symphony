@@ -210,7 +210,7 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_RapidSlash_Step()
 					mask_index = spr_MKSS_Attack_Andromeda1_TornadoBack;
 					attackAIStep = scr_MKSS_Attack_Andromeda1_RapidSlash_Step;
 					image_xscale = other.image_xscale;
-					other.tornadoFront = id;
+					other.tornadoBack = id;
 				}
 				
 				attackState++;
@@ -229,6 +229,9 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_RapidSlash_Step()
 			
 			if (attackStateTimer[attackState] == -1)
 			{
+				with (tornadoFront) instance_destroy();
+				with (tornadoBack) instance_destroy();
+				
 				armLB.image_alpha = 1;
 				armRB.image_alpha = 1;
 				armLT.image_alpha = 1;
@@ -236,8 +239,7 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_RapidSlash_Step()
 				
 				vsp = 0;
 				
-				attackState++;
-				//scr_Enemy_ChangeState_Step(id,enemyAIStepIdle);
+				scr_Enemy_ChangeState_Step(id,enemyAIStepIdle);
 			}
 			break;
 			#endregion
