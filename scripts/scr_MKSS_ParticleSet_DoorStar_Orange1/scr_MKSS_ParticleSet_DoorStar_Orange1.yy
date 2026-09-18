@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_MKSS_ParticleSet_DoorStar2",
+  "%Name":"scr_MKSS_ParticleSet_DoorStar_Orange1",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_MKSS_ParticleSet_DoorStar2",
+  "name":"scr_MKSS_ParticleSet_DoorStar_Orange1",
   "parent":{
     "name":"Scripts",
     "path":"folders/Meta Knightmare Stellar Symphony/Particles/Scripts.yy",

@@ -15,11 +15,20 @@ pauseOutsideView = false;
 canHaveKnockback = false;
 
 freezeFrameForce = 2;
+
+enemyPhaseTargetHp = [floor(MKSS_Base_EnemyHP_Boss / 2)];
+enemyPhaseSetupScript = 
+[
+	function()
+	{
+		scr_MKSS_Enemy_Andromeda1_Normal_AttackOrder_Phase2();
+	}
+];
 #endregion
 
 #region Sprites
 spriteSet = global.MKSS_EnemyList[enemyID].spriteSet;
-//sprHurt = spriteSet.sprHurtList;
+sprHurt = spriteSet.sprHurtList;
 mask_index = spriteSet.maskIndex;
 #endregion
 

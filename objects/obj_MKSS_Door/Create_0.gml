@@ -8,13 +8,16 @@ event_inherited();
 #region Gameplay Variables
 text = "";
 
-bigStarSpeed = sprite_get_speed(spr_MKSS_Particle_BigStar_Yellow) / 60;
+bigStarSprite = spr_MKSS_Particle_BigStar_Yellow;
+bigStarSpeed = sprite_get_speed(bigStarSprite) / 60;
 bigStarIndex = 0;
-bigStarNumber = sprite_get_number(spr_MKSS_Particle_BigStar_Yellow);
+bigStarNumber = sprite_get_number(bigStarSprite);
 
 particleDir = 1;
 particleTimerMax = 15;
 particleTimer = particleTimerMax;
+
+doorStarParticleSet = scr_MKSS_ParticleSet_DoorStar_Yellow1;
 
 hasButtonHint = false;
 #endregion

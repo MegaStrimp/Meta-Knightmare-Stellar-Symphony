@@ -18,7 +18,7 @@ if (!localPause)
 			particleTimer = max(particleTimer - speedMultFinal,0);
 			if (particleTimer == 0)
 			{
-				scr_MKSS_ParticleSet_DoorStar1(x + 8,y,particleDir);
+				script_execute(doorStarParticleSet,x + 8,y,particleDir);
 				particleDir *= -1;
 				
 				particleTimer = particleTimerMax;

@@ -13,22 +13,22 @@ function scr_MKSS_Upgrade_Init_Set()
 	
 	#region Upgrade Nodes
 	var targetMappedID_Base_Parry = scr_MKSS_Upgrade_Init_Add("Base_Parry",categoryID,61,66);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_Parry,"Parry",["Parry various objects and enemies in [#F8F8F8]green[/color] coloring!\n\n[LTIcon]/[RTIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Base_Parry]);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_Parry,"Parry",["Parry various objects and enemies in [#F8F8F8]green[/color] coloring!\n\n[LTIcon]/[RTIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Base_Parry],100);
 	
 	var targetMappedID_Base_Counter = scr_MKSS_Upgrade_Init_Add("Base_Counter",categoryID,83,81,targetMappedID_Base_Parry);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_Counter,"Counter",["Execute the Finisher Attack of your equipped sword after a parry!\n\nSuccessful Parry - [BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Base_Counter]);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_Counter,"Counter",["Execute the Finisher Attack of your equipped sword after a parry!\n\nSuccessful Parry - [BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Base_Counter],100);
 	
-	var targetMappedID_Base_Dodge = scr_MKSS_Upgrade_Init_Add("Base_Dodge",categoryID,178,66);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_Dodge,"Dodge",["Dodge from dangerous attacks, don't touch them!\n\n[LTIcon]/[RTIcon] - [LTIcon]/[RTIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Base_Dodge]);
+	var targetMappedID_Base_Dodge = scr_MKSS_Upgrade_Init_Add("Base_Dodge",categoryID,178,66,targetMappedID_Base_Parry);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_Dodge,"Dodge",["Dodge from dangerous attacks, don't touch them!\n\n[LTIcon]/[RTIcon] - [LTIcon]/[RTIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Base_Dodge],100);
 	
 	var targetMappedID_Base_ShadowDodge = scr_MKSS_Upgrade_Init_Add("Base_ShadowDodge",categoryID,156,81,targetMappedID_Base_Dodge);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_ShadowDodge,"Shadow Dodge",["Dodge in shadow speed without taking hit from most attacks!\n\n[LTIcon]/[RTIcon] - [LTIcon]/[RTIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Base_ShadowDodge]);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_ShadowDodge,"Shadow Dodge",["Dodge in shadow speed without taking hit from most attacks!\n\n[LTIcon]/[RTIcon] - [LTIcon]/[RTIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Base_ShadowDodge],100);
 	
-	var targetMappedID_Base_SharpSlide = scr_MKSS_Upgrade_Init_Add("Base_SharpSlide",categoryID,120,122);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_SharpSlide,"Sharp Slide",["Pierce through your enemies while sliding with your sharp boots!\n\n[DownIcon] - [AIcon] (Hold)"],[spr_MKSS_Menu_Upgrades_Notif_Base_SharpSlide]);
+	var targetMappedID_Base_SharpSlide = scr_MKSS_Upgrade_Init_Add("Base_SharpSlide",categoryID,120,122,targetMappedID_Base_Parry);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_SharpSlide,"Sharp Slide",["Pierce through your enemies while sliding with your sharp boots!\n\n[DownIcon] - [AIcon] (Hold)"],[spr_MKSS_Menu_Upgrades_Notif_Base_SharpSlide],100);
 	
-	var targetMappedID_Base_SonicWings = scr_MKSS_Upgrade_Init_Add("Base_SonicWings",categoryID,119,16);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_SonicWings,"Sonic Wings",["Flap your bat wings faster and faster, allowing you to move faster and fly faster!\n\nMidair - [AIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Base_SonicWings]);
+	var targetMappedID_Base_SonicWings = scr_MKSS_Upgrade_Init_Add("Base_SonicWings",categoryID,119,16,targetMappedID_Base_Parry);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_SonicWings,"Sonic Wings",["Flap your bat wings faster and faster, allowing you to move faster and fly faster!\n\nMidair - [AIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Base_SonicWings],100);
 	#endregion
 	
 	#region Lesser Nodes
@@ -97,37 +97,37 @@ function scr_MKSS_Upgrade_Init_Set()
 	
 	#region Upgrade Nodes
 	var targetMappedID_Galaxia_Kick = scr_MKSS_Upgrade_Init_Add("Galaxia_Kick",categoryID,98,91);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Kick,"Kick",["Continue your basic combo with a kick that knocks the enemy back!\n\n[BIcon] - [BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_Kick]);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Kick,"Kick",["Continue your basic combo with a kick that knocks the enemy back!\n\n[BIcon] - [BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_Kick],100);
 	
 	var targetMappedID_Galaxia_Barrage = scr_MKSS_Upgrade_Init_Add("Galaxia_Barrage",categoryID,103,78,targetMappedID_Galaxia_Kick);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Barrage,"Barrage",["End your basic combo with a sword barrage!\n\n[BIcon] - [BIcon] - [BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_Barrage]);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Barrage,"Barrage",["End your basic combo with a sword barrage!\n\n[BIcon] - [BIcon] - [BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_Barrage],100);
 	
 	var targetMappedID_Galaxia_Finisher = scr_MKSS_Upgrade_Init_Add("Galaxia_Finisher",categoryID,91,80,targetMappedID_Galaxia_Barrage);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Finisher,"Finisher",["Cancel or conclude your combo with a heavy finisher slash! Deals more damage to enemies with low hp left!\n\nBasic Combo - [XIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_Finisher]);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Finisher,"Finisher",["Cancel or conclude your combo with a heavy finisher slash! Deals more damage to enemies with low hp left!\n\nBasic Combo - [XIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_Finisher],100);
 	
 	var targetMappedID_Galaxia_ExtraFinisher = scr_MKSS_Upgrade_Init_Add("Galaxia_ExtraFinisher",categoryID,99,66,targetMappedID_Galaxia_Finisher);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_ExtraFinisher,"Extra Finisher",["Deal even more damage with your finisher slash!\n\nBasic Combo - [XIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_ExtraFinisher]);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_ExtraFinisher,"Extra Finisher",["Deal even more damage with your finisher slash!\n\nBasic Combo - [XIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_ExtraFinisher],100);
 	
 	var targetMappedID_Galaxia_MachTornado = scr_MKSS_Upgrade_Init_Add("Galaxia_MachTornado",categoryID,126,104);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_MachTornado,"Mach Tornado",["Spiral into a fast accelerating Mach Tornado and swallow your enemies! No copy abilities guaranteed!\n\n[XIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_MachTornado]);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_MachTornado,"Mach Tornado",["Spiral into a fast accelerating Mach Tornado and swallow your enemies! No copy abilities guaranteed!\n\n[XIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_MachTornado],100);
 	
 	var targetMappedID_Galaxia_MachPrime = scr_MKSS_Upgrade_Init_Add("Galaxia_MachPrime",categoryID,145,88,targetMappedID_Galaxia_MachTornado);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_MachPrime,"Mach Prime",["Make your Mach Tornado even larger and faster!\n\n[XIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_MachPrime]);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_MachPrime,"Mach Prime",["Make your Mach Tornado even larger and faster!\n\n[XIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_MachPrime],100);
 	
 	var targetMappedID_Galaxia_Stab = scr_MKSS_Upgrade_Init_Add("Galaxia_Stab",categoryID,77,116);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Stab,"Stab",["Dash and stab through enemies with your sword!\n\nDash - [BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_Stab]);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_Stab,"Stab",["Dash and stab through enemies with your sword!\n\nDash - [BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_Stab],100);
 	
 	var targetMappedID_Galaxia_CircleSlash = scr_MKSS_Upgrade_Init_Add("Galaxia_CircleSlash",categoryID,137,129);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_CircleSlash,"Circle Slash",["Spin midair and slice enemies with your ring of doom!\n\nMidair - [AIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_CircleSlash]);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_CircleSlash,"Circle Slash",["Spin midair and slice enemies with your ring of doom!\n\nMidair - [AIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_CircleSlash],100);
 	
 	var targetMappedID_Galaxia_GroundPound = scr_MKSS_Upgrade_Init_Add("Galaxia_GroundPound",categoryID,113,52);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_GroundPound,"Ground Pound",["Pound the ground below you... along with everyone in your range!\n\nMidair - [DownIcon] - [AIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_GroundPound]);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_GroundPound,"Ground Pound",["Pound the ground below you... along with everyone in your range!\n\nMidair - [DownIcon] - [AIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_GroundPound],100);
 	
 	var targetMappedID_Galaxia_BlastPound = scr_MKSS_Upgrade_Init_Add("Galaxia_BlastPound",categoryID,108,36,targetMappedID_Galaxia_GroundPound);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_BlastPound,"Blast Pound",["Pound the ground even harder and blast everyone around you!\n\nMidair - [DownIcon] - [AIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_BlastPound]);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_BlastPound,"Blast Pound",["Pound the ground even harder and blast everyone around you!\n\nMidair - [DownIcon] - [AIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_BlastPound],100);
 	
 	var targetMappedID_Galaxia_UpJuggle = scr_MKSS_Upgrade_Init_Add("Galaxia_UpJuggle",categoryID,155,12);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_UpJuggle,"Up Juggle",["Juggle your enemies like a jester with an up-thrust!\n\n[UpIcon] - [BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_UpJuggle]);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Galaxia_UpJuggle,"Up Juggle",["Juggle your enemies like a jester with an up-thrust!\n\n[UpIcon] - [BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_UpJuggle],100);
 	#endregion
 	
 	#region Lesser Nodes
@@ -209,28 +209,28 @@ function scr_MKSS_Upgrade_Init_Set()
 	
 	#region Upgrade Nodes
 	var targetMappedID_Buzzcut_ReverseSlash = scr_MKSS_Upgrade_Init_Add("Buzzcut_ReverseSlash",categoryID,77,83);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Buzzcut_ReverseSlash,"Reverse Slash");
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Buzzcut_ReverseSlash,"Reverse Slash",["Juggle your enemies like a jester with an up-thrust!\n\n[UpIcon] - [BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_UpJuggle],100);
 	
 	var targetMappedID_Buzzcut_Overcharge = scr_MKSS_Upgrade_Init_Add("Buzzcut_Overcharge",categoryID,77,61,targetMappedID_Buzzcut_ReverseSlash);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Buzzcut_Overcharge,"Overcharge");
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Buzzcut_Overcharge,"Overcharge",["Juggle your enemies like a jester with an up-thrust!\n\n[UpIcon] - [BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_UpJuggle],100);
 	
 	var targetMappedID_Buzzcut_Finisher = scr_MKSS_Upgrade_Init_Add("Buzzcut_Finisher",categoryID,67,73);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Buzzcut_Finisher,"Finisher");
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Buzzcut_Finisher,"Finisher",["Juggle your enemies like a jester with an up-thrust!\n\n[UpIcon] - [BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_UpJuggle],100);
 	
 	var targetMappedID_Buzzcut_Gigatorque = scr_MKSS_Upgrade_Init_Add("Buzzcut_Gigatorque",categoryID,67,48);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Buzzcut_Gigatorque,"Gigatorque");
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Buzzcut_Gigatorque,"Gigatorque",["Juggle your enemies like a jester with an up-thrust!\n\n[UpIcon] - [BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_UpJuggle],100);
 	
 	var targetMappedID_Buzzcut_Drillsaw = scr_MKSS_Upgrade_Init_Add("Buzzcut_Drillsaw",categoryID,82,36);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Buzzcut_Drillsaw,"Drillsaw");
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Buzzcut_Drillsaw,"Drillsaw",["Juggle your enemies like a jester with an up-thrust!\n\n[UpIcon] - [BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_UpJuggle],100);
 	
 	var targetMappedID_Buzzcut_Chainlings = scr_MKSS_Upgrade_Init_Add("Buzzcut_Chainlings",categoryID,101,18);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Buzzcut_Chainlings,"Chainlings");
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Buzzcut_Chainlings,"Chainlings",["Juggle your enemies like a jester with an up-thrust!\n\n[UpIcon] - [BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_UpJuggle],100);
 	
 	var targetMappedID_Buzzcut_SawBombard = scr_MKSS_Upgrade_Init_Add("Buzzcut_SawBombard",categoryID,120,20);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Buzzcut_SawBombard,"Saw Bombard");
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Buzzcut_SawBombard,"Saw Bombard",["Juggle your enemies like a jester with an up-thrust!\n\n[UpIcon] - [BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_UpJuggle],100);
 	
 	var targetMappedID_Buzzcut_ChainChakram = scr_MKSS_Upgrade_Init_Add("Buzzcut_ChainChakram",categoryID,160,51);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Buzzcut_ChainChakram,"Chain Chakram");
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Buzzcut_ChainChakram,"Chain Chakram",["Juggle your enemies like a jester with an up-thrust!\n\n[UpIcon] - [BIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Galaxia_UpJuggle],100);
 	#endregion
 	
 	#region Lesser Nodes

@@ -5,7 +5,7 @@ event_inherited();
 #endregion
 
 #region Big Star
-draw_sprite(spr_MKSS_Particle_BigStar_Yellow,bigStarIndex,x + 8,y - 2);
+draw_sprite(bigStarSprite,bigStarIndex,x + 8,y - 2);
 #endregion
 
 #region Text

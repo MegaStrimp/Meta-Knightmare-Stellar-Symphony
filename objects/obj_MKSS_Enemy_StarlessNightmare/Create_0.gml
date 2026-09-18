@@ -21,7 +21,7 @@ massDestructionScript = scr_MKSS_Cutscene_Preset_StarlessNightmareMassDestructio
 
 #region Sprites
 spriteSet = global.MKSS_EnemyList[enemyID].spriteSet;
-//sprHurt = spriteSet.sprHurtList;
+sprHurt = spriteSet.sprHurtList;
 mask_index = spriteSet.maskIndex;
 #endregion
 
