@@ -725,6 +725,60 @@ function scr_MKSS_Enemy_Init_Set()
 	});
 	#endregion
 	
+	#region Gao Gao
+	var targetMappedID = scr_MKSS_Enemy_Init_Add("gaoGao","Gao Gao");
+	
+	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
+	{
+		sprIdle: spr_MKSS_Enemy_GaoGao_Base_Idle,
+		sprJump: spr_MKSS_Enemy_GaoGao_Base_Jump,
+		sprAttackReady: spr_MKSS_Enemy_GaoGao_Base_AttackReady,
+		sprSpin: spr_MKSS_Enemy_GaoGao_Base_Spin,
+		sprDrill: spr_MKSS_Enemy_GaoGao_Base_Drill,
+		sprDizzy: spr_MKSS_Enemy_GaoGao_Base_Dizzy,
+		
+		sprHurt1: spr_MKSS_Enemy_GaoGao_Base_Hurt1,
+		
+	    sprHurtList:
+		[
+	        [
+				spr_MKSS_Enemy_GaoGao_Base_Hurt1,
+				1
+			]
+	    ],
+		
+		maskIndex: spr_16x16Mask_MiddleOrigin
+	});
+	#endregion
+	
+	#region Mr. Frosty
+	var targetMappedID = scr_MKSS_Enemy_Init_Add("mrFrosty","Mr. Frosty");
+	
+	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
+	{
+		sprIdle: spr_MKSS_Enemy_MrFrosty_Base_Idle,
+		sprJump: spr_MKSS_Enemy_MrFrosty_Base_Jump,
+		sprPrepareAttack: spr_MKSS_Enemy_MrFrosty_Base_PrepareAttack,
+		sprBringAttack: spr_MKSS_Enemy_MrFrosty_Base_BringAttack,
+		sprBringAttackJump: spr_MKSS_Enemy_MrFrosty_Base_BringAttackJump,
+		sprAttackReady: spr_MKSS_Enemy_MrFrosty_Base_AttackReady,
+		sprCarry: spr_MKSS_Enemy_MrFrosty_Base_Carry,
+		sprAttack: spr_MKSS_Enemy_MrFrosty_Base_Attack,
+		
+		sprHurt1: spr_MKSS_Enemy_MrFrosty_Base_Hurt1,
+		
+	    sprHurtList:
+		[
+	        [
+				spr_MKSS_Enemy_MrFrosty_Base_Hurt1,
+				1
+			]
+	    ],
+		
+		maskIndex: spr_16x16Mask_MiddleOrigin
+	});
+	#endregion
+	
 	#region Chasse-Emee
 	var targetMappedID = scr_MKSS_Enemy_Init_Add("chasseEmee","Chasse-Emee");
 	

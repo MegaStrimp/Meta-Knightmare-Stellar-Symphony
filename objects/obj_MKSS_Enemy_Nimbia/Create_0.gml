@@ -16,6 +16,15 @@ canHaveKnockback = false;
 
 freezeFrameForce = 2;
 
+enemyPhaseTargetHp = [floor(MKSS_Base_EnemyHP_Boss / 2)];
+enemyPhaseSetupScript = 
+[
+	function()
+	{
+		scr_MKSS_Enemy_Nimbia_Normal_AttackOrder_Phase2();
+	}
+];
+
 massDestructionScript = scr_MKSS_Cutscene_Preset_NimbiaMassDestruction;
 #endregion
 

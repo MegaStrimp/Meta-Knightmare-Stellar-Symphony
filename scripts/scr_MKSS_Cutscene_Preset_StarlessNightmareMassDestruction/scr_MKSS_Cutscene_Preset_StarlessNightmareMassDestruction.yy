@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_MKSS_Cutscene_Preset_StarlessNightmareMassDestruction",
   "parent":{
-    "name":"Mass Destruction",
-    "path":"folders/Meta Knightmare Stellar Symphony/Cutscenes/Scripts/Mass Destruction.yy",
+    "name":"Mass Destructions",
+    "path":"folders/Meta Knightmare Stellar Symphony/Cutscenes/Scripts/Mass Destructions.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
