@@ -1,50 +1,29 @@
 ///@description Draw
 
-#region Credits Names
+#region Draw Credits
 var yy = 0;
-var textType = 0;
 var text = "";
-var sep = 0;
+var sep = 16;
 
 for (var i = 0; i < array_length(creditsNames); i++)
 {
 	text = creditsNames[i];
-	textType = string_char_at(text,1);
-	text = string_copy(text,2,string_length(text));
-	text = string_upper(text);
 	
-	sep = 9;
-	switch (textType)
-	{
-		case 0:
-		break;
-		
-		case 1:
-		sep = 18;
-		break;
-		
-		case 2:
-		draw_set_color(make_color_rgb(48,65,113));
-		break;
-		
-		case 3:
-		draw_set_color(make_color_rgb(88,94,112));
-		sep = 0;
-		break;
-		
-		case 4:
-		draw_set_color(make_color_rgb(91,123,211));
-		break;
-		
-		case 5:
-		draw_set_color(make_color_rgb(91,123,211));
-		sep = 0;
-		break;
-	}
-	
-	draw_text(4,yStart + yScroll + yy,text);
+	scribble("[fnt_Advance]" + string(text) + "[/font]").draw(8,yStart + yScroll + yy);
 	yy += sep;
-	
-	draw_set_color(c_white);
 }
+#endregion
+
+#region Button Hints
+var exitIcon = "";
+var targetIcon = global.UI_IconBindings[? string(input_binding_get("B"))];
+if (targetIcon != undefined) exitIcon = "[" + sprite_get_name(targetIcon) + "]";
+
+var selectIcon = "";
+var targetIcon = global.UI_IconBindings[? string(input_binding_get("A"))];
+if (targetIcon != undefined) selectIcon = "[" + sprite_get_name(targetIcon) + "]";
+
+scribble(exitIcon + "Exit").draw(4,room_height - 16 + (2 * (buttonInputTimerComponent_BTimer != -1)));
+var text = scribble(selectIcon + "Speed Up");
+text.draw(room_width - 4 - text.get_width(),room_height - 16 + (2 * (buttonInputTimerComponent_ATimer != -1)));
 #endregion

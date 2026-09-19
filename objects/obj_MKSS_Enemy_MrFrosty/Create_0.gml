@@ -16,7 +16,7 @@ canHaveKnockback = false;
 
 freezeFrameForce = 2;
 
-enemyPhaseTargetHp = [floor(MKSS_Base_EnemyHP_Miniboss / 2)];
+enemyPhaseTargetHp = [floor(hp / 2)];
 enemyPhaseSetupScript = 
 [
 	function()

@@ -79,7 +79,7 @@ function scr_MKSS_Hud_DrawGUI()
 		#endregion
 		
 		#region Button Hints
-		if (global.MKSS_SpecialCurrent == global.MKSS_SpecialTarget)
+		if ((global.MKSS_SpecialCurrent == global.MKSS_SpecialTarget) and (!global.MKSS_SpecialDeflation))
 		{
 			var targetIcon = global.UI_IconBindings[? string(input_binding_get("Y"))];
 			if (targetIcon != undefined) draw_sprite(targetIcon,0,104,global.gameHeight - 32 + (2 * (buttonInputTimerComponent_YTimer != -1)));
