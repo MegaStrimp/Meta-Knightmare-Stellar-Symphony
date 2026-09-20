@@ -37,12 +37,31 @@ function scr_MKSS_Attack_Andromeda1_StarSlash_Step()
 				}
 			}
 			
-			with (obj_Player)
+			var _hurtPlayer = false;
+			
+			var _angle = (slashAngle - 90) % 360
+			var i = -floor(gashWidth/2);
+			repeat(gashWidth)
 			{
-				if (x >= other.x - other.gashWidth) and (x <= other.x + other.gashWidth) and (hurtState == hurtStates.none)
+				var _x = x + lengthdir_x(i,_angle);
+				var _y = y + lengthdir_y(i,_angle);
+				if (collision_line(_x + lengthdir_x(-slashLength,slashAngle),_y + lengthdir_y(-slashLength,slashAngle),_x + lengthdir_x(slashLength,slashAngle),_y + lengthdir_y(slashLength,slashAngle),obj_Player,true,true))
 				{
-					scr_PlaySfx(snd_MKSS_Hurt);
-					scr_MKSS_Player_GetHit(id,other.dmgTarget);
+					_hurtPlayer = true
+				}
+				
+				i++;
+			}
+		
+			if (_hurtPlayer)
+			{
+				with (obj_Player)
+				{
+					if (hurtState == hurtStates.none)
+					{
+						scr_PlaySfx(snd_MKSS_Hurt);
+						scr_MKSS_Player_GetHit(id,other.dmgTarget);
+					}
 				}
 			}
 			break;

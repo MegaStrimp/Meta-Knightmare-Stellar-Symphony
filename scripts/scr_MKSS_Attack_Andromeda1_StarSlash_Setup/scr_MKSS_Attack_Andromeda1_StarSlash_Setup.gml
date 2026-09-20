@@ -15,6 +15,7 @@ function scr_MKSS_Attack_Andromeda1_StarSlash_Setup()
 	
 	slashWidthMax = 20;
 	slashWidth = 0;
+	slashLength = 320;
 	slashWidthGain = slashWidthMax/8;
 	slashDir = 1;
 	
@@ -24,7 +25,7 @@ function scr_MKSS_Attack_Andromeda1_StarSlash_Setup()
 	gashEndTimer = 120;
 	
 	slashState = 0;
-	slashAngle = irandom_range(-16,16);
+	slashAngle = 0;
 	
 	pauseOutsideView = false;
 	destroyOutsideRoom = false;

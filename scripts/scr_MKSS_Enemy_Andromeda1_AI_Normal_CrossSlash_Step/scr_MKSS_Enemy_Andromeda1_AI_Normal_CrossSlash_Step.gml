@@ -1,12 +1,12 @@
-///@description MKSS - Enemy - Andromeda 1 - AI - Normal - Star Slash - Step
+///@description MKSS - Enemy - Andromeda 1 - AI - Normal - Crosh Slash - Step
 
-function scr_MKSS_Enemy_Andromeda1_AI_Normal_StarSlash_Step()
+function scr_MKSS_Enemy_Andromeda1_AI_Normal_CrossSlash_Step()
 {
 	#region Setup
 	if (enemyState_Setup)
 	{
 		#region Attack Init
-		attackString = "Andromeda - Star Slash";
+		attackString = "Andromeda - Cross Slash";
 		scr_Debug_WriteLog(string(object_get_name(object_index)) + " Used [" + attackString + "]");
 	
 		dirX = scr_MKSS_Enemy_DirTarget();
@@ -18,30 +18,36 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_StarSlash_Step()
 		var i = 0;
 		
 		#region Indicator Timer
-		attackStateTimerMax[i] = 30;
+		attackStateTimerMax[i] = 20;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
 		
 		#region Slash Timer
+		attackStateTimerMax[i] = 30;
+		attackStateTimer[i] = attackStateTimerMax[i];
+		i++;
+		#endregion
+		
+		#region Post-Slash Timer
 		attackStateTimerMax[i] = 40;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
 		
 		#region Revert Timer
-		attackStateTimerMax[i] = 60;
+		attackStateTimerMax[i] = 40;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
 		#endregion
 		
-		#region Star Slash Variables
+		#region Cross Slash Variables
 		slashCountMax = 2;
 		slashCount = slashCountMax;
 		#endregion
 		
-		#region Star Slash Start
+		#region Cross Slash Start
 		sprite_index = spriteSet.sprIdle;
 		image_index = 0;
 		
@@ -76,21 +82,62 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_StarSlash_Step()
 			case 0:
 			if (attackStateTimer[attackState] == -1)
 			{
-				with (instance_create_depth(obj_Player.x,room_height / 2,depth + 6,obj_MKSS_Attack))
+				var _offset = irandom_range(-5,5);
+				if (slashCount != 1)
 				{
-					owner = other.id;
-					isEnemy = true;
-					dmg = -1;
-					dmgTarget = 20;
-					scr_MKSS_Attack_Andromeda1_StarSlash_Setup();
-					slashAngle = 90 + irandom_range(-16,16);
-					ds_list_add(other.slashList,id);
+					with (instance_create_depth(obj_Player.x,obj_Player.y,depth + 6,obj_MKSS_Attack))
+					{
+						owner = other.id;
+						isEnemy = true;
+						dmg = -1;
+						dmgTarget = 20;
+						scr_MKSS_Attack_Andromeda1_StarSlash_Setup();
+						slashAngle = 90 + _offset;
+						gashEndTimer = 60;
+						ds_list_add(other.slashList,id);
+					}
+					with (instance_create_depth(obj_Player.x,obj_Player.y,depth + 6,obj_MKSS_Attack))
+					{
+						owner = other.id;
+						isEnemy = true;
+						dmg = -1;
+						dmgTarget = 20;
+						scr_MKSS_Attack_Andromeda1_StarSlash_Setup();
+						slashAngle = 180 + _offset;
+						gashEndTimer = 60;
+						ds_list_add(other.slashList,id);
+					}
+				}
+				else
+				{
+					with (instance_create_depth(obj_Player.x,obj_Player.y,depth + 6,obj_MKSS_Attack))
+					{
+						owner = other.id;
+						isEnemy = true;
+						dmg = -1;
+						dmgTarget = 20;
+						scr_MKSS_Attack_Andromeda1_StarSlash_Setup();
+						slashAngle = 45 + _offset;
+						gashEndTimer = 60;
+						ds_list_add(other.slashList,id);
+					}
+					with (instance_create_depth(obj_Player.x,obj_Player.y,depth + 6,obj_MKSS_Attack))
+					{
+						owner = other.id;
+						isEnemy = true;
+						dmg = -1;
+						dmgTarget = 20;
+						scr_MKSS_Attack_Andromeda1_StarSlash_Setup();
+						slashAngle = 135 + _offset;
+						gashEndTimer = 60;
+						ds_list_add(other.slashList,id);
+					}
 				}
 				
 				slashCount--;
 				
 				attackStateTimer[attackState] = attackStateTimerMax[attackState];
-				if (slashCount <= 0) attackState++;
+				attackState++;
 			}
 			break;
 			#endregion
@@ -113,13 +160,25 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_StarSlash_Step()
 					i++;
 				}
 				
+				attackStateTimer[attackState] = attackStateTimerMax[attackState];
 				attackState++;
 			}
 			break;
 			#endregion
 			
-			#region Finish Attack
+			#region Post-Slash
 			case 2:
+			if (attackStateTimer[attackState] == -1)
+			{
+				attackStateTimer[attackState] = attackStateTimerMax[attackState];
+				if (slashCount <= 0) attackState++;
+				else attackState = 0;
+			}
+			break;
+			#endregion
+			
+			#region Finish Attack
+			case 3:
 			if (attackStateTimer[attackState] == -1)
 			{
 				ds_list_clear(slashList);

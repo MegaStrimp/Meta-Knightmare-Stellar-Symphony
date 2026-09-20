@@ -2587,6 +2587,7 @@
     {"id":{"name":"scr_MKSS_Enemy_AI_Stun_Step","path":"scripts/scr_MKSS_Enemy_AI_Stun_Step/scr_MKSS_Enemy_AI_Stun_Step.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_Andromeda1_AI_Normal_AnimationEnd","path":"scripts/scr_MKSS_Enemy_Andromeda1_AI_Normal_AnimationEnd/scr_MKSS_Enemy_Andromeda1_AI_Normal_AnimationEnd.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_Andromeda1_AI_Normal_CleanUp","path":"scripts/scr_MKSS_Enemy_Andromeda1_AI_Normal_CleanUp/scr_MKSS_Enemy_Andromeda1_AI_Normal_CleanUp.yy",},},
+    {"id":{"name":"scr_MKSS_Enemy_Andromeda1_AI_Normal_CrossSlash_Step","path":"scripts/scr_MKSS_Enemy_Andromeda1_AI_Normal_CrossSlash_Step/scr_MKSS_Enemy_Andromeda1_AI_Normal_CrossSlash_Step.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_Andromeda1_AI_Normal_DrillDive_Step","path":"scripts/scr_MKSS_Enemy_Andromeda1_AI_Normal_DrillDive_Step/scr_MKSS_Enemy_Andromeda1_AI_Normal_DrillDive_Step.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_Andromeda1_AI_Normal_Idle_Step","path":"scripts/scr_MKSS_Enemy_Andromeda1_AI_Normal_Idle_Step/scr_MKSS_Enemy_Andromeda1_AI_Normal_Idle_Step.yy",},},
     {"id":{"name":"scr_MKSS_Enemy_Andromeda1_AI_Normal_RapidSlash_Step","path":"scripts/scr_MKSS_Enemy_Andromeda1_AI_Normal_RapidSlash_Step/scr_MKSS_Enemy_Andromeda1_AI_Normal_RapidSlash_Step.yy",},},

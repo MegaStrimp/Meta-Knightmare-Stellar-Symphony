@@ -24,6 +24,10 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_Setup(targetIsBoss = true)
 	andromeda1_Attack_RapidSlash = scr_MKSS_Enemy_Andromeda1_AI_Normal_RapidSlash_Step;
 	andromeda1_Attack_DrillDive = scr_MKSS_Enemy_Andromeda1_AI_Normal_DrillDive_Step;
 	#endregion
+	
+	#region Phase 2
+	andromeda1_Attack_CrossSlash = scr_MKSS_Enemy_Andromeda1_AI_Normal_CrossSlash_Step;
+	#endregion
 	#endregion
 	
 	#region Attack Order

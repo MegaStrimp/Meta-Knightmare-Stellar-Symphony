@@ -4,7 +4,7 @@ function scr_MKSS_Attack_Andromeda1_StarSlash_Draw()
 {
 	scr_DrawMask_Begin();
 		
-	scr_DrawMask_LineMask(x-slashAngle,0,x+slashAngle,room_height,indicatorWidth,.5);
+	scr_DrawMask_LineMask(x + lengthdir_x(-slashLength,slashAngle),y + lengthdir_y(-slashLength,slashAngle),x + lengthdir_x(slashLength,slashAngle),y + lengthdir_y(slashLength,slashAngle),indicatorWidth,.5);
 	
 	for (var i = -2; i < 2; i++)
 	{
@@ -18,7 +18,7 @@ function scr_MKSS_Attack_Andromeda1_StarSlash_Draw()
 	
 	scr_DrawMask_Begin();
 		
-	scr_DrawMask_LineMask(x-slashAngle,0,x+slashAngle,room_height,gashWidth,1);
+	scr_DrawMask_LineMask(x + lengthdir_x(-slashLength,slashAngle),y + lengthdir_y(-slashLength,slashAngle),x + lengthdir_x(slashLength,slashAngle),y + lengthdir_y(slashLength,slashAngle),gashWidth,1);
 	
 	for (var i = -2; i < 2; i++)
 	{
@@ -30,5 +30,5 @@ function scr_MKSS_Attack_Andromeda1_StarSlash_Draw()
 	
 	scr_DrawMask_End();
 	
-	draw_line_width_color(x-slashAngle,0,x+slashAngle,room_height,slashWidth,c_white,c_white);
+	draw_line_width_color(x + lengthdir_x(-slashLength,slashAngle),y + lengthdir_y(-slashLength,slashAngle),x + lengthdir_x(slashLength,slashAngle),y + lengthdir_y(slashLength,slashAngle),slashWidth,c_white,c_white);
 }
