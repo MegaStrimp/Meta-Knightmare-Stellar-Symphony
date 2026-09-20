@@ -30,7 +30,7 @@ function scr_MKSS_Player_MetaKnight_State_Cutscene_NimbiaParry_Step(){
 		#region Animation
 		if (!hasAttackAnimation)
 		{
-			sprite_index = spriteSet.sprAttackGalaxiaSlash1;
+			sprite_index = spriteSet.sprParry;
 		}
 		#endregion
 		

@@ -55,6 +55,27 @@ function scr_MKSS_Cutscene_Preset_StarlessMarxMassDestruction()
 		},
 		function()
 		{
+			with (obj_MKSS_Player)
+			{
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_StarlessMarxMDFaceSlam_Step);
+			}
+			with (obj_MKSS_Enemy_StarlessMarx)
+			{
+				scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_StarlessMarx_AI_Cutscene_MDFaceSlam_Step);
+			}
+			phaseTimer = 400
+		},
+		function()
+		{
+			with (obj_MKSS_Player)
+			{
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_StarlessMarxMDStomp_Step);
+				
+			}
+			phaseTimer = 180
+		},
+		function()
+		{
 			global.MKSS_CutsceneStopMovement = false;
 			
 			with (obj_MKSS_Enemy_StarlessMarx) deathTimer = 0;

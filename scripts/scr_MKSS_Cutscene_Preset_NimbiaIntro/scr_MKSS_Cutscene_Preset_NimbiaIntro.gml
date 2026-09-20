@@ -41,6 +41,15 @@ function scr_MKSS_Cutscene_Preset_NimbiaIntro()
 	#region Setup
 	bossSpawned = false;
 	musicPlayed = false;
+	
+	cameraXOffset = global.camera.xOffset;
+	cameraYOffset = global.camera.yOffset;
+	
+	with (instance_create_depth(0,0,0,obj_MKSS_CameraOffsetController))
+	{
+		xOffset = other.cameraXOffset
+		yOffset = other.cameraYOffset
+	}
 
 	#endregion
 	
@@ -118,7 +127,7 @@ function scr_MKSS_Cutscene_Preset_NimbiaIntro()
 				advanceProgress()
 				x = room_width + 32
 				y = obj_MKSS_Player.y
-				hsp = -7
+				hsp = -12
 				vsp = 0
 			}
 		},
@@ -132,6 +141,10 @@ function scr_MKSS_Cutscene_Preset_NimbiaIntro()
 				hsp = 0
 				vsp = 2
 				advanceProgress()
+			}
+			with (obj_MKSS_CameraOffsetController)
+			{
+				targetXOffset = 50
 			}
 		},
 		function()
@@ -210,6 +223,8 @@ function scr_MKSS_Cutscene_Preset_NimbiaIntro()
 			with (obj_MKSS_UI_BossTitle) instance_destroy();
 			
 			with (obj_Particle) instance_destroy();
+			
+			with (obj_MKSS_CameraOffsetController) instance_destroy()
 			
 			instance_destroy();
 			
