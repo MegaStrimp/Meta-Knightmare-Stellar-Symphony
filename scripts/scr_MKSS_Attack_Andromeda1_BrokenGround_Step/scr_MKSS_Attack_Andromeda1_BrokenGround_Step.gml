@@ -18,28 +18,44 @@ function scr_MKSS_Attack_Andromeda1_BrokenGround_Step()
 		#endregion
 		
 		#region Particles
-		if (particleTimer != -1)
+		if (stopTimer != -1)
 		{
-			particleTimer = max(particleTimer - speedMultFinal,0);
-			if (particleTimer == 0)
+			if (particleTimer != -1)
 			{
-				repeat(irandom_range(2,5))
+				particleTimer = max(particleTimer - speedMultFinal,0);
+				if (particleTimer == 0)
 				{
-					scr_MKSS_ParticleSet_TinySpark(x + irandom_range(-32,32),y + irandom_range(0,24));
-				}
+					repeat(irandom_range(2,5))
+					{
+						scr_MKSS_ParticleSet_TinySpark(x + irandom_range(-32,32),y + irandom_range(0,24));
+					}
 				
-				particleTimer = particleTimerMax;
+					particleTimer = particleTimerMax;
+				}
+			}
+		
+			if (sparkTimer != -1)
+			{
+				sparkTimer = max(sparkTimer - speedMultFinal,0);
+				if (sparkTimer == 0)
+				{
+					scr_MKSS_ParticleSet_Spark(x - choose(-24,24),y + irandom_range(4,8),6, -3);
+				
+					sparkTimer = sparkTimerMax;
+				}
 			}
 		}
+		#endregion
 		
-		if (sparkTimer != -1)
+		#region Stop
+		if (stopTimer != -1)
 		{
-			sparkTimer = max(sparkTimer - speedMultFinal,0);
-			if (sparkTimer == 0)
+			stopTimer = max(stopTimer - speedMultFinal,0);
+			if (stopTimer == 0)
 			{
-				scr_MKSS_ParticleSet_Spark(x - choose(-24,24),y + irandom_range(4,8),6, -3);
+				dmg = -1;
 				
-				sparkTimer = sparkTimerMax;
+				stopTimer = -1;
 			}
 		}
 		#endregion
