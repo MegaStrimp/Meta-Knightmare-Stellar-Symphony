@@ -65,9 +65,13 @@ function scr_MKSS_MacroTable()
 	#macro MKSS_Base_Color_StarlessSubitle "#235297"
 	
 	#macro MKSS_Base_Color_BlueGem "#224CF5"
+	#macro MKSS_Base_Color_BlueGemHidden #224CF5
 	#macro MKSS_Base_Color_RedGem "#940F2E"
+	#macro MKSS_Base_Color_RedGemHidden #940F2E
 	#macro MKSS_Base_Color_BlueGemEX "#3E2ED1"
+	#macro MKSS_Base_Color_BlueGemEXHidden #3E2ED1
 	#macro MKSS_Base_Color_RedGemEX "#8A3A6F"
+	#macro MKSS_Base_Color_RedGemEXHidden #8A3A6F
 	
 	#macro MKSS_Base_Color_HalberdOil "#591F37"
 	#macro MKSS_Base_Color_Andromeda "#4483D4"

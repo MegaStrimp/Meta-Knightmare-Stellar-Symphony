@@ -1,6 +1,6 @@
 ///@description MKSS - Stage - Init - Add - Collectible
 
-function scr_MKSS_Stage_Init_Add_Collectible(targetStageID,targetID,targetIcon = undefined)
+function scr_MKSS_Stage_Init_Add_Collectible(targetStageID,targetID,targetIcon = undefined,targetHiddenColor = c_black)
 {
 	var targetStage = global.MKSS_StageList[targetStageID];
 	
@@ -11,6 +11,7 @@ function scr_MKSS_Stage_Init_Add_Collectible(targetStageID,targetID,targetIcon =
 	{
         ID: targetID,
 		icon: targetIcon,
+		hiddenColor: targetHiddenColor,
         isObtained: false
     };
 	

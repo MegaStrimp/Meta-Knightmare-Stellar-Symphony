@@ -19,6 +19,20 @@ draw_rectangle_color(xx,yy,xx + global.gameWidth,yy + global.gameHeight,make_col
 var lightX = sine_between(global.currentTimePausable,lightPeriod,-20,20);
 var lightY = sine_between(global.currentTimePausable,lightPeriod + 100,-20,20);
 
-draw_sprite(bg_MKSS_Background_KSWUnderwater_Light,0,xx + lightX,yy + lightY);
+//draw_sprite(bg_KSW_Underwater_Light,0,lightX,lightY);
+#region Water Caustics
+
+var frame_rate = 20; // fps
+var get_time = floor((global.currentTimePausable / 60) * 0.8 * frame_rate) / frame_rate;
+
+shader_set(shd_MKSS_OceanCaustics);
+shader_set_uniform_f( shader_get_uniform(shd_MKSS_OceanCaustics, "time"), get_time );
+
+// sprite doesnt matter it's just used for draw space
+draw_sprite_stretched(bg_MKSS_Background_KSWUnderwater_Light,0,xx + lightX,yy + lightY,240,160);
+
+shader_reset();
+#endregion
+
 draw_sprite_ext(bg_MKSS_Background_KSWUnderwater_Shine,0,xx + colorCycle,yy,1,1,0,c_white,.5);
 #endregion

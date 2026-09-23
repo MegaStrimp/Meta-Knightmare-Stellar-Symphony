@@ -12,5 +12,8 @@ function scr_MKSS_Attack_Andromeda1_BrokenGround_Setup()
 	sparkTimerMax = 32;
 	sparkTimer = sparkTimerMax;
 	
+	stopTimerMax = 1800;
+	stopTimer = stopTimerMax;
+	
 	attackAIStep = scr_MKSS_Attack_Andromeda1_BrokenGround_Step;
 }
