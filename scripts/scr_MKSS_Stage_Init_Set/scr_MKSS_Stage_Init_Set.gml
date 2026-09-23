@@ -35,8 +35,8 @@ function scr_MKSS_Stage_Init_Set()
 		global.MKSS_StageList[global.MKSS_StageIDs[? "royalReeve"]].isUnlocked = true;
 	});
 	
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"starryShores_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"starryShores_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"starryShores_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem,MKSS_Base_Color_BlueGemHidden);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"starryShores_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem,MKSS_Base_Color_RedGemHidden);
 	#endregion
 	
 	#region Royal Reeve
@@ -51,8 +51,8 @@ function scr_MKSS_Stage_Init_Set()
 		global.MKSS_StageList[global.MKSS_StageIDs[? "aboveHalberd"]].isUnlocked = true;
 	});
 	
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeve_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeve_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeve_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem,MKSS_Base_Color_BlueGemHidden);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeve_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem,MKSS_Base_Color_RedGemHidden);
 	#endregion
 	
 	#region Above Halberd
@@ -84,8 +84,8 @@ function scr_MKSS_Stage_Init_Set()
 		global.MKSS_StageList[global.MKSS_StageIDs[? "fissionFactory"]].isUnlocked = true;
 	});
 	
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"livingLoom_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"livingLoom_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"livingLoom_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem,MKSS_Base_Color_BlueGemHidden);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"livingLoom_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem,MKSS_Base_Color_RedGemHidden);
 	#endregion
 	
 	#region Fission Factory
@@ -102,8 +102,8 @@ function scr_MKSS_Stage_Init_Set()
 		global.MKSS_StageList[global.MKSS_StageIDs[? "adAstra"]].isUnlocked = true;
 	});
 	
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"fissionFactory_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"fissionFactory_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"fissionFactory_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem,MKSS_Base_Color_BlueGemHidden);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"fissionFactory_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem,MKSS_Base_Color_RedGemHidden);
 	#endregion
 	
 	#region Ad Astra
@@ -118,8 +118,8 @@ function scr_MKSS_Stage_Init_Set()
 		global.MKSS_BarrierIndexTarget = 5;
 	});
 	
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstra_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstra_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstra_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem,MKSS_Base_Color_BlueGemHidden);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstra_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem,MKSS_Base_Color_RedGemHidden);
 	#endregion
 	
 	#region Starry Shores Ordeal
@@ -264,8 +264,8 @@ function scr_MKSS_Stage_Init_Set()
 		global.MKSS_StageList[global.MKSS_StageIDs[? "royalReeveEX"]].isUnlocked = true;
 	});
 	
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"starryShoresEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"starryShoresEX_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"starryShoresEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGemEX,MKSS_Base_Color_BlueGemEXHidden);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"starryShoresEX_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGemEX,MKSS_Base_Color_RedGemEXHidden);
 	#endregion
 	
 	#region Royal Reeve EX
@@ -280,8 +280,8 @@ function scr_MKSS_Stage_Init_Set()
 		global.MKSS_StageList[global.MKSS_StageIDs[? "aboveHalberdEX"]].isUnlocked = true;
 	});
 	
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeveEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeveEX_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeveEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGemEX,MKSS_Base_Color_BlueGemEXHidden);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"royalReeveEX_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGemEX,MKSS_Base_Color_RedGemEXHidden);
 	#endregion
 	
 	#region Above Halberd
@@ -309,8 +309,8 @@ function scr_MKSS_Stage_Init_Set()
 		global.MKSS_StageList[global.MKSS_StageIDs[? "fissionFactoryEX"]].isUnlocked = true;
 	});
 	
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"livingLoomEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"livingLoomEX_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"livingLoomEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGemEX,MKSS_Base_Color_BlueGemEXHidden);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"livingLoomEX_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGemEX,MKSS_Base_Color_RedGemEXHidden);
 	#endregion
 	
 	#region Fission Factory EX
@@ -325,8 +325,8 @@ function scr_MKSS_Stage_Init_Set()
 		global.MKSS_StageList[global.MKSS_StageIDs[? "adAstraEX"]].isUnlocked = true;
 	});
 	
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"fissionFactoryEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"fissionFactoryEX_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"fissionFactoryEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGemEX,MKSS_Base_Color_BlueGemEXHidden);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"fissionFactoryEX_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGemEX,MKSS_Base_Color_RedGemEXHidden);
 	#endregion
 	
 	#region Ad Astra EX
@@ -336,8 +336,8 @@ function scr_MKSS_Stage_Init_Set()
 	
 	scr_MKSS_Stage_Init_Add_Icon(targetMappedID,spr_MKSS_Stage_Icon_Unknown);
 	
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstraEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGem);
-	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstraEX_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGem);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstraEX_BlueGem",spr_MKSS_Stage_Collectible_Icon_BlueGemEX,MKSS_Base_Color_BlueGemEXHidden);
+	scr_MKSS_Stage_Init_Add_Collectible(targetMappedID,"adAstraEX_RedGem",spr_MKSS_Stage_Collectible_Icon_RedGemEX,MKSS_Base_Color_RedGemEXHidden);
 	#endregion
 	
 	#region Starry Shores Ordeal EX
