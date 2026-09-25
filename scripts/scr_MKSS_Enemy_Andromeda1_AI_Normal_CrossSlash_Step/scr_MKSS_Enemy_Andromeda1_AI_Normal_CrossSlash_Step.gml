@@ -1,4 +1,4 @@
-///@description MKSS - Enemy - Andromeda 1 - AI - Normal - Crosh Slash - Step
+///@description MKSS - Enemy - Andromeda 1 - AI - Normal - Cross Slash - Step
 
 function scr_MKSS_Enemy_Andromeda1_AI_Normal_CrossSlash_Step()
 {
