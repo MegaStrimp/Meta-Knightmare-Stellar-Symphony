@@ -244,7 +244,7 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_StarShot_Step()
 					angle = point_direction(x,y,obj_Player.x,obj_Player.y);
 					
 					canBeParried = true;
-					parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryCannonball"];
+					parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryAndromedaChargeShot"];
 				}
 				
 				armLTOffsetY = 3;
