@@ -35,8 +35,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Giant Sword",
-    "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Stage Bosses/Andromeda 1/Attacks/Giant Sword.yy",
+    "name":"Sprites",
+    "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Stage Bosses/Andromeda 1/Attacks/Giant Sword/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

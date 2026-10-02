@@ -62,6 +62,7 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_GiantSlash_Step()
 		
 		#region Rapid Slash Variables
 		slash = -1;
+		slashTimes = 2;
 		
 		yStart = ystart;
 		yTarget = 192;
@@ -175,7 +176,8 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_GiantSlash_Step()
 					image_index = 0;
 					
 					canBeParried = true;
-					parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryAndromedaGiantSword1"];
+					if (other.slashTimes > 1) parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryAndromedaGiantSword1"];
+					else parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryAndromedaGiantSword2"];
 				}
 				
 				attackStateTimer[attackState] = attackStateTimerMax[attackState];

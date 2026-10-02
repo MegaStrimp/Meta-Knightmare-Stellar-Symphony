@@ -11,6 +11,8 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_Setup(targetIsBoss = true)
 	grav = .12;
 	
 	gravLimit = 4;
+	
+	prevDefense = defense;
 	#endregion
 	
 	#region Gameplay Variables
@@ -133,6 +135,7 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_Setup(targetIsBoss = true)
 	enemyAIStep = enemyAIStepIdle;
 	enemyAnimationEnd = scr_MKSS_Enemy_Andromeda1_AI_Normal_AnimationEnd;
 	enemyDraw = scr_MKSS_Enemy_Andromeda1_Normal_Draw;
+	enemyStunStep = scr_MKSS_Enemy_Andromeda1_AI_Normal_Stun_Step;
 	#endregion
 	
 	#region Palette Variables

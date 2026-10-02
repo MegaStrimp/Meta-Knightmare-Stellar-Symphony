@@ -40,6 +40,8 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryAndromedaGiantSword1(playerInde
 			
 			canBeParried = false;
 			
+			owner.slashTimes--;
+			
 			with (owner)
 			{
 				hsp = -2 * dirX;

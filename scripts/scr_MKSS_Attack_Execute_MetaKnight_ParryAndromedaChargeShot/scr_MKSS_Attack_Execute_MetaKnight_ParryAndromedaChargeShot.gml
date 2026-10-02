@@ -47,7 +47,7 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryAndromedaChargeShot(playerIndex
 				scr_MKSS_Attack_Andromeda1_ParryProjectile_Setup();
 				angle = startAngle;
 				launchTimer += 6 * i;
-				target = currentParriedObject.owner
+				target = currentParriedObject.owner;
 			}
 			
 			startAngle += angleAmount * obj_Player.dirX;

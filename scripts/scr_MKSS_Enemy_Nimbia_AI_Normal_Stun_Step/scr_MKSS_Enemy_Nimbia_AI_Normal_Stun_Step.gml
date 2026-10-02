@@ -36,7 +36,7 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_Stun_Step()
 			sprite_index = spriteSet.sprIdle;
 			image_index = 0;
 			
-			scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_GigantEdge_AI_Normal_Idle_Step);
+			scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_Nimbia_AI_Normal_Idle_Step);
 		}
 		#endregion
 		
