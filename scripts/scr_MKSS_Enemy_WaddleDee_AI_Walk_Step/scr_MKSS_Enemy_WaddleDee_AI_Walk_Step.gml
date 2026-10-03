@@ -99,8 +99,8 @@ function scr_MKSS_Enemy_WaddleDee_AI_Walk_Step()
 						
 						scr_Camera_SetScreenshake(4);
 						
-						script_execute(enemyGetHit,id,floor(MKSS_Base_EnemyHP_Miniboss / 15),1,90 - (45 * sign(x - other.x)),deeOwner,other.speedMultFinal);
 						script_execute(other.enemyGetHit,other,floor(MKSS_Base_EnemyHP_Fodder / 2),1,90 - (45 * sign(other.x - x)),deeOwner,other.speedMultFinal);
+						script_execute(enemyGetHit,id,floor(MKSS_Base_EnemyHP_Miniboss / 15),1,90 - (45 * sign(x - other.x)),deeOwner,other.speedMultFinal);
 					}
 				}
 			}

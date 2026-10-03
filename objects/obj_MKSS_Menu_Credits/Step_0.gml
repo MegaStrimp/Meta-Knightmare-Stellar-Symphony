@@ -14,7 +14,7 @@ if (scrollTimer != -1)
 	scrollTimer = max(scrollTimer - speedMultFinal,0);
 	if (scrollTimer == 0)
 	{
-		yScroll -= speedMultFinal;
+		yScroll -= 1;
 	
 		scrollTimer = scrollTimerMax;
 	}
@@ -26,9 +26,9 @@ if (canSelect)
 {
 	if ((input_check_pressed("B",playerNum)) or (keyboard_check_pressed(vk_escape)) or ((scr_MouseIsInbetween(4,144,43,156)) and (mouse_check_button_pressed(mb_left))))
 	{
-		scr_PlaySfx(snd_KSW_ButtonNo);
+		scr_PlaySfx(snd_MKSS_ButtonNo);
 		
-		scr_GoToRoom(rm_KSW_Menu_TitleScreen,true);
+		scr_GoToRoom(rm_MKSS_Menu_TitleScreen,true);
 	}
 	
 	#region Exit Timer
@@ -37,7 +37,7 @@ if (canSelect)
 		exitTimer = max(exitTimer - speedMultFinal,0);
 		if (exitTimer == 0)
 		{
-			scr_GoToRoom(rm_KSW_Menu_TitleScreen,true);
+			scr_GoToRoom(rm_MKSS_Menu_TitleScreen,true);
 		
 			exitTimer = -1;
 		}

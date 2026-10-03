@@ -15,8 +15,8 @@ function scr_MKSS_LoadData(file,importFile = false)
 	#region Player Status
 	for (var i = 0; i < global.maxPlayers; i++)
 	{
-		global.playerSprayPaint[i] = ini_read_real("playerStatus","sprayPaint_" + string(i),global.MKSS_SprayPaintIDs[? "meta"]);
-		global.MKSS_PlayerFamiliar[i] = ini_read_real("playerStatus","familiar_" + string(i),global.MKSS_FamiliarIDs[? "none"]);
+		global.playerSprayPaint[i] = ini_read_real("playerStatus","sprayPaint_" + string(i),global.MKSS_SprayPaintIDs[? "meta"]) ?? global.MKSS_SprayPaintIDs[? "meta"];
+		global.MKSS_PlayerFamiliar[i] = ini_read_real("playerStatus","familiar_" + string(i),global.MKSS_FamiliarIDs[? "none"]) ?? global.MKSS_FamiliarIDs[? "none"];
 	}
 	#endregion
 	
@@ -81,6 +81,18 @@ function scr_MKSS_LoadData(file,importFile = false)
 		if (global.MKSS_FamiliarList[i].isDefault) familiarIsUnlocked = true;
 		
 		global.MKSS_FamiliarList[i].isUnlocked = familiarIsUnlocked;
+	}
+	#endregion
+	
+	#region Cursor Status
+	for (var i = 0; i < ds_map_size(global.MKSS_CursorIDs); i++)
+	{
+		var cursorID = global.MKSS_CursorList[i].ID;
+		
+		var cursorIsUnlocked = ini_read_real("cursorStatus",string(cursorID) + "_IsUnlocked",false);
+		if (global.MKSS_CursorList[i].isDefault) cursorIsUnlocked = true;
+		
+		global.MKSS_CursorList[i].isUnlocked = cursorIsUnlocked;
 	}
 	#endregion
 	

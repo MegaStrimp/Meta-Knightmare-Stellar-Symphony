@@ -620,6 +620,60 @@ function scr_MKSS_Enemy_Init_Set()
 	});
 	#endregion
 	
+	#region Searches
+	var targetMappedID = scr_MKSS_Enemy_Init_Add("searches","Searches");
+	
+	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
+	{
+		sprIdle: spr_MKSS_Enemy_Searches_Base_Idle,
+		sprCharge: spr_MKSS_Enemy_Searches_Base_Charge,
+		sprCharge_Flash: spr_MKSS_Enemy_Searches_Base_Charge_Flash,
+		sprCharge_Explode: spr_MKSS_Enemy_Searches_Base_Charge_Explode,
+		
+		sprHurt1: spr_MKSS_Enemy_Searches_Base_Hurt1,
+		
+	    sprHurtList:
+		[
+	        [
+				spr_MKSS_Enemy_Searches_Base_Hurt1,
+				1
+			]
+	    ],
+		
+		maskIndex: spr_16x16Mask
+	});
+	#endregion
+	
+	#region Sparky
+	var targetMappedID = scr_MKSS_Enemy_Init_Add("sparky","Sparky");
+	
+	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
+	{
+		sprIdle: spr_MKSS_Enemy_Sparky_Base_Idle,
+		sprJump: spr_MKSS_Enemy_Sparky_Base_Jump,
+		sprFall: spr_MKSS_Enemy_Sparky_Base_Fall,
+		sprAttackReady: spr_MKSS_Enemy_Sparky_Base_AttackReady,
+		sprAttack: spr_MKSS_Enemy_Sparky_Base_Attack,
+		
+		sprHurt1: spr_MKSS_Enemy_Sparky_Base_Hurt1,
+		sprHurt2: spr_MKSS_Enemy_Sparky_Base_Hurt2,
+		
+	    sprHurtList:
+		[
+	        [
+				spr_MKSS_Enemy_Sparky_Base_Hurt1,
+				1
+			],
+	        [
+				spr_MKSS_Enemy_Sparky_Base_Hurt2,
+				1
+			]
+	    ],
+		
+		maskIndex: spr_16x16Mask
+	});
+	#endregion
+	
 	#region Chunky Dee
 	var targetMappedID = scr_MKSS_Enemy_Init_Add("chunkyDee","Chunky Dee");
 	

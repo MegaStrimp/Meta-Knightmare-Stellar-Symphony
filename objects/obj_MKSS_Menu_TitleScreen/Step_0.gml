@@ -137,7 +137,7 @@ if (!global.pauseFinal)
 				var mappedButtonID = global.MKSS_ButtonIDs[? "discord"];
 				scr_UI_Button_CreateFromList(mappedButtonID,77,miscButtonY,depth - 1,global.MKSS_ButtonList[mappedButtonID]);
 				
-				var mappedButtonID = global.MKSS_ButtonIDs[? "twitter"];
+				var mappedButtonID = global.MKSS_ButtonIDs[? "credits"];
 				scr_UI_Button_CreateFromList(mappedButtonID,119,miscButtonY,depth - 1,global.MKSS_ButtonList[mappedButtonID]);
 				
 				var mappedButtonID = global.MKSS_ButtonIDs[? "github"];

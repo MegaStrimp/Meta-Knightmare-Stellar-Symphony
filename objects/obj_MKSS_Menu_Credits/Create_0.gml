@@ -10,9 +10,9 @@ creditsNames[i] = "";
 i += 1;
 creditsNames[i] = "";
 i += 1;
-creditsNames[i] = "Kirby";
+creditsNames[i] = "Meta Knightmare";
 i += 1;
-creditsNames[i] = "   Soft and Wet";
+creditsNames[i] = "   Stellar Symphony";
 i += 1;
 creditsNames[i] = "";
 i += 1;
@@ -209,4 +209,13 @@ scrollTimer = scrollTimerMax;
 
 exitTimer = ((((array_length(creditsNames) + 2) * 16) + global.gameHeight) * scrollTimerMax);
 #endregion
+#endregion
+
+#region Create Background
+if (!instance_exists(obj_MKSS_Surface_Space)) instance_create_depth(0,0,0,obj_MKSS_Surface_Space);
+
+with (instance_create_depth(0,0,depth + 100,obj_MKSS_SurfaceDrawer))
+{
+	targetObject = obj_MKSS_Surface_Space;
+}
 #endregion

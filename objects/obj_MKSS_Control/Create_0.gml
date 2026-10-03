@@ -18,6 +18,7 @@ scr_MKSS_Dialogue_Init_Set();
 scr_MKSS_UI_Button_Init_Set();
 scr_MKSS_UI_Notif_Init_Set();
 scr_MKSS_UI_ScoreBonus_Init_Set();
+scr_MKSS_UI_Cursor_Init_Set();
 scr_MKSS_Music_Init_Set();
 scr_MKSS_Stage_Init_Set();
 
@@ -87,6 +88,8 @@ global.MKSS_CurrentDecalPalette = -1;
 playerMetaQuickTimerMax = 30;
 
 global.MKSS_CurrentMassDestructionScript = -1;
+
+global.MKSS_AvailableCursors = ds_list_create();
 
 global.MKSS_Tutorial_FirstUpgrade = false;
 

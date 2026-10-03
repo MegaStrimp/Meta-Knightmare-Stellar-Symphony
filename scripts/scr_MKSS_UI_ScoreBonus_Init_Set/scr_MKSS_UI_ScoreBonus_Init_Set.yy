@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_MKSS_UI_ScoreBonus_Init_Set",
   "parent":{
-    "name":"Init",
-    "path":"folders/Meta Knightmare Stellar Symphony/UI/Score Bonus/Scripts/Init.yy",
+    "name":"Initialization",
+    "path":"folders/Meta Knightmare Stellar Symphony/UI/Score Bonus/Scripts/Initialization.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

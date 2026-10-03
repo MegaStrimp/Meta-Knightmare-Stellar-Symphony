@@ -92,7 +92,19 @@ function scr_MKSS_SaveData(file)
 			}
 		}
 		#endregion
-	
+		
+		#region Cursor Status
+		for (var i = 0; i < ds_map_size(global.MKSS_CursorIDs); i++)
+		{
+			var cursorID = global.MKSS_CursorList[i].ID;
+			
+			if (global.MKSS_CursorList[i].isUnlocked)
+			{
+				ini_write_real("cursorStatus",string(cursorID) + "_IsUnlocked",global.MKSS_CursorList[i].isUnlocked);
+			}
+		}
+		#endregion
+		
 		#region Stage Status
 		for (var i = 0; i < ds_map_size(global.MKSS_StageIDs); i++)
 		{

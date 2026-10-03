@@ -2,8 +2,7 @@
 
 #region Variables
 var canSelect = true;
-//if ((global.pauseFinal) or
-//(instance_exists(obj_Transition))) canSelect = false;
+if (targetKey != "") canSelect = false;
 
 var xx = camera_get_view_x(mainView);
 var yy = camera_get_view_y(mainView);

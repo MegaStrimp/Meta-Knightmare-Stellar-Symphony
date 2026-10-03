@@ -10,7 +10,6 @@ function scr_MKSS_LoadConfig(file)
 	global.musicVolume = ini_read_real("options","musicVolume",1);
 	global.soundVolume = ini_read_real("options","soundVolume",1);
 	global.fullscreen = ini_read_real("options","fullscreen",false);
-	
 	if (global.isOpera)
 	{
 		global.windowScaleTarget = 2
@@ -19,6 +18,7 @@ function scr_MKSS_LoadConfig(file)
 	{
 		global.windowScaleTarget = ini_read_real("options","windowScale",floor(scr_Screen_ScaleToScreenSize() / 1.2));
 	}
+	global.MKSS_CurrentCursorID = ini_read_real("options","cursor",global.MKSS_CursorIDs[? "none"]) ?? global.MKSS_CursorIDs[? "none"];
 	
 	ini_close();
 }

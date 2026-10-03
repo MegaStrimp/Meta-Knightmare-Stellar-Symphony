@@ -4,7 +4,7 @@ function scr_MKSS_Enemy_GetStunned(targetEnemy)
 {
 	with (targetEnemy)
 	{
-		if (enemyAIStep != stunRevertAI)
+		if (enemyAIStep != scr_MKSS_Enemy_AI_Stun_Step)
 		{
 			#region Variables
 			canHaveKnockback = true;
