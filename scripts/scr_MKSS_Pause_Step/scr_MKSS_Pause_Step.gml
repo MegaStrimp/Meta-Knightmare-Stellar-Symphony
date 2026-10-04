@@ -92,7 +92,7 @@ function scr_MKSS_Pause_Step()
 			if (MKSS_GamePause_DecalStarTimer == 0)
 			{
 				var parLength = irandom_range(0,160);
-				scr_MKSS_ParticleSet_PauseStars(90 + lengthdir_x(parLength,125),170 + lengthdir_x(parLength,125),45);
+				scr_MKSS_ParticleSet_PauseStars(90 + lengthdir_x(parLength,125),170 + lengthdir_y(parLength,125),45);
 				
 				MKSS_GamePause_DecalStarTimer = MKSS_GamePause_DecalStarTimerMax;
 			}
@@ -141,7 +141,7 @@ function scr_MKSS_Pause_Step()
 	#region Upgrades Transition
 	for (var i = 0; i < MKSS_GamePause_CircleCount; i++)
 	{
-		MKSS_GamePause_CircleAngle[i] += .5;
+		MKSS_GamePause_CircleAngle[i] = (MKSS_GamePause_CircleAngle[i] + .5) % 360;
 	}
 	
 	MKSS_GamePause_CircleZoom = lerp(MKSS_GamePause_CircleZoom,MKSS_GamePause_CircleZoomTarget,.1);

@@ -31,6 +31,20 @@ if (canSelect)
 		scr_GoToRoom(rm_MKSS_Menu_TitleScreen,true);
 	}
 	
+	#region End Timer
+	if (endTimer != -1)
+	{
+		endTimer = max(endTimer - speedMultFinal,0);
+		if (endTimer == 0)
+		{
+			exitTimer = exitTimerMax;
+			scrollTimer = -1;
+		
+			endTimer = -1;
+		}
+	}
+	#endregion
+	
 	#region Exit Timer
 	if (exitTimer != -1)
 	{

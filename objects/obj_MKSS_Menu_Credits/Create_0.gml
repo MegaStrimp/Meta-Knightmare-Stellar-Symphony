@@ -1,5 +1,9 @@
 ///@description Create
 
+#region Music
+scr_MKSS_Music_Play(global.MKSS_MusicIDs[? "credits"]);
+#endregion
+
 #region Credits Names
 var i = 0;
 creditsNames[i] = "    The Credits";
@@ -26,7 +30,23 @@ creditsNames[i] = "  Chief Programmer";
 i += 1;
 creditsNames[i] = "";
 i += 1;
-creditsNames[i] = "      [spr_KSW_Menu_Credits_Icon_Strimp] Strimp";
+creditsNames[i] = "      [spr_MKSS_Menu_Credits_Icon_Strimp] Strimp";
+i += 1;
+creditsNames[i] = "";
+i += 1;
+creditsNames[i] = "";
+i += 1;
+creditsNames[i] = "";
+i += 1;
+creditsNames[i] = " Programmers";
+i += 1;
+creditsNames[i] = "";
+i += 1;
+creditsNames[i] = "       [spr_MKSS_Menu_Credits_Icon_WaddleDev] WaddleDev";
+i += 1;
+creditsNames[i] = "";
+i += 1;
+creditsNames[i] = "       [spr_MKSS_Menu_Credits_Icon_Jammy] Jammy";
 i += 1;
 creditsNames[i] = "";
 i += 1;
@@ -38,51 +58,35 @@ creditsNames[i] = " Art Designers";
 i += 1;
 creditsNames[i] = "";
 i += 1;
-creditsNames[i] = "       [spr_KSW_Menu_Credits_Icon_Subsandwich] Subsandwich";
+creditsNames[i] = "       [spr_MKSS_Menu_Credits_Icon_Subsandwich] Subsandwich";
 i += 1;
 creditsNames[i] = "";
 i += 1;
-creditsNames[i] = "       [spr_KSW_Menu_Credits_Icon_SideLineGames] SideLineGames";
+creditsNames[i] = "       [spr_MKSS_Menu_Credits_Icon_SideLineGames] SideLineGames";
 i += 1;
 creditsNames[i] = "";
 i += 1;
-creditsNames[i] = "       [spr_KSW_Menu_Credits_Icon_Diamond] Diamond";
+creditsNames[i] = "       [spr_MKSS_Menu_Credits_Icon_Diamond] Diamond";
 i += 1;
 creditsNames[i] = "";
 i += 1;
-creditsNames[i] = "       [spr_KSW_Menu_Credits_Icon_BlooBird] BlooBird";
+creditsNames[i] = "       [spr_MKSS_Menu_Credits_Icon_BlooBird] BlooBird";
 i += 1;
 creditsNames[i] = "";
 i += 1;
-creditsNames[i] = "       [spr_KSW_Menu_Credits_Icon_SouprSpookr2020] SouprSpookr2020";
+creditsNames[i] = "       [spr_MKSS_Menu_Credits_Icon_Maxuwl] Maxuwl";
 i += 1;
 creditsNames[i] = "";
 i += 1;
-creditsNames[i] = "       [spr_KSW_Menu_Credits_Icon_Elfi] Elfi";
+creditsNames[i] = "       [spr_MKSS_Menu_Credits_Icon_Zuperzach] zuperzach";
 i += 1;
 creditsNames[i] = "";
 i += 1;
-creditsNames[i] = "       [spr_KSW_Menu_Credits_Icon_Zuperzach] zuperzach";
+creditsNames[i] = "       [spr_MKSS_Menu_Credits_Icon_Jaozin] Jaozin";
 i += 1;
 creditsNames[i] = "";
 i += 1;
-creditsNames[i] = "       [spr_KSW_Menu_Credits_Icon_Jaozin] Jaozin";
-i += 1;
-creditsNames[i] = "";
-i += 1;
-creditsNames[i] = "";
-i += 1;
-creditsNames[i] = "";
-i += 1;
-creditsNames[i] = " Fish Managers";
-i += 1;
-creditsNames[i] = "";
-i += 1;
-creditsNames[i] = "       [spr_KSW_Menu_Credits_Icon_WaddleDev] WaddleDev";
-i += 1;
-creditsNames[i] = "";
-i += 1;
-creditsNames[i] = "       [spr_KSW_Menu_Credits_Icon_Supergamerguy] Supergamerguy";
+creditsNames[i] = "       [spr_MKSS_Menu_Credits_Icon_GoraMonk] GoraMonk";
 i += 1;
 creditsNames[i] = "";
 i += 1;
@@ -90,11 +94,25 @@ creditsNames[i] = "";
 i += 1;
 creditsNames[i] = "";
 i += 1;
-creditsNames[i] = " Wiki Moderator";
+creditsNames[i] = " Side Writer";
 i += 1;
 creditsNames[i] = "";
 i += 1;
-creditsNames[i] = "       [spr_KSW_Menu_Credits_Icon_Herbissan] Herbissan";
+creditsNames[i] = "       [spr_MKSS_Menu_Credits_Icon_ShadowKingSonic] ShadowKingSonic";
+i += 1;
+creditsNames[i] = "";
+i += 1;
+creditsNames[i] = "";
+i += 1;
+creditsNames[i] = "";
+i += 1;
+creditsNames[i] = "  Wiki Moderator";
+i += 1;
+creditsNames[i] = " Tile Manager";
+i += 1;
+creditsNames[i] = "";
+i += 1;
+creditsNames[i] = "       [spr_MKSS_Menu_Credits_Icon_Herbissan] Herbissan";
 i += 1;
 creditsNames[i] = "";
 i += 1;
@@ -106,10 +124,18 @@ creditsNames[i] = " Music";
 i += 1;
 creditsNames[i] = "";
 i += 1;
-creditsNames[i] = "  Go Beyond";
-i += 1;
-creditsNames[i] = "     Nico Bellisario"; //STRIMPTODO Dynamic
-i += 1;
+for (var h = 0; h < ds_map_size(global.MKSS_MusicIDs); h++)
+{
+	if (global.MKSS_MusicList[h].isUnlocked)
+	{
+		creditsNames[i] = "  " + string(global.MKSS_MusicList[h].name);
+		i += 1;
+		creditsNames[i] = "     " + string(global.MKSS_MusicList[h].author);
+		i += 1;
+		creditsNames[i] = "";
+		i += 1;
+	}
+}
 creditsNames[i] = "";
 i += 1;
 creditsNames[i] = "";
@@ -124,6 +150,18 @@ creditsNames[i] = "  Kirby";
 i += 1;
 creditsNames[i] = "";
 i += 1;
+creditsNames[i] = "  Binding of Isaac Repentance";
+i += 1;
+creditsNames[i] = "";
+i += 1;
+creditsNames[i] = "  yamalpaca";
+i += 1;
+creditsNames[i] = "";
+i += 1;
+creditsNames[i] = "  Terraria";
+i += 1;
+creditsNames[i] = "";
+i += 1;
 creditsNames[i] = "";
 i += 1;
 creditsNames[i] = "";
@@ -133,6 +171,10 @@ i += 1;
 creditsNames[i] = "";
 i += 1;
 creditsNames[i] = "       Derpyroot";
+i += 1;
+creditsNames[i] = "";
+i += 1;
+creditsNames[i] = "       Shinton";
 i += 1;
 creditsNames[i] = "";
 i += 1;
@@ -207,7 +249,10 @@ yScroll = 0;
 scrollTimerMax = 4;
 scrollTimer = scrollTimerMax;
 
-exitTimer = ((((array_length(creditsNames) + 2) * 16) + global.gameHeight) * scrollTimerMax);
+endTimer = ((((array_length(creditsNames) + 2) * 16)) * scrollTimerMax);
+
+exitTimer = -1;
+exitTimerMax = 150;
 #endregion
 #endregion
 
