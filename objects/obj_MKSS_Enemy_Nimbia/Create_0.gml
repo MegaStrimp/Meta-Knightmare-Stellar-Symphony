@@ -6,7 +6,8 @@ event_inherited();
 
 #region Gameplay Variables
 enemyID = global.MKSS_EnemyIDs[? "nimbia"];
-hp = MKSS_Base_EnemyHP_Boss;
+//hp = MKSS_Base_EnemyHP_Boss;
+hp = 1
 points = MKSS_Base_EnemyPoints_Boss;
 metaPointsOnDeath = MKSS_Base_EnemyMetaPoints_Boss;
 isBoss = true;

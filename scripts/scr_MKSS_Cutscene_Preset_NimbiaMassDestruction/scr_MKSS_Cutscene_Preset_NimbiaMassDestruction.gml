@@ -24,17 +24,49 @@ function scr_MKSS_Cutscene_Preset_NimbiaMassDestruction()
 			global.canGamePause = false;
 			global.MKSS_CutsceneStopMovement = true;
 			
-			//with (obj_MKSS_Player)
-			//{
-			//	scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_SOMETHING_Step);
-			//}
+			with (obj_MKSS_Player)
+			{
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_NimbiaMDBuzzcutSpam_Step);
+			}
 			
-			//with (obj_MKSS_Enemy_Nimbia)
-			//{
-			//	scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_obj_MKSS_Enemy_Nimbia_AI_Cutscene_SOMETHING_Step);
-			//}
+			with (obj_MKSS_Enemy_Nimbia)
+			{
+				scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_Nimbia_AI_Cutscene_MDBuzzsawBlock_Step);
+			}
 			
-			phaseTimer = 60;
+			phaseTimer = 120;
+		},
+		function()
+		{
+			with (obj_MKSS_Player)
+			{
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_NimbiaMDGalaxiaCharge_Step);
+			}
+			phaseTimer = 120
+		},
+		function()
+		{
+			with (obj_MKSS_Enemy_Nimbia)
+			{
+				scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_Nimbia_AI_Cutscene_MDLostClash_Step)
+			}
+			phaseTimer = 30
+		},
+		function()
+		{
+			with (obj_MKSS_Player)
+			{
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_NimbiaMDDownKick_Step)
+			}
+			phaseTimer = 120
+		},
+		function()
+		{
+			with (obj_MKSS_Player)
+			{
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Normal_Step)
+			}
+			phaseTimer = 1
 		},
 		function()
 		{

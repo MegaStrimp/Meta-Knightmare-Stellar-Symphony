@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_MKSS_Player_MetaKnight_State_Cutscene_StarlessMarxMDSlash_Step",
   "parent":{
-    "name":"States",
-    "path":"folders/Meta Knightmare Stellar Symphony/Player/Characters/Meta Knight/Scripts/States.yy",
+    "name":"Starless Marx",
+    "path":"folders/Meta Knightmare Stellar Symphony/Player/Characters/Meta Knight/Scripts/States/Cutscene/Mass Destruction/Starless Marx.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_MKSS_Enemy_Nimbia_AI_Cutscene_MDLostClash_Step",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_MKSS_Enemy_Nimbia_AI_Cutscene_MDLostClash_Step",
+  "parent":{
+    "name":"Mass Destruction",
+    "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Stage Bosses/Nimbia/Scripts/AI/Normal/Mass Destruction.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
