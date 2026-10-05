@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"4cbb6e47-553a-4dda-8d2f-d3f61217dc36","name":"4cbb6e47-553a-4dda-8d2f-d3f61217dc36","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0670f19c-883f-4c34-991f-28429a859b07","name":"0670f19c-883f-4c34-991f-28429a859b07","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":10,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"7749ff5d-20f4-4055-bd09-b28fc1cf311c","blendMode":0,"displayName":"default","isLocked":false,"name":"7749ff5d-20f4-4055-bd09-b28fc1cf311c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"57d05cbd-4769-42c2-962c-44625309b385","blendMode":0,"displayName":"default","isLocked":false,"name":"57d05cbd-4769-42c2-962c-44625309b385","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_MKSS_Attack_ChasseEmee_ClawArm",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4cbb6e47-553a-4dda-8d2f-d3f61217dc36","path":"sprites/spr_MKSS_Attack_ChasseEmee_ClawArm/spr_MKSS_Attack_ChasseEmee_ClawArm.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"75da49ff-fb0c-4ad7-999e-c29df478f897","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0670f19c-883f-4c34-991f-28429a859b07","path":"sprites/spr_MKSS_Attack_ChasseEmee_ClawArm/spr_MKSS_Attack_ChasseEmee_ClawArm.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"27760903-4a9f-4222-b758-b8de5a951f39","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

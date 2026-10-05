@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"98ea8e08-726a-4692-9d22-b5b24799473f","name":"98ea8e08-726a-4692-9d22-b5b24799473f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f40df7ab-5312-4347-aa58-93ebe800cb7e","name":"f40df7ab-5312-4347-aa58-93ebe800cb7e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":64,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"8e10e0ad-ce21-43c9-ac42-6ca981f79323","blendMode":0,"displayName":"default","isLocked":false,"name":"8e10e0ad-ce21-43c9-ac42-6ca981f79323","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"85e3f056-55ba-440a-a866-a02a0e9fe765","blendMode":0,"displayName":"default","isLocked":false,"name":"85e3f056-55ba-440a-a866-a02a0e9fe765","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_MKSS_Attack_StarlessMarx_ShadowTexture",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"98ea8e08-726a-4692-9d22-b5b24799473f","path":"sprites/spr_MKSS_Attack_StarlessMarx_ShadowTexture/spr_MKSS_Attack_StarlessMarx_ShadowTexture.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ffd04b96-aa26-4692-86dd-63a499cd7031","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f40df7ab-5312-4347-aa58-93ebe800cb7e","path":"sprites/spr_MKSS_Attack_StarlessMarx_ShadowTexture/spr_MKSS_Attack_StarlessMarx_ShadowTexture.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"29931539-584f-47e6-ab3c-994d57c83bab","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

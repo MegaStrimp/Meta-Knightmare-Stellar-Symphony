@@ -12,16 +12,16 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"6eb91bf5-1875-4bdf-b235-1ca58bac2c5c","name":"6eb91bf5-1875-4bdf-b235-1ca58bac2c5c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"760be831-3b6a-43d5-a0bf-483ef4493c7d","name":"760be831-3b6a-43d5-a0bf-483ef4493c7d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"b3670b3f-9fb3-4df9-b65a-ed9c622b99bb","name":"b3670b3f-9fb3-4df9-b65a-ed9c622b99bb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bbdf1be6-eef9-480d-b928-383316625e3a","name":"bbdf1be6-eef9-480d-b928-383316625e3a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"fa163694-0045-483b-9759-5b8ca2649fa6","name":"fa163694-0045-483b-9759-5b8ca2649fa6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"725c3106-7d96-44df-8f87-b74ca9b77a76","name":"725c3106-7d96-44df-8f87-b74ca9b77a76","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":8,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"6abac355-9160-45e9-abfe-55bea1e89643","blendMode":0,"displayName":"default","isLocked":false,"name":"6abac355-9160-45e9-abfe-55bea1e89643","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"23d33f24-652d-4c80-8876-c5f79ca503f5","blendMode":0,"displayName":"default","isLocked":false,"name":"23d33f24-652d-4c80-8876-c5f79ca503f5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_MKSS_Attack_ChasseEmee_BigCannonball_Background",
   "nineSlice":null,
@@ -51,7 +51,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":32.0,
+    "length":3.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -71,14 +71,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6eb91bf5-1875-4bdf-b235-1ca58bac2c5c","path":"sprites/spr_MKSS_Attack_ChasseEmee_BigCannonball_Background/spr_MKSS_Attack_ChasseEmee_BigCannonball_Background.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"1ce5b9c5-b84d-43db-be15-59ecdd5bf08d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bbdf1be6-eef9-480d-b928-383316625e3a","path":"sprites/spr_MKSS_Attack_ChasseEmee_BigCannonball_Background/spr_MKSS_Attack_ChasseEmee_BigCannonball_Background.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c1f5acc9-71d4-431a-83b6-7c40980e49cc","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"760be831-3b6a-43d5-a0bf-483ef4493c7d","path":"sprites/spr_MKSS_Attack_ChasseEmee_BigCannonball_Background/spr_MKSS_Attack_ChasseEmee_BigCannonball_Background.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"176bf170-26fd-48df-bdba-8436d55d163c","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fa163694-0045-483b-9759-5b8ca2649fa6","path":"sprites/spr_MKSS_Attack_ChasseEmee_BigCannonball_Background/spr_MKSS_Attack_ChasseEmee_BigCannonball_Background.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"89ff6828-0384-48ee-878e-9e9a08357274","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b3670b3f-9fb3-4df9-b65a-ed9c622b99bb","path":"sprites/spr_MKSS_Attack_ChasseEmee_BigCannonball_Background/spr_MKSS_Attack_ChasseEmee_BigCannonball_Background.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0a7cab2d-f82a-4baa-8e8c-14e7da7bebcd","IsCreationKey":false,"Key":2.0,"Length":30.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"725c3106-7d96-44df-8f87-b74ca9b77a76","path":"sprites/spr_MKSS_Attack_ChasseEmee_BigCannonball_Background/spr_MKSS_Attack_ChasseEmee_BigCannonball_Background.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f6bf13a4-bef3-4748-88ac-f0805c2d5c78","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

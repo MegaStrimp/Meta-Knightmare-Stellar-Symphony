@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"a076819b-77ab-482c-b7d9-326ea14c7f06","name":"a076819b-77ab-482c-b7d9-326ea14c7f06","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"625e9122-6b3a-4c72-a2f9-bc12b3d6ddc2","name":"625e9122-6b3a-4c72-a2f9-bc12b3d6ddc2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":36,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"7d32d728-b65a-4ecd-a96d-dbabfb66e073","blendMode":0,"displayName":"default","isLocked":false,"name":"7d32d728-b65a-4ecd-a96d-dbabfb66e073","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"f67b5a77-0873-410f-8ef2-3cd0ce7b01c7","blendMode":0,"displayName":"default","isLocked":false,"name":"f67b5a77-0873-410f-8ef2-3cd0ce7b01c7","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_MKSS_Attack_ChasseEmee_BigCannonball",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a076819b-77ab-482c-b7d9-326ea14c7f06","path":"sprites/spr_MKSS_Attack_ChasseEmee_BigCannonball/spr_MKSS_Attack_ChasseEmee_BigCannonball.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"95cedb7c-6b67-457c-9768-eb88e58ddeaa","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"625e9122-6b3a-4c72-a2f9-bc12b3d6ddc2","path":"sprites/spr_MKSS_Attack_ChasseEmee_BigCannonball/spr_MKSS_Attack_ChasseEmee_BigCannonball.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"95577aec-e442-40f5-964b-82e25901dc88","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
