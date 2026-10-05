@@ -12,6 +12,8 @@ speedMult = 1;
 speedMultFinal = 1;
 localPause = false;
 
+trackCheck = false;
+
 scorePoints = 10;
 
 trailTimerMax = 15;

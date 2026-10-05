@@ -232,8 +232,8 @@
   ],
   "name":"rm_MKSS_IceCreamIsland_1",
   "parent":{
-    "name":"Ice Cream Island",
-    "path":"folders/Meta Knightmare Stellar Symphony/Stages/Stages/Main/Ice Cream Island.yy",
+    "name":"Rooms",
+    "path":"folders/Meta Knightmare Stellar Symphony/Stages/Stages/Main/Ice Cream Island/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

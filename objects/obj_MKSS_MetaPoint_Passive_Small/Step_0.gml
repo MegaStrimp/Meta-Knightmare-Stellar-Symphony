@@ -22,6 +22,8 @@ if (!localPause)
 			
 			scr_MKSS_Score_Add(other.scorePoints);
 			
+			scr_StageEntityTracker_Add(other);
+			
 			instance_destroy(other);
 		}
 	}

@@ -64,7 +64,19 @@ if (canSelect)
 					var sfx = scr_PlaySfx(snd_MKSS_Pop);
 					audio_sound_pitch(sfx,random_range(.85,1.15));
 					
-					global.MKSS_Tutorial_FirstUpgrade = false;
+					if (global.MKSS_Tutorial_FirstUpgrade)
+					{
+						with (obj_Player) scr_MKSS_Player_SetTutorialText("",0);
+						
+						scr_Stage_IceCreamIsland_TurnAfternoon();
+						
+						with (instance_create_layer(312,392,"Environment",obj_MKSS_Door))
+						{
+							targetRoom = rm_MKSS_IceCreamIsland_4;
+						}
+						
+						global.MKSS_Tutorial_FirstUpgrade = false;
+					}
 					
 					global.MKSS_PlayerMetaPoints[playerNum] -= currentIndex.price;
 					metaPointsPurchaseTimer = metaPointsPurchaseTimerMax;

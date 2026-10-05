@@ -1,6 +1,6 @@
 ///@description MKSS - Player - Tutorial Text
 
-function scr_MKSS_Player_SetTutorialText(targetText,targetTimer = -1)
+function scr_MKSS_Player_SetTutorialText(targetText = "",targetTimer = -1)
 {
 	tutorialText = targetText;
 	tutorialTextAlpha = 0;

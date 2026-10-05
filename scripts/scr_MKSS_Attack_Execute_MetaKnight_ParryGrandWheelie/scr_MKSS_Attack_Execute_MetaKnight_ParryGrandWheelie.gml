@@ -2,7 +2,6 @@
 
 function scr_MKSS_Attack_Execute_MetaKnight_ParryGrandWheelie(playerIndex,currentParriedObject)
 {
-	show_debug_message(currentParriedObject)
 	with (playerIndex)
 	{
 		attackString = global.MKSS_AttackList[attackIndex].ID;

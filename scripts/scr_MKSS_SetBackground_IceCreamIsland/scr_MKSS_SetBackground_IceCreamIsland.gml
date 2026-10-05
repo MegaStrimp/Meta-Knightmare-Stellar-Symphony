@@ -7,10 +7,10 @@ function scr_MKSS_SetBackground_IceCreamIsland()
 		backgroundAnchor = layer_get_depth(layer_get_id("Background"));
 		
 		var arrayIndex = 0;
-		backgroundLayer[arrayIndex] = layer_create(backgroundAnchor - (arrayIndex + 1));
+		backgroundLayer[arrayIndex] = layer_create(backgroundAnchor - (arrayIndex + 1),"BaseBackground");
 		backgroundIndex[arrayIndex] = layer_background_create(backgroundLayer[arrayIndex],bg_MKSS_IceCreamIsland);
 		arrayIndex += 1;
-		backgroundLayer[arrayIndex] = layer_create(backgroundAnchor - (arrayIndex + 1));
+		backgroundLayer[arrayIndex] = layer_create(backgroundAnchor - (arrayIndex + 1),"Pit");
 		backgroundIndex[arrayIndex] = layer_background_create(backgroundLayer[arrayIndex],bg_MKSS_Pit);
 		layer_background_htiled(backgroundIndex[arrayIndex],true);
 		layer_y(backgroundLayer[arrayIndex],room_height - 32);

@@ -5,6 +5,15 @@ speedMultFinal = global.speedMultGlobal * global.speedMultPlayer * speedMult * g
 localPause = global.pauseFinal;
 #endregion
 
+#region Destroy If Tracked
+if (!trackCheck)
+{
+	scr_StageEntityTracker_Check();
+	
+	trackCheck = true;
+}
+#endregion
+
 #region Character Setup
 if (characterSetup)
 {

@@ -9,8 +9,8 @@ function scr_MKSS_UI_Cursor_Init_Set()
 	
 	#region Spray Paints
 	var targetMappedID = scr_MKSS_UI_Cursor_Init_Add("none","None",-1);
-	global.MKSS_WeaponList[targetMappedID].isDefault = true;
+	global.MKSS_CursorList[targetMappedID].isDefault = true;
 	var targetMappedID = scr_MKSS_UI_Cursor_Init_Add("star","Star",spr_MKSS_UI_Cursor_Star);
-	global.MKSS_WeaponList[targetMappedID].isDefault = true;
+	global.MKSS_CursorList[targetMappedID].isDefault = true;
 	#endregion
 }

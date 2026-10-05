@@ -88,12 +88,12 @@ function scr_MKSS_Cutscene_Preset_IceCreamIslandIntro()
 				valign = fa_middle;
 			}
 			
-			moveCamera = true;
-			
 			phaseTimer = 120;
 		},
 		function()
 		{
+			moveCamera = true;
+			
 			phaseTimer = 240;
 		},
 		function()

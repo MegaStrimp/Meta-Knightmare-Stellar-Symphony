@@ -13,7 +13,7 @@ function scr_MKSS_Upgrade_Init_Set()
 	
 	#region Upgrade Nodes
 	var targetMappedID_Base_Parry = scr_MKSS_Upgrade_Init_Add("Base_Parry",categoryID,61,66);
-	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_Parry,"Parry",["Parry various objects and enemies in [#F8F8F8]green[/color] coloring!\n\n[LTIcon]/[RTIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Base_Parry],100);
+	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_Parry,"Parry",["Parry various objects and enemies in [#F8F8F8]green[/color] coloring!\n\n[LTIcon]/[RTIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Base_Parry],MKSS_Base_UpgradeValue_Parry);
 	
 	var targetMappedID_Base_Counter = scr_MKSS_Upgrade_Init_Add("Base_Counter",categoryID,83,81,targetMappedID_Base_Parry);
 	scr_MKSS_Upgrade_Init_Add_Info(targetMappedID_Base_Counter,"Counter",["Execute the Finisher Attack of your equipped sword after a parry!\n\nSuccessful Parry - [XIcon]"],[spr_MKSS_Menu_Upgrades_Notif_Base_Counter],100);

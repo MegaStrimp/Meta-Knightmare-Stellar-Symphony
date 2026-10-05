@@ -6,6 +6,9 @@ function scr_MKSS_SetBackground_IceCreamAfternoon()
 	{
 		backgroundAnchor = layer_get_depth(layer_get_id("Background"));
 		
+		if (layer_exists("BaseBackground")) layer_destroy("BaseBackground");
+		if (layer_exists("Pit")) layer_destroy("Pit");
+		
 		var arrayIndex = 0;
 		backgroundLayer[arrayIndex] = layer_create(backgroundAnchor - (arrayIndex + 1));
 		backgroundIndex[arrayIndex] = layer_background_create(backgroundLayer[arrayIndex],bg_MKSS_IceCreamAfternoon);

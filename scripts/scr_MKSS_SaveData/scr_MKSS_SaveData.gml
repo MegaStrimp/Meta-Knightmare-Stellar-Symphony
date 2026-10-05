@@ -60,11 +60,8 @@ function scr_MKSS_SaveData(file)
 		
 			if (!global.MKSS_UpgradeList[i].isLesserNode)
 			{
-				if (global.MKSS_UpgradeList[i].isUnlocked)
-				{
-					ini_write_real("upgradeStatus",string(upgradeID) + "_CanBeUnlocked",global.MKSS_UpgradeList[i].canBeUnlocked);
-					ini_write_real("upgradeStatus",string(upgradeID) + "_IsUnlocked",global.MKSS_UpgradeList[i].isUnlocked);
-				}
+				if (global.MKSS_UpgradeList[i].canBeUnlocked) ini_write_real("upgradeStatus",string(upgradeID) + "_CanBeUnlocked",global.MKSS_UpgradeList[i].canBeUnlocked);
+				if (global.MKSS_UpgradeList[i].isUnlocked) ini_write_real("upgradeStatus",string(upgradeID) + "_IsUnlocked",global.MKSS_UpgradeList[i].isUnlocked);
 			}
 		}
 		#endregion
@@ -74,10 +71,7 @@ function scr_MKSS_SaveData(file)
 		{
 			var sprayPaintID = global.MKSS_SprayPaintList[i].ID;
 		
-			if (global.MKSS_SprayPaintList[i].isUnlocked)
-			{
-				ini_write_real("sprayPaintStatus",string(sprayPaintID) + "_IsUnlocked",global.MKSS_SprayPaintList[i].isUnlocked);
-			}
+			if (global.MKSS_SprayPaintList[i].isUnlocked) ini_write_real("sprayPaintStatus",string(sprayPaintID) + "_IsUnlocked",global.MKSS_SprayPaintList[i].isUnlocked);
 		}
 		#endregion
 	
@@ -86,10 +80,7 @@ function scr_MKSS_SaveData(file)
 		{
 			var familiarID = global.MKSS_FamiliarList[i].ID;
 		
-			if (global.MKSS_FamiliarList[i].isUnlocked)
-			{
-				ini_write_real("familiarStatus",string(familiarID) + "_IsUnlocked",global.MKSS_FamiliarList[i].isUnlocked);
-			}
+			if (global.MKSS_FamiliarList[i].isUnlocked) ini_write_real("familiarStatus",string(familiarID) + "_IsUnlocked",global.MKSS_FamiliarList[i].isUnlocked);
 		}
 		#endregion
 		
@@ -98,10 +89,7 @@ function scr_MKSS_SaveData(file)
 		{
 			var cursorID = global.MKSS_CursorList[i].ID;
 			
-			if (global.MKSS_CursorList[i].isUnlocked)
-			{
-				ini_write_real("cursorStatus",string(cursorID) + "_IsUnlocked",global.MKSS_CursorList[i].isUnlocked);
-			}
+			if (global.MKSS_CursorList[i].isUnlocked) ini_write_real("cursorStatus",string(cursorID) + "_IsUnlocked",global.MKSS_CursorList[i].isUnlocked);
 		}
 		#endregion
 		
@@ -110,13 +98,10 @@ function scr_MKSS_SaveData(file)
 		{
 			var stageID = global.MKSS_StageList[i].ID;
 		
-			if (global.MKSS_StageList[i].isUnlocked)
-			{
-				ini_write_real("stageStatus",string(stageID) + "_IsUnlocked",global.MKSS_StageList[i].isUnlocked);
-				ini_write_real("stageStatus",string(stageID) + "_IsBeaten",global.MKSS_StageList[i].isBeaten);
-				ini_write_real("stageStatus",string(stageID) + "_EarnedHighScore",global.MKSS_StageList[i].earnedHighScore);
-				ini_write_real("stageStatus",string(stageID) + "_EarnedMedal",global.MKSS_StageList[i].earnedMedal);
-			}
+			if (global.MKSS_StageList[i].isUnlocked) ini_write_real("stageStatus",string(stageID) + "_IsUnlocked",global.MKSS_StageList[i].isUnlocked);
+			if (global.MKSS_StageList[i].isBeaten) ini_write_real("stageStatus",string(stageID) + "_IsBeaten",global.MKSS_StageList[i].isBeaten);
+			if (global.MKSS_StageList[i].earnedHighScore != 0) ini_write_real("stageStatus",string(stageID) + "_EarnedHighScore",global.MKSS_StageList[i].earnedHighScore);
+			if (global.MKSS_StageList[i].earnedMedal != -1) ini_write_real("stageStatus",string(stageID) + "_EarnedMedal",global.MKSS_StageList[i].earnedMedal);
 		
 			var collectibles = global.MKSS_StageList[i].collectibles;
 		
