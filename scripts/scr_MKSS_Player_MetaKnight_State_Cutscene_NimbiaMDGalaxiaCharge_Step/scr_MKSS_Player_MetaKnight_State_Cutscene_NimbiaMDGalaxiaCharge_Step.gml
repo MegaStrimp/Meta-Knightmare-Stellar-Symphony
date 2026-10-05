@@ -22,8 +22,8 @@ function scr_MKSS_Player_MetaKnight_State_Cutscene_NimbiaMDGalaxiaCharge_Step(){
 		
 		if (chargeTimer == 0)
 		{
-			var targetDir = point_direction(x,y,obj_MKSS_Enemy_Nimbia.x,obj_MKSS_Enemy_Nimbia.y)
-			var chargeSpeed = 15
+			var targetDir = point_direction(x,y,obj_MKSS_Enemy_Nimbia.x,obj_MKSS_Enemy_Nimbia.y-20)
+			var chargeSpeed = 5
 			hsp = lengthdir_x(1,targetDir) * chargeSpeed
 			vsp = lengthdir_y(1,targetDir) * chargeSpeed
 			

@@ -58,7 +58,23 @@ function scr_MKSS_Cutscene_Preset_NimbiaMassDestruction()
 			{
 				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_NimbiaMDDownKick_Step)
 			}
-			phaseTimer = 120
+			phaseTimer = 180
+		},
+		function()
+		{
+			with (obj_MKSS_Player)
+			{
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_NimbiaMDBuzzcutStunlock_Step)
+			}	
+			phaseTimer = 180
+		},
+		function()
+		{
+			with (obj_MKSS_Player)
+			{
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_NimbiaMDGalaxiaFinisher_Step)
+			}	
+			phaseTimer = 180
 		},
 		function()
 		{
