@@ -13,18 +13,18 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"6d592553-1433-4462-ab26-78bf20928c92","name":"6d592553-1433-4462-ab26-78bf20928c92","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"016905b6-27f3-44cd-b9ce-e2b2c350b062","name":"016905b6-27f3-44cd-b9ce-e2b2c350b062","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"f8defa6c-cd97-462b-b377-63e193e394d3","name":"f8defa6c-cd97-462b-b377-63e193e394d3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"d29cc935-882b-4bd9-b29e-2f918e1c29fd","name":"d29cc935-882b-4bd9-b29e-2f918e1c29fd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"86888e66-b642-4e67-bc4c-623025f5f6c5","name":"86888e66-b642-4e67-bc4c-623025f5f6c5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"369a384c-6449-49a3-af86-b6e837ef12df","name":"369a384c-6449-49a3-af86-b6e837ef12df","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7563a116-ffac-41cf-b266-466b9feda0c9","name":"7563a116-ffac-41cf-b266-466b9feda0c9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5e0bad73-1c73-4b15-966e-d39483d4abe5","name":"5e0bad73-1c73-4b15-966e-d39483d4abe5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ed095e43-a7d1-4173-a0cd-2866dd3f35e0","name":"ed095e43-a7d1-4173-a0cd-2866dd3f35e0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4eda859a-534a-408a-893f-c94d1334c264","name":"4eda859a-534a-408a-893f-c94d1334c264","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":43,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"f00ebad9-5725-45a7-bcc9-0c08b17c0c21","blendMode":0,"displayName":"default","isLocked":false,"name":"f00ebad9-5725-45a7-bcc9-0c08b17c0c21","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"2842fc0c-94a8-40d2-8335-66c31caa8047","blendMode":0,"displayName":"default","isLocked":false,"name":"2842fc0c-94a8-40d2-8335-66c31caa8047","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_MKSS_Enemy_Nimbia_Base_Tornado",
   "nineSlice":null,
@@ -74,20 +74,20 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6d592553-1433-4462-ab26-78bf20928c92","path":"sprites/spr_MKSS_Enemy_Nimbia_Base_Tornado/spr_MKSS_Enemy_Nimbia_Base_Tornado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"714f97c6-4144-4ad0-a79f-92326c14f29d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"369a384c-6449-49a3-af86-b6e837ef12df","path":"sprites/spr_MKSS_Enemy_Nimbia_Base_Tornado/spr_MKSS_Enemy_Nimbia_Base_Tornado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"57d9d0a0-6495-4f75-90bf-66d2264b0290","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"016905b6-27f3-44cd-b9ce-e2b2c350b062","path":"sprites/spr_MKSS_Enemy_Nimbia_Base_Tornado/spr_MKSS_Enemy_Nimbia_Base_Tornado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"da956d58-5de7-46dc-806d-3c3057376036","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7563a116-ffac-41cf-b266-466b9feda0c9","path":"sprites/spr_MKSS_Enemy_Nimbia_Base_Tornado/spr_MKSS_Enemy_Nimbia_Base_Tornado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"007ca15b-63e8-4e93-adcb-fb27a62d43c6","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f8defa6c-cd97-462b-b377-63e193e394d3","path":"sprites/spr_MKSS_Enemy_Nimbia_Base_Tornado/spr_MKSS_Enemy_Nimbia_Base_Tornado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6ddbdbd8-cc8f-4068-a173-2d342e662344","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5e0bad73-1c73-4b15-966e-d39483d4abe5","path":"sprites/spr_MKSS_Enemy_Nimbia_Base_Tornado/spr_MKSS_Enemy_Nimbia_Base_Tornado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"6aa33eb7-a676-43fc-aa8e-86d1748bab54","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d29cc935-882b-4bd9-b29e-2f918e1c29fd","path":"sprites/spr_MKSS_Enemy_Nimbia_Base_Tornado/spr_MKSS_Enemy_Nimbia_Base_Tornado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"48f7a680-1c12-4364-84ba-dce1670bb29d","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ed095e43-a7d1-4173-a0cd-2866dd3f35e0","path":"sprites/spr_MKSS_Enemy_Nimbia_Base_Tornado/spr_MKSS_Enemy_Nimbia_Base_Tornado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"98606423-bacf-4a13-a3d3-1e06f54cd833","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"86888e66-b642-4e67-bc4c-623025f5f6c5","path":"sprites/spr_MKSS_Enemy_Nimbia_Base_Tornado/spr_MKSS_Enemy_Nimbia_Base_Tornado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"cc6e24cc-bf05-4d83-80c2-368523603ac3","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4eda859a-534a-408a-893f-c94d1334c264","path":"sprites/spr_MKSS_Enemy_Nimbia_Base_Tornado/spr_MKSS_Enemy_Nimbia_Base_Tornado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f1df5193-b9da-4f45-aa38-0b5572e7f216","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

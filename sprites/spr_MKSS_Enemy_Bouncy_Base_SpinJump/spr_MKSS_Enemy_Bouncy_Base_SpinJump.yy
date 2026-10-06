@@ -13,17 +13,17 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"c1420ded-703d-487b-8db9-8d80aa50d882","name":"c1420ded-703d-487b-8db9-8d80aa50d882","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"84144518-b4b7-4313-938b-fe02adaf88c3","name":"84144518-b4b7-4313-938b-fe02adaf88c3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"e2a7563e-c0a8-48f0-ab48-0ba1d7cd8813","name":"e2a7563e-c0a8-48f0-ab48-0ba1d7cd8813","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"1cd24b88-9496-4114-a4d7-b58ef4a4312c","name":"1cd24b88-9496-4114-a4d7-b58ef4a4312c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d4132ab9-9721-47e0-a186-938636beef58","name":"d4132ab9-9721-47e0-a186-938636beef58","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ff4b54ed-35b3-4af7-a522-2ad7f8b48941","name":"ff4b54ed-35b3-4af7-a522-2ad7f8b48941","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"536c7a2e-1ec6-43b2-b8ee-8d2d9f36859f","name":"536c7a2e-1ec6-43b2-b8ee-8d2d9f36859f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"631e6164-1985-41fa-8706-e49377b29495","name":"631e6164-1985-41fa-8706-e49377b29495","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":29,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"a3596f7c-d36f-4a3f-a375-b8de9ef48e2c","blendMode":0,"displayName":"default","isLocked":false,"name":"a3596f7c-d36f-4a3f-a375-b8de9ef48e2c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"3f4a147e-b96c-443b-b927-0012acd10cb8","blendMode":0,"displayName":"default","isLocked":false,"name":"3f4a147e-b96c-443b-b927-0012acd10cb8","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_MKSS_Enemy_Bouncy_Base_SpinJump",
   "nineSlice":null,
@@ -73,17 +73,17 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c1420ded-703d-487b-8db9-8d80aa50d882","path":"sprites/spr_MKSS_Enemy_Bouncy_Base_SpinJump/spr_MKSS_Enemy_Bouncy_Base_SpinJump.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9a016e91-2378-4bbf-a9aa-dae6d5deb8e3","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d4132ab9-9721-47e0-a186-938636beef58","path":"sprites/spr_MKSS_Enemy_Bouncy_Base_SpinJump/spr_MKSS_Enemy_Bouncy_Base_SpinJump.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"71bee001-a0b7-4c0e-abbc-8cb0d013b0cf","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"84144518-b4b7-4313-938b-fe02adaf88c3","path":"sprites/spr_MKSS_Enemy_Bouncy_Base_SpinJump/spr_MKSS_Enemy_Bouncy_Base_SpinJump.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d1c3302a-ae3e-4271-87d8-b8bb4ab28323","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ff4b54ed-35b3-4af7-a522-2ad7f8b48941","path":"sprites/spr_MKSS_Enemy_Bouncy_Base_SpinJump/spr_MKSS_Enemy_Bouncy_Base_SpinJump.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"eecc1238-d17f-484e-8f94-8a72deca8179","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e2a7563e-c0a8-48f0-ab48-0ba1d7cd8813","path":"sprites/spr_MKSS_Enemy_Bouncy_Base_SpinJump/spr_MKSS_Enemy_Bouncy_Base_SpinJump.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"27ad36f1-aae7-43de-9059-ee9a56e25120","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"536c7a2e-1ec6-43b2-b8ee-8d2d9f36859f","path":"sprites/spr_MKSS_Enemy_Bouncy_Base_SpinJump/spr_MKSS_Enemy_Bouncy_Base_SpinJump.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0ac3cd79-f29a-43ae-9889-a14efefc3b96","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1cd24b88-9496-4114-a4d7-b58ef4a4312c","path":"sprites/spr_MKSS_Enemy_Bouncy_Base_SpinJump/spr_MKSS_Enemy_Bouncy_Base_SpinJump.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"94db2087-b545-4454-8eeb-510a782b542e","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"631e6164-1985-41fa-8706-e49377b29495","path":"sprites/spr_MKSS_Enemy_Bouncy_Base_SpinJump/spr_MKSS_Enemy_Bouncy_Base_SpinJump.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"393539d0-d3c3-46c1-bfb9-2e9f61db8581","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
