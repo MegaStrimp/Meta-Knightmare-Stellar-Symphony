@@ -48,12 +48,12 @@
           246,247,305,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_MKSS_BattleshipHalberd","path":"tilesets/ts_MKSS_BattleshipHalberd/ts_MKSS_BattleshipHalberd.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_TrainingRoom","depth":800,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_TrainingRoom","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":13,"SerialiseWidth":21,"TileCompressedData":[
-          -2,5,49,7,8,5,5,7,8,5,5,7,8,5,5,7,8,5,5,7,8,5,16,16,19,20,16,16,19,20,16,16,19,20,16,16,19,20,16,16,
-          19,20,16,10,11,16,16,10,11,16,16,36,-6,37,15,38,10,11,16,16,10,19,20,16,16,19,20,16,16,45,-6,46,15,47,
-          19,20,16,16,19,16,16,10,11,16,16,10,11,45,-6,46,5,47,16,16,10,11,-3,16,7,19,20,16,16,19,20,45,-6,46,
-          15,47,16,16,19,20,16,10,11,16,16,10,11,16,16,45,-6,46,15,47,10,11,16,16,10,0,0,-2147483648,-2147483648,
-          19,20,16,16,45,-6,46,15,47,19,20,16,16,19,0,0,-2147483648,-2147483648,16,16,10,11,54,-6,55,6,56,16,16,
-          10,11,16,-4,-2147483648,-2,16,15,19,20,16,16,19,20,16,16,19,20,16,16,19,20,16,-63,-2147483648,
+          51,1,5,7,8,2,6,7,8,4,5,7,8,1,5,7,8,3,6,7,8,4,29,32,21,20,16,31,19,20,33,30,23,20,29,32,21,24,16,31,23,
+          20,33,12,11,35,26,14,11,32,25,36,-6,37,15,38,10,13,16,26,14,19,20,30,28,21,20,29,28,45,-6,46,15,47,23,
+          24,32,34,21,26,28,10,11,32,29,12,15,45,-6,46,15,47,28,29,10,13,18,29,32,21,20,16,31,19,20,45,-6,46,15,
+          47,16,31,23,20,33,12,11,35,26,14,11,32,25,45,-6,46,15,47,10,13,16,26,14,19,20,30,28,21,20,29,28,45,-6,
+          46,15,47,23,24,32,34,21,26,28,10,11,32,29,12,15,54,-6,55,27,56,28,29,10,13,18,29,32,21,20,16,31,19,20,
+          33,30,23,20,29,32,21,24,16,31,23,20,33,-63,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_MKSS_HalberdTrainingRoom","path":"tilesets/ts_MKSS_HalberdTrainingRoom/ts_MKSS_HalberdTrainingRoom.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Collision","depth":900,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_D8C691_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_D8C691_1","objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":21.0,"scaleY":3.0,"x":0.0,"y":160.0,},
