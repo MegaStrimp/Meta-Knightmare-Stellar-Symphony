@@ -31,7 +31,7 @@ function scr_MKSS_Attack_Execute_Buzzcut_ChainChakram()
 	#endregion
 	
 	#region Attack
-	var targetAngle = 90 - (45 * dirX);
+	var targetAngle = (((45 - (90 * dirX)) + 360) % 360);
 	
 	with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
 	{
@@ -50,12 +50,15 @@ function scr_MKSS_Attack_Execute_Buzzcut_ChainChakram()
 		if ((targetAngle == 45) or (targetAngle == 315)) dirX = 1;
 		movementAngle = targetAngle - 25;
 		knockbackAngle = movementAngle;
-		hsp = lengthdir_x(4,targetAngle - 25);
-		vsp = lengthdir_y(4,targetAngle - 25);
+		spdMax = 6;
+		spd = 4;
+		angleDir = 1;
+		returnTurn = 5;
+		hsp = 0;
+		vsp = 0;
 		sprite_index = spr_MKSS_Attack_Buzzcut_ChainChakram;
 		mask_index = spr_MKSS_Attack_Buzzcut_ChainChakram;
 		image_xscale = other.dirX;
-		dirX = other.dirX;
 		attackAIStep = scr_MKSS_Attack_Buzzcut_ChainChakram_Step;
 		attackEnemyHitParticleIndex = scr_MKSS_ParticleSet_SlashRandom;
 		decelTimer = 10;

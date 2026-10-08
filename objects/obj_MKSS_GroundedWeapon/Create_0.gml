@@ -5,9 +5,6 @@
 speedMultFinal = 1;
 localPause = false;
 weaponID = global.MKSS_WeaponIDs[? "galaxia"];
+destroyCheck = true;
 #endregion
-#endregion
-
-#region Destroy
-if (global.MKSS_WeaponList[weaponID].isUnlocked) instance_destroy();
 #endregion

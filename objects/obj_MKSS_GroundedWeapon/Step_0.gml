@@ -11,8 +11,7 @@ if (!localPause)
 			audio_sound_pitch(sfx,random_range(.85,1.15));
 			
 			scr_Camera_SetLimits(-1,-1,-1,-1);
-			global.MKSS_WeaponList[other.weaponID].isUnlocked = true;
-			scr_MKSS_Player_SetWeapons();
+			scr_MKSS_Player_UnlockWeapon(playerNum,other.weaponID);
 			
 			global.playerAbility[playerNum] = other.weaponID;
 			scr_Player_ChangeAbility(id,global.playerAbility[playerNum]);

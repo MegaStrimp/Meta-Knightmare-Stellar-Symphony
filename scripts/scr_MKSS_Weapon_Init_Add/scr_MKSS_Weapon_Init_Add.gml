@@ -1,6 +1,6 @@
 ///@description MKSS - Weapon - Init - Add
 
-function scr_MKSS_Weapon_Init_Add(targetID,targetName = "",targetSetupScript = undefined,targetBaseScript = undefined,targetDrawScript = undefined,targetHudIcon = undefined,targetHudIconSmall = undefined)
+function scr_MKSS_Weapon_Init_Add(targetID,targetName = "",targetUpgradeTypeID = -1,targetSetupScript = undefined,targetBaseScript = undefined,targetDrawScript = undefined,targetHudIcon = undefined,targetHudIconSmall = undefined)
 {
 	var targetMappedID = ds_map_size(global.MKSS_WeaponIDs);
 	ds_map_add(global.MKSS_WeaponIDs,targetID,targetMappedID);
@@ -9,6 +9,7 @@ function scr_MKSS_Weapon_Init_Add(targetID,targetName = "",targetSetupScript = u
 	{
         ID: targetID,
 		name: targetName,
+		upgradeTypeID: targetUpgradeTypeID,
 		setupScript: targetSetupScript,
 		baseScript: targetBaseScript,
 		drawScript: targetDrawScript,

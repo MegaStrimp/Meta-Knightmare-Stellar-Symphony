@@ -11,7 +11,7 @@ function scr_MKSS_Upgrade_Init_Add(targetID,targetCategoryID,targetX,targetY,tar
         categoryID: targetCategoryID,
         x: targetX,
         y: targetY,
-		canBeUnlocked: (targetDependency == -1),
+		canBeUnlocked: ((!targetIsLesserNode) and (targetDependency == -1) and (global.MKSS_UpgradeTypeList[targetCategoryID].isUnlocked)),
 		isUnlocked: false,
 		dependency: targetDependency,
 		isLesserNode: targetIsLesserNode,

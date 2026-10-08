@@ -15,6 +15,7 @@ function scr_MKSS_LoadData(file,importFile = false)
 	#region Player Status
 	for (var i = 0; i < global.maxPlayers; i++)
 	{
+		global.MKSS_PlayerMetaPoints[i] = ini_read_real("playerStatus","metaPoints_" + string(i),0);
 		global.playerSprayPaint[i] = ini_read_real("playerStatus","sprayPaint_" + string(i),global.MKSS_SprayPaintIDs[? "meta"]) ?? global.MKSS_SprayPaintIDs[? "meta"];
 		global.MKSS_PlayerFamiliar[i] = ini_read_real("playerStatus","familiar_" + string(i),global.MKSS_FamiliarIDs[? "none"]) ?? global.MKSS_FamiliarIDs[? "none"];
 	}

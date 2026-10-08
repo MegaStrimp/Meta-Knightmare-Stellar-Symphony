@@ -4,6 +4,7 @@ function scr_MKSS_Cutscene_Preset_IceCreamIslandEnd()
 {
 	#region Setup
 	goneToStage = false;
+	weaponLost = false;
 	
 	persistent = true;
 	#endregion
@@ -30,6 +31,14 @@ function scr_MKSS_Cutscene_Preset_IceCreamIslandEnd()
 			{
 				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_IceCreamIslandEnd_Step);
 			}
+			
+			phaseTimer = 30;
+		},
+		function()
+		{
+			global.MKSS_WeaponList[global.MKSS_WeaponIDs[? "galaxia"]].isUnlocked = false;
+			scr_MKSS_Player_SetWeapons();
+			weaponLost = true;
 			
 			phaseTimer = 30;
 		},
@@ -80,7 +89,11 @@ function scr_MKSS_Cutscene_Preset_IceCreamIslandEnd()
 				room_goto(rm_MKSS_StarryShores_1);
 			}
 			
-			global.MKSS_WeaponList[global.MKSS_WeaponIDs[? "galaxia"]].isUnlocked = false;
+			if (!weaponLost)
+			{
+				global.MKSS_WeaponList[global.MKSS_WeaponIDs[? "galaxia"]].isUnlocked = false;
+				scr_MKSS_Player_SetWeapons();
+			}
 			
 			with (obj_Player)
 			{

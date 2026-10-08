@@ -18,23 +18,28 @@ function scr_MKSS_Attack_Buzzcut_ChainChakram_Step()
 		#region Movement
 		if (decelTimer == -1)
 		{
-			with (owner) other.movementAngle = point_direction(xstart,ystart,x,y);
+			returnTurn += (.25 * speedMultFinal);
 			
-			hsp += lengthdir_x(.3,movementAngle);
-			vsp += lengthdir_y(.3,movementAngle);
+			movementAngle -= clamp(angle_difference(movementAngle,point_direction(x,y,xstart,ystart)),-returnTurn,returnTurn) * speedMultFinal;
 			
-			if (distance_to_point(xstart,ystart) <= 1)
+			spd = min(spd + (.25 * speedMultFinal),spdMax);
+			
+			if (point_distance(x,y,xstart,ystart) <= (spd + 1))
 			{
 				instance_destroy();
 			}
 		}
 		else
 		{
-			movementAngle += 20;
+			movementAngle += (3 * angleDir * speedMultFinal);
 			
-			hsp += lengthdir_x(.4,movementAngle);
-			vsp += lengthdir_y(.4,movementAngle);
+			spd = max(spd - (.12 * speedMultFinal),.5);
 		}
+		#endregion
+		
+		#region Movement
+		hsp = lengthdir_x(spd,movementAngle);
+		vsp = lengthdir_y(spd,movementAngle);
 		#endregion
 		
 		#region Knockback Angle

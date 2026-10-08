@@ -7,7 +7,7 @@ script_execute(scr_MKSS_RoomSetup_IceCreamIsland,true);
 #region Enemy Arena
 with (instance_create_depth(0,0,0,obj_MKSS_EnemyArena))
 {
-	if (global.MKSS_StageList[global.MKSS_StageIDs[? "starryShores"]].isBeaten)
+	if (global.MKSS_StageList[global.MKSS_StageIDs[? "iceCreamIsland"]].isBeaten)
 	{
 		endsTheStage = true;
 	}

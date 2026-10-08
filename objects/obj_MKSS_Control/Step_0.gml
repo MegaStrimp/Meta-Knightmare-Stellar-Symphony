@@ -96,6 +96,7 @@ if (global.debug)
 	{
 		scr_MKSS_LoadData(global.selectedSave);
 		scr_MKSS_Player_SetWeapons();
+		scr_MKSS_Player_GetUnlockedUpgrades();
 		
 		scr_MKSS_Stage_End();
 		
@@ -130,6 +131,7 @@ else if (global.demo)
 	{
 		scr_MKSS_LoadData(global.selectedSave);
 		scr_MKSS_Player_SetWeapons();
+		scr_MKSS_Player_GetUnlockedUpgrades();
 		
 		scr_MKSS_Stage_End();
 		

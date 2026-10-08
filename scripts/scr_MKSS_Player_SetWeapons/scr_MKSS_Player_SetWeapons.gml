@@ -13,17 +13,20 @@ function scr_MKSS_Player_SetWeapons(playerNum = 0)
 		if (currentWeapon.isUnlocked)
 		{
 			ds_list_add(global.MKSS_PlayerWeaponList[playerNum],i);
+		}
+	}
+	
+	with (obj_Player)
+	{
+		if (ds_list_find_index(global.MKSS_PlayerWeaponList[playerNum],currentAbility) == -1)
+		{
+			var targetAbility = ds_list_find_value(global.MKSS_PlayerWeaponList[playerNum],0);
 			
-			with (obj_Player)
-			{
-				if (currentAbility == -1)
-				{
-					global.playerAbility[playerNum] = i;
-					scr_Player_ChangeAbility(id,global.playerAbility[playerNum]);
-					weaponSpriteSet = global.MKSS_WeaponList[i].spriteSet;
-					script_execute(global.MKSS_WeaponList[i].setupScript);
-				}
-			}
+			global.playerAbility[playerNum] = targetAbility;
+			scr_Player_ChangeAbility(id,global.playerAbility[playerNum]);
+			global.MKSS_PlayerWeaponList_Index[playerNum] = 0;
+			weaponSpriteSet = global.MKSS_WeaponList[targetAbility].spriteSet;
+			script_execute(global.MKSS_WeaponList[targetAbility].setupScript);
 		}
 	}
 }

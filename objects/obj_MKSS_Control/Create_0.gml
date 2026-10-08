@@ -6,8 +6,8 @@ global.gameTitle = "Meta Knightmare Stellar Symphony";
 global.versionNumber = "BETA " + date_date_string(GM_build_date);
 
 scr_MKSS_Player_Init_Set();
-scr_MKSS_Weapon_Init_Set();
 scr_MKSS_UpgradeType_Init_Set();
+scr_MKSS_Weapon_Init_Set();
 scr_MKSS_Upgrade_Init_Set();
 scr_MKSS_SprayPaint_Init_Set();
 scr_MKSS_Familiar_Init_Set();

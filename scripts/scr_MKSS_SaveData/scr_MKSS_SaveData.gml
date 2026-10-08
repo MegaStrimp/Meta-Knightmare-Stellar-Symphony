@@ -24,6 +24,7 @@ function scr_MKSS_SaveData(file)
 		#region Player Status
 		for (var i = 0; i < global.maxPlayers; i++)
 		{
+			ini_write_real("playerStatus","metaPoints_" + string(i),global.MKSS_PlayerMetaPoints[i]);
 			ini_write_real("playerStatus","sprayPaint_" + string(i),global.playerSprayPaint[i]);
 			ini_write_real("playerStatus","familiar_" + string(i),global.MKSS_PlayerFamiliar[i]);
 		}

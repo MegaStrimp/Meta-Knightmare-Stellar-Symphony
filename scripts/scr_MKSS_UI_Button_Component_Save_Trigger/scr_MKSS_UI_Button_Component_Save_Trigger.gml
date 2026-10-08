@@ -15,6 +15,7 @@ function scr_MKSS_UI_Button_Component_Save_Trigger(targetSave)
 		scr_MKSS_LoadCrossovers(global.selectedSave);
 		scr_MKSS_LoadData(global.selectedSave);
 		scr_MKSS_Player_SetWeapons(playerNum);
+		scr_MKSS_Player_GetUnlockedUpgrades(playerNum);
 		
 		var targetRoom = rm_MKSS_BattleshipHalberd;
 		var targetAlphaSpd = .05;

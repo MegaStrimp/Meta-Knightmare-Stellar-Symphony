@@ -2,5 +2,5 @@
 
 function scr_MKSS_Player_CheckUpgrade(playerNum,targetIDString)
 {
-	return (ds_list_find_value(global.MKSS_PlayerUpgradeList[playerNum],global.MKSS_UpgradeIDs[? targetIDString]) != undefined);
+	return (ds_list_find_index(global.MKSS_PlayerUpgradeList[playerNum],global.MKSS_UpgradeIDs[? targetIDString]) != -1);
 }

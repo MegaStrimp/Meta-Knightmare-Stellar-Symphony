@@ -17,6 +17,8 @@ function scr_MKSS_Hud_EnemyHealthbar_Normal(targetMarkedEnemyID,targetEnemyTitle
 	var enemyHp = targetMarkedEnemyID.hpHealthbar;
 	var enemyHpMiddle = targetMarkedEnemyID.hpHealthbarMiddle;
 	var enemyMaxHp = targetMarkedEnemyID.maxHp;
+	var barBlend = #606060;
+	if ((targetMarkedEnemyID.canBeHit) and (targetMarkedEnemyID.canBeHurt)) barBlend = c_white;
 	
 	var barLength = floor((enemyHp / enemyMaxHp) * 66);
 	var barLengthMiddle = floor((enemyHpMiddle / enemyMaxHp) * 66);
@@ -24,8 +26,8 @@ function scr_MKSS_Hud_EnemyHealthbar_Normal(targetMarkedEnemyID,targetEnemyTitle
 	draw_sprite(spr_MKSS_Hud_EnemyHealthbar_Normal_Back,0,global.gameWidth - 76 + shakeFinal,global.gameHeight - 11);
 	draw_sprite_part(spr_MKSS_Hud_EnemyHealthbar_Normal_Middle,0,0,0,max(0,barLengthMiddle - 5),6,global.gameWidth - 76 + shakeFinal,global.gameHeight - 11);
 	draw_sprite(spr_MKSS_Hud_EnemyHealthbar_Normal_MiddleCorner,0,global.gameWidth - 76 - 5 + barLengthMiddle + shakeFinal,global.gameHeight - 11);
-	draw_sprite_part(spr_MKSS_Hud_EnemyHealthbar_Normal_Front,0,0,0,max(0,barLength - 5),6,global.gameWidth - 76 + shakeFinal,global.gameHeight - 11);
-	draw_sprite(spr_MKSS_Hud_EnemyHealthbar_Normal_Corner,0,global.gameWidth - 76 - 5 + barLength + shakeFinal,global.gameHeight - 11);
+	draw_sprite_part_ext(spr_MKSS_Hud_EnemyHealthbar_Normal_Front,0,0,0,max(0,barLength - 5),6,global.gameWidth - 76 + shakeFinal,global.gameHeight - 11,image_xscale,image_yscale,barBlend,image_alpha);
+	draw_sprite_ext(spr_MKSS_Hud_EnemyHealthbar_Normal_Corner,0,global.gameWidth - 76 - 5 + barLength + shakeFinal,global.gameHeight - 11,image_xscale,image_yscale,image_angle,barBlend,image_alpha);
 	draw_sprite(spr_MKSS_Hud_EnemyHealthbar_Normal_Border,0,global.gameWidth - 92 + shakeFinal,global.gameHeight - 20);
 	draw_sprite(spr_MKSS_Hud_EnemyHealthbar_Normal_Icon,0,global.gameWidth - 92 + 3 + shakeFinal,global.gameHeight - 20 + 3);
 	

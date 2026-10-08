@@ -13,7 +13,7 @@ function scr_MKSS_Weapon_Init_Set()
 	#endregion
 	
 	#region Galaxia
-	var targetMappedID = scr_MKSS_Weapon_Init_Add("galaxia","Galaxia",scr_MKSS_Weapon_Galaxia_Setup,scr_MKSS_Weapon_Galaxia_Base,,spr_MKSS_Sword_Galaxia_HudIcon,spr_MKSS_Sword_Galaxia_HudIcon_Small);
+	var targetMappedID = scr_MKSS_Weapon_Init_Add("galaxia","Galaxia",global.MKSS_UpgradeTypeIDs[? "galaxia"],scr_MKSS_Weapon_Galaxia_Setup,scr_MKSS_Weapon_Galaxia_Base,,spr_MKSS_Sword_Galaxia_HudIcon,spr_MKSS_Sword_Galaxia_HudIcon_Small);
 	global.MKSS_WeaponList[targetMappedID].isDefault = true;
 	
 	scr_MKSS_Weapon_Init_Add_SpriteSet(targetMappedID,
@@ -70,11 +70,11 @@ function scr_MKSS_Weapon_Init_Set()
 	#endregion
 	
 	#region Buzzcut
-	var targetMappedID = scr_MKSS_Weapon_Init_Add("buzzcut","Buzzcut",scr_MKSS_Weapon_Buzzcut_Setup,scr_MKSS_Weapon_Buzzcut_Base,,spr_MKSS_Sword_Buzzcut_HudIcon,spr_MKSS_Sword_Buzzcut_HudIcon_Small);
+	var targetMappedID = scr_MKSS_Weapon_Init_Add("buzzcut","Buzzcut",global.MKSS_UpgradeTypeIDs[? "buzzcut"],scr_MKSS_Weapon_Buzzcut_Setup,scr_MKSS_Weapon_Buzzcut_Base,,spr_MKSS_Sword_Buzzcut_HudIcon,spr_MKSS_Sword_Buzzcut_HudIcon_Small);
 	
 	scr_MKSS_Weapon_Init_Add_SpriteSet(targetMappedID,
 	{
-		sprSwordGrounded: undefined,
+		sprSwordGrounded: spr_MKSS_Sword_Buzzcut_Grounded,
 		
 		sprIdle: spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Idle,
 		sprWalk: spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Walk,
@@ -124,7 +124,7 @@ function scr_MKSS_Weapon_Init_Set()
 	#endregion
 	
 	#region Whiplash
-	var targetMappedID = scr_MKSS_Weapon_Init_Add("whiplash","Whiplash",scr_MKSS_Weapon_Whiplash_Setup,scr_MKSS_Weapon_Whiplash_Base,scr_MKSS_Weapon_Whiplash_Draw,spr_MKSS_Sword_Whiplash_HudIcon,spr_MKSS_Sword_Whiplash_HudIcon_Small);
+	var targetMappedID = scr_MKSS_Weapon_Init_Add("whiplash","Whiplash",global.MKSS_UpgradeTypeIDs[? "whiplash"],scr_MKSS_Weapon_Whiplash_Setup,scr_MKSS_Weapon_Whiplash_Base,scr_MKSS_Weapon_Whiplash_Draw,spr_MKSS_Sword_Whiplash_HudIcon,spr_MKSS_Sword_Whiplash_HudIcon_Small);
 	
 	scr_MKSS_Weapon_Init_Add_SpriteSet(targetMappedID,
 	{
@@ -178,7 +178,7 @@ function scr_MKSS_Weapon_Init_Set()
 	#endregion
 	
 	#region Trifecta
-	var targetMappedID = scr_MKSS_Weapon_Init_Add("trifecta","Trifecta",scr_MKSS_Weapon_Trifecta_Setup,scr_MKSS_Weapon_Trifecta_Base,,spr_MKSS_Sword_Trifecta_HudIcon,spr_MKSS_Sword_Trifecta_HudIcon_Small);
+	var targetMappedID = scr_MKSS_Weapon_Init_Add("trifecta","Trifecta",global.MKSS_UpgradeTypeIDs[? "trifecta"],scr_MKSS_Weapon_Trifecta_Setup,scr_MKSS_Weapon_Trifecta_Base,,spr_MKSS_Sword_Trifecta_HudIcon,spr_MKSS_Sword_Trifecta_HudIcon_Small);
 	
 	scr_MKSS_Weapon_Init_Add_SpriteSet(targetMappedID,
 	{
@@ -232,7 +232,7 @@ function scr_MKSS_Weapon_Init_Set()
 	#endregion
 	
 	#region Stella
-	var targetMappedID = scr_MKSS_Weapon_Init_Add("stella","Stella",scr_MKSS_Weapon_Stella_Setup,scr_MKSS_Weapon_Stella_Base,,spr_MKSS_Sword_Stella_HudIcon,spr_MKSS_Sword_Stella_HudIcon_Small);
+	var targetMappedID = scr_MKSS_Weapon_Init_Add("stella","Stella",global.MKSS_UpgradeTypeIDs[? "stella"],scr_MKSS_Weapon_Stella_Setup,scr_MKSS_Weapon_Stella_Base,,spr_MKSS_Sword_Stella_HudIcon,spr_MKSS_Sword_Stella_HudIcon_Small);
 	
 	scr_MKSS_Weapon_Init_Add_SpriteSet(targetMappedID,
 	{

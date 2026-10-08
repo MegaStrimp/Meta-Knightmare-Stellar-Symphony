@@ -1,0 +1,1 @@
+weaponID = global.MKSS_WeaponIDs[? "buzzcut"];

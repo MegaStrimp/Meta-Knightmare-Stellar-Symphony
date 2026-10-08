@@ -12,5 +12,5 @@ function scr_MKSS_Switch_Activation_GetAllUpgrades()
 		global.MKSS_UpgradeList[i].isUnlocked = true;
 	}
 	
-	scr_MKSS_Player_GetUnlockedUpgrades(0);
+	scr_MKSS_Player_GetUnlockedUpgrades();
 }

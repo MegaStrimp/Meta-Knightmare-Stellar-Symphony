@@ -23,6 +23,11 @@ function scr_MKSS_Hud_Step()
 				hud_LeftIcon = global.MKSS_WeaponList[(currentIndex - 1 + listSize) % listSize].hudIconSmall;
 				hud_RightIcon = global.MKSS_WeaponList[(currentIndex + 1 + listSize) % listSize].hudIconSmall;
 			}
+			else
+			{
+				hud_LeftIcon = undefined;
+				hud_RightIcon = undefined;
+			}
 		}
 		
 		hud_WeaponBgIndex = (hud_WeaponBgIndex + (hud_WeaponBgSpeed * speedMultFinal)) % 2;
