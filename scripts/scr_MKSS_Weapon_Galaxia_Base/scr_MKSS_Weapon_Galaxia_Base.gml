@@ -66,15 +66,12 @@ function scr_MKSS_Weapon_Galaxia_Base()
 			}
 			else
 			{
-				if (galaxia_Run_Index == 2)
+				if ((galaxia_Run_Index == 2) and (hasStab) and (!isAttacking) and (attackCooldown == -1))
 				{
-					if ((hasStab) and (!isAttacking) and (attackCooldown == -1))
-					{
-						attackTriggered = true;
-						attackIndex = global.MKSS_AttackIDs[? "galaxia_Stab"];
-						
-						script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript);
-					}
+					attackTriggered = true;
+					attackIndex = global.MKSS_AttackIDs[? "galaxia_Stab"];
+					
+					script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript);
 				}
 				else
 				{

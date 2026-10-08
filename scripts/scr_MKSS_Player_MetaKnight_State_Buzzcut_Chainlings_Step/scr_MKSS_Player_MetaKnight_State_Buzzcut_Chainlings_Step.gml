@@ -74,7 +74,7 @@ function scr_MKSS_Player_MetaKnight_State_Buzzcut_Chainlings_Step()
 					vsp = lengthdir_y(6 * speedMultFinal,targetAngle);
 					knockbackAngle = targetAngle;
 					knockbackForce = 1;
-					sprite_index = spr_MKSS_Attack_Buzzcut_Finisher_Chainlings;
+					sprite_index = spr_MKSS_Attack_Buzzcut_Chainlings;
 					mask_index = spr_16x16Mask_MiddleOrigin;
 					image_xscale = other.dirX;
 					dirX = other.dirX;

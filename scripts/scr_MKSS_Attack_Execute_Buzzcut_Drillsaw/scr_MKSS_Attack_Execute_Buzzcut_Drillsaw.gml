@@ -1,6 +1,6 @@
-///@description MKSS - Attack - Execute - Buzzcut - Chainlings
+///@description MKSS - Attack - Execute - Buzzcut - Drillsaw
 
-function scr_MKSS_Attack_Execute_Buzzcut_Chainlings()
+function scr_MKSS_Attack_Execute_Buzzcut_Drillsaw()
 {
 	attackString = global.MKSS_AttackList[attackIndex].ID;
 	scr_Debug_WriteLog(string(object_get_name(object_index)) + " Used [" + attackString + "]");
@@ -14,16 +14,16 @@ function scr_MKSS_Attack_Execute_Buzzcut_Chainlings()
 	isAttacking = true;
 	
 	hasAttackAnimation = false;
-	scr_ChangeSprite(spriteSet.sprAttackBuzzcutChainlings);
+	scr_ChangeSprite(spriteSet.sprAttackBuzzcutDrillsaw);
 	
-	scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Buzzcut_Chainlings_Step);
+	scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Buzzcut_Drillsaw_Step);
 	
 	canCancelAttackAnimation = false;
 	attackCanTurnSprite = false;
 	canAttackCancelTargetState = false;
 	
 	attackStopSpeedLimit = true;
-	hsp = Buzzcut_Chainlings_Movespeed * dirX * speedMultFinal;
+	hsp = Buzzcut_Drillsaw_Movespeed * dirX * speedMultFinal;
 	
 	grounded = false;
 	hasJumpLimit = false;

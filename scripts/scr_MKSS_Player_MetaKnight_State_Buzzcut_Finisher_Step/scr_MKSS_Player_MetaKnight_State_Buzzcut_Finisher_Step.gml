@@ -27,7 +27,7 @@ function scr_MKSS_Player_MetaKnight_State_Buzzcut_Finisher_Step()
 		if (hurtState == hurtStates.hurt) buzzcut_Finisher_EndTimer = 0;
 		#endregion
 		
-		#region Buzzcut - Circle Slash - End Timer
+		#region Buzzcut - Finisher - End Timer
 		if (buzzcut_Finisher_EndTimer != -1)
 		{
 			buzzcut_Finisher_EndTimer = max(buzzcut_Finisher_EndTimer - speedMultFinal,0);

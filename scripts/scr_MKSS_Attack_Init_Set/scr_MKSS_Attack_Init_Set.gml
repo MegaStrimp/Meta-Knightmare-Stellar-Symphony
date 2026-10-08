@@ -44,6 +44,8 @@ function scr_MKSS_Attack_Init_Set()
 	scr_MKSS_Attack_Init_Add("buzzcut_Slash2",scr_MKSS_Attack_Execute_Buzzcut_Slash2);
 	scr_MKSS_Attack_Init_Add("buzzcut_Finisher",scr_MKSS_Attack_Execute_Buzzcut_Finisher);
 	scr_MKSS_Attack_Init_Add("buzzcut_Chainlings",scr_MKSS_Attack_Execute_Buzzcut_Chainlings);
+	scr_MKSS_Attack_Init_Add("buzzcut_Drillsaw",scr_MKSS_Attack_Execute_Buzzcut_Drillsaw);
+	scr_MKSS_Attack_Init_Add("buzzcut_ChainChakram",scr_MKSS_Attack_Execute_Buzzcut_ChainChakram);
 	#endregion
 	
 	#region Whiplash

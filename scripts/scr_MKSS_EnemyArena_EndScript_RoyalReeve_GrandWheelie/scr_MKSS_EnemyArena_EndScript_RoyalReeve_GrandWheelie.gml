@@ -2,6 +2,8 @@
 
 function scr_MKSS_EnemyArena_EndScript_RoyalReeve_GrandWheelie()
 {
+	///STRIMPTODO Unskippable Cutscene
+	
 	scr_MKSS_Music_Play(global.MKSS_MusicIDs[? "royalReeve"]);
 	
 	audio_sound_set_track_position(global.musicPlaying,global.MKSS_MusicList[global.MKSS_MusicIDs[? "royalReeve"]].timestamps[0]);
@@ -10,6 +12,6 @@ function scr_MKSS_EnemyArena_EndScript_RoyalReeve_GrandWheelie()
 	
 	with (instance_create_layer(424,88,"Environment",obj_MKSS_Door))
 	{
-		targetRoom = rm_MKSS_RoyalReeve_2;
+		targetRoom = rm_MKSS_RoyalReeve_7;
 	}
 }

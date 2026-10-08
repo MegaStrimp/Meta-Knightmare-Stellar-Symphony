@@ -7,6 +7,10 @@ function scr_MKSS_Weapon_Buzzcut_Setup()
 	buzzcut_BasicCombo_Timer = -1;
 	buzzcut_BasicCombo_TimerMax = 45;
 	
+	buzzcut_Run_Index = 0;
+	buzzcut_Run_Timer = -1;
+	buzzcut_Run_TimerMax = 15;
+	
 	buzzcut_Slash_Movespeed = 2;
 	
 	buzzcut_Finisher_Timer = -1;

@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_MKSS_Attack_Buzzcut_Finisher_Chainlings",
-    "path":"sprites/spr_MKSS_Attack_Buzzcut_Finisher_Chainlings/spr_MKSS_Attack_Buzzcut_Finisher_Chainlings.yy",
+    "name":"spr_MKSS_Attack_Buzzcut_Chainlings",
+    "path":"sprites/spr_MKSS_Attack_Buzzcut_Chainlings/spr_MKSS_Attack_Buzzcut_Chainlings.yy",
   },
   "spriteMaskId":null,
   "visible":true,

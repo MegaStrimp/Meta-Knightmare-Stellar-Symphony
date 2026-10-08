@@ -1,6 +1,6 @@
-///@description MKSS - Attack - Starless Marx - Shooter Cutter - Step
+///@description MKSS - Attack - Buzzcut - Chain Chakram - Step
 
-function scr_MKSS_Attack_StarlessMarx_ShooterCutter_Step()
+function scr_MKSS_Attack_Buzzcut_ChainChakram_Step()
 {
 	if (!localPause)
 	{
@@ -18,31 +18,13 @@ function scr_MKSS_Attack_StarlessMarx_ShooterCutter_Step()
 		#region Movement
 		if (decelTimer == -1)
 		{
-			with (owner) other.movementAngle = point_direction(other.x,other.y,x,y);
+			with (owner) other.movementAngle = point_direction(xstart,ystart,x,y);
 			
 			hsp += lengthdir_x(.3,movementAngle);
 			vsp += lengthdir_y(.3,movementAngle);
 			
-			if (distance_to_point(owner.x,owner.y) <= 1)
+			if (distance_to_point(xstart,ystart) <= 1)
 			{
-				var count = 0;
-				with (obj_Attack)
-				{
-					if (owner == other.owner)
-					{
-						count += 1;
-						if (count > 1) break;
-					}
-				}
-				
-				if (count <= 1)
-				{
-					with (owner)
-					{
-						shooterCutter_CancelTimer = shooterCutter_CancelTimerMax;
-					}
-				}
-				
 				instance_destroy();
 			}
 		}
