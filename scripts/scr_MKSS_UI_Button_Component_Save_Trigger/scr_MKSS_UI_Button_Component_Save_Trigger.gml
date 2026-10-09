@@ -23,14 +23,17 @@ function scr_MKSS_UI_Button_Component_Save_Trigger(targetSave)
 		{
 			targetRoom = rm_MKSS_Debug_Lobby;
 		}
-		else if (global.demo)
+		else if (!global.MKSS_StageList[global.MKSS_StageIDs[? "starryShores"]].isBeaten)
 		{
-			targetRoom = rm_MKSS_Debug_Lobby_Beta;
-		}
-		else if (!global.MKSS_StageList[global.MKSS_StageIDs[? "iceCreamIsland"]].isBeaten)
-		{
-			targetRoom = rm_MKSS_IceCreamIsland_1;
-			var targetAlphaSpd = .01;
+			if (global.MKSS_StageList[global.MKSS_StageIDs[? "iceCreamIsland"]].isBeaten)
+			{
+				targetRoom = rm_MKSS_StarryShores_1;
+			}
+			else
+			{
+				targetRoom = rm_MKSS_IceCreamIsland_1;
+				var targetAlphaSpd = .01;
+			}
 		}
 		
 		with (scr_GoToRoom(targetRoom,true))

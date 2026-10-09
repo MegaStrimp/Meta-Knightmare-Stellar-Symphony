@@ -1,1 +1,0 @@
-activationScript = scr_MKSS_Pedestal_Activation_PaintChanger;

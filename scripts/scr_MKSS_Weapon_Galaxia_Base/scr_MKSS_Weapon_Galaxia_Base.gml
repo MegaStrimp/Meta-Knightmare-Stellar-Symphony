@@ -144,7 +144,7 @@ function scr_MKSS_Weapon_Galaxia_Base()
 		
 		if (input_check_pressed("B",playerNum))
 		{
-			if (galaxia_Finisher_Timer != -1)
+			if ((hasFinisher) and (galaxia_Finisher_Timer != -1))
 			{
 				attackTriggered = true;
 				attackIndex = global.MKSS_AttackIDs[? "galaxia_Finisher"];

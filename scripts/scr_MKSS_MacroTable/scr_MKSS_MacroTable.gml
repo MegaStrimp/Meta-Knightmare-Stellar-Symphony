@@ -17,7 +17,7 @@ function scr_MKSS_MacroTable()
 	
 	#macro MKSS_Base_BuzzcutDamage 15
 	
-	#macro MKSS_Base_UpgradeValue_Parry 100
+	#macro MKSS_Base_UpgradeValue_Parry 200
 	
 	#macro MKSS_Base_EnemyContactDamage 30
 	

@@ -124,19 +124,4 @@ if (global.debug)
 	if (keyboard_check_pressed(vk_f1)) global.hasHud = !global.hasHud;
 	#endregion
 }
-else if (global.demo)
-{
-	#region Beta Lobby
-	if (keyboard_check_pressed(ord("L")))
-	{
-		scr_MKSS_LoadData(global.selectedSave);
-		scr_MKSS_Player_SetWeapons();
-		scr_MKSS_Player_GetUnlockedUpgrades();
-		
-		scr_MKSS_Stage_End();
-		
-		room_goto(rm_MKSS_Debug_Lobby_Beta);
-	}
-	#endregion
-}
 #endregion

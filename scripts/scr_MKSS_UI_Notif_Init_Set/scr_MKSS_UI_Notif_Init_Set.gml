@@ -88,7 +88,11 @@ function scr_MKSS_UI_Notif_Init_Set()
 		//audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		var targetRoom = rm_MKSS_BattleshipHalberd;
-		scr_GoToRoom(targetRoom,false);
+		
+		with (scr_GoToRoom(targetRoom,false))
+		{
+			alphaSpd = .01;
+		}
 		
 		scr_MKSS_Stage_End();
 		
@@ -137,7 +141,11 @@ function scr_MKSS_UI_Notif_Init_Set()
 		//audio_sound_pitch(sfx,random_range(.85,1.15));
 		
 		var targetRoom = rm_MKSS_Menu_TitleScreen;
-		scr_GoToRoom(targetRoom,false);
+		
+		with (scr_GoToRoom(targetRoom,false))
+		{
+			alphaSpd = .01;
+		}
 		
 		scr_MKSS_Stage_End();
 		
