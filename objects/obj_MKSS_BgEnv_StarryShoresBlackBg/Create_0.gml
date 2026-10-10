@@ -1,7 +1,8 @@
 ///@description Create
 
 #region Initialize Variables
-#region Object Attributes
+global.canGamePause = false;
+
 isActive = !(global.MKSS_WeaponList[global.MKSS_WeaponIDs[? "galaxia"]].isUnlocked);
 showTitle = false;
 
@@ -13,7 +14,6 @@ spd = 5;
 
 destroyTimer = -1;
 destroyTimerMax = 360;
-#endregion
 #endregion
 
 #region Activation

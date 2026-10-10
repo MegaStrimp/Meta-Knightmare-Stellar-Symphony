@@ -1,24 +1,37 @@
 ///@description MKSS - Stage - Clear
 
-function scr_MKSS_Stage_Clear()
+function scr_MKSS_Stage_Clear(hasClearSequence = true)
 {
 	#region Variables
 	var rawScore = global.levelScoreCurrent;
+	
+	with (obj_MKSS_Control)
+	{
+		specialDeflationTimer = -1;
+		
+		for (var i = 0; i < global.maxPlayers; i++)
+		{
+			playerMetaQuickTimer[i] = -1;
+		}
+	}
 	#endregion
 	
 	#region Animation
-	scr_MKSS_Music_Play(global.MKSS_MusicIDs[? "stageClear"]);
-	
-	with (obj_MKSS_UI_FadingText) instance_destroy();
-	
-	with (obj_Player)
+	if (hasClearSequence)
 	{
-		scr_Player_CancelAttack(id,attackIndex);
+		scr_MKSS_Music_Play(global.MKSS_MusicIDs[? "stageClear"]);
 		
-		scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_StageClear_Step);
+		with (obj_MKSS_UI_FadingText) instance_destroy();
+		
+		with (obj_Player)
+		{
+			scr_Player_CancelAttack(id,attackIndex);
+		
+			scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_StageClear_Step);
+		}
+		
+		scr_MKSS_UI_StageClear_Create(rawScore);
 	}
-	
-	scr_MKSS_UI_StageClear_Create(rawScore);
 	#endregion
 	
 	#region Save Stage Data

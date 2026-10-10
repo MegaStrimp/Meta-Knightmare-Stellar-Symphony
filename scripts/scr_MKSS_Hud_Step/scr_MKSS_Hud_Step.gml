@@ -15,9 +15,10 @@ function scr_MKSS_Hud_Step()
 		}
 		else
 		{
-			var currentIndex = ds_list_find_value(global.MKSS_PlayerWeaponList[0],global.MKSS_PlayerWeaponList_Index[0]);
+			var currentIndex = global.MKSS_PlayerWeaponList_Index[0];
 			
 			hud_MiddleIcon = global.MKSS_WeaponList[currentIndex].hudIcon;
+			
 			if (listSize > 1)
 			{
 				hud_LeftIcon = global.MKSS_WeaponList[(currentIndex - 1 + listSize) % listSize].hudIconSmall;

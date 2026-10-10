@@ -16,6 +16,6 @@ function scr_MKSS_RoomSetup_FissionFactory()
 	#endregion
 	
 	#region Discord
-	scr_Discord_Setup("Fission Factory",-1,"icon",global.gameTitle,"strimp","From Strimp's Kitchen");
+	scr_Discord_Setup("Fission Factory",-1,"fissionfactory",global.gameTitle,"strimp","From Strimp's Kitchen");
 	#endregion
 }

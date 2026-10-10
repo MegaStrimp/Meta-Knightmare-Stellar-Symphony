@@ -16,6 +16,6 @@ function scr_MKSS_RoomSetup_LivingLoomEX()
 	#endregion
 	
 	#region Discord
-	scr_Discord_Setup("Living Loom EX",-1,"icon",global.gameTitle,"strimp","From Strimp's Kitchen");
+	scr_Discord_Setup("Living Loom EX",-1,"livingloomex",global.gameTitle,"strimp","From Strimp's Kitchen");
 	#endregion
 }

@@ -16,6 +16,6 @@ function scr_MKSS_RoomSetup_StarryShores_StrimpRoom()
 	#endregion
 	
 	#region Discord
-	scr_Discord_Setup("???",-1,"icon",global.gameTitle,"strimp","From Strimp's Kitchen");
+	scr_Discord_Setup("???",-1,"starryshores",global.gameTitle,"strimp","From Strimp's Kitchen");
 	#endregion
 }

@@ -16,6 +16,6 @@ function scr_MKSS_RoomSetup_AboveHalberd()
 	#endregion
 	
 	#region Discord
-	scr_Discord_Setup("Above Halberd",-1,"icon",global.gameTitle,"strimp","From Strimp's Kitchen");
+	scr_Discord_Setup("Above Halberd",-1,"abovehalberd",global.gameTitle,"strimp","From Strimp's Kitchen");
 	#endregion
 }

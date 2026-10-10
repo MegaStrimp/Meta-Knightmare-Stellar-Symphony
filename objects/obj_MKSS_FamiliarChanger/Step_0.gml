@@ -8,7 +8,7 @@ if (isActive)
 		if (input_check_pressed("left",playerNum))
 		{
 			var sfx = scr_PlaySfx(snd_MKSS_Select);
-			audio_sound_pitch(sfx,random_range(.85,1.15));
+			//audio_sound_pitch(sfx,random_range(.85,1.15));
 			
 			selection = (selection - 1 + familiarListCount) % familiarListCount;
 			
@@ -24,7 +24,7 @@ if (isActive)
 		if (input_check_pressed("right",playerNum))
 		{
 			var sfx = scr_PlaySfx(snd_MKSS_Select);
-			audio_sound_pitch(sfx,random_range(.85,1.15));
+			//audio_sound_pitch(sfx,random_range(.85,1.15));
 			
 			selection = (selection + 1 + familiarListCount) % familiarListCount;
 			

@@ -16,6 +16,6 @@ function scr_MKSS_RoomSetup_RoyalReeve_Prelude()
 	#endregion
 	
 	#region Discord
-	scr_Discord_Setup("Royal Reeve",-1,"icon",global.gameTitle,"strimp","From Strimp's Kitchen");
+	scr_Discord_Setup("Royal Reeve",-1,"royalreeve",global.gameTitle,"strimp","From Strimp's Kitchen");
 	#endregion
 }

@@ -18,6 +18,14 @@ function scr_MKSS_Enemy_GetStunned(targetEnemy)
 			#endregion
 		}
 		
+		if (hasCorpse)
+		{
+			var sfx = scr_PlaySfx(snd_MKSS_Boss_Death1);
+			audio_sound_pitch(sfx,random_range(.85,1.15));
+			
+			scr_MKSS_UI_BackgroundOverlay_Create(10,layer_get_depth("Player") + 1,false,[c_red],,true).alpha = .2;
+		}
+		
 		#region Change State
 		scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_AI_Stun_Step);
 		#endregion

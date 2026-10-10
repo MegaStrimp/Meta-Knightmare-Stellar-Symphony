@@ -27,6 +27,6 @@ function scr_MKSS_RoomSetup_IceCreamIsland(isAfternoon = false)
 	#endregion
 	
 	#region Discord
-	scr_Discord_Setup("Ice Cream Island",-1,"icon",global.gameTitle,"strimp","From Strimp's Kitchen");
+	scr_Discord_Setup("Ice Cream Island",-1,"icecreamisland",global.gameTitle,"strimp","From Strimp's Kitchen");
 	#endregion
 }

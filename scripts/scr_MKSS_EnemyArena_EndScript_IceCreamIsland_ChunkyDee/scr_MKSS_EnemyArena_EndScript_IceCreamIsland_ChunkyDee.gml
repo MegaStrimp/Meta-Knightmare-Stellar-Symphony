@@ -2,7 +2,7 @@
 
 function scr_MKSS_EnemyArena_EndScript_IceCreamIsland_ChunkyDee()
 {
-	scr_MKSS_Stage_End();
+	scr_MKSS_Stage_Clear(false);
 	
 	with (instance_create_depth(0,0,0,obj_MKSS_Cutscene))
 	{

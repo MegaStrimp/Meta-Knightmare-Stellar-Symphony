@@ -181,7 +181,31 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_PaintRoller_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_PaintRoller_Portrait_Talk,
-			text: "Boss, boss! So, I was thinking of making a badass portrait for you. Like, maybe with a cool hat on a horse or something. Then I realized I have no idea what a horse is. How does Dyna Blade sound?... Wait, what's with that look? I... somehow think you'd prefer the horse...",
+			text: "Boss, boss![delay,200] So, I was thinking of making a badass portrait for you.",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_PaintRoller_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_PaintRoller_Portrait_Talk,
+			text: "Like,[delay,200] maybe with a cool hat on a horse or something.",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_PaintRoller_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_PaintRoller_Portrait_Talk,
+			text: "Then I realized I have no idea what a horse is.[delay,200] How does [c_red]Dyna Blade[/color] sound?",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_PaintRoller_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_PaintRoller_Portrait_Talk,
+			text: "...Wait,[delay,200] what's with that look?[delay,200] I...[delay,200] somehow think you'd prefer the horse.",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
 			drawScript: defaultDrawScript
@@ -197,7 +221,23 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_PaintRoller_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_PaintRoller_Portrait_Talk,
-			text: "Hey boss! Can I ask you somethin' uh... personal?... How many people 'round here have... uh... noses? Cuz I just noticed that this paint I'm using... uh, it has a fume warning...?",
+			text: "Hey boss![delay,200] Can I ask you somethin' uh...[delay,500] personal?",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_PaintRoller_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_PaintRoller_Portrait_Talk,
+			text: "...How many people 'round here have...[delay,200] uh...[delay,500] noses?",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_PaintRoller_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_PaintRoller_Portrait_Talk,
+			text: "Cuz I just noticed that this [c_red]paint [c_lime]I'm [c_aqua]using[/color]...[delay,200] uh,[delay,200] it has a fume warning...?",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
 			drawScript: defaultDrawScript
@@ -205,7 +245,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_AxeKnight_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_AxeKnight_Portrait_Talk,
-			text: "Dob't wormy. I doubt andy damblage will harpen.",
+			text: "Dob't wormy.[delay,200] I doubt andy damblage will harpen.",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
 			drawScript: defaultDrawScript

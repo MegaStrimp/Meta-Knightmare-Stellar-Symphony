@@ -8,6 +8,6 @@ function scr_MKSS_RoomSetup_StarlessMarx()
 	#endregion
 	
 	#region Discord
-	scr_Discord_Setup("VS. Starless Marx",-1,"icon",global.gameTitle,"strimp","From Strimp's Kitchen");
+	scr_Discord_Setup("VS. Starless Marx",-1,"vsstarlessmarx",global.gameTitle,"strimp","From Strimp's Kitchen");
 	#endregion
 }

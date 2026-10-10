@@ -46,6 +46,14 @@ if (!localPause)
 		if (activationScript != -1) script_execute(activationScript);
 	}
 	#endregion
+	
+	#region Animation
+	image_speed = speedMultFinal;
+	#endregion
+}
+else
+{
+	image_speed = 0;
 }
 
 #region Local Freeze Frame Timer

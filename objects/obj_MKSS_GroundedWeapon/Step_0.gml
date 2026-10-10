@@ -14,6 +14,7 @@ if (!localPause)
 			scr_MKSS_Player_UnlockWeapon(playerNum,other.weaponID);
 			
 			global.playerAbility[playerNum] = other.weaponID;
+			global.MKSS_PlayerWeaponList_Index[playerNum] = ds_list_find_index(global.MKSS_PlayerWeaponList[playerNum],other.weaponID);
 			scr_Player_ChangeAbility(id,global.playerAbility[playerNum]);
 			weaponSpriteSet = global.MKSS_WeaponList[other.weaponID].spriteSet;
 			script_execute(global.MKSS_WeaponList[other.weaponID].setupScript);

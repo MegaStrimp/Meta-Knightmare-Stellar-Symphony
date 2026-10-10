@@ -16,6 +16,6 @@ function scr_MKSS_RoomSetup_AdAstraEX()
 	#endregion
 	
 	#region Discord
-	scr_Discord_Setup("Ad Astra EX",-1,"icon",global.gameTitle,"strimp","From Strimp's Kitchen");
+	scr_Discord_Setup("Ad Astra EX",-1,"adastraex",global.gameTitle,"strimp","From Strimp's Kitchen");
 	#endregion
 }

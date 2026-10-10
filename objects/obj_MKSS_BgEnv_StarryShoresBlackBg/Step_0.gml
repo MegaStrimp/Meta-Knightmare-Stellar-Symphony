@@ -35,6 +35,7 @@ if (!localPause)
 		destroyTimer = max(destroyTimer - speedMultFinal,0);
 		if (destroyTimer == 0)
 		{
+			global.canGamePause = true;
 			global.hasHud = true;
 			instance_destroy();
 			

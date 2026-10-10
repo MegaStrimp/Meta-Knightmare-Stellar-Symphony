@@ -36,7 +36,7 @@ function scr_MKSS_Hud_DrawGUI()
 	#endregion
 	
 	#region Special
-	if (hud_SpecialEnabled)
+	if ((hud_SpecialEnabled) and (global.playerAbility[0] != -1))
 	{
 		var specialPalSprite = -1;
 		var specialPalIndex = 1;

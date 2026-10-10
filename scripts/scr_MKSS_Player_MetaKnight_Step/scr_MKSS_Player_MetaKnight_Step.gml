@@ -189,7 +189,7 @@ function scr_MKSS_Player_MetaKnight_Step()
 	#region Parry Attack Buffer
 	var hasCounter = scr_MKSS_Player_CheckUpgrade(playerNum,"Base_Counter");
 	
-	if ((parryAttackBuffer) and (hasCounter) and (input_check_pressed("B",playerNum)))
+	if ((parryAttackBuffer) and (hasCounter) and (hurtState != hurtStates.hurt) and (input_check_pressed("B",playerNum)))
 	{
 		canParryAttackTimer = -1;
 		parryAttackFlag = true;

@@ -12,6 +12,6 @@ function scr_MKSS_RoomSetup_StarlessNightmare()
 	#endregion
 	
 	#region Discord
-	scr_Discord_Setup("VS. Starless Nightmare",-1,"icon",global.gameTitle,"strimp","From Strimp's Kitchen");
+	scr_Discord_Setup("VS. Starless Nightmare",-1,"vsstarlessnightmare",global.gameTitle,"strimp","From Strimp's Kitchen");
 	#endregion
 }

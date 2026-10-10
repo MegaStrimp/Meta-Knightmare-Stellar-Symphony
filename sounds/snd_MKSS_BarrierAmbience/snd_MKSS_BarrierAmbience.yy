@@ -21,7 +21,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_MKSS_BarrierAmbience.mp3",
+  "soundFile":"snd_MKSS_BarrierAmbience.ogg",
   "tags":[
     "Sound Effect",
   ],
