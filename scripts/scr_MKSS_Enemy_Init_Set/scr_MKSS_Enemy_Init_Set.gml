@@ -716,10 +716,10 @@ function scr_MKSS_Enemy_Init_Set()
 	{
 		sprIdle: spr_MKSS_Enemy_GigantEdge_Base_Idle,
 		sprWalk: spr_MKSS_Enemy_GigantEdge_Base_Walk,
-		sprDuck: spr_MKSS_Enemy_GigantEdge_Base_Duck,
+		sprDuck: spr_MKSS_Enemy_GigantEdge_Base_SwordSlamDuck,
 		
 		sprSwordSwingPrepare: spr_MKSS_Enemy_GigantEdge_Base_SwordSwingPrepare,
-		sprSwordSwing: spr_MKSS_Enemy_GigantEdge_Base_SwordSwing,
+		sprSwordSwing: spr_MKSS_Enemy_GigantEdge_Base_SwordSwing1,
 		
 		sprSwordDash: spr_MKSS_Enemy_GigantEdge_Base_SwordDash,
 		
