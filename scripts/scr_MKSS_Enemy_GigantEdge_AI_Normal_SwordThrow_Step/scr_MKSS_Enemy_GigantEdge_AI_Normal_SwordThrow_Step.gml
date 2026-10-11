@@ -42,7 +42,7 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordThrow_Step()
 		#endregion
 		#endregion
 		
-		#region Charge Swing Start		
+		#region Sword Throw Start		
 		sprite_index = spriteSet.sprSwordThrowPrepare;
 		image_index = 0;
 		
@@ -81,17 +81,17 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordThrow_Step()
 			
 			#region Sword Throw
 			case 1:
-			if (attackStateTimer[attackState] == -1)
+			if (attackStateTimer[attackState] == -1) or (image_index >= 3)
 			{
 				var targetAngle = 0;
 				if (dirX == -1) targetAngle = 180;
 				
-				with (instance_create_depth(x + (32 * dirX),y,depth + 1,obj_MKSS_Attack))
+				with (instance_create_depth(x + (32 * dirX),y,depth - 2,obj_MKSS_Attack))
 				{
 					owner = other;
 					isEnemy = true;
-					//canBeParried = isParriable;
-					//parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryStarlessMarxCutter"];
+					canBeParried = true;
+					parryAttackIndex = global.MKSS_AttackIDs[? "metaKnight_ParryGigantEdgeSwordThrow"];
 					dmg = 1;
 					knockbackForce = 1;
 					hsp = 0;
@@ -117,7 +117,7 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordThrow_Step()
 			case 2:
 			if (attackStateTimer[attackState] == -1)
 			{
-				sprite_index = spriteSet.sprIdle;
+				sprite_index = spriteSet.sprSwordGrab;
 				image_index = 0;
 				
 				attackState++;

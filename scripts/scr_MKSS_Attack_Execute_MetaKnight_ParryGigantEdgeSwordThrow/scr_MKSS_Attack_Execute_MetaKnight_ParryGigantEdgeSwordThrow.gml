@@ -24,39 +24,20 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryGigantEdgeSwordThrow(playerInde
 	#region Parry
 	if (instance_exists(currentParriedObject))
 	{
-		with (instance_create_depth(currentParriedObject.x,currentParriedObject.y,depth,obj_MKSS_Attack))
+		with (instance_create_depth(currentParriedObject.x,currentParriedObject.y,depth - 3,obj_MKSS_Attack))
 		{
 			target = currentParriedObject.owner;
 			owner = playerIndex;
 			isEnemy = false;
 			dmg = -1;
 			bonusValue = MKSS_Base_AttackBonusValue;
-			dirX = currentParriedObject.dirX;
-			sprite_index = spr_MKSS_Attack_GigantEdge_SwordProjectile;
+			sprite_index = currentParriedObject.sprite_index;
 			image_index = currentParriedObject.image_index;
 			attackAIStep = scr_MKSS_Attack_MetaKnight_ParryGigantEdgeSwordThrow_Step;
 		}
 		
 		with (currentParriedObject)
 		{
-			var count = 0;
-			with (obj_Attack)
-			{
-				if (owner == other.owner)
-				{
-					count += 1;
-					if (count > 1) break;
-				}
-			}
-				
-			if (count <= 1)
-			{
-				with (owner)
-				{
-					shooterCutter_CancelTimer = shooterCutter_CancelTimerMax;
-				}
-			}
-			
 			instance_destroy();
 		}
 	}

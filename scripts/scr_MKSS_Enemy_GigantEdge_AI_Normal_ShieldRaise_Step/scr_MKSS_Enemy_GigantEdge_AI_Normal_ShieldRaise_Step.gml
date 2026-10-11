@@ -27,7 +27,7 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_ShieldRaise_Step()
 		#endregion
 		#endregion
 		
-		#region Charge Swing Start		
+		#region Shield Raise Start		
 		sprite_index = spriteSet.sprShieldUp;
 		image_index = 0;
 		
@@ -74,6 +74,13 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_ShieldRaise_Step()
 	
 	if (!localPause)
 	{
+		#region Flash Timer
+		if (flashTimer == -1)
+		{
+			flashTimer = flashTimerTarget;
+		}
+		#endregion
+		
 		#region Friction
 		var decelFinal = decel * speedMultFinal;
 		

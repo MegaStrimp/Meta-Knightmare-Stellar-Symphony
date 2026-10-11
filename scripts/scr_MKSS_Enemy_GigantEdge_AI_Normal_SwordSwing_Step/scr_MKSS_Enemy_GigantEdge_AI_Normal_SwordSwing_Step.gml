@@ -30,6 +30,10 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordSwing_Step()
 		#endregion
 		#endregion
 		
+		#region Sword Swing Variables
+		meleeHitboxState = 0;
+		#endregion
+		
 		#region Sword Swing Start
 		sprite_index = spriteSet.sprSwordSwingPrepare;
 		image_index = 0;
@@ -57,8 +61,8 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordSwing_Step()
 				sprite_index = spriteSet.sprSwordSwing;
 				image_index = 0;
 				
-				var sfx = scr_PlaySfx(snd_MKSS_Throw);
-				audio_sound_pitch(sfx,random_range(.85,1.15));
+				//var sfx = scr_PlaySfx(snd_MKSS_Throw);
+				//audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				attackState++;
 			}
@@ -67,8 +71,80 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordSwing_Step()
 			
 			#region Finish Attack
 			case 1:
+			#region Melee Hitbox
+			switch (meleeHitboxState)
+			{
+				case 0:
+				if (image_index >= 1)
+				{
+					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = 1;
+						knockbackForce = 1;
+						attackAIStep = scr_MKSS_Attack_GigantEdge_MeleeHitbox_Step;
+						dirX = other.dirX;
+						image_xscale = dirX * other.scale;
+						sprite_index = -1;
+						mask_index = spr_MKSS_Attack_GigantEdge_MeleeHitbox_SwordSwing1;
+						destroyTimer = 4;
+					}	
+					
+					meleeHitboxState++;
+				}
+				break;
+				
+				case 1:
+				if (image_index >= 2)
+				{
+					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = 1;
+						knockbackForce = 1;
+						attackAIStep = scr_MKSS_Attack_GigantEdge_MeleeHitbox_Step;
+						dirX = other.dirX;
+						image_xscale = dirX * other.scale;
+						sprite_index = -1;
+						mask_index = spr_MKSS_Attack_GigantEdge_MeleeHitbox_SwordSwing2;
+						destroyTimer = 4;
+					}	
+					
+					meleeHitboxState++;
+				}
+				break;
+				
+				case 2:
+				if (image_index >= 3)
+				{
+					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = 1;
+						knockbackForce = 1;
+						attackAIStep = scr_MKSS_Attack_GigantEdge_MeleeHitbox_Step;
+						dirX = other.dirX;
+						image_xscale = dirX * other.scale;
+						sprite_index = -1;
+						mask_index = spr_MKSS_Attack_GigantEdge_MeleeHitbox_SwordSwing3;
+						destroyTimer = 4;
+					}	
+					
+					meleeHitboxState++;
+				}
+				break;
+			}
+			#endregion
+			
 			if (attackStateTimer[attackState] == -1)
 			{
+				//sprite_index = spriteSet.sprIdleSword;
+				//sprite_index = spriteSet.sprSwordGrab;
+				//image_index = 0;
+				
 				scr_Enemy_ChangeState_Step(id,enemyAIStepIdle);
 			}
 			break;

@@ -44,7 +44,6 @@ function scr_MKSS_Attack_Andromeda1_ParryProjectile_Step()
 					turnSpeed = min(turnSpeed + (turnSpeedAccel * speedMultFinal),turnSpeedMax);
 					
 					turnDir = sign(angle_difference(targetAngle,angle));
-					scr_Debug_WriteLog(turnDir)
 					
 					angle = (angle + (turnSpeed * turnDir * speedMultFinal)) % 360;
 					if (angle < 0) angle += 360;

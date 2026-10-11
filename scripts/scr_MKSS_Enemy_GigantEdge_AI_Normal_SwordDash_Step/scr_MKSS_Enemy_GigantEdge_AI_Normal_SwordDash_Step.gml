@@ -42,13 +42,15 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordDash_Step()
 		#endregion
 		#endregion
 		
-		#region Sword Swing Variables
+		#region Sword Dash Variables
 		swordDash_Accel = .1;
 		swordDash_Speed = 0;
 		swordDash_SpeedMax = 2.5;
+		
+		meleeHitbox = -1;
 		#endregion
 		
-		#region Sword Swing Start
+		#region Sword Dash Start
 		sprite_index = spriteSet.sprWalk;
 		image_index = 0;
 		#endregion
@@ -76,7 +78,7 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordDash_Step()
 			{
 				hsp = 0;
 				
-				sprite_index = spriteSet.sprSwordDash;
+				sprite_index = spriteSet.sprSwordDashPrepare;
 				image_index = 0;
 				
 				attackState++;
@@ -88,7 +90,26 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordDash_Step()
 			case 1:
 			if (attackStateTimer[attackState] == -1)
 			{
+				sprite_index = spriteSet.sprSwordDash;
+				image_index = 0;
+				
 				hsp = swordDash_Accel * dirX;
+				
+				with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+				{
+					owner = other;
+					isEnemy = true;
+					dmg = 1;
+					knockbackForce = 1;
+					attackAIStep = scr_MKSS_Attack_GigantEdge_MeleeHitbox_Step;
+					dirX = other.dirX;
+					image_xscale = dirX * other.scale;
+					sprite_index = -1;
+					mask_index = spr_MKSS_Attack_GigantEdge_MeleeHitbox_SwordDash;
+					destroyTimer = 3;
+					
+					other.meleeHitbox = id;
+				}	
 				
 				attackState++;
 			}
@@ -97,6 +118,11 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordDash_Step()
 			
 			#region Dashing
 			case 2:
+			with (meleeHitbox)
+			{
+				destroyTimer = 3;
+			}
+			
 			swordDash_Speed = min(swordDash_Speed + (swordDash_Accel * speedMultFinal), swordDash_SpeedMax);
 			
 			hsp = swordDash_Speed * dirX;
@@ -108,15 +134,20 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordDash_Step()
 				
 				scr_Camera_SetScreenshake(2,1);
 				
-				sprite_index = spriteSet.sprIdle;
+				sprite_index = spriteSet.sprHurt1;
 				image_index = 0;
+				
+				with (meleeHitbox)
+				{
+					instance_destroy();
+				}
 				
 				attackState++;
 			}
 			
 			if (attackStateTimer[attackState] == -1)
 			{
-				sprite_index = spriteSet.sprIdle;
+				sprite_index = spriteSet.sprSwordGrab;
 				image_index = 0;
 				
 				attackState++;

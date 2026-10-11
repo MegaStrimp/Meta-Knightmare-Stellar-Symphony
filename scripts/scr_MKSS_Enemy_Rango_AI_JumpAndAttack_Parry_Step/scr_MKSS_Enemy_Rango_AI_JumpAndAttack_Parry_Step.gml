@@ -42,7 +42,7 @@ function scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Parry_Step()
 							
 							defense = prevDefense;
 							
-							scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_GigantEdge_AI_Normal_Stun_Step);
+							scr_MKSS_Enemy_GetStunned(id);
 						}
 					}
 					
