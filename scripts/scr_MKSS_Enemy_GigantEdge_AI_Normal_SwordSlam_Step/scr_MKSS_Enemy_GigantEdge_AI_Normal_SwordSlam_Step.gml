@@ -117,10 +117,7 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordSlam_Step()
 			case 3:
 			if (attackStateTimer[attackState] == -1)
 			{
-				//sprite_index = spriteSet.sprSwordGrab;
-				//image_index = 0;
-				
-				scr_Enemy_ChangeState_Step(id,enemyAIStepIdle);
+				scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_GigantEdge_AI_Normal_SheathSword_Step);
 			}
 			break;
 			#endregion

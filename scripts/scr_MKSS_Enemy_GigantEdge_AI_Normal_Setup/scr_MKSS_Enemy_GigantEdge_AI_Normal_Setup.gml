@@ -26,6 +26,8 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_Setup(targetIsBoss = true,targetPla
 	gigantEdge_Attack_SwordThrow = scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordThrow_Step;
 	gigantEdge_Attack_ShieldRaise = scr_MKSS_Enemy_GigantEdge_AI_Normal_ShieldRaise_Step;
 	
+	ds_list_add(attackList,gigantEdge_Attack_ChargeSwing);
+	
 	ds_list_add(attackList,gigantEdge_Attack_SwordSwing);
 	ds_list_add(attackList,gigantEdge_Attack_SwordDash);
 	ds_list_add(attackList,gigantEdge_Attack_SwordSlam);

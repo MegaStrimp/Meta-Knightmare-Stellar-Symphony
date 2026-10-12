@@ -24,7 +24,7 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_ChargeSwing_Step()
 		#endregion
 		
 		#region Sword Beam Timer
-		attackStateTimerMax[i] = 18;
+		attackStateTimerMax[i] = 12;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
@@ -174,7 +174,11 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_ChargeSwing_Step()
 					mask_index = spr_MKSS_Attack_GigantEdge_SwordBeam;
 					attackAIStep = scr_MKSS_Attack_GigantEdge_SwordBeam_Step;
 					destroyOutsideRoom = true;
-					destroyAfterCollideWall = true;
+					destroyAfterAnimation = true;
+					trailTimerMax = 2;
+					trailTimer = trailTimerMax;
+					particleTimerMax = 6;
+					particleTimer = particleTimerMax;
 				}
 				
 				attackState++;
@@ -186,10 +190,7 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_ChargeSwing_Step()
 			case 2:
 			if (attackStateTimer[attackState] == -1)
 			{
-				//sprite_index = spriteSet.sprSwordGrab;
-				//image_index = 0;
-				
-				scr_Enemy_ChangeState_Step(id,enemyAIStepIdle);
+				scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_GigantEdge_AI_Normal_SheathSword_Step);
 			}
 			break;
 			#endregion
