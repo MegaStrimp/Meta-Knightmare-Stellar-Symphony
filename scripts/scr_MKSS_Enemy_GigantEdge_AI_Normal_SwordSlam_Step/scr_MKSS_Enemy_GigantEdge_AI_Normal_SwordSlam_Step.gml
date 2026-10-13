@@ -48,7 +48,7 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordSlam_Step()
 		#endregion
 		
 		#region Sword Slam Start
-		sprite_index = spriteSet.sprDuck;
+		sprite_index = spriteSet.sprSwordSlamPrepare;
 		image_index = 0;
 		#endregion
 		
@@ -74,7 +74,7 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordSlam_Step()
 				hsp = swordSlam_JumpSpeed * dirX;
 				vsp = swordSlam_JumpHeight;
 				
-				sprite_index = spriteSet.sprSwordSlam;
+				sprite_index = spriteSet.sprSwordSlamJump;
 				image_index = 0;
 				
 				attackState++;
@@ -99,7 +99,12 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordSlam_Step()
 			hsp = swordSlam_JumpSpeed * dirX;
 			
 			if (attackStateTimer[attackState] == -1) or ((grounded) and (attackStateTimer[attackState] != attackStateTimerMax[attackState]))
-			{				
+			{			
+				scr_Camera_SetScreenshake(3,1);
+				
+				sprite_index = spriteSet.sprSwordSlamDuck;
+				image_index = 0;
+				
 				hsp = 0;
 				vsp = 0;
 				
@@ -112,7 +117,7 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordSlam_Step()
 			case 3:
 			if (attackStateTimer[attackState] == -1)
 			{
-				scr_Enemy_ChangeState_Step(id,enemyAIStepIdle);
+				scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_GigantEdge_AI_Normal_SheathSword_Step);
 			}
 			break;
 			#endregion

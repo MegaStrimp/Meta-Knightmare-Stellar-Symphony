@@ -24,7 +24,7 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_ChargeSwing_Step()
 		#endregion
 		
 		#region Sword Beam Timer
-		attackStateTimerMax[i] = 24;
+		attackStateTimerMax[i] = 12;
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
@@ -34,6 +34,10 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_ChargeSwing_Step()
 		attackStateTimer[i] = attackStateTimerMax[i];
 		i++;
 		#endregion
+		#endregion
+		
+		#region Charge Swing Variables
+		meleeHitboxState = 0;
 		#endregion
 		
 		#region Charge Swing Start
@@ -84,6 +88,74 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_ChargeSwing_Step()
 			
 			#region Sword Beam
 			case 1:
+			#region Melee Hitbox
+			switch (meleeHitboxState)
+			{
+				case 0:
+				if (image_index >= 1)
+				{
+					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = 1;
+						knockbackForce = 1;
+						attackAIStep = scr_MKSS_Attack_GigantEdge_MeleeHitbox_Step;
+						dirX = other.dirX;
+						image_xscale = dirX * other.scale;
+						sprite_index = -1;
+						mask_index = spr_MKSS_Attack_GigantEdge_MeleeHitbox_SwordSwing1;
+						destroyTimer = 4;
+					}	
+					
+					meleeHitboxState++;
+				}
+				break;
+				
+				case 1:
+				if (image_index >= 2)
+				{
+					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = 1;
+						knockbackForce = 1;
+						attackAIStep = scr_MKSS_Attack_GigantEdge_MeleeHitbox_Step;
+						dirX = other.dirX;
+						image_xscale = dirX * other.scale;
+						sprite_index = -1;
+						mask_index = spr_MKSS_Attack_GigantEdge_MeleeHitbox_SwordSwing2;
+						destroyTimer = 4;
+					}	
+					
+					meleeHitboxState++;
+				}
+				break;
+				
+				case 2:
+				if (image_index >= 3)
+				{
+					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = 1;
+						knockbackForce = 1;
+						attackAIStep = scr_MKSS_Attack_GigantEdge_MeleeHitbox_Step;
+						dirX = other.dirX;
+						image_xscale = dirX * other.scale;
+						sprite_index = -1;
+						mask_index = spr_MKSS_Attack_GigantEdge_MeleeHitbox_SwordSwing3;
+						destroyTimer = 4;
+					}	
+					
+					meleeHitboxState++;
+				}
+				break;
+			}
+			#endregion
+			
 			if (attackStateTimer[attackState] == -1)
 			{
 				scr_Camera_SetScreenshake(1,2);
@@ -102,7 +174,11 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_ChargeSwing_Step()
 					mask_index = spr_MKSS_Attack_GigantEdge_SwordBeam;
 					attackAIStep = scr_MKSS_Attack_GigantEdge_SwordBeam_Step;
 					destroyOutsideRoom = true;
-					destroyAfterCollideWall = true;
+					destroyAfterAnimation = true;
+					trailTimerMax = 2;
+					trailTimer = trailTimerMax;
+					particleTimerMax = 6;
+					particleTimer = particleTimerMax;
 				}
 				
 				attackState++;
@@ -114,7 +190,7 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_ChargeSwing_Step()
 			case 2:
 			if (attackStateTimer[attackState] == -1)
 			{
-				scr_Enemy_ChangeState_Step(id,enemyAIStepIdle);
+				scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_GigantEdge_AI_Normal_SheathSword_Step);
 			}
 			break;
 			#endregion

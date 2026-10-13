@@ -12,14 +12,17 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"d830dab8-7a3f-4f44-938e-1ea4a4f1b8d1","name":"d830dab8-7a3f-4f44-938e-1ea4a4f1b8d1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0b306c92-6b05-42bc-885b-e45845cc5c1e","name":"0b306c92-6b05-42bc-885b-e45845cc5c1e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3d089e84-f659-4ca2-8f3a-e5fb9da08215","name":"3d089e84-f659-4ca2-8f3a-e5fb9da08215","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"78e19855-807a-49ab-a5bf-bff07f84bdf9","name":"78e19855-807a-49ab-a5bf-bff07f84bdf9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8d1ba486-04b1-4be8-b694-647b747dd744","name":"8d1ba486-04b1-4be8-b694-647b747dd744","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":18,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"114a1152-e1e2-4f27-899d-44dd2dda078e","blendMode":0,"displayName":"default","isLocked":false,"name":"114a1152-e1e2-4f27-899d-44dd2dda078e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"5aed0463-e2f8-4d74-bec0-8576d94d6b93","blendMode":0,"displayName":"default","isLocked":false,"name":"5aed0463-e2f8-4d74-bec0-8576d94d6b93","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_MKSS_Attack_Nimbia_SwordThrow",
   "nineSlice":null,
@@ -49,7 +52,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":4.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -59,7 +62,7 @@
     },
     "name":"spr_MKSS_Attack_Nimbia_SwordThrow",
     "playback":1,
-    "playbackSpeed":10.0,
+    "playbackSpeed":20.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -69,13 +72,22 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d830dab8-7a3f-4f44-938e-1ea4a4f1b8d1","path":"sprites/spr_MKSS_Attack_Nimbia_SwordThrow/spr_MKSS_Attack_Nimbia_SwordThrow.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"30ce6922-b845-4056-b417-da9bde8b7c6f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0b306c92-6b05-42bc-885b-e45845cc5c1e","path":"sprites/spr_MKSS_Attack_Nimbia_SwordThrow/spr_MKSS_Attack_Nimbia_SwordThrow.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f735308a-0092-4c43-9fc5-808271dbb174","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3d089e84-f659-4ca2-8f3a-e5fb9da08215","path":"sprites/spr_MKSS_Attack_Nimbia_SwordThrow/spr_MKSS_Attack_Nimbia_SwordThrow.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"6dddea0c-5fa2-4ba0-ad02-8615d27a2e98","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"78e19855-807a-49ab-a5bf-bff07f84bdf9","path":"sprites/spr_MKSS_Attack_Nimbia_SwordThrow/spr_MKSS_Attack_Nimbia_SwordThrow.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a81d91a9-7ff3-430d-b649-ca626585aede","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8d1ba486-04b1-4be8-b694-647b747dd744","path":"sprites/spr_MKSS_Attack_Nimbia_SwordThrow/spr_MKSS_Attack_Nimbia_SwordThrow.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"11ef69c5-ca41-48e0-8d43-7418478dbc2d","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":17,
+    "xorigin":22,
     "yorigin":9,
   },
   "swatchColours":null,
@@ -86,5 +98,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":35,
+  "width":45,
 }

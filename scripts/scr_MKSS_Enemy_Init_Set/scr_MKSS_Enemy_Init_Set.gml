@@ -715,34 +715,40 @@ function scr_MKSS_Enemy_Init_Set()
 	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
 	{
 		sprIdle: spr_MKSS_Enemy_GigantEdge_Base_Idle,
+		sprIdleSword: spr_MKSS_Enemy_GigantEdge_Base_IdleSword,
 		sprWalk: spr_MKSS_Enemy_GigantEdge_Base_Walk,
-		sprDuck: spr_MKSS_Enemy_GigantEdge_Base_Duck,
 		
 		sprSwordSwingPrepare: spr_MKSS_Enemy_GigantEdge_Base_SwordSwingPrepare,
-		sprSwordSwing: spr_MKSS_Enemy_GigantEdge_Base_SwordSwing,
+		sprSwordSwing: spr_MKSS_Enemy_GigantEdge_Base_SwordSwing1,
 		
+		sprSwordDashPrepare: spr_MKSS_Enemy_GigantEdge_Base_SwordDashPrepare,
 		sprSwordDash: spr_MKSS_Enemy_GigantEdge_Base_SwordDash,
 		
-		sprSwordSlam: spr_MKSS_Enemy_GigantEdge_Base_SwordSlam,
+		sprSwordSlamPrepare: spr_MKSS_Enemy_GigantEdge_Base_SwordSlamPrepare,
+		sprSwordSlamJump: spr_MKSS_Enemy_GigantEdge_Base_SwordSlamJump,
+		sprSwordSlamDuck: spr_MKSS_Enemy_GigantEdge_Base_SwordSlamDuck,
 		
 		sprChargeSwingPrepare: spr_MKSS_Enemy_GigantEdge_Base_ChargeSwingPrepare,
 		
 		sprSwordThrowPrepare: spr_MKSS_Enemy_GigantEdge_Base_SwordThrowPrepare,
 		sprSwordThrow: spr_MKSS_Enemy_GigantEdge_Base_SwordThrow,
+		sprSwordThrowWait: spr_MKSS_Enemy_GigantEdge_Base_SwordThrowWait,
 		
 		sprShieldUp: spr_MKSS_Enemy_GigantEdge_Base_ShieldUp,
 		
-		sprHurt1: spr_MKSS_Enemy_GigantEdge_Base_Idle,
-		sprHurt2: spr_MKSS_Enemy_GigantEdge_Base_Idle,
+		sprSwordGrab: spr_MKSS_Enemy_GigantEdge_Base_SwordGrab,
+		
+		sprHurt1: spr_MKSS_Enemy_GigantEdge_Base_Hurt1,
+		sprHurt2: spr_MKSS_Enemy_GigantEdge_Base_Dead,
 		
 	    sprHurtList:
 		[
 	        [
-				spr_MKSS_Enemy_GigantEdge_Base_Idle,
+				spr_MKSS_Enemy_GigantEdge_Base_Hurt1,
 				1
 			],
 	        [
-				spr_MKSS_Enemy_GigantEdge_Base_Idle,
+				spr_MKSS_Enemy_GigantEdge_Base_Hurt1,
 				1
 			]
 	    ],

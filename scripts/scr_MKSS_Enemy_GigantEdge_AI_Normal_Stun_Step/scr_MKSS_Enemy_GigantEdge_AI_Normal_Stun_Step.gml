@@ -5,7 +5,7 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_Stun_Step()
 	#region Setup
 	if (enemyState_Setup)
 	{
-		stunCancelTimer = 300;
+		stunCancelTimer = 200;
 		
 		enemyState_Setup = false;
 	}

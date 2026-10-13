@@ -7,8 +7,8 @@ function scr_MKSS_Attack_MetaKnight_ParryGigantEdgeSwordThrow_Step()
 		#region Attack Back
 		if (instance_exists(target))
 		{
-			var cutterX = x;
-			var cutterOwner = owner;
+			var attackX = x;
+			var attackOwner = owner;
 			
 			if ((point_distance(x,y,target.x,target.y) <= 8) or (place_meeting(x,y,target)))
 			{
@@ -17,22 +17,20 @@ function scr_MKSS_Attack_MetaKnight_ParryGigantEdgeSwordThrow_Step()
 				
 				with (target)
 				{
-					dirX = targetEnemyDir;
-					
-					//scr_MKSS_ParticleSet_Explosion1(x,y); STRIMPTODO smaller explosion
+					scr_MKSS_ParticleSet_Explosion2(x,y);
 					
 					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
 					{
-						owner = cutterOwner;
+						owner = attackOwner;
 						isEnemy = false;
-						dmg = floor(MKSS_Base_PlayerContactDamage / 2);
+						dmg = 4;
 						bonusValue = MKSS_Base_AttackBonusValue;
 						canBreakBlocks = true;
 						canBeFinisher = true;
 						isMelee = false;
 						freezeFrameForce = 2;
 						enemyHurtTimerMult = 1.25;
-						dirX = sign(other.x - cutterX);
+						dirX = sign(other.x - attackX);
 						knockbackAngle = 90 - (dirX * 45);
 						knockbackForce = 3;
 						destroyTimer = 30;
@@ -47,11 +45,13 @@ function scr_MKSS_Attack_MetaKnight_ParryGigantEdgeSwordThrow_Step()
 					var sfx = scr_PlaySfx(snd_MKSS_EnemyHit);
 					audio_sound_pitch(sfx,random_range(.85,1.15));
 					
+					scr_MKSS_Enemy_GetStunned(id);
+					
 					shakeX = 4;
 					
-					scr_Camera_SetScreenshake(2);
+					scr_Camera_SetScreenshake(4);
 					
-					script_execute(enemyGetHit,id,floor(MKSS_Base_EnemyHP_Miniboss / 8),3,90 - (45 * sign(x - other.x)),other.owner,other.speedMultFinal);
+					script_execute(enemyGetHit,id,4,3,90 - (45 * sign(x - other.x)),other.owner,other.speedMultFinal);
 				}
 				
 				instance_destroy();

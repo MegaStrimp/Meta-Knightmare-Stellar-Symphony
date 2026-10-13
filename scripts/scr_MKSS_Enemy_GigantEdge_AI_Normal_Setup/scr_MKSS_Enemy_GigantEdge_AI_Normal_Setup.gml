@@ -18,12 +18,6 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_Setup(targetIsBoss = true,targetPla
 	
 	hasWalked = false;
 	
-	//ds_list_add(attackList,global.MKSS_AttackIDs[? "gigantEdge_SwordThrow"]);
-	//ds_list_add(attackList,global.MKSS_AttackIDs[? "gigantEdge_SwordSwing"]);
-	//ds_list_add(attackList,global.MKSS_AttackIDs[? "gigantEdge_SwordDash"]);
-	//ds_list_add(attackList,global.MKSS_AttackIDs[? "gigantEdge_SwordSlam"]);
-	//ds_list_add(attackList,global.MKSS_AttackIDs[? "gigantEdge_ChargeSwing"]);
-	
 	gigantEdge_Attack_Walk = scr_MKSS_Enemy_GigantEdge_AI_Normal_Walk_Step;
 	gigantEdge_Attack_SwordSwing = scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordSwing_Step;
 	gigantEdge_Attack_SwordDash = scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordDash_Step;

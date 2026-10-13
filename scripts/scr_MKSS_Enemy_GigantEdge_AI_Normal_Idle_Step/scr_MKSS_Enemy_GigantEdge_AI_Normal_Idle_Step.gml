@@ -16,6 +16,12 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_Idle_Step()
 		
 		dirX = scr_MKSS_Enemy_DirTarget();
 				
+		//if (sprite_index != spriteSet.sprIdleSword) and (sprite_index != spriteSet.sprSwordGrab)
+		//{
+		//	sprite_index = spriteSet.sprIdle;
+		//	image_index = 0;
+		//}
+		
 		sprite_index = spriteSet.sprIdle;
 		image_index = 0;
 		

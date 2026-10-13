@@ -2,24 +2,51 @@
   "$GMSprite":"v2",
   "%Name":"spr_MKSS_Attack_GigantEdge_SwordBeam",
   "bboxMode":2,
-  "bbox_bottom":33,
-  "bbox_left":15,
-  "bbox_right":32,
-  "bbox_top":17,
+  "bbox_bottom":69,
+  "bbox_left":36,
+  "bbox_right":55,
+  "bbox_top":48,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"a248dace-d387-411d-a482-565579d6afbd","name":"a248dace-d387-411d-a482-565579d6afbd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c7e14166-7c68-4538-a602-49b63f258e1b","name":"c7e14166-7c68-4538-a602-49b63f258e1b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8e6d3070-25ee-439d-9896-462c1d7dae66","name":"8e6d3070-25ee-439d-9896-462c1d7dae66","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6a6fac79-8b4a-4ad0-bfb4-05fa328fdc57","name":"6a6fac79-8b4a-4ad0-bfb4-05fa328fdc57","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"236f2790-1107-45c4-b4fb-140f2c861e7e","name":"236f2790-1107-45c4-b4fb-140f2c861e7e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6dd934c5-d560-4655-bea9-61f3ae2ceb3a","name":"6dd934c5-d560-4655-bea9-61f3ae2ceb3a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ec3da89a-b58f-4bad-a3bf-67512ebf1412","name":"ec3da89a-b58f-4bad-a3bf-67512ebf1412","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c4beb02e-7281-4e3e-ac3c-49aff943b904","name":"c4beb02e-7281-4e3e-ac3c-49aff943b904","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"749c63fc-c35d-44a7-8461-21457a985a78","name":"749c63fc-c35d-44a7-8461-21457a985a78","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5b98504c-1c2b-4fae-b390-1498f899d187","name":"5b98504c-1c2b-4fae-b390-1498f899d187","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7fc766c9-4fb0-4ec3-879f-f86a3193172b","name":"7fc766c9-4fb0-4ec3-879f-f86a3193172b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a51ccedb-be24-4c3e-91f7-20c760dc5320","name":"a51ccedb-be24-4c3e-91f7-20c760dc5320","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"714d1df4-f21c-42a5-ac3f-7a197f773e76","name":"714d1df4-f21c-42a5-ac3f-7a197f773e76","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"102b1b9c-a283-489b-a77a-f55da6a875b1","name":"102b1b9c-a283-489b-a77a-f55da6a875b1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8b079852-4fad-472b-8217-ad1ef98b1cd5","name":"8b079852-4fad-472b-8217-ad1ef98b1cd5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0e019c17-c56c-4af5-9ac1-6057c38d67d1","name":"0e019c17-c56c-4af5-9ac1-6057c38d67d1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9779fd18-c7d5-4e85-920b-d7cd3956ddd5","name":"9779fd18-c7d5-4e85-920b-d7cd3956ddd5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a8eb7ffc-9731-4156-a520-67856c857d81","name":"a8eb7ffc-9731-4156-a520-67856c857d81","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"08337dc4-70fd-4983-b09e-b4c52f1ed4ea","name":"08337dc4-70fd-4983-b09e-b4c52f1ed4ea","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8db19cc3-6aa6-488f-b641-33969e074186","name":"8db19cc3-6aa6-488f-b641-33969e074186","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"88d40485-861a-4e66-ba1e-f18767230f95","name":"88d40485-861a-4e66-ba1e-f18767230f95","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"23b1ebcc-1d73-4ff9-be6a-5d3c7b1ec125","name":"23b1ebcc-1d73-4ff9-be6a-5d3c7b1ec125","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"22178d82-33b1-4006-92b3-5c3142911c44","name":"22178d82-33b1-4006-92b3-5c3142911c44","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b7d0f2f6-2adb-4c65-8799-a475bfc95b4d","name":"b7d0f2f6-2adb-4c65-8799-a475bfc95b4d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"98cb038c-a93e-4244-8252-20cd73fc525d","name":"98cb038c-a93e-4244-8252-20cd73fc525d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"98ea8922-6e9d-47d7-acb4-a9183cfe0576","name":"98ea8922-6e9d-47d7-acb4-a9183cfe0576","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"41ba75c4-23b7-4491-bd4c-ef89727b883b","name":"41ba75c4-23b7-4491-bd4c-ef89727b883b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1063c260-3ab1-423c-8346-d63ddc98743b","name":"1063c260-3ab1-423c-8346-d63ddc98743b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f34b7726-0800-4303-a774-40affe225809","name":"f34b7726-0800-4303-a774-40affe225809","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":34,
+  "height":76,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"331be1dd-4824-4c93-aacf-445cf59000da","blendMode":0,"displayName":"default","isLocked":false,"name":"331be1dd-4824-4c93-aacf-445cf59000da","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"131b0f1c-53c5-4bd3-a330-b4d7655959b1","blendMode":0,"displayName":"default","isLocked":false,"name":"131b0f1c-53c5-4bd3-a330-b4d7655959b1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_MKSS_Attack_GigantEdge_SwordBeam",
   "nineSlice":null,
@@ -49,7 +76,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":28.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -59,7 +86,7 @@
     },
     "name":"spr_MKSS_Attack_GigantEdge_SwordBeam",
     "playback":1,
-    "playbackSpeed":10.0,
+    "playbackSpeed":16.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -69,14 +96,95 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a248dace-d387-411d-a482-565579d6afbd","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"56c414bf-1a38-4dc1-9374-376db289e395","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c7e14166-7c68-4538-a602-49b63f258e1b","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"12798231-2fd7-46fe-ad7e-27c1e89c1b24","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8e6d3070-25ee-439d-9896-462c1d7dae66","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"4d3f50dd-fb39-49d7-bb95-9d11981a4a1e","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6a6fac79-8b4a-4ad0-bfb4-05fa328fdc57","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c046a001-6a8f-4e71-b8c4-b8c6f1e4cbe1","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"236f2790-1107-45c4-b4fb-140f2c861e7e","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"91e14f7d-5fc1-4dac-835e-3d8ed3854a04","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6dd934c5-d560-4655-bea9-61f3ae2ceb3a","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5bf05e72-0b85-45ca-a968-f35a5ed6cecf","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ec3da89a-b58f-4bad-a3bf-67512ebf1412","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"18c14967-dbe2-47bc-9b8f-5e0171a023c7","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c4beb02e-7281-4e3e-ac3c-49aff943b904","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"6491277d-49d6-48da-acc2-ab3bed428d47","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"749c63fc-c35d-44a7-8461-21457a985a78","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"cbe5ada1-aa78-487a-bee7-8286287f130a","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5b98504c-1c2b-4fae-b390-1498f899d187","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"de56e379-8a2a-4334-9d08-9a6e3a4dbf19","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7fc766c9-4fb0-4ec3-879f-f86a3193172b","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"826f3ccb-6663-4d71-b33d-42756da3b490","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a51ccedb-be24-4c3e-91f7-20c760dc5320","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"24e45e55-b4df-43f6-97a1-3e64e79e8f8c","IsCreationKey":false,"Key":10.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"714d1df4-f21c-42a5-ac3f-7a197f773e76","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0c12f9cb-2b6e-4e92-8c58-c0c7a2e4657d","IsCreationKey":false,"Key":11.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"102b1b9c-a283-489b-a77a-f55da6a875b1","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a839a027-30db-4f39-b799-00c4206a8afe","IsCreationKey":false,"Key":12.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8b079852-4fad-472b-8217-ad1ef98b1cd5","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"429e96ff-54ac-4646-94e2-4069f4048893","IsCreationKey":false,"Key":13.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0e019c17-c56c-4af5-9ac1-6057c38d67d1","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"4972cdd9-1326-4d64-9bf1-f96b778eb12a","IsCreationKey":false,"Key":14.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9779fd18-c7d5-4e85-920b-d7cd3956ddd5","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0b9f4dd3-48e1-4f5b-9d71-b3549c3f9f65","IsCreationKey":false,"Key":15.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a8eb7ffc-9731-4156-a520-67856c857d81","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"fabba864-c315-4708-9bbb-9fa4b2142db5","IsCreationKey":false,"Key":16.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"08337dc4-70fd-4983-b09e-b4c52f1ed4ea","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"cb352464-398f-446e-92d3-30f1966668e4","IsCreationKey":false,"Key":17.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8db19cc3-6aa6-488f-b641-33969e074186","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"74ae025d-e71e-4234-a350-eda3ee04c640","IsCreationKey":false,"Key":18.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"88d40485-861a-4e66-ba1e-f18767230f95","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e0c996fa-565e-43f6-a952-0554fa20316d","IsCreationKey":false,"Key":19.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"23b1ebcc-1d73-4ff9-be6a-5d3c7b1ec125","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9d5a8aa6-1c83-41b7-a628-00dc40adb75f","IsCreationKey":false,"Key":20.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"22178d82-33b1-4006-92b3-5c3142911c44","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"65276622-07f1-4ada-948e-ca77b17b89ae","IsCreationKey":false,"Key":21.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b7d0f2f6-2adb-4c65-8799-a475bfc95b4d","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"fd196192-400f-46f4-a50b-908f52e2ae3e","IsCreationKey":false,"Key":22.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"98cb038c-a93e-4244-8252-20cd73fc525d","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a26441ee-1f43-4500-acb2-003b9bca5013","IsCreationKey":false,"Key":23.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"98ea8922-6e9d-47d7-acb4-a9183cfe0576","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e79d5ab9-b6e3-431f-8958-facbfd2d0e7b","IsCreationKey":false,"Key":24.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"41ba75c4-23b7-4491-bd4c-ef89727b883b","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"72b1473d-f970-45f5-8270-abd472e0168f","IsCreationKey":false,"Key":25.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1063c260-3ab1-423c-8346-d63ddc98743b","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f711b9c3-fa2b-4380-8ce8-bf836fa2ab28","IsCreationKey":false,"Key":26.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f34b7726-0800-4303-a774-40affe225809","path":"sprites/spr_MKSS_Attack_GigantEdge_SwordBeam/spr_MKSS_Attack_GigantEdge_SwordBeam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"fe5924c8-905f-473a-afe9-738436d4844a","IsCreationKey":false,"Key":27.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":24,
-    "yorigin":26,
+    "xorigin":46,
+    "yorigin":62,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -86,5 +194,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":33,
+  "width":88,
 }
