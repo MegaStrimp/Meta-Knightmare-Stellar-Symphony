@@ -4,6 +4,16 @@ function scr_MKSS_Enemy_Nimbia_Normal_AttackOrder_Phase1(clear = true)
 {
 	if (clear) ds_list_clear(attackList);
 	
+	//if (global.debug)
+	//{
+	//	ds_list_add(attackList,nimbia_Attack_TornadoThrow);
+	//	ds_list_add(attackList,nimbia_Attack_TornadoThrow);
+	//	ds_list_add(attackList,nimbia_Attack_TornadoThrow);
+	//	ds_list_add(attackList,nimbia_Attack_TornadoThrow);
+	//	ds_list_add(attackList,nimbia_Attack_TornadoThrow);
+	//	ds_list_add(attackList,nimbia_Attack_TornadoThrow);
+	//}
+	
 	ds_list_add(attackList,nimbia_Attack_SlashCombo);
 	ds_list_add(attackList,nimbia_Attack_TornadoThrow);
 	ds_list_add(attackList,nimbia_Attack_LightningSlash);

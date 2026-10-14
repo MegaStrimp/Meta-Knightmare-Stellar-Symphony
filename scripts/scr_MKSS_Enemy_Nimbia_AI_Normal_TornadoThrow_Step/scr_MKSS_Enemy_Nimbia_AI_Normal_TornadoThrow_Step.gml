@@ -100,6 +100,10 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_TornadoThrow_Step()
 					spd = spdMax;
 					decel = .12;
 					angle = image_angle;
+					tornadoFrameTimerMax = 4;
+					tornadoFrameTimer = tornadoFrameTimerMax;
+					tornadoFrame = 0;
+					tornadoFrameMax = 4;
 				}
 			}
 			

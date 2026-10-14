@@ -11,6 +11,17 @@ function scr_MKSS_Attack_Nimbia_SwordThrow_Step()
 		spd = max(spd - (decel * speedMultFinal),-spdMax);
 		#endregion
 		
+		#region Tornado
+		tornadoFrameTimer = max(tornadoFrameTimer - speedMultFinal,0);
+		if (tornadoFrameTimer == 0)
+		{
+			tornadoFrame++;
+			if (tornadoFrame > tornadoFrameMax) tornadoFrame = 0;
+			
+			tornadoFrameTimer = tornadoFrameTimerMax;
+		}
+		#endregion
+		
 		#region Position
 		scr_Component_SetPosition(hsp,vsp);
 		#endregion

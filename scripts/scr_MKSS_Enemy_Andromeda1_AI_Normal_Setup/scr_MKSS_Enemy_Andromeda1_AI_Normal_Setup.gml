@@ -58,8 +58,11 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_Setup(targetIsBoss = true)
 	
 	tailSprite = spriteSet.sprTail_Idle;
 	tailIndex = 0;
+	tailIndexMax = 67;
 	tailOffsetX = 0;
 	tailOffsetY = 0;
+	tailIndexTimerMax = 4;
+	tailIndexTimer = tailIndexTimerMax;
 	
 	arm = [false,false,false,false];
 	

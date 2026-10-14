@@ -36,6 +36,15 @@ function scr_MKSS_Enemy_Andromeda1_Normal_BeginStep()
 			tailOffsetX = 0 * dirX;
 			tailOffsetY = 4;
 			
+			tailIndexTimer = max(tailIndexTimer - speedMultFinal,0);
+			if (tailIndexTimer == 0)
+			{
+				tailIndex++;
+				if (tailIndex >= tailIndexMax) tailIndex = 0;
+				
+				tailIndexTimer = tailIndexTimerMax;
+			}
+			
 			if (!arm[0])
 			{
 				armLBOffsetX = -28 * dirX;

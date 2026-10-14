@@ -26,7 +26,7 @@
   ],
   "name":"spr_MKSS_Attack_Nimbia_SwordThrow",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Sprites",
     "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Stage Bosses/Nimbia/Attacks/Sword/Sprites.yy",
@@ -87,7 +87,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":22,
+    "xorigin":17,
     "yorigin":9,
   },
   "swatchColours":null,
