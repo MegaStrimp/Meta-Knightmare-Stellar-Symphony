@@ -3532,6 +3532,7 @@
     {"id":{"name":"snd_MKSS_GhostKnightStab","path":"sounds/snd_MKSS_GhostKnightStab/snd_MKSS_GhostKnightStab.yy",},},
     {"id":{"name":"snd_MKSS_Hurt","path":"sounds/snd_MKSS_Hurt/snd_MKSS_Hurt.yy",},},
     {"id":{"name":"snd_MKSS_IntroSlash","path":"sounds/snd_MKSS_IntroSlash/snd_MKSS_IntroSlash.yy",},},
+    {"id":{"name":"snd_MKSS_ItemGet","path":"sounds/snd_MKSS_ItemGet/snd_MKSS_ItemGet.yy",},},
     {"id":{"name":"snd_MKSS_Jump","path":"sounds/snd_MKSS_Jump/snd_MKSS_Jump.yy",},},
     {"id":{"name":"snd_MKSS_MarxAppear","path":"sounds/snd_MKSS_MarxAppear/snd_MKSS_MarxAppear.yy",},},
     {"id":{"name":"snd_MKSS_MarxBlackHole1","path":"sounds/snd_MKSS_MarxBlackHole1/snd_MKSS_MarxBlackHole1.yy",},},

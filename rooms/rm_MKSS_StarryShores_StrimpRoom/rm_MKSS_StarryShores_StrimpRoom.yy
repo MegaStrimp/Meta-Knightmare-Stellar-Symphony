@@ -65,9 +65,9 @@
         {"$GMRInstance":"v4","%Name":"inst_261E20DA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_261E20DA","objectId":{"name":"obj_MKSS_BgEnv_PalmTree","path":"objects/obj_MKSS_BgEnv_PalmTree/obj_MKSS_BgEnv_PalmTree.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":176.0,"y":112.0,},
       ],"layers":[],"name":"BackgroundEnvironments","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles","depth":400,"effectEnabled":true,"effectType":null,"gridX":6,"gridY":6,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":10,"SerialiseWidth":35,"TileCompressedData":[
-          -204,0,4,110,0,0,110,-5,0,5,1,0,3,0,1,-4,0,1,1,-3,0,4,3,0,0,1,-7,0,1,123,-6,121,21,125,15,14,15,14,15,
-          14,15,14,15,14,15,14,15,14,15,14,15,14,15,14,-7,0,1,133,-6,0,3,133,26,37,-5,26,3,27,26,37,-5,26,1,27,
-          -4,26,-7,0,1,133,-6,0,3,133,26,27,-4,26,1,25,-4,26,3,28,26,27,-4,26,2,40,26,-7,0,1,133,-6,0,1,133,
+          -204,0,6,110,0,0,110,0,2,-3,0,5,1,0,3,0,1,-4,0,1,1,-3,0,4,3,0,0,1,-7,0,1,123,-6,121,21,125,15,14,15,
+          14,15,14,15,14,15,14,15,14,15,14,15,14,15,14,15,14,-7,0,1,133,-6,0,3,133,26,37,-5,26,3,27,26,37,-5,26,
+          1,27,-4,26,-7,0,1,133,-6,0,3,133,26,27,-4,26,1,25,-4,26,3,28,26,27,-4,26,2,40,26,-7,0,1,133,-6,0,1,133,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_MKSS_StarryShores","path":"tilesets/ts_MKSS_StarryShores/ts_MKSS_StarryShores.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRAssetLayer":"","%Name":"Assets","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_750BBB37","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_750BBB37","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_MKSS_BgEnv_KSWBeach","path":"sprites/spr_MKSS_BgEnv_KSWBeach/spr_MKSS_BgEnv_KSWBeach.yy",},"x":320.0,"y":160.0,},

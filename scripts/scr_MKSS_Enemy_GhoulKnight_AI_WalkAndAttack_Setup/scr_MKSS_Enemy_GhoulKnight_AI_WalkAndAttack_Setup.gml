@@ -25,7 +25,7 @@ function scr_MKSS_Enemy_GhoulKnight_AI_WalkAndAttack_Setup()
 	attackListIndex = 0;
 	
 	attackTimer = -1;
-	attackTimerMax = 20;
+	attackTimerMax = 60;
 	#endregion
 	
 	#region Attack Variables

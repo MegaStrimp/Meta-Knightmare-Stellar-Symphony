@@ -26,7 +26,7 @@ function scr_MKSS_Enemy_GhostKnight_AI_WalkAndAttack_Setup()
 	attackListIndex = 0;
 	
 	attackTimer = -1;
-	attackTimerMax = 45;
+	attackTimerMax = 60;
 	#endregion
 	
 	#region Attack Variables

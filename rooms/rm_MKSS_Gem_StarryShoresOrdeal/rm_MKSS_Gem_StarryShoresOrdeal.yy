@@ -39,8 +39,9 @@
           -610,-2147483648,20,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,-50,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_MKSS_Water","path":"tilesets/ts_MKSS_Water/ts_MKSS_Water.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"UnderwaterBridgeTiles","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"UnderwaterBridgeTiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":40,"TileCompressedData":[
-          -610,-2147483648,-7,0,-33,-2147483648,7,169,-2147483648,-2147483648,169,-2147483648,-2147483648,169,
-          -6,-2147483648,7,169,-2147483648,-2147483648,169,-2147483648,-2147483648,169,-10,-2147483648,
+          -610,-2147483648,7,170,0,0,170,0,0,170,-6,-2147483648,7,170,-2147483648,-2147483648,170,-2147483648,
+          -2147483648,170,-20,-2147483648,7,169,-2147483648,-2147483648,169,-2147483648,-2147483648,169,-6,-2147483648,
+          7,169,-2147483648,-2147483648,169,-2147483648,-2147483648,169,-10,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_MKSS_StarryShores","path":"tilesets/ts_MKSS_StarryShores/ts_MKSS_StarryShores.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles","depth":600,"effectEnabled":true,"effectType":null,"gridX":6,"gridY":6,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":40,"TileCompressedData":[
           -28,0,-12,-2147483648,-28,0,-12,-2147483648,-57,0,1,132,-4,0,1,132,-34,0,1,140,-4,129,1,142,-34,0,1,
@@ -53,7 +54,7 @@
           -3,0,9,134,0,133,0,0,134,0,0,133,-6,0,9,134,0,0,133,0,0,134,0,134,-3,0,1,134,-3,0,-2,134,18,1,2,0,134,
           0,3,0,134,0,134,0,4,133,0,0,134,0,2,-3,0,35,3,133,4,1,134,0,0,133,0,134,0,2,0,134,0,1,3,134,14,15,14,
           15,14,14,15,14,15,17,123,121,121,124,121,121,124,-6,121,34,124,121,121,124,121,121,125,12,15,15,14,15,
-          14,15,14,15,15,26,37,152,153,27,27,26,40,26,29,169,0,0,169,0,0,169,-6,0,16,169,0,0,169,0,0,169,24,26,
+          14,15,14,15,15,26,37,152,153,27,27,26,40,26,29,133,0,0,133,0,0,133,-6,0,16,133,0,0,133,0,0,133,24,26,
           27,28,27,154,155,37,27,-3,26,8,164,165,26,27,27,26,27,29,-20,-2147483648,1,24,-4,26,2,166,167,-3,26,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_MKSS_StarryShores","path":"tilesets/ts_MKSS_StarryShores/ts_MKSS_StarryShores.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"WaterTiles","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"WaterTiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":40,"TileCompressedData":[-609,-2147483648,-22,5,-18,-2147483648,-22,8,-9,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"ts_MKSS_Water","path":"tilesets/ts_MKSS_Water/ts_MKSS_Water.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},

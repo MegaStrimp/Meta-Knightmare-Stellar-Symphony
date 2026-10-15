@@ -2669,6 +2669,7 @@
     {"name":"snd_MKSS_GhostKnightStab","order":78,"path":"sounds/snd_MKSS_GhostKnightStab/snd_MKSS_GhostKnightStab.yy",},
     {"name":"snd_MKSS_Hurt","order":8,"path":"sounds/snd_MKSS_Hurt/snd_MKSS_Hurt.yy",},
     {"name":"snd_MKSS_IntroSlash","order":9,"path":"sounds/snd_MKSS_IntroSlash/snd_MKSS_IntroSlash.yy",},
+    {"name":"snd_MKSS_ItemGet","order":104,"path":"sounds/snd_MKSS_ItemGet/snd_MKSS_ItemGet.yy",},
     {"name":"snd_MKSS_Jump","order":10,"path":"sounds/snd_MKSS_Jump/snd_MKSS_Jump.yy",},
     {"name":"snd_MKSS_MarxAppear","order":40,"path":"sounds/snd_MKSS_MarxAppear/snd_MKSS_MarxAppear.yy",},
     {"name":"snd_MKSS_MarxBlackHole1","order":36,"path":"sounds/snd_MKSS_MarxBlackHole1/snd_MKSS_MarxBlackHole1.yy",},

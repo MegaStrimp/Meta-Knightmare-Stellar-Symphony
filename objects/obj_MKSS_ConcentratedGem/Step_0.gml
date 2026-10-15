@@ -35,6 +35,8 @@ if (!localPause)
 					}
 					else
 					{
+						scr_PlaySfx(snd_MKSS_ItemGet);
+						
 						scr_MKSS_UI_GemObtained_Create(other.gemTitle,other.unlockTitle,other.gemPalette);
 						
 						global.MKSS_StageList[other.targetStageID].collectibles[other.targetCollectibleID].isObtained = true;
