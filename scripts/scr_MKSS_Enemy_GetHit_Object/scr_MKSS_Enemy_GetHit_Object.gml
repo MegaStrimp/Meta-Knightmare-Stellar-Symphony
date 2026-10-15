@@ -24,7 +24,13 @@ function scr_MKSS_Enemy_GetHit_Object(targetEnemy,targetAttack)
 			targetEnemy.hpHealthbarMiddleTimer = 15;
 			targetEnemy.hpHealthbarShakeTimer = 15;
 			
-			scr_MKSS_Player_SpecialPoints_Add(bonusValue);
+			var specialResistance = 1;
+			if (global.MKSS_SpecialDeflation) specialResistance += .5;
+			if (!targetEnemy.canBeHurt) specialResistance += 1;
+		
+			scr_MKSS_Player_SpecialPoints_Add(floor(5 / specialResistance)); //STRIMPTODO
+			
+			scr_MKSS_Player_SpecialPoints_Add(floor(bonusValue / specialResistance));
 			
 			var hitByFinisher = false;
 			

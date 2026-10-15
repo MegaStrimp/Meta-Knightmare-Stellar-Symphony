@@ -2,6 +2,8 @@
 
 function scr_MKSS_ParticleSet_EnemySpawn(parTargetX,parTargetY,parTargetDestroyTimer)
 {
+	bypassViewCheck = true;
+	
 	par[0] = instance_create_depth(parTargetX,parTargetY,depth,obj_MKSS_Particle_EnemySpawn);
 	par[0].destroyTimer = parTargetDestroyTimer;
 	

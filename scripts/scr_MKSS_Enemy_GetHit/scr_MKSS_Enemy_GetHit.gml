@@ -18,8 +18,12 @@ function scr_MKSS_Enemy_GetHit(targetEnemy,targetDmg,targetKnockbackForce = 2,ta
 			
 		targetEnemy.hpHealthbarMiddleTimer = 15;
 		targetEnemy.hpHealthbarShakeTimer = 15;
-			
-		scr_MKSS_Player_SpecialPoints_Add(5); //STRIMPTODO
+		
+		var specialResistance = 1;
+		if (global.MKSS_SpecialDeflation) specialResistance += .5;
+		if (!targetEnemy.canBeHurt) specialResistance += 1;
+		
+		scr_MKSS_Player_SpecialPoints_Add(floor(5 / specialResistance)); //STRIMPTODO
 			
 		var hitByFinisher = false;
 			

@@ -365,13 +365,13 @@ function scr_MKSS_Dialogue_Init_Set()
 	#endregion
 	
 	#region Captain Vul
-	#region Halberd 1
+	#region Halberd 1 STRIMPTODO Make this the Halberd intro dialogue
 	var dialogue = 
 	[
 		{
 			portrait_Idle: spr_MKSS_NPC_CaptainVul_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_CaptainVul_Portrait_Talk,
-			text: "Ah, my lord! I'd say I'm surprised to see you but... well, my face isn't the ship's figurehead.",
+			text: "Ah, my lord![delay,200] I'd say I'm surprised to see you but...[delay,200] well, my face isn't the ship's figurehead.",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
 			drawScript: defaultDrawScript
@@ -379,7 +379,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_CaptainVul_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_CaptainVul_Portrait_Talk,
-			text: "What am I doing? With all due respect, things can get a bit stressful around here, and you told us to stand by. I'm the Halberd's captain, so if she's not in action, neither am I. I figured I'd pass the time tending bar.",
+			text: "What am I doing?[delay,200] With all due respect,[delay,200] things can get a bit stressful around here,[delay,200] and you told us to stand by.",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
 			drawScript: defaultDrawScript
@@ -387,7 +387,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_CaptainVul_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_CaptainVul_Portrait_Talk,
-			text: "The crew's happy, I'm happy, I say two birds killed with one stone... Figure of speech, of course. But, uh... if you see any Rockies, I wasn't here.",
+			text: "I'm the Halberd's captain,[delay,200] so if she's not in action, neither am I.[delay,200] I figured I'd pass the time tending bar.",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
 			drawScript: defaultDrawScript
@@ -395,7 +395,23 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_CaptainVul_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_CaptainVul_Portrait_Talk,
-			text: "What, who are these 'others?' Oh, they know who they are.",
+			text: "The crew's happy,[delay,200] I'm happy,[delay,200] I say two birds killed with one stone...",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_CaptainVul_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_CaptainVul_Portrait_Talk,
+			text: "Figure of speech,[delay,200] of course.[delay,200] But,[delay,200] uh...[delay,200] if you see any Rockies,[delay,200] I wasn't here.",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_CaptainVul_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_CaptainVul_Portrait_Talk,
+			text: "What,[delay,200] who are these[delay,200] 'others?'[delay,200] Oh,[delay,200] they know who they are.",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
 			drawScript: defaultDrawScript

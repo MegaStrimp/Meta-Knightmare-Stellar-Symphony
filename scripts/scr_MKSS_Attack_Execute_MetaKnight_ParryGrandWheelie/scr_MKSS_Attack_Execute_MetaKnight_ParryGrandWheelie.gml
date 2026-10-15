@@ -27,6 +27,8 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryGrandWheelie(playerIndex,curren
 		if (!global.MKSS_MinibossIsStunned) scr_MKSS_Score_Add(250);
 		scr_MKSS_SpawnMetaPoint(8,x,y,depth - 1,playerIndex,90);
 		
+		canBeParried = false;
+		
 		scr_MKSS_Enemy_Miniboss_Stun();
 		scr_MKSS_Enemy_GetStunned(id);
 		
