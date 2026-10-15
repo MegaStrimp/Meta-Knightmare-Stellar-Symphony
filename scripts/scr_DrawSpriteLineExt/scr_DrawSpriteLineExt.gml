@@ -11,6 +11,6 @@ function scr_DrawSpriteLineExt(_x1,_y1,_x2,_y2,_sprite,_subimage,_segments,_offs
 	var i;
 	for (i = 1; i < spr_num; i++)
 	{
-		draw_sprite_ext(spr_id, spr_sub + (i * _offset), _x1 + lengthdir_x((dis / spr_num) * i, dir), _y1 + lengthdir_y((dis / spr_num)*i, dir),_scale,_scale,_angle,_color,_alpha)
+		draw_sprite_ext(spr_id, (spr_sub + i) % (sprite_get_number(spr_id)), _x1 + lengthdir_x((dis / spr_num) * i, dir), _y1 + lengthdir_y((dis / spr_num)*i, dir),_scale,_scale,_angle,_color,_alpha)
 	}
 }

@@ -178,7 +178,7 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_TornadoThrowJump_Step()
 					var _spd = 6;
 					hsp = lengthdir_x(_spd,image_angle);
 					vsp = lengthdir_y(_spd,image_angle);
-					tornadoFrameTimerMax = 4;
+					tornadoFrameTimerMax = 3;
 					tornadoFrameTimer = tornadoFrameTimerMax;
 					tornadoFrame = 0;
 					tornadoFrameMax = 4;
