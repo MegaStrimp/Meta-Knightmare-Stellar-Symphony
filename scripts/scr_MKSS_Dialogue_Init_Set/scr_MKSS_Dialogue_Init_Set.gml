@@ -427,7 +427,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_CaptainVul_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_CaptainVul_Portrait_Talk,
-			text: "My lord, you're looking well. I'm glad you and the other Meta-Knights don't hold, you know, THAT, against me... But I still feel like I've heard 'chicken' thrown around from time to time. You know. From OTHERS.",
+			text: "My lord, you're looking well.[delay,200] I'm glad you and the other Meta-Knights don't hold,[delay,200] you know,[delay,200] THAT,[delay,200] against me...",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
 			drawScript: defaultDrawScript
@@ -435,7 +435,7 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_CaptainVul_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_CaptainVul_Portrait_Talk,
-			text: "They could at least say 'chickenhawk'... It's still an insult, but it's at least a bit closer to reality.",
+			text: "But I still feel like I've heard[delay,200] 'chicken'[delay,200] thrown around from time to time.[delay,200] You know.[delay,200] From OTHERS.",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
 			drawScript: defaultDrawScript
@@ -443,7 +443,15 @@ function scr_MKSS_Dialogue_Init_Set()
 		{
 			portrait_Idle: spr_MKSS_NPC_CaptainVul_Portrait_Idle,
 			portrait_Talk: spr_MKSS_NPC_CaptainVul_Portrait_Talk,
-			text: "You should relax too. You're no good to anyone if you wear yourself out. Nothing's sadder than clipped wings, get me?",
+			text: "They could at least say 'chickenhawk'...[delay,200] It's still an insult, but it's at least a bit closer to reality.",
+			textSpeed: defaultTextSpeed,
+			textSound: defaultTextSound,
+			drawScript: defaultDrawScript
+		},
+		{
+			portrait_Idle: spr_MKSS_NPC_CaptainVul_Portrait_Idle,
+			portrait_Talk: spr_MKSS_NPC_CaptainVul_Portrait_Talk,
+			text: "You should relax too.[delay,200] You're no good to anyone if you wear yourself out.[delay,200] Nothing's sadder than clipped wings,[delay,200] get me?",
 			textSpeed: defaultTextSpeed,
 			textSound: defaultTextSound,
 			drawScript: defaultDrawScript

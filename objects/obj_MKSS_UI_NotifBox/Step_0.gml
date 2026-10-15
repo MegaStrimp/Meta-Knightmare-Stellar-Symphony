@@ -21,6 +21,7 @@ if (destroyTimer != -1)
 	if (destroyTimer == 0)
 	{
 		var nextNotif = ds_list_find_value(global.MKSS_PopupQueue,0);
+		show_debug_message(nextNotif)
 		if (nextNotif != undefined)
 		{
 			scr_MKSS_UI_Notif_Create(ds_list_find_value(global.MKSS_PopupQueue,0));
@@ -67,29 +68,31 @@ if (inputDelayTimer == -1)
 	{
 		mousePressed = true;
 		
-		if ((textTypist.get_state() == 1) or (text[page] == undefined))
+		if (nextScript != undefined)
 		{
-			if (nextScript != undefined)
-			{
-				script_execute(nextScript);
-			}
-			
-			if (page == pageMax)
-			{
-				var sfx = scr_PlaySfx(snd_MKSS_ButtonYes);
-				//audio_sound_pitch(sfx,random_range(.85,1.15));
-				
-				isClosed = true;
-				destroyTimer = destroyTimerMax;
-			}
-			else
-			{
-				page += 1;
-			}
+			script_execute(nextScript);
 		}
 		else
 		{
-			textTypist.skip();
+			if ((textTypist.get_state() == 1) or (text[page] == undefined))
+			{
+				if (page == pageMax)
+				{
+					var sfx = scr_PlaySfx(snd_MKSS_ButtonYes);
+					//audio_sound_pitch(sfx,random_range(.85,1.15));
+					
+					isClosed = true;
+					destroyTimer = destroyTimerMax;
+				}
+				else
+				{
+					page += 1;
+				}
+			}
+			else
+			{
+				textTypist.skip();
+			}
 		}
 	}
 	#endregion

@@ -1,44 +1,60 @@
 ///@description MKSS - UI - Button - Component - Save - Trigger
 
-function scr_MKSS_UI_Button_Component_Save_Trigger(targetSave)
+function scr_MKSS_UI_Button_Component_Save_Trigger(targetNum,targetSave)
 {
-	if (!instance_exists(obj_Transition))
+	if ((isSelected) and (scr_MouseIsInbetween(x - 20,y,x,y + 35)))
 	{
-		var sfx = scr_PlaySfx(snd_MKSS_DoorEnter);
-		//audio_sound_pitch(sfx,random_range(.85,1.15));
-		scr_Music_SetFade(0);
-		
-		global.selectedSave = targetSave;
-		global.lastSelectedSave = global.selectedSave;
-		
-		scr_MKSS_SaveGeneral("general.ini");
-		scr_MKSS_LoadCrossovers(global.selectedSave);
-		scr_MKSS_LoadData(global.selectedSave);
-		scr_MKSS_Player_SetWeapons(playerNum);
-		scr_MKSS_Player_GetUnlockedUpgrades(playerNum);
-		
-		var targetRoom = rm_MKSS_BattleshipHalberd;
-		var targetAlphaSpd = .05;
-		if (global.debug)
+		#region Delete Save
+		if ((obj_MKSS_Menu_TitleScreen.saveExists[targetNum]) and (!instance_exists(obj_MKSS_UI_NotifBox)))
 		{
-			targetRoom = rm_MKSS_Debug_Lobby;
+			obj_MKSS_Menu_TitleScreen.currentSelectedSave = targetSave;
+			
+			scr_MKSS_ObtainNotif(global.MKSS_NotifIDs[? "deleteSave1"],true);
 		}
-		else if (!global.MKSS_StageList[global.MKSS_StageIDs[? "starryShores"]].isBeaten)
+		#endregion
+	}
+	else
+	{
+		#region Go To Game
+		if (!instance_exists(obj_Transition))
 		{
-			if (global.MKSS_StageList[global.MKSS_StageIDs[? "iceCreamIsland"]].isBeaten)
+			var sfx = scr_PlaySfx(snd_MKSS_DoorEnter);
+			//audio_sound_pitch(sfx,random_range(.85,1.15));
+			scr_Music_SetFade(0);
+		
+			global.selectedSave = targetSave;
+			global.lastSelectedSave = global.selectedSave;
+		
+			scr_MKSS_SaveGeneral("general.ini");
+			scr_MKSS_LoadCrossovers(global.selectedSave);
+			scr_MKSS_LoadData(global.selectedSave);
+			scr_MKSS_Player_SetWeapons(playerNum);
+			scr_MKSS_Player_GetUnlockedUpgrades(playerNum);
+		
+			var targetRoom = rm_MKSS_BattleshipHalberd;
+			var targetAlphaSpd = .05;
+			if (global.debug)
 			{
-				targetRoom = rm_MKSS_StarryShores_1;
+				targetRoom = rm_MKSS_Debug_Lobby;
 			}
-			else
+			else if (!global.MKSS_StageList[global.MKSS_StageIDs[? "starryShores"]].isBeaten)
 			{
-				targetRoom = rm_MKSS_IceCreamIsland_1;
-				var targetAlphaSpd = .01;
+				if (global.MKSS_StageList[global.MKSS_StageIDs[? "iceCreamIsland"]].isBeaten)
+				{
+					targetRoom = rm_MKSS_StarryShores_1;
+				}
+				else
+				{
+					targetRoom = rm_MKSS_IceCreamIsland_1;
+					var targetAlphaSpd = .01;
+				}
+			}
+		
+			with (scr_GoToRoom(targetRoom,true))
+			{
+				alphaSpd = targetAlphaSpd;
 			}
 		}
-		
-		with (scr_GoToRoom(targetRoom,true))
-		{
-			alphaSpd = targetAlphaSpd;
-		}
+		#endregion
 	}
 }
