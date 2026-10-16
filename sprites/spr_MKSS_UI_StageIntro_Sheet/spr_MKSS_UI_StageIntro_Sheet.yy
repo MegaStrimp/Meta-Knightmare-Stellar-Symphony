@@ -20,7 +20,7 @@
   "height":9,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"dcf985e3-c11b-4a4b-8de7-cb5724079ef8","blendMode":0,"displayName":"default","isLocked":false,"name":"dcf985e3-c11b-4a4b-8de7-cb5724079ef8","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"5d0cc7c6-9bd1-4e00-a486-9610e8d4f1b9","blendMode":0,"displayName":"default","isLocked":false,"name":"5d0cc7c6-9bd1-4e00-a486-9610e8d4f1b9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_MKSS_UI_StageIntro_Sheet",
   "nineSlice":null,

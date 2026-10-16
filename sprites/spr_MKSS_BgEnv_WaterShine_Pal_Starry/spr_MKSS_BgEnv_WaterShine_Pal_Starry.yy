@@ -13,14 +13,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"c9d8f1e3-6448-4349-9836-9c3ba49e1fe3","name":"c9d8f1e3-6448-4349-9836-9c3ba49e1fe3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"51bf08a4-d6ed-40cd-8635-49643bf39664","name":"51bf08a4-d6ed-40cd-8635-49643bf39664","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":5,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"3b202d1c-91d7-454d-a30f-718bc222bf95","blendMode":0,"displayName":"default","isLocked":false,"name":"3b202d1c-91d7-454d-a30f-718bc222bf95","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"5588059b-2e3f-411c-8498-c752a8b616fa","blendMode":0,"displayName":"default","isLocked":false,"name":"5588059b-2e3f-411c-8498-c752a8b616fa","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_MKSS_BgEnv_WaterShine_Pal_Starry",
   "nineSlice":null,
@@ -70,8 +70,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c9d8f1e3-6448-4349-9836-9c3ba49e1fe3","path":"sprites/spr_MKSS_BgEnv_WaterShine_Pal_Starry/spr_MKSS_BgEnv_WaterShine_Pal_Starry.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"f0f89012-bcb6-4409-ac83-0b2281939efe","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"51bf08a4-d6ed-40cd-8635-49643bf39664","path":"sprites/spr_MKSS_BgEnv_WaterShine_Pal_Starry/spr_MKSS_BgEnv_WaterShine_Pal_Starry.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"7bda0a49-5d1c-4ee1-88a2-b14d6df57b4c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

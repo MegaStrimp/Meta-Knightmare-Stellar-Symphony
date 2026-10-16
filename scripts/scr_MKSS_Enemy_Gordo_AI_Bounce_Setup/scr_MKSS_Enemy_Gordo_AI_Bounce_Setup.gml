@@ -23,7 +23,7 @@ function scr_MKSS_Enemy_Gordo_AI_Bounce_Setup()
 	#endregion
 	
 	#region Palette Variables
-	palSprite = spr_MKSS_Enemy_Gordo_Palette_Normal;
+	palSprite = spr_MKSS_Enemy_Gordo_Palette_Thrown;
 	#endregion
 	
 	#region Gameplay Variables

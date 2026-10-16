@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_MKSS_UI_StageIntro_GameLogo",
   "bboxMode":0,
-  "bbox_bottom":28,
+  "bbox_bottom":31,
   "bbox_left":0,
-  "bbox_right":37,
+  "bbox_right":49,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -13,14 +13,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"21425d24-0e7e-4d34-92e5-2c519adb1d06","name":"21425d24-0e7e-4d34-92e5-2c519adb1d06","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8c085995-573e-44c1-903f-62a4f09680e8","name":"8c085995-573e-44c1-903f-62a4f09680e8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":29,
+  "height":32,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"dcf985e3-c11b-4a4b-8de7-cb5724079ef8","blendMode":0,"displayName":"default","isLocked":false,"name":"dcf985e3-c11b-4a4b-8de7-cb5724079ef8","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"fd278a89-c11b-4c3c-a62b-1c9993a97a3e","blendMode":0,"displayName":"default","isLocked":false,"name":"fd278a89-c11b-4c3c-a62b-1c9993a97a3e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_MKSS_UI_StageIntro_GameLogo",
   "nineSlice":null,
@@ -70,8 +70,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"21425d24-0e7e-4d34-92e5-2c519adb1d06","path":"sprites/spr_MKSS_UI_StageIntro_GameLogo/spr_MKSS_UI_StageIntro_GameLogo.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3a25d2ee-f5fd-46d8-9066-6917c88b2bac","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8c085995-573e-44c1-903f-62a4f09680e8","path":"sprites/spr_MKSS_UI_StageIntro_GameLogo/spr_MKSS_UI_StageIntro_GameLogo.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"4de70120-2b99-40f5-b81c-a3eb57b0ed8e","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -87,5 +87,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":38,
+  "width":50,
 }
