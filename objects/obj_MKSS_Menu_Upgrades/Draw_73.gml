@@ -126,7 +126,7 @@ if (finalPageTitle != undefined) scribble(finalPageTitle).align(fa_center).draw(
 #region Upgrade Title
 var finalTitle = "???";
 if (currentIndex.canBeUnlocked) finalTitle = currentIndex.title;
-if (finalTitle != undefined) scribble(finalTitle).align(fa_center).draw(xx + (global.gameWidth / 2),yy + global.gameHeight - 30 + notifBoxOffset + constellationOffsets[0].y);
+if ((!currentIndex.isLesserNode) and (finalTitle != undefined)) scribble(finalTitle).align(fa_center).draw(xx + (global.gameWidth / 2),yy + global.gameHeight - 30 + notifBoxOffset + constellationOffsets[0].y);
 #endregion
 
 #region Button Hints

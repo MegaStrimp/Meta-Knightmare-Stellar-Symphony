@@ -2,6 +2,8 @@
 
 function scr_MKSS_Weapon_Buzzcut_Setup()
 {
+	buzzcut_IdleSound = -1;
+	
 	buzzcut_BasicCombo_Index = 0;
 	buzzcut_BasicCombo_Active = false;
 	buzzcut_BasicCombo_Timer = -1;
@@ -16,6 +18,11 @@ function scr_MKSS_Weapon_Buzzcut_Setup()
 	buzzcut_Finisher_Timer = -1;
 	buzzcut_Finisher_TimerMax = 30;
 	buzzcut_Finisher_Movespeed = 3;
+	
+	buzzcut_Drillsaw_Grav = .6;
+	buzzcut_Drillsaw_GravLimit = 6;
+	buzzcut_Drillsaw_StateTimerMax = 15;
+	buzzcut_Drillsaw_EndTimerMax = 15;
 	
 	Buzzcut_Chainlings_Movespeed = 3;
 }

@@ -20,6 +20,16 @@ function scr_MKSS_Weapon_Buzzcut_Base()
 	if (!hasFinisher) parryAttackFlag = false;
 	#endregion
 	
+	#region Audio
+	//STRIMPTODO Add a Clean script for each sword (when you equip another one), and stop the audio
+	
+	if (!audio_is_playing(buzzcut_IdleSound))
+	{
+		buzzcut_IdleSound = scr_PlaySfx(snd_MKSS_BuzzcutIdle);
+		//audio_sound_pitch(buzzcut_IdleSound,random_range(.85,1.15));
+	}
+	#endregion
+	
 	#region Run
 	if ((input_check_pressed("left",playerNum)) or (input_check_pressed("right",playerNum)))
 	{
@@ -37,9 +47,20 @@ function scr_MKSS_Weapon_Buzzcut_Base()
 	{
 		if (input_check_pressed("X",playerNum))
 		{
-			if ((!grounded) and (!isFlying) and (isRunning))
+			if ((hasDrillsaw) and (grounded) and (input_check("down",playerNum)))
 			{
-				if ((hasChainlings) and (!isAttacking) and (attackCooldown == -1))
+				if ((!isAttacking) and (attackCooldown == -1))
+				{
+					attackTriggered = true;
+					attackIndex = global.MKSS_AttackIDs[? "buzzcut_Drillsaw"];
+					
+					script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript);
+				}
+			}
+			
+			if ((hasChainlings) and (!grounded) and (!isFlying) and (isRunning))
+			{
+				if ((!isAttacking) and (attackCooldown == -1))
 				{
 					attackTriggered = true;
 					attackIndex = global.MKSS_AttackIDs[? "buzzcut_Chainlings"];

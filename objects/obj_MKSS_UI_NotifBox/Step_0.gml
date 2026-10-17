@@ -21,7 +21,6 @@ if (destroyTimer != -1)
 	if (destroyTimer == 0)
 	{
 		var nextNotif = ds_list_find_value(global.MKSS_PopupQueue,0);
-		show_debug_message(nextNotif)
 		if (nextNotif != undefined)
 		{
 			scr_MKSS_UI_Notif_Create(ds_list_find_value(global.MKSS_PopupQueue,0));

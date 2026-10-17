@@ -14,7 +14,7 @@ draw_set_alpha(1);
 #endregion
 
 #region Game Logo
-draw_sprite_ext(spr_MKSS_UI_StageIntro_GameLogo,0,xx + global.gameWidth - 14,yy + global.gameHeight - 14,1,1,0,c_white,overlayAlpha * 2);
+draw_sprite_ext(spr_MKSS_UI_StageIntro_GameLogo,0,xx + global.gameWidth - 10,yy + global.gameHeight - 14,1,1,0,c_white,overlayAlpha * 2);
 #endregion
 
 #region Sheets

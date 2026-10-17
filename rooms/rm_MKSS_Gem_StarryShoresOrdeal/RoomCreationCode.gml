@@ -48,7 +48,7 @@ with (instance_create_depth(0,0,0,obj_MKSS_EnemyArena))
 	scr_MKSS_EnemyArena_Add(216,166,obj_MKSS_Enemy_WaddleDee,scr_MKSS_Enemy_WaddleDee_AI_Idle_Setup);
 	scr_MKSS_EnemyArena_Add(424,166,obj_MKSS_Enemy_WaddleDee,scr_MKSS_Enemy_WaddleDee_AI_Idle_Setup,,-1,,-1);
 	
-	scr_MKSS_EnemyArena_Add(496,208,obj_MKSS_Enemy_ChunkyDee, scr_MKSS_Enemy_ChunkyDee_AI_Normal_Setup,,-1,,-1);
+	scr_MKSS_EnemyArena_Add(496,208,obj_MKSS_Enemy_ChunkyDee, scr_MKSS_Enemy_ChunkyDee_AI_Normal_Setup,[false,false],-1,,-1);
 	
 	scr_MKSS_EnemyArena_Add(320,56,obj_MKSS_Enemy_WaddleDee,scr_MKSS_Enemy_WaddleDee_AI_Idle_Setup);
 	scr_MKSS_EnemyArena_Add(136,160,obj_MKSS_Enemy_BrontoBurt, scr_MKSS_Enemy_BrontoBurt_AI_FlyStraightHorizontal_Setup);
@@ -74,7 +74,7 @@ with (instance_create_depth(0,0,0,obj_MKSS_EnemyArena))
 	
 	scr_MKSS_EnemyArena_Add(176,258,obj_MKSS_Enemy_Rango, scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Setup);
 	scr_MKSS_EnemyArena_Add(464,258,obj_MKSS_Enemy_Rango, scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Setup);
-	scr_MKSS_EnemyArena_Add(112,128,obj_MKSS_Enemy_ChunkyDee, scr_MKSS_Enemy_ChunkyDee_AI_Normal_Setup);
-	scr_MKSS_EnemyArena_Add(526,128,obj_MKSS_Enemy_ChunkyDee, scr_MKSS_Enemy_ChunkyDee_AI_Normal_Setup,,-1,,-1);
+	scr_MKSS_EnemyArena_Add(112,128,obj_MKSS_Enemy_ChunkyDee, scr_MKSS_Enemy_ChunkyDee_AI_Normal_Setup,[false,false]);
+	scr_MKSS_EnemyArena_Add(526,128,obj_MKSS_Enemy_ChunkyDee, scr_MKSS_Enemy_ChunkyDee_AI_Normal_Setup,[false,false],-1,,-1);
 }
 #endregion
