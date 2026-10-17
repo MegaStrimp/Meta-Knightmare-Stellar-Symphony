@@ -69,6 +69,8 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_ChargeSwing_Step()
 					sprite_index = spriteSet.sprChargeSwingPrepare;
 					image_index = 0;
 					
+					attackSound = scr_PlaySfx(snd_MKSS_GigantEdge_Charge);
+					
 					dirX = scr_MKSS_Enemy_DirTarget();	
 				}
 			}
@@ -78,7 +80,15 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_ChargeSwing_Step()
 				sprite_index = spriteSet.sprSwordSwing;
 				image_index = 0;
 				
-				var sfx = scr_PlaySfx(snd_MKSS_Throw);
+				if (attackSound != -1)
+				{
+					if (audio_is_playing(attackSound))
+					{
+						audio_stop_sound(attackSound);
+					}
+				}
+				
+				var sfx = scr_PlaySfx(snd_MKSS_GigantEdge_Slash);
 				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				attackState++;
@@ -159,6 +169,9 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_ChargeSwing_Step()
 			if (attackStateTimer[attackState] == -1)
 			{
 				scr_Camera_SetScreenshake(1,2);
+				
+				var sfx = scr_PlaySfx(snd_MKSS_GigantEdge_Impact);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				with (instance_create_depth(x+(64*dirX),y,depth + 1,obj_MKSS_Attack))
 				{

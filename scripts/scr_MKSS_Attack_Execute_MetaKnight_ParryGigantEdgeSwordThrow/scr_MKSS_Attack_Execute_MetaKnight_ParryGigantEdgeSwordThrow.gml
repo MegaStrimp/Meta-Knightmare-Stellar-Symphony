@@ -24,6 +24,17 @@ function scr_MKSS_Attack_Execute_MetaKnight_ParryGigantEdgeSwordThrow(playerInde
 	#region Parry
 	if (instance_exists(currentParriedObject))
 	{
+		with (currentParriedObject.owner)
+		{
+			if (attackSound != -1)
+			{
+				if (audio_is_playing(attackSound))
+				{
+					audio_stop_sound(attackSound);
+				}
+			}
+		}
+		
 		with (instance_create_depth(currentParriedObject.x,currentParriedObject.y,depth - 3,obj_MKSS_Attack))
 		{
 			target = currentParriedObject.owner;

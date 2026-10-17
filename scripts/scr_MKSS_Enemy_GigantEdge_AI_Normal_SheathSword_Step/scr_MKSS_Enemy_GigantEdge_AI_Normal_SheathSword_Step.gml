@@ -8,6 +8,9 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SheathSword_Step()
 		sprite_index = spriteSet.sprSwordGrab;
 		image_index = 0;
 		
+		var sfx = scr_PlaySfx(snd_MKSS_GigantEdge_Dash2);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
+		
 		enemyState_Setup = false;
 	}
 	#endregion

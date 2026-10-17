@@ -52,6 +52,16 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_Walk_Step()
 		}
 		#endregion
 		
+		#region Footsteps
+		if (footstepFrame != floor(image_index)) and ((floor(image_index) == 1) or (floor(image_index) == 3))
+		{
+			var sfx = scr_PlaySfx(snd_MKSS_GigantEdge_Footstep);
+			audio_sound_pitch(sfx,random_range(.85,1.15));
+				
+			footstepFrame = floor(image_index);
+		}
+		#endregion
+		
 		#region Attack States
 		switch (attackState)
 		{

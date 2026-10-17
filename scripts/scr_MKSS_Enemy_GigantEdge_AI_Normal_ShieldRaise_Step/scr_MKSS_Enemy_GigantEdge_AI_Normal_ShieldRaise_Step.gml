@@ -14,6 +14,8 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_ShieldRaise_Step()
 		prevDefense = defense;
 		defense = 4;
 		
+		scr_PlaySfx(snd_MKSS_GigantEdge_Shield);
+		
 		attackState = 0;
 		#endregion
 		

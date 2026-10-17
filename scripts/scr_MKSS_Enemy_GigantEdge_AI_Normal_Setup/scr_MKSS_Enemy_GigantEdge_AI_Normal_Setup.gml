@@ -52,6 +52,9 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_Setup(targetIsBoss = true,targetPla
 	
 	rangoParryCount = 0;
 	rangoParryCountMax = 2;
+	
+	attackSound = -1;
+	footstepFrame = 0;
 	#endregion
 	
 	#region AI Scripts

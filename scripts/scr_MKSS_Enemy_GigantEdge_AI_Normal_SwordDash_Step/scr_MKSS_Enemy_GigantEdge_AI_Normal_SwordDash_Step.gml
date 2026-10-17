@@ -74,12 +74,25 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordDash_Step()
 			case 0:
 			hsp = -.25 * dirX;
 			
+			#region Footsteps
+			if (footstepFrame != floor(image_index)) and ((floor(image_index) == 1) or (floor(image_index) == 3))
+			{
+				var sfx = scr_PlaySfx(snd_MKSS_GigantEdge_Footstep);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
+				
+				footstepFrame = floor(image_index);
+			}
+			#endregion
+			
 			if (attackStateTimer[attackState] == -1)
 			{
 				hsp = 0;
 				
 				sprite_index = spriteSet.sprSwordDashPrepare;
 				image_index = 0;
+				
+				var sfx = scr_PlaySfx(snd_MKSS_GigantEdge_Dash1);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				attackState++;
 			}
@@ -92,6 +105,9 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordDash_Step()
 			{
 				sprite_index = spriteSet.sprSwordDash;
 				image_index = 0;
+				
+				var sfx = scr_PlaySfx(snd_MKSS_GigantEdge_Dash2);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				hsp = swordDash_Accel * dirX;
 				
@@ -123,6 +139,16 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordDash_Step()
 				destroyTimer = 3;
 			}
 			
+			#region Footsteps
+			if (footstepFrame != floor(image_index)) and ((floor(image_index) == 1) or (floor(image_index) == 3))
+			{
+				var sfx = scr_PlaySfx(snd_MKSS_GigantEdge_Footstep);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
+				
+				footstepFrame = floor(image_index);
+			}
+			#endregion
+			
 			swordDash_Speed = min(swordDash_Speed + (swordDash_Accel * speedMultFinal), swordDash_SpeedMax);
 			
 			hsp = swordDash_Speed * dirX;
@@ -133,6 +159,9 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordDash_Step()
 				vsp = -2;
 				
 				scr_Camera_SetScreenshake(2,1);
+				
+				var sfx = scr_PlaySfx(snd_MKSS_GigantEdge_Impact);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				sprite_index = spriteSet.sprHurt1;
 				image_index = 0;
@@ -147,6 +176,9 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordDash_Step()
 			
 			if (attackStateTimer[attackState] == -1)
 			{
+				var sfx = scr_PlaySfx(snd_MKSS_GigantEdge_Dash2);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
+				
 				sprite_index = spriteSet.sprSwordGrab;
 				image_index = 0;
 				

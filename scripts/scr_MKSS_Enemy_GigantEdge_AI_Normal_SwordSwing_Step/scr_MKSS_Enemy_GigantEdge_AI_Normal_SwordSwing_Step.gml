@@ -61,8 +61,8 @@ function scr_MKSS_Enemy_GigantEdge_AI_Normal_SwordSwing_Step()
 				sprite_index = spriteSet.sprSwordSwing;
 				image_index = 0;
 				
-				//var sfx = scr_PlaySfx(snd_MKSS_Throw);
-				//audio_sound_pitch(sfx,random_range(.85,1.15));
+				var sfx = scr_PlaySfx(snd_MKSS_GigantEdge_Slash);
+				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				attackState++;
 			}
