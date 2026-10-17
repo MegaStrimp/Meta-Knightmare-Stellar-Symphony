@@ -144,7 +144,20 @@ function scr_MKSS_Weapon_Galaxia_Base()
 		
 		if (input_check_pressed("B",playerNum))
 		{
-			if ((hasFinisher) and (galaxia_Finisher_Timer != -1))
+			if ((hasFinisher) and ((canParryAttackTimer != -1) and (!isAttacking) and (attackCooldown == -1)) or (parryAttackFlag))
+			{
+				attackTriggered = true;
+				attackIndex = global.MKSS_AttackIDs[? "galaxia_Finisher"];
+				
+				script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript,hasExtraFinisher);
+				
+				canParryAttackTimer = -1;
+				parryAttackFlag = false;
+				galaxia_Finisher_Timer = -1;
+				
+				attackCooldownSpecial = 60;
+			}
+			else if ((hasFinisher) and (galaxia_Finisher_Timer != -1))
 			{
 				attackTriggered = true;
 				attackIndex = global.MKSS_AttackIDs[? "galaxia_Finisher"];
@@ -162,18 +175,6 @@ function scr_MKSS_Weapon_Galaxia_Base()
 				
 				script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript);
 			}
-		}
-		
-		if ((hasFinisher) and ((input_check_pressed("B",playerNum)) and (canParryAttackTimer != -1) and (!isAttacking) and (attackCooldown == -1)) or (parryAttackFlag))
-		{
-			attackTriggered = true;
-			attackIndex = global.MKSS_AttackIDs[? "galaxia_Finisher"];
-			
-			script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript,hasExtraFinisher);
-			
-			canParryAttackTimer = -1;
-			parryAttackFlag = false;
-			galaxia_Finisher_Timer = -1;
 		}
 		
 		if (input_check_pressed("Y",playerNum))

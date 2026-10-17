@@ -7,6 +7,7 @@ event_inherited();
 #region Gameplay Variables
 enemyID = global.MKSS_EnemyIDs[? "gordo"];
 
+hp = -1;
 dmg = MKSS_Base_EnemyContactDamage * 2;
 
 canBreakLightInvincibility = true;

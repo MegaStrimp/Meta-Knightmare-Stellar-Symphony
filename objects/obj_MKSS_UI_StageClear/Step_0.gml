@@ -122,7 +122,7 @@ if (nextRoomTimer != -1)
 		var sfx = scr_PlaySfx(snd_MKSS_DoorEnter);
 		//audio_sound_pitch(sfx,random_range(.85,1.15));
 		
-		scr_MKSS_Stage_End();
+		endStage = true;
 		
 		with (scr_GoToRoom(targetRoom,false)) alphaSpd = (alphaSpd / 3);
 		

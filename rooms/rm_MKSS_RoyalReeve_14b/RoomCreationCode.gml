@@ -1,5 +1,9 @@
 ///@description Room Creation Code
 
+#region Variables
+global.MKSS_StageHasPit = true;
+#endregion
+
 #region Room Setup
 script_execute(scr_MKSS_RoomSetup_RoyalReeve);
 #endregion

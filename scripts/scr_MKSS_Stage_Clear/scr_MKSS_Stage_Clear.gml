@@ -16,6 +16,23 @@ function scr_MKSS_Stage_Clear(hasClearSequence = true)
 	}
 	#endregion
 	
+	#region Save Stage Data
+	if (global.currentStage != -1)
+	{
+		var stageMappedID = global.MKSS_StageIDs[? global.currentStage];
+		
+		if (global.levelScoreCurrent > global.MKSS_StageList[stageMappedID].earnedHighScore)
+		{
+			global.MKSS_StageList[stageMappedID].earnedHighScore = global.levelScoreCurrent;
+		}
+		
+		global.MKSS_StageList[stageMappedID].isBeaten = true;
+		if (global.MKSS_StageList[stageMappedID].clearScript != -1) script_execute(global.MKSS_StageList[stageMappedID].clearScript,stageMappedID);
+	}
+	
+	scr_MKSS_SaveData(global.selectedSave);
+	#endregion
+	
 	#region Animation
 	if (hasClearSequence)
 	{
@@ -32,22 +49,5 @@ function scr_MKSS_Stage_Clear(hasClearSequence = true)
 		
 		scr_MKSS_UI_StageClear_Create(rawScore);
 	}
-	#endregion
-	
-	#region Save Stage Data
-	if (global.currentStage != -1)
-	{
-		var stageMappedID = global.MKSS_StageIDs[? global.currentStage];
-		
-		if (global.levelScoreCurrent > global.MKSS_StageList[stageMappedID].earnedHighScore)
-		{
-			global.MKSS_StageList[stageMappedID].earnedHighScore = global.levelScoreCurrent;
-		}
-		
-		global.MKSS_StageList[stageMappedID].isBeaten = true;
-		if (global.MKSS_StageList[stageMappedID].clearScript != -1) script_execute(global.MKSS_StageList[stageMappedID].clearScript,stageMappedID);
-	}
-	
-	scr_MKSS_SaveData(global.selectedSave);
 	#endregion
 }

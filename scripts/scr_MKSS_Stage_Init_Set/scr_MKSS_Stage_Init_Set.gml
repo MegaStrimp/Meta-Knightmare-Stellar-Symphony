@@ -66,7 +66,7 @@ function scr_MKSS_Stage_Init_Set()
 	{
 		global.MKSS_BarrierIndexTarget = 2;
 		
-		global.MKSS_StageList[global.MKSS_StageIDs[? "livingLoom"]].isUnlocked = true;
+		//global.MKSS_StageList[global.MKSS_StageIDs[? "livingLoom"]].isUnlocked = true; //STRIMPTODO [Release]
 	});
 	#endregion
 	

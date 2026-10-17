@@ -35,6 +35,11 @@ function scr_MKSS_Player_MetaKnight_Step()
 			var globalAbility = global.playerAbility[playerNum];
 			if ((currentAbility != globalAbility) and (canChangeAbility))
 			{
+				if (currentAbility != -1)
+				{
+					if (global.MKSS_WeaponList[currentAbility].cleanScript != undefined) script_execute(global.MKSS_WeaponList[currentAbility].cleanScript);
+				}
+				
 				scr_Player_ChangeAbility(id,globalAbility);
 				weaponSpriteSet = global.MKSS_WeaponList[globalAbility].spriteSet;
 				script_execute(global.MKSS_WeaponList[globalAbility].setupScript);

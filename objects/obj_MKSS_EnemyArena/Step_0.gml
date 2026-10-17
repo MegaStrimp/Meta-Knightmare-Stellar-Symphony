@@ -113,6 +113,8 @@ if (!localPause)
 		}
 		else if (spawnedEnemyCount == 0)
 		{
+			scr_MKSS_UI_BackgroundOverlay_Create(10,layer_get_depth("Player") + 1,false,[c_white],,true).alpha = .2;
+			
 			flag_Spawn = true;
 		}
 		#endregion

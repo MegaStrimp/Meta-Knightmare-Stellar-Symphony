@@ -15,10 +15,13 @@ function scr_MKSS_SetBackground_AboveHalberd()
 		backgroundLayer[arrayIndex] = layer_create(backgroundAnchor - (arrayIndex + 1));
 		instance_create_layer(0,0,backgroundLayer[arrayIndex],obj_MKSS_BgEnv_AboveHalberdThunder_Controller);
 		arrayIndex += 1;
-		backgroundLayer[arrayIndex] = layer_create(backgroundAnchor - (arrayIndex + 1));
-		backgroundIndex[arrayIndex] = layer_background_create(backgroundLayer[arrayIndex],bg_MKSS_Pit);
-		layer_background_htiled(backgroundIndex[arrayIndex],true);
-		layer_y(backgroundLayer[arrayIndex],room_height - 32);
+		if (global.MKSS_StageHasPit)
+		{
+			backgroundLayer[arrayIndex] = layer_create(backgroundAnchor - (arrayIndex + 1));
+			backgroundIndex[arrayIndex] = layer_background_create(backgroundLayer[arrayIndex],bg_MKSS_Pit);
+			layer_background_htiled(backgroundIndex[arrayIndex],true);
+			layer_y(backgroundLayer[arrayIndex],room_height - 32);
+		}
 		arrayIndex += 1;
 		backgroundLayer[arrayIndex] = layer_create(layer_get_depth(layer_get_id("Player")) - 1);
 		backgroundIndex[arrayIndex] = layer_background_create(backgroundLayer[arrayIndex],bg_MKSS_Rain);
@@ -40,7 +43,7 @@ function scr_MKSS_SetBackground_AboveHalberd()
 	layer_y(backgroundLayer[arrayIndex],camY);
 	arrayIndex += 1;
 	arrayIndex += 1;
-	layer_x(backgroundLayer[arrayIndex],(layer_get_x(backgroundLayer[arrayIndex]) - .2) % 16);
+	if (global.MKSS_StageHasPit) layer_x(backgroundLayer[arrayIndex],(layer_get_x(backgroundLayer[arrayIndex]) - .2) % 16);
 	arrayIndex += 1;
 	layer_background_speed(backgroundIndex[arrayIndex],!global.pauseFinal * 60);
 	if (!global.pauseFinal)

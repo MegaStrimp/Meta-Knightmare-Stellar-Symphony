@@ -67,10 +67,13 @@ function scr_MKSS_SetBackground_CrystalSpace()
 		backgroundX[arrayIndex] = 0;
 		layer_background_htiled(backgroundIndex[arrayIndex],true);
 		arrayIndex += 1;
-		backgroundLayer[arrayIndex] = layer_create(backgroundAnchor - (arrayIndex + 1));
-		backgroundIndex[arrayIndex] = layer_background_create(backgroundLayer[arrayIndex],bg_MKSS_Pit);
-		layer_background_htiled(backgroundIndex[arrayIndex],true);
-		layer_y(backgroundLayer[arrayIndex],room_height - 32);
+		if (global.MKSS_StageHasPit)
+		{
+			backgroundLayer[arrayIndex] = layer_create(backgroundAnchor - (arrayIndex + 1));
+			backgroundIndex[arrayIndex] = layer_background_create(backgroundLayer[arrayIndex],bg_MKSS_Pit);
+			layer_background_htiled(backgroundIndex[arrayIndex],true);
+			layer_y(backgroundLayer[arrayIndex],room_height - 32);
+		}
 		
 		backgroundSetup = false;
 	}
@@ -165,5 +168,5 @@ function scr_MKSS_SetBackground_CrystalSpace()
 	}
 	if (bgHeight <= room_height) layer_y(backgroundLayer[arrayIndex],lerp(0,room_height - bgHeight,_ypos));
 	arrayIndex += 1;
-	layer_x(backgroundLayer[arrayIndex],(layer_get_x(backgroundLayer[arrayIndex]) - .2) % 16);
+	if (global.MKSS_StageHasPit) layer_x(backgroundLayer[arrayIndex],(layer_get_x(backgroundLayer[arrayIndex]) - .2) % 16);
 }

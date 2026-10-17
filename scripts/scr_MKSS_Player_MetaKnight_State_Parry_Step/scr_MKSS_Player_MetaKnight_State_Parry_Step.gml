@@ -52,6 +52,8 @@ function scr_MKSS_Player_MetaKnight_State_Parry_Step()
 		{
 			if ((canBeParried) and (distance_to_object(other) <= 8))
 			{
+				scr_Player_CancelAttack(other,other.attackIndex);
+				
 				if (parryAttackIndex != -1)
 				{
 					other.attackIndex = parryAttackIndex;
@@ -71,6 +73,7 @@ function scr_MKSS_Player_MetaKnight_State_Parry_Step()
 				
 				other.attackMakeHeavyInvincible = true;
 				other.parryEndTimer = 0;
+				other.canParryAttackTimer = other.canParryAttackTimerMax;
 				other.shakeX = 1;
 				other.shakeY = 1;
 				
@@ -84,6 +87,8 @@ function scr_MKSS_Player_MetaKnight_State_Parry_Step()
 		{
 			if ((canBeParried) and (distance_to_object(other) <= 8))
 			{
+				scr_Player_CancelAttack(other,other.attackIndex);
+				
 				if (parryAttackIndex != -1)
 				{
 					scr_Debug_WriteLog(string(parryAttackIndex));
@@ -105,6 +110,7 @@ function scr_MKSS_Player_MetaKnight_State_Parry_Step()
 				
 				other.attackMakeHeavyInvincible = true;
 				other.parryEndTimer = 0;
+				other.canParryAttackTimer = other.canParryAttackTimerMax;
 				other.shakeX = 1;
 				other.shakeY = 1;
 				

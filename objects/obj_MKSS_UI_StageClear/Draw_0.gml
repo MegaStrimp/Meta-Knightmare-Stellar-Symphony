@@ -99,7 +99,7 @@ with (obj_FrameworkControl)
 					var waveX = sine_wave(current_time / 4200,1,1,0);
 					var waveY = sine_wave(current_time / (4500 + (4500 * i)),.8,1.1,0);
 						
-					if (!collectibleList[i].isObtained) gpu_set_fog(true,c_black,0,0);
+					if (!collectibleList[i].isObtained) gpu_set_fog(true,collectibleList[i].hiddenColor,0,0);
 					draw_sprite(collectibleList[i].icon,0,xx + global.gameWidth - 12 - (22 * collectibleCount) + floor(waveX) + (other.hintOffset * 3),yy + 14 - (2 * collectibleCount) + floor(waveY));
 					if (!collectibleList[i].isObtained) gpu_set_fog(false,c_white,0,0);
 				}

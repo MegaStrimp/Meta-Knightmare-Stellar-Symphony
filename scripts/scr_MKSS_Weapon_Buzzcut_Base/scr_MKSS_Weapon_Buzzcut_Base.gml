@@ -103,7 +103,14 @@ function scr_MKSS_Weapon_Buzzcut_Base()
 							
 							script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript);
 					
-							if (buzzcut_BasicCombo_Active) buzzcut_Finisher_Timer = buzzcut_Finisher_TimerMax;
+							if (buzzcut_BasicCombo_Active)
+							{
+								buzzcut_Finisher_Timer = buzzcut_Finisher_TimerMax;
+							}
+							else
+							{
+								galaxia_Finisher_Timer = -1;
+							}
 						}
 						break;
 						
@@ -129,7 +136,24 @@ function scr_MKSS_Weapon_Buzzcut_Base()
 		
 		if (input_check_pressed("B",playerNum))
 		{
-			if (buzzcut_Finisher_Timer != -1)
+			if ((hasFinisher) and ((canParryAttackTimer != -1) and (!isAttacking) and (attackCooldown == -1)) or (parryAttackFlag))
+			{
+				attackTriggered = true;
+				attackIndex = global.MKSS_AttackIDs[? "buzzcut_Finisher"];
+			
+				script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript,hasGigatorque);
+			
+				buzzcut_BasicCombo_Index = 0;
+				buzzcut_BasicCombo_Active = false;
+				buzzcut_BasicCombo_Timer = -1;
+			
+				canParryAttackTimer = -1;
+				parryAttackFlag = false;
+				buzzcut_Finisher_Timer = -1;
+				
+				attackCooldownSpecial = 60;
+			}
+			else if (buzzcut_Finisher_Timer != -1)
 			{
 				attackTriggered = true;
 				attackIndex = global.MKSS_AttackIDs[? "buzzcut_Finisher"];
@@ -138,24 +162,10 @@ function scr_MKSS_Weapon_Buzzcut_Base()
 				
 				buzzcut_BasicCombo_Index = 0;
 				buzzcut_BasicCombo_Timer = -1;
+				buzzcut_BasicCombo_Timer = -1;
+				
 				buzzcut_Finisher_Timer = -1;
 			}
-		}
-		
-		if ((hasFinisher) and ((input_check_pressed("B",playerNum)) and (canParryAttackTimer != -1) and (!isAttacking) and (attackCooldown == -1)) or (parryAttackFlag))
-		{
-			attackTriggered = true;
-			attackIndex = global.MKSS_AttackIDs[? "buzzcut_Finisher"];
-			
-			script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript,hasGigatorque);
-			
-			buzzcut_BasicCombo_Index = 0;
-			buzzcut_BasicCombo_Active = false;
-			buzzcut_BasicCombo_Timer = -1;
-			
-			canParryAttackTimer = -1;
-			parryAttackFlag = false;
-			buzzcut_Finisher_Timer = -1;
 		}
 		
 		if (input_check_pressed("Y",playerNum))

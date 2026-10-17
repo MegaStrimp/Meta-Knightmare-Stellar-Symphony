@@ -49,6 +49,7 @@ scr_MKSS_MarkedBossSetup();
 global.MKSS_PopupQueue = ds_list_create();
 
 global.MKSS_StageHasScore = true;
+global.MKSS_StageHasPit = false;
 global.MKSS_StageIntroPlaying = false;
 
 global.MKSS_SpecialDeflation = false;

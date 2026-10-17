@@ -1190,6 +1190,7 @@
     {"name":"Buzzcut","order":1,"path":"folders/Meta Knightmare Stellar Symphony/Weapons/Weapons/Buzzcut.yy",},
     {"name":"Scripts","order":1,"path":"folders/Meta Knightmare Stellar Symphony/Weapons/Weapons/Buzzcut/Scripts.yy",},
     {"name":"Base","order":2,"path":"folders/Meta Knightmare Stellar Symphony/Weapons/Weapons/Buzzcut/Scripts/Base.yy",},
+    {"name":"Clean","order":3,"path":"folders/Meta Knightmare Stellar Symphony/Weapons/Weapons/Buzzcut/Scripts/Clean.yy",},
     {"name":"Hud","order":3,"path":"folders/Meta Knightmare Stellar Symphony/Weapons/Weapons/Buzzcut/Sprites/Hud.yy",},
     {"name":"Palettes","order":4,"path":"folders/Meta Knightmare Stellar Symphony/Weapons/Weapons/Buzzcut/Sprites/Palettes.yy",},
     {"name":"Player","order":1,"path":"folders/Meta Knightmare Stellar Symphony/Weapons/Weapons/Buzzcut/Sprites/Player.yy",},

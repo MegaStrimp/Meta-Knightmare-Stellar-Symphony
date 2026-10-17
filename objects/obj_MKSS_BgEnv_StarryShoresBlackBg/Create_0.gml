@@ -1,8 +1,6 @@
 ///@description Create
 
 #region Initialize Variables
-global.canGamePause = false;
-
 isActive = !(global.MKSS_WeaponList[global.MKSS_WeaponIDs[? "galaxia"]].isUnlocked);
 showTitle = false;
 
@@ -21,6 +19,7 @@ if (isActive)
 {
 	scr_Camera_SetLimits(-1,global.gameWidth,-1,-1);
 	global.hasHud = false;
+	global.canGamePause = false;
 }
 else
 {

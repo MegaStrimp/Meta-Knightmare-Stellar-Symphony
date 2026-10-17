@@ -80,8 +80,6 @@ function scr_MKSS_Cutscene_Preset_IceCreamIslandEnd()
 		},
 		function()
 		{
-			global.hasHud = true;
-			global.canGamePause = true;
 			global.MKSS_CutsceneStopMovement = false;
 			
 			if (!goneToStage)
