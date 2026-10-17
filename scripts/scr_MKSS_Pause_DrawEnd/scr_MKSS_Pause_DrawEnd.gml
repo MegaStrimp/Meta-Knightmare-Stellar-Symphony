@@ -135,7 +135,7 @@ function scr_MKSS_Pause_DrawEnd()
 		{
 			for (var i = 0; i < array_length(MKSS_GamePause_Settings_Cog); i++)
 			{
-				if ((MKSS_GamePause_Settings_Cog[i].appearTimer == -1) and (MKSS_GamePause_Settings_Cog[i].disappearTimer != -1)) draw_sprite(spr_MKSS_Menu_PauseScreen_Settings_Cog,0,xx + MKSS_GamePause_Settings_Cog[i].x,yy + MKSS_GamePause_Settings_Cog[i].y);
+				if ((MKSS_GamePause_Settings_Cog[i].appearTimer == -1) and (MKSS_GamePause_Settings_Cog[i].disappearTimer != -1)) draw_sprite(spr_MKSS_Menu_PauseScreen_Settings_Cog,((current_time / 1000) + 1) % 4,xx + MKSS_GamePause_Settings_Cog[i].x,yy + MKSS_GamePause_Settings_Cog[i].y);
 			}
 		}
 	}

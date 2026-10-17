@@ -42,6 +42,7 @@ function scr_MKSS_Enemy_Rango_AI_JumpAndAttack_Parry_Step()
 							
 							defense = prevDefense;
 							
+							scr_MKSS_Enemy_Miniboss_Stun();
 							scr_MKSS_Enemy_GetStunned(id);
 						}
 					}

@@ -45,6 +45,7 @@ function scr_MKSS_Attack_MetaKnight_ParryGigantEdgeSwordThrow_Step()
 					var sfx = scr_PlaySfx(snd_MKSS_EnemyHit);
 					audio_sound_pitch(sfx,random_range(.85,1.15));
 					
+					scr_MKSS_Enemy_Miniboss_Stun();
 					scr_MKSS_Enemy_GetStunned(id);
 					
 					shakeX = 4;
