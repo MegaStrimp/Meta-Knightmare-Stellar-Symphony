@@ -18,6 +18,8 @@ function scr_MKSS_Enemy_BeginStep_Normal()
 	{
 		if (hp <= enemyPhaseTargetHp[enemyPhase - 1])
 		{
+			scr_MKSS_UI_BackgroundOverlay_Create(10,layer_get_depth("Player") + 1,false,[c_white],,true).alpha = .2;
+			
 			if (enemyPhaseSetupScript[enemyPhase - 1] != -1) script_execute(enemyPhaseSetupScript[enemyPhase - 1])
 			
 			enemyPhase += 1;
