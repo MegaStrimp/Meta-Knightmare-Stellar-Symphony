@@ -45,7 +45,7 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Cutscene_MDFaceSlam_Step(){
 					if (faceSlamFacingAngle == 360)
 					{
 						faceSlamEnded = true
-						hsp = 5
+						hsp = 2
 						vsp = 0
 					}
 				}
@@ -61,8 +61,8 @@ function scr_MKSS_Enemy_StarlessMarx_AI_Cutscene_MDFaceSlam_Step(){
 		}
 		else
 		{
-			hsp = scr_Entity_Friction(hsp,0.5)
+			hsp = max(scr_Entity_Friction(hsp,0.2),0.3)
 		}
-	scr_Component_SetPosition(hsp,vsp);
+		scr_Component_SetPosition(hsp,vsp);
 	}
 }

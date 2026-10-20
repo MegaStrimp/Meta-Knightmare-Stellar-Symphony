@@ -1,3 +1,0 @@
-function scr_MKSS_Enemy_StarlessMarx_AI_Cutscene_MDCollide_Step(){
-
-}

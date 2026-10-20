@@ -17,11 +17,12 @@ function scr_MKSS_Player_MetaKnight_State_Cutscene_StarlessMarxMDStomp_Step(){
 	
 	if (!localPause)
 	{
-		scr_MKSS_Player_Component_Movement()
-	
+		clampToRoom = false
+		clampToView = false
+		
 		if (doFlyDown == false)
 		{
-			if (y < 20)
+			if (y < -100)
 			{
 				vsp = 4
 				doFlyDown = true
@@ -32,7 +33,7 @@ function scr_MKSS_Player_MetaKnight_State_Cutscene_StarlessMarxMDStomp_Step(){
 		{
 			if (place_meeting(x,y,obj_MKSS_Enemy_StarlessMarx))
 			{
-				obj_MKSS_Enemy_StarlessMarx.vsp = 4
+				scr_Enemy_ChangeState_Step(obj_MKSS_Enemy_StarlessMarx,scr_MKSS_Enemy_StarlessMarx_AI_Cutscene_MDStomped_Step)
 				vsp = 0
 			}
 		}
@@ -45,8 +46,7 @@ function scr_MKSS_Player_MetaKnight_State_Cutscene_StarlessMarxMDStomp_Step(){
 		}
 		#endregion
 		
-		#region Collision
-		scr_Entity_Collision();
-		#endregion
+		y += vsp * speedMultFinal
+	
 	}
 }

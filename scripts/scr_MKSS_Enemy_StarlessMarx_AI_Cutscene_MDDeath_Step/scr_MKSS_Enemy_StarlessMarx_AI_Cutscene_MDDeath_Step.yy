@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_MKSS_Enemy_StarlessMarx_AI_Cutscene_MDCollide_Step",
+  "%Name":"scr_MKSS_Enemy_StarlessMarx_AI_Cutscene_MDDeath_Step",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_MKSS_Enemy_StarlessMarx_AI_Cutscene_MDCollide_Step",
+  "name":"scr_MKSS_Enemy_StarlessMarx_AI_Cutscene_MDDeath_Step",
   "parent":{
     "name":"Mass Destruction",
     "path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Starless Bosses/Starless Marx/Scripts/AI/Normal/Mass Destruction.yy",

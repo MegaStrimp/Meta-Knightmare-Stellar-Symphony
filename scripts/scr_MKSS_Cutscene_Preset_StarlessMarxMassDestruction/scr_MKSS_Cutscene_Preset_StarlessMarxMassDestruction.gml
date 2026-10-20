@@ -63,7 +63,7 @@ function scr_MKSS_Cutscene_Preset_StarlessMarxMassDestruction()
 			{
 				scr_Enemy_ChangeState_Step(id,scr_MKSS_Enemy_StarlessMarx_AI_Cutscene_MDFaceSlam_Step);
 			}
-			phaseTimer = 400
+			phaseTimer = 350
 		},
 		function()
 		{
@@ -76,9 +76,43 @@ function scr_MKSS_Cutscene_Preset_StarlessMarxMassDestruction()
 		},
 		function()
 		{
+			with (obj_MKSS_Player)
+			{
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_StarlessMarxMDStomp_Step);
+				
+			}
+			phaseTimer = 80
+		},
+		function()
+		{
+			with (obj_MKSS_Player)
+			{
+				scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Cutscene_StarlessMarxMDThrowGalaxia_Step);
+			}
+			phaseTimer = 180
+		},
+		function()
+		{
+			with (obj_MKSS_Enemy_StarlessMarx)
+			{
+				youAreAlreadyDead = true
+			}
+			phaseTimer = 20
+		},
+		function()
+		{
+			with (instance_create_depth(0,0,depth,obj_MKSS_Attack_BlackHole_ScreenDarken))
+			{
+				darkMax = 1
+			}
+			phaseTimer = 120
+		},
+		function()
+		{
 			global.MKSS_CutsceneStopMovement = false;
 			
 			with (obj_MKSS_Enemy_StarlessMarx) deathTimer = 0;
+			obj_MKSS_Attack_BlackHole_ScreenDarken.destroy = true
 			
 			phaseTimer = 60;
 		},
