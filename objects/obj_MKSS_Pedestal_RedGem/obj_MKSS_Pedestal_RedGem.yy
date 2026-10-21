@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_MKSS_Pedestal_Gem",
+  "%Name":"obj_MKSS_Pedestal_RedGem",
   "eventList":[],
   "managed":true,
-  "name":"obj_MKSS_Pedestal_Gem",
+  "name":"obj_MKSS_Pedestal_RedGem",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_MKSS_Pedestal_Gem",
-    "path":"sprites/spr_MKSS_Pedestal_Gem/spr_MKSS_Pedestal_Gem.yy",
+    "name":"spr_MKSS_Pedestal_RedGem",
+    "path":"sprites/spr_MKSS_Pedestal_RedGem/spr_MKSS_Pedestal_RedGem.yy",
   },
   "spriteMaskId":null,
   "visible":true,
