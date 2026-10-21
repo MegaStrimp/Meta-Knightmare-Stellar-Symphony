@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_MKSS_Enemy_Dizzy_Palette_Normal",
   "bboxMode":0,
-  "bbox_bottom":15,
+  "bbox_bottom":14,
   "bbox_left":0,
   "bbox_right":2,
   "bbox_top":0,
@@ -13,14 +13,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"1da01065-e388-4c4f-a218-1f461d49f484","name":"1da01065-e388-4c4f-a218-1f461d49f484","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c89a788e-c488-4b1b-82e2-a66b9ddca2ab","name":"c89a788e-c488-4b1b-82e2-a66b9ddca2ab","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":16,
+  "height":15,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"abe53c5c-7885-41a3-b001-e083a1d29c7f","blendMode":0,"displayName":"default","isLocked":false,"name":"abe53c5c-7885-41a3-b001-e083a1d29c7f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"f4745967-2641-4483-9fab-d9b53d280637","blendMode":0,"displayName":"default","isLocked":false,"name":"f4745967-2641-4483-9fab-d9b53d280637","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_MKSS_Enemy_Dizzy_Palette_Normal",
   "nineSlice":null,
@@ -70,8 +70,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1da01065-e388-4c4f-a218-1f461d49f484","path":"sprites/spr_MKSS_Enemy_Dizzy_Palette_Normal/spr_MKSS_Enemy_Dizzy_Palette_Normal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"898c869e-f003-48e4-ae3a-ef1fdd416a50","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c89a788e-c488-4b1b-82e2-a66b9ddca2ab","path":"sprites/spr_MKSS_Enemy_Dizzy_Palette_Normal/spr_MKSS_Enemy_Dizzy_Palette_Normal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"4cc8dabb-a2ad-41d8-bfb9-04a9947a6985","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -567,14 +567,18 @@ function scr_MKSS_Enemy_Init_Set()
 	scr_MKSS_Enemy_Init_Add_SpriteSet(targetMappedID,
 	{
 		sprIdle: spr_MKSS_Enemy_Dizzy_Base_Idle,
-		sprSpin: spr_MKSS_Enemy_Dizzy_Base_Spin,
 		sprSpot: spr_MKSS_Enemy_Dizzy_Base_Spot,
 		sprJump: spr_MKSS_Enemy_Dizzy_Base_Jump,
+		sprLand: spr_MKSS_Enemy_Dizzy_Base_Land,
 		sprAttackReady: spr_MKSS_Enemy_Dizzy_Base_AttackReady,
-		sprAttack: spr_MKSS_Enemy_Dizzy_Base_Attack,
+		sprSpin: spr_MKSS_Enemy_Dizzy_Base_Spin,
+		sprParried: spr_MKSS_Enemy_Dizzy_Base_Parried,
+		
 		
 		sprHurt1: spr_MKSS_Enemy_Dizzy_Base_Hurt1,
 		sprHurt2: spr_MKSS_Enemy_Dizzy_Base_Hurt2,
+		sprHurt3: spr_MKSS_Enemy_Dizzy_Base_Hurt3,
+		sprHurt4: spr_MKSS_Enemy_Dizzy_Base_Hurt4,
 		
 	    sprHurtList:
 		[
@@ -584,6 +588,14 @@ function scr_MKSS_Enemy_Init_Set()
 			],
 	        [
 				spr_MKSS_Enemy_Dizzy_Base_Hurt2,
+				1
+			],
+			[
+				spr_MKSS_Enemy_Dizzy_Base_Hurt3,
+				1
+			],
+			[
+				spr_MKSS_Enemy_Dizzy_Base_Hurt4,
 				1
 			]
 	    ],
