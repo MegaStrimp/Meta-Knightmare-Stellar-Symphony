@@ -33,8 +33,13 @@ function scr_MKSS_Player_MetaKnight_State_Galaxia_DownThrust_Step()
 		if (hasGravity) vsp = scr_Entity_Gravity(vsp,galaxia_DownThrust_Grav,galaxia_DownThrust_GravLimit,speedMultFinal);
 		#endregion
 		
-		#region Hurt
-		if (hurtState == hurtStates.hurt) galaxia_DownThrust_EndTimer = 0;
+		#region Cancel Attack
+		if ((hurtState == hurtStates.hurt) or (input_check_pressed("A",playerNum)))
+		{
+			scr_MKSS_Player_Component_Jump();
+			
+			galaxia_DownThrust_EndTimer = 0;
+		}
 		#endregion
 		
 		#region Grounded

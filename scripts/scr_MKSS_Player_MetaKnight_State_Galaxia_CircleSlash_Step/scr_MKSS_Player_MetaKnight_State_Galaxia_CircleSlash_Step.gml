@@ -19,8 +19,13 @@ function scr_MKSS_Player_MetaKnight_State_Galaxia_CircleSlash_Step()
 		scr_MKSS_Player_Component_Gravity();
 		#endregion
 		
-		#region Hurt
-		if (hurtState == hurtStates.hurt) galaxia_CircleSlash_EndTimer = 0;
+		#region Cancel Attack
+		if ((hurtState == hurtStates.hurt) or (input_check_pressed("A",playerNum)))
+		{
+			scr_MKSS_Player_Component_Jump();
+			
+			galaxia_CircleSlash_EndTimer = 0;
+		}
 		#endregion
 		
 		#region Galaxia - Circle Slash - End Timer

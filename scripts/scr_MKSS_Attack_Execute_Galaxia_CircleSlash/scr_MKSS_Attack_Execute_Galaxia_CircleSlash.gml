@@ -16,6 +16,17 @@ function scr_MKSS_Attack_Execute_Galaxia_CircleSlash()
 	hasAttackAnimation = false;
 	scr_ChangeSprite(spriteSet.sprAttackGalaxiaCircleSlash);
 	
+	if (input_check("right",playerNum))
+	{
+		dirX = 1;
+	}
+	
+	if (input_check("left",playerNum))
+	{
+		dirX = -1;
+	}
+	drawDirX = dirX;
+	
 	scr_Player_ChangePlayerState_Step(id,scr_MKSS_Player_MetaKnight_State_Galaxia_CircleSlash_Step);
 	
 	canCancelAttackAnimation = false;

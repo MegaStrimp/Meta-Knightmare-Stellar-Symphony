@@ -26,10 +26,10 @@ function scr_MKSS_Player_MetaKnight_State_Galaxia_MachTornado_Step()
 		scr_MKSS_Player_Component_Gravity(grav,,,true);
 		#endregion
 		
-		#region Hurt
-		if (hurtState == hurtStates.hurt)
+		#region Cancel Attack
+		if ((hurtState == hurtStates.hurt) or (input_check_pressed("B",playerNum)))
 		{
-			spawnEndAttack = false;
+			if (hurtState == hurtStates.hurt) spawnEndAttack = false;
 			galaxia_MachTornado_EndTimer = 0;
 		}
 		#endregion

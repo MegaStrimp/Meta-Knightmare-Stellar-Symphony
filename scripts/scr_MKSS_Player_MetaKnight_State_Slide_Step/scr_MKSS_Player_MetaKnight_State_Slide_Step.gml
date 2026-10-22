@@ -59,6 +59,13 @@ function scr_MKSS_Player_MetaKnight_State_Slide_Step()
 		if ((afterimageTimer == -1) and (hasAfterimage)) afterimageTimer = afterimageTimerMax;
 		#endregion
 		
+		#region Attack
+		if (currentAbility != -1)
+		{
+			script_execute(global.MKSS_WeaponList[currentAbility].baseScript);
+		}
+		#endregion
+		
 		#region Slide Accel Timer
 		if (slideAccelTimer != -1)
 		{

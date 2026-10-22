@@ -64,6 +64,16 @@ function scr_MKSS_Weapon_Galaxia_Base()
 					script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript);
 				}
 			}
+			else if ((hasCircleSlash) and (attackIndex == global.MKSS_AttackIDs[? "metaKnight_Slide"]))
+			{
+				//if (slideAccelTimer == -1)
+				//{
+					attackTriggered = true;
+					attackIndex = global.MKSS_AttackIDs[? "galaxia_CircleSlash"];
+					
+					script_execute(global.MKSS_AttackList[attackIndex].executeAttackScript);
+				//}
+			}
 			else
 			{
 				if ((galaxia_Run_Index == 2) and (hasStab) and (!isAttacking) and (attackCooldown == -1))
