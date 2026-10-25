@@ -70,10 +70,7 @@ if (canSelect)
 						
 						scr_Stage_IceCreamIsland_TurnAfternoon();
 						
-						with (instance_create_layer(312,392,"Environment",obj_MKSS_Door))
-						{
-							targetRoom = rm_MKSS_IceCreamIsland_4;
-						}
+						scr_MKSS_Door_Spawn(312,392,rm_MKSS_IceCreamIsland_4);
 						
 						global.MKSS_Tutorial_FirstUpgrade = false;
 					}

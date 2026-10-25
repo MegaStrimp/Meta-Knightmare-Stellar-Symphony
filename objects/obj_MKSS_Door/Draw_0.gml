@@ -5,7 +5,10 @@ event_inherited();
 #endregion
 
 #region Big Star
-draw_sprite(bigStarSprite,bigStarIndex,x + 8,y - 2);
+if (hasStars)
+{
+	draw_sprite(bigStarSprite,bigStarIndex,x + 8,y - 2);
+}
 #endregion
 
 #region Text

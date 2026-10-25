@@ -19,6 +19,8 @@ particleTimer = particleTimerMax;
 
 doorStarParticleSet = scr_MKSS_ParticleSet_DoorStar_Yellow1;
 
+hasStars = true;
+
 hasButtonHint = false;
 #endregion
 #endregion

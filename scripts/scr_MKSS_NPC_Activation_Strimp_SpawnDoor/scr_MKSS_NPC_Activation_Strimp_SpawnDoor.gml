@@ -2,10 +2,7 @@
 
 function scr_MKSS_NPC_Activation_Strimp_SpawnDoor()
 {
-	with (instance_create_layer(528,72,"Environment",obj_MKSS_Door))
-	{
-		targetRoom = rm_MKSS_StarryShores_2;
-	}
+	scr_MKSS_Door_Spawn(528,72,rm_MKSS_StarryShores_2,true);
 	
 	var sfx = scr_PlaySfx(snd_MKSS_EnemyHurt1);
 	audio_sound_pitch(sfx,random_range(.85,1.15));

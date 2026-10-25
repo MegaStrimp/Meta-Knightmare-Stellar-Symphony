@@ -6,24 +6,27 @@ event_inherited();
 
 if (!localPause)
 {
-	#region Big Star
-	bigStarIndex = (bigStarIndex + bigStarSpeed + bigStarNumber) % bigStarNumber;
-	#endregion
-	
-	#region Particle Timer
-	if (!place_meeting(x,y,obj_Wall))
+	if (hasStars)
 	{
-		if (particleTimer != -1)
+		#region Big Star
+		bigStarIndex = (bigStarIndex + bigStarSpeed + bigStarNumber) % bigStarNumber;
+		#endregion
+		
+		#region Particle Timer
+		if (!place_meeting(x,y,obj_Wall))
 		{
-			particleTimer = max(particleTimer - speedMultFinal,0);
-			if (particleTimer == 0)
+			if (particleTimer != -1)
 			{
-				script_execute(doorStarParticleSet,x + 8,y,particleDir);
-				particleDir *= -1;
-				
-				particleTimer = particleTimerMax;
+				particleTimer = max(particleTimer - speedMultFinal,0);
+				if (particleTimer == 0)
+				{
+					script_execute(doorStarParticleSet,x + 8,y,particleDir);
+					particleDir *= -1;
+					
+					particleTimer = particleTimerMax;
+				}
 			}
 		}
+		#endregion
 	}
-	#endregion
 }
