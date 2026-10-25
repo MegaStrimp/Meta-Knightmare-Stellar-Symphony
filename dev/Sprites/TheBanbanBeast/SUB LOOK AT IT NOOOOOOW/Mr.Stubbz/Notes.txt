@@ -4,12 +4,11 @@ but list of anims needed + notes
 //Mr.Stubbz
 -Walk
 -Pushing/Punch
--Block(2 poses)
+-Block
 -Idle
 
 -Defeat sprite is a still so no anim needed
 -Struggling poses for blocks don't really need to be animated, I visualized them just vibrating in-game to indicate struggle
--The angled key of the base pose is ref, dunno if it's really needed
 -As walk anim implies, there's some head movement and he drags his stubs across the floor
 -Not required but would be cool if bits of fluff and body parts flew out of him in-game once he is defeated (example of pieces in sketch layer)
 
