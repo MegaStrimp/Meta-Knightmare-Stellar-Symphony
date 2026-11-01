@@ -1,1 +1,0 @@
-if (!global.MKSS_WeaponList[global.MKSS_WeaponIDs[? "galaxia"]].isUnlocked) y = 24;

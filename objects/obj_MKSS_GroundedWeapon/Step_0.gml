@@ -11,6 +11,7 @@ if (!localPause)
 			audio_sound_pitch(sfx,random_range(.85,1.15));
 			
 			scr_Camera_SetLimits(-1,-1,-1,-1);
+			scr_MKSS_Player_SetTutorialText("",0);
 			scr_MKSS_Player_UnlockWeapon(playerNum,other.weaponID);
 			
 			global.playerAbility[playerNum] = other.weaponID;
