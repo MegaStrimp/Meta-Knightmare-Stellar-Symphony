@@ -64,6 +64,13 @@ function scr_MKSS_Player_MetaKnight_AnimationEnd()
 		image_index = image_number - 1;
 		break;
 		
+		case spriteSet.sprAttackBuzzcutFinisherReady:
+		case spriteSet.sprAttackBuzzcutFinisherEnd1:
+		case spriteSet.sprAttackBuzzcutFinisherEnd2:
+		buzzcut_Finisher_StateTimer = 0;
+		image_index = image_number - 1;
+		break;
+		
 		case spriteSet.sprAttackBuzzcutChainlings:
 		scr_Player_CancelAttack(id,attackIndex);
 		image_index = image_number - 1;

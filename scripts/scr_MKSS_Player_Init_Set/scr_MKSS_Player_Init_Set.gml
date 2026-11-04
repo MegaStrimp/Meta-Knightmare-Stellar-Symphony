@@ -58,6 +58,10 @@ function scr_MKSS_Player_Init_Set()
 		
 		sprAttackBuzzcutSlash1: spr_MKSS_Player_MetaKnight_Normal_Base_Attack_Buzzcut_Slash1,
 		sprAttackBuzzcutSlash2: spr_MKSS_Player_MetaKnight_Normal_Base_Attack_Buzzcut_Slash2,
+		sprAttackBuzzcutFinisherReady: spr_MKSS_Player_MetaKnight_Normal_Base_Attack_Buzzcut_Finisher_Ready,
+		sprAttackBuzzcutFinisher: spr_MKSS_Player_MetaKnight_Normal_Base_Attack_Buzzcut_Finisher,
+		sprAttackBuzzcutFinisherEnd1: spr_MKSS_Player_MetaKnight_Normal_Base_Attack_Buzzcut_Finisher_End1,
+		sprAttackBuzzcutFinisherEnd2: spr_MKSS_Player_MetaKnight_Normal_Base_Attack_Buzzcut_Finisher_End2,
 		sprAttackBuzzcutChainlings: spr_MKSS_Player_MetaKnight_Normal_Base_Attack_Buzzcut_Chainlings
 	});
 	#endregion
