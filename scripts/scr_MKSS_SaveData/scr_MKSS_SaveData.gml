@@ -94,6 +94,15 @@ function scr_MKSS_SaveData(file)
 		}
 		#endregion
 		
+		#region Border Art Status
+		for (var i = 0; i < ds_map_size(global.MKSS_BorderArtIDs); i++)
+		{
+			var borderArtID = global.MKSS_BorderArtList[i].ID;
+			
+			if (global.MKSS_BorderArtList[i].isUnlocked) ini_write_real("borderArtStatus",string(borderArtID) + "_IsUnlocked",global.MKSS_BorderArtList[i].isUnlocked);
+		}
+		#endregion
+		
 		#region Stage Status
 		for (var i = 0; i < ds_map_size(global.MKSS_StageIDs); i++)
 		{

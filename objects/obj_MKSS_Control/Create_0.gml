@@ -19,6 +19,7 @@ scr_MKSS_UI_Button_Init_Set();
 scr_MKSS_UI_Notif_Init_Set();
 scr_MKSS_UI_ScoreBonus_Init_Set();
 scr_MKSS_UI_Cursor_Init_Set();
+scr_MKSS_BorderArt_Init_Set();
 scr_MKSS_Music_Init_Set();
 scr_MKSS_Stage_Init_Set();
 
@@ -93,6 +94,8 @@ global.MKSS_CurrentMassDestructionScript = -1;
 global.MKSS_AvailableCursors = ds_list_create();
 
 global.MKSS_Tutorial_FirstUpgrade = false;
+
+global.MKSS_BorderArt_CurrentDynamicID = global.MKSS_BorderArtIDs[? "default"];
 
 global.flag_MKSS_MetaPointCollect = false;
 global.flag_MKSS_AbilitySwitch = false;

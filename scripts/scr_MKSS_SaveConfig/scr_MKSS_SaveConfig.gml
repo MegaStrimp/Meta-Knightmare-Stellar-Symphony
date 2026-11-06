@@ -14,6 +14,8 @@ function scr_MKSS_SaveConfig(file)
 	ini_write_real("options","fullscreen",global.fullscreen);
 	ini_write_real("options","windowScale",global.windowScale);
 	ini_write_real("options","cursor",global.MKSS_CurrentCursorID);
+	ini_write_real("options","cursor",global.MKSS_CurrentCursorID);
+	ini_write_real("options","borderArt",global.MKSS_CurrentBorderArt);
 	
 	ini_close();
 }

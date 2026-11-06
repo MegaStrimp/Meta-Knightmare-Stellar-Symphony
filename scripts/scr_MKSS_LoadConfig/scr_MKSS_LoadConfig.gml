@@ -19,6 +19,8 @@ function scr_MKSS_LoadConfig(file)
 		global.windowScaleTarget = ini_read_real("options","windowScale",floor(scr_Screen_ScaleToScreenSize() / 1.2));
 	}
 	global.MKSS_CurrentCursorID = ini_read_real("options","cursor",global.MKSS_CursorIDs[? "none"]) ?? global.MKSS_CursorIDs[? "none"];
+	global.MKSS_CurrentBorderArt = ini_read_real("options","borderArt",global.MKSS_BorderArtIDs[? "dynamic"]);
+	scr_MKSS_BorderArt_Change(global.MKSS_CurrentBorderArt);
 	
 	ini_close();
 }

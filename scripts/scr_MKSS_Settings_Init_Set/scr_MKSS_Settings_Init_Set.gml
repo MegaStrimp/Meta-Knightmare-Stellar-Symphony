@@ -18,6 +18,7 @@ function scr_MKSS_Settings_Init_Set()
 	scr_Settings_Init_Add("windowSize","Window Size",,,scr_MKSS_Settings_Component_WindowSize_Select,,scr_MKSS_Settings_Component_LoadPage,[scr_MKSS_Settings_PageSetup_Default],,,,,scr_MKSS_Settings_Component_WindowSize_Left,,scr_MKSS_Settings_Component_WindowSize_Right,,scr_MKSS_Settings_Component_WindowSize_Draw);
 	scr_Settings_Init_Add("shaders","Shaders",,,scr_MKSS_Settings_Component_Shaders_Select,,scr_MKSS_Settings_Component_LoadPage,[scr_MKSS_Settings_PageSetup_Default],,,,,,,,,scr_MKSS_Settings_Component_Shaders_Draw);
 	scr_Settings_Init_Add("cursor","Cursor",,,scr_MKSS_Settings_Component_Cursor_Select,,scr_MKSS_Settings_Component_LoadPage,[scr_MKSS_Settings_PageSetup_Default],,,,,scr_MKSS_Settings_Component_Cursor_Left,,scr_MKSS_Settings_Component_Cursor_Right,,scr_MKSS_Settings_Component_Cursor_Draw);
+	scr_Settings_Init_Add("borderArt","Border Art",,,scr_MKSS_Settings_Component_BorderArt_Select,,scr_MKSS_Settings_Component_LoadPage,[scr_MKSS_Settings_PageSetup_Default],,,,,scr_MKSS_Settings_Component_BorderArt_Left,,scr_MKSS_Settings_Component_BorderArt_Right,,scr_MKSS_Settings_Component_BorderArt_Draw);
 	#endregion
 	
 	#region Audio
