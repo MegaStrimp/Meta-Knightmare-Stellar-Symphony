@@ -49,6 +49,8 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_SlashCombo_Step()
 		lightningOffset = 0;
 		lightningOffsetDir = choose(-1,1);
 		lightningOffsetLimit = 4;
+		
+		meleeHitboxState = 0;
 		#endregion
 		
 		#region Slash Combo Start
@@ -80,9 +82,6 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_SlashCombo_Step()
 				
 				hsp = 5 * dirX;
 				
-				var sfx = scr_PlaySfx(snd_MKSS_Throw);
-				audio_sound_pitch(sfx,random_range(.85,1.15));
-				
 				attackState++;
 			}
 			break;
@@ -93,15 +92,59 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_SlashCombo_Step()
 			if (hsp == 0) dirX = scr_MKSS_Enemy_DirTarget();
 			else attackStateTimer[attackState] = attackStateTimerMax[attackState];
 			
+			#region Melee Hitbox
+			switch (meleeHitboxState)
+			{
+				case 0:
+				if (image_index >= 0)
+				{
+					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = 1;
+						knockbackForce = 1;
+						attackAIStep = scr_MKSS_Attack_Nimbia_MeleeHitbox_Step;
+						dirX = other.dirX;
+						image_xscale = dirX * other.scale;
+						sprite_index = -1;
+						mask_index = spr_MKSS_Enemy_Nimbia_Attack_MeleeHitbox_Slash1_1;
+						destroyTimer = 4;
+					}	
+					
+					meleeHitboxState++;
+				}
+				break;
+				
+				case 1:
+				if (image_index >= 1)
+				{
+					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = 1;
+						knockbackForce = 1;
+						attackAIStep = scr_MKSS_Attack_Nimbia_MeleeHitbox_Step;
+						dirX = other.dirX;
+						image_xscale = dirX * other.scale;
+						sprite_index = -1;
+						mask_index = spr_MKSS_Enemy_Nimbia_Attack_MeleeHitbox_Slash1_2;
+						destroyTimer = 4;
+					}	
+					
+					meleeHitboxState++;
+				}
+				break;
+			}
+			#endregion
+			
 			if (attackStateTimer[attackState] == -1)
 			{
 				sprite_index = spriteSet.sprSlash2;
 				image_index = 0;
 				
 				hsp = 5 * dirX;
-				
-				var sfx = scr_PlaySfx(snd_MKSS_Throw);
-				audio_sound_pitch(sfx,random_range(.85,1.15));
 				
 				attackState++;
 			}
@@ -110,6 +153,53 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_SlashCombo_Step()
 			
 			#region Thrust
 			case 2:
+			#region Melee Hitbox
+			switch (meleeHitboxState)
+			{
+				case 0:
+				if (image_index >= 0)
+				{
+					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = 1;
+						knockbackForce = 1;
+						attackAIStep = scr_MKSS_Attack_Nimbia_MeleeHitbox_Step;
+						dirX = other.dirX;
+						image_xscale = dirX * other.scale;
+						sprite_index = -1;
+						mask_index = spr_MKSS_Enemy_Nimbia_Attack_MeleeHitbox_Slash1_2;
+						destroyTimer = 4;
+					}	
+					
+					meleeHitboxState++;
+				}
+				break;
+				
+				case 1:
+				if (image_index >= 1)
+				{
+					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = 1;
+						knockbackForce = 1;
+						attackAIStep = scr_MKSS_Attack_Nimbia_MeleeHitbox_Step;
+						dirX = other.dirX;
+						image_xscale = dirX * other.scale;
+						sprite_index = -1;
+						mask_index = spr_MKSS_Enemy_Nimbia_Attack_MeleeHitbox_Slash1_1;
+						destroyTimer = 4;
+					}	
+					
+					meleeHitboxState++;
+				}
+				break;
+			}
+			#endregion
+			
 			if (hsp == 0) 
 			{
 				dirX = scr_MKSS_Enemy_DirTarget();
@@ -137,9 +227,6 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_SlashCombo_Step()
 				
 				hsp = 21 * dirX;
 				
-				var sfx = scr_PlaySfx(snd_MKSS_Throw);
-				audio_sound_pitch(sfx,random_range(.85,1.15));
-				
 				attackState++;
 			}
 			break;
@@ -147,6 +234,116 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_SlashCombo_Step()
 			
 			#region Finish Attack
 			case 3:
+			#region Melee Hitbox
+			switch (meleeHitboxState)
+			{
+				case 1:
+				if (image_index >= 0)
+				{
+					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = 1;
+						knockbackForce = 1;
+						attackAIStep = scr_MKSS_Attack_Nimbia_MeleeHitbox_Step;
+						dirX = other.dirX;
+						image_xscale = dirX * other.scale;
+						sprite_index = -1;
+						mask_index = spr_MKSS_Enemy_Nimbia_Attack_MeleeHitbox_Thrust1;
+						destroyTimer = 4;
+					}	
+					
+					meleeHitboxState++;
+				}
+				break;
+				
+				case 2:
+				if (image_index >= 1)
+				{
+					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = 1;
+						knockbackForce = 1;
+						attackAIStep = scr_MKSS_Attack_Nimbia_MeleeHitbox_Step;
+						dirX = other.dirX;
+						image_xscale = dirX * other.scale;
+						sprite_index = -1;
+						mask_index = spr_MKSS_Enemy_Nimbia_Attack_MeleeHitbox_Thrust2;
+						destroyTimer = 4;
+					}	
+					
+					meleeHitboxState++;
+				}
+				break;
+				
+				case 3:
+				if (image_index >= 1)
+				{
+					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = 1;
+						knockbackForce = 1;
+						attackAIStep = scr_MKSS_Attack_Nimbia_MeleeHitbox_Step;
+						dirX = other.dirX;
+						image_xscale = dirX * other.scale;
+						sprite_index = -1;
+						mask_index = spr_MKSS_Enemy_Nimbia_Attack_MeleeHitbox_Thrust3;
+						destroyTimer = 4;
+					}	
+					
+					meleeHitboxState++;
+				}
+				break;
+				
+				case 4:
+				if (image_index >= 1)
+				{
+					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = 1;
+						knockbackForce = 1;
+						attackAIStep = scr_MKSS_Attack_Nimbia_MeleeHitbox_Step;
+						dirX = other.dirX;
+						image_xscale = dirX * other.scale;
+						sprite_index = -1;
+						mask_index = spr_MKSS_Enemy_Nimbia_Attack_MeleeHitbox_Thrust4;
+						destroyTimer = 4;
+					}	
+					
+					meleeHitboxState++;
+				}
+				break;
+				
+				case 5:
+				if (image_index >= 1)
+				{
+					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = 1;
+						knockbackForce = 1;
+						attackAIStep = scr_MKSS_Attack_Nimbia_MeleeHitbox_Step;
+						dirX = other.dirX;
+						image_xscale = dirX * other.scale;
+						sprite_index = -1;
+						mask_index = spr_MKSS_Enemy_Nimbia_Attack_MeleeHitbox_Thrust5;
+						destroyTimer = 4;
+					}	
+					
+					meleeHitboxState++;
+				}
+				break;
+			}
+			#endregion
+			
 			if (hsp != 0) 
 			{
 				var decelFinal = decelThrust * speedMultFinal;

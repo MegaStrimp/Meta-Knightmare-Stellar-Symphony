@@ -50,6 +50,8 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_SlashStrike_Step()
 		
 		#region Slash Strike Variables
 		prevHp = hp;
+		
+		meleeHitboxState = 0;
 		#endregion
 		
 		#region Slash Strike Start
@@ -106,6 +108,74 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_SlashStrike_Step()
 			
 			#region Strike Prepare
 			case 2:
+			#region Melee Hitbox
+			switch (meleeHitboxState)
+			{
+				case 0:
+				if (image_index >= 1)
+				{
+					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = 1;
+						knockbackForce = 1;
+						attackAIStep = scr_MKSS_Attack_Nimbia_MeleeHitbox_Step;
+						dirX = other.dirX;
+						image_xscale = dirX * other.scale;
+						sprite_index = -1;
+						mask_index = spr_MKSS_Enemy_Nimbia_Attack_MeleeHitbox_Slash3_1;
+						destroyTimer = 4;
+					}	
+					
+					meleeHitboxState++;
+				}
+				break;
+				
+				case 1:
+				if (image_index >= 2)
+				{
+					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = 1;
+						knockbackForce = 1;
+						attackAIStep = scr_MKSS_Attack_Nimbia_MeleeHitbox_Step;
+						dirX = other.dirX;
+						image_xscale = dirX * other.scale;
+						sprite_index = -1;
+						mask_index = spr_MKSS_Enemy_Nimbia_Attack_MeleeHitbox_Slash3_2;
+						destroyTimer = 4;
+					}	
+					
+					meleeHitboxState++;
+				}
+				break;
+				
+				case 2:
+				if (image_index >= 2)
+				{
+					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = 1;
+						knockbackForce = 1;
+						attackAIStep = scr_MKSS_Attack_Nimbia_MeleeHitbox_Step;
+						dirX = other.dirX;
+						image_xscale = dirX * other.scale;
+						sprite_index = -1;
+						mask_index = spr_MKSS_Enemy_Nimbia_Attack_MeleeHitbox_Slash3_3;
+						destroyTimer = 4;
+					}	
+					
+					meleeHitboxState++;
+				}
+				break;
+			}
+			#endregion
+			
 			if (attackStateTimer[attackState] == -1)
 			{
 				dirX = scr_MKSS_Enemy_DirTarget();

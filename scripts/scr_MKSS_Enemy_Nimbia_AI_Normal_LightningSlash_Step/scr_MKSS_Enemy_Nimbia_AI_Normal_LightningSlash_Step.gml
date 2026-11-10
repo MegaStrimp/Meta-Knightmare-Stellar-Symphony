@@ -36,6 +36,10 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_LightningSlash_Step()
 		#endregion
 		#endregion
 		
+		#region Lightning Slash Variables
+		meleeHitboxState = 0;
+		#endregion
+		
 		#region Lightning Slash Start
 		sprite_index = spriteSet.sprSlashPrepare2;
 		image_index = 0;
@@ -65,9 +69,6 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_LightningSlash_Step()
 				
 				hsp = 5 * dirX;
 				
-				var sfx = scr_PlaySfx(snd_MKSS_Throw);
-				audio_sound_pitch(sfx,random_range(.85,1.15));
-				
 				attackState++;
 			}
 			break;
@@ -75,6 +76,74 @@ function scr_MKSS_Enemy_Nimbia_AI_Normal_LightningSlash_Step()
 			
 			#region Lightning
 			case 1:
+			#region Melee Hitbox
+			switch (meleeHitboxState)
+			{
+				case 0:
+				if (image_index >= 3)
+				{
+					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = 1;
+						knockbackForce = 1;
+						attackAIStep = scr_MKSS_Attack_Nimbia_MeleeHitbox_Step;
+						dirX = other.dirX;
+						image_xscale = dirX * other.scale;
+						sprite_index = -1;
+						mask_index = spr_MKSS_Enemy_Nimbia_Attack_MeleeHitbox_Slash2_1;
+						destroyTimer = 4;
+					}	
+					
+					meleeHitboxState++;
+				}
+				break;
+				
+				case 1:
+				if (image_index >= 4)
+				{
+					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = 1;
+						knockbackForce = 1;
+						attackAIStep = scr_MKSS_Attack_Nimbia_MeleeHitbox_Step;
+						dirX = other.dirX;
+						image_xscale = dirX * other.scale;
+						sprite_index = -1;
+						mask_index = spr_MKSS_Enemy_Nimbia_Attack_MeleeHitbox_Slash2_2;
+						destroyTimer = 4;
+					}	
+					
+					meleeHitboxState++;
+				}
+				break;
+				
+				case 2:
+				if (image_index >= 5)
+				{
+					with (instance_create_depth(x,y,depth - 1,obj_MKSS_Attack))
+					{
+						owner = other;
+						isEnemy = true;
+						dmg = 1;
+						knockbackForce = 1;
+						attackAIStep = scr_MKSS_Attack_Nimbia_MeleeHitbox_Step;
+						dirX = other.dirX;
+						image_xscale = dirX * other.scale;
+						sprite_index = -1;
+						mask_index = spr_MKSS_Enemy_Nimbia_Attack_MeleeHitbox_Slash2_3;
+						destroyTimer = 4;
+					}	
+					
+					meleeHitboxState++;
+				}
+				break;
+			}
+			#endregion
+			
 			if (hsp == 0) dirX = scr_MKSS_Enemy_DirTarget();
 			else attackStateTimer[attackState] = attackStateTimerMax[attackState];
 			
