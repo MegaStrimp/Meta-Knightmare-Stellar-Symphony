@@ -144,6 +144,14 @@ function scr_MKSS_Player_WeaponSpriteIndex()
 		weaponSpriteIndex = weaponSpriteSet.sprAttackBuzzcutSlash2;
 		break;
 		
+		case spriteSet.sprAttackBuzzcutDrillsawReady:
+		weaponSpriteIndex = weaponSpriteSet.sprAttackBuzzcutDrillsawReady;
+		break;
+		
+		case spriteSet.sprAttackBuzzcutDrillsaw:
+		weaponSpriteIndex = weaponSpriteSet.sprAttackBuzzcutDrillsaw;
+		break;
+		
 		case spriteSet.sprAttackBuzzcutChainlings:
 		weaponSpriteIndex = weaponSpriteSet.sprAttackBuzzcutChainlings;
 		break;

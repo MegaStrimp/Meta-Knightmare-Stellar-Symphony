@@ -67,6 +67,8 @@ function scr_MKSS_Weapon_Init_Set()
 		sprAttackBuzzcutFinisher: undefined,
 		sprAttackBuzzcutFinisherEnd1: undefined,
 		sprAttackBuzzcutFinisherEnd2: undefined,
+		sprAttackBuzzcutDrillsawReady: undefined,
+		sprAttackBuzzcutDrillsaw: undefined,
 		sprAttackBuzzcutChainlings: undefined
 	});
 	
@@ -127,6 +129,8 @@ function scr_MKSS_Weapon_Init_Set()
 		sprAttackBuzzcutFinisher: undefined,
 		sprAttackBuzzcutFinisherEnd1: undefined,
 		sprAttackBuzzcutFinisherEnd2: undefined,
+		sprAttackBuzzcutDrillsawReady: spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Attack_Drillsaw_Ready,
+		sprAttackBuzzcutDrillsaw: spr_MKSS_Player_MetaKnight_Normal_Sword_Buzzcut_Attack_Drillsaw,
 		sprAttackBuzzcutChainlings: undefined
 	});
 	#endregion
@@ -185,6 +189,8 @@ function scr_MKSS_Weapon_Init_Set()
 		sprAttackBuzzcutFinisher: undefined,
 		sprAttackBuzzcutFinisherEnd1: undefined,
 		sprAttackBuzzcutFinisherEnd2: undefined,
+		sprAttackBuzzcutDrillsawReady: undefined,
+		sprAttackBuzzcutDrillsaw: undefined,
 		sprAttackBuzzcutChainlings: undefined
 	});
 	#endregion
@@ -243,6 +249,8 @@ function scr_MKSS_Weapon_Init_Set()
 		sprAttackBuzzcutFinisher: undefined,
 		sprAttackBuzzcutFinisherEnd1: undefined,
 		sprAttackBuzzcutFinisherEnd2: undefined,
+		sprAttackBuzzcutDrillsawReady: undefined,
+		sprAttackBuzzcutDrillsaw: undefined,
 		sprAttackBuzzcutChainlings: undefined
 	});
 	#endregion
@@ -301,6 +309,8 @@ function scr_MKSS_Weapon_Init_Set()
 		sprAttackBuzzcutFinisher: undefined,
 		sprAttackBuzzcutFinisherEnd1: undefined,
 		sprAttackBuzzcutFinisherEnd2: undefined,
+		sprAttackBuzzcutDrillsawReady: undefined,
+		sprAttackBuzzcutDrillsaw: undefined,
 		sprAttackBuzzcutChainlings: undefined
 	});
 	#endregion

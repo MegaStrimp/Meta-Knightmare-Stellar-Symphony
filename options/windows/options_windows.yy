@@ -12,7 +12,7 @@
   "option_windows_description_info":"",
   "option_windows_disable_sandbox":true,
   "option_windows_display_cursor":true,
-  "option_windows_display_name":"StarDream Framework",
+  "option_windows_display_name":"Meta Knightmare Stellar Symphony",
   "option_windows_enable_steam":false,
   "option_windows_executable_name":"Meta Knightmare Stellar Symphony.exe",
   "option_windows_icon":"${options_dir}/windows/icons/icon.ico",
