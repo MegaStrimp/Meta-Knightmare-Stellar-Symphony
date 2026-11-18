@@ -50,6 +50,8 @@ function scr_MKSS_Attack_Execute_Buzzcut_ChainChakram()
 		if ((targetAngle == 45) or (targetAngle == 315)) dirX = 1;
 		movementAngle = targetAngle - 25;
 		knockbackAngle = movementAngle;
+		startHsp = other.hsp * other.speedMultFinal;
+		startVsp = other.vsp * other.speedMultFinal;
 		spdMax = 6;
 		spd = 4;
 		angleDir = 1;

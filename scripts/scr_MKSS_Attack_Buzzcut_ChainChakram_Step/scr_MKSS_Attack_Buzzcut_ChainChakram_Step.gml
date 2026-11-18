@@ -26,6 +26,8 @@ function scr_MKSS_Attack_Buzzcut_ChainChakram_Step()
 			
 			if (point_distance(x,y,xstart,ystart) <= (spd + 1))
 			{
+				scr_MKSS_ParticleSet_Sparkle(x,y);
+				
 				instance_destroy();
 			}
 		}
