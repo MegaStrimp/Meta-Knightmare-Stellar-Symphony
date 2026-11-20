@@ -29,7 +29,7 @@ shader_set(shd_MKSS_OceanCaustics);
 shader_set_uniform_f( shader_get_uniform(shd_MKSS_OceanCaustics, "time"), get_time );
 
 // sprite doesnt matter it's just used for draw space
-draw_sprite_stretched(bg_MKSS_Background_KSWUnderwater_Light,0,xx + lightX,yy + lightY,240,160);
+draw_sprite_stretched(bg_MKSS_Background_KSWUnderwater_Light,0,xx - 20 + lightX,yy - 20 + lightY,240,160);
 
 shader_reset();
 #endregion

@@ -1,6 +1,6 @@
 ///@description MKSS - Attack - Execute - Trappy - Pearl
 
-function scr_MKSS_Attack_Execute_Trappy_Pearl()
+function scr_MKSS_Attack_Execute_Trappy_Pearl(targetMovespeed = random_range(1,2.5),targetVsp = random_range(-4,-2))
 {
 	attackString = global.MKSS_AttackList[attackIndex].ID;
 	scr_Debug_WriteLog(string(object_get_name(object_index)) + " Used [" + attackString + "]");
@@ -22,8 +22,8 @@ function scr_MKSS_Attack_Execute_Trappy_Pearl()
 		attackAIStep = scr_MKSS_Attack_Trappy_Pearl_Step;
 		dirX = other.dirX;
 		autoScale = false;
-		vsp = random_range(-4,-2) * speedMultFinal;
-		movespeed = random_range(1,2.5);
+		vsp = targetVsp;
+		movespeed = targetMovespeed;
 		grav = .15;
 		gravLimit = 2.5;
 	}

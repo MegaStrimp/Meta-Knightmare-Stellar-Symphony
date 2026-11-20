@@ -28,6 +28,8 @@ scoreBonusTimerMax = 60;
 targetRoom_Next = -1;
 targetRoom_Retry = -1;
 targetRoom = -1;
+targetRoomSpawnX = -1;
+targetRoomSpawnY = -1;
 
 endStage = false;
 #endregion

@@ -3,6 +3,7 @@
 function scr_MKSS_Settings_Component_GoToPause()
 {
 	scr_MKSS_SaveConfig("config.ini");
+	scr_MKSS_SaveControls("controls.ini");
 	
 	with (obj_FrameworkControl)
 	{

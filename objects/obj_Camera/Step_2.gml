@@ -4,6 +4,11 @@
 scr_Camera_Shake();
 #endregion
 
+#region Follow Position
+followingPosition_X = lerp(followingPosition_X,followingPosition_X_Target,followingPosition_Lerp);
+followingPosition_Y = lerp(followingPosition_Y,followingPosition_Y_Target,followingPosition_Lerp);
+#endregion
+
 #region Camera Setup
 if (isActive)
 {

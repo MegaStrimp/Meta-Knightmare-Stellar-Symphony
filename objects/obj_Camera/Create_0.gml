@@ -19,6 +19,11 @@ shakeY = 0;
 
 isActive = true;
 followingObject = -1;
+followingPosition_X = 0;
+followingPosition_Y = 0;
+followingPosition_X_Target = 0;
+followingPosition_Y_Target = 0;
+followingPosition_Lerp = .1;
 
 xOffset = 0;
 yOffset = 0;

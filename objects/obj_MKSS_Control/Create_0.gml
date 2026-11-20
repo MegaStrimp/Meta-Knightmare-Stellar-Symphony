@@ -97,6 +97,9 @@ global.MKSS_Tutorial_FirstUpgrade = false;
 
 global.MKSS_BorderArt_CurrentDynamicID = global.MKSS_BorderArtIDs[? "default"];
 
+global.MKSS_LastPedestalSpawnX = -1;
+global.MKSS_LastPedestalSpawnY = -1;
+
 global.flag_MKSS_MetaPointCollect = false;
 global.flag_MKSS_AbilitySwitch = false;
 #endregion

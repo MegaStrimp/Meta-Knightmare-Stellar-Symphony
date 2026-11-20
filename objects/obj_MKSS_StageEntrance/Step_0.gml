@@ -8,7 +8,22 @@ if (isActive)
 		var sfx = scr_PlaySfx(snd_MKSS_DoorEnter);
 		//audio_sound_pitch(sfx,random_range(.85,1.15));
 		
-		if (targetRoom != -1) scr_GoToRoom(targetRoom,false);
+		if (targetRoom != -1)
+		{
+			scr_GoToRoom(targetRoom,false);
+			
+			var targetSpawnX = x;
+			var targetSpawnY = y;
+			
+			if ((ownerPedestal != -1) and (instance_exists(ownerPedestal)))
+			{
+				targetSpawnX = ownerPedestal.x;
+				targetSpawnY = ownerPedestal.y - 16;
+			}
+			
+			global.MKSS_LastPedestalSpawnX = targetSpawnX;
+			global.MKSS_LastPedestalSpawnY = targetSpawnY;
+		}
 	}
 	
 	if (input_check_pressed("B",playerNum))

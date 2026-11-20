@@ -35,7 +35,7 @@ if ((!instance_exists(obj_Transition)) and (hintOffsetTimer == -1) and (endTimer
 		
 		endStage = true;
 		
-		scr_GoToRoom(rm_MKSS_BattleshipHalberd,false);
+		scr_GoToRoom_PlayerPosition(rm_MKSS_BattleshipHalberd,false,global.MKSS_LastPedestalSpawnX,global.MKSS_LastPedestalSpawnY);
 	}
 }
 #endregion

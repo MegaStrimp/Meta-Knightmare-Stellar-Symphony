@@ -18,6 +18,8 @@ if (canSelect)
 		with (obj_Player) stageClear_StateTimer = 0;
 		
 		targetRoom = rm_MKSS_BattleshipHalberd;
+		targetRoomSpawnX = global.MKSS_LastPedestalSpawnX;
+		targetRoomSpawnY = global.MKSS_LastPedestalSpawnY;
 		
 		nextRoomTimer = nextRoomTimerMax;
 	}
@@ -124,7 +126,7 @@ if (nextRoomTimer != -1)
 		
 		endStage = true;
 		
-		with (scr_GoToRoom(targetRoom,false)) alphaSpd = (alphaSpd / 3);
+		with (scr_GoToRoom_PlayerPosition(targetRoom,false,targetRoomSpawnX,targetRoomSpawnY)) alphaSpd = (alphaSpd / 3);
 		
 		nextRoomTimer = -1;
 	}
