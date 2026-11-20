@@ -108,6 +108,8 @@ if (!localPause)
 				
 				scr_MKSS_ParticleSet_Sparkle(616,80);
 				
+				scr_MKSS_Door_Spawn(640,104,rm_MKSS_RoyalReeve_8,true);
+				
 				instance_destroy();
 				
 				stateTimer = -1;
